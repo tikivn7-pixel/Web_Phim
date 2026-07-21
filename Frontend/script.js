@@ -60,7 +60,6 @@ function saveWatchProgress(movieId, currentTime, duration) {
 // 2. DỮ LIỆU & QUẢN LÝ PHÁT VIDEO
 // ==========================================
 
-// Mảng 20 link HLS chuẩn của phim Moving
 const movingEpisodes = [
   "https://s6.kkphimplayer6.com/20250721/ZsGU1yen/index.m3u8", // Tập 1
   "https://s6.kkphimplayer6.com/20250721/nanxjdoM/index.m3u8", // Tập 2
@@ -117,7 +116,16 @@ const QueenOfTearsEpisodes = [
   "https://s3.phim1280.tv/20240428/D83pYG42/index.m3u8",
   "https://s3.phim1280.tv/20240502/SpSMZRJz/index.m3u8",
 ];
+
 let hlsPlayer = null;
+let currentMovieKey = ""; // Lưu tên phim + tập đang xem
+
+// Hàm chuyển đổi giây thành định dạng MM:SS hoặc HH:MM:SS
+function formatTime(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m}:${s < 10 ? "0" : ""}${s}`;
+}
 
 // 1. Hàm hiển thị thông tin trang Chi tiết
 function showDetail(
@@ -129,7 +137,6 @@ function showDetail(
 ) {
   switchPage("detail");
 
-  // Cập nhật thông tin tiêu đề, ảnh, mô tả
   const titleEl = document.querySelector(".detail-info h1");
   const posterEl = document.querySelector(".detail-poster img");
   const descEl = document.querySelector(".description");
@@ -138,13 +145,11 @@ function showDetail(
   if (posterEl) posterEl.src = posterSrc;
   if (descEl) descEl.innerText = description;
 
-  // Cập nhật số tập hiển thị ở thẻ meta
   const metaSpans = document.querySelectorAll(".detail-info .meta span");
   if (metaSpans.length >= 3) {
     metaSpans[2].innerText = `${totalEpisodes} Tập`;
   }
 
-  // Render danh sách nút tập cho trang Detail
   const episodeGrid = document.querySelector("#page-detail .episode-grid");
   if (episodeGrid) {
     episodeGrid.innerHTML = "";
@@ -167,13 +172,14 @@ async function playEpisode(
 ) {
   switchPage("watch");
 
-  // Cập nhật tiêu đề phim ở trang Watch
+  // Tạo ID định danh duy nhất cho tập phim (Ví dụ: "Moving_Ep1")
+  currentMovieKey = `${movieTitle}_Ep${episodeNum}`;
+
   const watchH2 = document.querySelector("#page-watch h2");
   if (watchH2) {
     watchH2.innerText = `${movieTitle} - Tập ${episodeNum}`;
   }
 
-  // Render lại danh sách tập ở trang Watch
   const watchEpisodeGrid = document.querySelector("#page-watch .episode-grid");
   if (watchEpisodeGrid) {
     watchEpisodeGrid.innerHTML = "";
@@ -186,20 +192,15 @@ async function playEpisode(
     }
   }
 
-  // Xác định nguồn video chuẩn theo phim
   let videoSrc = "";
 
   if (movieTitle === "Moving") {
-    // Nếu là phim Moving thì lấy từ mảng link cứng Moving
     videoSrc = movingEpisodes[episodeNum - 1];
   } else if (movieTitle === "Can this love be translated") {
-    // THÊM ĐOẠN NÀY: Kết nối tên phim với mảng link ctlbtranslatedEpisodes
     videoSrc = ctlbtranslatedEpisodes[episodeNum - 1];
   } else if (movieTitle === "Queen of tears") {
-    // THÊM ĐOẠN NÀY: Kết nối tên phim với mảng link QueenOfTearsEpisodes
     videoSrc = QueenOfTearsEpisodes[episodeNum - 1];
   } else if (slug && slug !== "") {
-    // Nếu phim có truyền slug API thì fetch trực tiếp từ KKPhim
     try {
       const response = await fetch(`https://phimapi.com/phim/${slug}`);
       const data = await response.json();
@@ -214,19 +215,35 @@ async function playEpisode(
     }
   }
 
-  // Nếu không có nguồn riêng thì dùng link test demo
   if (!videoSrc) {
     videoSrc = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
   }
 
-  // Gọi hàm load HLS vào trình phát
-  loadHlsVideo(videoSrc);
+  // Tải video và kiểm tra đoạn xem dở
+  loadHlsVideo(videoSrc, currentMovieKey);
 }
 
-// Hàm bổ trợ load link m3u8 vào video player
-function loadHlsVideo(videoSrc) {
+// Hàm bổ trợ load link m3u8 vào video player + Xử lý xem tiếp
+function loadHlsVideo(videoSrc, movieKey) {
   const video = document.getElementById("video-player");
   if (!video) return;
+
+  // Lấy thời gian xem dở đã lưu trong LocalStorage (nếu có)
+  const savedTime = localStorage.getItem(`watch_time_${movieKey}`);
+
+  const startPlay = () => {
+    if (savedTime && parseFloat(savedTime) > 5) {
+      const formattedTime = formatTime(parseFloat(savedTime));
+      // Hiển thị hộp thoại hỏi người dùng
+      const confirmResume = confirm(
+        `Bạn đã dừng lại ở phút [${formattedTime}]. Bạn có muốn xem tiếp không?`,
+      );
+      if (confirmResume) {
+        video.currentTime = parseFloat(savedTime); // Tua đến đoạn xem dở
+      }
+    }
+    video.play();
+  };
 
   if (Hls.isSupported()) {
     if (hlsPlayer) hlsPlayer.destroy();
@@ -234,11 +251,11 @@ function loadHlsVideo(videoSrc) {
     hlsPlayer.loadSource(videoSrc);
     hlsPlayer.attachMedia(video);
     hlsPlayer.on(Hls.Events.MANIFEST_PARSED, () => {
-      video.play();
+      startPlay();
     });
   } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
     video.src = videoSrc;
-    video.play();
+    startPlay();
   }
 }
 
@@ -247,6 +264,21 @@ function loadHlsVideo(videoSrc) {
 // ==========================================
 
 function switchPage(pageId) {
+  // NẾU RỜI KHỎI TRANG WATCH -> LƯU VỊ TRÍ PHIM VÀ TẮT VIDEO
+  if (pageId !== "watch") {
+    const video = document.getElementById("video-player");
+    if (video) {
+      // Lưu số giây hiện tại vào máy
+      if (currentMovieKey && video.currentTime > 5) {
+        localStorage.setItem(
+          `watch_time_${currentMovieKey}`,
+          video.currentTime,
+        );
+      }
+      video.pause();
+    }
+  }
+
   const pages = document.querySelectorAll(".page");
   pages.forEach((page) => page.classList.remove("active"));
 
@@ -258,23 +290,44 @@ function switchPage(pageId) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Bấm LogoPhimForLinh -> Về trang chủ & Lưu thời gian phát dở
+  const logo =
+    document.querySelector(".logo") ||
+    document.querySelector("header h1") ||
+    document.querySelector("header a");
+  if (logo) {
+    logo.addEventListener("click", (e) => {
+      e.preventDefault();
+      switchPage("home");
+    });
+  }
+
   const video = document.getElementById("video-player");
   const currentMovieId = "12345";
 
   if (video) {
     let lastSavedTime = 0;
 
-    // Tự động lưu tiến trình mỗi 10 giây
     video.addEventListener("timeupdate", () => {
       const currentTime = video.currentTime;
+      // Tự động lưu tiến trình vào LocalStorage liên tục mỗi khi phát
+      if (currentMovieKey && currentTime > 5) {
+        localStorage.setItem(`watch_time_${currentMovieKey}`, currentTime);
+      }
+
       if (currentTime - lastSavedTime >= 10) {
         saveWatchProgress(currentMovieId, currentTime, video.duration);
         lastSavedTime = currentTime;
       }
     });
 
-    // Lưu ngay khi bấm Tạm dừng (Pause)
     video.addEventListener("pause", () => {
+      if (currentMovieKey && video.currentTime > 5) {
+        localStorage.setItem(
+          `watch_time_${currentMovieKey}`,
+          video.currentTime,
+        );
+      }
       saveWatchProgress(currentMovieId, video.currentTime, video.duration);
     });
   }
