@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhimForLinh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo" onclick="switchPage('home')">
+        PhimFor<span>Linh</span>
+      </div>
+      <ul class="nav-links">
+        <li onclick="switchPage('home')">Trang chủ</li>
+        <li onclick="switchPage('detail')">Chi tiết</li>
+        <li onclick="switchPage('watch')">Xem phim</li>
+      </ul>
+    </nav>
+
+    <!-- TRANG CHỦ -->
+    <section id="page-home" class="page active">
+      <div class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="badge">Phim Nổi Bật</span>
+          <h1>Cyberpunk: Edgerunners</h1>
+          <p>
+            Một câu chuyện nghẹt thở về đứa con đường phố tại Night City đầy cạm
+            bẫy.
+          </p>
+          <div class="hero-buttons">
+            <button
+              class="btn btn-primary"
+              onclick="
+                showDetail(
+                  'Cyberpunk: Edgerunners',
+                  'https://picsum.photos/350/500?random=10',
+                  'Nội dung phim xoay quanh David Martinez, một thiếu niên sinh sống tại thành phố tội phạm Night City đầy cạm bẫy. Sau khi trải qua biến cố gia đình, cậu quyết định trở thành một Edgerunner - lính đánh thuê ngoài vòng pháp luật.',
+                  10,
+                  '',
+                )
+              "
+            >
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button
+              class="btn btn-secondary"
+              onclick="
+                showDetail(
+                  'Cyberpunk: Edgerunners',
+                  'https://picsum.photos/350/500?random=10',
+                  'Nội dung phim xoay quanh David Martinez, một thiếu niên sinh sống tại thành phố tội phạm Night City đầy cạm bẫy. Sau khi trải qua biến cố gia đình, cậu quyết định trở thành một Edgerunner - lính đánh thuê ngoài vòng pháp luật.',
+                  10,
+                  '',
+                )
+              "
+            >
+              <i class="fa-solid fa-circle-info"></i> Thông tin
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-section">
+        <h2>Phim Mới Cập Nhật</h2>
+        <div class="movie-slider">
+          <!-- 1. Moving (Dùng slug API doi-thieu-nien-sieu-dang) -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Moving',
+                'Img/Moving.jpg',
+                'Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon học cùng trường trung học. Họ trông giống như những học sinh bình thường, nhưng họ có những khả năng đặc biệt mà họ thừa hưởng từ cha mẹ.',
+                20,
+                'doi-thieu-nien-sieu-dang',
+              )
+            "
+          >
+            <img src="Img/Moving.jpg" alt="Moving" />
+            <h4>Moving</h4>
+          </div>
+
+          <!-- 2. Can this love be translated -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Can this love be translated',
+                'Img/Can_This_Love_Be_Translated.png',
+                'Đi khắp thế giới để quay chương trình truyền hình, cảm xúc của một người nổi tiếng và phiên dịch viên của cô lại chẳng thể nào thông dịch. Liệu tình yêu có tìm được ngôn ngữ riêng?',
+                12,
+                '',
+              )
+            "
+          >
+            <img
+              src="Img/Can_This_Love_Be_Translated.png"
+              alt="Can this love be translated"
+            />
+            <h4>Can this love be translated</h4>
+          </div>
+
+          <!-- 3. Queen of tears -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Queen of tears',
+                'Img/QueenOfTears.jpg',
+                'Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị xoay xở với khủng hoảng hôn nhân, rồi tình yêu bắt đầu nảy nở trở lại theo cách kỳ diệu.',
+                16,
+                '',
+              )
+            "
+          >
+            <img src="Img/QueenOfTears.jpg" alt="Queen Of tears" />
+            <h4>Queen of tears</h4>
+          </div>
+
+          <!-- 4. Thám Tử Lừng Danh -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Thám Tử Lừng Danh',
+                'https://picsum.photos/300/450?random=4',
+                'Những vụ án hóc húa, kịch tính và những màn phá án đỉnh cao.',
+                24,
+                '',
+              )
+            "
+          >
+            <img
+              src="https://picsum.photos/300/450?random=4"
+              alt="Thám Tử Lừng Danh"
+            />
+            <h4>Thám Tử Lừng Danh</h4>
+          </div>
+
+          <!-- 5. Bí Mật Luân Đôn -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Bí Mật Luân Đôn',
+                'https://picsum.photos/300/450?random=5',
+                'Hành trình khám phá những bí ẩn đen tối ẩn sau sự phồn hoa của thành phố Luân Đôn.',
+                16,
+                '',
+              )
+            "
+          >
+            <img
+              src="https://picsum.photos/300/450?random=5"
+              alt="Bí Mật Luân Đôn"
+            />
+            <h4>Bí Mật Luân Đôn</h4>
+          </div>
+
+          <!-- 6. Cuộc Chiến Cuối Cùng -->
+          <div
+            class="movie-card"
+            onclick="
+              showDetail(
+                'Cuộc Chiến Cuối Cùng',
+                'https://picsum.photos/300/450?random=6',
+                'Trận chiến nảy lửa quyết định vận mệnh của toàn thế giới.',
+                8,
+                '',
+              )
+            "
+          >
+            <img
+              src="https://picsum.photos/300/450?random=6"
+              alt="Cuộc Chiến Cuối Cùng"
+            />
+            <h4>Cuộc Chiến Cuối Cùng</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANG CHI TIẾT PHIM -->
+    <section id="page-detail" class="page">
+      <div class="detail-container">
+        <div class="detail-poster">
+          <img src="Img/Moving.jpg" alt="Poster phim" />
+        </div>
+        <div class="detail-info">
+          <h1>Moving</h1>
+          <div class="meta">
+            <span><i class="fa-solid fa-star"></i> 8.6/10</span>
+            <span>2023</span>
+            <span>20 Tập</span>
+          </div>
+          <p class="description">
+            Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee
+            Soo và Lee Gang Hoon học cùng trường trung học. Họ trông giống như
+            những học sinh bình thường, nhưng họ có những khả năng đặc biệt mà
+            họ thừa hưởng từ cha mẹ.
+          </p>
+          <div class="credits">
+            <p><strong>Đạo diễn:</strong> Park In-je</p>
+            <p>
+              <strong>Diễn viên:</strong> Ryu Seung-ryong, Han Hyo-joo, Zo
+              In-sung
+            </p>
+            <p>
+              <strong>Thể loại:</strong> Hành động, Siêu năng lực, Viễn tưởng
+            </p>
+          </div>
+
+          <!-- Danh sách tập (Sẽ do JS tự sinh dựa theo từng phim) -->
+          <div class="episodes-section">
+            <h3>Danh Sách Tập</h3>
+            <div class="episode-grid">
+              <!-- Nút tập sẽ tự động tạo ở JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANG XEM PHIM -->
+    <section id="page-watch" class="page">
+      <div class="watch-container">
+        <!-- Video Player -->
+        <div class="video-player-wrapper">
+          <video
+            id="video-player"
+            controls
+            poster="https://picsum.photos/1200/675?random=1"
+            style="width: 100%; aspect-ratio: 16/9"
+          ></video>
+        </div>
+
+        <!-- Khung thông tin & chọn tập -->
+        <div class="watch-details">
+          <h2>Moving - <span id="current-ep-title">Tập 1</span></h2>
+          <hr />
+          <h3>Chọn tập phim:</h3>
+          <div class="episode-grid">
+            <!-- Nút tập sẽ tự động tạo ở JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
