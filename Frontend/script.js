@@ -117,6 +117,28 @@ const QueenOfTearsEpisodes = [
   "https://s3.phim1280.tv/20240502/SpSMZRJz/index.m3u8",
 ];
 
+const mouseEpisodes = [
+  "https://s4.phim1280.tv/20241006/QM4FZCB9/index.m3u8", // Tập 1
+  "https://s4.phim1280.tv/20241006/FebiLXsS/index.m3u8", // Tập 2
+  "https://s4.phim1280.tv/20241006/RqrSEO5O/index.m3u8", // Tập 3
+  "https://s4.phim1280.tv/20241006/dymHYsYX/index.m3u8", // Tập 4
+  "https://s4.phim1280.tv/20241006/MvhVVgoc/index.m3u8", // Tập 5
+  "https://s4.phim1280.tv/20241006/m1GW7HYh/index.m3u8", // Tập 6
+  "https://s4.phim1280.tv/20241006/67mzUfSy/index.m3u8", // Tập 7
+  "https://s4.phim1280.tv/20241006/TdgWao58/index.m3u8", // Tập 8
+  "https://s4.phim1280.tv/20241006/qbujLn2j/index.m3u8", // Tập 9
+  "https://s4.phim1280.tv/20241006/DaddJWvi/index.m3u8", // Tập 10
+  "https://s4.phim1280.tv/20241006/itZuzPTK/index.m3u8", // Tập 11
+  "https://s4.phim1280.tv/20241006/maIKoc1q/index.m3u8", // Tập 12
+  "https://s4.phim1280.tv/20241006/xTMgljSY/index.m3u8", // Tập 13
+  "https://s4.phim1280.tv/20241006/BxftUkoi/index.m3u8", // Tập 14
+  "https://s4.phim1280.tv/20241006/BvXD851D/index.m3u8", // Tập 15
+  "https://s4.phim1280.tv/20241006/3Itg0Tve/index.m3u8", // Tập 16
+  "https://s4.phim1280.tv/20241006/Hn1EANZN/index.m3u8", // Tập 17
+  "https://s4.phim1280.tv/20241006/sQejzukr/index.m3u8", // Tập 18
+  "https://s4.phim1280.tv/20241006/jpI5FwVR/index.m3u8", // Tập 19
+  "https://s4.phim1280.tv/20241006/mqcAXAKE/index.m3u8", // Tập 20
+];
 let hlsPlayer = null;
 let currentMovieKey = ""; // Lưu tên phim + tập đang xem
 
@@ -200,6 +222,8 @@ async function playEpisode(
     videoSrc = ctlbtranslatedEpisodes[episodeNum - 1];
   } else if (movieTitle === "Queen of tears") {
     videoSrc = QueenOfTearsEpisodes[episodeNum - 1];
+  } else if (movieTitle === "Mouse") {
+    videoSrc = mouseEpisodes[episodeNum - 1];
   } else if (slug && slug !== "") {
     try {
       const response = await fetch(`https://phimapi.com/phim/${slug}`);
