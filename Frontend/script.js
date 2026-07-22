@@ -382,26 +382,22 @@ const mouseEpisodes = [
 ];
 
 const hailamEpisodes = [
-  "https://s4.phim1280.tv/20241006/QM4FZCB9/index.m3u8",
-  "https://s4.phim1280.tv/20241006/FebiLXsS/index.m3u8",
-  "https://s4.phim1280.tv/20241006/RqrSEO5O/index.m3u8",
-  "https://s4.phim1280.tv/20241006/dymHYsYX/index.m3u8",
-  "https://s4.phim1280.tv/20241006/MvhVVgoc/index.m3u8",
-  "https://s4.phim1280.tv/20241006/m1GW7HYh/index.m3u8",
-  "https://s4.phim1280.tv/20241006/67mzUfSy/index.m3u8",
-  "https://s4.phim1280.tv/20241006/TdgWao58/index.m3u8",
-  "https://s4.phim1280.tv/20241006/qbujLn2j/index.m3u8",
-  "https://s4.phim1280.tv/20241006/DaddJWvi/index.m3u8",
-  "https://s4.phim1280.tv/20241006/itZuzPTK/index.m3u8",
-  "https://s4.phim1280.tv/20241006/maIKoc1q/index.m3u8",
-  "https://s4.phim1280.tv/20241006/xTMgljSY/index.m3u8",
-  "https://s4.phim1280.tv/20241006/BxftUkoi/index.m3u8",
-  "https://s4.phim1280.tv/20241006/BvXD851D/index.m3u8",
-  "https://s4.phim1280.tv/20241006/3Itg0Tve/index.m3u8",
-  "https://s4.phim1280.tv/20241006/Hn1EANZN/index.m3u8",
-  "https://s4.phim1280.tv/20241006/sQejzukr/index.m3u8",
-  "https://s4.phim1280.tv/20241006/jpI5FwVR/index.m3u8",
-  "https://s4.phim1280.tv/20241006/mqcAXAKE/index.m3u8",
+  "https://s3.phim1280.tv/20240329/19y7gT0X/index.m3u8",
+  "https://s3.phim1280.tv/20240329/5fQQCT40/index.m3u8",
+  "https://s3.phim1280.tv/20240329/rTpaKdpW/index.m3u8",
+  "https://s3.phim1280.tv/20240329/DA6K3oEW/index.m3u8",
+  "https://s3.phim1280.tv/20240329/bXI8vjCU/index.m3u8",
+  "https://s3.phim1280.tv/20240329/tp1y52T1/index.m3u8",
+  "https://s3.phim1280.tv/20240329/3tHpVVtt/index.m3u8",
+  "https://s3.phim1280.tv/20240329/3b6Bb2lM/index.m3u8",
+  "https://s3.phim1280.tv/20240329/Sg4KR5ww/index.m3u8",
+  "https://s3.phim1280.tv/20240329/6dyubBRC/index.m3u8",
+  "https://s3.phim1280.tv/20240329/IKILVIVy/index.m3u8",
+  "https://s3.phim1280.tv/20240329/BrQA5pQG/index.m3u8",
+  "https://s3.phim1280.tv/20240329/F34RNh6M/index.m3u8",
+  "https://s3.phim1280.tv/20240329/0zTxAnrj/index.m3u8",
+  "https://s3.phim1280.tv/20240329/SohCFH2c/index.m3u8",
+  "https://s3.phim1280.tv/20240329/iKY3SYMv/index.m3u8",
 ];
 
 let hlsPlayer = null;
@@ -487,7 +483,7 @@ async function playEpisode(
     videoSrc = QueenOfTearsEpisodes[episodeNum - 1];
   } else if (movieTitle === "Mouse") {
     videoSrc = mouseEpisodes[episodeNum - 1];
-  } else if (movieTitle === "2521") {
+  } else if (movieTitle === "Twenty Five Twenty One") {
     videoSrc = hailamEpisodes[episodeNum - 1];
   } else if (slug && slug !== "") {
     try {
