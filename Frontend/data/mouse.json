@@ -1,0 +1,14 @@
+{
+  "id": "mouse",
+  "title": "Mouse",
+  "subtitle": "Kẻ Săn Người",
+  "poster": "Img/Mouse.jpg",
+  "banner": "Img/Mouse.jpg",
+  "desc": "Phim xoay quanh cuộc truy đuổi giữa cảnh sát và tên sát nhân biến thái...",
+  "rating": 8.7,
+  "ageRating": "T18",
+  "year": 2021,
+  "episodes": 20,
+  "genres": ["Trinh thám", "Hình sự", "Giật gân"],
+  "slug": ""
+}

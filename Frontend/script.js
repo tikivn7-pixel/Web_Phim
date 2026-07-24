@@ -29,23 +29,15 @@ function getWishlist() {
   return wishlist ? JSON.parse(wishlist) : [];
 }
 
-// Kiểm tra phim đã có trong Wishlist chưa
-function isMovieInWishlist(title) {
-  const wishlist = getWishlist();
-  return wishlist.some((item) => item.title === title);
-}
-
 // Bật / Tắt trạng thái yêu thích phim
 function toggleWishlist(movie) {
   let wishlist = getWishlist();
   const index = wishlist.findIndex((item) => item.title === movie.title);
 
   if (index !== -1) {
-    // Nếu đã có thì xóa khỏi danh sách
     wishlist.splice(index, 1);
     alert(`Đã xóa "${movie.title}" khỏi Danh sách của tôi!`);
   } else {
-    // Nếu chưa có thì thêm vào
     wishlist.push(movie);
     alert(`Đã thêm "${movie.title}" vào Danh sách của tôi!`);
   }
@@ -54,16 +46,16 @@ function toggleWishlist(movie) {
   updateWishlistUI();
 
   // Chỉ render lại nếu đang ở trang wishlist
-  const wishlistContainer = document.getElementById("wishlist-container");
-  if (wishlistContainer) {
+  const wishlistPage = document.getElementById("page-wishlist");
+  if (wishlistPage && wishlistPage.classList.contains("active")) {
     renderWishlistPage();
   }
 
-  // Gọi API backend (nếu có đăng nhập)
+  // Đồng bộ Backend nếu có
   toggleFavoriteBackend(movie.title);
 }
 
-// API toggle backend (tùy chọn)
+// Đồng bộ Wishlist với Backend
 async function toggleFavoriteBackend(movieId) {
   const token = localStorage.getItem("token");
   if (!token) return;
@@ -82,7 +74,7 @@ async function toggleFavoriteBackend(movieId) {
   }
 }
 
-// Cập nhật biểu tượng tim trên giao diện
+// Cập nhật biểu tượng tim trên toàn bộ trang
 function updateWishlistUI() {
   const wishlist = getWishlist();
   const heartBtns = document.querySelectorAll(".movie-card .btn-hover.icon");
@@ -91,7 +83,9 @@ function updateWishlistUI() {
     const card = btn.closest(".movie-card");
     if (!card) return;
     const titleEl =
-      card.querySelector(".hover-title") || card.querySelector("h4");
+      card.querySelector(".hover-title") ||
+      card.querySelector("h3") ||
+      card.querySelector("h4");
     if (!titleEl) return;
 
     const title = titleEl.innerText.trim();
@@ -141,10 +135,10 @@ function renderWishlistPage() {
       );
 
     card.innerHTML = `
-      <img src="${movie.poster}" alt="${movie.title}" />
+      <img src="${movie.poster}" alt="${movie.title}" onerror="this.src='https://picsum.photos/350/500'" />
       <h4>${movie.title}</h4>
       <div class="movie-hover-card">
-        <img src="${movie.poster}" alt="${movie.title}" class="hover-banner" />
+        <img src="${movie.poster}" alt="${movie.title}" class="hover-banner" onerror="this.src='https://picsum.photos/350/500'" />
         <div class="hover-content">
           <h3 class="hover-title">${movie.title}</h3>
           <div class="hover-actions">
@@ -229,26 +223,33 @@ let heroInterval = null;
 
 function updateHeroBanner(index) {
   const movie = featuredMovies[index];
-  const heroSection = document.querySelector(".hero-banner");
-  const heroContent = document.querySelector(".hero-content");
+  const heroSection = document.getElementById("hero-banner");
+  const titleEl = document.getElementById("hero-title");
+  const descEl = document.getElementById("hero-desc");
+  const playBtn = document.getElementById("hero-play-btn");
+  const infoBtn = document.getElementById("hero-info-btn");
 
-  if (!heroSection || !heroContent) return;
+  if (!heroSection) return;
 
   heroSection.style.backgroundImage = `url('${movie.banner}')`;
+  if (titleEl) titleEl.innerText = movie.title;
+  if (descEl) descEl.innerText = movie.desc;
 
-  heroContent.innerHTML = `
-    <span class="badge">Phim Nổi Bật</span>
-    <h1>${movie.title}</h1>
-    <p>${movie.desc}</p>
-    <div class="hero-buttons">
-      <button class="btn btn-primary" onclick="showDetail('${movie.title}', '${movie.poster}', '${movie.desc.replace(/'/g, "\\'")}', ${movie.episodes}, '${movie.slug}')">
-        <i class="fa-solid fa-play"></i> Xem ngay
-      </button>
-      <button class="btn btn-secondary" onclick="showDetail('${movie.title}', '${movie.poster}', '${movie.desc.replace(/'/g, "\\'")}', ${movie.episodes}, '${movie.slug}')">
-        <i class="fa-solid fa-circle-info"></i> Thông tin
-      </button>
-    </div>
-  `;
+  // Gán sự kiện trực tiếp cho 2 nút ở Hero
+  if (playBtn) {
+    playBtn.onclick = () =>
+      playEpisode(movie.title, 1, movie.episodes, movie.slug);
+  }
+  if (infoBtn) {
+    infoBtn.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        movie.episodes,
+        movie.slug,
+      );
+  }
 
   const dots = document.querySelectorAll(".hero-dot");
   dots.forEach((dot, i) => {
@@ -257,7 +258,7 @@ function updateHeroBanner(index) {
 }
 
 function initHeroSlider() {
-  const heroSection = document.querySelector(".hero-banner");
+  const heroSection = document.getElementById("hero-banner");
   if (!heroSection) return;
 
   let dotsContainer = heroSection.querySelector(".hero-dots");
@@ -298,9 +299,109 @@ function resetHeroTimer() {
 }
 
 // ==========================================
-// 3. DỮ LIỆU & QUẢN LÝ PHÁT VIDEO
+// 3. DỮ LIỆU & RENDER PHIM TRANG CHỦ
 // ==========================================
 
+const homeMoviesList = [
+  {
+    title: "Moving",
+    poster: "Img/Moving.jpg",
+    desc: "Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon...",
+    episodes: 20,
+    slug: "doi-thieu-nien-sieu-dang",
+  },
+  {
+    title: "Can this love be translated",
+    poster: "Img/Can_This_Love_Be_Translated.png",
+    desc: "Bộ phim tình cảm lãng mạn đầy ngọt ngào.",
+    episodes: 12,
+    slug: "",
+  },
+  {
+    title: "Queen of tears",
+    poster: "Img/QueenOfTears.jpg",
+    desc: "Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị xoay xở với khủng hoảng hôn nhân.",
+    episodes: 16,
+    slug: "",
+  },
+  {
+    title: "Mouse",
+    poster: "Img/Mouse.jpg",
+    desc: "Cuộc truy đuổi giữa cảnh sát Jung Ba Reum và tên sát nhân biến thái.",
+    episodes: 20,
+    slug: "",
+  },
+  {
+    title: "Twenty Five Twenty One",
+    poster: "Img/2521.jpg",
+    desc: "Câu chuyện thanh xuân tươi đẹp rực rỡ.",
+    episodes: 16,
+    slug: "",
+  },
+  {
+    title: "My Liberation Notes",
+    poster: "Img/Nhat_ky_tu_do_cua_toi.jpg",
+    desc: "Mệt mỏi vì tuổi trưởng thành quá đỗi bình thường và đơn điệu, ba chị em tìm kiếm sự viên mãn và tự do trong cuộc sống tẻ nhạt của họ.",
+    episodes: 16,
+    slug: "",
+  },
+  {
+    title: "My Liberation Notes",
+    poster: "Img/Nhat_ky_tu_do_cua_toi.jpg",
+    desc: "Mệt mỏi vì tuổi trưởng thành quá đỗi bình thường và đơn điệu, ba chị em tìm kiếm sự viên mãn và tự do trong cuộc sống tẻ nhạt của họ.",
+    episodes: 16,
+    slug: "",
+  },
+];
+
+function renderHomePageMovies() {
+  const container = document.getElementById("home-movie-slider");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  homeMoviesList.forEach((movie) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        movie.episodes,
+        movie.slug,
+      );
+
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${movie.title}" onerror="this.src='https://picsum.photos/350/500'" />
+      <h4>${movie.title}</h4>
+      <div class="movie-hover-card">
+        <img src="${movie.poster}" alt="${movie.title}" class="hover-banner" onerror="this.src='https://picsum.photos/350/500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${movie.title}</h3>
+          <div class="hover-actions">
+            <button class="btn-hover play">
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button 
+              class="btn-hover icon" 
+              title="Yêu thích"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${movie.title.replace(/'/g, "\\'")}', poster: '${movie.poster}', desc: '${(movie.desc || "").replace(/'/g, "\\'")}', episodes: ${movie.episodes || 20}, slug: '${movie.slug || ""}'})"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p class="hover-genres">${movie.desc || ""}</p>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateWishlistUI();
+}
+
+// Server Video Streams
 const movingEpisodes = [
   "https://s6.kkphimplayer6.com/20250721/ZsGU1yen/index.m3u8",
   "https://s6.kkphimplayer6.com/20250721/nanxjdoM/index.m3u8",
@@ -400,6 +501,25 @@ const hailamEpisodes = [
   "https://s3.phim1280.tv/20240329/iKY3SYMv/index.m3u8",
 ];
 
+const tudoEpisodes = [
+  "https://s3.phim1280.tv/20240601/T0YRlpKj/index.m3u8",
+  "https://s3.phim1280.tv/20240601/icMeowKz/index.m3u8",
+  "https://s3.phim1280.tv/20240601/zYJoiJlC/index.m3u8",
+  "https://s3.phim1280.tv/20240601/j14s8xtK/index.m3u8",
+  "https://s3.phim1280.tv/20240601/hZiW4Ofm/index.m3u8",
+  "https://s3.phim1280.tv/20240601/NlK0PcpX/index.m3u8",
+  "https://s3.phim1280.tv/20240601/pIbHqhEJ/index.m3u8",
+  "https://s3.phim1280.tv/20240601/2cW8UPSk/index.m3u8",
+  "https://s3.phim1280.tv/20240601/WUrAwXIr/index.m3u8",
+  "https://s3.phim1280.tv/20240601/2lcHfOLD/index.m3u8",
+  "https://s3.phim1280.tv/20240601/ke5GnQCx/index.m3u8",
+  "https://s3.phim1280.tv/20240601/P4BgeCm3/index.m3u8",
+  "https://s3.phim1280.tv/20240601/toCvNlpu/index.m3u8",
+  "https://s3.phim1280.tv/20240601/OabLF56j/index.m3u8",
+  "https://s3.phim1280.tv/20240601/kg6vJnZv/index.m3u8",
+  "https://s3.phim1280.tv/20240601/FXp8Ji2Q/index.m3u8",
+];
+
 let hlsPlayer = null;
 let currentMovieKey = "";
 
@@ -409,7 +529,7 @@ function formatTime(seconds) {
   return `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
-// 1. Hàm hiển thị thông tin trang Chi tiết
+// 1. Hiển thị thông tin trang Chi tiết
 function showDetail(
   title,
   posterSrc,
@@ -419,20 +539,17 @@ function showDetail(
 ) {
   switchPage("detail");
 
-  const titleEl = document.querySelector(".detail-info h1");
-  const posterEl = document.querySelector(".detail-poster img");
-  const descEl = document.querySelector(".description");
+  const titleEl = document.getElementById("detail-title");
+  const posterEl = document.getElementById("detail-poster-img");
+  const descEl = document.getElementById("detail-desc");
+  const countEl = document.getElementById("detail-episodes-count");
 
   if (titleEl) titleEl.innerText = title;
   if (posterEl) posterEl.src = posterSrc;
   if (descEl) descEl.innerText = description;
+  if (countEl) countEl.innerText = `${totalEpisodes} Tập`;
 
-  const metaSpans = document.querySelectorAll(".detail-info .meta span");
-  if (metaSpans.length >= 3) {
-    metaSpans[2].innerText = `${totalEpisodes} Tập`;
-  }
-
-  const episodeGrid = document.querySelector("#page-detail .episode-grid");
+  const episodeGrid = document.getElementById("detail-episode-grid");
   if (episodeGrid) {
     episodeGrid.innerHTML = "";
     for (let i = 1; i <= totalEpisodes; i++) {
@@ -445,7 +562,7 @@ function showDetail(
   }
 }
 
-// 2. Hàm phát phim và load nguồn stream m3u8 động
+// 2. Hàm phát phim
 async function playEpisode(
   movieTitle,
   episodeNum,
@@ -456,12 +573,13 @@ async function playEpisode(
 
   currentMovieKey = `${movieTitle}_Ep${episodeNum}`;
 
-  const watchH2 = document.querySelector("#page-watch h2");
-  if (watchH2) {
-    watchH2.innerText = `${movieTitle} - Tập ${episodeNum}`;
-  }
+  const titleEl = document.getElementById("watch-movie-title");
+  const epEl = document.getElementById("current-ep-title");
 
-  const watchEpisodeGrid = document.querySelector("#page-watch .episode-grid");
+  if (titleEl) titleEl.innerText = movieTitle;
+  if (epEl) epEl.innerText = `Tập ${episodeNum}`;
+
+  const watchEpisodeGrid = document.getElementById("watch-episode-grid");
   if (watchEpisodeGrid) {
     watchEpisodeGrid.innerHTML = "";
     for (let i = 1; i <= totalEpisodes; i++) {
@@ -485,6 +603,8 @@ async function playEpisode(
     videoSrc = mouseEpisodes[episodeNum - 1];
   } else if (movieTitle === "Twenty Five Twenty One") {
     videoSrc = hailamEpisodes[episodeNum - 1];
+  } else if (movieTitle === "My Liberation Notes") {
+    videoSrc = tudoEpisodes[episodeNum - 1];
   } else if (slug && slug !== "") {
     try {
       const response = await fetch(`https://phimapi.com/phim/${slug}`);
@@ -507,7 +627,7 @@ async function playEpisode(
   loadHlsVideo(videoSrc, currentMovieKey);
 }
 
-// Load link m3u8 vào video player + Xử lý xem tiếp
+// Load stream HLS
 function loadHlsVideo(videoSrc, movieKey) {
   const video = document.getElementById("video-player");
   if (!video) return;
@@ -545,8 +665,8 @@ function loadHlsVideo(videoSrc, movieKey) {
 // 4. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH)
 // ==========================================
 
-function handleSearchKey(event) {
-  if (event.key === "Enter") {
+function handleSearch(event) {
+  if (event.key === "Enter" || event.type === "click") {
     executeSearch();
   }
 }
@@ -557,47 +677,73 @@ function executeSearch() {
 
   if (!query) return;
 
-  // Cập nhật từ khóa hiển thị
   const keywordEl = document.getElementById("search-keyword");
   if (keywordEl) {
     keywordEl.innerText = `"${query}"`;
   }
 
-  // Chuyển sang trang kết quả tìm kiếm
   switchPage("search");
 
-  // Lấy tất cả card phim ở trang chủ làm dữ liệu nguồn
-  const allCards = document.querySelectorAll("#page-home .movie-card");
   const searchContainer = document.getElementById("search-container");
-
   if (!searchContainer) return;
   searchContainer.innerHTML = "";
 
-  let matchCount = 0;
+  // Lọc từ mảng dữ liệu gốc thay vì clone DOM cũ để không mất sự kiện
+  const filteredMovies = homeMoviesList.filter(
+    (m) =>
+      m.title.toLowerCase().includes(query) ||
+      m.desc.toLowerCase().includes(query),
+  );
 
-  allCards.forEach((card) => {
-    const titleEl =
-      card.querySelector("h4") || card.querySelector(".hover-title");
-    const title = titleEl ? titleEl.innerText.toLowerCase() : "";
-
-    if (title.includes(query)) {
-      const cloneCard = card.cloneNode(true);
-      searchContainer.appendChild(cloneCard);
-      matchCount++;
-    }
-  });
-
-  // Cập nhật lại UI nút tim yêu thích cho các thẻ vừa clone
-  updateWishlistUI();
-
-  if (matchCount === 0) {
+  if (filteredMovies.length === 0) {
     searchContainer.innerHTML = `
       <div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
         <i class="fa-solid fa-magnifying-glass" style="font-size: 3rem; margin-bottom: 15px;"></i>
         <p>Không tìm thấy phim nào phù hợp với từ khóa "${query}".</p>
       </div>
     `;
+    return;
   }
+
+  filteredMovies.forEach((movie) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        movie.episodes,
+        movie.slug,
+      );
+
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${movie.title}" onerror="this.src='https://picsum.photos/350/500'" />
+      <h4>${movie.title}</h4>
+      <div class="movie-hover-card">
+        <img src="${movie.poster}" alt="${movie.title}" class="hover-banner" onerror="this.src='https://picsum.photos/350/500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${movie.title}</h3>
+          <div class="hover-actions">
+            <button class="btn-hover play">
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button 
+              class="btn-hover icon" 
+              title="Yêu thích"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${movie.title.replace(/'/g, "\\'")}', poster: '${movie.poster}', desc: '${(movie.desc || "").replace(/'/g, "\\'")}', episodes: ${movie.episodes || 20}, slug: '${movie.slug || ""}'})"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p class="hover-genres">${movie.desc || ""}</p>
+        </div>
+      </div>
+    `;
+    searchContainer.appendChild(card);
+  });
+
+  updateWishlistUI();
 }
 
 // ==========================================
@@ -627,42 +773,20 @@ function switchPage(pageId) {
     window.scrollTo(0, 0);
   }
 
-  // Render lại danh sách yêu thích nếu chuyển sang trang wishlist
   if (pageId === "wishlist") {
     renderWishlistPage();
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Khởi tạo Auto Slider cho Hero Banner
+  // 1. Render danh sách phim ra Trang chủ
+  renderHomePageMovies();
+
+  // 2. Khởi tạo Auto Slider cho Hero Banner
   initHeroSlider();
 
-  // Khởi tạo icon trái tim trên các card phim
-  updateWishlistUI();
-
-  // Bấm Logo -> Về trang chủ
-  const logo = document.querySelector(".logo");
-  if (logo) {
-    logo.addEventListener("click", (e) => {
-      e.preventDefault();
-      switchPage("home");
-    });
-  }
-
-  // Lắng nghe sự kiện Tìm kiếm
-  const searchInput = document.getElementById("search-input");
-  if (searchInput) {
-    searchInput.addEventListener("keypress", handleSearchKey);
-  }
-
-  const searchBtn = document.getElementById("search-btn");
-  if (searchBtn) {
-    searchBtn.addEventListener("click", executeSearch);
-  }
-
-  // Xử lý Video Player
+  // 3. Xử lý Video Player & Tiến trình xem
   const video = document.getElementById("video-player");
-
   if (video) {
     let lastSavedTime = 0;
 
@@ -672,7 +796,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem(`watch_time_${currentMovieKey}`, currentTime);
       }
 
-      // Lưu tiến trình về backend mỗi 10 giây
       if (currentTime - lastSavedTime >= 10) {
         saveWatchProgress(currentMovieKey, currentTime, video.duration);
         lastSavedTime = currentTime;

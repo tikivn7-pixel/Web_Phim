@@ -1,0 +1,14 @@
+{
+  "id": "moving",
+  "title": "Moving",
+  "subtitle": "Đội Thiếu Niên Siêu Năng",
+  "poster": "Img/Moving.jpg",
+  "banner": "Img/Moving.jpg",
+  "desc": "Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon học cùng trường trung học.",
+  "rating": 8.6,
+  "ageRating": "T18",
+  "year": 2023,
+  "episodes": 20,
+  "genres": ["Hành động", "Siêu năng lực", "Viễn tưởng"],
+  "slug": "doi-thieu-nien-sieu-dang"
+}

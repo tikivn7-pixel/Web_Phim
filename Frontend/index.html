@@ -27,7 +27,7 @@
         <li onclick="switchPage('watch')">Xem phim</li>
       </ul>
 
-      <!-- thanh tìm kiếm -->
+      <!-- Thanh tìm kiếm -->
       <div class="search-box">
         <input
           type="text"
@@ -41,7 +41,7 @@
       </div>
     </nav>
 
-    <!-- TRANG TÌM KIẾM (HIỂN THỊ KẾT QUẢ TÌM KIẾM) -->
+    <!-- TRANG TÌM KIẾM -->
     <section id="page-search" class="page">
       <div class="slider-section">
         <h2>
@@ -57,42 +57,17 @@
     <!-- TRANG CHỦ -->
     <section id="page-home" class="page active">
       <!-- HERO BANNER -->
-      <div class="hero-banner">
+      <div class="hero-banner" id="hero-banner">
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <span class="badge">Phim Nổi Bật</span>
-          <h1>Cyberpunk: Edgerunners</h1>
-          <p>
-            Một câu chuyện nghẹt thở về đứa con đường phố tại Night City đầy cạm
-            bẫy.
-          </p>
+          <h1 id="hero-title">Đang tải...</h1>
+          <p id="hero-desc">Đang cập nhật nội dung phim...</p>
           <div class="hero-buttons">
-            <button
-              class="btn btn-primary"
-              onclick="
-                showDetail(
-                  'Cyberpunk: Edgerunners',
-                  'https://picsum.photos/350/500?random=10',
-                  'Nội dung phim xoay quanh David Martinez...',
-                  10,
-                  '',
-                )
-              "
-            >
+            <button class="btn btn-primary" id="hero-play-btn">
               <i class="fa-solid fa-play"></i> Xem ngay
             </button>
-            <button
-              class="btn btn-secondary"
-              onclick="
-                showDetail(
-                  'Cyberpunk: Edgerunners',
-                  'https://picsum.photos/350/500?random=10',
-                  'Nội dung phim xoay quanh David Martinez...',
-                  10,
-                  '',
-                )
-              "
-            >
+            <button class="btn btn-secondary" id="hero-info-btn">
               <i class="fa-solid fa-circle-info"></i> Thông tin
             </button>
           </div>
@@ -102,487 +77,13 @@
       <!-- SLIDER PHIM MỚI -->
       <div class="slider-section">
         <h2>Phim Mới Cập Nhật</h2>
-        <div class="movie-slider">
-          <!-- 1. Moving -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Moving',
-                'Img/Moving.jpg',
-                'Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon học cùng trường trung học.',
-                20,
-                'doi-thieu-nien-sieu-dang',
-              )
-            "
-          >
-            <img src="Img/Moving.jpg" alt="Moving" />
-            <h4>Moving</h4>
-
-            <div class="movie-hover-card">
-              <img src="Img/Moving.jpg" alt="Moving" class="hover-banner" />
-              <div class="hover-content">
-                <h3 class="hover-title">Moving</h3>
-                <p class="hover-subtitle">Đội Thiếu Niên Siêu Năng</p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Moving', 'doi-thieu-nien-sieu-dang', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Moving',
-                        poster: 'Img/Moving.jpg',
-                        desc: 'Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon học cùng trường trung học.',
-                        episodes: 20,
-                        slug: 'doi-thieu-nien-sieu-dang',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Moving',
-                        'Img/Moving.jpg',
-                        'Nội dung bộ phim xoay quanh câu chuyện...',
-                        20,
-                        'doi-thieu-nien-sieu-dang',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 8.6</span>
-                  <span class="badge-tag">T18</span>
-                  <span class="badge-tag">2023</span>
-                  <span class="badge-tag">20 Tập</span>
-                </div>
-                <p class="hover-genres">
-                  Hành động • Siêu năng lực • Viễn tưởng
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2. Can this love be translated -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Can this love be translated',
-                'Img/Can_This_Love_Be_Translated.png',
-                'Đi khắp thế giới để quay chương trình truyền hình...',
-                12,
-                '',
-              )
-            "
-          >
-            <img
-              src="Img/Can_This_Love_Be_Translated.png"
-              alt="Can this love be translated"
-            />
-            <h4>Can this love be translated</h4>
-
-            <div class="movie-hover-card">
-              <img
-                src="Img/Can_This_Love_Be_Translated.png"
-                alt="Can this love be translated"
-                class="hover-banner"
-              />
-              <div class="hover-content">
-                <h3 class="hover-title">Can this love be translated</h3>
-                <p class="hover-subtitle">
-                  Tình Yêu Này Có Thể Phiên Dịch Không?
-                </p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Can this love be translated', '', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Can this love be translated',
-                        poster: 'Img/Can_This_Love_Be_Translated.png',
-                        desc: 'Đi khắp thế giới để quay chương trình truyền hình...',
-                        episodes: 12,
-                        slug: '',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Can this love be translated',
-                        'Img/Can_This_Love_Be_Translated.png',
-                        'Đi khắp thế giới...',
-                        12,
-                        '',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 8.1</span>
-                  <span class="badge-tag">T13</span>
-                  <span class="badge-tag">2024</span>
-                  <span class="badge-tag">12 Tập</span>
-                </div>
-                <p class="hover-genres">Lãng mạn • Hài hước</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. Queen of Tears -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Queen of tears',
-                'Img/QueenOfTears.jpg',
-                'Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị...',
-                16,
-                '',
-              )
-            "
-          >
-            <img src="Img/QueenOfTears.jpg" alt="Queen Of tears" />
-            <h4>Queen of tears</h4>
-
-            <div class="movie-hover-card">
-              <img
-                src="Img/QueenOfTears.jpg"
-                alt="Queen Of tears"
-                class="hover-banner"
-              />
-              <div class="hover-content">
-                <h3 class="hover-title">Queen of tears</h3>
-                <p class="hover-subtitle">Nữ Hoàng Nước Mắt</p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Queen of tears', '', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Queen of tears',
-                        poster: 'Img/QueenOfTears.jpg',
-                        desc: 'Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị...',
-                        episodes: 16,
-                        slug: '',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Queen of tears',
-                        'Img/QueenOfTears.jpg',
-                        'Nữ hoàng cửa hàng bách hóa...',
-                        16,
-                        '',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 8.3</span>
-                  <span class="badge-tag">T16</span>
-                  <span class="badge-tag">2024</span>
-                  <span class="badge-tag">16 Tập</span>
-                </div>
-                <p class="hover-genres">Chính kịch • Lãng mạn</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Mouse -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Mouse',
-                'Img/Mouse.jpg',
-                'Phim xoay quanh cuộc truy đuổi giữa cảnh sát và tên sát nhân biến thái...',
-                20,
-                '',
-              )
-            "
-          >
-            <img src="Img/Mouse.jpg" alt="Mouse" />
-            <h4>Mouse</h4>
-
-            <div class="movie-hover-card">
-              <img src="Img/Mouse.jpg" alt="Mouse" class="hover-banner" />
-              <div class="hover-content">
-                <h3 class="hover-title">Mouse</h3>
-                <p class="hover-subtitle">Kẻ Săn Người</p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Mouse', '', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Mouse',
-                        poster: 'Img/Mouse.jpg',
-                        desc: 'Phim xoay quanh cuộc truy đuổi giữa cảnh sát...',
-                        episodes: 20,
-                        slug: '',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Mouse',
-                        'Img/Mouse.jpg',
-                        'Phim xoay quanh cuộc truy đuổi...',
-                        20,
-                        '',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 8.7</span>
-                  <span class="badge-tag">T18</span>
-                  <span class="badge-tag">2021</span>
-                  <span class="badge-tag">20 Tập</span>
-                </div>
-                <p class="hover-genres">Trinh thám • Hình sự • Giật gân</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Twenty Five Twenty One -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Twenty Five Twenty One',
-                'Img/2521.jpg',
-                'Tại thời điểm mà những ước mơ dường như xa tầm với...',
-                16,
-                '',
-              )
-            "
-          >
-            <img src="Img/2521.jpg" alt="Twenty Five Twenty One" />
-            <h4>Twenty Five Twenty One</h4>
-
-            <div class="movie-hover-card">
-              <img
-                src="Img/2521.jpg"
-                alt="Twenty Five Twenty One"
-                class="hover-banner"
-              />
-              <div class="hover-content">
-                <h3 class="hover-title">Twenty Five Twenty One</h3>
-                <p class="hover-subtitle">Tuổi Hai Lăm, Tuổi Hai Mốt</p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Twenty Five Twenty One', '', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Twenty Five Twenty One',
-                        poster: 'Img/2521.jpg',
-                        desc: 'Tại thời điểm mà những ước mơ...',
-                        episodes: 16,
-                        slug: '',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Twenty Five Twenty One',
-                        'Img/2521.jpg',
-                        'Tại thời điểm mà những ước mơ...',
-                        16,
-                        '',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 7.5</span>
-                  <span class="badge-tag">T16</span>
-                  <span class="badge-tag">2022</span>
-                  <span class="badge-tag">16 Tập</span>
-                </div>
-                <p class="hover-genres">Chính Kịch</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. Cuộc Chiến Cuối Cùng -->
-          <div
-            class="movie-card"
-            onclick="
-              showDetail(
-                'Cuộc Chiến Cuối Cùng',
-                'https://picsum.photos/300/450?random=6',
-                'Trận chiến nảy lửa quyết định vận mệnh...',
-                8,
-                '',
-              )
-            "
-          >
-            <img
-              src="https://picsum.photos/300/450?random=6"
-              alt="Cuộc Chiến Cuối Cùng"
-            />
-            <h4>Cuộc Chiến Cuối Cùng</h4>
-
-            <div class="movie-hover-card">
-              <img
-                src="https://picsum.photos/300/450?random=6"
-                alt="Cuộc Chiến Cuối Cùng"
-                class="hover-banner"
-              />
-              <div class="hover-content">
-                <h3 class="hover-title">Cuộc Chiến Cuối Cùng</h3>
-                <p class="hover-subtitle">The Final Battle</p>
-                <div class="hover-actions">
-                  <button
-                    class="btn-hover play"
-                    onclick="
-                      event.stopPropagation();
-                      watchEpisode('Cuộc Chiến Cuối Cùng', '', 1);
-                    "
-                  >
-                    <i class="fa-solid fa-play"></i> Xem ngay
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Yêu thích"
-                    onclick="
-                      event.stopPropagation();
-                      toggleWishlist({
-                        title: 'Cuộc Chiến Cuối Cùng',
-                        poster: 'https://picsum.photos/300/450?random=6',
-                        desc: 'Trận chiến nảy lửa...',
-                        episodes: 8,
-                        slug: '',
-                      });
-                    "
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                  <button
-                    class="btn-hover icon"
-                    title="Chi tiết"
-                    onclick="
-                      event.stopPropagation();
-                      showDetail(
-                        'Cuộc Chiến Cuối Cùng',
-                        'https://picsum.photos/300/450?random=6',
-                        'Trận chiến nảy lửa...',
-                        8,
-                        '',
-                      );
-                    "
-                  >
-                    <i class="fa-solid fa-circle-info"></i>
-                  </button>
-                </div>
-                <div class="hover-tags">
-                  <span class="badge-tag imdb">IMDb 8.0</span>
-                  <span class="badge-tag">T13</span>
-                  <span class="badge-tag">2024</span>
-                  <span class="badge-tag">8 Tập</span>
-                </div>
-                <p class="hover-genres">Chiến tranh • Viễn tưởng</p>
-              </div>
-            </div>
-          </div>
+        <div class="movie-slider" id="home-movie-slider">
+          <!-- Phim sẽ tự động render vào đây từ JSON qua script.js -->
         </div>
       </div>
     </section>
 
-    <!-- TRANG WISHLIST (DANH SÁCH CỦA TÔI) -->
+    <!-- TRANG WISHLIST -->
     <section id="page-wishlist" class="page">
       <div class="slider-section">
         <h2>Danh Sách Phim Yêu Thích</h2>
@@ -596,22 +97,19 @@
     <section id="page-detail" class="page">
       <div class="detail-container">
         <div class="detail-poster">
-          <img id="detail-poster-img" src="Img/Moving.jpg" alt="Poster phim" />
+          <img id="detail-poster-img" src="" alt="Poster phim" />
         </div>
         <div class="detail-info">
-          <h1 id="detail-title">Moving</h1>
+          <h1 id="detail-title">--</h1>
           <div class="meta">
-            <span
-              ><i class="fa-solid fa-star"></i>
-              <span id="detail-rating">8.6</span>/10</span
-            >
-            <span id="detail-year">2023</span>
-            <span id="detail-episodes-count">20 Tập</span>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <span id="detail-rating">--</span>/10
+            </span>
+            <span id="detail-year">----</span>
+            <span id="detail-episodes-count">-- Tập</span>
           </div>
-          <p class="description" id="detail-desc">
-            Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee
-            Soo và Lee Gang Hoon...
-          </p>
+          <p class="description" id="detail-desc">Đang tải thông tin phim...</p>
           <div class="credits">
             <p>
               <strong>Đạo diễn:</strong>
@@ -623,7 +121,7 @@
             </p>
             <p>
               <strong>Thể loại:</strong>
-              <span id="detail-genres">Hành động, Viễn tưởng</span>
+              <span id="detail-genres">Đang cập nhật</span>
             </p>
           </div>
 
@@ -645,14 +143,13 @@
             id="video-player"
             controls
             playsinline
-            poster="https://picsum.photos/1200/675?random=1"
             style="width: 100%; aspect-ratio: 16/9"
           ></video>
         </div>
 
         <div class="watch-details">
           <h2>
-            <span id="watch-movie-title">Moving</span> -
+            <span id="watch-movie-title">Tên Phim</span> -
             <span id="current-ep-title">Tập 1</span>
           </h2>
           <hr />
