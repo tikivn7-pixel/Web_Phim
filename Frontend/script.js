@@ -150,6 +150,14 @@ let globalMoviesList = [
     group: "sat-thu-nhan-tao",
     partName: "Phần 2",
   },
+  {
+    title: "agent kim reactivated",
+    slug: "agent-kim-reactivated",
+    episodes: 10,
+    poster: IMG_BASE + "AgentKimReactivated.jpg",
+    banner: IMG_BASE + "AgentKimReactivated.jpg",
+    desc: "Một ông bố yêu con từng là lính đặc nhiệm đáng gờm. Quản lý Kim phải đánh thức những kĩ năng đã ngủ quên để cứu con gái trong hành trình báo thù không khoan nhượng.",
+  },
 ];
 
 function escapeHtml(str) {

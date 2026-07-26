@@ -210,6 +210,18 @@ window.allEpisodesData = {
   "the-witch-part-2-the-other-one": [
     "https://s2.phim1280.tv/20230927/fQ1v9nZT/index.m3u8",
   ],
+  "agent-kim-reactivated": [
+    "https://v7.kkphimplayer7.com/20260626/XDh302cJ/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260627/BhTG32Dy/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260703/csWWxkWL/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260704/EnTnmvMI/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260710/TPUySCJa/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260711/x2Eya2cu/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260717/5VkCaX2Q/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260718/7mTfh7DV/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260724/dMYoRbu5/index.m3u8",
+    "https://v7.kkphimplayer7.com/20260725/zY4iLwhX/index.m3u8",
+  ],
 };
 
 window.movieKeyMap = {
@@ -228,4 +240,5 @@ window.movieKeyMap = {
   "weathering with you": "weathering-with-you",
   "the witch: part 1. the subversion": "the-witch-part-1-the-subversion",
   "the witch: part 2. the other one": "the-witch-part-2-the-other-one",
+  "agent kim reactivated": "agent-kim-reactivated",
 };
