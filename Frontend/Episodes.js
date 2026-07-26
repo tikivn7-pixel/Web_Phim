@@ -21,7 +21,7 @@ window.allEpisodesData = {
     "https://s6.kkphimplayer6.com/20250721/u5PkzgGn/index.m3u8",
     "https://s6.kkphimplayer6.com/20250721/lIaOCKDm/index.m3u8",
   ],
-  "can-this-love-be-translated": [
+  canthislovebetranslated: [
     "https://s6.kkphimplayer6.com/20260116/ymhRoCnM/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/pvX1ljQw/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/yNz0hJ7H/index.m3u8",
@@ -35,7 +35,7 @@ window.allEpisodesData = {
     "https://s6.kkphimplayer6.com/20260116/wZVHoJ48/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/bwifHhuJ/index.m3u8",
   ],
-  "queen-of-tears": [
+  queenoftears: [
     "https://s2.phim1280.tv/20240310/Qah2fQHw/index.m3u8",
     "https://s2.phim1280.tv/20240312/ZPQnihpF/index.m3u8",
     "https://s3.phim1280.tv/20240319/bNiRcNFt/index.m3u8",
