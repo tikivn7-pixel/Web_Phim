@@ -132,7 +132,7 @@ let globalMoviesList = [
   },
   {
     title: "The Witch: Part 1. The Subversion",
-    slug: "The-Witch:-Part-1.-The-Subversion",
+    slug: "the-witch-part-1-the-subversion",
     episodes: 1,
     poster: IMG_BASE + "TheWitch1.jpg",
     banner: IMG_BASE + "TheWitch1.jpg",
@@ -142,7 +142,7 @@ let globalMoviesList = [
   },
   {
     title: "The Witch: Part 2. The Other One",
-    slug: "The-Witch:-Part-2.-The-Other-One",
+    slug: "the-witch-part-2-the-other-one",
     episodes: 1,
     poster: IMG_BASE + "TheWitch2.jpg",
     banner: IMG_BASE + "TheWitch2.jpg",
@@ -498,7 +498,6 @@ function showDetail(
   totalEpisodes = 20,
   slug = "",
 ) {
-  // Đóng gói dữ liệu phim vào query parameters để gửi sang detail.html
   const params = new URLSearchParams({
     title: title || "",
     slug: slug || "",
@@ -516,14 +515,12 @@ function playEpisodeDirect(
   totalEpisodes = 20,
   slug = "",
 ) {
-  // Tìm thông tin phim trong danh sách để lấy đúng slug hoặc poster nếu có
   const movieObj =
     globalMoviesList.find(
       (m) => m.title.toLowerCase() === movieTitle.toLowerCase(),
     ) || {};
   const movieSlug = slug || movieObj.slug || "";
 
-  // Đóng gói tham số để chuyển sang watch.html
   const params = new URLSearchParams({
     title: movieTitle,
     ep: episodeNum,
@@ -704,7 +701,6 @@ function renderMovieParts(currentSlug, currentGroup) {
 
   if (!partsSection || !partsGrid) return;
 
-  // Lọc tất cả các phần phim có chung group
   if (!currentGroup) {
     partsSection.style.display = "none";
     return;
@@ -725,7 +721,6 @@ function renderMovieParts(currentSlug, currentGroup) {
     btn.className = `episode-btn ${part.slug === currentSlug ? "active" : ""}`;
     btn.innerText = part.partName || part.title;
     btn.onclick = () => {
-      // Khi bấm vào sẽ load lại trang chi tiết của phần tương ứng
       showDetail(
         part.title,
         part.poster,
@@ -742,10 +737,9 @@ function renderMovieParts(currentSlug, currentGroup) {
 // 5. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH)
 // ==========================================
 function handleSearch(event) {
-  // Kiểm tra nếu phím được bấm là Enter (mã phím 13 hoặc event.key là "Enter")
   if (event.key === "Enter" || event.keyCode === 13) {
-    event.preventDefault(); // Ngăn chặn hành vi mặc định
-    executeSearch(); // Kích hoạt thực thi tìm kiếm ngay lập tức
+    event.preventDefault();
+    executeSearch();
   }
 }
 
@@ -760,7 +754,6 @@ function executeSearch() {
     keywordEl.innerText = `"${query}"`;
   }
 
-  // Tự động chuyển hiển thị sang trang tìm kiếm (page-search)
   document.querySelectorAll(".page").forEach((page) => {
     page.classList.remove("active");
   });

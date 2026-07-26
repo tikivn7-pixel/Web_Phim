@@ -1,18 +1,6 @@
 // ==========================================
 // EPISODES.JS — DỮ LIỆU TẬP PHIM (LINK M3U8 THẬT)
 // ==========================================
-// File này PHẢI được nạp (<script>) TRƯỚC script.js trong index.html,
-// vì script.js đọc window.allEpisodesData và window.movieKeyMap.
-//
-// Cách thêm phim mới:
-// 1. Thêm 1 entry vào allEpisodesData bên dưới, key là "slug-khong-dau"
-//    (hoặc số, như 2521), value là mảng link m3u8 theo đúng thứ tự tập.
-// 2. Thêm 1 dòng vào movieKeyMap: "tên phim viết thường" -> "slug ở bước 1".
-//    Tên phim phải khớp CHÍNH XÁC (viết thường) với `title` trong
-//    globalMoviesList ở script.js.
-// 3. Thêm 1 object phim vào globalMoviesList trong script.js (poster, desc...).
-//    KHÔNG cần điền đúng số tập ở đó nữa — script.js sẽ tự đếm số phần tử
-//    trong mảng bên dưới để suy ra tổng số tập.
 
 window.allEpisodesData = {
   moving: [
@@ -216,10 +204,14 @@ window.allEpisodesData = {
   "weathering-with-you": [
     "https://s6.kkphimplayer6.com/20250526/rSwbuzxl/index.m3u8",
   ],
+  "the-witch-part-1-the-subversion": [
+    "https://s2.phim1280.tv/20231126/5WsGz17O/index.m3u8",
+  ],
+  "the-witch-part-2-the-other-one": [
+    "https://s2.phim1280.tv/20230927/fQ1v9nZT/index.m3u8",
+  ],
 };
 
-// Bảng ánh xạ: tên phim viết thường (khớp với `title` trong
-// globalMoviesList, đã .toLowerCase()) -> key trong allEpisodesData ở trên.
 window.movieKeyMap = {
   "twenty five twenty one": "2521",
   "can this love be translated?": "can-this-love-be-translated",
@@ -234,4 +226,6 @@ window.movieKeyMap = {
   "our beloved summer": "our-beloved-summer",
   "we are trying here": "we-are-trying-here",
   "weathering with you": "weathering-with-you",
+  "the witch: part 1. the subversion": "the-witch-part-1-the-subversion",
+  "the witch: part 2. the other one": "the-witch-part-2-the-other-one",
 };
