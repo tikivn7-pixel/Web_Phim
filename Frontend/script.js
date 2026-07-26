@@ -150,6 +150,14 @@ let globalMoviesList = [
     banner: IMG_BASE + "twinkling watermelon.jpg",
     desc: "Hành trình xuyên không về quá khứ qua một cửa hàng nhạc cụ kỳ lạ.",
   },
+  {
+    title: "weathering with you",
+    slug: "weathering-with-you",
+    episodes: 1,
+    poster: IMG_BASE + "Weathering with You.jpg",
+    banner: IMG_BASE + "Weathering with You.jpg",
+    desc: "Xoay quanh cuộc sống của cậu thiếu niên Morishima Hodaka, ở độ tuổi “trẻ trâu” 16 mùa bánh trưng, sau khi đã quá chán cuộc sống tại vùng đảo xa nên cậu có ý định lên thành phố Tokyo để tìm kiếm thử thách của riêng mình. Thế nhưng, mọi việc dần trở nên không giống như cậu mong tưởng, cuộc sống trở nên túng thiếu giữa thành thị đắt đỏ để rồi cậu co mình lại cùn nỗi cô đơn nhớ nhà. Để có tiền trang trải, Hodaka viết bài cho một tờ tạp chí chuyên tin tức về những hiện tượng lạ thường. &nbsp;Nhưng đúng lúc mới đi làm thì trời cứ mưa mãi khiến cuộc sống xung quanh trở nên ảm đạm và càng não nề. Và rồi như một định mệnh ông trời sắp đặt, trong một con hẻm của thành phố đông đúc và bận rộn, Hodaka gặp một cô gái trẻ tên Hina Amano, một cô gái có khả năng kỳ lạ có thể làm ánh sáng trên bầu trời bừng sáng thông qua những lời nguyện cầu đặc biệt.",
+  },
 ];
 
 // FIX: small helper to escape HTML special characters. Movie titles/desc

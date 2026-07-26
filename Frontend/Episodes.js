@@ -213,6 +213,9 @@ window.allEpisodesData = {
     "https://s5.phim1280.tv/20250326/pQJdT7mt/index.m3u8",
     "https://s5.phim1280.tv/20250326/a91v7VIt/index.m3u8",
   ],
+  "weathering-with-you": [
+    "https://s6.kkphimplayer6.com/20250526/rSwbuzxl/index.m3u8",
+  ];
 };
 
 // Bảng ánh xạ: tên phim viết thường (khớp với `title` trong
@@ -230,4 +233,5 @@ window.movieKeyMap = {
   "the wonderfools": "the-wonderfools",
   "our beloved summer": "our-beloved-summer",
   "we are trying here": "we-are-trying-here",
+  "weathering with you": "weathering-with-you",
 };
