@@ -180,49 +180,58 @@ function saveWatchProgress(movieId, currentTime, duration) {
 }
 
 // ==========================================
-// 2. HERO BANNER AUTO SLIDER (STYLE NETFLIX)
+// 2. TẢI DỮ LIỆU TỪ THƯ MỤC JSON (DATA)
 // ==========================================
 
-const featuredMovies = [
-  {
-    title: "Cyberpunk: Edgerunners",
-    banner: "https://picsum.photos/1600/900?random=99",
-    desc: "Một câu chuyện nghẹt thở về đứa con đường phố tại Night City đầy cạm bẫy.",
-    poster: "https://picsum.photos/350/500?random=10",
-    episodes: 10,
-    slug: "",
-  },
-  {
-    title: "Moving",
-    banner: "Img/Moving.jpg",
-    desc: "Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon học cùng trường trung học với những siêu năng lực bí ẩn.",
-    poster: "Img/Moving.jpg",
-    episodes: 20,
-    slug: "doi-thieu-nien-sieu-dang",
-  },
-  {
-    title: "Queen of tears",
-    banner: "Img/QueenOfTears.jpg",
-    desc: "Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị xoay xở với khủng hoảng hôn nhân, rồi tình yêu bắt đầu nảy nở trở lại theo cách kỳ diệu.",
-    poster: "Img/QueenOfTears.jpg",
-    episodes: 16,
-    slug: "",
-  },
-  {
-    title: "Mouse",
-    banner: "Img/Mouse.jpg",
-    desc: "Phim xoay quanh cuộc truy đuổi giữa cảnh sát Jung Ba Reum và tên sát nhân biến thái đang gây rúng động cả nước.",
-    poster: "Img/Mouse.jpg",
-    episodes: 20,
-    slug: "",
-  },
+const jsonFiles = [
+  "2521.json",
+  "can-this-love-be-translated.json",
+  "mouse.json",
+  "moving.json",
+  "My-Liberation-Notes.json",
+  "queen-of-tears.json",
+  "Resident-Playbook.json",
+  "We-Are-Trying-Here.json",
+  "Teach-You-a-Lesson.json",
+  "Twinkling Watermelon.json",
+  "The WONDERfools.json",
+  "Our Beloved Summer.json",
 ];
+
+let globalMoviesList = [];
+
+async function loadMoviesFromJSON() {
+  const loadedMovies = [];
+
+  for (const filename of jsonFiles) {
+    try {
+      const response = await fetch(`data/${filename}`);
+      if (response.ok) {
+        const movieData = await response.json();
+        loadedMovies.push(movieData);
+      } else {
+        console.warn(`Không tìm thấy file: data/${filename}`);
+      }
+    } catch (err) {
+      console.error(`Lỗi đọc file data/${filename}:`, err);
+    }
+  }
+
+  globalMoviesList = loadedMovies;
+  return globalMoviesList;
+}
+
+// ==========================================
+// 3. HERO BANNER AUTO SLIDER (STYLE NETFLIX)
+// ==========================================
 
 let currentHeroIndex = 0;
 let heroInterval = null;
 
 function updateHeroBanner(index) {
-  const movie = featuredMovies[index];
+  if (!globalMoviesList || globalMoviesList.length === 0) return;
+
+  const movie = globalMoviesList[index % globalMoviesList.length];
   const heroSection = document.getElementById("hero-banner");
   const titleEl = document.getElementById("hero-title");
   const descEl = document.getElementById("hero-desc");
@@ -231,14 +240,13 @@ function updateHeroBanner(index) {
 
   if (!heroSection) return;
 
-  heroSection.style.backgroundImage = `url('${movie.banner}')`;
+  heroSection.style.backgroundImage = `url('${movie.banner || movie.poster}')`;
   if (titleEl) titleEl.innerText = movie.title;
   if (descEl) descEl.innerText = movie.desc;
 
-  // Gán sự kiện trực tiếp cho 2 nút ở Hero
   if (playBtn) {
     playBtn.onclick = () =>
-      playEpisode(movie.title, 1, movie.episodes, movie.slug);
+      playEpisode(movie.title, 1, movie.episodes || 20, movie.slug);
   }
   if (infoBtn) {
     infoBtn.onclick = () =>
@@ -246,7 +254,7 @@ function updateHeroBanner(index) {
         movie.title,
         movie.poster,
         movie.desc,
-        movie.episodes,
+        movie.episodes || 20,
         movie.slug,
       );
   }
@@ -259,7 +267,7 @@ function updateHeroBanner(index) {
 
 function initHeroSlider() {
   const heroSection = document.getElementById("hero-banner");
-  if (!heroSection) return;
+  if (!heroSection || globalMoviesList.length === 0) return;
 
   let dotsContainer = heroSection.querySelector(".hero-dots");
   if (!dotsContainer) {
@@ -270,7 +278,9 @@ function initHeroSlider() {
     dotsContainer.innerHTML = "";
   }
 
-  featuredMovies.forEach((_, index) => {
+  const featured = globalMoviesList.slice(0, 4);
+
+  featured.forEach((_, index) => {
     const dot = document.createElement("div");
     dot.className = `hero-dot ${index === 0 ? "active" : ""}`;
     dot.onclick = () => {
@@ -288,7 +298,9 @@ function initHeroSlider() {
 function startHeroTimer() {
   if (heroInterval) clearInterval(heroInterval);
   heroInterval = setInterval(() => {
-    currentHeroIndex = (currentHeroIndex + 1) % featuredMovies.length;
+    const limit = Math.min(globalMoviesList.length, 4);
+    if (limit === 0) return;
+    currentHeroIndex = (currentHeroIndex + 1) % limit;
     updateHeroBanner(currentHeroIndex);
   }, 5000);
 }
@@ -299,60 +311,116 @@ function resetHeroTimer() {
 }
 
 // ==========================================
-// 3. DỮ LIỆU & RENDER PHIM TRANG CHỦ
+// 4. QUẢN LÝ VÀ RENDER "TIẾP TỤC XEM" (CONTINUE WATCHING)
 // ==========================================
 
-const homeMoviesList = [
-  {
-    title: "Moving",
-    poster: "Img/Moving.jpg",
-    desc: "Nội dung bộ phim xoay quanh câu chuyện về Kim Bong Seok, Jang Hee Soo và Lee Gang Hoon...",
-    episodes: 20,
-    slug: "doi-thieu-nien-sieu-dang",
-  },
-  {
-    title: "Can this love be translated",
-    poster: "Img/Can_This_Love_Be_Translated.png",
-    desc: "Bộ phim tình cảm lãng mạn đầy ngọt ngào.",
-    episodes: 12,
-    slug: "",
-  },
-  {
-    title: "Queen of tears",
-    poster: "Img/QueenOfTears.jpg",
-    desc: "Nữ hoàng cửa hàng bách hóa và hoàng tử siêu thị xoay xở với khủng hoảng hôn nhân.",
-    episodes: 16,
-    slug: "",
-  },
-  {
-    title: "Mouse",
-    poster: "Img/Mouse.jpg",
-    desc: "Cuộc truy đuổi giữa cảnh sát Jung Ba Reum và tên sát nhân biến thái.",
-    episodes: 20,
-    slug: "",
-  },
-  {
-    title: "Twenty Five Twenty One",
-    poster: "Img/2521.jpg",
-    desc: "Câu chuyện thanh xuân tươi đẹp rực rỡ.",
-    episodes: 16,
-    slug: "",
-  },
-  {
-    title: "My Liberation Notes",
-    poster: "Img/Nhat_ky_tu_do_cua_toi.jpg",
-    desc: "Mệt mỏi vì tuổi trưởng thành quá đỗi bình thường và đơn điệu, ba chị em tìm kiếm sự viên mãn và tự do trong cuộc sống tẻ nhạt của họ.",
-    episodes: 16,
-    slug: "",
-  },
-  {
-    title: "My Liberation Notes",
-    poster: "Img/Nhat_ky_tu_do_cua_toi.jpg",
-    desc: "Mệt mỏi vì tuổi trưởng thành quá đỗi bình thường và đơn điệu, ba chị em tìm kiếm sự viên mãn và tự do trong cuộc sống tẻ nhạt của họ.",
-    episodes: 16,
-    slug: "",
-  },
-];
+function getContinueWatchingList() {
+  const list = localStorage.getItem("continue_watching_list");
+  return list ? JSON.parse(list) : [];
+}
+
+function updateContinueWatching(
+  movieTitle,
+  episodeNum,
+  currentTime,
+  duration,
+  poster,
+  desc,
+  totalEpisodes,
+  slug,
+) {
+  if (!duration || duration <= 0 || currentTime <= 5) return;
+
+  let list = getContinueWatchingList();
+  const percentage = (currentTime / duration) * 100;
+
+  // Nếu xem gần xong (> 95%) thì xóa khỏi danh sách tiếp tục xem
+  if (percentage > 95) {
+    list = list.filter((item) => item.title !== movieTitle);
+  } else {
+    const existingIndex = list.findIndex((item) => item.title === movieTitle);
+    const itemData = {
+      title: movieTitle,
+      episode: episodeNum,
+      currentTime: currentTime,
+      duration: duration,
+      progress: percentage.toFixed(1),
+      poster: poster || "",
+      desc: desc || "",
+      totalEpisodes: totalEpisodes || 20,
+      slug: slug || "",
+      updatedAt: Date.now(),
+    };
+
+    if (existingIndex !== -1) {
+      list[existingIndex] = itemData;
+    } else {
+      list.unshift(itemData);
+    }
+  }
+
+  localStorage.setItem("continue_watching_list", JSON.stringify(list));
+  renderContinueWatching();
+}
+
+function renderContinueWatching() {
+  const section = document.getElementById("continue-watching-section");
+  const slider = document.getElementById("continue-watching-slider");
+  if (!section || !slider) return;
+
+  const list = getContinueWatchingList();
+
+  if (list.length === 0) {
+    section.style.display = "none";
+    return;
+  }
+
+  section.style.display = "block";
+  slider.innerHTML = "";
+
+  list.forEach((item) => {
+    // Tìm lại thông tin phim từ danh sách tổng nếu thiếu poster
+    const movieMeta =
+      globalMoviesList.find((m) => m.title === item.title) || {};
+    const posterSrc =
+      item.poster || movieMeta.poster || "https://picsum.photos/350/500";
+
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.style.position = "relative";
+    card.onclick = () =>
+      playEpisode(item.title, item.episode, item.totalEpisodes, item.slug);
+
+    card.innerHTML = `
+      <img src="${posterSrc}" alt="${item.title}" onerror="this.src='https://picsum.photos/350/500'" />
+      <h4>${item.title} - Tập ${item.episode}</h4>
+      
+      <!-- Thanh tiến trình xem dở -->
+      <div style="width: 100%; background: rgba(255,255,255,0.2); height: 4px; border-radius: 2px; margin-top: 5px; overflow: hidden;">
+        <div style="width: ${item.progress}%; background: #e50914; height: 100%;"></div>
+      </div>
+
+      <div class="movie-hover-card">
+        <img src="${posterSrc}" alt="${item.title}" class="hover-banner" onerror="this.src='https://picsum.photos/350/500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${item.title}</h3>
+          <p style="color: #e50914; font-weight: bold; margin-bottom: 5px;">Đang xem: Tập ${item.episode}</p>
+          <div class="hover-actions">
+            <button class="btn-hover play">
+              <i class="fa-solid fa-play"></i> Xem tiếp (${Math.floor(item.progress)}%)
+            </button>
+          </div>
+          <p class="hover-genres">${item.desc || movieMeta.desc || ""}</p>
+        </div>
+      </div>
+    `;
+    slider.appendChild(card);
+  });
+}
+
+// ==========================================
+// 5. DỮ LIỆU EPISODES & NETFLIX PLAYER LOGIC
+// ==========================================
 
 function renderHomePageMovies() {
   const container = document.getElementById("home-movie-slider");
@@ -360,7 +428,7 @@ function renderHomePageMovies() {
 
   container.innerHTML = "";
 
-  homeMoviesList.forEach((movie) => {
+  globalMoviesList.forEach((movie) => {
     const card = document.createElement("div");
     card.className = "movie-card";
     card.onclick = () =>
@@ -368,7 +436,7 @@ function renderHomePageMovies() {
         movie.title,
         movie.poster,
         movie.desc,
-        movie.episodes,
+        movie.episodes || 20,
         movie.slug,
       );
 
@@ -401,127 +469,17 @@ function renderHomePageMovies() {
   updateWishlistUI();
 }
 
-// Server Video Streams
-const movingEpisodes = [
-  "https://s6.kkphimplayer6.com/20250721/ZsGU1yen/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/nanxjdoM/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/NZChSyHi/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/OwLqz4td/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/3trueqtW/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/Rt0DznhK/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/pMSvodOY/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/ul107cYj/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/xmfAAxhm/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/43m4RrFQ/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/8ntg8cr2/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/4FyDbkVh/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/2gvbd2Oe/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/ChCCG6wj/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/b3dra7GF/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/gKDlipbP/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/8w28JAuC/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/Jm7mUJFS/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/u5PkzgGn/index.m3u8",
-  "https://s6.kkphimplayer6.com/20250721/lIaOCKDm/index.m3u8",
-];
-
-const ctlbtranslatedEpisodes = [
-  "https://s6.kkphimplayer6.com/20260116/ymhRoCnM/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/pvX1ljQw/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/yNz0hJ7H/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/muZgTMNV/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/u14xq25m/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/tCI84KRO/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/cFHPaKqj/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/kAmFF3Fl/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/XAGBPAMi/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/hsqedN1m/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/wZVHoJ48/index.m3u8",
-  "https://s6.kkphimplayer6.com/20260116/bwifHhuJ/index.m3u8",
-];
-
-const QueenOfTearsEpisodes = [
-  "https://s2.phim1280.tv/20240310/Qah2fQHw/index.m3u8",
-  "https://s2.phim1280.tv/20240312/ZPQnihpF/index.m3u8",
-  "https://s3.phim1280.tv/20240319/bNiRcNFt/index.m3u8",
-  "https://s3.phim1280.tv/20240319/U1BFxG6z/index.m3u8",
-  "https://s3.phim1280.tv/20240326/g2P520Ty/index.m3u8",
-  "https://s3.phim1280.tv/20240326/mAVhoCwN/index.m3u8",
-  "https://s3.phim1280.tv/20240402/euu7JogT/index.m3u8",
-  "https://s3.phim1280.tv/20240402/BwDmbFnW/index.m3u8",
-  "https://s3.phim1280.tv/20240407/cGzlUNId/index.m3u8",
-  "https://s3.phim1280.tv/20240408/jdNwd792/index.m3u8",
-  "https://s3.phim1280.tv/20240414/gcohFIJ4/index.m3u8",
-  "https://s3.phim1280.tv/20240416/UHcrZRv1/index.m3u8",
-  "https://s3.phim1280.tv/20240421/9wGXWVsx/index.m3u8",
-  "https://s3.phim1280.tv/20240423/CoeBfqof/index.m3u8",
-  "https://s3.phim1280.tv/20240428/D83pYG42/index.m3u8",
-  "https://s3.phim1280.tv/20240502/SpSMZRJz/index.m3u8",
-];
-
-const mouseEpisodes = [
-  "https://s4.phim1280.tv/20241006/QM4FZCB9/index.m3u8",
-  "https://s4.phim1280.tv/20241006/FebiLXsS/index.m3u8",
-  "https://s4.phim1280.tv/20241006/RqrSEO5O/index.m3u8",
-  "https://s4.phim1280.tv/20241006/dymHYsYX/index.m3u8",
-  "https://s4.phim1280.tv/20241006/MvhVVgoc/index.m3u8",
-  "https://s4.phim1280.tv/20241006/m1GW7HYh/index.m3u8",
-  "https://s4.phim1280.tv/20241006/67mzUfSy/index.m3u8",
-  "https://s4.phim1280.tv/20241006/TdgWao58/index.m3u8",
-  "https://s4.phim1280.tv/20241006/qbujLn2j/index.m3u8",
-  "https://s4.phim1280.tv/20241006/DaddJWvi/index.m3u8",
-  "https://s4.phim1280.tv/20241006/itZuzPTK/index.m3u8",
-  "https://s4.phim1280.tv/20241006/maIKoc1q/index.m3u8",
-  "https://s4.phim1280.tv/20241006/xTMgljSY/index.m3u8",
-  "https://s4.phim1280.tv/20241006/BxftUkoi/index.m3u8",
-  "https://s4.phim1280.tv/20241006/BvXD851D/index.m3u8",
-  "https://s4.phim1280.tv/20241006/3Itg0Tve/index.m3u8",
-  "https://s4.phim1280.tv/20241006/Hn1EANZN/index.m3u8",
-  "https://s4.phim1280.tv/20241006/sQejzukr/index.m3u8",
-  "https://s4.phim1280.tv/20241006/jpI5FwVR/index.m3u8",
-  "https://s4.phim1280.tv/20241006/mqcAXAKE/index.m3u8",
-];
-
-const hailamEpisodes = [
-  "https://s3.phim1280.tv/20240329/19y7gT0X/index.m3u8",
-  "https://s3.phim1280.tv/20240329/5fQQCT40/index.m3u8",
-  "https://s3.phim1280.tv/20240329/rTpaKdpW/index.m3u8",
-  "https://s3.phim1280.tv/20240329/DA6K3oEW/index.m3u8",
-  "https://s3.phim1280.tv/20240329/bXI8vjCU/index.m3u8",
-  "https://s3.phim1280.tv/20240329/tp1y52T1/index.m3u8",
-  "https://s3.phim1280.tv/20240329/3tHpVVtt/index.m3u8",
-  "https://s3.phim1280.tv/20240329/3b6Bb2lM/index.m3u8",
-  "https://s3.phim1280.tv/20240329/Sg4KR5ww/index.m3u8",
-  "https://s3.phim1280.tv/20240329/6dyubBRC/index.m3u8",
-  "https://s3.phim1280.tv/20240329/IKILVIVy/index.m3u8",
-  "https://s3.phim1280.tv/20240329/BrQA5pQG/index.m3u8",
-  "https://s3.phim1280.tv/20240329/F34RNh6M/index.m3u8",
-  "https://s3.phim1280.tv/20240329/0zTxAnrj/index.m3u8",
-  "https://s3.phim1280.tv/20240329/SohCFH2c/index.m3u8",
-  "https://s3.phim1280.tv/20240329/iKY3SYMv/index.m3u8",
-];
-
-const tudoEpisodes = [
-  "https://s3.phim1280.tv/20240601/T0YRlpKj/index.m3u8",
-  "https://s3.phim1280.tv/20240601/icMeowKz/index.m3u8",
-  "https://s3.phim1280.tv/20240601/zYJoiJlC/index.m3u8",
-  "https://s3.phim1280.tv/20240601/j14s8xtK/index.m3u8",
-  "https://s3.phim1280.tv/20240601/hZiW4Ofm/index.m3u8",
-  "https://s3.phim1280.tv/20240601/NlK0PcpX/index.m3u8",
-  "https://s3.phim1280.tv/20240601/pIbHqhEJ/index.m3u8",
-  "https://s3.phim1280.tv/20240601/2cW8UPSk/index.m3u8",
-  "https://s3.phim1280.tv/20240601/WUrAwXIr/index.m3u8",
-  "https://s3.phim1280.tv/20240601/2lcHfOLD/index.m3u8",
-  "https://s3.phim1280.tv/20240601/ke5GnQCx/index.m3u8",
-  "https://s3.phim1280.tv/20240601/P4BgeCm3/index.m3u8",
-  "https://s3.phim1280.tv/20240601/toCvNlpu/index.m3u8",
-  "https://s3.phim1280.tv/20240601/OabLF56j/index.m3u8",
-  "https://s3.phim1280.tv/20240601/kg6vJnZv/index.m3u8",
-  "https://s3.phim1280.tv/20240601/FXp8Ji2Q/index.m3u8",
-];
-
 let hlsPlayer = null;
+let plyrInstance = null;
 let currentMovieKey = "";
+let currentPlayingMeta = {
+  title: "",
+  episode: 1,
+  total: 20,
+  slug: "",
+  poster: "",
+  desc: "",
+};
 
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
@@ -529,7 +487,7 @@ function formatTime(seconds) {
   return `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
-// 1. Hiển thị thông tin trang Chi tiết
+// Hiển thị thông tin trang Chi tiết
 function showDetail(
   title,
   posterSrc,
@@ -562,7 +520,44 @@ function showDetail(
   }
 }
 
-// 2. Hàm phát phim
+// Bật / Tắt Drawer danh sách tập phim
+function toggleEpDrawer() {
+  const drawer = document.getElementById("netflix-ep-drawer");
+  if (drawer) {
+    drawer.classList.toggle("open");
+  }
+}
+
+// Hàm Báo Lỗi / Báo Cáo Sự Cố
+function reportIssue() {
+  const reason = prompt(
+    "Báo cáo sự cố video:\n1. Video không chạy\n2. Mất tiếng / Lỗi vietsub\n3. Sai tập phim\n\nNhập chi tiết sự cố:",
+    "Video bị giật / Không xem được",
+  );
+  if (reason) {
+    alert("Cảm ơn bạn! Báo cáo sự cố đã được gửi tới Quản trị viên.");
+  }
+}
+
+// Render danh sách tập vào Side Drawer trên Player
+function renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug) {
+  const drawerGrid = document.getElementById("drawer-episode-grid");
+  if (!drawerGrid) return;
+
+  drawerGrid.innerHTML = "";
+  for (let i = 1; i <= totalEpisodes; i++) {
+    const btn = document.createElement("button");
+    btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
+    btn.innerText = `Tập ${i}`;
+    btn.onclick = () => {
+      toggleEpDrawer();
+      playEpisode(movieTitle, i, totalEpisodes, slug);
+    };
+    drawerGrid.appendChild(btn);
+  }
+}
+
+// Hàm phát phim
 async function playEpisode(
   movieTitle,
   episodeNum,
@@ -571,7 +566,17 @@ async function playEpisode(
 ) {
   switchPage("watch");
 
+  const movieObj = globalMoviesList.find((m) => m.title === movieTitle) || {};
+
   currentMovieKey = `${movieTitle}_Ep${episodeNum}`;
+  currentPlayingMeta = {
+    title: movieTitle,
+    episode: episodeNum,
+    total: totalEpisodes,
+    slug: slug,
+    poster: movieObj.poster || "",
+    desc: movieObj.desc || "",
+  };
 
   const titleEl = document.getElementById("watch-movie-title");
   const epEl = document.getElementById("current-ep-title");
@@ -579,6 +584,7 @@ async function playEpisode(
   if (titleEl) titleEl.innerText = movieTitle;
   if (epEl) epEl.innerText = `Tập ${episodeNum}`;
 
+  // Render lưới chọn tập bên dưới video
   const watchEpisodeGrid = document.getElementById("watch-episode-grid");
   if (watchEpisodeGrid) {
     watchEpisodeGrid.innerHTML = "";
@@ -591,20 +597,65 @@ async function playEpisode(
     }
   }
 
+  // Render danh sách tập vào Drawer góc phải Plyr
+  renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug);
+
   let videoSrc = "";
 
   if (movieTitle === "Moving") {
-    videoSrc = movingEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof movingEpisodes !== "undefined"
+        ? movingEpisodes[episodeNum - 1]
+        : "";
   } else if (movieTitle === "Can this love be translated") {
-    videoSrc = ctlbtranslatedEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof ctlbtranslatedEpisodes !== "undefined"
+        ? ctlbtranslatedEpisodes[episodeNum - 1]
+        : "";
   } else if (movieTitle === "Queen of tears") {
-    videoSrc = QueenOfTearsEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof QueenOfTearsEpisodes !== "undefined"
+        ? QueenOfTearsEpisodes[episodeNum - 1]
+        : "";
   } else if (movieTitle === "Mouse") {
-    videoSrc = mouseEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof mouseEpisodes !== "undefined" ? mouseEpisodes[episodeNum - 1] : "";
   } else if (movieTitle === "Twenty Five Twenty One") {
-    videoSrc = hailamEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof hailamEpisodes !== "undefined"
+        ? hailamEpisodes[episodeNum - 1]
+        : "";
   } else if (movieTitle === "My Liberation Notes") {
-    videoSrc = tudoEpisodes[episodeNum - 1];
+    videoSrc =
+      typeof tudoEpisodes !== "undefined" ? tudoEpisodes[episodeNum - 1] : "";
+  } else if (movieTitle === "We Are All Trying Here") {
+    videoSrc =
+      typeof weareEpisodes !== "undefined" ? weareEpisodes[episodeNum - 1] : "";
+  } else if (movieTitle === "Resident Playbook") {
+    videoSrc =
+      typeof playbookEpisodes !== "undefined"
+        ? playbookEpisodes[episodeNum - 1]
+        : "";
+  } else if (movieTitle === "Teach You a Lesson") {
+    videoSrc =
+      typeof teachyoualessonEpisodes !== "undefined"
+        ? teachyoualessonEpisodes[episodeNum - 1]
+        : "";
+  } else if (movieTitle === "Twinkling Watermelon") {
+    videoSrc =
+      typeof twinklingwatermelonEpisodes !== "undefined"
+        ? twinklingwatermelonEpisodes[episodeNum - 1]
+        : "";
+  } else if (movieTitle === "The WONDERfools") {
+    videoSrc =
+      typeof wonderfoolsEpisodes !== "undefined"
+        ? wonderfoolsEpisodes[episodeNum - 1]
+        : "";
+  } else if (movieTitle === "Our Beloved Summer") {
+    videoSrc =
+      typeof obSummerEpisodes !== "undefined"
+        ? obSummerEpisodes[episodeNum - 1]
+        : "";
   } else if (slug && slug !== "") {
     try {
       const response = await fetch(`https://phimapi.com/phim/${slug}`);
@@ -627,7 +678,7 @@ async function playEpisode(
   loadHlsVideo(videoSrc, currentMovieKey);
 }
 
-// Load stream HLS
+// Load stream HLS kết hợp Plyr.js Chuyên Nghiệp
 function loadHlsVideo(videoSrc, movieKey) {
   const video = document.getElementById("video-player");
   if (!video) return;
@@ -647,22 +698,166 @@ function loadHlsVideo(videoSrc, movieKey) {
     video.play().catch((err) => console.log("Tự động phát bị chặn:", err));
   };
 
+  const setupPlyr = (qualities) => {
+    if (plyrInstance) plyrInstance.destroy();
+
+    const options = {
+      controls: [
+        "play-large",
+        "play",
+        "rewind",
+        "fast-forward",
+        "progress",
+        "current-time",
+        "duration",
+        "mute",
+        "volume",
+        "captions",
+        "settings",
+        "pip",
+        "airplay",
+        "fullscreen",
+      ],
+      settings: ["quality", "speed"],
+      rewindTime: 10,
+      forwardTime: 10,
+      quality: {
+        default: 0,
+        options: qualities,
+        forced: true,
+        onChange: (newQuality) => {
+          if (!hlsPlayer) return;
+          if (newQuality === 0) {
+            hlsPlayer.currentLevel = -1;
+          } else {
+            hlsPlayer.levels.forEach((level, index) => {
+              if (level.height === newQuality) {
+                hlsPlayer.currentLevel = index;
+              }
+            });
+          }
+        },
+      },
+      i18n: {
+        qualityLabel: { 0: "Tự động" },
+      },
+    };
+
+    plyrInstance = new Plyr(video, options);
+
+    setTimeout(() => {
+      const controls = document.querySelector(".plyr__controls");
+      if (controls && !document.getElementById("netflix-custom-tools")) {
+        const customTools = document.createElement("div");
+        customTools.id = "netflix-custom-tools";
+        customTools.className = "netflix-custom-tools";
+        customTools.innerHTML = `
+          <button type="button" class="plyr__control" title="Tập tiếp theo" onclick="playNextEpisode()">
+            <i class="fa-solid fa-forward-step"></i>
+          </button>
+          <button type="button" class="plyr__control" title="Danh sách tập" onclick="toggleEpDrawer()">
+            <i class="fa-solid fa-list"></i>
+          </button>
+          <button type="button" class="plyr__control" title="Báo cáo sự cố" onclick="reportIssue()">
+            <i class="fa-solid fa-flag"></i>
+          </button>
+        `;
+        const settingsBtn = controls.querySelector('[data-plyr="settings"]');
+        if (settingsBtn) {
+          controls.insertBefore(customTools, settingsBtn);
+        } else {
+          controls.appendChild(customTools);
+        }
+      }
+    }, 300);
+
+    // Gắn sự kiện theo dõi tiến trình & cập nhật "Tiếp tục xem"
+    let lastSavedTime = 0;
+    plyrInstance.on("timeupdate", () => {
+      const currentTime = video.currentTime;
+      if (movieKey && currentTime > 5) {
+        localStorage.setItem(`watch_time_${movieKey}`, currentTime);
+
+        // Cập nhật vào danh sách Continue Watching mỗi 3 giây
+        if (currentTime - lastSavedTime >= 3) {
+          updateContinueWatching(
+            currentPlayingMeta.title,
+            currentPlayingMeta.episode,
+            currentTime,
+            video.duration,
+            currentPlayingMeta.poster,
+            currentPlayingMeta.desc,
+            currentPlayingMeta.total,
+            currentPlayingMeta.slug,
+          );
+          lastSavedTime = currentTime;
+        }
+      }
+
+      if (currentTime - lastSavedTime >= 10) {
+        saveWatchProgress(movieKey, currentTime, video.duration);
+      }
+    });
+
+    plyrInstance.on("pause", () => {
+      if (movieKey && video.currentTime > 5) {
+        localStorage.setItem(`watch_time_${movieKey}`, video.currentTime);
+        updateContinueWatching(
+          currentPlayingMeta.title,
+          currentPlayingMeta.episode,
+          video.currentTime,
+          video.duration,
+          currentPlayingMeta.poster,
+          currentPlayingMeta.desc,
+          currentPlayingMeta.total,
+          currentPlayingMeta.slug,
+        );
+      }
+      saveWatchProgress(movieKey, video.currentTime, video.duration);
+    });
+
+    plyrInstance.on("ended", () => {
+      playNextEpisode();
+    });
+  };
+
   if (typeof Hls !== "undefined" && Hls.isSupported()) {
     if (hlsPlayer) hlsPlayer.destroy();
     hlsPlayer = new Hls();
     hlsPlayer.loadSource(videoSrc);
     hlsPlayer.attachMedia(video);
+
     hlsPlayer.on(Hls.Events.MANIFEST_PARSED, () => {
+      const availableQualities = hlsPlayer.levels.map((l) => l.height);
+      availableQualities.unshift(0);
+
+      setupPlyr(availableQualities);
       startPlay();
     });
   } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
     video.src = videoSrc;
+    setupPlyr([0]);
     startPlay();
   }
 }
 
+// Chuyển sang Tập tiếp theo
+function playNextEpisode() {
+  if (currentPlayingMeta.episode < currentPlayingMeta.total) {
+    const nextEp = currentPlayingMeta.episode + 1;
+    playEpisode(
+      currentPlayingMeta.title,
+      nextEp,
+      currentPlayingMeta.total,
+      currentPlayingMeta.slug,
+    );
+  } else {
+    alert("Bạn đã xem hết tập cuối cùng của bộ phim này!");
+  }
+}
+
 // ==========================================
-// 4. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH)
+// 6. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH)
 // ==========================================
 
 function handleSearch(event) {
@@ -688,11 +883,10 @@ function executeSearch() {
   if (!searchContainer) return;
   searchContainer.innerHTML = "";
 
-  // Lọc từ mảng dữ liệu gốc thay vì clone DOM cũ để không mất sự kiện
-  const filteredMovies = homeMoviesList.filter(
+  const filteredMovies = globalMoviesList.filter(
     (m) =>
       m.title.toLowerCase().includes(query) ||
-      m.desc.toLowerCase().includes(query),
+      (m.desc && m.desc.toLowerCase().includes(query)),
   );
 
   if (filteredMovies.length === 0) {
@@ -713,7 +907,7 @@ function executeSearch() {
         movie.title,
         movie.poster,
         movie.desc,
-        movie.episodes,
+        movie.episodes || 20,
         movie.slug,
       );
 
@@ -747,7 +941,7 @@ function executeSearch() {
 }
 
 // ==========================================
-// 5. ĐIỀU HƯỚNG SPA & KHỞI TẠO TỔNG THỂ
+// 7. ĐIỀU HƯỚNG SPA & KHỞI TẠO TỔNG THỂ
 // ==========================================
 
 function switchPage(pageId) {
@@ -758,6 +952,16 @@ function switchPage(pageId) {
         localStorage.setItem(
           `watch_time_${currentMovieKey}`,
           video.currentTime,
+        );
+        updateContinueWatching(
+          currentPlayingMeta.title,
+          currentPlayingMeta.episode,
+          video.currentTime,
+          video.duration,
+          currentPlayingMeta.poster,
+          currentPlayingMeta.desc,
+          currentPlayingMeta.total,
+          currentPlayingMeta.slug,
         );
       }
       video.pause();
@@ -773,43 +977,63 @@ function switchPage(pageId) {
     window.scrollTo(0, 0);
   }
 
-  if (pageId === "wishlist") {
+  if (pageId === "home") {
+    renderContinueWatching();
+  } else if (pageId === "wishlist") {
     renderWishlistPage();
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Render danh sách phim ra Trang chủ
+// Phím tắt bàn phím kiểu Netflix
+document.addEventListener("keydown", (e) => {
+  const watchPage = document.getElementById("page-watch");
+  if (!watchPage || !watchPage.classList.contains("active")) return;
+  if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+
+  const video = document.getElementById("video-player");
+  if (!video) return;
+
+  switch (e.key.toLowerCase()) {
+    case " ":
+    case "k":
+      e.preventDefault();
+      if (plyrInstance) plyrInstance.togglePlay();
+      break;
+    case "f":
+      e.preventDefault();
+      if (plyrInstance) plyrInstance.fullscreen.toggle();
+      break;
+    case "m":
+      e.preventDefault();
+      if (plyrInstance) plyrInstance.muted = !plyrInstance.muted;
+      break;
+    case "arrowleft":
+    case "j":
+      e.preventDefault();
+      if (plyrInstance) plyrInstance.rewind(10);
+      break;
+    case "arrowright":
+    case "l":
+      e.preventDefault();
+      if (plyrInstance) plyrInstance.forward(10);
+      break;
+    case "n":
+      e.preventDefault();
+      playNextEpisode();
+      break;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  // 1. Tải toàn bộ file JSON theo đúng tên file trên máy
+  await loadMoviesFromJSON();
+
+  // 2. Render danh sách phim ra Trang chủ
   renderHomePageMovies();
 
-  // 2. Khởi tạo Auto Slider cho Hero Banner
+  // 3. Render khối "Tiếp tục xem" nếu có
+  renderContinueWatching();
+
+  // 4. Khởi tạo Auto Slider cho Hero Banner
   initHeroSlider();
-
-  // 3. Xử lý Video Player & Tiến trình xem
-  const video = document.getElementById("video-player");
-  if (video) {
-    let lastSavedTime = 0;
-
-    video.addEventListener("timeupdate", () => {
-      const currentTime = video.currentTime;
-      if (currentMovieKey && currentTime > 5) {
-        localStorage.setItem(`watch_time_${currentMovieKey}`, currentTime);
-      }
-
-      if (currentTime - lastSavedTime >= 10) {
-        saveWatchProgress(currentMovieKey, currentTime, video.duration);
-        lastSavedTime = currentTime;
-      }
-    });
-
-    video.addEventListener("pause", () => {
-      if (currentMovieKey && video.currentTime > 5) {
-        localStorage.setItem(
-          `watch_time_${currentMovieKey}`,
-          video.currentTime,
-        );
-      }
-      saveWatchProgress(currentMovieKey, video.currentTime, video.duration);
-    });
-  }
 });

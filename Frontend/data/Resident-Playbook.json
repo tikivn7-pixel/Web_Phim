@@ -1,0 +1,14 @@
+{
+  "id": "Resident Playbook",
+  "title": "Resident Playbook",
+  "subtitle": "Chuyện Đời Bác Sĩ Nội Trú",
+  "poster": "Img/Chuyện Đời Bác Sĩ Nội Trú.jpg",
+  "banner": "Img/Chuyện Đời Bác Sĩ Nội Trú.jpg",
+  "desc": "Các bác sĩ nội trú sản phụ khoa năm nhất tại Bệnh viện Yulje phải vượt qua vô số hỗn loạn trong công việc và đời tư để trở thành những bác sĩ xuất sắc.",
+  "rating": 8.3,
+  "ageRating": "T12",
+  "year": 2025,
+  "episodes": 12,
+  "genres": ["Chính kịch", "Tâm Lý", "Tình Cảm"],
+  "slug": ""
+}

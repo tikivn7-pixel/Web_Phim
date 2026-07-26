@@ -1,3 +1,6 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +11,8 @@
 body {
   background-color: #141414;
   color: #ffffff;
-  overflow-x: hidden; /* Tránh tràn lề x-axis khi card ở rìa màn hình zoom lên */
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 /* ==========================================
@@ -31,6 +35,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   color: #e50914;
+  user-select: none;
 }
 
 .logo span {
@@ -47,9 +52,12 @@ body {
 .nav-links li {
   cursor: pointer;
   transition: color 0.3s;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.nav-links li:hover {
+.nav-links li:hover,
+.nav-links li.active {
   color: #e50914;
 }
 
@@ -128,8 +136,9 @@ body {
 .hero-banner {
   position: relative;
   height: 70vh;
-  background-size: contain;
-  background-position: right center;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: #141414;
   display: flex;
@@ -166,17 +175,24 @@ body {
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .hero-content h1 {
   font-size: 48px;
-  margin: 15px 0;
+  margin: 10px 0 15px 0;
+  line-height: 1.1;
 }
 
 .hero-content p {
   color: #ccc;
   line-height: 1.5;
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .btn {
@@ -187,7 +203,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-right: 10px;
-  transition: opacity 0.3s;
+  transition:
+    opacity 0.3s,
+    transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-primary {
@@ -201,7 +222,8 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: scale(1.02);
 }
 
 /* Hero Dots cho Auto Slider */
@@ -237,21 +259,23 @@ body {
    SLIDER SECTION & MOVIE CARDS
    ========================================== */
 .slider-section {
-  padding: 30px 50px;
+  padding: 20px 50px;
   position: relative;
 }
 
 .slider-section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .movie-slider {
   display: flex;
   gap: 15px;
   overflow-x: auto;
-  /* Đã tăng padding top/bottom để khi popup bung lên không bị cắt xén */
-  padding: 40px 10px;
-  margin: -20px -10px;
+  overflow-y: visible;
+  padding: 25px 10px 35px 10px;
+  margin: -10px -10px;
   scroll-behavior: smooth;
 }
 
@@ -291,53 +315,103 @@ body {
 }
 
 /* ==========================================
-   HOVER POPUP CARD (NETFLIX STYLE - FIXED)
+   HOVER POPUP CARD (ULTRA COMPACT FIX)
    ========================================== */
 .movie-hover-card {
   position: absolute;
-  top: -10px;
+  top: 50%;
   left: 50%;
-  width: 280px;
-  background: #1a1c23;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+  width: 210px; /* Thu nhỏ chiều rộng hơn chút */
+  background: #181818;
+  border-radius: 8px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.95),
+    0 0 1px rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  z-index: 999;
+  z-index: 9999;
 
-  /* Mặc định ẩn */
   opacity: 0;
   visibility: hidden;
-  transform: translate(-50%, 0) scale(0.85);
-  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
 }
 
-/* Hiệu ứng khi Hover */
 .movie-card:hover .movie-hover-card {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -15px) scale(1.08);
+  transform: translate(-50%, -50%) scale(1.05);
   pointer-events: auto;
 }
 
-/* Đã sửa tỉ lệ ảnh banner chuẩn Aspect-Ratio 16:9 chống méo hình */
-.hover-banner {
-  width: 100% !important;
+/* Khối Wrapper Banner Phim */
+.hover-banner-wrapper {
+  position: relative;
+  width: 100%;
   aspect-ratio: 16 / 9;
-  height: auto !important;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 0 !important;
-  display: block;
+  height: 100px; /* Hạ chiều cao xuống 100px siêu gọn */
+  overflow: hidden;
+  background: #000;
 }
 
+.hover-banner {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center;
+  border-radius: 0 !important;
+  display: block;
+  filter: brightness(0.9);
+  transition:
+    filter 0.3s ease,
+    transform 0.5s ease;
+}
+
+.movie-hover-card:hover .hover-banner {
+  filter: brightness(0.75);
+  transform: scale(1.05);
+}
+
+/* Nút Play tròn ở trung tâm Banner */
+.hover-center-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 36px;
+  height: 36px;
+  background-color: rgba(229, 9, 20, 0.9);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  padding-left: 2px;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.6);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 5;
+}
+
+.movie-card:hover .hover-center-play {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hover-center-play:hover {
+  background-color: #e50914;
+  transform: translate(-50%, -50%) scale(1.15) !important;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.9);
+}
+
+/* Nội dung thông tin bên dưới Card Hover */
 .hover-content {
-  padding: 12px;
+  padding: 6px 8px; /* Giảm padding tối đa */
+  background: #181818;
 }
 
 .hover-title {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 2px;
   white-space: nowrap;
@@ -346,83 +420,85 @@ body {
 }
 
 .hover-subtitle {
-  font-size: 12px;
-  color: #aaa;
-  margin-bottom: 12px;
+  font-size: 10px;
+  color: #e50914; /* Đổi màu đỏ nổi bật */
+  font-weight: 600;
+  margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Các nút thao tác trong popup */
 .hover-actions {
   display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 4px;
 }
 
+/* Định dạng nút tương tác */
 .btn-hover {
   border: none;
-  border-radius: 50px;
-  padding: 6px 12px;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  transition:
-    transform 0.2s,
-    background-color 0.2s,
-    color 0.2s;
+  gap: 4px;
+  transition: all 0.2s ease;
 }
 
 .btn-hover.play {
-  background-color: #e50914;
-  color: #fff;
-  border-radius: 6px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  padding: 4px 8px;
   flex: 1;
+  font-weight: 700;
+}
+
+.btn-hover.play:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: scale(1.02);
 }
 
 .btn-hover.icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(42, 42, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 50%;
-}
-
-.btn-hover:hover {
-  transform: scale(1.08);
+  font-size: 10px;
 }
 
 .btn-hover.icon:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
-/* Style nút Yêu Thích khi được bấm Active */
 .btn-hover.icon.active {
   background-color: #e50914;
+  border-color: #e50914;
   color: #fff;
 }
 
-/* Tags điểm số & thông số */
 .hover-tags {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 8px;
 }
 
 .badge-tag {
-  font-size: 11px;
+  font-size: 8px;
   background: rgba(255, 255, 255, 0.12);
   color: #ddd;
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 1px 3px;
+  border-radius: 2px;
   font-weight: 500;
 }
 
@@ -433,14 +509,16 @@ body {
 }
 
 .hover-genres {
-  font-size: 11px;
-  color: #888;
-  margin-top: 4px;
+  display: none !important;
 }
 
 /* ==========================================
    2. TRANG WISHLIST (DANH SÁCH CỦA TÔI)
    ========================================== */
+.wishlist-section {
+  padding: 30px 50px;
+}
+
 #wishlist-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -469,6 +547,11 @@ body {
   width: 320px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+
+.detail-info {
+  flex: 1;
 }
 
 .detail-info h1 {
@@ -481,17 +564,20 @@ body {
   gap: 15px;
   color: #ffc107;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .description {
   color: #ddd;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .credits p {
   margin-bottom: 8px;
   color: #bbb;
+  font-size: 14px;
 }
 
 .episodes-section {
@@ -500,6 +586,7 @@ body {
 
 .episodes-section h3 {
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .episode-grid {
@@ -516,6 +603,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
+  font-weight: 500;
 }
 
 .ep-btn:hover,
@@ -525,7 +613,7 @@ body {
 }
 
 /* ==========================================
-   4. TRANG XEM PHIM (WATCH)
+   4. TRANG XEM PHIM (WATCH & NETFLIX PLAYER)
    ========================================== */
 .watch-container {
   max-width: 1100px;
@@ -533,11 +621,99 @@ body {
   padding: 0 20px;
 }
 
+.video-player-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
 .video-player-wrapper video {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 8px;
+  display: block;
+}
+
+/* Nút Back quay lại trang Chi tiết trên Player */
+.netflix-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.netflix-back-btn:hover {
+  background: #e50914;
+  transform: scale(1.1);
+}
+
+/* Side Drawer Chọn Tập Trượt Từ Lề Phải (Kiểu Netflix) */
+.netflix-ep-drawer {
+  position: absolute;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 20;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.netflix-ep-drawer.open {
+  right: 0;
+}
+
+.netflix-ep-drawer .drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.netflix-ep-drawer .drawer-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.netflix-ep-drawer .drawer-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Nhóm các nút tác vụ tùy chỉnh trong thanh công cụ Plyr */
+.netflix-custom-tools {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5px;
 }
 
 .watch-details {
@@ -545,10 +721,149 @@ body {
 }
 
 .watch-details hr {
-  border-color: #333;
+  border: 0;
+  border-top: 1px solid #333;
   margin: 15px 0;
 }
 
 .watch-details h3 {
   margin-bottom: 15px;
+}
+
+/* ==========================================
+   5. CUSTOM MODAL POPUP (NETFLIX DARK STYLE)
+   ========================================== */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px); /* Làm mờ phần nền đằng sau */
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.custom-modal-box {
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px 28px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(229, 9, 20, 0.15);
+
+  /* Hiệu ứng nảy nhẹ khi mở modal */
+  transform: scale(0.85) translateY(20px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-modal-overlay.active .custom-modal-box {
+  transform: scale(1) translateY(0);
+}
+
+.modal-icon {
+  font-size: 38px;
+  color: #e50914;
+  margin-bottom: 12px;
+}
+
+.custom-modal-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.custom-modal-box p {
+  font-size: 13px;
+  color: #bbbbbb;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.highlight-time {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-modal {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cccccc;
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.btn-confirm {
+  background: #e50914;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.btn-confirm:hover {
+  background: #f40612;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(229, 9, 20, 0.6);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+  .hero-banner {
+    padding: 0 20px;
+    height: 50vh;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .slider-section {
+    padding: 20px;
+  }
+  .detail-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .detail-poster img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }

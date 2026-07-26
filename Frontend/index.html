@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhimForLinh - Xem Phim Online</title>
     <link rel="stylesheet" href="style.css" />
+
     <!-- FontAwesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <!-- HLS.js Library -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <!-- Plyr CSS & JS (Thư viện Video Player Chuyên Nghiệp) -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+    <!-- Tùy chỉnh màu sắc Plyr theo tông Netflix/Đỏ của web -->
+    <style>
+      :root {
+        --plyr-color-main: #e50914; /* Màu chủ đạo đỏ Netflix cho Plyr */
+      }
+      .plyr {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -71,6 +88,18 @@
               <i class="fa-solid fa-circle-info"></i> Thông tin
             </button>
           </div>
+        </div>
+      </div>
+
+      <!-- MỤC TIẾP TỤC XEM (CONTINUE WATCHING) -->
+      <div
+        class="slider-section"
+        id="continue-watching-section"
+        style="display: none"
+      >
+        <h2>Danh sách Tiếp tục xem</h2>
+        <div class="movie-slider" id="continue-watching-slider">
+          <!-- Phim đang xem dở sẽ tự động render vào đây qua script.js -->
         </div>
       </div>
 
@@ -135,19 +164,42 @@
       </div>
     </section>
 
-    <!-- TRANG XEM PHIM -->
+    <!-- TRANG XEM PHIM (NETFLIX PLAYER INTERFACE) -->
     <section id="page-watch" class="page">
       <div class="watch-container">
         <div class="video-player-wrapper">
+          <!-- Video Element chính -->
           <video
             id="video-player"
-            controls
             playsinline
             style="width: 100%; aspect-ratio: 16/9"
           ></video>
+
+          <!-- Nút Back quay lại trang Chi tiết góc trên bên trái -->
+          <button
+            class="netflix-back-btn"
+            onclick="switchPage('detail')"
+            title="Quay lại"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <!-- Drawer chọn tập trượt từ lề phải qua màn hình -->
+          <div id="netflix-ep-drawer" class="netflix-ep-drawer">
+            <div class="drawer-header">
+              <h3>Danh Sách Tập</h3>
+              <button onclick="toggleEpDrawer()">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="episode-grid" id="drawer-episode-grid">
+              <!-- Render danh sách tập đè lên Player -->
+            </div>
+          </div>
         </div>
 
-        <div class="watch-details">
+        <!-- Thông tin tập bên dưới -->
+        <div class="watch-details" style="margin-top: 15px">
           <h2>
             <span id="watch-movie-title">Tên Phim</span> -
             <span id="current-ep-title">Tập 1</span>
@@ -161,7 +213,31 @@
       </div>
     </section>
 
+    <!-- CUSTOM MODAL THÔNG BÁO XEM TIẾP (CĂN GIỮA MÀN HÌNH NETFLIX STYLE) -->
+    <div id="resume-modal" class="custom-modal-overlay">
+      <div class="custom-modal-box">
+        <div class="modal-icon">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <h3>Tiếp tục xem phim?</h3>
+        <p>
+          Bạn đã dừng lại ở phút
+          <span id="modal-resume-time" class="highlight-time">00:00</span>. Bạn
+          có muốn xem tiếp từ vị trí này không?
+        </p>
+        <div class="modal-actions">
+          <button id="btn-modal-cancel" class="btn-modal btn-cancel">
+            Xem từ đầu
+          </button>
+          <button id="btn-modal-confirm" class="btn-modal btn-confirm">
+            Xem tiếp
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- SCRIPT -->
+    <script src="episodes.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
