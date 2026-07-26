@@ -1,4 +1,22 @@
 // ==========================================
+// 0. MAP ÁNH XẠ KEY PHIM CHO EPISODES.JS
+// ==========================================
+const movieKeyMap = {
+  "twenty five twenty one": "2521",
+  "can this love be translated?": "can-this-love-be-translated",
+  mouse: "mouse",
+  moving: "moving",
+  "my liberation notes": "My-Liberation-Notes",
+  "queen of tears": "queen-of-tears",
+  "resident playbook": "Resident-Playbook",
+  "teach you a lesson": "Teach-You-a-Lesson",
+  "twinkling watermelon": "Twinkling Watermelon",
+  "the wonderfools": "The WONDERfools",
+  "our beloved summer": "Our Beloved Summer",
+  "we are trying here": "We-Are-Trying-Here",
+};
+
+// ==========================================
 // 1. CÁC HÀM XỬ LÝ AUTH, WATCHLIST & FAVORITE
 // ==========================================
 
@@ -181,18 +199,18 @@ function saveWatchProgress(movieId, currentTime, duration) {
 // ==========================================
 
 const jsonFiles = [
-  "2521.json",
-  "can-this-love-be-translated.json",
+  "canthislovebetranslated.json",
   "mouse.json",
   "moving.json",
-  "My-Liberation-Notes.json",
-  "queen-of-tears.json",
-  "Resident-Playbook.json",
-  "We-Are-Trying-Here.json",
-  "Teach-You-a-Lesson.json",
-  "Twinkling Watermelon.json",
-  "The WONDERfools.json",
-  "Our Beloved Summer.json",
+  "MyLiberationNotes.json",
+  "OurBelovedSummer.json",
+  "queenoftears.json",
+  "ResidentPlaybook.json",
+  "TeachYouaLesson.json",
+  "TheWONDERfools.json",
+  "TwentyFiveTwentyOne.json",
+  "TwinklingWatermelon.json",
+  "WeAreTryingHere.json",
 ];
 
 let globalMoviesList = [];
@@ -590,25 +608,7 @@ async function playEpisode(
   renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug);
 
   let videoSrc = "";
-
-  // Chuẩn hóa tên phim về chữ thường để ánh xạ chính xác với window.allEpisodesData từ episodes.js
   const cleanTitle = movieTitle ? movieTitle.trim().toLowerCase() : "";
-
-  const movieKeyMap = {
-    moving: "moving",
-    canthislovebetranslated: "can-this-love-be-translated",
-    queenoftears: "queen-of-tears",
-    mouse: "mouse",
-    TwentyFiveTwentyOne: "2521",
-    MyLiberationNotes: "My-Liberation-Notes",
-    WeAreTryingHere: "We-Are-Trying-Here",
-    ResidentPlaybook: "Resident Playbook",
-    TeachYouaLesson: "Teach-You-a-Lesson",
-    TwinklingWatermelon: "Twinkling Watermelon",
-    TheWONDERfools: "The WONDERfools",
-    OurBelovedSummer: "Our Beloved Summer",
-  };
-
   const key = movieKeyMap[cleanTitle];
 
   // 1. Ưu tiên lấy link từ file episodes.js
