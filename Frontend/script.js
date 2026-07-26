@@ -19,7 +19,6 @@ async function login(email, password) {
     }
   } catch (err) {
     console.error("Lỗi đăng nhập:", err);
-    // Không làm gián đoạn trải nghiệm nếu backend local chưa bật
   }
 }
 
@@ -45,13 +44,11 @@ function toggleWishlist(movie) {
   localStorage.setItem("my_wishlist", JSON.stringify(wishlist));
   updateWishlistUI();
 
-  // Chỉ render lại nếu đang ở trang wishlist
   const wishlistPage = document.getElementById("page-wishlist");
   if (wishlistPage && wishlistPage.classList.contains("active")) {
     renderWishlistPage();
   }
 
-  // Đồng bộ Backend nếu có
   toggleFavoriteBackend(movie.title);
 }
 
@@ -180,7 +177,7 @@ function saveWatchProgress(movieId, currentTime, duration) {
 }
 
 // ==========================================
-// 2. TẢI DỮ LIỆU TỪ THƯ MỤC JSON (DATA) - ĐÃ FIX GITHUB PAGES
+// 2. TẢI DỮ LIỆU TỪ THƯ MỤC JSON (DATA)
 // ==========================================
 
 const jsonFiles = [
@@ -205,7 +202,6 @@ async function loadMoviesFromJSON() {
 
   for (const filename of jsonFiles) {
     try {
-      // FIX QUAN TRỌNG: Dùng ./data/ và encodeURIComponent để chạy mượt trên GitHub Pages (Linux Server)
       const safeFilename = encodeURIComponent(filename);
       const response = await fetch(`./data/${safeFilename}`);
 
@@ -314,7 +310,7 @@ function resetHeroTimer() {
 }
 
 // ==========================================
-// 4. QUẢN LÝ VÀ RENDER "TIẾP TỤC XEM" (CONTINUE WATCHING)
+// 4. QUẢN LÝ VÀ RENDER "TIẾP TỤC XEM"
 // ==========================================
 
 function getContinueWatchingList() {
@@ -419,7 +415,7 @@ function renderContinueWatching() {
 }
 
 // ==========================================
-// 5. DỮ LIỆU EPISODES & NETFLIX PLAYER LOGIC
+// 5. RENDER PHIM TRANG CHỦ & PLAYER LOGIC
 // ==========================================
 
 function renderHomePageMovies() {
@@ -595,61 +591,31 @@ async function playEpisode(
 
   let videoSrc = "";
 
-  if (movieTitle === "Moving") {
-    videoSrc =
-      typeof movingEpisodes !== "undefined"
-        ? movingEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Can this love be translated") {
-    videoSrc =
-      typeof ctlbtranslatedEpisodes !== "undefined"
-        ? ctlbtranslatedEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Queen of tears") {
-    videoSrc =
-      typeof QueenOfTearsEpisodes !== "undefined"
-        ? QueenOfTearsEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Mouse") {
-    videoSrc =
-      typeof mouseEpisodes !== "undefined" ? mouseEpisodes[episodeNum - 1] : "";
-  } else if (movieTitle === "Twenty Five Twenty One") {
-    videoSrc =
-      typeof hailamEpisodes !== "undefined"
-        ? hailamEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "My Liberation Notes") {
-    videoSrc =
-      typeof tudoEpisodes !== "undefined" ? tudoEpisodes[episodeNum - 1] : "";
-  } else if (movieTitle === "We Are All Trying Here") {
-    videoSrc =
-      typeof weareEpisodes !== "undefined" ? weareEpisodes[episodeNum - 1] : "";
-  } else if (movieTitle === "Resident Playbook") {
-    videoSrc =
-      typeof playbookEpisodes !== "undefined"
-        ? playbookEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Teach You a Lesson") {
-    videoSrc =
-      typeof teachyoualessonEpisodes !== "undefined"
-        ? teachyoualessonEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Twinkling Watermelon") {
-    videoSrc =
-      typeof twinklingwatermelonEpisodes !== "undefined"
-        ? twinklingwatermelonEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "The WONDERfools") {
-    videoSrc =
-      typeof wonderfoolsEpisodes !== "undefined"
-        ? wonderfoolsEpisodes[episodeNum - 1]
-        : "";
-  } else if (movieTitle === "Our Beloved Summer") {
-    videoSrc =
-      typeof obSummerEpisodes !== "undefined"
-        ? obSummerEpisodes[episodeNum - 1]
-        : "";
-  } else if (slug && slug !== "") {
+  // Bản đồ chuyển đổi từ movieTitle sang key chuẩn trong allEpisodesData (từ episodes.js)
+  const movieKeyMap = {
+    Moving: "moving",
+    "Can this love be translated": "can-this-love-be-translated",
+    "Queen of tears": "queen-of-tears",
+    Mouse: "mouse",
+    "Twenty Five Twenty One": "2521",
+    "My Liberation Notes": "My-Liberation-Notes",
+    "We Are All Trying Here": "We-Are-Trying-Here",
+    "Resident Playbook": "Resident Playbook",
+    "Teach You a Lesson": "Teach-You-a-Lesson",
+    "Twinkling Watermelon": "Twinkling Watermelon",
+    "The WONDERfools": "The WONDERfools",
+    "Our Beloved Summer": "Our Beloved Summer",
+  };
+
+  const key = movieKeyMap[movieTitle];
+
+  // 1. Ưu tiên lấy link từ file episodes.js
+  if (key && window.allEpisodesData && window.allEpisodesData[key]) {
+    videoSrc = window.allEpisodesData[key][episodeNum - 1] || "";
+  }
+
+  // 2. Nếu không có trong episodes.js nhưng có slug thì gọi API dự phòng
+  if (!videoSrc && slug && slug !== "") {
     try {
       const response = await fetch(`https://phimapi.com/phim/${slug}`);
       const data = await response.json();
@@ -664,6 +630,7 @@ async function playEpisode(
     }
   }
 
+  // 3. Nếu vẫn không có nguồn thì dùng stream test mặc định
   if (!videoSrc) {
     videoSrc = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
   }
