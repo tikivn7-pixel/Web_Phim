@@ -591,23 +591,25 @@ async function playEpisode(
 
   let videoSrc = "";
 
-  // Bản đồ chuyển đổi từ movieTitle sang key chuẩn trong allEpisodesData (từ episodes.js)
+  // Chuẩn hóa tên phim về chữ thường để ánh xạ chính xác với window.allEpisodesData từ episodes.js
+  const cleanTitle = movieTitle ? movieTitle.trim().toLowerCase() : "";
+
   const movieKeyMap = {
-    Moving: "moving",
-    "Can this love be translated": "can-this-love-be-translated",
-    "Queen of tears": "queen-of-tears",
-    Mouse: "mouse",
-    "Twenty Five Twenty One": "2521",
-    "My Liberation Notes": "My-Liberation-Notes",
-    "We Are All Trying Here": "We-Are-Trying-Here",
-    "Resident Playbook": "Resident Playbook",
-    "Teach You a Lesson": "Teach-You-a-Lesson",
-    "Twinkling Watermelon": "Twinkling Watermelon",
-    "The WONDERfools": "The WONDERfools",
-    "Our Beloved Summer": "Our Beloved Summer",
+    moving: "moving",
+    "can this love be translated": "can-this-love-be-translated",
+    "queen of tears": "queen-of-tears",
+    mouse: "mouse",
+    "twenty five twenty one": "2521",
+    "my liberation notes": "My-Liberation-Notes",
+    "we are all trying here": "We-Are-Trying-Here",
+    "resident playbook": "Resident Playbook",
+    "teach you a lesson": "Teach-You-a-Lesson",
+    "twinkling watermelon": "Twinkling Watermelon",
+    "the wonderfools": "The WONDERfools",
+    "our beloved summer": "Our Beloved Summer",
   };
 
-  const key = movieKeyMap[movieTitle];
+  const key = movieKeyMap[cleanTitle];
 
   // 1. Ưu tiên lấy link từ file episodes.js
   if (key && window.allEpisodesData && window.allEpisodesData[key]) {
