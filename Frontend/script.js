@@ -596,17 +596,17 @@ async function playEpisode(
 
   const movieKeyMap = {
     moving: "moving",
-    can-this-love-be-translated: "can-this-love-be-translated",
-    queen-of-tears: "queen-of-tears",
+    "can-this-love-be-translated": "can-this-love-be-translated",
+    "queen-of-tears": "queen-of-tears",
     mouse: "mouse",
     2521: "2521",
-    My-Liberation-Notes: "My-Liberation-Notes",
-    We-Are-Trying-Here: "We-Are-Trying-Here",
-    Resident Playbook: "Resident Playbook",
-    Teach-You-a-Lesson: "Teach-You-a-Lesson",
-    Twinkling Watermelon: "Twinkling Watermelon",
-    The WONDERfools: "The WONDERfools",
-    Our Beloved Summer: "Our Beloved Summer",
+    "My-Liberation-Notes": "My-Liberation-Notes",
+    "We-Are-Trying-Here": "We-Are-Trying-Here",
+    "Resident Playbook": "Resident Playbook",
+    "Teach-You-a-Lesson": "Teach-You-a-Lesson",
+    "Twinkling Watermelon": "Twinkling Watermelon",
+    "The WONDERfools": "The WONDERfools",
+    "Our Beloved Summer": "Our Beloved Summer",
   };
 
   const key = movieKeyMap[cleanTitle];
