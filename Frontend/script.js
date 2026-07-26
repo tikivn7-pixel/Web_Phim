@@ -1019,4 +1019,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderContinueWatching();
   initHeroSlider();
 });
-git add .
