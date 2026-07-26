@@ -19,7 +19,7 @@ async function login(email, password) {
     }
   } catch (err) {
     console.error("Lỗi đăng nhập:", err);
-    alert("Không thể kết nối đến máy chủ!");
+    // Không làm gián đoạn trải nghiệm nếu backend local chưa bật
   }
 }
 
@@ -145,8 +145,8 @@ function renderWishlistPage() {
             <button class="btn-hover play">
               <i class="fa-solid fa-play"></i> Xem ngay
             </button>
-            <button 
-              class="btn-hover icon" 
+            <button
+              class="btn-hover icon"
               title="Xóa khỏi danh sách"
               onclick="event.stopPropagation(); toggleWishlist({title: '${movie.title.replace(/'/g, "\\'")}', poster: '${movie.poster}', desc: '${(movie.desc || "").replace(/'/g, "\\'")}', episodes: ${movie.episodes || 20}, slug: '${movie.slug || ""}'})"
             >
@@ -180,7 +180,7 @@ function saveWatchProgress(movieId, currentTime, duration) {
 }
 
 // ==========================================
-// 2. TẢI DỮ LIỆU TỪ THƯ MỤC JSON (DATA)
+// 2. TẢI DỮ LIỆU TỪ THƯ MỤC JSON (DATA) - ĐÃ FIX GITHUB PAGES
 // ==========================================
 
 const jsonFiles = [
@@ -205,15 +205,18 @@ async function loadMoviesFromJSON() {
 
   for (const filename of jsonFiles) {
     try {
-      const response = await fetch(`data/${filename}`);
+      // FIX QUAN TRỌNG: Dùng ./data/ và encodeURIComponent để chạy mượt trên GitHub Pages (Linux Server)
+      const safeFilename = encodeURIComponent(filename);
+      const response = await fetch(`./data/${safeFilename}`);
+
       if (response.ok) {
         const movieData = await response.json();
         loadedMovies.push(movieData);
       } else {
-        console.warn(`Không tìm thấy file: data/${filename}`);
+        console.warn(`Không tìm thấy file: ./data/${filename}`);
       }
     } catch (err) {
-      console.error(`Lỗi đọc file data/${filename}:`, err);
+      console.error(`Lỗi đọc file ./data/${filename}:`, err);
     }
   }
 
@@ -334,7 +337,6 @@ function updateContinueWatching(
   let list = getContinueWatchingList();
   const percentage = (currentTime / duration) * 100;
 
-  // Nếu xem gần xong (> 95%) thì xóa khỏi danh sách tiếp tục xem
   if (percentage > 95) {
     list = list.filter((item) => item.title !== movieTitle);
   } else {
@@ -379,7 +381,6 @@ function renderContinueWatching() {
   slider.innerHTML = "";
 
   list.forEach((item) => {
-    // Tìm lại thông tin phim từ danh sách tổng nếu thiếu poster
     const movieMeta =
       globalMoviesList.find((m) => m.title === item.title) || {};
     const posterSrc =
@@ -394,8 +395,7 @@ function renderContinueWatching() {
     card.innerHTML = `
       <img src="${posterSrc}" alt="${item.title}" onerror="this.src='https://picsum.photos/350/500'" />
       <h4>${item.title} - Tập ${item.episode}</h4>
-      
-      <!-- Thanh tiến trình xem dở -->
+     
       <div style="width: 100%; background: rgba(255,255,255,0.2); height: 4px; border-radius: 2px; margin-top: 5px; overflow: hidden;">
         <div style="width: ${item.progress}%; background: #e50914; height: 100%;"></div>
       </div>
@@ -451,8 +451,8 @@ function renderHomePageMovies() {
             <button class="btn-hover play">
               <i class="fa-solid fa-play"></i> Xem ngay
             </button>
-            <button 
-              class="btn-hover icon" 
+            <button
+              class="btn-hover icon"
               title="Yêu thích"
               onclick="event.stopPropagation(); toggleWishlist({title: '${movie.title.replace(/'/g, "\\'")}', poster: '${movie.poster}', desc: '${(movie.desc || "").replace(/'/g, "\\'")}', episodes: ${movie.episodes || 20}, slug: '${movie.slug || ""}'})"
             >
@@ -487,7 +487,6 @@ function formatTime(seconds) {
   return `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
-// Hiển thị thông tin trang Chi tiết
 function showDetail(
   title,
   posterSrc,
@@ -520,7 +519,6 @@ function showDetail(
   }
 }
 
-// Bật / Tắt Drawer danh sách tập phim
 function toggleEpDrawer() {
   const drawer = document.getElementById("netflix-ep-drawer");
   if (drawer) {
@@ -528,7 +526,6 @@ function toggleEpDrawer() {
   }
 }
 
-// Hàm Báo Lỗi / Báo Cáo Sự Cố
 function reportIssue() {
   const reason = prompt(
     "Báo cáo sự cố video:\n1. Video không chạy\n2. Mất tiếng / Lỗi vietsub\n3. Sai tập phim\n\nNhập chi tiết sự cố:",
@@ -539,7 +536,6 @@ function reportIssue() {
   }
 }
 
-// Render danh sách tập vào Side Drawer trên Player
 function renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug) {
   const drawerGrid = document.getElementById("drawer-episode-grid");
   if (!drawerGrid) return;
@@ -557,7 +553,6 @@ function renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug) {
   }
 }
 
-// Hàm phát phim
 async function playEpisode(
   movieTitle,
   episodeNum,
@@ -584,7 +579,6 @@ async function playEpisode(
   if (titleEl) titleEl.innerText = movieTitle;
   if (epEl) epEl.innerText = `Tập ${episodeNum}`;
 
-  // Render lưới chọn tập bên dưới video
   const watchEpisodeGrid = document.getElementById("watch-episode-grid");
   if (watchEpisodeGrid) {
     watchEpisodeGrid.innerHTML = "";
@@ -597,7 +591,6 @@ async function playEpisode(
     }
   }
 
-  // Render danh sách tập vào Drawer góc phải Plyr
   renderDrawerEpisodes(movieTitle, episodeNum, totalEpisodes, slug);
 
   let videoSrc = "";
@@ -678,7 +671,6 @@ async function playEpisode(
   loadHlsVideo(videoSrc, currentMovieKey);
 }
 
-// Load stream HLS kết hợp Plyr.js Chuyên Nghiệp
 function loadHlsVideo(videoSrc, movieKey) {
   const video = document.getElementById("video-player");
   if (!video) return;
@@ -771,14 +763,12 @@ function loadHlsVideo(videoSrc, movieKey) {
       }
     }, 300);
 
-    // Gắn sự kiện theo dõi tiến trình & cập nhật "Tiếp tục xem"
     let lastSavedTime = 0;
     plyrInstance.on("timeupdate", () => {
       const currentTime = video.currentTime;
       if (movieKey && currentTime > 5) {
         localStorage.setItem(`watch_time_${movieKey}`, currentTime);
 
-        // Cập nhật vào danh sách Continue Watching mỗi 3 giây
         if (currentTime - lastSavedTime >= 3) {
           updateContinueWatching(
             currentPlayingMeta.title,
@@ -841,7 +831,6 @@ function loadHlsVideo(videoSrc, movieKey) {
   }
 }
 
-// Chuyển sang Tập tiếp theo
 function playNextEpisode() {
   if (currentPlayingMeta.episode < currentPlayingMeta.total) {
     const nextEp = currentPlayingMeta.episode + 1;
@@ -922,8 +911,8 @@ function executeSearch() {
             <button class="btn-hover play">
               <i class="fa-solid fa-play"></i> Xem ngay
             </button>
-            <button 
-              class="btn-hover icon" 
+            <button
+              class="btn-hover icon"
               title="Yêu thích"
               onclick="event.stopPropagation(); toggleWishlist({title: '${movie.title.replace(/'/g, "\\'")}', poster: '${movie.poster}', desc: '${(movie.desc || "").replace(/'/g, "\\'")}', episodes: ${movie.episodes || 20}, slug: '${movie.slug || ""}'})"
             >
@@ -1025,15 +1014,9 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // 1. Tải toàn bộ file JSON theo đúng tên file trên máy
   await loadMoviesFromJSON();
-
-  // 2. Render danh sách phim ra Trang chủ
   renderHomePageMovies();
-
-  // 3. Render khối "Tiếp tục xem" nếu có
   renderContinueWatching();
-
-  // 4. Khởi tạo Auto Slider cho Hero Banner
   initHeroSlider();
 });
+git add .
