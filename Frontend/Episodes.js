@@ -1,3 +1,19 @@
+// ==========================================
+// EPISODES.JS — DỮ LIỆU TẬP PHIM (LINK M3U8 THẬT)
+// ==========================================
+// File này PHẢI được nạp (<script>) TRƯỚC script.js trong index.html,
+// vì script.js đọc window.allEpisodesData và window.movieKeyMap.
+//
+// Cách thêm phim mới:
+// 1. Thêm 1 entry vào allEpisodesData bên dưới, key là "slug-khong-dau"
+//    (hoặc số, như 2521), value là mảng link m3u8 theo đúng thứ tự tập.
+// 2. Thêm 1 dòng vào movieKeyMap: "tên phim viết thường" -> "slug ở bước 1".
+//    Tên phim phải khớp CHÍNH XÁC (viết thường) với `title` trong
+//    globalMoviesList ở script.js.
+// 3. Thêm 1 object phim vào globalMoviesList trong script.js (poster, desc...).
+//    KHÔNG cần điền đúng số tập ở đó nữa — script.js sẽ tự đếm số phần tử
+//    trong mảng bên dưới để suy ra tổng số tập.
+
 window.allEpisodesData = {
   moving: [
     "https://s6.kkphimplayer6.com/20250721/ZsGU1yen/index.m3u8",
@@ -21,7 +37,7 @@ window.allEpisodesData = {
     "https://s6.kkphimplayer6.com/20250721/u5PkzgGn/index.m3u8",
     "https://s6.kkphimplayer6.com/20250721/lIaOCKDm/index.m3u8",
   ],
-  canthislovebetranslated: [
+  "can-this-love-be-translated": [
     "https://s6.kkphimplayer6.com/20260116/ymhRoCnM/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/pvX1ljQw/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/yNz0hJ7H/index.m3u8",
@@ -35,7 +51,7 @@ window.allEpisodesData = {
     "https://s6.kkphimplayer6.com/20260116/wZVHoJ48/index.m3u8",
     "https://s6.kkphimplayer6.com/20260116/bwifHhuJ/index.m3u8",
   ],
-  queenoftears: [
+  "queen-of-tears": [
     "https://s2.phim1280.tv/20240310/Qah2fQHw/index.m3u8",
     "https://s2.phim1280.tv/20240312/ZPQnihpF/index.m3u8",
     "https://s3.phim1280.tv/20240319/bNiRcNFt/index.m3u8",
@@ -93,7 +109,7 @@ window.allEpisodesData = {
     "https://s3.phim1280.tv/20240329/SohCFH2c/index.m3u8",
     "https://s3.phim1280.tv/20240329/iKY3SYMv/index.m3u8",
   ],
-  "My-Liberation-Notes": [
+  "my-liberation-notes": [
     "https://s3.phim1280.tv/20240601/T0YRlpKj/index.m3u8",
     "https://s3.phim1280.tv/20240601/icMeowKz/index.m3u8",
     "https://s3.phim1280.tv/20240601/zYJoiJlC/index.m3u8",
@@ -111,7 +127,7 @@ window.allEpisodesData = {
     "https://s3.phim1280.tv/20240601/kg6vJnZv/index.m3u8",
     "https://s3.phim1280.tv/20240601/FXp8Ji2Q/index.m3u8",
   ],
-  "We-Are-Trying-Here": [
+  "we-are-trying-here": [
     "https://v7.kkphimplayer7.com/20260419/SsII5fvW/index.m3u8",
     "https://v7.kkphimplayer7.com/20260421/Lo8s10rS/index.m3u8",
     "https://v7.kkphimplayer7.com/20260427/oOVkl8PN/index.m3u8",
@@ -125,7 +141,7 @@ window.allEpisodesData = {
     "https://v7.kkphimplayer7.com/20260523/m2cO0N3R/index.m3u8",
     "https://v7.kkphimplayer7.com/20260524/1jKFtO2F/index.m3u8",
   ],
-  "Resident Playbook": [
+  "resident-playbook": [
     "https://s4.phim1280.tv/20250412/ECV3Lny9/index.m3u8",
     "https://s4.phim1280.tv/20250414/PVSZcJqf/index.m3u8",
     "https://s5.phim1280.tv/20250420/gm4AvTTE/index.m3u8",
@@ -139,7 +155,7 @@ window.allEpisodesData = {
     "https://s5.phim1280.tv/20250518/iUYW4DlA/index.m3u8",
     "https://s4.phim1280.tv/20250519/52uoEaXp/index.m3u8",
   ],
-  "Teach-You-a-Lesson": [
+  "teach-you-a-lesson": [
     "https://v7.kkphimplayer7.com/20260605/mMUnxegG/index.m3u8",
     "https://v7.kkphimplayer7.com/20260605/w5MC5FiW/index.m3u8",
     "https://v7.kkphimplayer7.com/20260605/ZWTl9ApV/index.m3u8",
@@ -151,7 +167,7 @@ window.allEpisodesData = {
     "https://v7.kkphimplayer7.com/20260605/IMVcU4ID/index.m3u8",
     "https://v7.kkphimplayer7.com/20260605/dF3A4SlV/index.m3u8",
   ],
-  "Twinkling Watermelon": [
+  "twinkling-watermelon": [
     "https://v7.kkphimplayer7.com/20260623/zyM76zrt/index.m3u8",
     "https://v7.kkphimplayer7.com/20260623/bkUjXy41/index.m3u8",
     "https://v7.kkphimplayer7.com/20260623/ytIB23Dm/index.m3u8",
@@ -169,7 +185,7 @@ window.allEpisodesData = {
     "https://v7.kkphimplayer7.com/20260623/tyCjKmX1/index.m3u8",
     "https://v7.kkphimplayer7.com/20260623/8r4es68T/index.m3u8",
   ],
-  "The WONDERfools": [
+  "the-wonderfools": [
     "https://v7.kkphimplayer7.com/20260515/bhezoTVu/index.m3u8",
     "https://v7.kkphimplayer7.com/20260515/zZhOXfeJ/index.m3u8",
     "https://v7.kkphimplayer7.com/20260515/rxzScTx9/index.m3u8",
@@ -179,7 +195,7 @@ window.allEpisodesData = {
     "https://v7.kkphimplayer7.com/20260515/At86yNms/index.m3u8",
     "https://v7.kkphimplayer7.com/20260515/45bFhHoV/index.m3u8",
   ],
-  "Our Beloved Summer": [
+  "our-beloved-summer": [
     "https://s5.phim1280.tv/20250326/CjnjWnpD/index.m3u8",
     "https://s5.phim1280.tv/20250326/cvRlVnC7/index.m3u8",
     "https://s5.phim1280.tv/20250326/SJI4C7vL/index.m3u8",
@@ -197,4 +213,21 @@ window.allEpisodesData = {
     "https://s5.phim1280.tv/20250326/pQJdT7mt/index.m3u8",
     "https://s5.phim1280.tv/20250326/a91v7VIt/index.m3u8",
   ],
+};
+
+// Bảng ánh xạ: tên phim viết thường (khớp với `title` trong
+// globalMoviesList, đã .toLowerCase()) -> key trong allEpisodesData ở trên.
+window.movieKeyMap = {
+  "twenty five twenty one": "2521",
+  "can this love be translated?": "can-this-love-be-translated",
+  mouse: "mouse",
+  moving: "moving",
+  "my liberation notes": "my-liberation-notes",
+  "queen of tears": "queen-of-tears",
+  "resident playbook": "resident-playbook",
+  "teach you a lesson": "teach-you-a-lesson",
+  "twinkling watermelon": "twinkling-watermelon",
+  "the wonderfools": "the-wonderfools",
+  "our beloved summer": "our-beloved-summer",
+  "we are trying here": "we-are-trying-here",
 };
