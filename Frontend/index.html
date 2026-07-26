@@ -52,7 +52,7 @@
           type="text"
           id="search-input"
           placeholder="Tìm tên phim, thể loại..."
-          onkeyup="handleSearch(event)"
+          onkeydown="handleSearch(event)"
         />
         <button class="search-btn" onclick="executeSearch()">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -113,7 +113,18 @@
         </div>
       </div>
     </section>
-
+    <!--SLIDER ANIME-->
+    <div class="slider-section">
+      <h2>Anime</h2>
+      <div class="movie-slider" id="anime-movie-slider"></div>
+    </div>
+    <!-- SLIDER PHIM HÀN QUỐC -->
+    <div class="slider-section">
+      <h2>Phim Hàn Quốc</h2>
+      <div class="movie-slider" id="korean-movie-slider">
+        <!-- Phim Hàn Quốc sẽ tự động render vào đây qua script.js -->
+      </div>
+    </div>
     <!-- TRANG WISHLIST -->
     <section id="page-wishlist" class="page">
       <div class="slider-section">

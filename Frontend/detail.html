@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="page-title">Chi tiết phim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    style="
+      background-color: #141414;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    "
+  >
+    <!-- Nút quay lại trang chủ -->
+    <div style="max-width: 1000px; margin: 0 auto">
+      <a
+        href="index.html"
+        style="
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: #333;
+          padding: 8px 16px;
+          border-radius: 4px;
+        "
+      >
+        <i class="fa-solid fa-arrow-left"></i> Trở về trang chủ
+      </a>
+    </div>
+
+    <div
+      style="
+        max-width: 1000px;
+        margin: 20px auto;
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      "
+    >
+      <!-- Poster phim -->
+      <img
+        id="detail-poster-img"
+        src=""
+        alt="Poster"
+        style="
+          width: 300px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        "
+      />
+
+      <!-- Thông tin phim -->
+      <div style="flex: 1">
+        <h1 id="detail-title" style="margin-top: 0; font-size: 2.5rem"></h1>
+        <div style="color: #46d369; font-weight: bold; margin-bottom: 15px">
+          <i class="fa-solid fa-star" style="color: #f5c518"></i> --/10
+          &nbsp;&nbsp;|&nbsp;&nbsp; <span id="detail-episodes-count"></span>
+        </div>
+        <p
+          id="detail-desc"
+          style="color: #aaa; line-height: 1.6; margin-bottom: 20px"
+        ></p>
+
+        <p style="margin: 5px 0; color: #777">Đạo diễn: Đang cập nhật</p>
+        <p style="margin: 5px 0; color: #777">Diễn viên: Đang cập nhật</p>
+        <p style="margin: 5px 0 20px 0; color: #777">Thể loại: Đang cập nhật</p>
+
+        <!-- MỤC CHỌN PHẦN PHIM (SEASONS / PARTS) -->
+        <div id="parts-section" style="display: none; margin-bottom: 20px">
+          <h3
+            style="
+              margin-bottom: 15px;
+              border-bottom: 2px solid #e50914;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Phần Phim
+          </h3>
+          <div
+            id="detail-parts-grid"
+            style="display: flex; flex-wrap: wrap; gap: 10px"
+          ></div>
+        </div>
+
+        <h3
+          style="
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e50914;
+            display: inline-block;
+            padding-bottom: 5px;
+          "
+        >
+          Danh Sách Tập
+        </h3>
+
+        <!-- Lưới danh sách tập -->
+        <div
+          id="detail-episode-grid"
+          style="display: flex; flex-wrap: wrap; gap: 10px"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Script xử lý nhận dữ liệu từ URL và hiển thị -->
+    <script src="Episodes.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const title = params.get("title") || "Phim";
+      const poster = params.get("poster") || "";
+      const desc = params.get("desc") || "";
+      const episodes = parseInt(params.get("episodes")) || 20;
+      const slug = params.get("slug") || "";
+
+      // Gán dữ liệu lên giao diện
+      document.getElementById("page-title").innerText = title;
+      document.getElementById("detail-title").innerText = title;
+      document.getElementById("detail-poster-img").src = poster;
+      document.getElementById("detail-poster-img").onerror = function () {
+        this.src = "https://placehold.co/350x500";
+      };
+      document.getElementById("detail-desc").innerText = desc;
+      document.getElementById("detail-episodes-count").innerText =
+        `${episodes} Tập`;
+
+      // Gọi hàm render phần phim từ script.js khi trang đã tải xong
+      window.addEventListener("DOMContentLoaded", () => {
+        const currentMovie = window.globalMoviesList
+          ? window.globalMoviesList.find((m) => m.slug === slug)
+          : null;
+        if (currentMovie) {
+          renderMovieParts(currentMovie.slug, currentMovie.group);
+        }
+      });
+
+      const grid = document.getElementById("detail-episode-grid");
+      grid.innerHTML = "";
+
+      // Tạo danh sách các nút tập phim
+      for (let i = 1; i <= episodes; i++) {
+        const btn = document.createElement("button");
+        btn.className = "ep-btn";
+        btn.innerText = `Tập ${i}`;
+        btn.style.cssText =
+          "background: #333; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.2s;";
+
+        if (i === 1) {
+          btn.style.background = "#e50914"; // Tập 1 mặc định màu đỏ nổi bật
+        }
+
+        // Hiệu ứng hover nhẹ cho nút tập
+        btn.onmouseover = () => {
+          if (i !== 1) btn.style.background = "#444";
+        };
+        btn.onmouseout = () => {
+          if (i !== 1) btn.style.background = "#333";
+        };
+
+        // Khi bấm vào tập phim -> Chuyển sang watch.html kèm theo tham số
+        btn.onclick = () => {
+          const watchParams = new URLSearchParams({
+            title: title,
+            ep: i,
+            slug: slug,
+            poster: poster,
+            episodes: episodes,
+          });
+          window.location.href = `watch.html?${watchParams.toString()}`;
+        };
+
+        grid.appendChild(btn);
+      }
+    </script>
+  </body>
+</html>
