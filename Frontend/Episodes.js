@@ -215,7 +215,7 @@ window.allEpisodesData = {
   ],
   "weathering-with-you": [
     "https://s6.kkphimplayer6.com/20250526/rSwbuzxl/index.m3u8",
-  ];
+  ],
 };
 
 // Bảng ánh xạ: tên phim viết thường (khớp với `title` trong
