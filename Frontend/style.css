@@ -866,4 +866,80 @@ body {
     max-width: 280px;
     margin: 0 auto;
   }
+  /* ==========================================
+   DROPDOWN MENU THỂ LOẠI (NETFLIX STYLE)
+   ========================================== */
+  .nav-links .dropdown {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .dropdown-toggle i {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Bảng menu xổ xuống */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 15px 20px;
+    width: 520px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1001;
+
+    /* Hiệu ứng ẩn hiện mượt mà */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Khi hover vào thẻ Thể Loại hoặc bấm mở */
+  .nav-links .dropdown:hover .dropdown-menu,
+  .nav-links .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links .dropdown:hover .dropdown-toggle i,
+  .nav-links .dropdown.active .dropdown-toggle i {
+    transform: rotate(180deg);
+  }
+
+  /* Chia danh sách thể loại thành 3 cột gọn gàng */
+  .genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
+  }
+
+  .genre-grid span {
+    font-size: 13px;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .genre-grid span:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+  }
 }

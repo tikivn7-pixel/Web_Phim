@@ -30,6 +30,7 @@ let globalMoviesList = [
     title: "Twenty Five Twenty One",
     slug: "twenty-five-twenty-one",
     episodes: 16,
+    genres: "Tình Cảm, Học Đường, Chính Kịch, Tâm Lý",
     poster: IMG_BASE + "2521.jpg",
     banner: IMG_BASE + "2521.jpg",
     desc: "Câu chuyện tuổi trẻ đầy nhiệt huyết và hoài bão vào năm 1998.",
@@ -38,6 +39,7 @@ let globalMoviesList = [
     title: "Queen of Tears",
     slug: "queen-of-tears",
     episodes: 16,
+    genres: "Tình Cảm, Chính Kịch, Hài Hước, Tâm Lý",
     poster: IMG_BASE + "QueenOfTears.jpg",
     banner: IMG_BASE + "QueenOfTears.jpg",
     desc: "Cuộc sống hôn nhân sóng gió nhưng đầy cảm xúc của cặp vợ chồng tài phiệt.",
@@ -46,6 +48,7 @@ let globalMoviesList = [
     title: "Mouse",
     slug: "mouse",
     episodes: 20,
+    genres: "Bí Ẩn, Hình Sự, Kinh Dị, Tâm Lý",
     poster: IMG_BASE + "Mouse.jpg",
     banner: IMG_BASE + "Mouse.jpg",
     desc: "Thước phim trinh thám giật gân xoay quanh kẻ sát nhân biến thái.",
@@ -54,6 +57,7 @@ let globalMoviesList = [
     title: "Moving",
     slug: "moving",
     episodes: 20,
+    genres: "Hành Động, Viễn Tưởng, Thần Thoại, Phiêu Lưu",
     poster: IMG_BASE + "Moving.jpg",
     banner: IMG_BASE + "Moving.jpg",
     desc: "Những siêu anh hùng ẩn giấu thân phận để bảo vệ gia đình.",
@@ -62,6 +66,7 @@ let globalMoviesList = [
     title: "Can This Love Be Translated?",
     slug: "can-this-love-be-translated",
     episodes: 12,
+    genres: "Tình Cảm, Hài Hước",
     poster: IMG_BASE + "Can_This_Love_Be_Translated.png",
     banner: IMG_BASE + "Can_This_Love_Be_Translated.png",
     desc: "Câu chuyện về những phiên dịch viên và ranh giới mong manh giữa công việc và tình cảm.",
@@ -70,6 +75,7 @@ let globalMoviesList = [
     title: "My Liberation Notes",
     slug: "my-liberation-notes",
     episodes: 16,
+    genres: "Chính Kịch, Tâm Lý",
     poster: IMG_BASE + "Nhat_ky_tu_do_cua_toi.jpg",
     banner: IMG_BASE + "Nhat_ky_tu_do_cua_toi.jpg",
     desc: "Ba anh chị em ở ngoại ô Seoul đi tìm sự giải thoát cho chính cuộc đời mình.",
@@ -78,6 +84,7 @@ let globalMoviesList = [
     title: "Resident Playbook",
     slug: "resident-playbook",
     episodes: 12,
+    genres: "Hài Hước, Tâm Lý, Học Đường",
     poster: IMG_BASE + "Chuyện Đời Bác Sĩ Nội Trú.jpg",
     banner: IMG_BASE + "Chuyện Đời Bác Sĩ Nội Trú.jpg",
     desc: "Nhật ký hài hước và chân thực của các bác sĩ nội trú tại bệnh viện.",
@@ -86,6 +93,7 @@ let globalMoviesList = [
     title: "Teach You a Lesson",
     slug: "teach-you-a-lesson",
     episodes: 10,
+    genres: "Hành Động, Hình Sự, Chính Kịch",
     poster: IMG_BASE + "Teach You a Lesson.jpg",
     banner: IMG_BASE + "Teach You a Lesson.jpg",
     desc: "Hành trình đấu tranh giành lại công bằng đầy kịch tính.",
@@ -94,6 +102,7 @@ let globalMoviesList = [
     title: "The Wonderfools",
     slug: "the-wonderfools",
     episodes: 8,
+    genres: "Hài Hước, Tâm Lý, Phiêu Lưu",
     poster: IMG_BASE + "wonderfools.jpg",
     banner: IMG_BASE + "wonderfools.jpg",
     desc: "Nhóm bạn với những giấc mơ dang dở cùng nhau vượt qua thử thách cuộc sống.",
@@ -102,6 +111,7 @@ let globalMoviesList = [
     title: "We Are Trying Here",
     slug: "we-are-trying-here",
     episodes: 12,
+    genres: "Tình Cảm, Tâm Lý, Gia Đình",
     poster: IMG_BASE + "We Are All Trying Here.jpg",
     banner: IMG_BASE + "We Are All Trying Here.jpg",
     desc: "Câu chuyện ấm áp về những con người đang cố gắng hết mình mỗi ngày.",
@@ -110,6 +120,7 @@ let globalMoviesList = [
     title: "Our Beloved Summer",
     slug: "our-beloved-summer",
     episodes: 16,
+    genres: "Tình Cảm, Hài Hước, Tâm Lý",
     poster: IMG_BASE + "Our Beloved Summer.jpg",
     banner: IMG_BASE + "Our Beloved Summer.jpg",
     desc: "Tình yêu nhẹ nhàng, sâu lắng qua những thước phim tài liệu thanh xuân.",
@@ -118,6 +129,7 @@ let globalMoviesList = [
     title: "Twinkling Watermelon",
     slug: "twinkling-watermelon",
     episodes: 16,
+    genres: "Tình Cảm, Âm Nhạc, Học Đường, Viễn Tưởng",
     poster: IMG_BASE + "twinkling watermelon.jpg",
     banner: IMG_BASE + "twinkling watermelon.jpg",
     desc: "Hành trình xuyên không về quá khứ qua một cửa hàng nhạc cụ kỳ lạ.",
@@ -126,6 +138,7 @@ let globalMoviesList = [
     title: "weathering with you",
     slug: "weathering-with-you",
     episodes: 1,
+    genres: "Hoạt Hình, Viễn Tưởng, Tình Cảm, Phim Ngắn",
     poster: IMG_BASE + "Weathering with You.jpg",
     banner: IMG_BASE + "Weathering with You.jpg",
     desc: "Xoay quanh cuộc sống của cậu thiếu niên Morishima Hodaka...",
@@ -134,9 +147,10 @@ let globalMoviesList = [
     title: "The Witch: Part 1. The Subversion",
     slug: "the-witch-part-1-the-subversion",
     episodes: 1,
+    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị",
     poster: IMG_BASE + "TheWitch1.jpg",
     banner: IMG_BASE + "TheWitch1.jpg",
-    desc: "Sát Thủ Nhân Tạo là bộ phim hành động li kì kể về Koo Ja-yoon – một cô bé được nuôi dưỡng trong một tổ chức đáng sợ - nơi diễn ra các cuộc thí nghiệm y học được thực hiện trên chính cơ thể con người nhằm biến họ thành những cỗ máy giết người. Sau khi chạy trốn khỏi tổ chức, Ja-yoon bị mất trí nhớ và được một cặp vợ chồng già nhận nuôi. &nbsp;10 năm sau, khi đã trở thành một nữ sinh trung học, Ja-yoon đăng ký tham gia một cuộc thi âm nhạc với mong muốn giúp gia đình vượt qua khó khăn tài chính. Nhưng cô không ngờ rằng, ngay từ khi hình ảnh của mình xuất hiện trên truyền hình, cuộc sống của cô bị đảo lộn hoàn toàn bởi sự truy đuổi của những kẻ lạ mặt.",
+    desc: "Sát Thủ Nhân Tạo là bộ phim hành động li kì kể về Koo Ja-yoon...",
     group: "sat-thu-nhan-tao",
     partName: "Phần 1",
   },
@@ -144,9 +158,10 @@ let globalMoviesList = [
     title: "The Witch: Part 2. The Other One",
     slug: "the-witch-part-2-the-other-one",
     episodes: 1,
+    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị",
     poster: IMG_BASE + "TheWitch2.jpg",
     banner: IMG_BASE + "TheWitch2.jpg",
-    desc: "Lợi dụng sự cố kinh hoàng tại cơ sở thí nghiệm, cô nàng 17 tuổi mang bí danh ARK-ADP1, một nữ sát thủ nhân tạo có siêu năng lực, đã thoát được ra ngoài. Cô bị những người tạo ra mình lẫn các thế lực bí ẩn khác truy bắt gắt gao.",
+    desc: "Lợi dụng sự cố kinh hoàng tại cơ sở thí nghiệm, cô nàng 17 tuổi...",
     group: "sat-thu-nhan-tao",
     partName: "Phần 2",
   },
@@ -154,9 +169,10 @@ let globalMoviesList = [
     title: "agent kim reactivated",
     slug: "agent-kim-reactivated",
     episodes: 10,
+    genres: "Hành Động, Hình Sự, Võ Thuật",
     poster: IMG_BASE + "AgentKimReactivated.jpg",
     banner: IMG_BASE + "AgentKimReactivated.jpg",
-    desc: "Một ông bố yêu con từng là lính đặc nhiệm đáng gờm. Quản lý Kim phải đánh thức những kĩ năng đã ngủ quên để cứu con gái trong hành trình báo thù không khoan nhượng.",
+    desc: "Một ông bố yêu con từng là lính đặc nhiệm đáng gờm...",
   },
 ];
 
@@ -837,7 +853,89 @@ function executeSearch() {
 }
 
 // ==========================================
-// 6. KHỞI TẠO TỔNG THỂ
+// 6. CHỨC NĂNG LỌC PHIM THEO THỂ LOẠI (GENRE FILTER)
+// ==========================================
+function filterByGenre(genreName) {
+  document.querySelectorAll(".page").forEach((page) => {
+    page.classList.remove("active");
+  });
+  const searchPage = document.getElementById("page-search");
+  if (searchPage) {
+    searchPage.classList.add("active");
+  }
+
+  const keywordEl = document.getElementById("search-keyword");
+  if (keywordEl) {
+    keywordEl.innerText = `Thể loại: ${genreName}`;
+  }
+
+  const container = document.getElementById("search-container");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const filteredMovies = globalMoviesList.filter((movie) => {
+    if (!movie.genres) return false;
+    return movie.genres.toLowerCase().includes(genreName.toLowerCase());
+  });
+
+  if (filteredMovies.length === 0) {
+    container.innerHTML = `
+      <div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
+        <i class="fa-solid fa-film" style="font-size: 3rem; margin-bottom: 15px;"></i>
+        <p>Hiện chưa có phim nào thuộc thể loại "${escapeHtml(genreName)}".</p>
+      </div>
+    `;
+    return;
+  }
+
+  filteredMovies.forEach((movie) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        getTotalEpisodes(movie),
+        movie.slug,
+      );
+
+    const safeTitle = escapeHtml(movie.title);
+    const safeDesc = escapeHtml(movie.desc || "");
+    const handlerTitle = escapeForInlineHandler(movie.title);
+    const handlerDesc = escapeForInlineHandler(movie.desc || "");
+
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      <h4>${safeTitle}</h4>
+      <div class="movie-hover-card">
+        <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${safeTitle}</h3>
+          <div class="hover-actions">
+            <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${movie.slug || ""}')">
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button
+              class="btn-hover icon"
+              title="Yêu thích"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${movie.poster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p class="hover-genres">${safeDesc}</p>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateWishlistUI();
+}
+
+// ==========================================
+// 7. KHỞI TẠO TỔNG THỂ
 // ==========================================
 
 document.addEventListener("DOMContentLoaded", () => {

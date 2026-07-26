@@ -41,6 +41,44 @@
 
       <ul class="nav-links">
         <li onclick="switchPage('home')">Trang chủ</li>
+
+        <!-- Mục Thể Loại có Dropdown Menu -->
+        <li class="dropdown" id="genre-dropdown">
+          <span class="dropdown-toggle"
+            >Thể Loại <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu">
+            <div class="genre-grid">
+              <span onclick="filterByGenre('Bí Ẩn')">Bí Ẩn</span>
+              <span onclick="filterByGenre('Chiến Tranh')">Chiến Tranh</span>
+              <span onclick="filterByGenre('Chính Kịch')">Chính Kịch</span>
+              <span onclick="filterByGenre('Cổ Trang')">Cổ Trang</span>
+              <span onclick="filterByGenre('Gia Đình')">Gia Đình</span>
+              <span onclick="filterByGenre('Hài Hước')">Hài Hước</span>
+              <span onclick="filterByGenre('Hành Động')">Hành Động</span>
+              <span onclick="filterByGenre('Hình Sự')">Hình Sự</span>
+              <span onclick="filterByGenre('Học Đường')">Học Đường</span>
+              <span onclick="filterByGenre('Khoa Học')">Khoa Học</span>
+              <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
+              <span onclick="filterByGenre('Kinh Điển')">Kinh Điển</span>
+              <span onclick="filterByGenre('Lịch Sử')">Lịch Sử</span>
+              <span onclick="filterByGenre('Miền Tây')">Miền Tây</span>
+              <span onclick="filterByGenre('Phim 18+')">Phim 18+</span>
+              <span onclick="filterByGenre('Phim Ngắn')">Phim Ngắn</span>
+              <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
+              <span onclick="filterByGenre('Thần Thoại')">Thần Thoại</span>
+              <span onclick="filterByGenre('Thể Thao')">Thể Thao</span>
+              <span onclick="filterByGenre('Trẻ Em')">Trẻ Em</span>
+              <span onclick="filterByGenre('Tài Liệu')">Tài Liệu</span>
+              <span onclick="filterByGenre('Tâm Lý')">Tâm Lý</span>
+              <span onclick="filterByGenre('Tình Cảm')">Tình Cảm</span>
+              <span onclick="filterByGenre('Viễn Tưởng')">Viễn Tưởng</span>
+              <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
+              <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
+            </div>
+          </div>
+        </li>
+
         <li onclick="switchPage('wishlist')">Danh sách của tôi</li>
         <li onclick="switchPage('detail')">Chi tiết</li>
         <li onclick="switchPage('watch')">Xem phim</li>
