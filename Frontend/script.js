@@ -1057,3 +1057,27 @@ document.addEventListener("DOMContentLoaded", () => {
   renderContinueWatching();
   initHeroSlider();
 });
+
+// ==========================================
+// 8. BỔ SUNG XỬ LÝ TOÀN MÀN HÌNH (MOBILE FULLSCREEN FIX)
+// ==========================================
+document.addEventListener("DOMContentLoaded", () => {
+  const videoElement = document.querySelector(".video-player-wrapper video");
+  const wrapperElement = document.querySelector(".video-player-wrapper");
+
+  if (videoElement) {
+    // Gắn hàm kích hoạt Fullscreen chuẩn tương thích iOS & Android
+    window.triggerFullscreen = function () {
+      if (videoElement.webkitEnterFullscreen) {
+        // Riêng iOS Safari bắt buộc gọi trực tiếp trên thẻ video để ép xoay ngang
+        videoElement.webkitEnterFullscreen();
+      } else if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else if (wrapperElement && wrapperElement.requestFullscreen) {
+        wrapperElement.requestFullscreen();
+      } else if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+      }
+    };
+  }
+});

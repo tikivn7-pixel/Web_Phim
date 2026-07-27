@@ -42,6 +42,8 @@
       .back-btn i {
         margin-right: 5px;
       }
+
+      /* WRAPPER VÀ FIX TOÀN MÀN HÌNH DI ĐỘNG */
       .video-wrapper {
         position: relative;
         width: 100%;
@@ -54,6 +56,31 @@
         width: 100%;
         height: 100%;
       }
+
+      /* Tối ưu hóa chế độ Fullscreen chống kẹt khung dọc trên mobile & web */
+      .video-wrapper:fullscreen,
+      .video-wrapper:-webkit-full-screen,
+      .video-wrapper:-moz-full-screen {
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none !important;
+        max-height: none !important;
+        border-radius: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000 !important;
+      }
+
+      .video-wrapper video:fullscreen,
+      .video-wrapper video:-webkit-full-screen,
+      .video-wrapper video:-moz-full-screen {
+        width: 100vw !important;
+        height: 100vh !important;
+        object-fit: contain !important;
+        border-radius: 0 !important;
+      }
+
       .movie-info {
         margin-top: 20px;
       }
@@ -105,7 +132,7 @@
         ><i class="fa-solid fa-arrow-left"></i> Quay lại trang chủ</a
       >
 
-      <div class="video-wrapper">
+      <div class="video-wrapper" id="video-wrapper-box">
         <video id="video-player" controls playsinline></video>
       </div>
 
@@ -122,11 +149,11 @@
       </div>
     </div>
 
-    <!-- Nạp dữ liệu phim và episodes.js trước[cite: 7] -->
+    <!-- Nạp dữ liệu phim và episodes.js trước -->
     <script src="Episodes.js"></script>
     <script src="script.js"></script>
 
-    <!-- Đoạn script xử lý đọc URL, lấy link API và phát video -->
+    <!-- Đoạn script xử lý đọc URL, lấy link API, phát video và tương thích thiết bị di động -->
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
         const params = new URLSearchParams(window.location.search);
@@ -213,7 +240,7 @@
           });
         }
 
-        new Plyr(video, {
+        const player = new Plyr(video, {
           controls: [
             "play-large",
             "play",
@@ -230,6 +257,13 @@
             "airplay",
             "fullscreen",
           ],
+        });
+
+        // Bổ sung xử lý sự kiện nút Fullscreen cho thiết bị iOS Safari di động
+        player.on("enterfullscreen", () => {
+          if (video.webkitEnterFullscreen && !document.fullscreenElement) {
+            video.webkitEnterFullscreen();
+          }
         });
       });
     </script>
