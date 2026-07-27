@@ -4,11 +4,15 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 
+// Đọc file .env ở thư mục Backend
+require("dotenv").config();
+
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const JWT_SECRET = "bi_mat_khong_the_tiet_lo_123"; // Đặt secret key tùy ý
+// Lấy JWT_SECRET từ .env hoặc dùng giá trị mặc định
+const JWT_SECRET = process.env.JWT_SECRET || "bi_mat_khong_the_tiet_lo_123";
 
 // Kết nối CSDL
 const db = mysql.createConnection({
@@ -16,6 +20,21 @@ const db = mysql.createConnection({
   user: "root", // Thay bằng user DB của bạn
   password: "", // Thay bằng Mật khẩu DB của bạn
   database: "movie_db",
+});
+
+// Không để lỗi kết nối MySQL làm sập cả server (các route TMDB không cần DB)
+db.connect((err) => {
+  if (err) {
+    console.warn(
+      "⚠️  Không kết nối được MySQL (các API đăng nhập/watchlist sẽ lỗi, nhưng API TMDB vẫn chạy bình thường):",
+      err.code,
+    );
+  } else {
+    console.log("✅ Đã kết nối MySQL thành công.");
+  }
+});
+db.on("error", (err) => {
+  console.warn("⚠️  Lỗi kết nối MySQL:", err.code);
 });
 
 // Middleware xác thực JWT Token
@@ -156,6 +175,124 @@ app.post("/api/history", authenticateToken, (req, res) => {
     res.json({ message: "Đã lưu vị trí xem dở!" });
   });
 });
+
+// ================= API TMDB (Lấy thông tin phim tự động) =================
+
+// 6. Tìm kiếm phim từ TMDB qua từ khóa tên phim
+app.get("/api/tmdb/search", async (req, res) => {
+  const query = req.query.query;
+  const apiKey = process.env.TMDB_API_KEY;
+
+  if (!query) {
+    return res.status(400).json({ message: "Thiếu từ khóa tìm kiếm phim" });
+  }
+
+  try {
+    // Tìm đồng thời cả 2 danh mục: Phim điện ảnh (movie) và Phim bộ (tv)
+    const [movieRes, tvRes] = await Promise.all([
+      fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=vi-VN`,
+      ),
+      fetch(
+        `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=vi-VN`,
+      ),
+    ]);
+    const movieData = await movieRes.json();
+    const tvData = await tvRes.json();
+
+    const movieResults = (movieData.results || []).map((r) => ({
+      ...r,
+      mediaType: "movie",
+    }));
+    const tvResults = (tvData.results || []).map((r) => ({
+      ...r,
+      mediaType: "tv",
+    }));
+    const allResults = [...movieResults, ...tvResults];
+
+    if (allResults.length === 0) {
+      return res.json({ results: [] });
+    }
+
+    const normalizedQuery = query.trim().toLowerCase();
+
+    // Ưu tiên kết quả có tên khớp CHÍNH XÁC với từ khóa (tên hiển thị hoặc tên gốc)
+    let best = allResults.find((r) => {
+      const name = (r.title || r.name || "").toLowerCase();
+      const original = (
+        r.original_title ||
+        r.original_name ||
+        ""
+      ).toLowerCase();
+      return name === normalizedQuery || original === normalizedQuery;
+    });
+
+    // Nếu không có kết quả khớp tuyệt đối -> chọn kết quả phổ biến nhất (popularity cao nhất)
+    if (!best) {
+      best = [...allResults].sort(
+        (a, b) => (b.popularity || 0) - (a.popularity || 0),
+      )[0];
+    }
+
+    res.json({
+      results: [best],
+      isTV: best.mediaType === "tv",
+    });
+  } catch (err) {
+    console.error("Lỗi kết nối TMDB:", err);
+    res.status(500).json({ message: "Lỗi server khi kết nối TMDB" });
+  }
+});
+
+// 7. Lấy chi tiết thông tin phim (Đạo diễn, Diễn viên, Thể loại, Điểm...) bằng ID
+app.get("/api/tmdb/detail/:id", async (req, res) => {
+  const movieId = req.params.id;
+  const isTV = req.query.isTV === "true";
+  const apiKey = process.env.TMDB_API_KEY;
+  const mediaType = isTV ? "tv" : "movie";
+
+  try {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/${mediaType}/${movieId}?api_key=${apiKey}&append_to_response=credits&language=vi-VN`,
+    );
+    const data = await response.json();
+
+    // Thể loại: mảng [{id,name}] -> chuỗi "Chính Kịch, Tâm Lý"
+    const genres = (data.genres || []).map((g) => g.name).join(", ");
+
+    // Diễn viên: lấy 5 người đầu trong dàn cast
+    const cast = (data.credits?.cast || [])
+      .slice(0, 5)
+      .map((c) => c.name)
+      .join(", ");
+
+    // Đạo diễn: phim điện ảnh nằm trong credits.crew (job = "Director")
+    // Phim bộ (TV) TMDB không có "director" trực tiếp -> dùng created_by
+    let director = "";
+    if (isTV) {
+      director = (data.created_by || []).map((p) => p.name).join(", ");
+    } else {
+      director = (data.credits?.crew || [])
+        .filter((p) => p.job === "Director")
+        .map((p) => p.name)
+        .join(", ");
+    }
+
+    res.json({
+      id: data.id,
+      title: data.title || data.name,
+      vote_average: data.vote_average,
+      genres: genres || "Đang cập nhật",
+      cast: cast || "Đang cập nhật",
+      director: director || "Đang cập nhật",
+    });
+  } catch (err) {
+    console.error("Lỗi lấy chi tiết TMDB:", err);
+    res.status(500).json({ message: "Lỗi server khi lấy chi tiết TMDB" });
+  }
+});
+
+// ==========================================
 
 app.listen(5000, () => {
   console.log("Server Backend đang chạy tại http://localhost:5000");

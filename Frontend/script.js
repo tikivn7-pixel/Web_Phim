@@ -28,115 +28,115 @@ const IMG_BASE = "Img/";
 let globalMoviesList = [
   {
     title: "Twenty Five Twenty One",
-    slug: "twenty-five-twenty-one",
+    slug: "tuoi-hai-lam-tuoi-hai-mot",
     episodes: 16,
-    genres: "Tình Cảm, Học Đường, Chính Kịch, Tâm Lý",
+    genres: "Tình Cảm, Học Đường, Chính Kịch, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "2521.jpg",
     banner: IMG_BASE + "2521.jpg",
-    desc: "Câu chuyện tuổi trẻ đầy nhiệt huyết và hoài bão vào năm 1998.",
+    desc: "Tại thời điểm mà những ước mơ dường như xa tầm với, một kiếm sĩ tuổi teen theo đuổi những hoài bão lớn và gặp một chàng trai chăm chỉ đang tìm cách làm lại cuộc đời.",
   },
   {
     title: "Queen of Tears",
-    slug: "queen-of-tears",
+    slug: "nu-hoang-nuoc-mat",
     episodes: 16,
-    genres: "Tình Cảm, Chính Kịch, Hài Hước, Tâm Lý",
+    genres: "Tình Cảm, Chính Kịch, Hài Hước, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "QueenOfTears.jpg",
     banner: IMG_BASE + "QueenOfTears.jpg",
     desc: "Cuộc sống hôn nhân sóng gió nhưng đầy cảm xúc của cặp vợ chồng tài phiệt.",
   },
   {
     title: "Mouse",
-    slug: "mouse",
+    slug: "mouse-ke-san-nguoi-ban-dien-anh",
     episodes: 20,
-    genres: "Bí Ẩn, Hình Sự, Kinh Dị, Tâm Lý",
+    genres: "Bí Ẩn, Hình Sự, Kinh Dị, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "Mouse.jpg",
     banner: IMG_BASE + "Mouse.jpg",
     desc: "Thước phim trinh thám giật gân xoay quanh kẻ sát nhân biến thái.",
   },
   {
     title: "Moving",
-    slug: "moving",
+    slug: "doi-thieu-nien-sieu-dang",
     episodes: 20,
-    genres: "Hành Động, Viễn Tưởng, Thần Thoại, Phiêu Lưu",
+    genres: "Hành Động, Viễn Tưởng, Thần Thoại, Phiêu Lưu, Hàn Quốc",
     poster: IMG_BASE + "Moving.jpg",
     banner: IMG_BASE + "Moving.jpg",
     desc: "Những siêu anh hùng ẩn giấu thân phận để bảo vệ gia đình.",
   },
   {
     title: "Can This Love Be Translated?",
-    slug: "can-this-love-be-translated",
+    slug: "tieng-yeu-nay-anh-dich-duoc-khong",
     episodes: 12,
-    genres: "Tình Cảm, Hài Hước",
+    genres: "Tình Cảm, Hài Hước, Hàn Quốc",
     poster: IMG_BASE + "Can_This_Love_Be_Translated.png",
     banner: IMG_BASE + "Can_This_Love_Be_Translated.png",
     desc: "Câu chuyện về những phiên dịch viên và ranh giới mong manh giữa công việc và tình cảm.",
   },
   {
     title: "My Liberation Notes",
-    slug: "my-liberation-notes",
+    slug: "nhat-ky-tu-do-cua-toi",
     episodes: 16,
-    genres: "Chính Kịch, Tâm Lý",
+    genres: "Chính Kịch, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "Nhat_ky_tu_do_cua_toi.jpg",
     banner: IMG_BASE + "Nhat_ky_tu_do_cua_toi.jpg",
     desc: "Ba anh chị em ở ngoại ô Seoul đi tìm sự giải thoát cho chính cuộc đời mình.",
   },
   {
     title: "Resident Playbook",
-    slug: "resident-playbook",
+    slug: "chuyen-doi-bac-si-noi-tru",
     episodes: 12,
-    genres: "Hài Hước, Tâm Lý, Học Đường",
+    genres: "Chính Kịch. Tình Cảm, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "Chuyện Đời Bác Sĩ Nội Trú.jpg",
     banner: IMG_BASE + "Chuyện Đời Bác Sĩ Nội Trú.jpg",
     desc: "Nhật ký hài hước và chân thực của các bác sĩ nội trú tại bệnh viện.",
   },
   {
     title: "Teach You a Lesson",
-    slug: "teach-you-a-lesson",
+    slug: "bai-hoc-dang-doi",
     episodes: 10,
-    genres: "Hành Động, Hình Sự, Chính Kịch",
+    genres: "Hành Động, Hình Sự, Chính Kịch, Hàn Quốc",
     poster: IMG_BASE + "Teach You a Lesson.jpg",
     banner: IMG_BASE + "Teach You a Lesson.jpg",
     desc: "Hành trình đấu tranh giành lại công bằng đầy kịch tính.",
   },
   {
     title: "The Wonderfools",
-    slug: "the-wonderfools",
+    slug: "biet-doi-sieu-kho",
     episodes: 8,
-    genres: "Hài Hước, Tâm Lý, Phiêu Lưu",
+    genres: "Hài Hước, Tâm Lý, Phiêu Lưu, Hàn Quôcs",
     poster: IMG_BASE + "wonderfools.jpg",
     banner: IMG_BASE + "wonderfools.jpg",
     desc: "Nhóm bạn với những giấc mơ dang dở cùng nhau vượt qua thử thách cuộc sống.",
   },
   {
     title: "We Are Trying Here",
-    slug: "we-are-trying-here",
+    slug: "cuoc-chien-trong-chung-ta",
     episodes: 12,
-    genres: "Tình Cảm, Tâm Lý, Gia Đình",
+    genres: "Tình Cảm, Tâm Lý, Gia Đình, Hàn Quốc",
     poster: IMG_BASE + "We Are All Trying Here.jpg",
     banner: IMG_BASE + "We Are All Trying Here.jpg",
     desc: "Câu chuyện ấm áp về những con người đang cố gắng hết mình mỗi ngày.",
   },
   {
     title: "Our Beloved Summer",
-    slug: "our-beloved-summer",
+    slug: "mua-he-yeu-dau-cua-chung-ta-nhung-ngay-he-ruc-nang-cua-chung-minh",
     episodes: 16,
-    genres: "Tình Cảm, Hài Hước, Tâm Lý",
+    genres: "Tình Cảm, Hài Hước, Tâm Lý, Hàn Quốc",
     poster: IMG_BASE + "Our Beloved Summer.jpg",
     banner: IMG_BASE + "Our Beloved Summer.jpg",
     desc: "Tình yêu nhẹ nhàng, sâu lắng qua những thước phim tài liệu thanh xuân.",
   },
   {
     title: "Twinkling Watermelon",
-    slug: "twinkling-watermelon",
+    slug: "dua-hau-lap-lanh",
     episodes: 16,
-    genres: "Tình Cảm, Âm Nhạc, Học Đường, Viễn Tưởng",
+    genres: "Tình Cảm, Âm Nhạc, Học Đường, Viễn Tưởng, Hàn Quốc",
     poster: IMG_BASE + "twinkling watermelon.jpg",
     banner: IMG_BASE + "twinkling watermelon.jpg",
     desc: "Hành trình xuyên không về quá khứ qua một cửa hàng nhạc cụ kỳ lạ.",
   },
   {
     title: "weathering with you",
-    slug: "weathering-with-you",
+    slug: "dua-con-cua-thoi-tiet",
     episodes: 1,
     genres: "Hoạt Hình, Viễn Tưởng, Tình Cảm, Phim Ngắn, Anime",
     poster: IMG_BASE + "Weathering with You.jpg",
@@ -145,9 +145,9 @@ let globalMoviesList = [
   },
   {
     title: "The Witch: Part 1. The Subversion",
-    slug: "the-witch-part-1-the-subversion",
+    slug: "sat-thu-nhan-tao",
     episodes: 1,
-    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị",
+    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị, Hàn Quốc",
     poster: IMG_BASE + "TheWitch1.jpg",
     banner: IMG_BASE + "TheWitch1.jpg",
     desc: "Sát Thủ Nhân Tạo là bộ phim hành động li kì kể về Koo Ja-yoon...",
@@ -156,9 +156,9 @@ let globalMoviesList = [
   },
   {
     title: "The Witch: Part 2. The Other One",
-    slug: "the-witch-part-2-the-other-one",
+    slug: "sat-thu-nhan-tao-2-mau-vat-con-lai",
     episodes: 1,
-    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị",
+    genres: "Hành Động, Bí Ẩn, Khoa Học, Kinh Dị, Hàn Quốc",
     poster: IMG_BASE + "TheWitch2.jpg",
     banner: IMG_BASE + "TheWitch2.jpg",
     desc: "Lợi dụng sự cố kinh hoàng tại cơ sở thí nghiệm, cô nàng 17 tuổi...",
@@ -167,12 +167,57 @@ let globalMoviesList = [
   },
   {
     title: "agent kim reactivated",
-    slug: "agent-kim-reactivated",
+    slug: "dac-vu-kim-tai-khoi-dong",
     episodes: 10,
-    genres: "Hành Động, Hình Sự, Võ Thuật",
+    genres: "Hành Động, Hình Sự, Võ Thuật, Hàn Quốc",
     poster: IMG_BASE + "AgentKimReactivated.jpg",
     banner: IMG_BASE + "AgentKimReactivated.jpg",
     desc: "Một ông bố yêu con từng là lính đặc nhiệm đáng gờm...",
+  },
+  {
+    title: "all of us are dead",
+    slug: "ngoi-truong-xac-song",
+    episodes: 12,
+    genres: "Chính kịch, Viễn Tưởng, Phiêu Lưu, Hành Động, Khoa Học, Hàn Quốc",
+    poster: IMG_BASE + "All of Us Are Dead.jpg",
+    banner: IMG_BASE + "All of Us Are Dead.jpg",
+    desc: "Một trường cấp ba trở thành điểm bùng phát virus thây ma. Các học sinh mắc kẹt phải nỗ lực thoát ra – hoặc biến thành một trong những người nhiễm bệnh hung tợn.",
+  },
+  {
+    title: "naruto",
+    slug: "naruto",
+    episodes: 220,
+    genres: "Hoạt Hình, Anime, Võ Thuật",
+    poster: IMG_BASE + "Naruto.jpg",
+    banner: IMG_BASE + "Naruto.jpg",
+    desc: "Bộ phim kể về cậu về quá trình lớn lên và cuộc đời của cậu bé những nguy hiểm mà cậu đã gặp phải kèm theo đó là một động lực và niềm tin phi thường , một tâm hồn trong sáng chứa đựng những trò nghịch ngợm bướng bỉnh nhưng đầy hồn nhiên . Cùng với việc xoay quanh những người đã bỏ mạng do tranh giành quyền lực cộng với sự đau thương , mất mát mà Naruto đã trải qua.",
+  },
+  {
+    title: "naruto shippuden",
+    slug: "naruto-shippuden",
+    episodes: 500,
+    genres: "Hoạt Hình, Anime, Võ Thuật",
+    poster: IMG_BASE + "Naruto Shippuden.jpg",
+    banner: IMG_BASE + "Naruto Shippuden.jpg",
+    desc: "Naruto Shippuden hay còn được gọi với cái tên quen thuộc Naruto phần 2 là phần tiếp theo của bộ phim hoạt hình nổi tiếng Naruto, lấy bối cảnh hai năm rưỡi sau khi Naruto rời làng Lá. Naruto Shippuden tiếp tục theo chân chàng ninja trẻ tuổi Naruto Uzumaki trong cuộc hành trình luyện tập cực khổ để trở thành ninja giỏi nhất. Trong khi đó, Akatsuki, một tổ chức bí ẩn tập hợp những ninja phản diện tài giỏi bậc nhất, đang từng bước thực hiện kế hoạch lớn của chúng, đe dọa sự an toàn của thế giới ninja. Naruto sẽ làm gì để bảo vệ làng Lá và những người mà cậu yêu quý?",
+  },
+  {
+    title: "vincenzo",
+    slug: "vincenzo",
+    episodes: 20,
+    genres: "Hành Động, Phiêu Lưu, Hài Hước, Chính Kịch, Hàn Quốc",
+    poster: IMG_BASE + "Vincenzo.jpg",
+    banner: IMG_BASE + "Vincenzo.jpg",
+    desc: "Vincenzo là câu chuyện kể về một luật sư mafia người Ý gốc Hàn trốn về Hàn Quốc sau khi bị tổ chức phản bội. Khi trở lại quê hương, anh tham gia quét sạch kẻ xấu theo đúng cách của một người xấu cùng luật sư Hong Cha-yong.",
+  },
+  {
+    title: "Hunt",
+    slug: "san-lung-gian-diep",
+    episodes: 1,
+    genres: "Hành Động, Bí Ẩn, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "Hunt.jpg",
+    banner: IMG_BASE + "Hunt.jpg",
+    desc: "Hunt lấy bối cảnh Hàn Quốc thập niên 1980, giai đoạn mà chính quyền quân sự nước này siết chặt các vấn đề liên quan đến chiến lược an ninh quốc gia. Nhân vật chính của phim là hai hai điệp viên Hàn Quốc (Lee Jung Jae và Jung Woo Sung) nhận nhiệm vụ lật mặt một gián điệp Triều Tiên trong tổ chức của mình. Trong quá trình làm nhiệm vụ, họ đã nảy sinh nghi ngờ và bắt đầu điều tra lẫn nhau.cd",
   },
 ];
 
@@ -614,7 +659,7 @@ function renderAnimeMovies() {
   container.innerHTML = "";
 
   const animeList = globalMoviesList.filter(
-    (movie) => movie.slug === "weathering-with-you",
+    (movie) => movie.genres && movie.genres.toLowerCase().includes("anime"),
   );
 
   animeList.forEach((movie) => {
@@ -670,7 +715,7 @@ function renderKoreanMovies() {
   container.innerHTML = "";
 
   const koreanList = globalMoviesList.filter(
-    (movie) => movie.slug !== "weathering-with-you",
+    (movie) => movie.genres && movie.genres.toLowerCase().includes("hàn quốc"),
   );
 
   koreanList.forEach((movie) => {
@@ -868,8 +913,34 @@ function renderMovieParts(currentSlug, currentGroup) {
 }
 
 // ==========================================
-// 5. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH)
+// 5. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH) & TÍCH HỢP TMDB API
 // ==========================================
+
+async function fetchMovieDataFromBackend(movieTitle) {
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/tmdb/search?query=${encodeURIComponent(movieTitle)}`,
+    );
+    const data = await response.json();
+
+    if (data.results && data.results.length > 0) {
+      const item = data.results[0];
+      const isTV = data.isTV ? "true" : "false";
+
+      const detailRes = await fetch(
+        `${API_BASE_URL}/api/tmdb/detail/${item.id}?isTV=${isTV}`,
+      );
+      const detailData = await detailRes.json();
+
+      return detailData;
+    }
+    return null;
+  } catch (error) {
+    console.error("Lỗi đồng bộ dữ liệu TMDB từ Backend:", error);
+    return null;
+  }
+}
+
 function handleSearch(event) {
   if (event.key === "Enter" || event.keyCode === 13) {
     event.preventDefault();
@@ -1066,10 +1137,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapperElement = document.querySelector(".video-player-wrapper");
 
   if (videoElement) {
-    // Gắn hàm kích hoạt Fullscreen chuẩn tương thích iOS & Android
     window.triggerFullscreen = function () {
       if (videoElement.webkitEnterFullscreen) {
-        // Riêng iOS Safari bắt buộc gọi trực tiếp trên thẻ video để ép xoay ngang
         videoElement.webkitEnterFullscreen();
       } else if (document.fullscreenElement) {
         document.exitFullscreen();
@@ -1081,3 +1150,66 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 });
+
+// ==========================================
+// 9. XỬ LÝ SỰ KIỆN CLICK NÚT MŨI TÊN TRƯỢT SLIDER
+// ==========================================
+document.addEventListener("DOMContentLoaded", () => {
+  const sliderSections = document.querySelectorAll(".slider-section");
+
+  sliderSections.forEach((section) => {
+    const slider = section.querySelector(".movie-slider");
+    const prevBtn = section.querySelector(".prev-btn");
+    const nextBtn = section.querySelector(".next-btn");
+
+    if (slider && nextBtn && prevBtn) {
+      nextBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: window.innerWidth * 0.75, behavior: "smooth" });
+      });
+
+      prevBtn.addEventListener("click", () => {
+        slider.scrollBy({
+          left: -window.innerWidth * 0.75,
+          behavior: "smooth",
+        });
+      });
+    }
+  });
+});
+// ==========================================
+// 10. TÍCH HỢP HIỂN THỊ CHI TIẾT TMDB CHO TRANG DETAIL
+// ==========================================
+
+async function loadMovieDetailsFromTMDB(movieTitle) {
+  try {
+    const detailData = await fetchMovieDataFromBackend(movieTitle);
+
+    if (detailData) {
+      // 1. Cập nhật điểm đánh giá
+      const ratingEl = document.getElementById("detail-rating");
+      if (ratingEl && detailData.vote_average) {
+        ratingEl.innerText = detailData.vote_average.toFixed(1);
+      }
+
+      // 2. Cập nhật Đạo diễn
+      const directorEl = document.getElementById("detail-director");
+      if (directorEl && detailData.director) {
+        directorEl.innerText = detailData.director;
+      }
+
+      // 3. Cập nhật Diễn viên
+      const castEl = document.getElementById("detail-cast");
+      if (castEl && detailData.cast) {
+        castEl.innerText = detailData.cast;
+      }
+
+      // 4. Cập nhật Thể loại
+      const genresEl = document.getElementById("detail-genres");
+      if (genresEl && detailData.genres) {
+        genresEl.innerText = detailData.genres;
+      }
+    }
+  } catch (error) {
+    console.error("Không thể tải thông tin chi tiết TMDB:", error);
+  }
+}

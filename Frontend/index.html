@@ -62,8 +62,6 @@
               <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
               <span onclick="filterByGenre('Kinh Điển')">Kinh Điển</span>
               <span onclick="filterByGenre('Lịch Sử')">Lịch Sử</span>
-              <span onclick="filterByGenre('Miền Tây')">Miền Tây</span>
-              <span onclick="filterByGenre('Phim 18+')">Phim 18+</span>
               <span onclick="filterByGenre('Phim Ngắn')">Phim Ngắn</span>
               <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
               <span onclick="filterByGenre('Thần Thoại')">Thần Thoại</span>
@@ -76,6 +74,7 @@
               <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
               <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
               <span onclick="filterByGenre('Anime')">Anime</span>
+              <span onclick="filterByGenre('Hàn Quốc')">Hàn Quốc</span>
             </div>
           </div>
         </li>
@@ -147,9 +146,13 @@
       <!-- SLIDER PHIM MỚI -->
       <div class="slider-section">
         <h2>Phim Mới Cập Nhật</h2>
-        <div class="movie-slider" id="home-movie-slider">
-          <!-- Phim sẽ tự động render vào đây từ JSON qua script.js -->
-        </div>
+        <button class="slider-btn prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="movie-slider" id="home-movie-slider"></div>
+        <button class="slider-btn next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
     </section>
     <!--SLIDER ANIME-->
@@ -160,17 +163,35 @@
     <!-- SLIDER PHIM HÀN QUỐC -->
     <div class="slider-section">
       <h2>Hàn Quốc</h2>
+      <button class="slider-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
       <div class="movie-slider" id="korean-movie-slider"></div>
+      <button class="slider-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <!-- SLIDER PHIM HÀNH ĐỘNG -->
     <div class="slider-section">
       <h2>Hành Động</h2>
+      <button class="slider-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
       <div class="movie-slider" id="action-movie-slider"></div>
+      <button class="slider-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <!-- SLIDER PHIM TÌNH CẢM -->
     <div class="slider-section">
       <h2>Tình Cảm</h2>
+      <button class="slider-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
       <div class="movie-slider" id="romance-movie-slider"></div>
+      <button class="slider-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <!-- TRANG WISHLIST -->
     <section id="page-wishlist" class="page">

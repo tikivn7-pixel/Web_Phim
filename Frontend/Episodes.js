@@ -222,6 +222,20 @@ window.allEpisodesData = {
     "https://v7.kkphimplayer7.com/20260724/dMYoRbu5/index.m3u8",
     "https://v7.kkphimplayer7.com/20260725/zY4iLwhX/index.m3u8",
   ],
+  "all-of-us-are-dead": [
+    "https://s4.phim1280.tv/20250325/15U0OSx5/index.m3u8",
+    "https://s4.phim1280.tv/20250325/L13mtaK3/index.m3u8",
+    "https://s4.phim1280.tv/20250325/xqyp5Z1I/index.m3u8",
+    "https://s4.phim1280.tv/20250325/urYLPIR6/index.m3u8",
+    "https://s4.phim1280.tv/20250325/PzPUQ6vI/index.m3u8",
+    "https://s4.phim1280.tv/20250325/BqradtcC/index.m3u8",
+    "https://s4.phim1280.tv/20250325/NOt6t0Kl/index.m3u8",
+    "https://s4.phim1280.tv/20250325/7lkLmHTd/index.m3u8",
+    "https://s4.phim1280.tv/20250325/CX7skR5r/index.m3u8",
+    "https://s4.phim1280.tv/20250325/BceIVv5Y/index.m3u8",
+    "https://s4.phim1280.tv/20250325/maF3oplG/index.m3u8",
+    "https://s4.phim1280.tv/20250325/YbkatJrM/index.m3u8",
+  ],
 };
 
 window.movieKeyMap = {
@@ -241,4 +255,5 @@ window.movieKeyMap = {
   "the witch: part 1. the subversion": "the-witch-part-1-the-subversion",
   "the witch: part 2. the other one": "the-witch-part-2-the-other-one",
   "agent kim reactivated": "agent-kim-reactivated",
+  "all of us are dead": "all-of-us-are-dead",
 };

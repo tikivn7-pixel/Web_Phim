@@ -45,6 +45,7 @@
         display: flex;
         gap: 40px;
         align-items: flex-start;
+        flex-wrap: wrap;
       "
     >
       <!-- Poster phim -->
@@ -60,20 +61,43 @@
       />
 
       <!-- Thông tin phim -->
-      <div style="flex: 1">
+      <div style="flex: 1; min-width: 300px">
         <h1 id="detail-title" style="margin-top: 0; font-size: 2.5rem"></h1>
-        <div style="color: #46d369; font-weight: bold; margin-bottom: 15px">
-          <i class="fa-solid fa-star" style="color: #f5c518"></i> --/10
-          &nbsp;&nbsp;|&nbsp;&nbsp; <span id="detail-episodes-count"></span>
+        <div
+          style="
+            color: #46d369;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          "
+        >
+          <span>
+            <i class="fa-solid fa-star" style="color: #f5c518"></i>
+            <span id="detail-rating">--</span>/10
+          </span>
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <span id="detail-episodes-count"></span>
         </div>
         <p
           id="detail-desc"
           style="color: #aaa; line-height: 1.6; margin-bottom: 20px"
         ></p>
 
-        <p style="margin: 5px 0; color: #777">Đạo diễn: Đang cập nhật</p>
-        <p style="margin: 5px 0; color: #777">Diễn viên: Đang cập nhật</p>
-        <p style="margin: 5px 0 20px 0; color: #777">Thể loại: Đang cập nhật</p>
+        <!-- Thêm các ID để hàm từ script.js (hoặc TMDB) cập nhật dữ liệu động -->
+        <p style="margin: 5px 0; color: #aaa">
+          <strong style="color: #777">Đạo diễn:</strong>
+          <span id="detail-director">Đang cập nhật</span>
+        </p>
+        <p style="margin: 5px 0; color: #aaa">
+          <strong style="color: #777">Diễn viên:</strong>
+          <span id="detail-cast">Đang cập nhật</span>
+        </p>
+        <p style="margin: 5px 0 20px 0; color: #aaa">
+          <strong style="color: #777">Thể loại:</strong>
+          <span id="detail-genres">Đang cập nhật</span>
+        </p>
 
         <!-- MỤC CHỌN PHẦN PHIM (SEASONS / PARTS) -->
         <div id="parts-section" style="display: none; margin-bottom: 20px">
@@ -123,7 +147,7 @@
       const episodes = parseInt(params.get("episodes")) || 20;
       const slug = params.get("slug") || "";
 
-      // Gán dữ liệu lên giao diện
+      // Gán dữ liệu tĩnh từ URL lên giao diện trước cho mượt
       document.getElementById("page-title").innerText = title;
       document.getElementById("detail-title").innerText = title;
       document.getElementById("detail-poster-img").src = poster;
@@ -134,13 +158,19 @@
       document.getElementById("detail-episodes-count").innerText =
         `${episodes} Tập`;
 
-      // Gọi hàm render phần phim từ script.js khi trang đã tải xong
-      window.addEventListener("DOMContentLoaded", () => {
+      // Gọi hàm render phần phim và gọi API TMDB khi trang đã tải xong
+      window.addEventListener("DOMContentLoaded", async () => {
+        // 1. Render các phần phim liên quan (nếu có)
         const currentMovie = window.globalMoviesList
           ? window.globalMoviesList.find((m) => m.slug === slug)
           : null;
-        if (currentMovie) {
+        if (currentMovie && currentMovie.group) {
           renderMovieParts(currentMovie.slug, currentMovie.group);
+        }
+
+        // 2. Kích hoạt gọi API TMDB (nếu hàm đã được định nghĩa trong script.js)
+        if (title && typeof loadMovieDetailsFromTMDB === "function") {
+          await loadMovieDetailsFromTMDB(title);
         }
       });
 

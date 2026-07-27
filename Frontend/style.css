@@ -960,3 +960,47 @@ body {
     margin: 0 auto;
   }
 }
+/* Bao bọc danh sách slider để định vị nút bấm */
+.slider-section {
+  position: relative;
+}
+
+/* Kiểu dáng cho nút mũi tên trái/phải */
+.slider-btn {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  width: 45px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  opacity: 0;
+  transition:
+    opacity 0.3s,
+    background 0.3s;
+}
+
+/* Chỉ hiện mũi tên khi di chuột vào phần slider-section */
+.slider-section:hover .slider-btn {
+  opacity: 1;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
