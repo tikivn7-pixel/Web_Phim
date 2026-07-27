@@ -191,6 +191,8 @@ let globalMoviesList = [
     poster: IMG_BASE + "Naruto.jpg",
     banner: IMG_BASE + "Naruto.jpg",
     desc: "Bộ phim kể về cậu về quá trình lớn lên và cuộc đời của cậu bé những nguy hiểm mà cậu đã gặp phải kèm theo đó là một động lực và niềm tin phi thường , một tâm hồn trong sáng chứa đựng những trò nghịch ngợm bướng bỉnh nhưng đầy hồn nhiên . Cùng với việc xoay quanh những người đã bỏ mạng do tranh giành quyền lực cộng với sự đau thương , mất mát mà Naruto đã trải qua.",
+    group: "naruto",
+    partName: "naruto",
   },
   {
     title: "naruto shippuden",
@@ -200,6 +202,8 @@ let globalMoviesList = [
     poster: IMG_BASE + "Naruto Shippuden.jpg",
     banner: IMG_BASE + "Naruto Shippuden.jpg",
     desc: "Naruto Shippuden hay còn được gọi với cái tên quen thuộc Naruto phần 2 là phần tiếp theo của bộ phim hoạt hình nổi tiếng Naruto, lấy bối cảnh hai năm rưỡi sau khi Naruto rời làng Lá. Naruto Shippuden tiếp tục theo chân chàng ninja trẻ tuổi Naruto Uzumaki trong cuộc hành trình luyện tập cực khổ để trở thành ninja giỏi nhất. Trong khi đó, Akatsuki, một tổ chức bí ẩn tập hợp những ninja phản diện tài giỏi bậc nhất, đang từng bước thực hiện kế hoạch lớn của chúng, đe dọa sự an toàn của thế giới ninja. Naruto sẽ làm gì để bảo vệ làng Lá và những người mà cậu yêu quý?",
+    group: "naruto",
+    partName: "naruto shippuden",
   },
   {
     title: "vincenzo",
@@ -219,7 +223,37 @@ let globalMoviesList = [
     banner: IMG_BASE + "Hunt.jpg",
     desc: "Hunt lấy bối cảnh Hàn Quốc thập niên 1980, giai đoạn mà chính quyền quân sự nước này siết chặt các vấn đề liên quan đến chiến lược an ninh quốc gia. Nhân vật chính của phim là hai hai điệp viên Hàn Quốc (Lee Jung Jae và Jung Woo Sung) nhận nhiệm vụ lật mặt một gián điệp Triều Tiên trong tổ chức của mình. Trong quá trình làm nhiệm vụ, họ đã nảy sinh nghi ngờ và bắt đầu điều tra lẫn nhau.cd",
   },
+  {
+    title: "Money Heist: Korea - Joint Economic Area",
+    slug: "phi-vu-trieu-do-han-quoc",
+    episodes: 12,
+    genres: "Hành Động, Bí Ẩn, Phiêu Lưu, Hình Sự, Chính Kịch, Hàn Quốc",
+    poster: IMG_BASE + "Money Heist Korea.jpg",
+    banner: IMG_BASE + "Money Heist Korea.jpg",
+    desc: "Giáo sư (Yoo Ji-Tae) lên kế hoạch cho một vụ trộm đầy tham vọng sẽ có một khoản tiền lớn. Đối với kế hoạch của mình, Giáo sư tìm kiếm các thành viên tiềm năng trong nhóm. Các thành viên được tuyển chọn chọn tên thành phố làm mật danh và họ đều có cá tính mạnh mẽ. Kế hoạch của họ có vẻ hoàn hảo, nhưng do bắt giữ các con tin, họ phải đối mặt với một tình huống bất ngờ.",
+  },
+  {
+    title: "Itaewon Class",
+    slug: "tang-lop-itaewon",
+    episodes: 16,
+    genres: "Chính Kịch, Tâm Lý, Tình Cảm, Hàn Quốc",
+    poster: IMG_BASE + "Itaewon Class.jpg",
+    banner: IMG_BASE + "Itaewon Class.jpg",
+    desc: "Tại một khu phố nhộn nhịp của Seoul, một cựu tù nhân và bạn bè mình chiến đấu với đối thủ khó nhằn để biến tham vọng quán bar đường phố của họ thành hiện thực.",
+  },
+  {
+    title: "Nine Puzzles",
+    slug: "chin-manh-ghep-bi-an",
+    episodes: 11,
+    genres: "Hình Sự, Bí Ẩn, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "Nine Puzzles.jpg",
+    banner: IMG_BASE + "Nine Puzzles.jpg",
+    desc: "Nine Puzzles là bộ phim thuộc thể loại hình sự, phá án, kinh dị kể về hành trình truy tìm hung thủ vụ án giết người hàng loạt xảy ra 10 năm về trước nay lại tái diễn. Yoon Yi Na (Kim Da Mi thủ vai) là nhân chứng duy nhất trong vụ án 10 năm trước khi người chú ruột của cô bị sát hại. Sau này, cô trở thành trung úy cảnh sát 6 năm kinh nghiệm trong lĩnh vực lập hồ sơ phân tích tội phạm thuộc Đội phân tích tội phạm - Phòng Điều tra pháp y thuộc Cơ quan cảnh sát thành phố Seoul, với bộ não thiên tài, Yina nắm bắt rất nhanh động cơ phạm tội của hung thủ tại hiện trường như thể đã từng thực hiện. Cùng lật lại vụ án, truy tìm hung thủ giết người hàng loạt xảy ra 10 năm trước cùng với Yina là cảnh sát điều tra đội phòng chống bạo lực Kim Han Saem (Son Seok Gu thủ vai), người luôn nghi ngờ Yina chính là hung thủ của vụ án 10 năm trước. Han Saem là cảnh sát ưu tú, lỳ lợm và nhạy bén nhưng lại khiến cho người ta hiểu lầm bởi những hành động có phần quái dị của mình. Để ngăn chặn số lượng nạn nhân bị gi.ết hại ngày một tăng cùng với sự xuất hiện của “mảnh ghép bí ẩn”, Yina phải cùng bắt tay với Han Saem để nhanh chóng tìm ra hung thủ thật sự.",
+  },
 ];
+
+// Expose ra window để các trang khác (vd: detail.html) truy cập được danh sách phim
+window.globalMoviesList = globalMoviesList;
 
 function escapeHtml(str) {
   return String(str)
@@ -912,6 +946,52 @@ function renderMovieParts(currentSlug, currentGroup) {
   });
 }
 
+function renderRelatedSuggestions(currentSlug, currentGenres) {
+  const container = document.getElementById("fd-suggestions");
+  if (!container) return;
+
+  const genreList = (currentGenres || "")
+    .split(",")
+    .map((g) => g.trim().toLowerCase())
+    .filter(Boolean);
+
+  const related = globalMoviesList
+    .filter((m) => {
+      if (m.slug === currentSlug) return false;
+      if (!m.genres) return false;
+      const mGenres = m.genres.toLowerCase();
+      return genreList.some((g) => g && mGenres.includes(g));
+    })
+    .slice(0, 6);
+
+  if (related.length === 0) {
+    container.innerHTML = `<p style="color:#777; font-size:13px;">Chưa có gợi ý phù hợp.</p>`;
+    return;
+  }
+
+  container.innerHTML = "";
+  related.forEach((movie) => {
+    const item = document.createElement("div");
+    item.className = "fd-suggest-item";
+    item.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        getTotalEpisodes(movie),
+        movie.slug,
+      );
+    item.innerHTML = `
+      <img src="${movie.poster}" alt="${escapeHtml(movie.title)}" onerror="this.src='https://placehold.co/80x110'" />
+      <div class="fd-suggest-info">
+        <h4>${escapeHtml(movie.title)}</h4>
+        <span>${escapeHtml((movie.genres || "").split(",")[0] || "")}</span>
+      </div>
+    `;
+    container.appendChild(item);
+  });
+}
+
 // ==========================================
 // 5. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH) & TÍCH HỢP TMDB API
 // ==========================================
@@ -1180,6 +1260,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // 10. TÍCH HỢP HIỂN THỊ CHI TIẾT TMDB CHO TRANG DETAIL
 // ==========================================
 
+function updateRatingVisuals(voteAverage) {
+  if (!voteAverage) return;
+
+  const percent = Math.round(voteAverage * 10);
+  const scoreEl = document.getElementById("fd-score-value");
+  if (scoreEl) scoreEl.innerText = `${percent}%`;
+
+  const starsEl = document.getElementById("fd-stars");
+  if (starsEl) {
+    const starCount = Math.round(voteAverage / 2);
+    let html = "";
+    for (let i = 1; i <= 5; i++) {
+      html += `<i class="${i <= starCount ? "fa-solid" : "fa-regular"} fa-star"></i>`;
+    }
+    starsEl.innerHTML = html;
+  }
+}
+
 async function loadMovieDetailsFromTMDB(movieTitle) {
   try {
     const detailData = await fetchMovieDataFromBackend(movieTitle);
@@ -1190,6 +1288,7 @@ async function loadMovieDetailsFromTMDB(movieTitle) {
       if (ratingEl && detailData.vote_average) {
         ratingEl.innerText = detailData.vote_average.toFixed(1);
       }
+      updateRatingVisuals(detailData.vote_average);
 
       // 2. Cập nhật Đạo diễn
       const directorEl = document.getElementById("detail-director");

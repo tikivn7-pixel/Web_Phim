@@ -9,130 +9,200 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body
-    style="
-      background-color: #141414;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    "
-  >
-    <!-- Nút quay lại trang chủ -->
-    <div style="max-width: 1000px; margin: 0 auto">
-      <a
-        href="index.html"
-        style="
-          color: #fff;
-          text-decoration: none;
-          font-size: 1rem;
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          background: #333;
-          padding: 8px 16px;
-          border-radius: 4px;
-        "
-      >
-        <i class="fa-solid fa-arrow-left"></i> Trở về trang chủ
-      </a>
-    </div>
+  <body>
+    <div class="fd-wrap">
+      <!-- Breadcrumb -->
+      <div class="fd-breadcrumb" id="fd-breadcrumb">
+        <a href="index.html">Trang chủ</a>
+      </div>
 
-    <div
-      style="
-        max-width: 1000px;
-        margin: 20px auto;
-        display: flex;
-        gap: 40px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-      "
-    >
-      <!-- Poster phim -->
-      <img
-        id="detail-poster-img"
-        src=""
-        alt="Poster"
-        style="
-          width: 300px;
-          border-radius: 8px;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        "
-      />
+      <div class="fd-layout">
+        <!-- ================= MAIN ================= -->
+        <div class="fd-main">
+          <!-- Hero: Poster + Thông tin chính -->
+          <div class="fd-hero">
+            <div class="fd-poster">
+              <button
+                class="fd-follow-badge"
+                id="fd-follow-btn"
+                onclick="fdToggleFollow()"
+              >
+                <i class="fa-regular fa-bookmark" id="fd-follow-icon"></i>
+                <span id="fd-follow-text">Theo dõi</span>
+              </button>
+              <img id="detail-poster-img" src="" alt="Poster" />
+              <div class="fd-play-overlay" onclick="fdWatchNow()">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
 
-      <!-- Thông tin phim -->
-      <div style="flex: 1; min-width: 300px">
-        <h1 id="detail-title" style="margin-top: 0; font-size: 2.5rem"></h1>
-        <div
-          style="
-            color: #46d369;
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-          "
-        >
-          <span>
-            <i class="fa-solid fa-star" style="color: #f5c518"></i>
-            <span id="detail-rating">--</span>/10
-          </span>
-          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-          <span id="detail-episodes-count"></span>
+            <div class="fd-info">
+              <h1 id="detail-title" class="fd-title"></h1>
+              <p id="detail-desc" class="fd-desc"></p>
+
+              <div class="fd-rating-row">
+                <div class="fd-score-badge">
+                  <span id="fd-score-value">--</span>
+                </div>
+                <div>
+                  <div class="fd-stars" id="fd-stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="fd-meta-line">
+                    <span id="detail-rating">--</span>/10
+                  </div>
+                </div>
+                <div class="fd-meta-line">
+                  <i class="fa-solid fa-clapperboard"></i>
+                  <span id="detail-episodes-count"></span>
+                </div>
+              </div>
+
+              <button class="fd-watch-btn" onclick="fdWatchNow()">
+                <i class="fa-solid fa-play"></i> Xem Ngay
+              </button>
+            </div>
+          </div>
+
+          <!-- Phần phim (nếu cùng group) -->
+          <div id="parts-section" style="display: none; margin-bottom: 10px">
+            <h3
+              style="
+                border-bottom: 2px solid #e50914;
+                display: inline-block;
+                padding-bottom: 5px;
+                margin-bottom: 12px;
+              "
+            >
+              Phần Phim
+            </h3>
+            <div
+              id="detail-parts-grid"
+              style="display: flex; flex-wrap: wrap; gap: 10px"
+            ></div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="fd-tabs">
+            <button
+              class="fd-tab-btn active"
+              data-tab="info"
+              onclick="fdSwitchTab('info')"
+            >
+              <i class="fa-solid fa-circle-info"></i> Thông tin phim
+            </button>
+            <button
+              class="fd-tab-btn"
+              data-tab="cast"
+              onclick="fdSwitchTab('cast')"
+            >
+              <i class="fa-solid fa-users"></i> Nhân vật
+            </button>
+            <button
+              class="fd-tab-btn"
+              data-tab="trailer"
+              onclick="fdSwitchTab('trailer')"
+            >
+              <i class="fa-solid fa-video"></i> Trailer
+            </button>
+            <button
+              class="fd-tab-btn"
+              data-tab="gallery"
+              onclick="fdSwitchTab('gallery')"
+            >
+              <i class="fa-solid fa-image"></i> Hình ảnh
+            </button>
+          </div>
+
+          <div class="fd-tab-panel active" id="fd-panel-info">
+            <div class="fd-info-grid">
+              <div class="fd-info-item">
+                <i class="fa-solid fa-tags"></i>
+                <div>
+                  <strong>Thể loại:</strong>
+                  <span id="detail-genres">Đang cập nhật</span>
+                </div>
+              </div>
+              <div class="fd-info-item">
+                <i class="fa-solid fa-user-tie"></i>
+                <div>
+                  <strong>Đạo diễn:</strong>
+                  <span id="detail-director">Đang cập nhật</span>
+                </div>
+              </div>
+              <div class="fd-info-item">
+                <i class="fa-solid fa-user-group"></i>
+                <div>
+                  <strong>Diễn viên:</strong>
+                  <span id="detail-cast">Đang cập nhật</span>
+                </div>
+              </div>
+              <div class="fd-info-item">
+                <i class="fa-solid fa-closed-captioning"></i>
+                <div><strong>Ngôn ngữ:</strong> <span>Vietsub</span></div>
+              </div>
+              <div class="fd-info-item">
+                <i class="fa-solid fa-signal"></i>
+                <div>
+                  <strong>Trạng thái:</strong>
+                  <span id="fd-status">Đang cập nhật</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fd-tab-panel" id="fd-panel-cast">
+            <p class="fd-placeholder">
+              <i
+                class="fa-solid fa-users"
+                style="display: block; font-size: 22px; margin-bottom: 8px"
+              ></i>
+              Thông tin nhân vật đang được cập nhật.
+            </p>
+          </div>
+          <div class="fd-tab-panel" id="fd-panel-trailer">
+            <p class="fd-placeholder">
+              <i
+                class="fa-solid fa-video"
+                style="display: block; font-size: 22px; margin-bottom: 8px"
+              ></i>
+              Trailer đang được cập nhật.
+            </p>
+          </div>
+          <div class="fd-tab-panel" id="fd-panel-gallery">
+            <p class="fd-placeholder">
+              <i
+                class="fa-solid fa-image"
+                style="display: block; font-size: 22px; margin-bottom: 8px"
+              ></i>
+              Hình ảnh đang được cập nhật.
+            </p>
+          </div>
+
+          <!-- Danh sách tập -->
+          <div class="episodes-section">
+            <h3
+              style="
+                border-bottom: 2px solid #e50914;
+                display: inline-block;
+                padding-bottom: 5px;
+              "
+            >
+              Danh Sách Tập
+            </h3>
+            <div id="detail-episode-grid" class="episode-grid"></div>
+          </div>
         </div>
-        <p
-          id="detail-desc"
-          style="color: #aaa; line-height: 1.6; margin-bottom: 20px"
-        ></p>
 
-        <!-- Thêm các ID để hàm từ script.js (hoặc TMDB) cập nhật dữ liệu động -->
-        <p style="margin: 5px 0; color: #aaa">
-          <strong style="color: #777">Đạo diễn:</strong>
-          <span id="detail-director">Đang cập nhật</span>
-        </p>
-        <p style="margin: 5px 0; color: #aaa">
-          <strong style="color: #777">Diễn viên:</strong>
-          <span id="detail-cast">Đang cập nhật</span>
-        </p>
-        <p style="margin: 5px 0 20px 0; color: #aaa">
-          <strong style="color: #777">Thể loại:</strong>
-          <span id="detail-genres">Đang cập nhật</span>
-        </p>
-
-        <!-- MỤC CHỌN PHẦN PHIM (SEASONS / PARTS) -->
-        <div id="parts-section" style="display: none; margin-bottom: 20px">
-          <h3
-            style="
-              margin-bottom: 15px;
-              border-bottom: 2px solid #e50914;
-              display: inline-block;
-              padding-bottom: 5px;
-            "
-          >
-            Phần Phim
-          </h3>
-          <div
-            id="detail-parts-grid"
-            style="display: flex; flex-wrap: wrap; gap: 10px"
-          ></div>
+        <!-- ================= SIDEBAR ================= -->
+        <div class="fd-sidebar">
+          <h3>Có Thể Bạn Thích</h3>
+          <div id="fd-suggestions"></div>
         </div>
-
-        <h3
-          style="
-            margin-bottom: 15px;
-            border-bottom: 2px solid #e50914;
-            display: inline-block;
-            padding-bottom: 5px;
-          "
-        >
-          Danh Sách Tập
-        </h3>
-
-        <!-- Lưới danh sách tập -->
-        <div
-          id="detail-episode-grid"
-          style="display: flex; flex-wrap: wrap; gap: 10px"
-        ></div>
       </div>
     </div>
 
@@ -158,53 +228,119 @@
       document.getElementById("detail-episodes-count").innerText =
         `${episodes} Tập`;
 
+      // Chuyển tới xem tập 1 ngay lập tức
+      function fdWatchNow() {
+        const watchParams = new URLSearchParams({
+          title,
+          ep: 1,
+          slug,
+          poster,
+          episodes,
+        });
+        window.location.href = `watch.html?${watchParams.toString()}`;
+      }
+
+      // Chuyển tab (Thông tin phim / Nhân vật / Trailer / Hình ảnh)
+      function fdSwitchTab(tab) {
+        document.querySelectorAll(".fd-tab-btn").forEach((btn) => {
+          btn.classList.toggle("active", btn.dataset.tab === tab);
+        });
+        document.querySelectorAll(".fd-tab-panel").forEach((panel) => {
+          panel.classList.remove("active");
+        });
+        const activePanel = document.getElementById(`fd-panel-${tab}`);
+        if (activePanel) activePanel.classList.add("active");
+      }
+
+      // Nút "Theo dõi" -> dùng chung wishlist đã có sẵn của site
+      function fdIsFollowed() {
+        const list = typeof getWishlist === "function" ? getWishlist() : [];
+        return list.some((item) => item.title === title);
+      }
+
+      function fdUpdateFollowUI() {
+        const followed = fdIsFollowed();
+        const btn = document.getElementById("fd-follow-btn");
+        const icon = document.getElementById("fd-follow-icon");
+        const text = document.getElementById("fd-follow-text");
+        if (!btn || !icon || !text) return;
+        btn.classList.toggle("active", followed);
+        icon.className = followed
+          ? "fa-solid fa-bookmark"
+          : "fa-regular fa-bookmark";
+        text.innerText = followed ? "Đang theo dõi" : "Theo dõi";
+      }
+
+      function fdToggleFollow() {
+        if (typeof toggleWishlist === "function") {
+          toggleWishlist({ title, poster, desc, episodes, slug });
+        }
+        fdUpdateFollowUI();
+      }
+
+      // Breadcrumb: Trang chủ / <thể loại...> / <tên phim> / Thông tin
+      function fdRenderBreadcrumb(genresStr) {
+        const bc = document.getElementById("fd-breadcrumb");
+        if (!bc) return;
+        const safe = typeof escapeHtml === "function" ? escapeHtml : (s) => s;
+        const genres = (genresStr || "")
+          .split(",")
+          .map((g) => g.trim())
+          .filter(Boolean);
+
+        let html = `<a href="index.html">Trang chủ</a>`;
+        genres.forEach((g) => {
+          html += `<span class="sep">/</span><span>${safe(g)}</span>`;
+        });
+        html += `<span class="sep">/</span><span>${safe(title)}</span>`;
+        html += `<span class="sep">/</span><span class="current">Thông tin</span>`;
+        bc.innerHTML = html;
+      }
+
       // Gọi hàm render phần phim và gọi API TMDB khi trang đã tải xong
       window.addEventListener("DOMContentLoaded", async () => {
-        // 1. Render các phần phim liên quan (nếu có)
         const currentMovie = window.globalMoviesList
           ? window.globalMoviesList.find((m) => m.slug === slug)
           : null;
+
+        fdRenderBreadcrumb(currentMovie ? currentMovie.genres : "");
+        fdUpdateFollowUI();
+
+        // 1. Render các phần phim liên quan (nếu có)
         if (currentMovie && currentMovie.group) {
           renderMovieParts(currentMovie.slug, currentMovie.group);
         }
 
-        // 2. Kích hoạt gọi API TMDB (nếu hàm đã được định nghĩa trong script.js)
+        // 2. Render gợi ý phim cùng thể loại ở sidebar
+        if (typeof renderRelatedSuggestions === "function") {
+          renderRelatedSuggestions(
+            slug,
+            currentMovie ? currentMovie.genres : "",
+          );
+        }
+
+        // 3. Kích hoạt gọi API TMDB (nếu hàm đã được định nghĩa trong script.js)
         if (title && typeof loadMovieDetailsFromTMDB === "function") {
           await loadMovieDetailsFromTMDB(title);
         }
       });
 
+      // Tạo danh sách các nút tập phim (dùng class .ep-btn có sẵn trong style.css)
       const grid = document.getElementById("detail-episode-grid");
       grid.innerHTML = "";
 
-      // Tạo danh sách các nút tập phim
       for (let i = 1; i <= episodes; i++) {
         const btn = document.createElement("button");
-        btn.className = "ep-btn";
+        btn.className = "ep-btn" + (i === 1 ? " active" : "");
         btn.innerText = `Tập ${i}`;
-        btn.style.cssText =
-          "background: #333; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.2s;";
 
-        if (i === 1) {
-          btn.style.background = "#e50914"; // Tập 1 mặc định màu đỏ nổi bật
-        }
-
-        // Hiệu ứng hover nhẹ cho nút tập
-        btn.onmouseover = () => {
-          if (i !== 1) btn.style.background = "#444";
-        };
-        btn.onmouseout = () => {
-          if (i !== 1) btn.style.background = "#333";
-        };
-
-        // Khi bấm vào tập phim -> Chuyển sang watch.html kèm theo tham số
         btn.onclick = () => {
           const watchParams = new URLSearchParams({
-            title: title,
+            title,
             ep: i,
-            slug: slug,
-            poster: poster,
-            episodes: episodes,
+            slug,
+            poster,
+            episodes,
           });
           window.location.href = `watch.html?${watchParams.toString()}`;
         };
