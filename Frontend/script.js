@@ -138,7 +138,7 @@ let globalMoviesList = [
     title: "weathering with you",
     slug: "weathering-with-you",
     episodes: 1,
-    genres: "Hoạt Hình, Viễn Tưởng, Tình Cảm, Phim Ngắn",
+    genres: "Hoạt Hình, Viễn Tưởng, Tình Cảm, Phim Ngắn, Anime",
     poster: IMG_BASE + "Weathering with You.jpg",
     banner: IMG_BASE + "Weathering with You.jpg",
     desc: "Xoay quanh cuộc sống của cậu thiếu niên Morishima Hodaka...",
@@ -719,6 +719,116 @@ function renderKoreanMovies() {
   updateWishlistUI();
 }
 
+function renderActionMovies() {
+  const container = document.getElementById("action-movie-slider");
+  if (!container) return;
+
+  container.innerHTML = "";
+  const actionMoviesList = globalMoviesList.filter(
+    (movie) => movie.genres && movie.genres.toLowerCase().includes("hành động"),
+  );
+
+  actionMoviesList.forEach((movie) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        getTotalEpisodes(movie),
+        movie.slug,
+      );
+
+    const safeTitle = escapeHtml(movie.title);
+    const safeDesc = escapeHtml(movie.desc || "");
+    const handlerTitle = escapeForInlineHandler(movie.title);
+    const handlerDesc = escapeForInlineHandler(movie.desc || "");
+
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      <h4>${safeTitle}</h4>
+      <div class="movie-hover-card">
+        <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${safeTitle}</h3>
+          <div class="hover-actions">
+            <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${movie.slug || ""}')">
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button
+              class="btn-hover icon"
+              title="Yêu thích"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${movie.poster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p class="hover-genres">${safeDesc}</p>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateWishlistUI();
+}
+
+function renderRomanceMovies() {
+  const container = document.getElementById("romance-movie-slider");
+  if (!container) return;
+
+  container.innerHTML = "";
+  const actionMoviesList = globalMoviesList.filter(
+    (movie) => movie.genres && movie.genres.toLowerCase().includes("tình cảm"),
+  );
+
+  actionMoviesList.forEach((movie) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.onclick = () =>
+      showDetail(
+        movie.title,
+        movie.poster,
+        movie.desc,
+        getTotalEpisodes(movie),
+        movie.slug,
+      );
+
+    const safeTitle = escapeHtml(movie.title);
+    const safeDesc = escapeHtml(movie.desc || "");
+    const handlerTitle = escapeForInlineHandler(movie.title);
+    const handlerDesc = escapeForInlineHandler(movie.desc || "");
+
+    card.innerHTML = `
+      <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      <h4>${safeTitle}</h4>
+      <div class="movie-hover-card">
+        <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+        <div class="hover-content">
+          <h3 class="hover-title">${safeTitle}</h3>
+          <div class="hover-actions">
+            <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${movie.slug || ""}')">
+              <i class="fa-solid fa-play"></i> Xem ngay
+            </button>
+            <button
+              class="btn-hover icon"
+              title="Yêu thích"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${movie.poster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p class="hover-genres">${safeDesc}</p>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateWishlistUI();
+}
+
 function renderMovieParts(currentSlug, currentGroup) {
   const partsSection = document.getElementById("parts-section");
   const partsGrid = document.getElementById("detail-parts-grid");
@@ -942,6 +1052,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderHomePageMovies();
   renderAnimeMovies();
   renderKoreanMovies();
+  renderActionMovies();
+  renderRomanceMovies();
   renderContinueWatching();
   initHeroSlider();
 });

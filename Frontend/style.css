@@ -711,6 +711,30 @@ body {
   display: block;
 }
 
+/* TỐI ƯU TOÀN MÀN HÌNH (FULLSCREEN FIX CHO MOBILE & WEB) */
+.video-player-wrapper:fullscreen,
+.video-player-wrapper:-webkit-full-screen,
+.video-player-wrapper:-moz-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000 !important;
+}
+
+.video-player-wrapper video:fullscreen,
+.video-player-wrapper video:-webkit-full-screen,
+.video-player-wrapper video:-moz-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+}
+
 .netflix-back-btn {
   position: absolute;
   top: 20px;
