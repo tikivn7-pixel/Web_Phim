@@ -139,8 +139,8 @@ let globalMoviesList = [
     slug: "dua-con-cua-thoi-tiet",
     episodes: 1,
     genres: "Hoạt Hình, Viễn Tưởng, Tình Cảm, Phim Ngắn, Anime",
-    poster: IMG_BASE + "Weathering with You.jpg",
-    banner: IMG_BASE + "Weathering with You.jpg",
+    poster: IMG_BASE + "weathering with you.jpg",
+    banner: IMG_BASE + "weathering with you.jpg",
     desc: "Xoay quanh cuộc sống của cậu thiếu niên Morishima Hodaka...",
   },
   {
