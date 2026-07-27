@@ -25,6 +25,27 @@ function getTotalEpisodes(movie) {
 
 const IMG_BASE = "Img/";
 
+// ==========================================
+// 0B. ĐIỀU HƯỚNG TRANG (ROUTER) - switchPage()
+// ==========================================
+// Hàm này được gọi từ các onclick trong index.html (Trang chủ, Danh sách
+// của tôi, Chi tiết, Xem phim...). Trước đây bị thiếu nên bấm không có
+// phản ứng gì.
+function switchPage(pageName) {
+  document.querySelectorAll(".page").forEach((page) => {
+    page.classList.remove("active");
+  });
+
+  const targetPage = document.getElementById(`page-${pageName}`);
+  if (targetPage) {
+    targetPage.classList.add("active");
+  } else {
+    console.warn(`switchPage: không tìm thấy #page-${pageName}`);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 let globalMoviesList = [
   {
     title: "Twenty Five Twenty One",
