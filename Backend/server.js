@@ -294,16 +294,29 @@ app.get("/api/tmdb/detail/:id", async (req, res) => {
 
 // ================= API MOVIES (PHÂN TRANG) =================
 
-// 8. Lấy danh sách phim có phân trang, lọc theo thể loại
+// 8. Lấy danh sách phim có phân trang, lọc theo thể loại và/hoặc nhóm phim
 //    GET /api/movies?page=1&limit=20&genre=Hàn Quốc
+//    GET /api/movies?group=twenty-five-twenty-one-group  (lấy các PHẦN cùng 1 series)
 app.get("/api/movies", (req, res) => {
   const page = Math.max(parseInt(req.query.page) || 1, 1);
   const limit = Math.min(Math.max(parseInt(req.query.limit) || 20, 1), 50);
   const offset = (page - 1) * limit;
   const genre = req.query.genre ? req.query.genre.trim() : null;
+  const group = req.query.group ? req.query.group.trim() : null;
 
-  const whereClause = genre ? "WHERE genres LIKE ?" : "";
-  const whereParams = genre ? [`%${genre}%`] : [];
+  const conditions = [];
+  const whereParams = [];
+  if (genre) {
+    conditions.push("genres LIKE ?");
+    whereParams.push(`%${genre}%`);
+  }
+  if (group) {
+    conditions.push("movie_group = ?");
+    whereParams.push(group);
+  }
+  const whereClause = conditions.length
+    ? `WHERE ${conditions.join(" AND ")}`
+    : "";
 
   db.query(
     `SELECT COUNT(*) AS total FROM movies ${whereClause}`,

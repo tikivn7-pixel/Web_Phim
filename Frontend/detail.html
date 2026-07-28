@@ -207,17 +207,17 @@
     </div>
 
     <!-- Script xử lý nhận dữ liệu từ URL và hiển thị -->
-    <script src="Episodes.js"></script>
     <script src="script.js"></script>
     <script>
       const params = new URLSearchParams(window.location.search);
       const title = params.get("title") || "Phim";
       const poster = params.get("poster") || "";
       const desc = params.get("desc") || "";
-      const episodes = parseInt(params.get("episodes")) || 20;
+      let episodes = parseInt(params.get("episodes")) || 20;
       const slug = params.get("slug") || "";
 
-      // Gán dữ liệu tĩnh từ URL lên giao diện trước cho mượt
+      // Gán dữ liệu tĩnh từ URL lên giao diện trước cho mượt (sẽ được API
+      // cập nhật lại chính xác hơn ngay sau khi tải xong bên dưới)
       document.getElementById("page-title").innerText = title;
       document.getElementById("detail-title").innerText = title;
       document.getElementById("detail-poster-img").src = poster;
@@ -297,26 +297,80 @@
         bc.innerHTML = html;
       }
 
-      // Gọi hàm render phần phim và gọi API TMDB khi trang đã tải xong
-      window.addEventListener("DOMContentLoaded", async () => {
-        const currentMovie = window.globalMoviesList
-          ? window.globalMoviesList.find((m) => m.slug === slug)
-          : null;
+      // Render danh sách nút tập phim, dùng chung cho lần đầu (từ URL param)
+      // và lần render lại sau khi có số tập chính xác từ API
+      function fdRenderEpisodeGrid(episodeCount) {
+        const grid = document.getElementById("detail-episode-grid");
+        if (!grid) return;
+        grid.innerHTML = "";
+        for (let i = 1; i <= episodeCount; i++) {
+          const btn = document.createElement("button");
+          btn.className = "ep-btn" + (i === 1 ? " active" : "");
+          btn.innerText = `Tập ${i}`;
+          btn.onclick = () => {
+            const watchParams = new URLSearchParams({
+              title,
+              ep: i,
+              slug,
+              poster,
+              episodes: episodeCount,
+            });
+            window.location.href = `watch.html?${watchParams.toString()}`;
+          };
+          grid.appendChild(btn);
+        }
+      }
 
-        fdRenderBreadcrumb(currentMovie ? currentMovie.genres : "");
+      // Render tạm ngay bằng số tập lấy từ URL param cho mượt
+      fdRenderEpisodeGrid(episodes);
+
+      window.addEventListener("DOMContentLoaded", async () => {
         fdUpdateFollowUI();
 
-        // 1. Render các phần phim liên quan (nếu có)
+        // Lấy dữ liệu chuẩn của phim trực tiếp từ MySQL qua API (thay vì
+        // đọc window.globalMoviesList tĩnh như trước - giờ danh sách đó
+        // chỉ populate dần qua các lần fetch, không đảm bảo có sẵn ở đây)
+        const currentMovie = await fetchMovieBySlug(slug);
+
+        if (currentMovie) {
+          addToGlobalMoviesList([currentMovie]);
+
+          // Cập nhật lại giao diện bằng data chuẩn từ DB (phòng khi URL
+          // param bị thiếu hoặc cũ hơn dữ liệu thật)
+          document.getElementById("detail-title").innerText =
+            currentMovie.title;
+          document.getElementById("detail-poster-img").src =
+            currentMovie.poster;
+          document.getElementById("detail-desc").innerText =
+            currentMovie.desc || "";
+          episodes = currentMovie.episodes || episodes;
+          document.getElementById("detail-episodes-count").innerText =
+            `${episodes} Tập`;
+          fdRenderEpisodeGrid(episodes);
+        }
+
+        fdRenderBreadcrumb(currentMovie ? currentMovie.genres : "");
+
+        // 1. Phần phim (nếu cùng series) - fetch riêng theo movie_group
         if (currentMovie && currentMovie.group) {
+          const parts = await fetchMovies({
+            group: currentMovie.group,
+            limit: 10,
+          });
+          addToGlobalMoviesList(parts);
           renderMovieParts(currentMovie.slug, currentMovie.group);
         }
 
-        // 2. Render gợi ý phim cùng thể loại ở sidebar
-        if (typeof renderRelatedSuggestions === "function") {
-          renderRelatedSuggestions(
-            slug,
-            currentMovie ? currentMovie.genres : "",
-          );
+        // 2. Gợi ý phim cùng thể loại ở sidebar - fetch theo thể loại đầu tiên
+        if (
+          currentMovie &&
+          currentMovie.genres &&
+          typeof renderRelatedSuggestions === "function"
+        ) {
+          const firstGenre = currentMovie.genres.split(",")[0].trim();
+          const related = await fetchMovies({ genre: firstGenre, limit: 12 });
+          addToGlobalMoviesList(related);
+          renderRelatedSuggestions(slug, currentMovie.genres);
         }
 
         // 3. Kích hoạt gọi API TMDB (nếu hàm đã được định nghĩa trong script.js)
@@ -324,29 +378,6 @@
           await loadMovieDetailsFromTMDB(title);
         }
       });
-
-      // Tạo danh sách các nút tập phim (dùng class .ep-btn có sẵn trong style.css)
-      const grid = document.getElementById("detail-episode-grid");
-      grid.innerHTML = "";
-
-      for (let i = 1; i <= episodes; i++) {
-        const btn = document.createElement("button");
-        btn.className = "ep-btn" + (i === 1 ? " active" : "");
-        btn.innerText = `Tập ${i}`;
-
-        btn.onclick = () => {
-          const watchParams = new URLSearchParams({
-            title,
-            ep: i,
-            slug,
-            poster,
-            episodes,
-          });
-          window.location.href = `watch.html?${watchParams.toString()}`;
-        };
-
-        grid.appendChild(btn);
-      }
     </script>
   </body>
 </html>

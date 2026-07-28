@@ -113,170 +113,155 @@
       </div>
     </div>
 
-    <!-- Nạp dữ liệu phim và episodes.js trước -->
-    <script src="Episodes.js"></script>
+    <!-- Nạp script.js (không cần Episodes.js nữa - link m3u8 lấy từ MySQL) -->
     <script src="script.js"></script>
 
-    <!-- Đoạn script xử lý đọc URL, lấy link API, phát video và tương thích thiết bị di động -->
+    <!-- Đoạn script xử lý đọc URL, lấy dữ liệu phim từ API, phát video -->
     <script>
-      const params = new URLSearchParams(window.location.search);
-      const movieTitle = params.get("title");
-      let episodeNum = parseInt(params.get("ep")) || 1;
-      const slug = params.get("slug") || "";
-      const posterFromUrl = params.get("poster") || "";
+      (async () => {
+        const params = new URLSearchParams(window.location.search);
+        const movieTitle = params.get("title");
+        let episodeNum = parseInt(params.get("ep")) || 1;
+        const slug = params.get("slug") || "";
+        const posterFromUrl = params.get("poster") || "";
+        const episodesFromUrl = parseInt(params.get("episodes")) || 20;
 
-      if (!movieTitle) {
-        document.getElementById("watch-movie-title").innerText =
-          "Không tìm thấy thông tin phim!";
-      }
+        if (!movieTitle) {
+          document.getElementById("watch-movie-title").innerText =
+            "Không tìm thấy thông tin phim!";
+        }
 
-      // Tìm phim trong danh sách chung (ưu tiên theo slug, fallback theo tên)
-      const movieObj = window.globalMoviesList
-        ? window.globalMoviesList.find(
-            (m) =>
-              (slug && m.slug === slug) ||
-              (movieTitle &&
-                m.title.toLowerCase() === movieTitle.toLowerCase()),
-          )
-        : null;
+        // Lấy dữ liệu chuẩn của phim (kèm link m3u8 thật) trực tiếp từ MySQL
+        const movieObj = await fetchMovieBySlug(slug);
+        if (movieObj) addToGlobalMoviesList([movieObj]);
 
-      const realTitle = movieObj ? movieObj.title : movieTitle || "Phim";
-      const realPoster = movieObj ? movieObj.poster : posterFromUrl;
-      const realSlug = movieObj ? movieObj.slug : slug;
-      const totalEp = getTotalEpisodes(movieObj);
+        const realTitle = movieObj ? movieObj.title : movieTitle || "Phim";
+        const realPoster = movieObj ? movieObj.poster : posterFromUrl;
+        const realSlug = movieObj ? movieObj.slug : slug;
+        const totalEp = movieObj ? movieObj.episodes : episodesFromUrl;
 
-      document.getElementById("page-title").innerText =
-        `${realTitle} - Tập ${episodeNum}`;
-      document.getElementById("watch-movie-title").innerText = realTitle;
-      document.getElementById("current-ep-title").innerText =
-        `Tập ${episodeNum}`;
+        document.getElementById("page-title").innerText =
+          `${realTitle} - Tập ${episodeNum}`;
+        document.getElementById("watch-movie-title").innerText = realTitle;
+        document.getElementById("current-ep-title").innerText =
+          `Tập ${episodeNum}`;
 
-      // Breadcrumb
-      function renderWatchBreadcrumb() {
-        const bc = document.getElementById("fd-breadcrumb");
-        if (!bc) return;
-        const safe = typeof escapeHtml === "function" ? escapeHtml : (s) => s;
-        let html = `<a href="index.html">Trang chủ</a>`;
-        if (movieObj) {
-          const detailParams = new URLSearchParams({
-            title: movieObj.title,
-            slug: movieObj.slug,
-            poster: movieObj.poster,
-            desc: movieObj.desc || "",
+        // Breadcrumb
+        function renderWatchBreadcrumb() {
+          const bc = document.getElementById("fd-breadcrumb");
+          if (!bc) return;
+          const safe = typeof escapeHtml === "function" ? escapeHtml : (s) => s;
+          let html = `<a href="index.html">Trang chủ</a>`;
+          if (movieObj) {
+            const detailParams = new URLSearchParams({
+              title: movieObj.title,
+              slug: movieObj.slug,
+              poster: movieObj.poster,
+              desc: movieObj.desc || "",
+              episodes: totalEp,
+            });
+            html += `<span class="sep">/</span><a href="detail.html?${detailParams.toString()}">${safe(realTitle)}</a>`;
+          } else {
+            html += `<span class="sep">/</span><span>${safe(realTitle)}</span>`;
+          }
+          html += `<span class="sep">/</span><span class="current">Tập ${episodeNum}</span>`;
+          bc.innerHTML = html;
+        }
+        renderWatchBreadcrumb();
+
+        // Điều hướng tập trước / sau
+        function goToEpisode(ep) {
+          if (ep < 1 || ep > totalEp) return;
+          const navParams = new URLSearchParams({
+            title: realTitle,
+            ep,
+            slug: realSlug,
+            poster: realPoster,
             episodes: totalEp,
           });
-          html += `<span class="sep">/</span><a href="detail.html?${detailParams.toString()}">${safe(realTitle)}</a>`;
-        } else {
-          html += `<span class="sep">/</span><span>${safe(realTitle)}</span>`;
-        }
-        html += `<span class="sep">/</span><span class="current">Tập ${episodeNum}</span>`;
-        bc.innerHTML = html;
-      }
-      renderWatchBreadcrumb();
-
-      // Điều hướng tập trước / sau
-      function goToEpisode(ep) {
-        if (ep < 1 || ep > totalEp) return;
-        const navParams = new URLSearchParams({
-          title: realTitle,
-          ep,
-          slug: realSlug,
-          poster: realPoster,
-          episodes: totalEp,
-        });
-        window.location.href = `watch.html?${navParams.toString()}`;
-      }
-
-      const prevBtn = document.getElementById("wp-prev-btn");
-      const nextBtn = document.getElementById("wp-next-btn");
-      prevBtn.disabled = episodeNum <= 1;
-      nextBtn.disabled = episodeNum >= totalEp;
-      prevBtn.onclick = () => goToEpisode(episodeNum - 1);
-      nextBtn.onclick = () => goToEpisode(episodeNum + 1);
-
-      // Render danh sách tập phim ở dưới video (kèm tìm kiếm)
-      const grid = document.getElementById("watch-episode-grid");
-
-      function renderEpisodeGrid(filterText = "") {
-        grid.innerHTML = "";
-        const keyword = filterText.trim();
-        for (let i = 1; i <= totalEp; i++) {
-          if (keyword && !String(i).includes(keyword)) continue;
-          const btn = document.createElement("button");
-          btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
-          btn.innerText = `Tập ${i}`;
-          btn.onclick = () => goToEpisode(i);
-          grid.appendChild(btn);
-        }
-      }
-      renderEpisodeGrid();
-
-      document
-        .getElementById("wp-ep-search-input")
-        .addEventListener("input", (e) => renderEpisodeGrid(e.target.value));
-
-      // Khối mini info phim
-      document.getElementById("wp-mini-poster").src = realPoster;
-      document.getElementById("wp-mini-poster").onerror = function () {
-        this.src = "https://placehold.co/180x260";
-      };
-      document.getElementById("wp-mini-title").innerText = realTitle;
-      document.getElementById("wp-mini-genres").innerText = movieObj
-        ? movieObj.genres || ""
-        : "";
-      document.getElementById("wp-mini-desc").innerText = movieObj
-        ? movieObj.desc || ""
-        : "";
-      const miniDetailParams = new URLSearchParams({
-        title: realTitle,
-        slug: realSlug,
-        poster: realPoster,
-        desc: movieObj ? movieObj.desc || "" : "",
-        episodes: totalEp,
-      });
-      document.getElementById("wp-mini-detail-link").href =
-        `detail.html?${miniDetailParams.toString()}`;
-
-      // Phần phim (season switch) & gợi ý liên quan
-      if (
-        movieObj &&
-        movieObj.group &&
-        typeof renderMovieParts === "function"
-      ) {
-        renderMovieParts(movieObj.slug, movieObj.group);
-      }
-      if (typeof renderRelatedSuggestions === "function") {
-        renderRelatedSuggestions(realSlug, movieObj ? movieObj.genres : "");
-      }
-
-      // Lấy link video từ episodes.js hoặc gọi API phimapi.com, khởi tạo player
-      (async () => {
-        let videoSrc = "";
-        const cleanTitle = (movieTitle || realTitle).trim().toLowerCase();
-        const key = movieKeyMap[cleanTitle];
-
-        if (key && window.allEpisodesData && window.allEpisodesData[key]) {
-          videoSrc = window.allEpisodesData[key][episodeNum - 1] || "";
+          window.location.href = `watch.html?${navParams.toString()}`;
         }
 
-        if (!videoSrc && realSlug) {
-          try {
-            const response = await fetch(
-              `https://phimapi.com/phim/${realSlug}`,
-            );
-            const data = await response.json();
-            if (data && data.episodes && data.episodes[0]) {
-              const epList = data.episodes[0].server_data;
-              if (epList[episodeNum - 1]) {
-                videoSrc = epList[episodeNum - 1].link_m3u8;
-              }
-            }
-          } catch (err) {
-            console.error("Lỗi khi tải API phim:", err);
+        const prevBtn = document.getElementById("wp-prev-btn");
+        const nextBtn = document.getElementById("wp-next-btn");
+        prevBtn.disabled = episodeNum <= 1;
+        nextBtn.disabled = episodeNum >= totalEp;
+        prevBtn.onclick = () => goToEpisode(episodeNum - 1);
+        nextBtn.onclick = () => goToEpisode(episodeNum + 1);
+
+        // Render danh sách tập phim ở dưới video (kèm tìm kiếm)
+        const grid = document.getElementById("watch-episode-grid");
+
+        function renderEpisodeGrid(filterText = "") {
+          grid.innerHTML = "";
+          const keyword = filterText.trim();
+          for (let i = 1; i <= totalEp; i++) {
+            if (keyword && !String(i).includes(keyword)) continue;
+            const btn = document.createElement("button");
+            btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
+            btn.innerText = `Tập ${i}`;
+            btn.onclick = () => goToEpisode(i);
+            grid.appendChild(btn);
           }
         }
+        renderEpisodeGrid();
 
-        // Fallback nếu không tìm thấy link
+        document
+          .getElementById("wp-ep-search-input")
+          .addEventListener("input", (e) => renderEpisodeGrid(e.target.value));
+
+        // Khối mini info phim
+        document.getElementById("wp-mini-poster").src = realPoster;
+        document.getElementById("wp-mini-poster").onerror = function () {
+          this.src = "https://placehold.co/180x260";
+        };
+        document.getElementById("wp-mini-title").innerText = realTitle;
+        document.getElementById("wp-mini-genres").innerText = movieObj
+          ? movieObj.genres || ""
+          : "";
+        document.getElementById("wp-mini-desc").innerText = movieObj
+          ? movieObj.desc || ""
+          : "";
+        const miniDetailParams = new URLSearchParams({
+          title: realTitle,
+          slug: realSlug,
+          poster: realPoster,
+          desc: movieObj ? movieObj.desc || "" : "",
+          episodes: totalEp,
+        });
+        document.getElementById("wp-mini-detail-link").href =
+          `detail.html?${miniDetailParams.toString()}`;
+
+        // Phần phim (season switch) - fetch riêng theo movie_group từ API
+        if (
+          movieObj &&
+          movieObj.group &&
+          typeof renderMovieParts === "function"
+        ) {
+          const parts = await fetchMovies({ group: movieObj.group, limit: 10 });
+          addToGlobalMoviesList(parts);
+          renderMovieParts(movieObj.slug, movieObj.group);
+        }
+
+        // Gợi ý liên quan - fetch riêng theo thể loại đầu tiên từ API
+        if (
+          movieObj &&
+          movieObj.genres &&
+          typeof renderRelatedSuggestions === "function"
+        ) {
+          const firstGenre = movieObj.genres.split(",")[0].trim();
+          const related = await fetchMovies({ genre: firstGenre, limit: 12 });
+          addToGlobalMoviesList(related);
+          renderRelatedSuggestions(realSlug, movieObj.genres);
+        }
+
+        // Lấy link m3u8 thật từ MySQL (movieObj.episodeUrls), khởi tạo player
+        let videoSrc =
+          movieObj && movieObj.episodeUrls
+            ? movieObj.episodeUrls[episodeNum - 1] || ""
+            : "";
+
+        // Fallback nếu phim chưa có link m3u8 thật trong DB
         if (!videoSrc) {
           videoSrc = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
         }
