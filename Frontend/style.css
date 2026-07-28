@@ -1493,10 +1493,17 @@ body {
 
 /* Nút play lớn ở giữa video */
 .plyr__control--overlaid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(229, 9, 20, 0.85);
   border: 2px solid rgba(255, 255, 255, 0.8);
   padding: 18px;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .plyr__control--overlaid:hover,
@@ -1507,6 +1514,9 @@ body {
 
 /* Thanh điều khiển dưới - nền gradient trong suốt kiểu Netflix */
 .plyr--video .plyr__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.85) 0%,
@@ -1548,7 +1558,7 @@ body {
   box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.25);
 }
 
-/* Hiển thị thời gian giống ảnh mẫu: 21:44 / 1:07:47 */
+/* Hiển thị thời gian */
 .plyr__time {
   font-variant-numeric: tabular-nums;
   color: #fff;
@@ -1730,6 +1740,7 @@ body {
     margin: 0 auto;
   }
 }
+
 /* Bao bọc danh sách slider để định vị nút bấm */
 .slider-section {
   position: relative;
@@ -1758,7 +1769,6 @@ body {
     background 0.3s;
 }
 
-/* Chỉ hiện mũi tên khi di chuột vào phần slider-section */
 .slider-section:hover .slider-btn {
   opacity: 1;
 }
