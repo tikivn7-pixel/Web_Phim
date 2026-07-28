@@ -43,6 +43,10 @@ function switchPage(pageName) {
     console.warn(`switchPage: không tìm thấy #page-${pageName}`);
   }
 
+  if (pageName === "wishlist" && typeof renderWishlistPage === "function") {
+    renderWishlistPage();
+  }
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -199,7 +203,8 @@ let globalMoviesList = [
     title: "all of us are dead",
     slug: "ngoi-truong-xac-song",
     episodes: 12,
-    genres: "Chính kịch, Viễn Tưởng, Phiêu Lưu, Hành Động, Khoa Học, Hàn Quốc",
+    genres:
+      "Chính kịch, Viễn Tưởng, Phiêu Lưu, Hành Động, Khoa Học,  Học Đường, Hàn Quốc",
     poster: IMG_BASE + "All of Us Are Dead.jpg",
     banner: IMG_BASE + "All of Us Are Dead.jpg",
     desc: "Một trường cấp ba trở thành điểm bùng phát virus thây ma. Các học sinh mắc kẹt phải nỗ lực thoát ra – hoặc biến thành một trong những người nhiễm bệnh hung tợn.",
@@ -271,6 +276,33 @@ let globalMoviesList = [
     banner: IMG_BASE + "Nine Puzzles.jpg",
     desc: "Nine Puzzles là bộ phim thuộc thể loại hình sự, phá án, kinh dị kể về hành trình truy tìm hung thủ vụ án giết người hàng loạt xảy ra 10 năm về trước nay lại tái diễn. Yoon Yi Na (Kim Da Mi thủ vai) là nhân chứng duy nhất trong vụ án 10 năm trước khi người chú ruột của cô bị sát hại. Sau này, cô trở thành trung úy cảnh sát 6 năm kinh nghiệm trong lĩnh vực lập hồ sơ phân tích tội phạm thuộc Đội phân tích tội phạm - Phòng Điều tra pháp y thuộc Cơ quan cảnh sát thành phố Seoul, với bộ não thiên tài, Yina nắm bắt rất nhanh động cơ phạm tội của hung thủ tại hiện trường như thể đã từng thực hiện. Cùng lật lại vụ án, truy tìm hung thủ giết người hàng loạt xảy ra 10 năm trước cùng với Yina là cảnh sát điều tra đội phòng chống bạo lực Kim Han Saem (Son Seok Gu thủ vai), người luôn nghi ngờ Yina chính là hung thủ của vụ án 10 năm trước. Han Saem là cảnh sát ưu tú, lỳ lợm và nhạy bén nhưng lại khiến cho người ta hiểu lầm bởi những hành động có phần quái dị của mình. Để ngăn chặn số lượng nạn nhân bị gi.ết hại ngày một tăng cùng với sự xuất hiện của “mảnh ghép bí ẩn”, Yina phải cùng bắt tay với Han Saem để nhanh chóng tìm ra hung thủ thật sự.",
   },
+  {
+    title: "20th Century Girl",
+    slug: "co-gai-the-ky-20",
+    episodes: 1,
+    genres: "Tình Cảm, Chính Kịch, Hàn Quốc",
+    poster: IMG_BASE + "20th Century Girl.jpg",
+    banner: IMG_BASE + "20th Century Girl.jpg",
+    desc: "Cô Gái Thế Kỷ 20 kể về năm 1999, một cô nàng tuổi teen theo dõi sát sao một nam sinh trong trường thay cho cô bạn thân si tình. Nhưng rồi, chính cô lại bị cuốn vào câu chuyện tình của riêng mình",
+  },
+  {
+    title: "Duty After School",
+    slug: "hoc-ky-sinh-tu",
+    episodes: 10,
+    genres: "Tình Cảm, Chính Kịch, Tâm Lý, Hành Động, Học Đường, Hàn Quốc",
+    poster: IMG_BASE + "Duty After School.jpg",
+    banner: IMG_BASE + "Duty After School.jpg",
+    desc: "Học Kỳ Sinh Tử – Duty After School (2023) dựa trên webcomic “Duty After School” của Ha Il-Kwon, lấy bối cảnh Hàn Quốc bị tấn công bởi những sinh vật lạ từ trên trời rơi xuống, gây ra thảm họa thương vong toàn quốc. Để giúp đỡ các lực lượng quân sự, chính phủ Hàn chỉ định tất cả các sinh viên cũng như học sinh trung học phải trở thành quân dự bị. Thay vì ngòi bút, nay học sinh Hàn Quốc phải cầm vũ khí để tiêu diệt những sinh vật này.",
+  },
+  {
+    title: "Study Group",
+    slug: "hoc-sinh-ca-biet",
+    episodes: 10,
+    genres: "Tình Cảm, Hài Hước, Tâm Lý, Hành Động, học Đường, Hàn Quốc",
+    poster: IMG_BASE + "Study Group.jpg",
+    banner: IMG_BASE + "Study Group.jpg",
+    desc: "Học Sinh Cá Biệt xoay quanh hành trình vươn lên trong học tập đầy cam go của cậu học sinh chỉ giỏi đánh nhau Yun Ga Min. Học tại một trường trung học đầy tai tiếng với thành phần học sinh đa số thuộc diện cá biệt, Ga Min vẫn nuôi quyết tâm cải thiện học lực để có thể vào được đại học. Để đạt được mục tiêu này, cậu thành lập một nhóm học tập với một nhóm bạn học đa dạng. Cùng nhau, họ đối mặt với những thử thách trong cuộc sống học đường, bao gồm áp lực học hành, nạn bắt nạt và đủ thứ vấn đề khác của tuổi mới lớn.",
+  },
 ];
 
 // Expose ra window để các trang khác (vd: detail.html) truy cập được danh sách phim
@@ -328,10 +360,8 @@ function toggleWishlist(movie) {
 
   if (index !== -1) {
     wishlist.splice(index, 1);
-    alert(`Đã xóa "${movie.title}" khỏi Danh sách của tôi!`);
   } else {
     wishlist.push(movie);
-    alert(`Đã thêm "${movie.title}" vào Danh sách của tôi!`);
   }
 
   localStorage.setItem("my_wishlist", JSON.stringify(wishlist));
