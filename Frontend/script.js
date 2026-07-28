@@ -303,6 +303,15 @@ let globalMoviesList = [
     banner: IMG_BASE + "Study Group.jpg",
     desc: "Học Sinh Cá Biệt xoay quanh hành trình vươn lên trong học tập đầy cam go của cậu học sinh chỉ giỏi đánh nhau Yun Ga Min. Học tại một trường trung học đầy tai tiếng với thành phần học sinh đa số thuộc diện cá biệt, Ga Min vẫn nuôi quyết tâm cải thiện học lực để có thể vào được đại học. Để đạt được mục tiêu này, cậu thành lập một nhóm học tập với một nhóm bạn học đa dạng. Cùng nhau, họ đối mặt với những thử thách trong cuộc sống học đường, bao gồm áp lực học hành, nạn bắt nạt và đủ thứ vấn đề khác của tuổi mới lớn.",
   },
+  {
+    title: "Conan",
+    slug: "tham-tu-lung-danh-conan",
+    episodes: 1208,
+    genres: "Hài Hước, Phá Án, Trinh Thám, Anime",
+    poster: IMG_BASE + "Detective Conan.jpg",
+    banner: IMG_BASE + "Detective Conan.jpg",
+    desc: "Phim hoạt hình Conan bắt đầu sau vụ việc xảy ra tại công viên giải trí nổi tiếng Tropical Land tại khu tàu lượn siêu tốc. Kudo đang điều tra một trong hai người đàn ông có vẻ ngoài khả nghi được cho là nghi phạm trong vụ việc. Anh ta bị tấn công bởi một trong số họ có mật danh là Gin và đồng đội của anh ta tên là Vodka. Sau khi đánh Shinichi, Gin đã đưa cho anh ta một loại thuốc mà sau này được gọi là APTX 4869 để giết anh ta. Trên thực tế, chất độc có một tác dụng phụ hiếm gặp, biến Shinichi từ một cơ thể trưởng thành thành một đứa trẻ thay vì giết chết. Sau sự cố quan trọng, Shinichi về nhà và lấy tên là Conan Edogawa sau khi bị người bạn thời thơ ấu Ran gây áp lực. Shinichi đã cố gắng che giấu danh tính bí mật của mình với những người anh quan tâm để điều tra về tổ chức Áo Đen.",
+  },
 ];
 
 // Expose ra window để các trang khác (vd: detail.html) truy cập được danh sách phim
