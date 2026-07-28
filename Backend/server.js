@@ -292,6 +292,100 @@ app.get("/api/tmdb/detail/:id", async (req, res) => {
   }
 });
 
+// ================= API MOVIES (PHÂN TRANG) =================
+
+// 8. Lấy danh sách phim có phân trang, lọc theo thể loại
+//    GET /api/movies?page=1&limit=20&genre=Hàn Quốc
+app.get("/api/movies", (req, res) => {
+  const page = Math.max(parseInt(req.query.page) || 1, 1);
+  const limit = Math.min(Math.max(parseInt(req.query.limit) || 20, 1), 50);
+  const offset = (page - 1) * limit;
+  const genre = req.query.genre ? req.query.genre.trim() : null;
+
+  const whereClause = genre ? "WHERE genres LIKE ?" : "";
+  const whereParams = genre ? [`%${genre}%`] : [];
+
+  db.query(
+    `SELECT COUNT(*) AS total FROM movies ${whereClause}`,
+    whereParams,
+    (err, countResult) => {
+      if (err) return res.status(500).json({ message: "Lỗi CSDL!" });
+      const total = countResult[0].total;
+
+      db.query(
+        `SELECT id, slug, title, poster, banner, description, genres, total_episodes, movie_group, part_name
+         FROM movies ${whereClause}
+         ORDER BY id DESC
+         LIMIT ? OFFSET ?`,
+        [...whereParams, limit, offset],
+        (err2, movies) => {
+          if (err2) return res.status(500).json({ message: "Lỗi CSDL!" });
+          res.json({
+            movies,
+            currentPage: page,
+            totalPages: Math.ceil(total / limit),
+            totalItems: total,
+          });
+        },
+      );
+    },
+  );
+});
+
+// 9. Tìm kiếm phim theo tên hoặc thể loại
+//    GET /api/movies/search?q=naruto&limit=20
+app.get("/api/movies/search", (req, res) => {
+  const keyword = (req.query.q || "").trim();
+  const limit = Math.min(Math.max(parseInt(req.query.limit) || 20, 1), 50);
+
+  if (!keyword) {
+    return res.status(400).json({ message: "Thiếu từ khóa tìm kiếm!" });
+  }
+
+  db.query(
+    `SELECT id, slug, title, poster, banner, description, genres, total_episodes, movie_group, part_name
+     FROM movies
+     WHERE title LIKE ? OR genres LIKE ?
+     ORDER BY id DESC
+     LIMIT ?`,
+    [`%${keyword}%`, `%${keyword}%`, limit],
+    (err, movies) => {
+      if (err) return res.status(500).json({ message: "Lỗi CSDL!" });
+      res.json({ movies });
+    },
+  );
+});
+
+// 10. Lấy chi tiết 1 phim theo slug (kèm danh sách link tập phim)
+//     GET /api/movies/:slug
+app.get("/api/movies/:slug", (req, res) => {
+  const { slug } = req.params;
+
+  db.query(
+    "SELECT * FROM movies WHERE slug = ?",
+    [slug],
+    (err, movieResults) => {
+      if (err) return res.status(500).json({ message: "Lỗi CSDL!" });
+      if (movieResults.length === 0) {
+        return res.status(404).json({ message: "Không tìm thấy phim!" });
+      }
+      const movie = movieResults[0];
+
+      db.query(
+        "SELECT episode_number, video_url FROM episodes WHERE movie_id = ? ORDER BY episode_number ASC",
+        [movie.id],
+        (err2, episodeResults) => {
+          if (err2) return res.status(500).json({ message: "Lỗi CSDL!" });
+          res.json({
+            ...movie,
+            episodes: episodeResults.map((e) => e.video_url),
+          });
+        },
+      );
+    },
+  );
+});
+
 // ==========================================
 
 app.listen(5000, () => {
