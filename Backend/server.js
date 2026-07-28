@@ -14,12 +14,15 @@ app.use(cors());
 // Lấy JWT_SECRET từ .env hoặc dùng giá trị mặc định
 const JWT_SECRET = process.env.JWT_SECRET || "bi_mat_khong_the_tiet_lo_123";
 
-// Kết nối CSDL
+// Kết nối CSDL - đọc từ .env để chạy được cả ở local (XAMPP) lẫn trên cloud
+// (Railway/Render...). Nếu không có biến môi trường nào, mặc định dùng cấu
+// hình XAMPP local như cũ.
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root", // Thay bằng user DB của bạn
-  password: "", // Thay bằng Mật khẩu DB của bạn
-  database: "movie_db",
+  host: process.env.DB_HOST || "localhost",
+  port: process.env.DB_PORT || 3306,
+  user: process.env.DB_USER || "root",
+  password: process.env.DB_PASSWORD || "",
+  database: process.env.DB_NAME || "movie_db",
 });
 
 // Không để lỗi kết nối MySQL làm sập cả server (các route TMDB không cần DB)
@@ -401,6 +404,7 @@ app.get("/api/movies/:slug", (req, res) => {
 
 // ==========================================
 
-app.listen(5000, () => {
-  console.log("Server Backend đang chạy tại http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server Backend đang chạy tại http://localhost:${PORT}`);
 });

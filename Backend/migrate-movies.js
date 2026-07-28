@@ -10,15 +10,17 @@
 // Script có thể chạy lại nhiều lần an toàn (dùng ON DUPLICATE KEY UPDATE theo slug).
 
 const mysql = require("mysql2/promise");
+require("dotenv").config();
 const globalMoviesList = require("./movies-data.js");
 const { allEpisodesData, movieKeyMap } = require("./episodes-data.js");
 
 async function main() {
   const connection = await mysql.createConnection({
-    host: "localhost",
-    user: "root", // Thay bằng user DB của bạn (giống server.js)
-    password: "", // Thay bằng mật khẩu DB của bạn (giống server.js)
-    database: "movie_db",
+    host: process.env.DB_HOST || "localhost",
+    port: process.env.DB_PORT || 3306,
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "",
+    database: process.env.DB_NAME || "movie_db",
   });
 
   console.log(`Bắt đầu migrate ${globalMoviesList.length} phim...`);
