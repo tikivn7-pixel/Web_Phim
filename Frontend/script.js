@@ -4,6 +4,39 @@
 
 const API_BASE_URL = "http://localhost:5000";
 
+// ==========================================
+// 0D. LẤY LINK TẬP TRỰC TIẾP TỪ API KKPHIM (phimapi.com) THEO SLUG
+// ==========================================
+// KKPhim (phimapi.com) có API công khai: GET https://phimapi.com/phim/{slug}
+// trả về đầy đủ thông tin phim + toàn bộ tập kèm link m3u8 thật.
+// Điều kiện: slug phim trong web của bạn phải TRÙNG với slug của KKPhim
+// (copy đúng slug từ URL kkphim.com/phim/{slug} khi thêm phim).
+// Nhờ vậy không cần lưu/copy tay từng link m3u8 vào DB hay Episodes.js nữa.
+const KKPHIM_API_BASE = "https://phimapi.com/phim";
+
+// Gọi API KKPhim theo slug, trả về mảng link m3u8 theo đúng thứ tự tập
+// (lấy server đầu tiên trả về, thường là "Vietsub #1").
+async function fetchEpisodesFromKKPhim(slug) {
+  if (!slug) return [];
+  try {
+    const res = await fetch(`${KKPHIM_API_BASE}/${encodeURIComponent(slug)}`);
+    if (!res.ok) throw new Error(`API KKPhim lỗi ${res.status}`);
+    const data = await res.json();
+    const servers = data.episodes || [];
+    if (!servers.length) return [];
+    return (servers[0].server_data || []).map((ep) => ep.link_m3u8 || "");
+  } catch (err) {
+    console.error("Lỗi lấy danh sách tập từ KKPhim API:", err);
+    return [];
+  }
+}
+
+// Lấy đúng 1 link tập theo số thứ tự (episodeNum bắt đầu từ 1)
+async function fetchEpisodeUrlFromKKPhim(slug, episodeNum) {
+  const urls = await fetchEpisodesFromKKPhim(slug);
+  return urls[episodeNum - 1] || "";
+}
+
 // Ghi chú: Episodes.js / window.allEpisodesData vẫn được nạp trong index.html
 // để tương thích ngược với watch.html/detail.html (đang dùng bản cũ), nhưng
 // TRANG CHỦ (index.html) giờ không còn phụ thuộc vào nó nữa — toàn bộ số tập
@@ -302,7 +335,7 @@ const fallbackMoviesList = [
   },
   {
     title: "Gyeongseong Creature (Season 1)",
-    slug: "gyeongseong-creature-season-1",
+    slug: "sinh-vat-gyeongseong-phan-1",
     episodes: 10,
     genres: "Khoa Học, Viễn Tưởng, Bí Ẩn, Hành Động, Hàn Quốc",
     poster: IMG_BASE + "Gyeongseong Creature (Season 1).jpg",
@@ -310,6 +343,17 @@ const fallbackMoviesList = [
     desc: "Ở Gyeongseong năm 1945, giữa thời kỳ Seoul bị thực dân thống trị, một doanh nhân và một do thám chiến đấu để sinh tồn và đối mặt với quái vật sinh ra từ lòng tham của con người.",
     group: "Gyeongseong",
     partName: "Gyeongseong Creature 1",
+  },
+  {
+    title: "Gyeongseong Creature (Season 2)",
+    slug: "sinh-vat-gyeongseong-phan-7",
+    episodes: 10,
+    genres: "Khoa Học, Viễn Tưởng, Bí Ẩn, Hành Động, Hàn Quốc",
+    poster: IMG_BASE + "Gyeongseong Creature (Season 1).jpg",
+    banner: IMG_BASE + "Gyeongseong Creature (Season 1).jpg",
+    desc: "Ở Gyeongseong năm 1945, giữa thời kỳ Seoul bị thực dân thống trị, một doanh nhân và một do thám chiến đấu để sinh tồn và đối mặt với quái vật sinh ra từ lòng tham của con người.",
+    group: "Gyeongseong",
+    partName: "Gyeongseong Creature 2",
   },
 ];
 // ==========================================
@@ -332,13 +376,41 @@ function normalizeMovie(row) {
   };
 }
 
+// Xác định nguồn dữ liệu sẽ dùng: "auto" (mặc định, SQL trước - lỗi thì
+// rớt về hardcode), "hardcode" (ép dùng hardcode, bỏ qua API - test UI
+// nhanh không cần chạy backend), "sql" (ép chỉ dùng MySQL, KHÔNG tự rớt
+// về hardcode kể cả khi lỗi/rỗng - để thấy đúng lỗi thật khi test SQL).
+// Nếu không truyền source trong code, tự đọc từ URL: ?data_source=hardcode
+// hoặc ?data_source=sql, tiện để ép nguồn ngay trên trình duyệt khi test.
+function resolveDataSource(explicitSource) {
+  if (explicitSource === "hardcode" || explicitSource === "sql") {
+    return explicitSource;
+  }
+  try {
+    const urlSource = new URLSearchParams(window.location.search).get(
+      "data_source",
+    );
+    if (urlSource === "hardcode" || urlSource === "sql") return urlSource;
+  } catch (e) {
+    // window.location không khả dụng (vd chạy ngoài trình duyệt) -> bỏ qua
+  }
+  return "auto";
+}
+
 // Lấy danh sách phim có phân trang, có thể lọc theo thể loại
 async function fetchMovies({
   page = 1,
   limit = 20,
   genre = null,
   group = null,
+  source = "auto",
 } = {}) {
+  const dataSource = resolveDataSource(source);
+
+  if (dataSource === "hardcode") {
+    return filterFallbackMovies({ genre, group });
+  }
+
   try {
     const params = new URLSearchParams({ page, limit });
     if (genre) params.set("genre", genre);
@@ -347,8 +419,20 @@ async function fetchMovies({
     if (!res.ok) throw new Error(`API /api/movies lỗi ${res.status}`);
     const data = await res.json();
     const movies = (data.movies || []).map(normalizeMovie);
+
+    if (dataSource === "sql") {
+      // Ép chỉ dùng SQL: trả nguyên kết quả thật (có thể rỗng), không che
+      // bằng hardcode để test thấy đúng dữ liệu/trạng thái thật từ DB.
+      return movies;
+    }
     return movies.length ? movies : filterFallbackMovies({ genre, group });
   } catch (err) {
+    if (dataSource === "sql") {
+      // Ép chỉ dùng SQL: không rớt về hardcode, ném lỗi ra để thấy rõ
+      // lỗi thật khi test (API sập, sai cổng, mất mạng...).
+      console.error("Lỗi tải danh sách phim từ API (source=sql):", err);
+      throw err;
+    }
     console.error("Lỗi tải danh sách phim từ API, dùng dữ liệu dự phòng:", err);
     return filterFallbackMovies({ genre, group });
   }
@@ -370,8 +454,23 @@ function filterFallbackMovies({ genre = null, group = null } = {}) {
 }
 
 // Lấy chi tiết 1 phim theo slug (kèm episodes = mảng link m3u8 thật từ MySQL)
-async function fetchMovieBySlug(slug) {
+function findFallbackMovieBySlug(slug) {
+  const fb = fallbackMoviesList.find((m) => m.slug === slug);
+  if (!fb) return null;
+  const movie = { ...fb };
+  movie.episodeUrls =
+    (window.allEpisodesData && window.allEpisodesData[slug]) || [];
+  return movie;
+}
+
+async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
   if (!slug) return null;
+  const dataSource = resolveDataSource(source);
+
+  if (dataSource === "hardcode") {
+    return findFallbackMovieBySlug(slug);
+  }
+
   try {
     const res = await fetch(
       `${API_BASE_URL}/api/movies/${encodeURIComponent(slug)}`,
@@ -382,23 +481,42 @@ async function fetchMovieBySlug(slug) {
     movie.episodeUrls = row.episodes || []; // link m3u8 thật, tách riêng khỏi "episodes" (số tập)
     return movie;
   } catch (err) {
+    if (dataSource === "sql") {
+      // Ép chỉ dùng SQL: không rớt về hardcode, để lộ đúng lỗi thật khi test.
+      console.error(`Lỗi tải chi tiết phim từ API (source=sql):`, err);
+      throw err;
+    }
     console.error(
       "Lỗi tải chi tiết phim từ API, thử dùng dữ liệu dự phòng:",
       err,
     );
     // Fallback: tìm trong mảng hardcode + Episodes.js (nếu có) để trang
     // watch/detail vẫn hiển thị được thay vì trắng trang khi API/DB die
-    const fb = fallbackMoviesList.find((m) => m.slug === slug);
-    if (!fb) return null;
-    const movie = { ...fb };
-    movie.episodeUrls =
-      (window.allEpisodesData && window.allEpisodesData[slug]) || [];
-    return movie;
+    return findFallbackMovieBySlug(slug);
   }
 }
 
+// Tìm trong mảng hardcode theo tên hoặc thể loại (dùng khi ép source=hardcode
+// hoặc khi API search lỗi và không ở chế độ ép SQL)
+function searchFallbackMovies(query, limit = 40) {
+  const q = (query || "").toLowerCase();
+  return fallbackMoviesList
+    .filter(
+      (m) =>
+        (m.title || "").toLowerCase().includes(q) ||
+        (m.genres || "").toLowerCase().includes(q),
+    )
+    .slice(0, limit);
+}
+
 // Tìm kiếm phim theo tên/thể loại qua API
-async function searchMoviesAPI(query, limit = 40) {
+async function searchMoviesAPI(query, limit = 40, { source = "auto" } = {}) {
+  const dataSource = resolveDataSource(source);
+
+  if (dataSource === "hardcode") {
+    return searchFallbackMovies(query, limit);
+  }
+
   try {
     const params = new URLSearchParams({ q: query, limit });
     const res = await fetch(
@@ -408,8 +526,12 @@ async function searchMoviesAPI(query, limit = 40) {
     const data = await res.json();
     return (data.movies || []).map(normalizeMovie);
   } catch (err) {
-    console.error("Lỗi tìm kiếm phim từ API:", err);
-    return [];
+    if (dataSource === "sql") {
+      console.error("Lỗi tìm kiếm phim từ API (source=sql):", err);
+      throw err;
+    }
+    console.error("Lỗi tìm kiếm phim từ API, dùng dữ liệu dự phòng:", err);
+    return searchFallbackMovies(query, limit);
   }
 }
 

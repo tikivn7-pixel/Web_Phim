@@ -113,7 +113,10 @@
       </div>
     </div>
 
-    <!-- Nạp script.js (không cần Episodes.js nữa - link m3u8 lấy từ MySQL) -->
+    <!-- Episodes.js: cung cấp window.allEpisodesData (link m3u8 thật) để
+    dùng làm dự phòng khi API/MySQL không kết nối được (vd tắt máy tính,
+    xem trên điện thoại) - fetchMovieBySlug sẽ tự lấy từ đây lúc fallback -->
+    <script src="Episodes.js"></script>
     <script src="script.js"></script>
 
     <!-- Đoạn script xử lý đọc URL, lấy dữ liệu phim từ API, phát video -->
@@ -255,13 +258,20 @@
           renderRelatedSuggestions(realSlug, movieObj.genres);
         }
 
-        // Lấy link m3u8 thật từ MySQL (movieObj.episodeUrls), khởi tạo player
+        // Lấy link video theo thứ tự ưu tiên:
+        // 1. Link thật lưu sẵn trong MySQL/hardcode (nếu có, để override riêng lẻ)
+        // 2. Gọi thẳng API KKPhim theo slug để lấy link m3u8 thật (không cần
+        //    lưu tay từng link - chỉ cần slug trùng với KKPhim)
+        // 3. Video demo (chỉ khi cả 2 cách trên đều thất bại)
         let videoSrc =
-          movieObj && movieObj.episodeUrls
-            ? movieObj.episodeUrls[episodeNum - 1] || ""
-            : "";
+          movieObj &&
+          movieObj.episodeUrls &&
+          movieObj.episodeUrls[episodeNum - 1];
 
-        // Fallback nếu phim chưa có link m3u8 thật trong DB
+        if (!videoSrc) {
+          videoSrc = await fetchEpisodeUrlFromKKPhim(realSlug, episodeNum);
+        }
+
         if (!videoSrc) {
           videoSrc = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
         }

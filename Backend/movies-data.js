@@ -287,7 +287,7 @@ let globalMoviesList = [
   },
   {
     title: "Gyeongseong Creature (Season 1)",
-    slug: "nguoi-hung-yeu-duoi-2",
+    slug: "gyeongseong-creature-season-1",
     episodes: 10,
     genres: "Khoa Học, Viễn Tưởng, Bí Ẩn, Hành Động, Hàn Quốc",
     poster: IMG_BASE + "Gyeongseong Creature (Season 1).jpg",
