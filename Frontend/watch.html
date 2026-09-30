@@ -493,6 +493,23 @@
 
         const WATCH_HISTORY_KEY = "continue_watching_list";
 
+        // Kho riêng: lưu vị trí xem của TỪNG TẬP (không hiện ra ngoài trang chủ)
+        const EP_POSITIONS_KEY = "episode_positions";
+
+        function getEpisodePositions() {
+          try {
+            const raw = localStorage.getItem(EP_POSITIONS_KEY);
+            const parsed = raw ? JSON.parse(raw) : {};
+            return parsed && typeof parsed === "object" ? parsed : {};
+          } catch (e) {
+            return {};
+          }
+        }
+
+        function movieKey() {
+          return String(realSlug || realTitle || "");
+        }
+
         let hasRestoredPosition = false;
 
         let lastHistorySave = 0;
@@ -536,11 +553,12 @@
 
             let history = getWatchHistory();
 
-            const existingIndex = history.findIndex(
-              (item) =>
-                String(item.slug || "") === String(realSlug || "") &&
-                Number(item.episode) === Number(episodeNum),
-            );
+            // Mỗi PHIM chỉ giữ 1 bản ghi (tập xem gần nhất)
+            const sameMovie = (item) =>
+              realSlug
+                ? String(item.slug || "") === String(realSlug)
+                : item.title === realTitle;
+            history = history.filter((item) => !sameMovie(item));
 
             const watchItem = {
               title: realTitle,
@@ -564,15 +582,23 @@
               updatedAt: Date.now(),
             };
 
-            if (existingIndex !== -1) {
-              history.splice(existingIndex, 1);
-            }
-
             history.unshift(watchItem);
 
             history = history.slice(0, 30);
 
             localStorage.setItem(WATCH_HISTORY_KEY, JSON.stringify(history));
+
+            // Lưu vị trí riêng cho tập này (giữ lại tất cả các tập)
+            const positions = getEpisodePositions();
+            const key = movieKey();
+            positions[key] = positions[key] || {};
+            positions[key][String(episodeNum)] = {
+              currentTime,
+              duration,
+              progress,
+              updatedAt: Date.now(),
+            };
+            localStorage.setItem(EP_POSITIONS_KEY, JSON.stringify(positions));
 
             console.log("✅ Đã lưu lịch sử xem:", watchItem);
           } catch (error) {
@@ -594,13 +620,19 @@
           }
 
           try {
-            const history = getWatchHistory();
+            const positions = getEpisodePositions();
+            let saved =
+              positions[movieKey()] &&
+              positions[movieKey()][String(episodeNum)];
 
-            const saved = history.find(
-              (item) =>
-                String(item.slug || "") === String(realSlug || "") &&
-                Number(item.episode) === Number(episodeNum),
-            );
+            // Dự phòng: dữ liệu cũ chỉ có trong danh sách Tiếp tục xem
+            if (!saved) {
+              saved = getWatchHistory().find(
+                (item) =>
+                  String(item.slug || item.title || "") === movieKey() &&
+                  Number(item.episode) === Number(episodeNum),
+              );
+            }
 
             hasRestoredPosition = true;
 
