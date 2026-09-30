@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Xem Phim - Netfilm</title>
     <link rel="stylesheet" href="style.css" />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <!-- Plyr CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css"
     />
+
     <!-- Hls.js -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
     <!-- Plyr JS -->
     <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.js"></script>
   </head>
+
   <body>
     <div class="fd-wrap">
       <!-- Breadcrumb -->
@@ -35,27 +40,34 @@
             <div class="video-wrapper" id="video-wrapper-box">
               <video id="video-player" controls playsinline></video>
             </div>
+
             <div class="wp-player-toolbar">
               <div class="wp-now-playing">
                 <h1 id="watch-movie-title">Đang tải tên phim...</h1>
+
                 <p id="current-ep-title">Tập 1</p>
               </div>
+
               <div class="wp-nav-btns">
                 <button id="wp-prev-btn" class="wp-nav-btn">
-                  <i class="fa-solid fa-backward-step"></i> Tập trước
+                  <i class="fa-solid fa-backward-step"></i>
+                  Tập trước
                 </button>
+
                 <label class="wp-autonext">
                   <input type="checkbox" id="wp-autonext-toggle" checked />
                   Tự động chuyển tập
                 </label>
+
                 <button id="wp-next-btn" class="wp-nav-btn">
-                  Tập sau <i class="fa-solid fa-forward-step"></i>
+                  Tập sau
+                  <i class="fa-solid fa-forward-step"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <!-- Phần phim (nếu cùng group, dùng chung hàm renderMovieParts) -->
+          <!-- Phần phim -->
           <div id="parts-section" style="display: none; margin-bottom: 20px">
             <h3
               style="
@@ -67,6 +79,7 @@
             >
               Phần Phim
             </h3>
+
             <div
               id="detail-parts-grid"
               style="display: flex; flex-wrap: wrap; gap: 10px"
@@ -77,8 +90,10 @@
           <div class="episodes-section">
             <div class="wp-ep-header">
               <h3 style="margin: 0">Danh Sách Tập</h3>
+
               <div class="wp-ep-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
+
                 <input
                   type="text"
                   id="wp-ep-search-input"
@@ -86,6 +101,7 @@
                 />
               </div>
             </div>
+
             <div class="wp-episode-scroll">
               <div id="watch-episode-grid" class="episode-grid"></div>
             </div>
@@ -94,12 +110,17 @@
           <!-- Mini info phim -->
           <div class="wp-movie-mini">
             <img id="wp-mini-poster" src="" alt="Poster" />
+
             <div class="wp-mini-info">
               <h4 id="wp-mini-title"></h4>
+
               <p class="wp-mini-genres" id="wp-mini-genres"></p>
+
               <p id="wp-mini-desc"></p>
+
               <a id="wp-mini-detail-link" href="#" class="wp-mini-link">
-                Xem thông tin phim <i class="fa-solid fa-arrow-right"></i>
+                Xem thông tin phim
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -108,25 +129,31 @@
         <!-- ================= SIDEBAR ================= -->
         <div class="fd-sidebar">
           <h3>Có Thể Bạn Thích</h3>
+
           <div id="fd-suggestions"></div>
         </div>
       </div>
     </div>
 
-    <!-- Episodes.js: cung cấp window.allEpisodesData (link m3u8 thật) để
-    dùng làm dự phòng khi API/MySQL không kết nối được (vd tắt máy tính,
-    xem trên điện thoại) - fetchMovieBySlug sẽ tự lấy từ đây lúc fallback -->
+    <!-- Episodes.js -->
     <script src="Episodes.js"></script>
+
+    <!-- Main script -->
     <script src="script.js"></script>
 
-    <!-- Đoạn script xử lý đọc URL, lấy dữ liệu phim từ API, phát video -->
+    <!-- ================= WATCH SCRIPT ================= -->
     <script>
       (async () => {
         const params = new URLSearchParams(window.location.search);
+
         const movieTitle = params.get("title");
+
         let episodeNum = parseInt(params.get("ep")) || 1;
+
         const slug = params.get("slug") || "";
+
         const posterFromUrl = params.get("poster") || "";
+
         const episodesFromUrl = parseInt(params.get("episodes")) || 20;
 
         if (!movieTitle) {
@@ -134,27 +161,45 @@
             "Không tìm thấy thông tin phim!";
         }
 
-        // Lấy dữ liệu chuẩn của phim (kèm link m3u8 thật) trực tiếp từ MySQL
+        // =========================
+        // LẤY THÔNG TIN PHIM
+        // =========================
+
         const movieObj = await fetchMovieBySlug(slug);
-        if (movieObj) addToGlobalMoviesList([movieObj]);
+
+        if (movieObj) {
+          addToGlobalMoviesList([movieObj]);
+        }
 
         const realTitle = movieObj ? movieObj.title : movieTitle || "Phim";
+
         const realPoster = movieObj ? movieObj.poster : posterFromUrl;
+
         const realSlug = movieObj ? movieObj.slug : slug;
+
         const totalEp = movieObj ? movieObj.episodes : episodesFromUrl;
 
         document.getElementById("page-title").innerText =
           `${realTitle} - Tập ${episodeNum}`;
+
         document.getElementById("watch-movie-title").innerText = realTitle;
+
         document.getElementById("current-ep-title").innerText =
           `Tập ${episodeNum}`;
 
-        // Breadcrumb
+        // =========================
+        // BREADCRUMB
+        // =========================
+
         function renderWatchBreadcrumb() {
           const bc = document.getElementById("fd-breadcrumb");
+
           if (!bc) return;
+
           const safe = typeof escapeHtml === "function" ? escapeHtml : (s) => s;
+
           let html = `<a href="index.html">Trang chủ</a>`;
+
           if (movieObj) {
             const detailParams = new URLSearchParams({
               title: movieObj.title,
@@ -163,18 +208,38 @@
               desc: movieObj.desc || "",
               episodes: totalEp,
             });
-            html += `<span class="sep">/</span><a href="detail.html?${detailParams.toString()}">${safe(realTitle)}</a>`;
+
+            html +=
+              `<span class="sep">/</span>` +
+              `<a href="detail.html?${detailParams.toString()}">` +
+              `${safe(realTitle)}` +
+              `</a>`;
           } else {
-            html += `<span class="sep">/</span><span>${safe(realTitle)}</span>`;
+            html +=
+              `<span class="sep">/</span>` + `<span>${safe(realTitle)}</span>`;
           }
-          html += `<span class="sep">/</span><span class="current">Tập ${episodeNum}</span>`;
+
+          html +=
+            `<span class="sep">/</span>` +
+            `<span class="current">Tập ${episodeNum}</span>`;
+
           bc.innerHTML = html;
         }
+
         renderWatchBreadcrumb();
 
-        // Điều hướng tập trước / sau
+        // =========================
+        // ĐIỀU HƯỚNG TẬP
+        // =========================
+
         function goToEpisode(ep) {
-          if (ep < 1 || ep > totalEp) return;
+          if (ep < 1 || ep > totalEp) {
+            return;
+          }
+
+          // Lưu lịch sử trước khi chuyển tập
+          saveWatchHistory();
+
           const navParams = new URLSearchParams({
             title: realTitle,
             ep,
@@ -182,155 +247,457 @@
             poster: realPoster,
             episodes: totalEp,
           });
+
           window.location.href = `watch.html?${navParams.toString()}`;
         }
 
         const prevBtn = document.getElementById("wp-prev-btn");
+
         const nextBtn = document.getElementById("wp-next-btn");
+
         prevBtn.disabled = episodeNum <= 1;
+
         nextBtn.disabled = episodeNum >= totalEp;
+
         prevBtn.onclick = () => goToEpisode(episodeNum - 1);
+
         nextBtn.onclick = () => goToEpisode(episodeNum + 1);
 
-        // Render danh sách tập phim ở dưới video (kèm tìm kiếm)
+        // =========================
+        // DANH SÁCH TẬP
+        // =========================
+
         const grid = document.getElementById("watch-episode-grid");
 
         function renderEpisodeGrid(filterText = "") {
           grid.innerHTML = "";
+
           const keyword = filterText.trim();
+
           for (let i = 1; i <= totalEp; i++) {
-            if (keyword && !String(i).includes(keyword)) continue;
+            if (keyword && !String(i).includes(keyword)) {
+              continue;
+            }
+
             const btn = document.createElement("button");
+
             btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
+
             btn.innerText = `Tập ${i}`;
+
             btn.onclick = () => goToEpisode(i);
+
             grid.appendChild(btn);
           }
         }
+
         renderEpisodeGrid();
 
         document
           .getElementById("wp-ep-search-input")
           .addEventListener("input", (e) => renderEpisodeGrid(e.target.value));
 
-        // Khối mini info phim
-        document.getElementById("wp-mini-poster").src = realPoster;
-        document.getElementById("wp-mini-poster").onerror = function () {
-          this.src = "https://placehold.co/180x260";
-        };
-        document.getElementById("wp-mini-title").innerText = realTitle;
-        document.getElementById("wp-mini-genres").innerText = movieObj
-          ? movieObj.genres || ""
-          : "";
-        document.getElementById("wp-mini-desc").innerText = movieObj
-          ? movieObj.desc || ""
-          : "";
-        const miniDetailParams = new URLSearchParams({
-          title: realTitle,
-          slug: realSlug,
-          poster: realPoster,
-          desc: movieObj ? movieObj.desc || "" : "",
-          episodes: totalEp,
-        });
-        document.getElementById("wp-mini-detail-link").href =
-          `detail.html?${miniDetailParams.toString()}`;
+        // =========================
+        // MINI INFO
+        // =========================
 
-        // Phần phim (season switch) - fetch riêng theo movie_group từ API
-        if (
-          movieObj &&
-          movieObj.group &&
-          typeof renderMovieParts === "function"
-        ) {
-          const parts = await fetchMovies({ group: movieObj.group, limit: 10 });
-          addToGlobalMoviesList(parts);
-          renderMovieParts(movieObj.slug, movieObj.group);
+        const miniPoster = document.getElementById("wp-mini-poster");
+
+        const miniTitle = document.getElementById("wp-mini-title");
+
+        const miniGenres = document.getElementById("wp-mini-genres");
+
+        const miniDesc = document.getElementById("wp-mini-desc");
+
+        const miniDetail = document.getElementById("wp-mini-detail-link");
+
+        if (movieObj) {
+          miniPoster.src = movieObj.poster || "";
+
+          miniTitle.innerText = movieObj.title || "";
+
+          miniGenres.innerText = movieObj.genres || "";
+
+          miniDesc.innerText = movieObj.desc || "";
+
+          const detailParams = new URLSearchParams({
+            title: movieObj.title,
+            slug: movieObj.slug,
+            poster: movieObj.poster,
+            desc: movieObj.desc || "",
+            episodes: totalEp,
+          });
+
+          miniDetail.href = `detail.html?${detailParams.toString()}`;
+        } else {
+          miniPoster.src = realPoster || "";
+
+          miniTitle.innerText = realTitle;
+
+          miniGenres.innerText = "";
+
+          miniDesc.innerText = "";
+
+          miniDetail.href = "#";
         }
 
-        // Gợi ý liên quan - fetch riêng theo thể loại đầu tiên từ API
-        if (
-          movieObj &&
-          movieObj.genres &&
-          typeof renderRelatedSuggestions === "function"
-        ) {
-          const firstGenre = movieObj.genres.split(",")[0].trim();
-          const related = await fetchMovies({ genre: firstGenre, limit: 12 });
-          addToGlobalMoviesList(related);
-          renderRelatedSuggestions(realSlug, movieObj.genres);
+        // =========================
+        // RENDER PHẦN PHIM
+        // =========================
+
+        if (typeof renderMovieParts === "function") {
+          try {
+            renderMovieParts(movieObj, realTitle);
+          } catch (error) {
+            console.warn("Không render được phần phim:", error);
+          }
         }
 
-        // Lấy link video theo thứ tự ưu tiên:
-        // 1. Link thật lưu sẵn trong MySQL/hardcode (nếu có, để override riêng lẻ)
-        // 2. Gọi thẳng API KKPhim theo slug để lấy link m3u8 thật (không cần
-        //    lưu tay từng link - chỉ cần slug trùng với KKPhim)
-        // 3. Video demo (chỉ khi cả 2 cách trên đều thất bại)
-        let videoSrc =
-          movieObj &&
-          movieObj.episodeUrls &&
-          movieObj.episodeUrls[episodeNum - 1];
+        // =========================
+        // RELATED SUGGESTIONS
+        // =========================
 
-        if (!videoSrc) {
-          videoSrc = await fetchEpisodeUrlFromKKPhim(realSlug, episodeNum);
+        if (typeof renderRelatedSuggestions === "function") {
+          try {
+            renderRelatedSuggestions(movieObj);
+          } catch (error) {
+            console.warn("Không render được phim đề xuất:", error);
+          }
         }
 
-        if (!videoSrc) {
-          videoSrc = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
-        }
+        // =========================
+        // VIDEO
+        // =========================
 
-        // Khởi tạo phát video với HLS.js và Plyr
         const video = document.getElementById("video-player");
+
+        if (!video) {
+          console.error("Không tìm thấy video-player");
+
+          return;
+        }
+
+        let videoSrc = "";
+
+        try {
+          if (movieObj && movieObj.episodesData) {
+            const episodeData = movieObj.episodesData[episodeNum];
+
+            if (episodeData && typeof episodeData === "string") {
+              videoSrc = episodeData;
+            } else if (episodeData && episodeData.url) {
+              videoSrc = episodeData.url;
+            }
+          }
+        } catch (error) {
+          console.warn("Lỗi đọc episodesData:", error);
+        }
+
+        // =========================
+        // LẤY LINK TỪ KKPHIM
+        // =========================
+
+        if (!videoSrc) {
+          try {
+            videoSrc = await fetchEpisodeUrlFromKKPhim(realSlug, episodeNum);
+          } catch (error) {
+            console.warn("Không lấy được link KKPhim:", error);
+          }
+        }
+
+        // =========================
+        // FALLBACK EPISODES.JS
+        // =========================
+
+        if (!videoSrc) {
+          try {
+            if (window.allEpisodesData && window.allEpisodesData[realSlug]) {
+              const fallback = window.allEpisodesData[realSlug];
+
+              if (fallback[episodeNum]) {
+                videoSrc =
+                  typeof fallback[episodeNum] === "string"
+                    ? fallback[episodeNum]
+                    : fallback[episodeNum].url;
+              }
+            }
+          } catch (error) {
+            console.warn("Fallback Episodes.js lỗi:", error);
+          }
+        }
+
+        if (!videoSrc) {
+          console.error("Không tìm thấy link video!");
+
+          return;
+        }
+
+        console.log("🎬 Video source:", videoSrc);
+
+        // =========================
+        // HLS
+        // =========================
+
+        let hls = null;
+
         if (typeof Hls !== "undefined" && Hls.isSupported()) {
-          const hls = new Hls();
+          hls = new Hls();
+
           hls.loadSource(videoSrc);
+
           hls.attachMedia(video);
+
           hls.on(Hls.Events.MANIFEST_PARSED, () => {
-            video
-              .play()
-              .catch((err) => console.log("Tự động phát bị chặn:", err));
+            console.log("✅ HLS manifest loaded");
+          });
+
+          hls.on(Hls.Events.ERROR, (event, data) => {
+            console.error("HLS error:", data);
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src = videoSrc;
-          video.addEventListener("loadedmetadata", () => {
-            video
-              .play()
-              .catch((err) => console.log("Tự động phát bị chặn:", err));
+        } else {
+          video.src = videoSrc;
+        }
+
+        // =========================
+        // PLYR
+        // =========================
+
+        let player = null;
+
+        if (typeof Plyr !== "undefined") {
+          player = new Plyr(video, {
+            controls: [
+              "play-large",
+              "play",
+              "progress",
+              "current-time",
+              "duration",
+              "mute",
+              "volume",
+              "settings",
+              "pip",
+              "fullscreen",
+            ],
+
+            settings: ["quality", "speed"],
+
+            autoplay: false,
           });
         }
 
-        const player = new Plyr(video, {
-          controls: [
-            "play-large",
-            "play",
-            "rewind",
-            "fast-forward",
-            "progress",
-            "current-time",
-            "duration",
-            "mute",
-            "volume",
-            "settings",
-            "pip",
-            "fullscreen",
-          ],
-          settings: ["speed"],
-          seekTime: 10,
-          tooltips: { controls: true, seek: true },
-        });
+        // =========================
+        // WATCH HISTORY
+        // =========================
 
-        // Bổ sung xử lý sự kiện nút Fullscreen cho thiết bị iOS Safari di động
-        player.on("enterfullscreen", () => {
-          if (video.webkitEnterFullscreen && !document.fullscreenElement) {
-            video.webkitEnterFullscreen();
+        const WATCH_HISTORY_KEY = "continue_watching_list";
+
+        let hasRestoredPosition = false;
+
+        let lastHistorySave = 0;
+
+        function getWatchHistory() {
+          try {
+            const raw = localStorage.getItem(WATCH_HISTORY_KEY);
+
+            if (!raw) {
+              return [];
+            }
+
+            const parsed = JSON.parse(raw);
+
+            return Array.isArray(parsed) ? parsed : [];
+          } catch (error) {
+            console.error("Không đọc được lịch sử xem:", error);
+
+            return [];
+          }
+        }
+
+        function saveWatchHistory() {
+          try {
+            if (!video || !isFinite(video.duration) || video.duration <= 0) {
+              return;
+            }
+
+            const currentTime = Number(video.currentTime);
+
+            const duration = Number(video.duration);
+
+            if (!isFinite(currentTime) || currentTime < 1) {
+              return;
+            }
+
+            const progress = Math.min(
+              100,
+              Math.max(0, Math.round((currentTime / duration) * 100)),
+            );
+
+            let history = getWatchHistory();
+
+            const existingIndex = history.findIndex(
+              (item) =>
+                String(item.slug || "") === String(realSlug || "") &&
+                Number(item.episode) === Number(episodeNum),
+            );
+
+            const watchItem = {
+              title: realTitle,
+
+              slug: realSlug,
+
+              poster: realPoster,
+
+              desc: movieObj ? movieObj.desc || "" : "",
+
+              episode: episodeNum,
+
+              totalEpisodes: totalEp,
+
+              progress,
+
+              currentTime,
+
+              duration,
+
+              updatedAt: Date.now(),
+            };
+
+            if (existingIndex !== -1) {
+              history.splice(existingIndex, 1);
+            }
+
+            history.unshift(watchItem);
+
+            history = history.slice(0, 30);
+
+            localStorage.setItem(WATCH_HISTORY_KEY, JSON.stringify(history));
+
+            console.log("✅ Đã lưu lịch sử xem:", watchItem);
+          } catch (error) {
+            console.error("❌ Không lưu được lịch sử xem:", error);
+          }
+        }
+
+        // =========================
+        // KHÔI PHỤC VỊ TRÍ
+        // =========================
+
+        function restoreWatchPosition() {
+          if (hasRestoredPosition) {
+            return;
+          }
+
+          if (!video || !isFinite(video.duration) || video.duration <= 0) {
+            return;
+          }
+
+          try {
+            const history = getWatchHistory();
+
+            const saved = history.find(
+              (item) =>
+                String(item.slug || "") === String(realSlug || "") &&
+                Number(item.episode) === Number(episodeNum),
+            );
+
+            hasRestoredPosition = true;
+
+            if (!saved) {
+              return;
+            }
+
+            const savedTime = Number(saved.currentTime) || 0;
+
+            if (savedTime > 5 && savedTime < video.duration - 10) {
+              video.currentTime = Math.min(savedTime, video.duration - 10);
+
+              console.log(
+                `▶ Khôi phục Tập ${episodeNum} tại ${Math.floor(
+                  savedTime,
+                )} giây`,
+              );
+            }
+          } catch (error) {
+            hasRestoredPosition = true;
+
+            console.error("Không khôi phục được vị trí xem:", error);
+          }
+        }
+
+        video.addEventListener("loadedmetadata", restoreWatchPosition);
+
+        video.addEventListener("durationchange", restoreWatchPosition);
+
+        video.addEventListener("canplay", restoreWatchPosition);
+
+        // =========================
+        // LƯU TỰ ĐỘNG MỖI 5 GIÂY
+        // =========================
+
+        video.addEventListener("timeupdate", () => {
+          const now = Date.now();
+
+          if (now - lastHistorySave >= 5000) {
+            lastHistorySave = now;
+
+            saveWatchHistory();
           }
         });
 
-        // Tự động chuyển tập kế tiếp khi xem xong (nếu bật)
+        // =========================
+        // LƯU KHI PAUSE
+        // =========================
+
+        video.addEventListener("pause", saveWatchHistory);
+
+        // =========================
+        // LƯU KHI SEEK
+        // =========================
+
+        video.addEventListener("seeked", saveWatchHistory);
+
+        // =========================
+        // LƯU KHI ĐỔI TAB
+        // =========================
+
+        document.addEventListener("visibilitychange", () => {
+          if (document.visibilityState === "hidden") {
+            saveWatchHistory();
+          }
+        });
+
+        // =========================
+        // LƯU KHI ĐÓNG TRANG
+        // =========================
+
+        window.addEventListener("beforeunload", saveWatchHistory);
+
+        // =========================
+        // AUTO NEXT
+        // =========================
+
         video.addEventListener("ended", () => {
+          saveWatchHistory();
+
           const autoNextOn =
             document.getElementById("wp-autonext-toggle").checked;
+
           if (autoNextOn && episodeNum < totalEp) {
             goToEpisode(episodeNum + 1);
           }
         });
+
+        // =========================
+        // PLAY VIDEO
+        // =========================
+
+        try {
+          await video.play();
+        } catch (error) {
+          console.log("Autoplay bị trình duyệt chặn. Hãy bấm Play.");
+        }
       })();
     </script>
   </body>
