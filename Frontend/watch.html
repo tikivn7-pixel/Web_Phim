@@ -23,6 +23,36 @@
 
     <!-- Plyr JS -->
     <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.js"></script>
+
+    <!-- Sửa lỗi video bị lệch lên trên khi bật toàn màn hình -->
+    <style>
+      .plyr--fullscreen-active,
+      .plyr:fullscreen {
+        background: #000 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        aspect-ratio: auto !important;
+      }
+
+      .plyr--fullscreen-active .plyr__video-wrapper,
+      .plyr:fullscreen .plyr__video-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        aspect-ratio: auto !important;
+        padding-bottom: 0 !important;
+      }
+
+      .plyr--fullscreen-active video,
+      .plyr:fullscreen video {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        aspect-ratio: auto !important;
+        object-fit: contain !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -55,7 +85,7 @@
                 </button>
 
                 <label class="wp-autonext">
-                  <input type="checkbox" id="wp-autonext-toggle" checked />
+                  <input type="checkbox" id="wp-autonext-toggle" />
                   Tự động chuyển tập
                 </label>
 
@@ -470,7 +500,9 @@
           player = new Plyr(video, {
             controls: [
               "play-large",
+              "rewind",
               "play",
+              "fast-forward",
               "progress",
               "current-time",
               "duration",
@@ -482,6 +514,12 @@
             ],
 
             settings: ["quality", "speed"],
+
+            // Nút tua lùi / tới 10 giây (phím ← → cũng tua 10s)
+            seekTime: 10,
+
+            // Phím tắt do mình tự xử lý ở dưới (hoạt động toàn trang)
+            keyboard: { focused: false, global: false },
 
             autoplay: false,
           });
@@ -691,6 +729,112 @@
         video.addEventListener("seeked", saveWatchHistory);
 
         // =========================
+        // NÚT BỎ QUA INTRO
+        // =========================
+        // Điền thời gian intro theo từng phim (đơn vị: giây).
+        // Key = slug của phim. start/end áp dụng cho mọi tập.
+        // Muốn riêng từng tập thì thêm: episodes: { 3: { start: 10, end: 100 } }
+        // Phim nào chưa điền sẽ dùng DEFAULT_INTRO bên dưới.
+        const INTRO_TIMES = {
+          // "ten-slug-phim": { start: 0, end: 90 },
+        };
+        const DEFAULT_INTRO = { start: 0, end: 90 };
+
+        function getIntroRange() {
+          const cfg = INTRO_TIMES[realSlug];
+          if (!cfg) return DEFAULT_INTRO;
+          const epCfg = cfg.episodes && cfg.episodes[episodeNum];
+          return epCfg || cfg;
+        }
+
+        (function setupSkipIntro() {
+          const style = document.createElement("style");
+          style.textContent = `
+            .skip-intro-btn {
+              position: absolute; right: 20px; bottom: 70px; z-index: 5;
+              padding: 10px 18px; border: 1px solid rgba(255,255,255,.7);
+              border-radius: 6px; background: rgba(0,0,0,.65); color: #fff;
+              font-size: 15px; font-weight: 600; cursor: pointer; display: none;
+            }
+            .skip-intro-btn:hover { background: #fff; color: #000; }
+            .skip-intro-btn.show { display: block; }
+          `;
+          document.head.appendChild(style);
+
+          const btn = document.createElement("button");
+          btn.className = "skip-intro-btn";
+          btn.textContent = "Bỏ qua intro ⏭";
+
+          // Gắn vào trong khung Plyr để vẫn hiện khi fullscreen
+          const host = player ? player.elements.container : video.parentElement;
+          host.appendChild(btn);
+
+          btn.addEventListener("click", () => {
+            video.currentTime = getIntroRange().end;
+            btn.classList.remove("show");
+          });
+
+          video.addEventListener("timeupdate", () => {
+            const { start, end } = getIntroRange();
+            const t = video.currentTime;
+            btn.classList.toggle("show", t >= start && t < end - 1);
+          });
+        })();
+
+        // =========================
+        // CÔNG CỤ ĐO INTRO (chỉ hiện khi URL có &introtool=1)
+        // =========================
+        // Cách dùng: mở tập phim, thêm &introtool=1 vào cuối URL, tua tới lúc
+        // intro bắt đầu bấm "Đặt START", tua tới lúc intro kết thúc bấm "Đặt END",
+        // rồi copy dòng hiện ra dán vào INTRO_TIMES ở trên.
+        if (new URLSearchParams(location.search).get("introtool") === "1") {
+          const panel = document.createElement("div");
+          panel.style.cssText =
+            "position:absolute;top:10px;right:10px;z-index:9;background:rgba(0,0,0,.8);" +
+            "color:#fff;padding:10px;border-radius:8px;font-size:13px;width:290px;";
+          panel.innerHTML = `
+            <div>Hiện tại: <b id="it-now">0</b>s</div>
+            <div style="margin:6px 0;display:flex;gap:6px">
+              <button id="it-start" style="flex:1;cursor:pointer">Đặt START</button>
+              <button id="it-end" style="flex:1;cursor:pointer">Đặt END</button>
+            </div>
+            <input id="it-out" readonly style="width:100%;box-sizing:border-box;font-size:12px" />
+          `;
+          (player
+            ? player.elements.container
+            : video.parentElement
+          ).appendChild(panel);
+
+          let itStart = 0;
+          let itEnd = 0;
+          const out = panel.querySelector("#it-out");
+          const refresh = () => {
+            out.value = `"${realSlug}": { start: ${itStart}, end: ${itEnd} },`;
+          };
+          refresh();
+
+          video.addEventListener("timeupdate", () => {
+            panel.querySelector("#it-now").textContent = Math.floor(
+              video.currentTime,
+            );
+          });
+          panel.querySelector("#it-start").onclick = () => {
+            itStart = Math.floor(video.currentTime);
+            refresh();
+          };
+          panel.querySelector("#it-end").onclick = () => {
+            itEnd = Math.ceil(video.currentTime);
+            refresh();
+          };
+          out.addEventListener("click", () => {
+            out.select();
+            try {
+              navigator.clipboard.writeText(out.value);
+            } catch (e) {}
+          });
+        }
+
+        // =========================
         // LƯU KHI ĐỔI TAB
         // =========================
 
@@ -710,16 +854,312 @@
         // AUTO NEXT
         // =========================
 
+        const AUTONEXT_KEY = "autonext_enabled";
+        const AUTONEXT_COUNT_KEY = "autonext_count";
+        const MAX_AUTO_EPISODES = 3; // tối đa 3 tập tự chuyển liên tiếp nếu không tương tác
+
+        const autoNextToggle = document.getElementById("wp-autonext-toggle");
+
+        // Mặc định TẮT, nhớ theo lựa chọn của người dùng
+        autoNextToggle.checked = localStorage.getItem(AUTONEXT_KEY) === "1";
+        autoNextToggle.addEventListener("change", () => {
+          localStorage.setItem(
+            AUTONEXT_KEY,
+            autoNextToggle.checked ? "1" : "0",
+          );
+        });
+
+        // Người dùng còn thao tác thì reset bộ đếm (chống ngủ quên)
+        const resetAutoCount = () =>
+          sessionStorage.setItem(AUTONEXT_COUNT_KEY, "0");
+        ["pointerdown", "keydown", "touchstart"].forEach((evt) =>
+          window.addEventListener(evt, resetAutoCount, { passive: true }),
+        );
+
         video.addEventListener("ended", () => {
           saveWatchHistory();
 
-          const autoNextOn =
-            document.getElementById("wp-autonext-toggle").checked;
+          if (!autoNextToggle.checked || episodeNum >= totalEp) return;
 
-          if (autoNextOn && episodeNum < totalEp) {
-            goToEpisode(episodeNum + 1);
+          const count = Number(sessionStorage.getItem(AUTONEXT_COUNT_KEY) || 0);
+          if (count >= MAX_AUTO_EPISODES) return; // dừng lại, chờ người dùng bấm
+
+          sessionStorage.setItem(AUTONEXT_COUNT_KEY, String(count + 1));
+          goToEpisode(episodeNum + 1);
+        });
+
+        // =========================
+        // PHÍM TẮT
+        // F: toàn màn hình | ← →: tua 10s | ↑ ↓: tăng/giảm âm | Space/K: phát/dừng | M: tắt tiếng
+        // =========================
+        document.addEventListener("keydown", (e) => {
+          // Không bắt phím khi đang gõ chữ hoặc bấm tổ hợp Ctrl/Alt/Cmd
+          // Chỉ bỏ qua khi đang gõ chữ. Thanh tua / thanh âm lượng (input range),
+          // checkbox, nút bấm... vẫn dùng phím tắt, và ta chặn hành vi mặc định
+          // của chúng để không bị tua / đổi âm lượng 2 lần.
+          const t = e.target;
+          const TEXT_TYPES = [
+            "text",
+            "search",
+            "email",
+            "url",
+            "tel",
+            "password",
+            "number",
+          ];
+          if (
+            t &&
+            (t.tagName === "TEXTAREA" ||
+              t.tagName === "SELECT" ||
+              t.isContentEditable ||
+              (t.tagName === "INPUT" && TEXT_TYPES.includes(t.type)))
+          ) {
+            return;
+          }
+          if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+          const showToast = (text) => {
+            let toast = document.getElementById("key-toast");
+            if (!toast) {
+              toast = document.createElement("div");
+              toast.id = "key-toast";
+              toast.style.cssText =
+                "position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);" +
+                "background:rgba(0,0,0,.7);color:#fff;padding:10px 18px;border-radius:8px;" +
+                "font-size:18px;font-weight:600;z-index:8;pointer-events:none;" +
+                "opacity:0;transition:opacity .2s;";
+              (player
+                ? player.elements.container
+                : video.parentElement
+              ).appendChild(toast);
+            }
+            toast.textContent = text;
+            toast.style.opacity = "1";
+            clearTimeout(toast._t);
+            toast._t = setTimeout(() => (toast.style.opacity = "0"), 700);
+          };
+
+          switch (e.key) {
+            case "f":
+            case "F":
+              e.preventDefault();
+              if (player) {
+                player.fullscreen.toggle();
+              } else if (document.fullscreenElement) {
+                document.exitFullscreen();
+              } else {
+                video.requestFullscreen();
+              }
+              break;
+
+            case "ArrowLeft":
+              e.preventDefault();
+              video.currentTime = Math.max(0, video.currentTime - 10);
+              showToast("⏪ -10s");
+              break;
+
+            case "ArrowRight":
+              e.preventDefault();
+              video.currentTime = Math.min(
+                video.duration || Infinity,
+                video.currentTime + 10,
+              );
+              showToast("+10s ⏩");
+              break;
+
+            case "ArrowUp":
+              e.preventDefault();
+              video.muted = false;
+              video.volume = Math.min(
+                1,
+                Math.round((video.volume + 0.1) * 10) / 10,
+              );
+              showToast("🔊 " + Math.round(video.volume * 100) + "%");
+              break;
+
+            case "ArrowDown":
+              e.preventDefault();
+              video.volume = Math.max(
+                0,
+                Math.round((video.volume - 0.1) * 10) / 10,
+              );
+              showToast(
+                video.volume === 0
+                  ? "🔇 0%"
+                  : "🔉 " + Math.round(video.volume * 100) + "%",
+              );
+              break;
+
+            case " ":
+            case "k":
+            case "K":
+              e.preventDefault();
+              if (video.paused) video.play().catch(() => {});
+              else video.pause();
+              break;
+
+            case "m":
+            case "M":
+              video.muted = !video.muted;
+              showToast(video.muted ? "🔇 Tắt tiếng" : "🔊 Bật tiếng");
+              break;
           }
         });
+
+        document.addEventListener("keyup", (e) => {
+          if (e.key === " " && e.target && e.target.tagName === "BUTTON") {
+            e.preventDefault();
+          }
+        });
+
+        // =========================
+        // NÚT TẬP TRƯỚC / TẬP SAU TRONG THANH ĐIỀU KHIỂN
+        // =========================
+        (function addEpisodeButtonsToPlayer() {
+          if (!player) return;
+          const controls =
+            player.elements.container.querySelector(".plyr__controls");
+          const rewindBtn =
+            controls && controls.querySelector('[data-plyr="rewind"]');
+          const forwardBtn =
+            controls && controls.querySelector('[data-plyr="fast-forward"]');
+          if (!controls || !rewindBtn || !forwardBtn) return;
+
+          const makeBtn = (iconClass, label, onClick) => {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = "plyr__control";
+            b.title = label;
+            b.setAttribute("aria-label", label);
+            b.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
+            b.addEventListener("click", onClick);
+            return b;
+          };
+
+          if (episodeNum > 1) {
+            controls.insertBefore(
+              makeBtn("fa-backward-step", "Tập trước", () =>
+                goToEpisode(episodeNum - 1),
+              ),
+              rewindBtn,
+            );
+          }
+
+          if (episodeNum < totalEp) {
+            forwardBtn.after(
+              makeBtn("fa-forward-step", "Tập sau", () =>
+                goToEpisode(episodeNum + 1),
+              ),
+            );
+          }
+        })();
+
+        // =========================
+        // TĂNG ÂM LƯỢNG VƯỢT 100% (nút x1 / x1.5 / x2 / x3, phím B)
+        // =========================
+        (function setupVolumeBoost() {
+          if (!player || !hls) return; // chỉ dùng khi phát bằng HLS (tránh lỗi CORS gây mất tiếng)
+
+          const BOOST_KEY = "audio_boost";
+          const LEVELS = [1, 1.5, 2, 3];
+          let level = Number(localStorage.getItem(BOOST_KEY)) || 1;
+          if (!LEVELS.includes(level)) level = 1;
+
+          let audioCtx = null;
+          let gainNode = null;
+
+          function ensureAudio() {
+            if (audioCtx) return true;
+            try {
+              const AC = window.AudioContext || window.webkitAudioContext;
+              audioCtx = new AC();
+              const source = audioCtx.createMediaElementSource(video);
+              gainNode = audioCtx.createGain();
+              // Bộ nén nhẹ để âm lớn không bị rè / vỡ tiếng
+              const comp = audioCtx.createDynamicsCompressor();
+              source
+                .connect(gainNode)
+                .connect(comp)
+                .connect(audioCtx.destination);
+              return true;
+            } catch (err) {
+              console.warn("Không bật được tăng âm lượng:", err);
+              audioCtx = null;
+              return false;
+            }
+          }
+
+          function applyBoost() {
+            if (level > 1 || audioCtx) {
+              if (!ensureAudio()) return;
+              if (audioCtx.state === "suspended") audioCtx.resume();
+              gainNode.gain.value = level;
+            }
+          }
+
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "plyr__control";
+          btn.style.cssText = "font-weight:700;font-size:13px;min-width:40px;";
+
+          function refreshBtn() {
+            btn.textContent = "x" + level;
+            btn.title = "Tăng âm lượng (phím B)";
+            btn.setAttribute("aria-label", "Tăng âm lượng, hiện tại x" + level);
+          }
+
+          function cycle() {
+            level = LEVELS[(LEVELS.indexOf(level) + 1) % LEVELS.length];
+            localStorage.setItem(BOOST_KEY, String(level));
+            applyBoost();
+            refreshBtn();
+          }
+
+          btn.addEventListener("click", cycle);
+          refreshBtn();
+
+          const volInput = player.elements.container.querySelector(
+            'input[data-plyr="volume"]',
+          );
+          if (volInput) volInput.after(btn);
+          else player.elements.controls.appendChild(btn);
+
+          // Phím B để đổi mức tăng âm
+          document.addEventListener("keydown", (e) => {
+            const t = e.target;
+            if (
+              t &&
+              (t.tagName === "TEXTAREA" ||
+                t.tagName === "SELECT" ||
+                t.isContentEditable ||
+                (t.tagName === "INPUT" &&
+                  [
+                    "text",
+                    "search",
+                    "email",
+                    "url",
+                    "tel",
+                    "password",
+                    "number",
+                  ].includes(t.type)))
+            )
+              return;
+            if (e.ctrlKey || e.altKey || e.metaKey) return;
+            if (e.key === "b" || e.key === "B") cycle();
+          });
+
+          // Trình duyệt chỉ cho bật âm thanh sau lần tương tác đầu tiên:
+          // nếu lần trước đã chọn x2/x3 thì áp dụng lại ngay khi người dùng chạm vào trang
+          if (level > 1) {
+            const once = () => {
+              applyBoost();
+              window.removeEventListener("pointerdown", once);
+              window.removeEventListener("keydown", once);
+            };
+            window.addEventListener("pointerdown", once);
+            window.addEventListener("keydown", once);
+          }
+        })();
 
         // =========================
         // PLAY VIDEO

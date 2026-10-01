@@ -2515,6 +2515,10 @@ async function loadMovieDetailsFromTMDB(movieTitle) {
       ArrowRight: "right",
     };
 
+    // Trang xem phim: mũi tên dành cho trình phát (tua 10s / âm lượng),
+    // không dùng để di chuyển focus giữa các phần tử nữa
+    if (directions[e.key] && document.getElementById("video-player")) return;
+
     if (directions[e.key]) {
       getFocusableElements().forEach(ensureFocusable);
       const current =
