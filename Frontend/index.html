@@ -36,8 +36,11 @@
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="mobile-sidebar">
         <li onclick="switchPage('home')">Trang chủ</li>
 
         <!-- Mục Thể Loại có Dropdown Menu -->
@@ -96,6 +99,9 @@
       </div>
     </nav>
 
+    <!-- SIDEBAR OVERLAY (Dán ngay dưới navbar) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <!-- TRANG TÌM KIẾM -->
     <section id="page-search" class="page">
       <div class="slider-section">
@@ -152,11 +158,13 @@
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
+
       <!--SLIDER ANIME-->
       <div class="slider-section">
         <h2>Anime</h2>
         <div class="movie-slider" id="anime-movie-slider"></div>
       </div>
+
       <!-- SLIDER PHIM HÀN QUỐC -->
       <div class="slider-section">
         <h2>Hàn Quốc</h2>
@@ -168,6 +176,7 @@
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
+
       <!-- SLIDER PHIM HÀNH ĐỘNG -->
       <div class="slider-section">
         <h2>Hành Động</h2>
@@ -179,6 +188,7 @@
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
+
       <!-- SLIDER PHIM TÌNH CẢM -->
       <div class="slider-section">
         <h2>Tình Cảm</h2>
@@ -319,5 +329,28 @@
     <!-- SCRIPT (Sử dụng đường dẫn tương đối chuẩn xác) -->
     <script src="./Episodes.js"></script>
     <script src="./script.js"></script>
+
+    <!-- SCRIPT XỬ LÝ MOBILE SIDEBAR & OVERLAY -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.getElementById("mobile-menu-btn");
+        const sidebar = document.getElementById("mobile-sidebar");
+        const overlay = document.getElementById("sidebar-overlay");
+
+        if (menuBtn) {
+          menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("mobile-open");
+            overlay.classList.toggle("active");
+          });
+        }
+
+        if (overlay) {
+          overlay.addEventListener("click", () => {
+            sidebar.classList.remove("mobile-open");
+            overlay.classList.remove("active");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
