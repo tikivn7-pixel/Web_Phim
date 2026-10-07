@@ -1420,7 +1420,7 @@ const fallbackMoviesList = [
   {
     title: "Spy x Family (Season 3)",
     slug: "gia-dinh-diep-vien-phan-3",
-    episodes: 12,
+    episodes: 13,
     genres: "Hài Hước, Hành Động, Phiêu Lưu, Tâm Lý, Anime",
     poster: IMG_BASE + "Spy x Family (Season 3).jpg",
     banner: IMG_BASE + "Spy x Family (Season 3).jpg",
