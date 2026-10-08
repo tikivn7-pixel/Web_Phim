@@ -1725,6 +1725,17 @@ const fallbackMoviesList = [
     group: "Attack On Titan",
     partName: "Phần Cuối",
   },
+  {
+    title: "Fairy Tail (Season 1)",
+    slug: "hoi-phap-su-phan-1",
+    episodes: 175,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    banner: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    desc: "Fairy Tail (Season 1)",
+    group: "Fairy Tail",
+    partName: "Phần 1",
+  },
 ];
 // ==========================================
 // 0C. GỌI API PHIM TỪ BACKEND (thay cho data hardcode)
