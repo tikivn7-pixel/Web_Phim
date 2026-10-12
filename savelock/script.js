@@ -1726,6 +1726,90 @@ const fallbackMoviesList = [
     partName: "Phần Cuối",
   },
   {
+    title: "Doctor X: Mafia in White",
+    slug: "bac-si-x",
+    episodes: 12,
+    genres: "Bí Ẩn, Chính Kịch, Hình Sự, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "Doctor X Mafia in White.jpg",
+    banner: IMG_BASE + "Doctor X Mafia in White.jpg",
+    desc: "Doctor X: Mafia in White",
+  },
+  {
+    title: "Firefly Wedding",
+    slug: "dam-cuoi-dom-dom",
+    episodes: 1,
+    genres: "Bí Ẩn, Chính Kịch, Hình Sự, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "Firefly Wedding.jpg",
+    banner: IMG_BASE + "Firefly Wedding.jpg",
+    desc: "Firefly Wedding",
+  },
+  {
+    title: "Haikyu!! (Season 1)",
+    slug: "vua-bong-chuyen-haikyuu-phan-1",
+    episodes: 25,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "Haikyu!! (Season 1).jpg",
+    banner: IMG_BASE + "Haikyu!! (Season 1).jpg",
+    desc: "Haikyu!! (Season 1)",
+    group: "Haikyu",
+    partName: "Phần 1",
+  },
+  {
+    title: "Haikyu!! (Season 2)",
+    slug: "vua-bong-chuyen-haikyuu-phan-2",
+    episodes: 25,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "Haikyu!! (Season 2).jpg",
+    banner: IMG_BASE + "Haikyu!! (Season 2).jpg",
+    desc: "Haikyu!! (Season 1)",
+    group: "Haikyu",
+    partName: "Phần 2",
+  },
+  {
+    title: "Haikyu!! (Season 3)",
+    slug: "vua-bong-chuyen-haikyuu-phan-3",
+    episodes: 10,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "Haikyu!! (Season 3).jpg",
+    banner: IMG_BASE + "Haikyu!! (Season 3).jpg",
+    desc: "Haikyu!! (Season 3)",
+    group: "Haikyu",
+    partName: "Phần 3",
+  },
+  {
+    title: "Haikyu!! (Season 4)",
+    slug: "vua-bong-chuyen-haikyuu-phan-4",
+    episodes: 13,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "Haikyu!! (Season 4).jpg",
+    banner: IMG_BASE + "Haikyu!! (Season 4).jpg",
+    desc: "Haikyu!! (Season 4)",
+    group: "Haikyu",
+    partName: "Phần 4 Part 1",
+  },
+  {
+    title: "Haikyu!! (Season 4) 2",
+    slug: "vua-bong-chuyen-haikyuu-phan-4-2",
+    episodes: 12,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "Haikyu!! (Season 4).jpg",
+    banner: IMG_BASE + "Haikyu!! (Season 4).jpg",
+    desc: "Haikyu!! (Season 4) 2",
+    group: "Haikyu",
+    partName: "Phần 4 Part 2",
+  },
+  {
+    title: "HAIKYU!! The Dumpster Battle",
+    slug: "haikyu-tran-chien-bai-phe-lieu",
+    episodes: 1,
+    genres: "Thể Thao, Anime",
+    poster: IMG_BASE + "HAIKYU!! The Dumpster Battle.jpg",
+    banner: IMG_BASE + "HAIKYU!! The Dumpster Battle.jpg",
+    desc: "HAIKYU!! The Dumpster Battle",
+    group: "Haikyu",
+    partName: "Movie",
+  },
+  {
     title: "Fairy Tail (Season 1)",
     slug: "hoi-phap-su-phan-1",
     episodes: 175,
@@ -1735,6 +1819,70 @@ const fallbackMoviesList = [
     desc: "Fairy Tail (Season 1)",
     group: "Fairy Tail",
     partName: "Phần 1",
+  },
+  {
+    title: "Fairy Tail (Season 1)",
+    slug: "fairy-tail-nu-te-cua-phuong-hoang",
+    episodes: 1,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail Phoenix Priestess.jpg",
+    banner: IMG_BASE + "Fairy Tail Phoenix Priestess.jpg",
+    desc: "Fairy Tail: Phoenix Priestess",
+    group: "Fairy Tail",
+    partName: "Movie",
+  },
+  {
+    title: "Fairy Tail (Season 2)",
+    slug: "hoi-phap-su-phan-2",
+    episodes: 51,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    banner: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    desc: "Fairy Tail (Season 2)",
+    group: "Fairy Tail",
+    partName: "Phần 2",
+  },
+  {
+    title: "Fairy Tail (Season 3)",
+    slug: "hoi-phap-su-phan-3",
+    episodes: 51,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    banner: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    desc: "Fairy Tail (Season 3)",
+    group: "Fairy Tail",
+    partName: "Phần 3",
+  },
+  {
+    title: "Fairy Tail (Season 4)",
+    slug: "hoi-phap-su-phan-4",
+    episodes: 51,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    banner: IMG_BASE + "Fairy Tail (Season 1).jpg",
+    desc: "Fairy Tail (Season 4)",
+    group: "Fairy Tail",
+    partName: "Phần 4",
+  },
+  {
+    title: "Fairy Tail: 100 Years Quest",
+    slug: "hoi-phap-su-nhiem-vu-100-nam",
+    episodes: 25,
+    genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
+    poster: IMG_BASE + "Fairy Tail 100 Years Quest.jpg",
+    banner: IMG_BASE + "Fairy Tail 100 Years Quest.jpg",
+    desc: "Fairy Tail: 100 Years Quest",
+    group: "Fairy Tail",
+    partName: "100 Years Quest",
+  },
+  {
+    title: "If Wishes Could Kill",
+    slug: "dieu-uoc-doat-mang",
+    episodes: 8,
+    genres: "Bí Ẩn, Chính Kịch, Hình Sự, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "If Wishes Could Kill.jpg",
+    banner: IMG_BASE + "If Wishes Could Kill.jpg",
+    desc: "If Wishes Could Kill",
   },
 ];
 // ==========================================
@@ -2598,6 +2746,7 @@ async function fetchMovieDataFromBackend(movieTitle) {
 function handleSearch(event) {
   if (event.key === "Enter" || event.keyCode === 13) {
     event.preventDefault();
+    event.stopPropagation(); // không cho module remote TV bắt thêm phím Enter này
     executeSearch();
   }
 }
@@ -2935,9 +3084,17 @@ async function loadMovieDetailsFromTMDB(movieTitle) {
       }
       e.preventDefault();
     } else if (e.key === "Enter") {
-      const current = lastFocused || document.activeElement;
-      // Không tự click nếu đang gõ chữ trong ô tìm kiếm - để nguyên hành vi gõ/Enter tìm kiếm
-      if (current && current.tagName !== "INPUT") {
+      // Đang gõ trong ô nhập (ô tìm kiếm...) -> để ô đó tự xử lý Enter,
+      // không click vào phần tử khác (lỗi cũ: click nhầm lastFocused làm mất kết quả tìm kiếm)
+      const active = document.activeElement;
+      if (
+        active &&
+        (active.tagName === "INPUT" || active.tagName === "TEXTAREA")
+      ) {
+        return;
+      }
+      const current = lastFocused || active;
+      if (current) {
         current.click();
         e.preventDefault();
       }
