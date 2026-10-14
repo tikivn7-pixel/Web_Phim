@@ -89,6 +89,95 @@
   </head>
 
   <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="nav-links" id="mobile-sidebar">
+        <li onclick="switchPage('home')">Trang chủ</li>
+
+        <!-- Mục Thể Loại có Dropdown Menu -->
+        <li class="dropdown" id="genre-dropdown">
+          <span class="dropdown-toggle"
+            >Thể Loại <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu">
+            <div class="genre-grid">
+              <span onclick="filterByGenre('Bí Ẩn')">Bí Ẩn</span>
+              <span onclick="filterByGenre('Chiến Tranh')">Chiến Tranh</span>
+              <span onclick="filterByGenre('Chính Kịch')">Chính Kịch</span>
+              <span onclick="filterByGenre('Cổ Trang')">Cổ Trang</span>
+              <span onclick="filterByGenre('Gia Đình')">Gia Đình</span>
+              <span onclick="filterByGenre('Hài Hước')">Hài Hước</span>
+              <span onclick="filterByGenre('Hành Động')">Hành Động</span>
+              <span onclick="filterByGenre('Hình Sự')">Hình Sự</span>
+              <span onclick="filterByGenre('Học Đường')">Học Đường</span>
+              <span onclick="filterByGenre('Khoa Học')">Khoa Học</span>
+              <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
+              <span onclick="filterByGenre('Kinh Điển')">Kinh Điển</span>
+              <span onclick="filterByGenre('Lịch Sử')">Lịch Sử</span>
+              <span onclick="filterByGenre('Phim Ngắn')">Phim Ngắn</span>
+              <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
+              <span onclick="filterByGenre('Thần Thoại')">Thần Thoại</span>
+              <span onclick="filterByGenre('Thể Thao')">Thể Thao</span>
+              <span onclick="filterByGenre('Trẻ Em')">Trẻ Em</span>
+              <span onclick="filterByGenre('Tài Liệu')">Tài Liệu</span>
+              <span onclick="filterByGenre('Tâm Lý')">Tâm Lý</span>
+              <span onclick="filterByGenre('Tình Cảm')">Tình Cảm</span>
+              <span onclick="filterByGenre('Viễn Tưởng')">Viễn Tưởng</span>
+              <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
+              <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
+              <span onclick="filterByGenre('Anime')">Anime</span>
+              <span onclick="filterByGenre('TVShow')">TVShow</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mục Quốc Gia có Dropdown Menu -->
+        <li class="dropdown" id="country-dropdown">
+          <span class="dropdown-toggle"
+            >Quốc Gia <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu country-menu">
+            <div class="genre-grid">
+              <span onclick="filterByCountry('Trung Quốc')">Trung Quốc</span>
+              <span onclick="filterByCountry('Hàn Quốc')">Hàn Quốc</span>
+              <span onclick="filterByCountry('Mỹ')">Mỹ</span>
+              <span onclick="filterByCountry('Nhật Bản')">Nhật Bản</span>
+              <span onclick="filterByCountry('Việt Nam')">Việt Nam</span>
+              <span onclick="filterByCountry('Thái Lan')">Thái Lan</span>
+              <span onclick="filterByCountry('Anh')">Anh</span>
+              <span onclick="filterByCountry('Pháp')">Pháp</span>
+              <span onclick="filterByCountry('Đài Loan')">Đài Loan</span>
+              <span onclick="filterByCountry('Hồng Kông')">Hồng Kông</span>
+              <span onclick="filterByCountry('Ấn Độ')">Ấn Độ</span>
+            </div>
+          </div>
+        </li>
+
+        <li onclick="switchPage('wishlist')">Danh sách của tôi</li>
+      </ul>
+
+      <!-- Thanh tìm kiếm -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm tên phim, thể loại..."
+          onkeydown="handleSearch(event)"
+        />
+        <button class="search-btn" onclick="executeSearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY (Dán ngay dưới navbar) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <div class="fd-wrap">
       <!-- Breadcrumb -->
       <div class="fd-breadcrumb" id="fd-breadcrumb">
@@ -109,6 +198,8 @@
                 <h1 id="watch-movie-title">Đang tải tên phim...</h1>
 
                 <p id="current-ep-title">Tập 1</p>
+
+                <div class="wp-views" id="wp-views"></div>
               </div>
 
               <div class="wp-nav-btns">
@@ -207,14 +298,14 @@
 
     <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
-    <script src="./data.js?v=3"></script>
-    <script src="./api.js?v=3"></script>
-    <script src="./utils.js?v=3"></script>
-    <script src="./wishlist.js?v=3"></script>
-    <script src="./render.js?v=3"></script>
-    <script src="./search.js?v=3"></script>
-    <script src="./tmdb.js?v=3"></script>
-    <script src="./tv-nav.js?v=3"></script>
+    <script src="./data.js?v=4"></script>
+    <script src="./api.js?v=4"></script>
+    <script src="./utils.js?v=4"></script>
+    <script src="./wishlist.js?v=4"></script>
+    <script src="./render.js?v=4"></script>
+    <script src="./search.js?v=4"></script>
+    <script src="./tmdb.js?v=4"></script>
+    <script src="./tv-nav.js?v=4"></script>
 
     <!-- ================= WATCH SCRIPT ================= -->
     <script>
@@ -304,6 +395,15 @@
 
         document.getElementById("current-ep-title").innerText =
           `Tập ${episodeNum}`;
+
+        // Hiển thị lượt xem (cập nhật lại khi bấm phát và tăng view thành công)
+        const showViews = (n) => {
+          const el = document.getElementById("wp-views");
+          if (el) {
+            el.innerHTML = `<i class="fa-regular fa-eye"></i> ${formatViews(n)} lượt xem`;
+          }
+        };
+        showViews(movieObj ? movieObj.views : 0);
 
         // =========================
         // BREADCRUMB
@@ -775,6 +875,53 @@
           }
         }
 
+        // Xem >= 95% thời lượng thì coi là đã xem xong tập đó
+        const FINISHED_PERCENT = 95;
+
+        // Cùng 1 phim? (so theo slug, không có slug thì so theo tên)
+        function isSameMovie(item) {
+          return realSlug
+            ? String(item.slug || "") === String(realSlug)
+            : item.title === realTitle;
+        }
+
+        // Đã xem xong TẬP CUỐI của phim (video chạy hết hoặc >= 95%)?
+        function isLastEpisodeFinished(progress) {
+          return (
+            episodeNum >= totalEp &&
+            (video.ended === true || progress >= FINISHED_PERCENT)
+          );
+        }
+
+        // Xóa phim khỏi "Tiếp tục xem" (kiểu Netflix: xem hết phim thì biến mất)
+        // và xóa luôn vị trí xem dở của các tập để lần sau xem lại từ đầu.
+        function removeFromWatchHistory() {
+          try {
+            const history = getWatchHistory();
+            const remaining = history.filter((item) => !isSameMovie(item));
+
+            if (remaining.length !== history.length) {
+              localStorage.setItem(
+                WATCH_HISTORY_KEY,
+                JSON.stringify(remaining),
+              );
+              console.log(
+                "🏁 Đã xem xong tập cuối, xóa khỏi Tiếp tục xem:",
+                realTitle,
+              );
+            }
+
+            const positions = getEpisodePositions();
+            const key = movieKey();
+            if (positions[key]) {
+              delete positions[key];
+              localStorage.setItem(EP_POSITIONS_KEY, JSON.stringify(positions));
+            }
+          } catch (error) {
+            console.error("❌ Không xóa được khỏi Tiếp tục xem:", error);
+          }
+        }
+
         function saveWatchHistory() {
           try {
             if (!video || !isFinite(video.duration) || video.duration <= 0) {
@@ -794,14 +941,18 @@
               Math.max(0, Math.round((currentTime / duration) * 100)),
             );
 
+            // Xem xong tập cuối -> XÓA phim khỏi danh sách thay vì lưu.
+            // (Kiểm tra ngay trong hàm này để các sự kiện pause / timeupdate /
+            // beforeunload chạy sau đó không ghi phim ngược lại vào danh sách.)
+            if (isLastEpisodeFinished(progress)) {
+              removeFromWatchHistory();
+              return;
+            }
+
             let history = getWatchHistory();
 
             // Mỗi PHIM chỉ giữ 1 bản ghi (tập xem gần nhất)
-            const sameMovie = (item) =>
-              realSlug
-                ? String(item.slug || "") === String(realSlug)
-                : item.title === realTitle;
-            history = history.filter((item) => !sameMovie(item));
+            history = history.filter((item) => !isSameMovie(item));
 
             const watchItem = {
               title: realTitle,
@@ -1082,6 +1233,8 @@
         );
 
         video.addEventListener("ended", () => {
+          // Tập cuối chạy xong -> saveWatchHistory() sẽ tự xóa phim khỏi
+          // "Tiếp tục xem"; các tập khác thì lưu như bình thường
           saveWatchHistory();
 
           if (!autoNextToggle.checked || episodeNum >= totalEp) return;
@@ -1369,6 +1522,18 @@
         // =========================
         // PLAY VIDEO
         // =========================
+
+        // Tăng lượt xem +1 ở lần phát đầu tiên (mỗi phim 1 lượt / 1 phiên)
+        video.addEventListener(
+          "play",
+          async () => {
+            const newViews = await increaseMovieView(
+              movieObj || { slug: realSlug },
+            );
+            if (newViews !== null) showViews(newViews);
+          },
+          { once: true },
+        );
 
         try {
           await video.play();

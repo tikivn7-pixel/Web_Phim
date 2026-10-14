@@ -10,6 +10,95 @@
     />
   </head>
   <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="nav-links" id="mobile-sidebar">
+        <li onclick="switchPage('home')">Trang chủ</li>
+
+        <!-- Mục Thể Loại có Dropdown Menu -->
+        <li class="dropdown" id="genre-dropdown">
+          <span class="dropdown-toggle"
+            >Thể Loại <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu">
+            <div class="genre-grid">
+              <span onclick="filterByGenre('Bí Ẩn')">Bí Ẩn</span>
+              <span onclick="filterByGenre('Chiến Tranh')">Chiến Tranh</span>
+              <span onclick="filterByGenre('Chính Kịch')">Chính Kịch</span>
+              <span onclick="filterByGenre('Cổ Trang')">Cổ Trang</span>
+              <span onclick="filterByGenre('Gia Đình')">Gia Đình</span>
+              <span onclick="filterByGenre('Hài Hước')">Hài Hước</span>
+              <span onclick="filterByGenre('Hành Động')">Hành Động</span>
+              <span onclick="filterByGenre('Hình Sự')">Hình Sự</span>
+              <span onclick="filterByGenre('Học Đường')">Học Đường</span>
+              <span onclick="filterByGenre('Khoa Học')">Khoa Học</span>
+              <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
+              <span onclick="filterByGenre('Kinh Điển')">Kinh Điển</span>
+              <span onclick="filterByGenre('Lịch Sử')">Lịch Sử</span>
+              <span onclick="filterByGenre('Phim Ngắn')">Phim Ngắn</span>
+              <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
+              <span onclick="filterByGenre('Thần Thoại')">Thần Thoại</span>
+              <span onclick="filterByGenre('Thể Thao')">Thể Thao</span>
+              <span onclick="filterByGenre('Trẻ Em')">Trẻ Em</span>
+              <span onclick="filterByGenre('Tài Liệu')">Tài Liệu</span>
+              <span onclick="filterByGenre('Tâm Lý')">Tâm Lý</span>
+              <span onclick="filterByGenre('Tình Cảm')">Tình Cảm</span>
+              <span onclick="filterByGenre('Viễn Tưởng')">Viễn Tưởng</span>
+              <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
+              <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
+              <span onclick="filterByGenre('Anime')">Anime</span>
+              <span onclick="filterByGenre('TVShow')">TVShow</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mục Quốc Gia có Dropdown Menu -->
+        <li class="dropdown" id="country-dropdown">
+          <span class="dropdown-toggle"
+            >Quốc Gia <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu country-menu">
+            <div class="genre-grid">
+              <span onclick="filterByCountry('Trung Quốc')">Trung Quốc</span>
+              <span onclick="filterByCountry('Hàn Quốc')">Hàn Quốc</span>
+              <span onclick="filterByCountry('Mỹ')">Mỹ</span>
+              <span onclick="filterByCountry('Nhật Bản')">Nhật Bản</span>
+              <span onclick="filterByCountry('Việt Nam')">Việt Nam</span>
+              <span onclick="filterByCountry('Thái Lan')">Thái Lan</span>
+              <span onclick="filterByCountry('Anh')">Anh</span>
+              <span onclick="filterByCountry('Pháp')">Pháp</span>
+              <span onclick="filterByCountry('Đài Loan')">Đài Loan</span>
+              <span onclick="filterByCountry('Hồng Kông')">Hồng Kông</span>
+              <span onclick="filterByCountry('Ấn Độ')">Ấn Độ</span>
+            </div>
+          </div>
+        </li>
+
+        <li onclick="switchPage('wishlist')">Danh sách của tôi</li>
+      </ul>
+
+      <!-- Thanh tìm kiếm -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm tên phim, thể loại..."
+          onkeydown="handleSearch(event)"
+        />
+        <button class="search-btn" onclick="executeSearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY (Dán ngay dưới navbar) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <div class="fd-wrap">
       <!-- Breadcrumb -->
       <div class="fd-breadcrumb" id="fd-breadcrumb">
@@ -59,6 +148,10 @@
                 <div class="fd-meta-line">
                   <i class="fa-solid fa-clapperboard"></i>
                   <span id="detail-episodes-count"></span>
+                </div>
+                <div class="fd-meta-line">
+                  <i class="fa-regular fa-eye"></i>
+                  <span id="detail-views">0 lượt xem</span>
                 </div>
               </div>
 
@@ -125,6 +218,13 @@
                 <div>
                   <strong>Thể loại:</strong>
                   <span id="detail-genres">Đang cập nhật</span>
+                </div>
+              </div>
+              <div class="fd-info-item">
+                <i class="fa-solid fa-earth-asia"></i>
+                <div>
+                  <strong>Quốc gia:</strong>
+                  <span id="detail-country">Đang cập nhật</span>
                 </div>
               </div>
               <div class="fd-info-item">
@@ -208,14 +308,14 @@
 
     <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
-    <script src="./data.js?v=3"></script>
-    <script src="./api.js?v=3"></script>
-    <script src="./utils.js?v=3"></script>
-    <script src="./wishlist.js?v=3"></script>
-    <script src="./render.js?v=3"></script>
-    <script src="./search.js?v=3"></script>
-    <script src="./tmdb.js?v=3"></script>
-    <script src="./tv-nav.js?v=3"></script>
+    <script src="./data.js?v=4"></script>
+    <script src="./api.js?v=4"></script>
+    <script src="./utils.js?v=4"></script>
+    <script src="./wishlist.js?v=4"></script>
+    <script src="./render.js?v=4"></script>
+    <script src="./search.js?v=4"></script>
+    <script src="./tmdb.js?v=4"></script>
+    <script src="./tv-nav.js?v=4"></script>
 
     <!-- Script xử lý nhận dữ liệu từ URL và hiển thị -->
     <script>
@@ -358,6 +458,11 @@
             document.getElementById("detail-genres").innerText =
               currentMovie.genres;
           }
+          // Lượt xem + Quốc gia (lấy từ DB)
+          document.getElementById("detail-views").innerText =
+            `${formatViews(currentMovie.views)} lượt xem`;
+          document.getElementById("detail-country").innerText =
+            getMovieCountry(currentMovie) || "Đang cập nhật";
           episodes = currentMovie.episodes || episodes;
           document.getElementById("detail-episodes-count").innerText =
             `${episodes} Tập`;

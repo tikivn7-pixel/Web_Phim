@@ -63,6 +63,7 @@ function createMovieCard(movie) {
   card.innerHTML = `
     <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
     <h4>${safeTitle}</h4>
+    <div class="movie-views"><i class="fa-regular fa-eye"></i> ${formatViews(movie.views, { compact: true })} lượt xem</div>
     <div class="movie-hover-card">
       <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
       <div class="hover-content">
@@ -120,7 +121,7 @@ async function renderAnimeMovies() {
 async function renderKoreanMovies() {
   const container = document.getElementById("korean-movie-slider");
   if (!container) return;
-  const movies = await fetchMovies({ genre: "Hàn Quốc", limit: 20 });
+  const movies = await fetchMovies({ country: "Hàn Quốc", limit: 20 });
   addToGlobalMoviesList(movies);
   renderMovieGrid(container, movies);
 }

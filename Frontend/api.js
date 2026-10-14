@@ -6,16 +6,43 @@
 // mà toàn bộ code render/wishlist/continue-watching bên dưới đang dùng
 function normalizeMovie(row) {
   return {
+    id: row.id,
     title: row.title,
     slug: row.slug,
     poster: row.poster,
     banner: row.banner || row.poster,
     desc: row.description,
     genres: row.genres,
+    country: row.country || row.quoc_gia || "", // Quốc gia (tách riêng khỏi thể loại)
+    views: Number(row.views) || 0, // Lượt xem
     episodes: row.total_episodes,
     group: row.movie_group,
     partName: row.part_name,
   };
+}
+
+// Danh sách Quốc Gia hiển thị ở menu (khớp với giá trị cột country trong DB)
+const COUNTRIES = [
+  "Trung Quốc",
+  "Hàn Quốc",
+  "Mỹ",
+  "Nhật Bản",
+  "Việt Nam",
+  "Thái Lan",
+  "Anh",
+  "Pháp",
+  "Đài Loan",
+  "Hồng Kông",
+  "Ấn Độ",
+];
+
+// Lấy quốc gia của 1 phim. Dữ liệu hardcode cũ chưa có trường country (quốc
+// gia nằm lẫn trong genres) nên tự dò thêm trong genres để dùng làm dự phòng.
+function getMovieCountry(movie) {
+  if (!movie) return "";
+  if (movie.country) return movie.country;
+  const genres = (movie.genres || "").toLowerCase();
+  return COUNTRIES.find((c) => genres.includes(c.toLowerCase())) || "";
 }
 
 // Xác định nguồn dữ liệu sẽ dùng: "auto" (mặc định, SQL trước - lỗi thì
@@ -44,18 +71,20 @@ async function fetchMovies({
   page = 1,
   limit = 20,
   genre = null,
+  country = null,
   group = null,
   source = "auto",
 } = {}) {
   const dataSource = resolveDataSource(source);
 
   if (dataSource === "hardcode") {
-    return filterFallbackMovies({ genre, group });
+    return filterFallbackMovies({ genre, country, group });
   }
 
   try {
     const params = new URLSearchParams({ page, limit });
     if (genre) params.set("genre", genre);
+    if (country) params.set("country", country);
     if (group) params.set("group", group);
     const res = await fetch(`${API_BASE_URL}/api/movies?${params.toString()}`);
     if (!res.ok) throw new Error(`API /api/movies lỗi ${res.status}`);
@@ -67,7 +96,9 @@ async function fetchMovies({
       // bằng hardcode để test thấy đúng dữ liệu/trạng thái thật từ DB.
       return movies;
     }
-    return movies.length ? movies : filterFallbackMovies({ genre, group });
+    return movies.length
+      ? movies
+      : filterFallbackMovies({ genre, country, group });
   } catch (err) {
     if (dataSource === "sql") {
       // Ép chỉ dùng SQL: không rớt về hardcode, ném lỗi ra để thấy rõ
@@ -76,17 +107,26 @@ async function fetchMovies({
       throw err;
     }
     console.error("Lỗi tải danh sách phim từ API, dùng dữ liệu dự phòng:", err);
-    return filterFallbackMovies({ genre, group });
+    return filterFallbackMovies({ genre, country, group });
   }
 }
 
-// Lọc mảng hardcode dự phòng theo genre/group, dùng khi API MySQL không
-// gọi được (mất mạng, backend chưa chạy...)
-function filterFallbackMovies({ genre = null, group = null } = {}) {
+// Lọc mảng hardcode dự phòng theo genre/country/group, dùng khi API MySQL
+// không gọi được (mất mạng, backend chưa chạy...)
+function filterFallbackMovies({
+  genre = null,
+  country = null,
+  group = null,
+} = {}) {
   let list = fallbackMoviesList;
   if (genre) {
     list = list.filter((m) =>
       (m.genres || "").toLowerCase().includes(genre.toLowerCase()),
+    );
+  }
+  if (country) {
+    list = list.filter(
+      (m) => getMovieCountry(m).toLowerCase() === country.toLowerCase(),
     );
   }
   if (group) {
@@ -191,4 +231,38 @@ function addToGlobalMoviesList(movies) {
       globalMoviesList.push(m);
     }
   });
+}
+
+// Tăng lượt xem +1 cho phim (gọi khi người dùng thực sự bấm xem phim).
+// - Mỗi phim chỉ tính 1 lượt / 1 phiên trình duyệt (đổi tập, F5 không cộng thêm).
+// - Backend nhận id hoặc slug: POST /api/movies/:id/view -> { views }
+// - Lỗi mạng/backend chưa chạy chỉ cảnh báo, không làm hỏng trang xem phim.
+// Trả về số lượt xem mới (number) hoặc null nếu không cập nhật được.
+async function increaseMovieView(movie) {
+  if (!movie || resolveDataSource() === "hardcode") return null;
+  const key = movie.id || movie.slug;
+  if (!key) return null;
+
+  const flag = `viewed_${key}`;
+  try {
+    if (sessionStorage.getItem(flag)) return null;
+  } catch (e) {
+    // sessionStorage bị chặn -> vẫn gọi API bình thường
+  }
+
+  try {
+    const res = await fetch(
+      `${API_BASE_URL}/api/movies/${encodeURIComponent(key)}/view`,
+      { method: "POST" },
+    );
+    if (!res.ok) throw new Error(`API tăng view lỗi ${res.status}`);
+    try {
+      sessionStorage.setItem(flag, "1");
+    } catch (e) {}
+    const data = await res.json();
+    return typeof data.views === "number" ? data.views : null;
+  } catch (err) {
+    console.warn("Không tăng được lượt xem:", err);
+    return null;
+  }
 }

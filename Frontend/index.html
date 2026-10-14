@@ -75,9 +75,29 @@
               <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
               <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
               <span onclick="filterByGenre('Anime')">Anime</span>
-              <span onclick="filterByGenre('Hàn Quốc')">Hàn Quốc</span>
-              <span onclick="filterByGenre('Nhật Bản')">Nhật Bản</span>
               <span onclick="filterByGenre('TVShow')">TVShow</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mục Quốc Gia có Dropdown Menu -->
+        <li class="dropdown" id="country-dropdown">
+          <span class="dropdown-toggle"
+            >Quốc Gia <i class="fa-solid fa-caret-down"></i
+          ></span>
+          <div class="dropdown-menu country-menu">
+            <div class="genre-grid">
+              <span onclick="filterByCountry('Trung Quốc')">Trung Quốc</span>
+              <span onclick="filterByCountry('Hàn Quốc')">Hàn Quốc</span>
+              <span onclick="filterByCountry('Mỹ')">Mỹ</span>
+              <span onclick="filterByCountry('Nhật Bản')">Nhật Bản</span>
+              <span onclick="filterByCountry('Việt Nam')">Việt Nam</span>
+              <span onclick="filterByCountry('Thái Lan')">Thái Lan</span>
+              <span onclick="filterByCountry('Anh')">Anh</span>
+              <span onclick="filterByCountry('Pháp')">Pháp</span>
+              <span onclick="filterByCountry('Đài Loan')">Đài Loan</span>
+              <span onclick="filterByCountry('Hồng Kông')">Hồng Kông</span>
+              <span onclick="filterByCountry('Ấn Độ')">Ấn Độ</span>
             </div>
           </div>
         </li>
@@ -329,39 +349,16 @@
     <!-- SCRIPT (Sử dụng đường dẫn tương đối chuẩn xác) -->
     <script src="./Episodes.js"></script>
     <!-- Thứ tự nạp RẤT QUAN TRỌNG: data -> api -> utils -> các module -> init -> tv-nav -->
-    <script src="./data.js?v=3"></script>
-    <script src="./api.js?v=3"></script>
-    <script src="./utils.js?v=3"></script>
-    <script src="./wishlist.js?v=3"></script>
-    <script src="./hero.js?v=3"></script>
-    <script src="./continue-watching.js?v=3"></script>
-    <script src="./render.js?v=3"></script>
-    <script src="./search.js?v=3"></script>
-    <script src="./tmdb.js?v=3"></script>
-    <script src="./init.js?v=3"></script>
-    <script src="./tv-nav.js?v=3"></script>
-
-    <!-- SCRIPT XỬ LÝ MOBILE SIDEBAR & OVERLAY -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuBtn = document.getElementById("mobile-menu-btn");
-        const sidebar = document.getElementById("mobile-sidebar");
-        const overlay = document.getElementById("sidebar-overlay");
-
-        if (menuBtn) {
-          menuBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("mobile-open");
-            overlay.classList.toggle("active");
-          });
-        }
-
-        if (overlay) {
-          overlay.addEventListener("click", () => {
-            sidebar.classList.remove("mobile-open");
-            overlay.classList.remove("active");
-          });
-        }
-      });
-    </script>
+    <script src="./data.js?v=4"></script>
+    <script src="./api.js?v=4"></script>
+    <script src="./utils.js?v=4"></script>
+    <script src="./wishlist.js?v=4"></script>
+    <script src="./hero.js?v=4"></script>
+    <script src="./continue-watching.js?v=4"></script>
+    <script src="./render.js?v=4"></script>
+    <script src="./search.js?v=4"></script>
+    <script src="./tmdb.js?v=4"></script>
+    <script src="./init.js?v=4"></script>
+    <script src="./tv-nav.js?v=4"></script>
   </body>
 </html>

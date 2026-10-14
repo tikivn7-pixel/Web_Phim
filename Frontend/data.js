@@ -2182,4 +2182,13 @@ const fallbackMoviesList = [
     banner: IMG_BASE + "In Your Radiant Season.jpg",
     desc: "In Your Radiant Season",
   },
+  {
+    title: "Law And The City",
+    slug: "luat-su-phuong-seocho",
+    episodes: 12,
+    genres: "Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc",
+    poster: IMG_BASE + "Law And The City.jpg",
+    banner: IMG_BASE + "Law And The City.jpg",
+    desc: "Law And The City",
+  },
 ];

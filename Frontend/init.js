@@ -11,6 +11,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderActionMovies();
   renderRomanceMovies();
   renderContinueWatching();
+
+  // Được chuyển từ detail.html / watch.html sang: ?q= | ?genre= | ?country= | ?page=
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("q")) {
+    const input = document.getElementById("search-input");
+    if (input) input.value = urlParams.get("q");
+    executeSearch();
+  } else if (urlParams.get("genre")) {
+    filterByGenre(urlParams.get("genre"));
+  } else if (urlParams.get("country")) {
+    filterByCountry(urlParams.get("country"));
+  } else if (urlParams.get("page") === "wishlist") {
+    switchPage("wishlist");
+  }
 });
 
 // ==========================================

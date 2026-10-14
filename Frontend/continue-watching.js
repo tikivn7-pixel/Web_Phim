@@ -2,8 +2,24 @@
 // 3. QUẢN LÝ VÀ RENDER "TIẾP TỤC XEM"
 // ==========================================
 
+const CONTINUE_WATCHING_KEY = "continue_watching_list";
+const EP_POSITIONS_STORAGE_KEY = "episode_positions";
+
+// Xem >= 95% thời lượng thì coi là đã xem xong (khớp với watch.html)
+const FINISHED_PERCENT = 95;
+
+// Phim đã xem xong TẬP CUỐI (kiểu Netflix) -> không còn thuộc "Tiếp tục xem".
+// Bản ghi cũ thiếu totalEpisodes thì coi như chưa xong để không xóa nhầm.
+function isFinishedSeries(item) {
+  if (!item) return false;
+  const total = Number(item.totalEpisodes);
+  const episode = Number(item.episode);
+  if (!total || !episode) return false;
+  return episode >= total && Number(item.progress) >= FINISHED_PERCENT;
+}
+
 function getContinueWatchingList() {
-  const raw = localStorage.getItem("continue_watching_list");
+  const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
   let list = [];
   try {
     list = raw ? JSON.parse(raw) : [];
@@ -22,12 +38,43 @@ function getContinueWatchingList() {
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
-    });
+    })
+    // Dọn luôn các phim đã xem xong tập cuối (dữ liệu lưu từ trước khi có tính năng này)
+    .filter((item) => !isFinishedSeries(item));
 
   if (cleaned.length !== list.length) {
-    localStorage.setItem("continue_watching_list", JSON.stringify(cleaned));
+    localStorage.setItem(CONTINUE_WATCHING_KEY, JSON.stringify(cleaned));
   }
   return cleaned;
+}
+
+// Xóa 1 phim khỏi danh sách "Tiếp tục xem" (theo slug hoặc tên phim) và vẽ lại giao diện.
+// Xóa luôn vị trí xem dở của các tập để lần sau xem lại từ đầu.
+function removeFromContinueWatching(slugOrTitle) {
+  if (!slugOrTitle) return;
+  const key = String(slugOrTitle);
+
+  try {
+    const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    if (Array.isArray(list)) {
+      const remaining = list.filter(
+        (item) => String(item.slug || item.title || "") !== key,
+      );
+      localStorage.setItem(CONTINUE_WATCHING_KEY, JSON.stringify(remaining));
+    }
+
+    const rawPos = localStorage.getItem(EP_POSITIONS_STORAGE_KEY);
+    const positions = rawPos ? JSON.parse(rawPos) : {};
+    if (positions && typeof positions === "object" && positions[key]) {
+      delete positions[key];
+      localStorage.setItem(EP_POSITIONS_STORAGE_KEY, JSON.stringify(positions));
+    }
+  } catch (e) {
+    console.error("Không xóa được khỏi Tiếp tục xem:", e);
+  }
+
+  renderContinueWatching();
 }
 
 function renderContinueWatching() {
@@ -38,6 +85,7 @@ function renderContinueWatching() {
   const list = getContinueWatchingList();
 
   if (list.length === 0) {
+    slider.innerHTML = "";
     section.style.display = "none";
     return;
   }
@@ -89,3 +137,9 @@ function renderContinueWatching() {
     slider.appendChild(card);
   });
 }
+
+// Quay lại trang chủ bằng nút Back (trình duyệt giữ lại trang cũ, không chạy lại
+// DOMContentLoaded) -> vẽ lại để phim vừa xem xong biến mất ngay.
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) renderContinueWatching();
+});

@@ -49,12 +49,30 @@
     if (lastFocused) lastFocused.classList.remove("tv-nav-focus");
     if (el) el.classList.add("tv-nav-focus");
     lastFocused = el;
+
+    // Dropdown Thể Loại / Quốc Gia: focus vào mục hoặc phần tử con của nó thì
+    // mở menu đó, đồng thời đóng các menu khác (hover chuột không có trên remote)
+    const owner = el ? el.closest(".dropdown") : null;
+    document.querySelectorAll(".nav-links .dropdown.active").forEach((d) => {
+      if (d !== owner) d.classList.remove("active");
+    });
+    if (owner) owner.classList.add("active");
   }
 
   // Chỉ lấy phần tử đang thực sự hiển thị (không nằm trong trang/tab ẩn)
   function getFocusableElements() {
     return Array.from(document.querySelectorAll(FOCUSABLE_SELECTOR)).filter(
-      (el) => el.offsetParent !== null,
+      (el) => {
+        if (el.offsetParent === null) return false;
+        // Mục nằm trong menu dropdown đang đóng (ẩn bằng opacity/visibility)
+        // thì không cho remote nhảy vào
+        const menu = el.closest(".dropdown-menu");
+        if (menu) {
+          const owner = menu.closest(".dropdown");
+          if (owner && !owner.classList.contains("active")) return false;
+        }
+        return true;
+      },
     );
   }
 
@@ -145,7 +163,10 @@
       // Đang gõ trong ô nhập (ô tìm kiếm...) -> để ô đó tự xử lý Enter,
       // không click vào phần tử khác (lỗi cũ: click nhầm lastFocused làm mất kết quả tìm kiếm)
       const active = document.activeElement;
-      if (active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA")) {
+      if (
+        active &&
+        (active.tagName === "INPUT" || active.tagName === "TEXTAREA")
+      ) {
         return;
       }
       const current = lastFocused || active;
