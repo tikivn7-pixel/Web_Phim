@@ -66,34 +66,69 @@ async function toggleFavoriteBackend(movieId) {
   }
 }
 
-function updateWishlistUI() {
-  const wishlist = getWishlist();
-  const heartBtns = document.querySelectorAll(".movie-card .btn-hover.icon");
+// HTML nút TIM nằm ngay trên poster (luôn thấy được cả trên điện thoại).
+// Bấm = thêm / xóa phim khỏi "Danh sách của tôi" (lưu localStorage: my_wishlist).
+function cardHeartHtml(movie) {
+  const t = escapeForInlineHandler(movie.title);
+  const d = escapeForInlineHandler(movie.desc || "");
+  return `<button type="button" class="card-heart" title="Thêm vào danh sách của tôi" aria-label="Thêm hoặc xóa khỏi danh sách yêu thích" onclick="event.stopPropagation(); toggleWishlist({title: '${t}', poster: '${movie.poster}', desc: '${d}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"><i class="fa-regular fa-heart"></i></button>`;
+}
 
-  heartBtns.forEach((btn) => {
-    const card = btn.closest(".movie-card");
-    if (!card) return;
+// Đồng bộ trạng thái tim (trên poster + trong hover-card) của TẤT CẢ thẻ phim
+// với danh sách yêu thích hiện tại.
+function updateWishlistUI() {
+  const favTitles = new Set(getWishlist().map((item) => item.title));
+
+  document.querySelectorAll(".movie-card").forEach((card) => {
+    const hoverHeart = card.querySelector(".btn-hover.icon");
+    const posterHeart = card.querySelector(".card-heart");
+    if (!hoverHeart && !posterHeart) return;
+
     const titleEl =
       card.querySelector(".hover-title") ||
       card.querySelector("h3") ||
       card.querySelector("h4");
-    if (!titleEl) return;
+    const title =
+      card.dataset.title || (titleEl ? titleEl.innerText.trim() : "");
+    if (!title) return;
 
-    const title = titleEl.innerText.trim();
-    const isFav = wishlist.some((item) => item.title === title);
+    const isFav = favTitles.has(title);
 
-    const icon = btn.querySelector("i");
-    if (icon) {
-      if (isFav) {
-        icon.className = "fa-solid fa-heart";
-        icon.style.color = "#e50914";
-      } else {
-        icon.className = "fa-regular fa-heart";
-        icon.style.color = "";
+    // Tim trong hover-card (giữ nguyên cách hiển thị cũ)
+    if (hoverHeart) {
+      const icon = hoverHeart.querySelector("i");
+      if (icon) {
+        icon.className = isFav ? "fa-solid fa-heart" : "fa-regular fa-heart";
+        icon.style.color = isFav ? "#e50914" : "";
+      }
+    }
+
+    // Tim trên poster
+    if (posterHeart) {
+      posterHeart.classList.toggle("active", isFav);
+      posterHeart.title = isFav
+        ? "Xóa khỏi danh sách của tôi"
+        : "Thêm vào danh sách của tôi";
+      const icon = posterHeart.querySelector("i");
+      if (icon) {
+        icon.className = isFav ? "fa-solid fa-heart" : "fa-regular fa-heart";
       }
     }
   });
 }
+
+// Đồng bộ giữa các tab: thêm / xóa tim ở tab này thì tab khác tự cập nhật theo
+window.addEventListener("storage", (e) => {
+  if (e.key && e.key !== "my_wishlist") return;
+  updateWishlistUI();
+
+  const wishlistPage = document.getElementById("page-wishlist");
+  if (wishlistPage && wishlistPage.classList.contains("active")) {
+    renderWishlistPage();
+  }
+  // detail.html: nút "Theo dõi"
+  if (typeof fdUpdateFollowUI === "function") fdUpdateFollowUI();
+});
 
 function renderWishlistPage() {
   const container = document.getElementById("wishlist-container");
@@ -115,6 +150,7 @@ function renderWishlistPage() {
   wishlist.forEach((movie) => {
     const card = document.createElement("div");
     card.className = "movie-card";
+    card.dataset.title = movie.title;
     card.onclick = () =>
       showDetail(
         movie.title,
@@ -131,6 +167,7 @@ function renderWishlistPage() {
 
     card.innerHTML = `
       <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      ${cardHeartHtml(movie)}
       <h4>${safeTitle}</h4>
       <div class="movie-hover-card">
         <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
@@ -154,4 +191,6 @@ function renderWishlistPage() {
     `;
     container.appendChild(card);
   });
+
+  updateWishlistUI();
 }

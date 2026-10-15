@@ -13,6 +13,7 @@ function normalizeMovie(row) {
     banner: row.banner || row.poster,
     desc: row.description,
     genres: row.genres,
+    year: row.year || row.release_year || "", // Năm phát hành (hiện ở gợi ý tìm kiếm)
     country: row.country || row.quoc_gia || "", // Quốc gia (tách riêng khỏi thể loại)
     views: Number(row.views) || 0, // Lượt xem
     episodes: row.total_episodes,

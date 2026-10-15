@@ -217,6 +217,17 @@
                   Tập sau
                   <i class="fa-solid fa-forward-step"></i>
                 </button>
+
+                <!-- Chế độ rạp phim: tắt đèn / bật đèn (phím T) -->
+                <button
+                  id="wp-theater-btn"
+                  class="wp-nav-btn"
+                  type="button"
+                  title="Chế độ rạp phim (phím T)"
+                >
+                  <i class="fa-regular fa-lightbulb"></i>
+                  <span>Tắt đèn</span>
+                </button>
               </div>
             </div>
           </div>
@@ -445,6 +456,82 @@
         }
 
         renderWatchBreadcrumb();
+
+        // =========================
+        // CHẾ ĐỘ RẠP PHIM (TẮT ĐÈN)
+        // =========================
+        // Bấm "Tắt đèn" (hoặc phím T): nền tối đen, ẩn navbar / breadcrumb / sidebar,
+        // chỉ còn khung phát phim. Thoát: bấm lại nút, phím T / Esc, hoặc bấm vào vùng tối.
+        // Giao diện nằm trong style.css (body.theater-mode, #theater-overlay).
+        (function setupTheaterMode() {
+          const btn = document.getElementById("wp-theater-btn");
+          const card = document.querySelector(".wp-player-card");
+          if (!btn || !card) return;
+
+          // Lớp phủ tối toàn màn hình (khung phát phim được nâng lên trên lớp này bằng CSS)
+          const overlay = document.createElement("div");
+          overlay.id = "theater-overlay";
+          document.body.appendChild(overlay);
+
+          const label = btn.querySelector("span");
+          const icon = btn.querySelector("i");
+
+          function setTheater(on) {
+            document.body.classList.toggle("theater-mode", on);
+            btn.classList.toggle("theater-on", on);
+            label.textContent = on ? "Bật đèn" : "Tắt đèn";
+            icon.className = on
+              ? "fa-solid fa-lightbulb"
+              : "fa-regular fa-lightbulb";
+            if (on)
+              card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            // Nhớ trong phiên: chuyển tập (kể cả tự động) vẫn giữ rạp phim
+            try {
+              sessionStorage.setItem("theater_mode", on ? "1" : "0");
+            } catch (e) {}
+          }
+
+          const isOn = () => document.body.classList.contains("theater-mode");
+
+          btn.addEventListener("click", () => setTheater(!isOn()));
+          overlay.addEventListener("click", () => setTheater(false));
+
+          document.addEventListener("keydown", (e) => {
+            // Bỏ qua khi đang gõ chữ (ô tìm kiếm, tìm tập...) hoặc bấm tổ hợp phím
+            const t = e.target;
+            if (
+              t &&
+              (t.tagName === "TEXTAREA" ||
+                t.tagName === "SELECT" ||
+                t.isContentEditable ||
+                (t.tagName === "INPUT" &&
+                  [
+                    "text",
+                    "search",
+                    "email",
+                    "url",
+                    "tel",
+                    "password",
+                    "number",
+                  ].includes(t.type)))
+            ) {
+              return;
+            }
+            if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+            if (e.key === "t" || e.key === "T") {
+              setTheater(!isOn());
+            } else if (e.key === "Escape" && isOn()) {
+              setTheater(false);
+            }
+          });
+
+          try {
+            if (sessionStorage.getItem("theater_mode") === "1")
+              setTheater(true);
+          } catch (e) {}
+        })();
 
         // =========================
         // ĐIỀU HƯỚNG TẬP
@@ -1213,16 +1300,19 @@
         const AUTONEXT_KEY = "autonext_enabled";
         const AUTONEXT_COUNT_KEY = "autonext_count";
         const MAX_AUTO_EPISODES = 3; // tối đa 3 tập tự chuyển liên tiếp nếu không tương tác
+        const NEXT_COUNTDOWN_SECONDS = 5; // đếm ngược trước khi sang tập kế
 
         const autoNextToggle = document.getElementById("wp-autonext-toggle");
 
-        // Mặc định TẮT, nhớ theo lựa chọn của người dùng
-        autoNextToggle.checked = localStorage.getItem(AUTONEXT_KEY) === "1";
+        // Mặc định BẬT (chỉ tắt khi người dùng đã bỏ chọn), nhớ theo lựa chọn của người dùng
+        autoNextToggle.checked = localStorage.getItem(AUTONEXT_KEY) !== "0";
         autoNextToggle.addEventListener("change", () => {
           localStorage.setItem(
             AUTONEXT_KEY,
             autoNextToggle.checked ? "1" : "0",
           );
+          // Tắt công tắc khi popup đang đếm -> hủy luôn
+          if (!autoNextToggle.checked) closeNextPopup();
         });
 
         // Người dùng còn thao tác thì reset bộ đếm (chống ngủ quên)
@@ -1232,18 +1322,93 @@
           window.addEventListener(evt, resetAutoCount, { passive: true }),
         );
 
+        // ---------- Popup "Tập tiếp theo" + đếm ngược ----------
+        let nextPopup = null;
+        let nextTimer = null;
+
+        function closeNextPopup() {
+          clearInterval(nextTimer);
+          nextTimer = null;
+          if (nextPopup) {
+            nextPopup.remove();
+            nextPopup = null;
+          }
+        }
+
+        // autoRun = true : đếm ngược 5s rồi tự chuyển tập
+        // autoRun = false: chỉ hỏi (khi đã tự chuyển đủ MAX_AUTO_EPISODES tập mà không ai thao tác)
+        function showNextEpisodePopup(autoRun) {
+          closeNextPopup();
+
+          const nextNum = episodeNum + 1;
+          // Gắn vào khung Plyr để vẫn hiện khi bật toàn màn hình
+          const host = player ? player.elements.container : video.parentElement;
+
+          nextPopup = document.createElement("div");
+          nextPopup.className = "next-ep-popup";
+          nextPopup.innerHTML = `
+            <div class="next-ep-label">Tập tiếp theo</div>
+            <div class="next-ep-name">${escapeHtml(realTitle)} - Tập ${nextNum}</div>
+            <div class="next-ep-count"></div>
+            ${autoRun ? `<div class="next-ep-bar"><span style="animation-duration:${NEXT_COUNTDOWN_SECONDS}s"></span></div>` : ""}
+            <div class="next-ep-actions">
+              <button type="button" class="next-ep-play">Xem ngay</button>
+              <button type="button" class="next-ep-cancel">Hủy</button>
+            </div>
+          `;
+          host.appendChild(nextPopup);
+
+          const countEl = nextPopup.querySelector(".next-ep-count");
+          let left = NEXT_COUNTDOWN_SECONDS;
+
+          const renderCount = () => {
+            countEl.innerHTML = autoRun
+              ? `Tự động chuyển sau <b>${left}</b> giây`
+              : "Bạn còn đang xem không?";
+          };
+          renderCount();
+
+          // Bấm tay: chuyển ngay, không tính vào số tập tự chuyển
+          nextPopup
+            .querySelector(".next-ep-play")
+            .addEventListener("click", () => {
+              closeNextPopup();
+              goToEpisode(nextNum);
+            });
+          nextPopup
+            .querySelector(".next-ep-cancel")
+            .addEventListener("click", closeNextPopup);
+
+          if (autoRun) {
+            nextTimer = setInterval(() => {
+              left--;
+              if (left <= 0) {
+                const count = Number(
+                  sessionStorage.getItem(AUTONEXT_COUNT_KEY) || 0,
+                );
+                sessionStorage.setItem(AUTONEXT_COUNT_KEY, String(count + 1));
+                closeNextPopup();
+                goToEpisode(nextNum);
+              } else {
+                renderCount();
+              }
+            }, 1000);
+          }
+        }
+
+        // Xem lại / phát tiếp thì tắt popup
+        video.addEventListener("play", closeNextPopup);
+
         video.addEventListener("ended", () => {
-          // Tập cuối chạy xong -> saveWatchHistory() sẽ tự xóa phim khỏi
-          // "Tiếp tục xem"; các tập khác thì lưu như bình thường
+          // Tập cuối chạy xong -> saveWatchHistory() tự xóa phim khỏi "Tiếp tục xem";
+          // các tập khác thì lưu như bình thường
           saveWatchHistory();
 
-          if (!autoNextToggle.checked || episodeNum >= totalEp) return;
+          // Tập cuối: không có tập kế để chuyển. Công tắc tắt: không hiện popup.
+          if (episodeNum >= totalEp || !autoNextToggle.checked) return;
 
           const count = Number(sessionStorage.getItem(AUTONEXT_COUNT_KEY) || 0);
-          if (count >= MAX_AUTO_EPISODES) return; // dừng lại, chờ người dùng bấm
-
-          sessionStorage.setItem(AUTONEXT_COUNT_KEY, String(count + 1));
-          goToEpisode(episodeNum + 1);
+          showNextEpisodePopup(count < MAX_AUTO_EPISODES);
         });
 
         // =========================

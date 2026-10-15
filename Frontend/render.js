@@ -46,6 +46,7 @@ function playEpisodeDirect(
 function createMovieCard(movie) {
   const card = document.createElement("div");
   card.className = "movie-card";
+  card.dataset.title = movie.title;
   card.onclick = () =>
     showDetail(
       movie.title,
@@ -62,6 +63,7 @@ function createMovieCard(movie) {
 
   card.innerHTML = `
     <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+    ${cardHeartHtml(movie)}
     <h4>${safeTitle}</h4>
     <div class="movie-views"><i class="fa-regular fa-eye"></i> ${formatViews(movie.views, { compact: true })} lượt xem</div>
     <div class="movie-hover-card">

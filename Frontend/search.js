@@ -31,11 +31,16 @@ function handleSearch(event) {
   if (event.key === "Enter" || event.keyCode === 13) {
     event.preventDefault();
     event.stopPropagation(); // không cho module remote TV bắt thêm phím Enter này
+    // Đang highlight 1 gợi ý (↑ ↓) -> mở luôn phim đó
+    if (typeof pickLiveSearchActive === "function" && pickLiveSearchActive()) {
+      return;
+    }
     executeSearch();
   }
 }
 
 async function executeSearch() {
+  if (typeof closeLiveSearch === "function") closeLiveSearch();
   const inputEl = document.getElementById("search-input");
   const query = inputEl ? inputEl.value.trim() : "";
 
@@ -154,3 +159,177 @@ async function filterByCountry(countryName) {
     </div>`,
   );
 }
+
+// ==========================================
+// 5B. TÌM KIẾM NHANH REALTIME (LIVE SEARCH DROPDOWN)
+// ==========================================
+// Gõ vào ô tìm kiếm trên Navbar -> hiện ngay khung gợi ý (poster nhỏ, tên, năm)
+// ngay bên dưới, chưa cần chuyển trang.
+//  - Gõ từ 2 ký tự, chờ 250ms sau lần gõ cuối mới gọi API (debounce)
+//  - ↑ ↓ chọn gợi ý, Enter mở phim đó, Esc đóng, bấm ra ngoài cũng đóng
+//  - Dòng cuối "Xem tất cả kết quả" = tìm đầy đủ như bấm kính lúp
+// Không cần sửa HTML: khung gợi ý tự được tạo bên trong .search-box.
+const LIVE_SEARCH_MIN_CHARS = 2;
+const LIVE_SEARCH_DELAY_MS = 250;
+const LIVE_SEARCH_LIMIT = 6;
+
+let liveSearchBox = null; // khung dropdown
+let liveSearchItems = []; // danh sách phim đang hiển thị
+let liveSearchActive = -1; // vị trí đang highlight (-1 = chưa chọn)
+let liveSearchTimer = null;
+let liveSearchReqId = 0; // chống kết quả cũ về trễ ghi đè kết quả mới
+
+function closeLiveSearch() {
+  clearTimeout(liveSearchTimer);
+  liveSearchReqId++; // huỷ các request đang chờ
+  liveSearchItems = [];
+  liveSearchActive = -1;
+  if (liveSearchBox) {
+    liveSearchBox.classList.remove("open");
+    liveSearchBox.innerHTML = "";
+  }
+}
+
+// Mở trang chi tiết của gợi ý đang highlight. Trả về true nếu có chọn.
+function pickLiveSearchActive() {
+  const movie = liveSearchItems[liveSearchActive];
+  if (!movie) return false;
+  openLiveSearchMovie(movie);
+  return true;
+}
+
+function openLiveSearchMovie(movie) {
+  closeLiveSearch();
+  showDetail(
+    movie.title,
+    movie.poster,
+    movie.desc,
+    getTotalEpisodes(movie),
+    movie.slug,
+  );
+}
+
+function setLiveSearchActive(index) {
+  if (!liveSearchBox) return;
+  liveSearchActive = index;
+  liveSearchBox.querySelectorAll(".ss-item").forEach((el, i) => {
+    el.classList.toggle("active", i === index);
+    if (i === index) el.scrollIntoView({ block: "nearest" });
+  });
+}
+
+function renderLiveSearch(movies, query) {
+  if (!liveSearchBox) return;
+  liveSearchItems = movies;
+  liveSearchActive = -1;
+
+  if (movies.length === 0) {
+    liveSearchBox.innerHTML = `<div class="ss-empty">Không tìm thấy phim phù hợp với "${escapeHtml(query)}"</div>`;
+    liveSearchBox.classList.add("open");
+    return;
+  }
+
+  liveSearchBox.innerHTML = "";
+
+  movies.forEach((movie, index) => {
+    const item = document.createElement("div");
+    item.className = "ss-item";
+
+    // Dòng phụ: năm · quốc gia (hoặc thể loại đầu tiên nếu chưa có quốc gia)
+    const extra =
+      getMovieCountry(movie) || (movie.genres || "").split(",")[0].trim();
+    const meta = [movie.year, extra].filter(Boolean).join(" · ");
+
+    item.innerHTML = `
+      <img src="${movie.poster}" alt="" onerror="this.src='https://placehold.co/80x110'" />
+      <div class="ss-info">
+        <div class="ss-title">${escapeHtml(movie.title)}</div>
+        <div class="ss-meta">${escapeHtml(meta)}</div>
+      </div>
+    `;
+    item.addEventListener("click", () => openLiveSearchMovie(movie));
+    item.addEventListener("mouseenter", () => setLiveSearchActive(index));
+    liveSearchBox.appendChild(item);
+  });
+
+  const more = document.createElement("div");
+  more.className = "ss-more";
+  more.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i> Xem tất cả kết quả cho "${escapeHtml(query)}"`;
+  more.addEventListener("click", () => executeSearch());
+  liveSearchBox.appendChild(more);
+
+  liveSearchBox.classList.add("open");
+}
+
+async function runLiveSearch(query) {
+  const reqId = ++liveSearchReqId;
+  try {
+    const movies = await searchMoviesAPI(query, LIVE_SEARCH_LIMIT);
+    if (reqId !== liveSearchReqId) return; // đã có lần gõ mới hơn
+    addToGlobalMoviesList(movies);
+    renderLiveSearch(movies.slice(0, LIVE_SEARCH_LIMIT), query);
+  } catch (err) {
+    console.warn("Live search lỗi:", err);
+    if (reqId === liveSearchReqId) closeLiveSearch();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("search-input");
+  if (!input) return;
+  const box = input.closest(".search-box");
+  if (!box) return;
+
+  liveSearchBox = document.createElement("div");
+  liveSearchBox.className = "search-suggest";
+  // mousedown preventDefault: bấm vào gợi ý không làm ô nhập mất focus
+  liveSearchBox.addEventListener("mousedown", (e) => e.preventDefault());
+  box.appendChild(liveSearchBox);
+
+  input.setAttribute("autocomplete", "off");
+
+  input.addEventListener("input", () => {
+    const q = input.value.trim();
+    clearTimeout(liveSearchTimer);
+    if (q.length < LIVE_SEARCH_MIN_CHARS) {
+      closeLiveSearch();
+      return;
+    }
+    liveSearchTimer = setTimeout(() => runLiveSearch(q), LIVE_SEARCH_DELAY_MS);
+  });
+
+  input.addEventListener("keydown", (e) => {
+    const open = liveSearchBox.classList.contains("open");
+    if (e.key === "Escape") {
+      closeLiveSearch();
+    } else if (open && liveSearchItems.length > 0) {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        e.stopPropagation(); // không cho remote TV (tv-nav.js) bắt phím mũi tên
+        const n = liveSearchItems.length;
+        const next =
+          e.key === "ArrowDown"
+            ? (liveSearchActive + 1) % n
+            : (liveSearchActive - 1 + n) % n;
+        setLiveSearchActive(next);
+      }
+    }
+  });
+
+  // Gõ lại / quay lại ô tìm kiếm thì hiện lại gợi ý nếu còn nội dung
+  input.addEventListener("focus", () => {
+    const q = input.value.trim();
+    if (q.length >= LIVE_SEARCH_MIN_CHARS && liveSearchItems.length === 0) {
+      runLiveSearch(q);
+    } else if (liveSearchItems.length > 0) {
+      liveSearchBox.classList.add("open");
+    }
+  });
+
+  // Bấm ra ngoài thì đóng (giữ lại nội dung ô nhập)
+  document.addEventListener("click", (e) => {
+    if (!box.contains(e.target)) {
+      liveSearchBox.classList.remove("open");
+    }
+  });
+});
