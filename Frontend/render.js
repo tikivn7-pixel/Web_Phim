@@ -62,12 +62,12 @@ function createMovieCard(movie) {
   const handlerDesc = escapeForInlineHandler(movie.desc || "");
 
   card.innerHTML = `
-    <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+    <img src="${movie.poster}" alt="${safeTitle}" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/350x500'" />
     ${cardHeartHtml(movie)}
     <h4>${safeTitle}</h4>
     <div class="movie-views"><i class="fa-regular fa-eye"></i> ${formatViews(movie.views, { compact: true })} lượt xem</div>
     <div class="movie-hover-card">
-      <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+      <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/350x500'" />
       <div class="hover-content">
         <h3 class="hover-title">${safeTitle}</h3>
         <div class="hover-actions">
@@ -89,18 +89,107 @@ function createMovieCard(movie) {
   return card;
 }
 
-// Render 1 danh sách phim vào 1 container, có thể truyền HTML hiển thị khi rỗng
-function renderMovieGrid(container, movies, emptyHtml = "") {
+// ---------- PHÂN TRANG: "Trang 1 của 76  [1] [2] [3] [4] [5]  Trang Cuối" ----------
+// Số phim mỗi trang (24 chia hết cho 8/6/4/3 cột nên hàng cuối không bị lẻ). Đổi số này nếu muốn nhiều/ít hơn.
+const MOVIE_PAGE_SIZE = 24;
+// Mỗi slider ở trang chủ chỉ vẽ tối đa bấy nhiêu phim (slider KHÔNG phân trang)
+const HOME_SLIDER_LIMIT = 20;
+
+// CSS cho thanh phân trang (tự chèn 1 lần, khỏi sửa style.css; muốn đổi màu thì sửa ở đây)
+function ensurePaginationStyle() {
+  if (document.getElementById("movie-pagination-style")) return;
+  const st = document.createElement("style");
+  st.id = "movie-pagination-style";
+  st.textContent = `
+    .movie-pagination { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px; margin:28px 0 12px; }
+    .movie-pagination .mp-btn, .movie-pagination .mp-info {
+      border:0; border-radius:3px; padding:10px 18px; background:#222d36; color:#9aa6af;
+      font-size:15px; font-weight:600; font-family:inherit; line-height:1;
+    }
+    .movie-pagination .mp-btn { cursor:pointer; min-width:40px; transition:background .15s, color .15s; }
+    .movie-pagination .mp-btn:hover { background:#33424e; color:#fff; }
+    .movie-pagination .mp-btn.active { background:#b3202a; color:#fff; cursor:default; }
+  `;
+  document.head.appendChild(st);
+}
+
+// Vẽ lại thanh phân trang: Trang X của N | [Trang Đầu] | 5 số trang quanh trang hiện tại | [Trang Cuối]
+function drawPager(pager, current, total, goTo) {
+  pager.innerHTML = "";
+
+  const info = document.createElement("span");
+  info.className = "mp-info";
+  info.textContent = `Trang ${current} của ${total}`;
+  pager.appendChild(info);
+
+  const add = (label, page, extraClass = "") => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = `mp-btn ${extraClass}`.trim();
+    b.textContent = label;
+    b.onclick = () => goTo(page, true);
+    pager.appendChild(b);
+  };
+
+  if (current > 1) add("Trang Đầu", 1);
+  const start = Math.max(1, Math.min(current - 2, total - 4));
+  const end = Math.min(total, start + 4);
+  for (let p = start; p <= end; p++)
+    add(String(p), p, p === current ? "active" : "");
+  if (current < total) add("Trang Cuối", total);
+}
+
+// Render 1 danh sách phim vào 1 container, có thể truyền HTML hiển thị khi rỗng.
+// Mặc định: danh sách dài hơn MOVIE_PAGE_SIZE thì tự chia trang (thanh phân trang nằm ngay dưới container).
+// Truyền { paginate: false } để vẽ hết, không chia trang (dùng cho các slider trang chủ).
+function renderMovieGrid(container, movies, emptyHtml = "", options = {}) {
   if (!container) return;
   container.innerHTML = "";
+
+  // dọn thanh phân trang của lần render trước (vd khi đổi bộ lọc / tìm kiếm lại)
+  if (container._pager) {
+    container._pager.remove();
+    container._pager = null;
+  }
 
   if (!movies || movies.length === 0) {
     if (emptyHtml) container.innerHTML = emptyHtml;
     return;
   }
 
-  movies.forEach((movie) => container.appendChild(createMovieCard(movie)));
-  updateWishlistUI();
+  if (options.paginate === false) {
+    movies.forEach((movie) => container.appendChild(createMovieCard(movie)));
+    updateWishlistUI();
+    return;
+  }
+
+  const totalPages = Math.ceil(movies.length / MOVIE_PAGE_SIZE);
+  let pager = null;
+
+  const goTo = (page, scroll) => {
+    page = Math.min(Math.max(1, page), totalPages);
+    container.innerHTML = "";
+    const frag = document.createDocumentFragment();
+    movies
+      .slice((page - 1) * MOVIE_PAGE_SIZE, page * MOVIE_PAGE_SIZE)
+      .forEach((movie) => frag.appendChild(createMovieCard(movie)));
+    container.appendChild(frag);
+    updateWishlistUI();
+    if (pager) drawPager(pager, page, totalPages, goTo);
+    if (scroll)
+      container.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  goTo(1, false);
+
+  if (totalPages > 1) {
+    ensurePaginationStyle();
+    pager = document.createElement("div");
+    pager.className = "movie-pagination";
+    container.insertAdjacentElement("afterend", pager);
+    container._pager = pager;
+    drawPager(pager, 1, totalPages, goTo);
+  }
 }
 
 // "Phim Mới Cập Nhật" - trả về movies đã fetch để dùng chung cho Hero Banner
@@ -108,7 +197,9 @@ async function renderHomePageMovies() {
   const container = document.getElementById("home-movie-slider");
   const movies = await fetchMovies({ limit: 20 });
   addToGlobalMoviesList(movies);
-  renderMovieGrid(container, movies);
+  renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
+    paginate: false,
+  });
   return movies;
 }
 
@@ -117,7 +208,9 @@ async function renderAnimeMovies() {
   if (!container) return;
   const movies = await fetchMovies({ genre: "Anime", limit: 20 });
   addToGlobalMoviesList(movies);
-  renderMovieGrid(container, movies);
+  renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
+    paginate: false,
+  });
 }
 
 async function renderKoreanMovies() {
@@ -125,7 +218,9 @@ async function renderKoreanMovies() {
   if (!container) return;
   const movies = await fetchMovies({ country: "Hàn Quốc", limit: 20 });
   addToGlobalMoviesList(movies);
-  renderMovieGrid(container, movies);
+  renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
+    paginate: false,
+  });
 }
 
 async function renderActionMovies() {
@@ -133,7 +228,9 @@ async function renderActionMovies() {
   if (!container) return;
   const movies = await fetchMovies({ genre: "Hành Động", limit: 20 });
   addToGlobalMoviesList(movies);
-  renderMovieGrid(container, movies);
+  renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
+    paginate: false,
+  });
 }
 
 async function renderRomanceMovies() {
@@ -141,7 +238,9 @@ async function renderRomanceMovies() {
   if (!container) return;
   const movies = await fetchMovies({ genre: "Tình Cảm", limit: 20 });
   addToGlobalMoviesList(movies);
-  renderMovieGrid(container, movies);
+  renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
+    paginate: false,
+  });
 }
 
 function renderMovieParts(currentSlug, currentGroup) {
@@ -218,7 +317,7 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
         movie.slug,
       );
     item.innerHTML = `
-      <img src="${movie.poster}" alt="${escapeHtml(movie.title)}" onerror="this.src='https://placehold.co/80x110'" />
+      <img src="${movie.poster}" alt="${escapeHtml(movie.title)}" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/80x110'" />
       <div class="fd-suggest-info">
         <h4>${escapeHtml(movie.title)}</h4>
         <span>${escapeHtml((movie.genres || "").split(",")[0] || "")}</span>

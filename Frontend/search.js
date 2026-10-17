@@ -98,6 +98,72 @@ function handleSearch(event) {
   }
 }
 
+// ==========================================
+// Ô LỌC NĂM ở trang kết quả (tìm kiếm / thể loại / quốc gia)
+// - Tự chèn phía trên lưới phim, KHÔNG cần sửa index.html
+// - Chỉ liệt kê các năm thật sự có trong kết quả, kèm số phim: "2024 (35)"
+// - Chọn năm -> lọc lại + vẽ lại lưới (có phân trang); phim chưa có year chỉ hiện ở "Tất cả năm"
+// - Kết quả không phim nào có year (data.js chưa bù năm) -> ô lọc tự ẩn
+// ==========================================
+function ensureYearFilterStyle() {
+  if (document.getElementById("year-filter-style")) return;
+  const st = document.createElement("style");
+  st.id = "year-filter-style";
+  st.textContent = `
+    .year-filter { display:flex; align-items:center; gap:10px; margin:0 0 18px; color:#bbb; font-size:15px; }
+    .year-filter select {
+      background:#222d36; color:#fff; border:1px solid #33424e; border-radius:4px;
+      padding:8px 14px; font-size:15px; font-family:inherit; cursor:pointer;
+    }
+    .year-filter select:focus { outline:none; border-color:#e50914; }
+    .year-filter select option { background:#222d36; color:#fff; }
+  `;
+  document.head.appendChild(st);
+}
+
+function renderFilteredResults(container, movies, emptyHtml) {
+  let bar = document.getElementById("search-year-filter");
+  if (!bar) {
+    ensureYearFilterStyle();
+    bar = document.createElement("div");
+    bar.id = "search-year-filter";
+    bar.className = "year-filter";
+    container.insertAdjacentElement("beforebegin", bar);
+  }
+
+  // Đếm số phim theo từng năm
+  const counts = new Map();
+  (movies || []).forEach((m) => {
+    const y = Number(m.year);
+    if (y > 0) counts.set(y, (counts.get(y) || 0) + 1);
+  });
+
+  if (counts.size === 0) {
+    bar.style.display = "none";
+    bar.innerHTML = "";
+    renderMovieGrid(container, movies, emptyHtml);
+    return;
+  }
+
+  const years = [...counts.keys()].sort((a, b) => b - a); // năm mới nhất lên đầu
+  bar.style.display = "";
+  bar.innerHTML = `
+    <label for="year-filter-select">Năm:</label>
+    <select id="year-filter-select">
+      <option value="">Tất cả năm (${movies.length})</option>
+      ${years.map((y) => `<option value="${y}">${y} (${counts.get(y)})</option>`).join("")}
+    </select>
+  `;
+  const select = bar.querySelector("select");
+  select.onchange = () => {
+    const y = Number(select.value);
+    const list = y ? movies.filter((m) => Number(m.year) === y) : movies;
+    renderMovieGrid(container, list, emptyHtml); // vẽ lại từ trang 1
+  };
+
+  renderMovieGrid(container, movies, emptyHtml);
+}
+
 async function executeSearch() {
   if (typeof closeLiveSearch === "function") closeLiveSearch();
   const inputEl = document.getElementById("search-input");
@@ -131,7 +197,7 @@ async function executeSearch() {
   const movies = await searchMoviesAPI(query, 40);
   addToGlobalMoviesList(movies);
 
-  renderMovieGrid(
+  renderFilteredResults(
     searchContainer,
     movies,
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
@@ -170,7 +236,7 @@ async function filterByGenre(genreName) {
   const movies = await fetchMovies({ genre: genreName, limit: 50 });
   addToGlobalMoviesList(movies);
 
-  renderMovieGrid(
+  renderFilteredResults(
     container,
     movies,
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
@@ -209,7 +275,7 @@ async function filterByCountry(countryName) {
   const movies = await fetchMovies({ country: countryName, limit: 50 });
   addToGlobalMoviesList(movies);
 
-  renderMovieGrid(
+  renderFilteredResults(
     container,
     movies,
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">

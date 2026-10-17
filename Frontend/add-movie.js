@@ -25,6 +25,17 @@
 //   node add-movie.js --country=han --max=200 --yes  # lấy 200 phim Hàn mới nhất, khỏi hỏi xác nhận
 //   (thêm --from=2014 để chỉ lấy phim từ năm 2014 trở lên, --to=2020 để đến năm 2020, --year=2020-2026 để lọc khoảng năm, --pages=N để giới hạn số trang, --concurrency=N số request song song (mặc định 2), --delay=ms nghỉ giữa các request (mặc định 200))
 //
+// CHỈ LẤY HOẠT HÌNH (anime): thêm --anime (dùng được cả khi tìm theo từ khóa lẫn khi thêm cả quốc gia)
+//   node add-movie.js --country=nhat --anime --dry --max=5   # chạy thử 5 phim hoạt hình Nhật
+//   node add-movie.js --country=nhat --anime                 # thêm TẤT CẢ hoạt hình Nhật Bản
+//   node add-movie.js "naruto" --anime                       # tìm "naruto" nhưng chỉ giữ hoạt hình
+//
+// BÙ NĂM cho các phim ĐÃ CÓ trong data.js (phim cũ chưa có dòng year:):
+//   node add-movie.js --fill-year --dry --max=5   # chạy thử 5 phim, chưa ghi data.js
+//   node add-movie.js --fill-year                 # bù năm cho TẤT CẢ phim chưa có year (ghi từng đợt 200 phim, sao lưu data.js.bak)
+//   (lỗi 429/mạng thì chạy lại đúng lệnh cũ, phim đã có năm tự bỏ qua; chỉnh tốc độ bằng --concurrency / --delay)
+//   Từ giờ phim thêm MỚI cũng tự có dòng year: (lấy từ phimapi.com).
+//
 // XÓA phim thêm nhầm:
 //   node add-movie.js --undo                  # xóa những phim của LẦN CHẠY GẦN NHẤT (có hỏi xác nhận)
 //   node add-movie.js --remove "spider man"   # tìm phim trong data.js theo tên/slug -> chọn số để xóa
@@ -123,7 +134,7 @@ function detectPart(title) {
 }
 
 // Tạo khối phim đúng form các phim cũ trong data.js:
-//   title, slug, episodes, genres, poster, banner, desc, [group, partName]
+//   title, slug, year, episodes, genres, poster, banner, desc, [group, partName]
 async function buildBlock(detail) {
   const m = detail.movie;
   const servers = detail.episodes || [];
@@ -157,6 +168,7 @@ async function buildBlock(detail) {
   const lines = [
     `    title: ${q(title)},`,
     `    slug: ${q(m.slug)},`,
+    ...(Number(m.year) > 0 ? [`    year: ${Number(m.year)},`] : []),
     `    episodes: ${epCount || Number(m.episode_total) || 1},`,
     `    genres: ${q(genres)},`,
     `    poster: ${q(poster)},`,
@@ -374,8 +386,125 @@ async function removeMode() {
   }
 }
 
+// ---------- BÙ NĂM CHO PHIM ĐÃ CÓ TRONG data.js ----------
+// Với mỗi phim chưa có dòng "year:", hỏi phimapi.com (cùng nguồn kkphim) lấy năm rồi chèn ngay sau dòng slug.
+const countYears = () =>
+  (fs.readFileSync(DATA_FILE, "utf8").match(/^[ \t]*year:/gm) || []).length;
+
+const hasYearLine = (text) => /^[ \t]*year:/m.test(text);
+
+function insertYear(blockText, year, eol) {
+  return blockText.replace(
+    /^([ \t]*)slug:[^\r\n]*/m,
+    (line, indent) =>
+      line.replace(/[ \t]*,?[ \t]*$/, "") + `,${eol}${indent}year: ${year},`,
+  );
+}
+
+async function fillYearMode() {
+  if (!fs.existsSync(DATA_FILE))
+    throw new Error("Không thấy file " + DATA_FILE);
+  const src0 = fs.readFileSync(DATA_FILE, "utf8");
+  const eol = src0.includes("\r\n") ? "\r\n" : "\n";
+  const all = listBlocks(src0);
+  if (all.length === 0)
+    throw new Error(
+      "Không đọc được khối phim nào trong data.js (nếu file đang dùng CRLF thì đổi sang LF: VS Code góc phải dưới bấm CRLF -> chọn LF)",
+    );
+
+  let todo = all.filter(
+    (b) => b.slug && !hasYearLine(src0.slice(b.start, b.end)),
+  );
+  const already = all.length - todo.length;
+  if (Number(flags.max) > 0) todo = todo.slice(0, Number(flags.max));
+  console.log(
+    `data.js có ${all.length} phim: ${already} phim đã có năm, sẽ bù năm cho ${todo.length} phim.`,
+  );
+  if (todo.length === 0) return;
+
+  const CONC = Math.max(1, Number(flags.concurrency) || 2);
+  const DELAY = flags.delay !== undefined ? Number(flags.delay) : 200;
+  const BATCH = 200; // ghi file sau mỗi 200 phim -> Ctrl+C giữa chừng cũng không mất hết
+  let done = 0,
+    okCount = 0,
+    noYear = 0,
+    failed = 0,
+    backedUp = false,
+    dryShown = 0;
+
+  for (let i = 0; i < todo.length; i += BATCH) {
+    const part = todo.slice(i, i + BATCH);
+    const years = new Map();
+    let cursor = 0;
+    const worker = async () => {
+      while (cursor < part.length) {
+        const b = part[cursor++];
+        try {
+          if (DELAY > 0) await sleep(DELAY);
+          const d = await getJSON(`${API}/phim/${encodeURIComponent(b.slug)}`);
+          const y = Number(d.movie && d.movie.year);
+          if (y > 0) years.set(b.slug, y);
+          else noYear++;
+        } catch (e) {
+          failed++;
+          console.log(`✗ ${b.slug}: ${e.message}`);
+        }
+        done++;
+        if (done % 25 === 0 || done === todo.length)
+          console.log(`  ... ${done}/${todo.length}`);
+      }
+    };
+    await Promise.all(Array.from({ length: CONC }, worker));
+
+    if (flags.dry) {
+      for (const [slug, y] of years) {
+        if (dryShown++ < 10) console.log(`  ${slug} -> ${y}`);
+      }
+      okCount += years.size;
+      continue;
+    }
+
+    if (years.size === 0) continue; // đợt này không có gì để ghi
+
+    // Chèn year vào các khối của đợt này (đọc lại file cho chắc, chèn từ cuối lên đầu để vị trí không lệch)
+    let src = fs.readFileSync(DATA_FILE, "utf8");
+    const blocks = listBlocks(src)
+      .filter((b) => years.has(b.slug))
+      .sort((a, b) => b.start - a.start);
+    for (const b of blocks) {
+      const text = src.slice(b.start, b.end);
+      if (hasYearLine(text)) continue;
+      src =
+        src.slice(0, b.start) +
+        insertYear(text, years.get(b.slug), eol) +
+        src.slice(b.end);
+    }
+    if (!backedUp) {
+      fs.copyFileSync(DATA_FILE, DATA_FILE + ".bak");
+      backedUp = true;
+    }
+    fs.writeFileSync(DATA_FILE, src, "utf8");
+    okCount += years.size;
+    console.log(`  💾 đã ghi năm cho ${okCount} phim`);
+  }
+
+  console.log(
+    `\n${flags.dry ? "[DRY] chưa ghi gì. " : "✔ "}Lấy được năm: ${okCount} | Nguồn không ghi năm: ${noYear} | Lỗi: ${failed}`,
+  );
+  if (!flags.dry) {
+    console.log(
+      `Bản cũ: ${path.basename(DATA_FILE)}.bak | Tổng số phim có year trong ${path.basename(DATA_FILE)}: ${countYears()}`,
+    );
+    if (failed)
+      console.log(
+        "Có phim bị lỗi mạng/429 -> chạy lại đúng lệnh này, phim đã có năm sẽ tự được bỏ qua.",
+      );
+  }
+}
+
 (async () => {
   if (flags.undo || flags.remove) return removeMode();
+  if (flags["fill-year"]) return fillYearMode();
   // Chỉ có --country mà không có từ khóa -> chế độ thêm cả quốc gia
   const countryOnly = !keyword && flags.country !== undefined;
   if (!keyword && !countryOnly) {
@@ -451,6 +580,16 @@ async function removeMode() {
   const countryOf = (it) =>
     (it.country || []).map((c) => COUNTRY_MAP[c.name] || c.name);
 
+  // --anime: chỉ giữ phim có định dạng Hoạt Hình (cột "Định dạng" trên web)
+  if (flags.anime) {
+    const before = items.length;
+    items = items.filter(
+      (it) =>
+        it.type === "hoathinh" ||
+        (it.category || []).some((c) => c.slug === "hoat-hinh"),
+    );
+    console.log(`Lọc Hoạt Hình: giữ ${items.length}/${before} phim`);
+  }
   // --country: chỉ giữ phim của quốc gia được chọn (so khớp không dấu, gõ một phần cũng được)
   if (typeof flags.country === "string" && !countryOnly) {
     const want = norm(flags.country);
@@ -640,6 +779,7 @@ async function removeMode() {
   );
 
   // 5) Tự xếp lại bằng sort-movies.js nếu có
+  const yearsBefore = countYears();
   const sorter = path.join(path.dirname(DATA_FILE), "sort-movies.js");
   if (fs.existsSync(sorter)) {
     try {
@@ -655,6 +795,11 @@ async function removeMode() {
       );
     }
   }
+  const yearsAfter = countYears();
+  if (yearsAfter < yearsBefore)
+    console.log(
+      `⚠ Sau khi chạy sort-movies.js, số dòng year: giảm từ ${yearsBefore} xuống ${yearsAfter} -> sort-movies.js đang làm mất trường year. Chép data.js.bak đè lại data.js để khôi phục, rồi gửi file sort-movies.js cho t sửa.`,
+    );
 })().catch((err) => {
   console.error("Lỗi:", err.message);
   process.exit(1);
