@@ -365,19 +365,20 @@
 
         let currentServerIndex = parseInt(params.get("server")) || 0;
 
-        try {
-          if (realSlug) {
-            const res = await fetch(
-              `https://phimapi.com/phim/${encodeURIComponent(realSlug)}`,
-            );
-
-            if (res.ok) {
-              const apiData = await res.json();
-              allServers = apiData.episodes || [];
-            }
-          }
-        } catch (error) {
-          console.warn("Lỗi khi fetch danh sách Server từ phimapi.com:", error);
+        // Server/tập do api.js lấy (kkphim -> nguonc, theo episodeSource trong data.js).
+        // Đổi về dạng server_data cũ để phần code bên dưới dùng lại được.
+        if (movieObj && Array.isArray(movieObj.episodeServers)) {
+          allServers = movieObj.episodeServers
+            .map((s) => ({
+              server_name: s.name,
+              server_data: (s.items || []).map((it) => ({
+                name: it.name,
+                slug: it.slug,
+                link_m3u8: it.m3u8 || "",
+                link_embed: it.embed || "",
+              })),
+            }))
+            .filter((s) => s.server_data.length > 0);
         }
 
         if (currentServerIndex < 0 || currentServerIndex >= allServers.length) {
@@ -838,19 +839,72 @@
           }
         }
 
-        if (!videoSrc) {
-          console.error("Không tìm thấy link video!");
+        // Link kiểu trang nhúng (vd embed.php?hash=...) không phải file video:
+        // chuyển sang embedUrl để phát bằng iframe, hls.js không đọc được.
+        if (
+          videoSrc &&
+          !/\.(m3u8|mp4|webm)(\?|#|$)/i.test(videoSrc) &&
+          /embed/i.test(videoSrc)
+        ) {
+          if (!embedUrl) embedUrl = videoSrc;
+          videoSrc = "";
+        }
 
+        if (!videoSrc) {
           const wrap = document.getElementById("video-wrapper-box");
+
+          // Chỉ có link nhúng -> phát bằng iframe
+          if (embedUrl && wrap) {
+            video.style.display = "none";
+
+            const frame = document.createElement("iframe");
+            frame.src = embedUrl;
+            frame.allowFullscreen = true;
+            frame.setAttribute(
+              "allow",
+              "autoplay; fullscreen; picture-in-picture; encrypted-media",
+            );
+            frame.setAttribute("referrerpolicy", "origin");
+            frame.style.cssText =
+              "width:100%;aspect-ratio:16/9;border:0;display:block;background:#000;";
+            wrap.appendChild(frame);
+
+            // Iframe không đọc được thời gian xem -> chỉ ghi nhận "đã mở tập này"
+            // vào Tiếp tục xem (progress = 0).
+            try {
+              const KEY = "continue_watching_list";
+              let history = JSON.parse(localStorage.getItem(KEY) || "[]");
+              if (!Array.isArray(history)) history = [];
+              history = history.filter((it) =>
+                realSlug
+                  ? String(it.slug || "") !== String(realSlug)
+                  : it.title !== realTitle,
+              );
+              history.unshift({
+                title: realTitle,
+                slug: realSlug,
+                poster: realPoster,
+                desc: movieObj ? movieObj.desc || "" : "",
+                episode: episodeNum,
+                totalEpisodes: totalEp,
+                progress: 0,
+                currentTime: 0,
+                duration: 0,
+                updatedAt: Date.now(),
+              });
+              localStorage.setItem(KEY, JSON.stringify(history.slice(0, 30)));
+            } catch (e) {}
+
+            return;
+          }
+
+          console.error("Không tìm thấy link video!");
           if (wrap) {
             wrap.insertAdjacentHTML(
               "beforeend",
-              embedUrl
-                ? `<p style="color:#bbb;text-align:center;padding:30px;">Nguồn này chỉ có link nhúng, không phát trực tiếp được. <a href="${embedUrl}" target="_blank" rel="noopener" style="color:#e50914;">Mở trong tab mới</a></p>`
-                : '<p style="color:#bbb;text-align:center;padding:30px;">Chưa có link phát cho tập này.</p>',
+              '<p style="color:#bbb;text-align:center;padding:30px;">Chưa có link phát cho tập này.</p>',
             );
           }
-
           return;
         }
 

@@ -1,9 +1,16 @@
 // ==========================================
-// 0C. GỌI API PHIM TỪ BACKEND (thay cho data hardcode)
+// 0C. API PHIM (CHỈ FRONTEND)
+// - Danh sách / lọc / tìm kiếm: CHỈ dùng phim trong data.js (fallbackMoviesList)
+//   -> giữ nguyên group, partName... của mình, không tự thêm phim lạ.
+// - Link tập phim khi mở phim (detail/watch): lấy theo slug từ
+//     1) kkphim (phimapi.com)  - nguồn chính
+//     2) nguonc (phim.nguonc.com) - chỉ dùng khi kkphim không có slug đó
+//     3) Episodes.js / window.allEpisodesData - dự phòng cuối
+// - Thông tin phim (title, group, partName, poster...) luôn lấy từ data.js;
+//   API chỉ điền vào chỗ còn thiếu, KHÔNG ghi đè.
 // ==========================================
 
-// Chuẩn hóa 1 dòng dữ liệu trả về từ MySQL API thành đúng cấu trúc
-// mà toàn bộ code render/wishlist/continue-watching bên dưới đang dùng
+// Chuẩn hóa 1 dòng dữ liệu từ MySQL API (giữ lại cho code cũ nào còn dùng)
 function normalizeMovie(row) {
   return {
     id: row.id,
@@ -13,16 +20,16 @@ function normalizeMovie(row) {
     banner: row.banner || row.poster,
     desc: row.description,
     genres: row.genres,
-    year: row.year || row.release_year || "", // Năm phát hành (hiện ở gợi ý tìm kiếm)
-    country: row.country || row.quoc_gia || "", // Quốc gia (tách riêng khỏi thể loại)
-    views: Number(row.views) || 0, // Lượt xem
+    year: row.year || row.release_year || "",
+    country: row.country || row.quoc_gia || "",
+    views: Number(row.views) || 0,
     episodes: row.total_episodes,
     group: row.movie_group,
     partName: row.part_name,
   };
 }
 
-// Danh sách Quốc Gia hiển thị ở menu (khớp với giá trị cột country trong DB)
+// Danh sách Quốc Gia hiển thị ở menu
 const COUNTRIES = [
   "Trung Quốc",
   "Hàn Quốc",
@@ -37,8 +44,8 @@ const COUNTRIES = [
   "Ấn Độ",
 ];
 
-// Lấy quốc gia của 1 phim. Dữ liệu hardcode cũ chưa có trường country (quốc
-// gia nằm lẫn trong genres) nên tự dò thêm trong genres để dùng làm dự phòng.
+// Lấy quốc gia của 1 phim. Dữ liệu hardcode chưa có trường country (quốc
+// gia nằm lẫn trong genres) nên tự dò thêm trong genres.
 function getMovieCountry(movie) {
   if (!movie) return "";
   if (movie.country) return movie.country;
@@ -46,74 +53,147 @@ function getMovieCountry(movie) {
   return COUNTRIES.find((c) => genres.includes(c.toLowerCase())) || "";
 }
 
-// Xác định nguồn dữ liệu sẽ dùng: "auto" (mặc định, SQL trước - lỗi thì
-// rớt về hardcode), "hardcode" (ép dùng hardcode, bỏ qua API - test UI
-// nhanh không cần chạy backend), "sql" (ép chỉ dùng MySQL, KHÔNG tự rớt
-// về hardcode kể cả khi lỗi/rỗng - để thấy đúng lỗi thật khi test SQL).
-// Nếu không truyền source trong code, tự đọc từ URL: ?data_source=hardcode
-// hoặc ?data_source=sql, tiện để ép nguồn ngay trên trình duyệt khi test.
-function resolveDataSource(explicitSource) {
-  if (explicitSource === "hardcode" || explicitSource === "sql") {
-    return explicitSource;
+// ==========================================
+// NGUỒN LINK TẬP: kkphim (phimapi.com) - GET /phim/{slug}
+// ==========================================
+const KKPHIM_BASE_URL = "https://phimapi.com";
+const KKPHIM_IMG_CDN = "https://phimimg.com";
+
+function kkphimImg(url) {
+  if (!url) return "";
+  if (/^https?:\/\//i.test(url)) return url;
+  return `${KKPHIM_IMG_CDN}/${String(url).replace(/^\/+/, "")}`;
+}
+
+async function fetchKkphimMovieBySlug(slug) {
+  const res = await fetch(
+    `${KKPHIM_BASE_URL}/phim/${encodeURIComponent(slug)}`,
+  );
+  if (!res.ok) throw new Error(`kkphim /phim/${slug} lỗi ${res.status}`);
+  const data = await res.json();
+  if (!data || !data.status || !data.movie) {
+    throw new Error(`kkphim không có phim ${slug}`);
   }
+  const m = data.movie;
+  const names = (arr) =>
+    (Array.isArray(arr) ? arr : []).map((x) => x && x.name).filter(Boolean);
+  const total = parseInt(m.episode_total, 10);
+  const poster = kkphimImg(m.poster_url || m.thumb_url);
+
+  const movie = {
+    id: m._id || m.slug,
+    title: m.name,
+    slug: m.slug,
+    poster,
+    banner: kkphimImg(m.thumb_url || m.poster_url) || poster,
+    desc: m.content
+      ? String(m.content)
+          .replace(/<[^>]*>/g, "")
+          .trim()
+      : "",
+    genres: names(m.category).join(", "),
+    year: m.year || "",
+    country: names(m.country)[0] || "",
+    episodes: Number.isNaN(total) ? m.episode_total || "" : total,
+    quality: m.quality || "",
+    language: m.lang || "",
+    source: "kkphim",
+  };
+  movie.episodeServers = (data.episodes || []).map((s) => ({
+    name: s.server_name,
+    items: (s.server_data || []).map((it) => ({
+      name: it.name,
+      slug: it.slug,
+      embed: it.link_embed || "",
+      m3u8: it.link_m3u8 || "",
+    })),
+  }));
+  return movie;
+}
+
+// ==========================================
+// NGUỒN LINK TẬP DỰ PHÒNG: nguonc - GET /api/film/{slug}
+// ==========================================
+const NGUONC_BASE_URL = "https://phim.nguonc.com";
+
+function getNguoncCategoryNames(category, groupName) {
+  if (!category) return [];
+  return Object.values(category)
+    .filter((c) => c && c.group && c.group.name === groupName)
+    .flatMap((c) => (c.list || []).map((i) => i.name));
+}
+
+async function fetchNguoncMovieBySlug(slug) {
+  const res = await fetch(
+    `${NGUONC_BASE_URL}/api/film/${encodeURIComponent(slug)}`,
+  );
+  if (!res.ok) throw new Error(`nguonc /api/film/${slug} lỗi ${res.status}`);
+  const data = await res.json();
+  if (data.status !== "success" || !data.movie) {
+    throw new Error(`nguonc không có phim ${slug}`);
+  }
+  const m = data.movie;
+  const poster = m.thumb_url || m.poster_url || "";
+  const movie = {
+    id: m.id || m.slug,
+    title: m.name,
+    slug: m.slug,
+    poster,
+    banner: m.poster_url || poster,
+    desc: m.description || "",
+    genres: getNguoncCategoryNames(m.category, "Thể loại").join(", "),
+    year: m.year || getNguoncCategoryNames(m.category, "Năm")[0] || "",
+    country: getNguoncCategoryNames(m.category, "Quốc gia")[0] || "",
+    episodes: m.total_episodes,
+    quality: m.quality || "",
+    language: m.language || "",
+    source: "nguonc",
+  };
+  movie.episodeServers = (m.episodes || []).map((s) => ({
+    name: s.server_name,
+    items: (s.items || []).map((it) => ({
+      name: it.name,
+      slug: it.slug,
+      embed: it.embed || "",
+      m3u8: it.m3u8 || "",
+    })),
+  }));
+  return movie;
+}
+
+// ==========================================
+// CHỌN NGUỒN LINK TẬP
+// - "auto" (mặc định): kkphim -> nguonc -> Episodes.js
+// - "kkphim" / "nguonc": ép chỉ dùng 1 nguồn (không rớt sang nguồn khác)
+// - "hardcode": không gọi API, chỉ dùng Episodes.js
+// Có thể ép trên URL: ?data_source=kkphim | nguonc | hardcode
+// ==========================================
+function resolveDataSource(explicitSource) {
+  const valid = ["hardcode", "kkphim", "nguonc"];
+  if (valid.includes(explicitSource)) return explicitSource;
   try {
     const urlSource = new URLSearchParams(window.location.search).get(
       "data_source",
     );
-    if (urlSource === "hardcode" || urlSource === "sql") return urlSource;
+    if (valid.includes(urlSource)) return urlSource;
   } catch (e) {
-    // window.location không khả dụng (vd chạy ngoài trình duyệt) -> bỏ qua
+    // window.location không khả dụng -> bỏ qua
   }
   return "auto";
 }
 
-// Lấy danh sách phim có phân trang, có thể lọc theo thể loại
+// ==========================================
+// DANH SÁCH / LỌC / TÌM KIẾM: chỉ từ data.js
+// (giữ chữ ký hàm cũ để init.js, render.js, search.js... không phải sửa)
+// ==========================================
 async function fetchMovies({
-  page = 1,
-  limit = 20,
   genre = null,
   country = null,
   group = null,
-  source = "auto",
 } = {}) {
-  const dataSource = resolveDataSource(source);
-
-  if (dataSource === "hardcode") {
-    return filterFallbackMovies({ genre, country, group });
-  }
-
-  try {
-    const params = new URLSearchParams({ page, limit });
-    if (genre) params.set("genre", genre);
-    if (country) params.set("country", country);
-    if (group) params.set("group", group);
-    const res = await fetch(`${API_BASE_URL}/api/movies?${params.toString()}`);
-    if (!res.ok) throw new Error(`API /api/movies lỗi ${res.status}`);
-    const data = await res.json();
-    const movies = (data.movies || []).map(normalizeMovie);
-
-    if (dataSource === "sql") {
-      // Ép chỉ dùng SQL: trả nguyên kết quả thật (có thể rỗng), không che
-      // bằng hardcode để test thấy đúng dữ liệu/trạng thái thật từ DB.
-      return movies;
-    }
-    return movies.length
-      ? movies
-      : filterFallbackMovies({ genre, country, group });
-  } catch (err) {
-    if (dataSource === "sql") {
-      // Ép chỉ dùng SQL: không rớt về hardcode, ném lỗi ra để thấy rõ
-      // lỗi thật khi test (API sập, sai cổng, mất mạng...).
-      console.error("Lỗi tải danh sách phim từ API (source=sql):", err);
-      throw err;
-    }
-    console.error("Lỗi tải danh sách phim từ API, dùng dữ liệu dự phòng:", err);
-    return filterFallbackMovies({ genre, country, group });
-  }
+  return filterFallbackMovies({ genre, country, group });
 }
 
-// Lọc mảng hardcode dự phòng theo genre/country/group, dùng khi API MySQL
-// không gọi được (mất mạng, backend chưa chạy...)
 function filterFallbackMovies({
   genre = null,
   country = null,
@@ -136,51 +216,6 @@ function filterFallbackMovies({
   return list;
 }
 
-// Lấy chi tiết 1 phim theo slug (kèm episodes = mảng link m3u8 thật từ MySQL)
-function findFallbackMovieBySlug(slug) {
-  const fb = fallbackMoviesList.find((m) => m.slug === slug);
-  if (!fb) return null;
-  const movie = { ...fb };
-  movie.episodeUrls =
-    (window.allEpisodesData && window.allEpisodesData[slug]) || [];
-  return movie;
-}
-
-async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
-  if (!slug) return null;
-  const dataSource = resolveDataSource(source);
-
-  if (dataSource === "hardcode") {
-    return findFallbackMovieBySlug(slug);
-  }
-
-  try {
-    const res = await fetch(
-      `${API_BASE_URL}/api/movies/${encodeURIComponent(slug)}`,
-    );
-    if (!res.ok) throw new Error(`API /api/movies/${slug} lỗi ${res.status}`);
-    const row = await res.json();
-    const movie = normalizeMovie(row);
-    movie.episodeUrls = row.episodes || []; // link m3u8 thật, tách riêng khỏi "episodes" (số tập)
-    return movie;
-  } catch (err) {
-    if (dataSource === "sql") {
-      // Ép chỉ dùng SQL: không rớt về hardcode, để lộ đúng lỗi thật khi test.
-      console.error(`Lỗi tải chi tiết phim từ API (source=sql):`, err);
-      throw err;
-    }
-    console.error(
-      "Lỗi tải chi tiết phim từ API, thử dùng dữ liệu dự phòng:",
-      err,
-    );
-    // Fallback: tìm trong mảng hardcode + Episodes.js (nếu có) để trang
-    // watch/detail vẫn hiển thị được thay vì trắng trang khi API/DB die
-    return findFallbackMovieBySlug(slug);
-  }
-}
-
-// Tìm trong mảng hardcode theo tên hoặc thể loại (dùng khi ép source=hardcode
-// hoặc khi API search lỗi và không ở chế độ ép SQL)
 function searchFallbackMovies(query, limit = 40) {
   const q = (query || "").toLowerCase();
   return fallbackMoviesList
@@ -192,40 +227,124 @@ function searchFallbackMovies(query, limit = 40) {
     .slice(0, limit);
 }
 
-// Tìm kiếm phim theo tên/thể loại qua API
-async function searchMoviesAPI(query, limit = 40, { source = "auto" } = {}) {
-  const dataSource = resolveDataSource(source);
-
-  if (dataSource === "hardcode") {
-    return searchFallbackMovies(query, limit);
-  }
-
-  try {
-    const params = new URLSearchParams({ q: query, limit });
-    const res = await fetch(
-      `${API_BASE_URL}/api/movies/search?${params.toString()}`,
-    );
-    if (!res.ok) throw new Error(`API /api/movies/search lỗi ${res.status}`);
-    const data = await res.json();
-    return (data.movies || []).map(normalizeMovie);
-  } catch (err) {
-    if (dataSource === "sql") {
-      console.error("Lỗi tìm kiếm phim từ API (source=sql):", err);
-      throw err;
-    }
-    console.error("Lỗi tìm kiếm phim từ API, dùng dữ liệu dự phòng:", err);
-    return searchFallbackMovies(query, limit);
-  }
+async function searchMoviesAPI(query, limit = 40) {
+  return searchFallbackMovies(query, limit);
 }
 
-// Danh sách phim dùng chung toàn trang. Khởi tạo sẵn bằng fallbackMoviesList
-// để có gì đó hiển thị ngay (không phải chờ API), sau đó được merge thêm
-// phim thật từ MySQL qua các lần fetch API bên dưới (addToGlobalMoviesList).
-// detail.html / watch.html đọc qua window.globalMoviesList giống như trước.
+// ==========================================
+// CHI TIẾT 1 PHIM
+// ==========================================
+
+// Phim trong data.js + link tập từ Episodes.js (nếu có)
+function findFallbackMovieBySlug(slug) {
+  const fb = fallbackMoviesList.find((m) => m.slug === slug);
+  if (!fb) return null;
+  const movie = { ...fb };
+  movie.episodeUrls =
+    (window.allEpisodesData && window.allEpisodesData[slug]) || [];
+  return movie;
+}
+
+// Lấy link tập theo slug từ API (kkphim -> nguonc), trả null nếu không nguồn nào có
+async function fetchEpisodesFromApis(slug, dataSource) {
+  if (dataSource === "hardcode") return null;
+
+  if (dataSource === "auto" || dataSource === "kkphim") {
+    try {
+      return await fetchKkphimMovieBySlug(slug);
+    } catch (err) {
+      if (dataSource === "kkphim") throw err;
+      console.warn("kkphim không có/lỗi, thử nguonc:", err.message || err);
+    }
+  }
+  if (dataSource === "auto" || dataSource === "nguonc") {
+    try {
+      return await fetchNguoncMovieBySlug(slug);
+    } catch (err) {
+      if (dataSource === "nguonc") throw err;
+      console.warn("nguonc không có/lỗi:", err.message || err);
+    }
+  }
+  return null;
+}
+
+// Điền vào chỗ còn thiếu của phim local, KHÔNG ghi đè dữ liệu của mình
+function fillMissingFields(base, extra) {
+  const keys = [
+    "desc",
+    "poster",
+    "banner",
+    "genres",
+    "year",
+    "country",
+    "episodes",
+    "quality",
+    "language",
+  ];
+  keys.forEach((k) => {
+    if (
+      (base[k] === undefined || base[k] === null || base[k] === "") &&
+      extra[k]
+    ) {
+      base[k] = extra[k];
+    }
+  });
+}
+
+// Cache theo slug để detail.html / watch.html không gọi API lặp lại
+const movieDetailCache = new Map();
+
+async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
+  if (!slug) return null;
+  const dataSource = resolveDataSource(source);
+  const cacheKey = `${dataSource}:${slug}`;
+  if (movieDetailCache.has(cacheKey)) return movieDetailCache.get(cacheKey);
+
+  const base = findFallbackMovieBySlug(slug); // phim của mình (có group, partName)
+  let apiMovie = null;
+  try {
+    apiMovie = await fetchEpisodesFromApis(slug, dataSource);
+  } catch (err) {
+    // chỉ xảy ra khi ép source=kkphim/nguonc: để lộ lỗi thật
+    console.error(`Lỗi tải phim "${slug}" (source=${dataSource}):`, err);
+    throw err;
+  }
+
+  let result;
+  if (base && apiMovie) {
+    // Giữ nguyên thông tin của mình, chỉ lấy tập từ API
+    result = { ...base };
+    fillMissingFields(result, apiMovie);
+    const first = apiMovie.episodeServers[0];
+    const urls = first ? first.items.map((it) => it.m3u8 || it.embed) : [];
+    if (urls.length) {
+      result.episodeUrls = urls;
+      result.episodeServers = apiMovie.episodeServers;
+      result.episodeSource = apiMovie.source;
+    }
+  } else if (apiMovie) {
+    // Slug không có trong data.js (vd mở trực tiếp từ URL) -> dùng dữ liệu API
+    result = { ...apiMovie };
+    const first = apiMovie.episodeServers[0];
+    result.episodeUrls = first
+      ? first.items.map((it) => it.m3u8 || it.embed)
+      : [];
+    result.episodeSource = apiMovie.source;
+  } else {
+    result = base; // API không có/lỗi -> dữ liệu local (có thể null)
+  }
+
+  // Chỉ cache khi có kết quả, để lần sau còn thử lại nếu mạng lỗi
+  if (result) movieDetailCache.set(cacheKey, result);
+  return result;
+}
+
+// Danh sách phim dùng chung toàn trang. Khởi tạo bằng fallbackMoviesList;
+// detail.html / watch.html đọc qua window.globalMoviesList như trước.
 let globalMoviesList = [...fallbackMoviesList];
 window.globalMoviesList = globalMoviesList;
 
-// Gộp thêm phim mới fetch được vào danh sách chung, tự loại trùng theo slug
+// Gộp thêm phim vào danh sách chung, tự loại trùng theo slug
 function addToGlobalMoviesList(movies) {
   (movies || []).forEach((m) => {
     if (!globalMoviesList.some((existing) => existing.slug === m.slug)) {
@@ -234,12 +353,10 @@ function addToGlobalMoviesList(movies) {
   });
 }
 
-// Tăng lượt xem +1 cho phim (gọi khi người dùng thực sự bấm xem phim).
-// - Mỗi phim chỉ tính 1 lượt / 1 phiên trình duyệt (đổi tập, F5 không cộng thêm).
-// - Backend nhận id hoặc slug: POST /api/movies/:id/view -> { views }
-// - Lỗi mạng/backend chưa chạy chỉ cảnh báo, không làm hỏng trang xem phim.
-// Trả về số lượt xem mới (number) hoặc null nếu không cập nhật được.
+// Tăng lượt xem +1 (cần backend). Chạy thuần frontend thì không có
+// API_BASE_URL -> bỏ qua, không báo lỗi.
 async function increaseMovieView(movie) {
+  if (typeof API_BASE_URL === "undefined" || !API_BASE_URL) return null;
   if (!movie || resolveDataSource() === "hardcode") return null;
   const key = movie.id || movie.slug;
   if (!key) return null;
@@ -247,9 +364,7 @@ async function increaseMovieView(movie) {
   const flag = `viewed_${key}`;
   try {
     if (sessionStorage.getItem(flag)) return null;
-  } catch (e) {
-    // sessionStorage bị chặn -> vẫn gọi API bình thường
-  }
+  } catch (e) {}
 
   try {
     const res = await fetch(

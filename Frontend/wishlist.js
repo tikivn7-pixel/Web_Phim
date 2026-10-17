@@ -2,6 +2,13 @@
 // 1. CÁC HÀM XỬ LÝ AUTH, WATCHLIST & FAVORITE
 // ==========================================
 
+const WISHLIST_KEY = "my_wishlist";
+
+// Khóa nhận diện phim: ưu tiên slug, nếu không có thì dùng title
+function movieKey(m) {
+  return (m && (m.slug || m.title)) || "";
+}
+
 async function login(email, password) {
   try {
     const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
@@ -22,22 +29,51 @@ async function login(email, password) {
   }
 }
 
+// Đọc wishlist an toàn: dữ liệu hỏng thì trả về mảng rỗng, không làm crash trang
 function getWishlist() {
-  const wishlist = localStorage.getItem("my_wishlist");
-  return wishlist ? JSON.parse(wishlist) : [];
+  try {
+    const raw = localStorage.getItem(WISHLIST_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    return Array.isArray(list) ? list : [];
+  } catch (e) {
+    console.error("Wishlist bị hỏng, đã reset:", e);
+    return [];
+  }
 }
 
+// Lưu wishlist, bắt lỗi khi đầy bộ nhớ (QuotaExceededError)
+function saveWishlist(list) {
+  try {
+    localStorage.setItem(WISHLIST_KEY, JSON.stringify(list));
+    return true;
+  } catch (e) {
+    console.error("Không lưu được wishlist (đầy bộ nhớ?):", e);
+    alert("Bộ nhớ trình duyệt đã đầy, không thể lưu thêm phim.");
+    return false;
+  }
+}
+
+// Không giới hạn số lượng phim trong wishlist
 function toggleWishlist(movie) {
-  let wishlist = getWishlist();
-  const index = wishlist.findIndex((item) => item.title === movie.title);
+  const wishlist = getWishlist();
+  const key = movieKey(movie);
+  const index = wishlist.findIndex((item) => movieKey(item) === key);
 
   if (index !== -1) {
     wishlist.splice(index, 1);
   } else {
-    wishlist.push(movie);
+    // Chỉ lưu các trường cần thiết, cắt desc để tiết kiệm dung lượng
+    wishlist.push({
+      title: movie.title,
+      poster: movie.poster,
+      desc: (movie.desc || "").slice(0, 300),
+      episodes: movie.episodes,
+      slug: movie.slug || "",
+    });
   }
 
-  localStorage.setItem("my_wishlist", JSON.stringify(wishlist));
+  if (!saveWishlist(wishlist)) return;
+
   updateWishlistUI();
 
   const wishlistPage = document.getElementById("page-wishlist");
@@ -45,7 +81,7 @@ function toggleWishlist(movie) {
     renderWishlistPage();
   }
 
-  toggleFavoriteBackend(movie.title);
+  toggleFavoriteBackend(movie.slug || movie.title);
 }
 
 async function toggleFavoriteBackend(movieId) {
@@ -71,13 +107,17 @@ async function toggleFavoriteBackend(movieId) {
 function cardHeartHtml(movie) {
   const t = escapeForInlineHandler(movie.title);
   const d = escapeForInlineHandler(movie.desc || "");
-  return `<button type="button" class="card-heart" title="Thêm vào danh sách của tôi" aria-label="Thêm hoặc xóa khỏi danh sách yêu thích" onclick="event.stopPropagation(); toggleWishlist({title: '${t}', poster: '${movie.poster}', desc: '${d}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"><i class="fa-regular fa-heart"></i></button>`;
+  const p = escapeForInlineHandler(movie.poster || "");
+  const s = escapeForInlineHandler(movie.slug || "");
+  return `<button type="button" class="card-heart" title="Thêm vào danh sách của tôi" aria-label="Thêm hoặc xóa khỏi danh sách yêu thích" onclick="event.stopPropagation(); toggleWishlist({title: '${t}', poster: '${p}', desc: '${d}', episodes: ${getTotalEpisodes(movie)}, slug: '${s}'})"><i class="fa-regular fa-heart"></i></button>`;
 }
 
 // Đồng bộ trạng thái tim (trên poster + trong hover-card) của TẤT CẢ thẻ phim
 // với danh sách yêu thích hiện tại.
 function updateWishlistUI() {
-  const favTitles = new Set(getWishlist().map((item) => item.title));
+  const wishlist = getWishlist();
+  const favTitles = new Set(wishlist.map((item) => item.title));
+  const favSlugs = new Set(wishlist.map((item) => item.slug).filter((s) => s));
 
   document.querySelectorAll(".movie-card").forEach((card) => {
     const hoverHeart = card.querySelector(".btn-hover.icon");
@@ -92,7 +132,9 @@ function updateWishlistUI() {
       card.dataset.title || (titleEl ? titleEl.innerText.trim() : "");
     if (!title) return;
 
-    const isFav = favTitles.has(title);
+    // Ưu tiên so theo slug (nếu thẻ có data-slug), nếu không thì so theo title
+    const slug = card.dataset.slug || "";
+    const isFav = slug ? favSlugs.has(slug) : favTitles.has(title);
 
     // Tim trong hover-card (giữ nguyên cách hiển thị cũ)
     if (hoverHeart) {
@@ -119,7 +161,7 @@ function updateWishlistUI() {
 
 // Đồng bộ giữa các tab: thêm / xóa tim ở tab này thì tab khác tự cập nhật theo
 window.addEventListener("storage", (e) => {
-  if (e.key && e.key !== "my_wishlist") return;
+  if (e.key && e.key !== WISHLIST_KEY) return;
   updateWishlistUI();
 
   const wishlistPage = document.getElementById("page-wishlist");
@@ -151,6 +193,7 @@ function renderWishlistPage() {
     const card = document.createElement("div");
     card.className = "movie-card";
     card.dataset.title = movie.title;
+    if (movie.slug) card.dataset.slug = movie.slug;
     card.onclick = () =>
       showDetail(
         movie.title,
@@ -164,6 +207,8 @@ function renderWishlistPage() {
     const safeDesc = escapeHtml(movie.desc || "");
     const handlerTitle = escapeForInlineHandler(movie.title);
     const handlerDesc = escapeForInlineHandler(movie.desc || "");
+    const handlerPoster = escapeForInlineHandler(movie.poster || "");
+    const handlerSlug = escapeForInlineHandler(movie.slug || "");
 
     card.innerHTML = `
       <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
@@ -174,13 +219,13 @@ function renderWishlistPage() {
         <div class="hover-content">
           <h3 class="hover-title">${safeTitle}</h3>
           <div class="hover-actions">
-            <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${movie.slug || ""}')">
+            <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${handlerSlug}')">
               <i class="fa-solid fa-play"></i> Xem ngay
             </button>
             <button
               class="btn-hover icon"
               title="Xóa khỏi danh sách"
-              onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${movie.poster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"
+              onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${handlerPoster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${handlerSlug}'})"
             >
               <i class="fa-solid fa-heart" style="color: #e50914;"></i>
             </button>

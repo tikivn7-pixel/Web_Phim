@@ -2,27 +2,86 @@
 // 5. CHỨC NĂNG TÌM KIẾM PHIM (SEARCH) & TÍCH HỢP TMDB API
 // ==========================================
 
+// Key TMDB dùng gọi THẲNG từ trình duyệt (không cần chạy server).
+// Điền API key (v3) vào TMDB_API_KEY trong data.js. Để rỗng -> dùng backend như cũ.
+// Lưu ý: key đặt ở frontend thì ai mở web cũng xem được; TMDB key miễn phí nên thường chấp nhận được.
+const TMDB_DIRECT_BASE = "https://api.themoviedb.org/3";
+
+// Gọi thẳng TMDB, trả về cùng cấu trúc backend trả: { vote_average, director, cast, genres }
+async function fetchMovieDataFromTMDBDirect(movieTitle) {
+  if (typeof TMDB_API_KEY === "undefined" || !TMDB_API_KEY) return null;
+  const q = (path, extra = {}) => {
+    const params = new URLSearchParams({
+      api_key: TMDB_API_KEY,
+      language: "vi-VN",
+      ...extra,
+    });
+    return `${TMDB_DIRECT_BASE}${path}?${params.toString()}`;
+  };
+
+  const searchRes = await fetch(q("/search/multi", { query: movieTitle }));
+  if (!searchRes.ok) throw new Error(`TMDB search lỗi ${searchRes.status}`);
+  const searchData = await searchRes.json();
+  const item = (searchData.results || []).find(
+    (r) => r.media_type === "movie" || r.media_type === "tv",
+  );
+  if (!item) return null;
+
+  const isTV = item.media_type === "tv";
+  const detailRes = await fetch(
+    q(`/${isTV ? "tv" : "movie"}/${item.id}`, {
+      append_to_response: "credits",
+    }),
+  );
+  if (!detailRes.ok) throw new Error(`TMDB detail lỗi ${detailRes.status}`);
+  const d = await detailRes.json();
+
+  const crew = (d.credits && d.credits.crew) || [];
+  const director = isTV
+    ? (d.created_by || []).map((p) => p.name).join(", ") ||
+      (crew.find((c) => c.job === "Director") || {}).name ||
+      ""
+    : (crew.find((c) => c.job === "Director") || {}).name || "";
+  const cast = ((d.credits && d.credits.cast) || [])
+    .slice(0, 6)
+    .map((c) => c.name)
+    .join(", ");
+  const genres = (d.genres || []).map((g) => g.name).join(", ");
+
+  return { vote_average: d.vote_average, director, cast, genres };
+}
+
+// Gọi backend (cách cũ) - chỉ dùng khi không gọi thẳng TMDB được
+async function fetchMovieDataFromBackendOnly(movieTitle) {
+  const response = await fetch(
+    `${API_BASE_URL}/api/tmdb/search?query=${encodeURIComponent(movieTitle)}`,
+  );
+  const data = await response.json();
+
+  if (data.results && data.results.length > 0) {
+    const item = data.results[0];
+    const isTV = data.isTV ? "true" : "false";
+    const detailRes = await fetch(
+      `${API_BASE_URL}/api/tmdb/detail/${item.id}?isTV=${isTV}`,
+    );
+    return await detailRes.json();
+  }
+  return null;
+}
+
+// Giữ nguyên tên hàm cũ để tmdb.js / detail.html không phải sửa.
+// Thứ tự: TMDB trực tiếp (không cần server) -> lỗi/không có key thì dùng backend.
 async function fetchMovieDataFromBackend(movieTitle) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/api/tmdb/search?query=${encodeURIComponent(movieTitle)}`,
-    );
-    const data = await response.json();
-
-    if (data.results && data.results.length > 0) {
-      const item = data.results[0];
-      const isTV = data.isTV ? "true" : "false";
-
-      const detailRes = await fetch(
-        `${API_BASE_URL}/api/tmdb/detail/${item.id}?isTV=${isTV}`,
-      );
-      const detailData = await detailRes.json();
-
-      return detailData;
-    }
-    return null;
+    const direct = await fetchMovieDataFromTMDBDirect(movieTitle);
+    if (direct) return direct;
   } catch (error) {
-    console.error("Lỗi đồng bộ dữ liệu TMDB từ Backend:", error);
+    console.warn("Gọi TMDB trực tiếp lỗi, thử qua backend:", error);
+  }
+  try {
+    return await fetchMovieDataFromBackendOnly(movieTitle);
+  } catch (error) {
+    console.error("Lỗi đồng bộ dữ liệu TMDB:", error);
     return null;
   }
 }
