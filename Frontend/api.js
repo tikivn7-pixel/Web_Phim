@@ -65,6 +65,13 @@ function kkphimImg(url) {
   return `${KKPHIM_IMG_CDN}/${String(url).replace(/^\/+/, "")}`;
 }
 
+// Lấy danh sách tên từ mảng (object {name} hoặc chuỗi), bỏ "Đang cập nhật"
+function kkNames(arr) {
+  return (Array.isArray(arr) ? arr : [])
+    .map((x) => (typeof x === "string" ? x : x && x.name))
+    .filter((x) => x && x.toLowerCase() !== "đang cập nhật");
+}
+
 async function fetchKkphimMovieBySlug(slug) {
   const res = await fetch(
     `${KKPHIM_BASE_URL}/phim/${encodeURIComponent(slug)}`,
@@ -97,6 +104,11 @@ async function fetchKkphimMovieBySlug(slug) {
     episodes: Number.isNaN(total) ? m.episode_total || "" : total,
     quality: m.quality || "",
     language: m.lang || "",
+    director: kkNames(m.director).join(", "),
+    cast: kkNames(m.actor).slice(0, 10).join(", "),
+    status: m.episode_current || "",
+    vote_average: (m.tmdb && Number(m.tmdb.vote_average)) || 0,
+    views: Number(m.view) || 0,
     source: "kkphim",
   };
   movie.episodeServers = (data.episodes || []).map((s) => ({
@@ -147,6 +159,9 @@ async function fetchNguoncMovieBySlug(slug) {
     episodes: m.total_episodes,
     quality: m.quality || "",
     language: m.language || "",
+    director: m.director || "",
+    cast: m.casts || "",
+    status: m.current_episode || "",
     source: "nguonc",
   };
   movie.episodeServers = (m.episodes || []).map((s) => ({
@@ -216,14 +231,33 @@ function filterFallbackMovies({
   return list;
 }
 
+// Bỏ dấu + hạ chữ thường để "Gong Yoo", "gong yoo", "Công Du" đều dễ khớp
+function normalizeSearchText(s) {
+  return String(s || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/gi, "d")
+    .toLowerCase()
+    .replace(/[-_.,:;|]+/g, " ") // "Go Youn-jung" == "go youn jung"
+    .replace(/\s+/g, " ");
+}
+
+// Tìm theo tên phim, thể loại, diễn viên, đạo diễn
+// (diễn viên/đạo diễn lấy từ cast-data.js do build-cast.js sinh ra)
 function searchFallbackMovies(query, limit = 40) {
-  const q = (query || "").toLowerCase();
+  const q = normalizeSearchText(query).trim();
+  if (!q) return [];
+  const castIndex = window.movieCastIndex || {};
   return fallbackMoviesList
-    .filter(
-      (m) =>
-        (m.title || "").toLowerCase().includes(q) ||
-        (m.genres || "").toLowerCase().includes(q),
-    )
+    .filter((m) => {
+      const extra = castIndex[m.slug] || {};
+      const haystack = normalizeSearchText(
+        [m.title, m.genres, m.cast || extra.cast, m.director || extra.director]
+          .filter(Boolean)
+          .join(" | "),
+      );
+      return haystack.includes(q);
+    })
     .slice(0, limit);
 }
 
@@ -280,6 +314,11 @@ function fillMissingFields(base, extra) {
     "episodes",
     "quality",
     "language",
+    "director",
+    "cast",
+    "status",
+    "vote_average",
+    "views",
   ];
   keys.forEach((k) => {
     if (

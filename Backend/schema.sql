@@ -31,3 +31,34 @@ CREATE TABLE IF NOT EXISTS episodes (
 -- Ghi chú: genres đang lưu dạng chuỗi để migrate nhanh từ code cũ.
 -- Khi số lượng phim lên tới hàng nghìn và cần lọc thể loại nhanh hơn,
 -- nên tách ra bảng "genres" + bảng nối "movie_genres" (many-to-many) sau này.
+
+-- ==========================================
+-- BẢNG NGƯỜI DÙNG (đăng ký / đăng nhập)
+-- ==========================================
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,          -- hash bcrypt (~60 ký tự), KHÔNG lưu text thuần
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- (Tùy chọn) 2 bảng mà server.js đang dùng cho watchlist / tiếp tục xem.
+-- Frontend hiện gửi movieId là TÊN phim nên để VARCHAR.
+CREATE TABLE IF NOT EXISTS watchlists (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  movie_id VARCHAR(255) NOT NULL,
+  UNIQUE KEY uniq_user_movie (user_id, movie_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS watch_history (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  movie_id VARCHAR(255) NOT NULL,
+  progress_seconds INT DEFAULT 0,
+  duration_seconds INT DEFAULT 0,
+  UNIQUE KEY uniq_user_movie (user_id, movie_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

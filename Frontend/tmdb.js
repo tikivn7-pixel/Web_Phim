@@ -1,5 +1,7 @@
 // ==========================================
-// 10. TÍCH HỢP HIỂN THỊ CHI TIẾT TMDB CHO TRANG DETAIL
+// 10. HIỂN THỊ CHI TIẾT PHIM (điểm, đạo diễn, diễn viên, thể loại, trạng thái)
+// Dữ liệu lấy từ object phim do fetchMovieBySlug() (api.js) trả về,
+// nên không cần backend hay API key.
 // ==========================================
 
 function updateRatingVisuals(voteAverage) {
@@ -20,37 +22,28 @@ function updateRatingVisuals(voteAverage) {
   }
 }
 
-async function loadMovieDetailsFromTMDB(movieTitle) {
+async function loadMovieDetailsFromTMDB(movie) {
+  if (!movie) return;
+
+  const setText = (id, value) => {
+    const el = document.getElementById(id);
+    if (el && value) el.innerText = value;
+  };
+
   try {
-    const detailData = await fetchMovieDataFromBackend(movieTitle);
-
-    if (detailData) {
-      // 1. Cập nhật điểm đánh giá
-      const ratingEl = document.getElementById("detail-rating");
-      if (ratingEl && detailData.vote_average) {
-        ratingEl.innerText = detailData.vote_average.toFixed(1);
-      }
-      updateRatingVisuals(detailData.vote_average);
-
-      // 2. Cập nhật Đạo diễn
-      const directorEl = document.getElementById("detail-director");
-      if (directorEl && detailData.director) {
-        directorEl.innerText = detailData.director;
-      }
-
-      // 3. Cập nhật Diễn viên
-      const castEl = document.getElementById("detail-cast");
-      if (castEl && detailData.cast) {
-        castEl.innerText = detailData.cast;
-      }
-
-      // 4. Cập nhật Thể loại
-      const genresEl = document.getElementById("detail-genres");
-      if (genresEl && detailData.genres) {
-        genresEl.innerText = detailData.genres;
-      }
+    // 1. Điểm đánh giá
+    const vote = Number(movie.vote_average) || 0;
+    if (vote > 0) {
+      setText("detail-rating", vote.toFixed(1));
+      updateRatingVisuals(vote);
     }
+
+    // 2. Đạo diễn, 3. Diễn viên, 4. Thể loại, 5. Trạng thái
+    setText("detail-director", movie.director);
+    setText("detail-cast", movie.cast);
+    setText("detail-genres", movie.genres);
+    setText("fd-status", movie.status);
   } catch (error) {
-    console.error("Không thể tải thông tin chi tiết TMDB:", error);
+    console.error("Không thể hiển thị thông tin chi tiết phim:", error);
   }
 }

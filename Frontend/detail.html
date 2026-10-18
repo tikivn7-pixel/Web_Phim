@@ -309,7 +309,8 @@
     <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
     <script src="./data.js?v=4"></script>
-    <script src="./api.js?v=4"></script>
+    <script src="./cast-data.js?v=1"></script>
+    <script src="./api.js?v=5"></script>
     <script src="./utils.js?v=4"></script>
     <script src="./wishlist.js?v=4"></script>
     <script src="./render.js?v=4"></script>
@@ -493,9 +494,9 @@
           renderRelatedSuggestions(slug, currentMovie.genres);
         }
 
-        // 3. Kích hoạt gọi API TMDB (nếu hàm đã được định nghĩa trong script.js)
-        if (title && typeof loadMovieDetailsFromTMDB === "function") {
-          await loadMovieDetailsFromTMDB(title);
+        // 3. Hiển thị điểm, đạo diễn, diễn viên, trạng thái (tmdb.js)
+        if (currentMovie && typeof loadMovieDetailsFromTMDB === "function") {
+          await loadMovieDetailsFromTMDB(currentMovie);
         }
       });
     </script>

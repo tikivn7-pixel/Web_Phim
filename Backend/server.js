@@ -55,47 +55,92 @@ const authenticateToken = (req, res, next) => {
 
 // ================= API AUTHENTICATION =================
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const USERNAME_REGEX = /^[A-Za-z0-9_.]{3,30}$/;
+
 // 1. Đăng ký
 app.post("/api/auth/register", async (req, res) => {
-  const { username, email, password } = req.body;
+  const username = String(req.body.username || "").trim();
+  const email = String(req.body.email || "")
+    .trim()
+    .toLowerCase();
+  const password = String(req.body.password || "");
+
+  if (!USERNAME_REGEX.test(username)) {
+    return res.status(400).json({
+      message: "Tên đăng nhập 3-30 ký tự, chỉ gồm chữ, số, dấu _ hoặc .",
+    });
+  }
+  if (!EMAIL_REGEX.test(email) || email.length > 255) {
+    return res.status(400).json({ message: "Email không hợp lệ!" });
+  }
+  // bcrypt chỉ xét 72 byte đầu nên giới hạn độ dài tối đa
+  if (password.length < 6 || password.length > 72) {
+    return res
+      .status(400)
+      .json({ message: "Mật khẩu phải từ 6 đến 72 ký tự!" });
+  }
+
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
     db.query(
       "INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
       [username, email, hashedPassword],
-      (err, result) => {
-        if (err)
-          return res
-            .status(400)
-            .json({ message: "Email hoặc Username đã tồn tại!" });
+      (err) => {
+        if (err) {
+          if (err.code === "ER_DUP_ENTRY") {
+            const isEmail = /key '(?:users\.)?email'/.test(
+              err.sqlMessage || "",
+            );
+            return res.status(409).json({
+              message: isEmail
+                ? "Email này đã được đăng ký!"
+                : "Tên đăng nhập đã tồn tại!",
+            });
+          }
+          console.error("Lỗi đăng ký:", err);
+          return res.status(500).json({ message: "Lỗi CSDL!" });
+        }
         res.status(201).json({ message: "Đăng ký thành công!" });
       },
     );
   } catch (error) {
+    console.error(error);
     res.status(500).json({ message: "Lỗi server!" });
   }
 });
 
-// 2. Đăng nhập
+// 2. Đăng nhập (bằng email HOẶC tên đăng nhập)
 app.post("/api/auth/login", (req, res) => {
-  const { email, password } = req.body;
+  const identifier = String(req.body.identifier ?? req.body.email ?? "").trim();
+  const password = String(req.body.password || "");
+
+  if (!identifier || !password) {
+    return res.status(400).json({ message: "Vui lòng nhập đầy đủ thông tin!" });
+  }
+
   db.query(
-    "SELECT * FROM users WHERE email = ?",
-    [email],
+    "SELECT * FROM users WHERE email = ? OR username = ? LIMIT 1",
+    [identifier.toLowerCase(), identifier],
     async (err, results) => {
-      if (err || results.length === 0)
+      if (err) {
+        console.error("Lỗi đăng nhập:", err);
+        return res.status(500).json({ message: "Lỗi CSDL!" });
+      }
+      if (results.length === 0) {
         return res
           .status(400)
           .json({ message: "Sai tài khoản hoặc mật khẩu!" });
+      }
 
       const user = results[0];
       const isMatch = await bcrypt.compare(password, user.password);
-      if (!isMatch)
+      if (!isMatch) {
         return res
           .status(400)
           .json({ message: "Sai tài khoản hoặc mật khẩu!" });
+      }
 
-      // Tạo JWT Token
       const token = jwt.sign(
         { userId: user.id, username: user.username },
         JWT_SECRET,
@@ -105,7 +150,23 @@ app.post("/api/auth/login", (req, res) => {
         message: "Đăng nhập thành công!",
         token,
         username: user.username,
+        email: user.email,
       });
+    },
+  );
+});
+
+// 3. Lấy thông tin người dùng đang đăng nhập (dựa vào token)
+app.get("/api/auth/me", authenticateToken, (req, res) => {
+  db.query(
+    "SELECT id, username, email, created_at FROM users WHERE id = ?",
+    [req.user.userId],
+    (err, results) => {
+      if (err) return res.status(500).json({ message: "Lỗi CSDL!" });
+      if (results.length === 0) {
+        return res.status(404).json({ message: "Tài khoản không tồn tại!" });
+      }
+      res.json({ user: results[0] });
     },
   );
 });
