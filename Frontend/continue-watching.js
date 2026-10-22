@@ -19,9 +19,9 @@ function isFinishedSeries(item) {
 }
 
 function getContinueWatchingList() {
-  const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
   let list = [];
   try {
+    const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
     list = raw ? JSON.parse(raw) : [];
   } catch (e) {
     list = [];
@@ -32,8 +32,9 @@ function getContinueWatchingList() {
   const seen = new Set();
   const cleaned = list
     .slice()
-    .sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0))
+    .sort((a, b) => (b?.updatedAt || 0) - (a?.updatedAt || 0))
     .filter((item) => {
+      if (!item || (!item.slug && !item.title)) return false;
       const key = item.slug || item.title;
       if (seen.has(key)) return false;
       seen.add(key);
@@ -43,7 +44,7 @@ function getContinueWatchingList() {
     .filter((item) => !isFinishedSeries(item));
 
   if (cleaned.length !== list.length) {
-    localStorage.setItem(CONTINUE_WATCHING_KEY, JSON.stringify(cleaned));
+    try { localStorage.setItem(CONTINUE_WATCHING_KEY, JSON.stringify(cleaned)); } catch (e) {}
   }
   return cleaned;
 }
@@ -95,7 +96,7 @@ function renderContinueWatching() {
 
   list.forEach((item) => {
     const movieMeta =
-      globalMoviesList.find((m) => m.title === item.title) || {};
+      globalMoviesList.find((m) => item.slug ? m.slug === item.slug : m.title === item.title) || {};
     const posterSrc =
       item.poster || movieMeta.poster || "https://placehold.co/350x500";
     const safeTitle = escapeHtml(item.title);
@@ -104,20 +105,21 @@ function renderContinueWatching() {
     const card = document.createElement("div");
     card.className = "movie-card";
     card.style.position = "relative";
-    card.onclick = () =>
-      playEpisodeDirect(
-        item.title,
-        item.episode,
-        item.totalEpisodes,
-        item.slug,
-      );
+    card.onclick = () => {
+      const params = new URLSearchParams({ title:item.title || "", slug:item.slug || "", ep:item.episode || 1,
+        episodes:item.totalEpisodes || 1, server:item.server || 0 });
+      if (["kkphim","nguonc","auto"].includes(item.source)) params.set("data_source",item.source);
+      if (Number(item.currentTime) > 5) params.set("resume",Math.floor(Number(item.currentTime)));
+      if (item.episodeName) params.set("target_episode",item.episodeName);
+      window.location.href = "watch.html?" + params;
+    };
 
     card.innerHTML = `
-      <img src="${posterSrc}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      <img src="${escapeHtml(posterSrc)}" alt="${safeTitle}" loading="lazy" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
       <h4>${safeTitle} - Tập ${item.episode}</h4>
      
       <div style="width: 100%; background: rgba(255,255,255,0.2); height: 4px; border-radius: 2px; margin-top: 5px; overflow: hidden;">
-        <div style="width: ${item.progress}%; background: #e50914; height: 100%;"></div>
+        <div style="width: ${Math.min(100, Math.max(0, Number(item.progress) || 0))}%; background: #e50914; height: 100%;"></div>
       </div>
 
       <div class="movie-hover-card">
@@ -134,6 +136,18 @@ function renderContinueWatching() {
         </div>
       </div>
     `;
+    const remove = document.createElement("button");
+    remove.className = "continue-remove";
+    remove.type = "button";
+    remove.textContent = "×";
+    remove.setAttribute("aria-label", "Xóa " + item.title + " khỏi Tiếp tục xem");
+    remove.onclick = event => { event.stopPropagation(); removeFromContinueWatching(item.slug || item.title); };
+    card.appendChild(remove);
+    const hint = document.createElement("p");
+    hint.className = "continue-time";
+    const seconds = Number(item.currentTime) || 0;
+    hint.textContent = seconds > 0 ? `Xem tiếp từ ${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2,"0")}` : "Mở lại tập đang xem";
+    card.appendChild(hint);
     slider.appendChild(card);
   });
 }
@@ -143,3 +157,4 @@ function renderContinueWatching() {
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) renderContinueWatching();
 });
+window.addEventListener("storage", event => { if (event.key === CONTINUE_WATCHING_KEY) renderContinueWatching(); });

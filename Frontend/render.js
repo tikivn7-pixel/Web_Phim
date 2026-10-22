@@ -17,6 +17,7 @@ function showDetail(
     episodes: totalEpisodes || 20,
   });
 
+  if(typeof rememberCatalogReturn==="function")rememberCatalogReturn(params);
   window.location.href = `detail.html?${params.toString()}`;
 }
 
@@ -39,6 +40,7 @@ function playEpisodeDirect(
     episodes: totalEpisodes || movieObj.episodes || 20,
   });
 
+  if(typeof rememberCatalogReturn==="function")rememberCatalogReturn(params);
   window.location.href = `watch.html?${params.toString()}`;
 }
 
@@ -58,16 +60,17 @@ function createMovieCard(movie) {
 
   const safeTitle = escapeHtml(movie.title);
   const safeDesc = escapeHtml(movie.desc || "");
+  const imageFallback = escapeHtml(movie.remotePoster || movie.banner || "");
   const handlerTitle = escapeForInlineHandler(movie.title);
   const handlerDesc = escapeForInlineHandler(movie.desc || "");
 
   card.innerHTML = `
-    <img src="${movie.poster}" alt="${safeTitle}" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/350x500'" />
+    <img src="${movie.poster}" data-fallback="${imageFallback}" alt="${safeTitle}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
     ${cardHeartHtml(movie)}
     <h4>${safeTitle}</h4>
     <div class="movie-views"><i class="fa-regular fa-eye"></i> ${formatViews(movie.views, { compact: true })} lượt xem</div>
     <div class="movie-hover-card">
-      <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/350x500'" />
+      <img src="${movie.poster}" data-fallback="${imageFallback}" alt="${safeTitle}" class="hover-banner" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
       <div class="hover-content">
         <h3 class="hover-title">${safeTitle}</h3>
         <div class="hover-actions">
@@ -195,8 +198,11 @@ function renderMovieGrid(container, movies, emptyHtml = "", options = {}) {
 // "Phim Mới Cập Nhật" - trả về movies đã fetch để dùng chung cho Hero Banner
 async function renderHomePageMovies() {
   const container = document.getElementById("home-movie-slider");
-  const movies = await fetchMovies({ limit: 20 });
+  const movies = await loadSliderMovies(container, { limit: 20, sort: "updated" });
+  if (!movies) return [];
   addToGlobalMoviesList(movies);
+  const note = document.getElementById("home-updates-note");
+  if (note) note.hidden = movies.some(movie => movie.updatedAt || movie.addedAt);
   renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
     paginate: false,
   });
@@ -206,7 +212,8 @@ async function renderHomePageMovies() {
 async function renderAnimeMovies() {
   const container = document.getElementById("anime-movie-slider");
   if (!container) return;
-  const movies = await fetchMovies({ genre: "Anime", limit: 20 });
+  const movies = await loadSliderMovies(container, { type: "animation", limit: 20, sort: "updated" });
+  if (!movies) return [];
   addToGlobalMoviesList(movies);
   renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
     paginate: false,
@@ -216,7 +223,8 @@ async function renderAnimeMovies() {
 async function renderKoreanMovies() {
   const container = document.getElementById("korean-movie-slider");
   if (!container) return;
-  const movies = await fetchMovies({ country: "Hàn Quốc", limit: 20 });
+  const movies = await loadSliderMovies(container, { country: "Hàn Quốc", limit: 20 });
+  if (!movies) return [];
   addToGlobalMoviesList(movies);
   renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
     paginate: false,
@@ -226,7 +234,8 @@ async function renderKoreanMovies() {
 async function renderActionMovies() {
   const container = document.getElementById("action-movie-slider");
   if (!container) return;
-  const movies = await fetchMovies({ genre: "Hành Động", limit: 20 });
+  const movies = await loadSliderMovies(container, { genre: "Hành Động", limit: 20 });
+  if (!movies) return [];
   addToGlobalMoviesList(movies);
   renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
     paginate: false,
@@ -236,7 +245,8 @@ async function renderActionMovies() {
 async function renderRomanceMovies() {
   const container = document.getElementById("romance-movie-slider");
   if (!container) return;
-  const movies = await fetchMovies({ genre: "Tình Cảm", limit: 20 });
+  const movies = await loadSliderMovies(container, { genre: "Tình Cảm", limit: 20 });
+  if (!movies) return [];
   addToGlobalMoviesList(movies);
   renderMovieGrid(container, (movies || []).slice(0, HOME_SLIDER_LIMIT), "", {
     paginate: false,
@@ -317,7 +327,7 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
         movie.slug,
       );
     item.innerHTML = `
-      <img src="${movie.poster}" alt="${escapeHtml(movie.title)}" loading="lazy" decoding="async" onerror="this.src='https://placehold.co/80x110'" />
+      <img src="${movie.poster}" data-fallback="${escapeHtml(movie.remotePoster || movie.banner || "")}" alt="${escapeHtml(movie.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
       <div class="fd-suggest-info">
         <h4>${escapeHtml(movie.title)}</h4>
         <span>${escapeHtml((movie.genres || "").split(",")[0] || "")}</span>
@@ -325,4 +335,19 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
     `;
     container.appendChild(item);
   });
+}
+
+async function loadSliderMovies(container, options) {
+  try { return await fetchMovies(options); }
+  catch (err) {
+    console.error(err);
+    if (container) {
+      container.textContent = err.message;
+      const retry = document.createElement("button");
+      retry.textContent = "Thử lại";
+      retry.onclick = () => window.location.reload();
+      container.appendChild(retry);
+    }
+    return null;
+  }
 }

@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "catalog:build": "node Frontend/build-catalog.js",
+    "catalog:check": "node Frontend/check-catalog.js",
+    "catalog:import": "node Frontend/import-catalog.js",
+    "test": "node --test Backend/catalog.test.js Frontend/features.test.js Frontend/upgrades.test.js",
+    "test:browser": "node Frontend/browser-smoke.cjs"
+  },
   "dependencies": {
     "mysql2": "^3.24.6"
   }

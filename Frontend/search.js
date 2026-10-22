@@ -121,7 +121,10 @@ function ensureYearFilterStyle() {
   document.head.appendChild(st);
 }
 
-function renderFilteredResults(container, movies, emptyHtml) {
+async function renderFilteredResults(container, options, emptyHtml) {
+  const token = {};
+  container._catalogRequest = token;
+  if (container._pager) { container._pager.remove(); container._pager = null; }
   let bar = document.getElementById("search-year-filter");
   if (!bar) {
     ensureYearFilterStyle();
@@ -130,38 +133,92 @@ function renderFilteredResults(container, movies, emptyHtml) {
     bar.className = "year-filter";
     container.insertAdjacentElement("beforebegin", bar);
   }
+  bar.innerHTML = "";
+  const selected = { ...options, sort: options.sort || "updated" };
+  let initial=true;
+  const load = async (page = 1, scroll = false) => {
+    const request = {};
+    token.request = request;
+    container.innerHTML = '<p style="color:#888;grid-column:1/-1">Đang tải...</p>';
+    try {
+      const [result, facets] = await Promise.all([
+        fetchCatalogPage({ ...selected, page, limit: MOVIE_PAGE_SIZE }),
+        getCatalogFilters(),
+      ]);
+      if (container._catalogRequest !== token || token.request !== request) return;
+      if(typeof updateCatalogUrl==="function")updateCatalogUrl({...selected,page:result.currentPage},initial?(options._history||"push"):"push");
+      initial=false;
+      const heading = document.getElementById("search-keyword");
+      if (heading) {
+        const labels = [selected.q ? `"${selected.q}"` : "", selected.country ? "Quốc gia: " + selected.country : "", selected.genre ? "Thể loại: " + selected.genre : "", selected.year || ""];
+        heading.textContent = labels.filter(Boolean).join(" · ") || "Khám phá phim";
+      }
+      addToGlobalMoviesList(result.movies);
+      renderMovieGrid(container, result.movies, emptyHtml, { paginate: false });
+      bar.innerHTML = "";
+      bar.style.display = "";
+      const addSelect = (key, title, choices, allLabel) => {
+        const label = document.createElement("label");
+        label.textContent = title + ": ";
+        const select = document.createElement("select");
+        select.dataset.filter = key;
+        if (allLabel) select.add(new Option(allLabel, ""));
+        choices.forEach(([value, text]) => select.add(new Option(text, value)));
+        if (selected[key] && !choices.some(([value]) => String(value) === String(selected[key]))) select.add(new Option(selected[key], selected[key]));
+        select.value = selected[key] || "";
+        select.onchange = () => { selected[key] = select.value; load(1); };
+        label.appendChild(select);
+        bar.appendChild(label);
+      };
+      addSelect("country", "Quốc gia", facets.countries.map(c => [c,c]), "Tất cả");
+      addSelect("genre", "Thể loại", facets.genres.map(g => [g,g]), "Tất cả");
+      addSelect("year", "Năm", result.years.map(y => [y.year, y.year + " (" + y.count + ")"]), "Tất cả");
+      addSelect("type", "Loại phim", [["series","Phim bộ"],["single","Phim lẻ"],["animation","Anime / Hoạt hình"],["tvshows","TV Show"]], "Tất cả");
+      addSelect("sort", "Sắp xếp", [["updated","Mới cập nhật"],["year","Năm mới nhất"],["title","Tên A–Z"]]);
+      const reset = document.createElement("button");
+      reset.textContent = "Xóa bộ lọc";
+      reset.onclick = () => { ["country","genre","year","type"].forEach(key => delete selected[key]); selected.sort = "updated"; load(1); };
+      const count = document.createElement("span");
+      count.className = "catalog-result-count";
+      count.setAttribute("aria-live", "polite");
+      count.textContent = result.totalItems + " phim";
+      bar.append(reset, count);
+      if (result.totalPages > 1) {
+        ensurePaginationStyle();
+        const pager = document.createElement("div");
+        pager.className = "movie-pagination";
+        container.insertAdjacentElement("afterend", pager);
+        container._pager = pager;
+        drawPager(pager, result.currentPage, result.totalPages, load);
+      }
+      if (scroll) container.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (err) {
+      if (container._catalogRequest !== token || token.request !== request) return;
+      if (container._pager) { container._pager.remove(); container._pager = null; }
+      container.innerHTML = "";
+      const message = document.createElement("p");
+      message.style.cssText = "color:#ddd;grid-column:1/-1";
+      message.textContent = err.message;
+      const retry = document.createElement("button");
+      retry.textContent = "Thử lại";
+      retry.onclick = () => load(page);
+      container.append(message, retry);
+    }
+  };
+  await load(Number(options.page)||1);
+}
 
-  // Đếm số phim theo từng năm
-  const counts = new Map();
-  (movies || []).forEach((m) => {
-    const y = Number(m.year);
-    if (y > 0) counts.set(y, (counts.get(y) || 0) + 1);
-  });
-
-  if (counts.size === 0) {
-    bar.style.display = "none";
-    bar.innerHTML = "";
-    renderMovieGrid(container, movies, emptyHtml);
+function showCatalog(options = {}) {
+  if (!document.getElementById("page-search")) {
+    window.location.href = "index.html?" + new URLSearchParams(options);
     return;
   }
-
-  const years = [...counts.keys()].sort((a, b) => b - a); // năm mới nhất lên đầu
-  bar.style.display = "";
-  bar.innerHTML = `
-    <label for="year-filter-select">Năm:</label>
-    <select id="year-filter-select">
-      <option value="">Tất cả năm (${movies.length})</option>
-      ${years.map((y) => `<option value="${y}">${y} (${counts.get(y)})</option>`).join("")}
-    </select>
-  `;
-  const select = bar.querySelector("select");
-  select.onchange = () => {
-    const y = Number(select.value);
-    const list = y ? movies.filter((m) => Number(m.year) === y) : movies;
-    renderMovieGrid(container, list, emptyHtml); // vẽ lại từ trang 1
-  };
-
-  renderMovieGrid(container, movies, emptyHtml);
+  if (typeof closeMobileMenu === "function") closeMobileMenu();
+  document.querySelectorAll(".page").forEach(page => page.classList.remove("active"));
+  document.getElementById("page-search").classList.add("active");
+  document.getElementById("search-keyword").textContent = "Khám phá phim";
+  return renderFilteredResults(document.getElementById("search-container"), options,
+    '<p style="grid-column:1/-1;color:#aaa">Không có phim phù hợp. Thử đổi bộ lọc nhé.</p>');
 }
 
 async function executeSearch() {
@@ -194,12 +251,11 @@ async function executeSearch() {
   if (!searchContainer) return;
   searchContainer.innerHTML = `<p style="color:#888; grid-column:1/-1;">Đang tìm kiếm...</p>`;
 
-  const movies = await searchMoviesAPI(query, 40);
-  addToGlobalMoviesList(movies);
+
 
   renderFilteredResults(
     searchContainer,
-    movies,
+    { q: query },
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
       <i class="fa-solid fa-magnifying-glass" style="font-size: 3rem; margin-bottom: 15px;"></i>
       <p>Không tìm thấy phim nào phù hợp với từ khóa "${escapeHtml(query)}".</p>
@@ -233,12 +289,11 @@ async function filterByGenre(genreName) {
   if (!container) return;
   container.innerHTML = `<p style="color:#888; grid-column:1/-1;">Đang tải...</p>`;
 
-  const movies = await fetchMovies({ genre: genreName, limit: 50 });
-  addToGlobalMoviesList(movies);
+
 
   renderFilteredResults(
     container,
-    movies,
+    { genre: genreName },
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
       <i class="fa-solid fa-film" style="font-size: 3rem; margin-bottom: 15px;"></i>
       <p>Hiện chưa có phim nào thuộc thể loại "${escapeHtml(genreName)}".</p>
@@ -272,12 +327,11 @@ async function filterByCountry(countryName) {
   if (!container) return;
   container.innerHTML = `<p style="color:#888; grid-column:1/-1;">Đang tải...</p>`;
 
-  const movies = await fetchMovies({ country: countryName, limit: 50 });
-  addToGlobalMoviesList(movies);
+
 
   renderFilteredResults(
     container,
-    movies,
+    { country: countryName },
     `<div style="grid-column: 1/-1; text-align: center; padding: 50px 0; color: #888;">
       <i class="fa-solid fa-earth-asia" style="font-size: 3rem; margin-bottom: 15px;"></i>
       <p>Hiện chưa có phim nào của quốc gia "${escapeHtml(countryName)}".</p>

@@ -1,0 +1,317 @@
+# Rà soát kho phim
+
+3697 phim; 0 lỗi; 313 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-da-bi-an
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chuyen-di-dang-nho
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — lai-la-oh-hae-young
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bien-nien-su-arthdal-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — huyen-thoai-aang-tiet-khi-su-cuoi-cung
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — song-bac-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tho-san-tien-thuong
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bts-su-tro-lai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bi-cuc-thai-lai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ong-kinh-doc-dao
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — truy-lung-sieu-trom
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ha-canh-noi-anh
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — giot-nuoc-mat-cua-quy-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — giot-nuoc-mat-cua-quy-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chim-vao-mat-em-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dota-dong-mau-rong-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — thanh-guom-tru-ta
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bong-hoa-ac-ma-hoa-cua-quy
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ban-be-2-di-san-vi-dai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gachiakuta
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-khong-ten
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-tu
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — mat-ma-henry
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-khi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — mat-danh-iris-ii
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tro-choi-bat-coc-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — da-nu
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dao-au-trung-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hiep-si-cuoi-cung
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — luat-su-vo-phap
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — mang-me-di-bo
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — may-hoa-anh-trang
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tay-anh-giu-mot-vi-sao
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — buoc-vao-tim-em
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — me-oi-bo-dau-roi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dau-tay-ngot-ngao-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — khat-vong-doi-doi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-4
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-5
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-6
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-7
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-8
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tim-kiem
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — anh-trai-phien-phuc-cua-toi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dung-quen-ke-thu
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — buoc-duong-cung-2025
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sieu-lon-okja
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tho-ren-huyen-thoai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — muon-kiep-nhan-duyen
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bao-thu-2026
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — play-me-buoi-dien-tap-cua-chung-ta
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — su-that
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — reversi-tro-lai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — no-le-quy-du
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — an-phat-dung-gia-ban-an-anh-hung
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tim-tinh-yeu-o-seoul
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sing-my-crush-truy-phong
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — toi-va-antifan-ket-hon
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ban-tri-ky
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — spark-thien-du-ky
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tan-so-la-benh-vien-sat-nhan-dai-loan
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tam-ve-van-menh
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-dinh-vo-thuat
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vua-cua-nhung-vi-vua-vua-cua-cac-vua
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — am-hon-nhap-xac
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — phi-vu-hat-de
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — phi-vu-hat-de-2-cong-vien-dai-chien
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — su-troi-day-cua-khien-hiep-si-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — that-hinh-dai-toi-moi-thu-edinburgh
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cong-chua-thien-nga-noi-gian-hoang-gia
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cam-tinh-vien
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tho-san-quai-vat-ac-mong-cua-soi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tho-san-quai-vat-nhan-ngu-duoi-bien-sau
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — kinh-thien-dai-nghich-chuyen
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dao-quat-vuong-vua-trom-mo
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — toa-thap-than-linh-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — toa-thap-than-linh-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dem-nhiet-doi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — mat-vu-nam-vung-in-da-house-3-in-korea
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vi-hon-the-khe-uoc-cua-cong-tuoc
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — yaksha-nhiem-vu-tan-khoc
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chuyen-xe-tam-tinh-phan-1
+- **warning / missing-year**: Chưa có năm phát hành. — tham-tu-lung-danh-conan-22-ke-han-phap-zero
+- **warning / missing-year**: Chưa có năm phát hành. — phim/sat-thu-ve-vuon
+- **warning / missing-part**: Có nhóm nhưng thiếu tên phần. — luc-do-toi-chuyen-sinh-thanh-slime-nuoc-mat-dai-duong
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — everest-nguoi-tuyet-be-nho
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — afro-samurai-resurrection
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chang-the-ly-giai-noi-aharensan-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dau-than-co
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hat-tao-nguoi-may-noi-day
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bo-ba-dien-sau
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sieu-nhi-astro
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-doi-ninja
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — batman-ninja-doi-dau-lien-minh-yakuza
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bee-va-puppycat
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — black-lagoon-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tieu-nhan-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tieu-nhan-phan-2
+- **warning / missing-year**: Chưa có năm phát hành. — bleach
+- **warning / missing-year**: Chưa có năm phát hành. — bleach-movie-1-memories-of-nobody
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tay-rock-bocchi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — no-le-cua-ma-do-tinh-binh
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuoc-song-thanh-thoi-tai-di-gioi-cua-cuu-ung-vien-dung-gia-da-gian-lan-tu-cap-do-hai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — lo-lem-ii-giac-mo-thanh-su-that
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chao-mung-den-voi-lop-hoc-de-cao-thuc-luc-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chao-mung-den-voi-lop-hoc-de-cao-thuc-luc-phan-4
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — tho-san-tien-thuong-canh-cong-thien-dang
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dung-si-dante
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — digimon-tamers-tran-chien-cua-cac-mao-hiem-gia
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nu-hiep-si-diet-rong
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vua-dau-bep-soma-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gui-den-ban-hien-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hoa-giai-loi-nguyen-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hoa-giai-loi-nguyen-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hoa-giai-loi-nguyen-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vo-boc-ma-1995
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — meo-ma-be-tha
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vo-boc-ma-sac_2045-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gleipnir
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — co-nang-bat-bai-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — co-nang-bat-bai-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cong-cuoc-tai-thiet-vuong-quoc-cua-anh-hung-chu-nghia-hien-thuc
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dao-cua-nhung-chu-cho
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — leviathan-2025
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — co-thanh-trong-guong
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — metallic-rouge
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-dinh-nha-yamada
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ninja-kamui
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nippon-sangoku
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuoc-thap-tu-chinh-cuoi-cung-cua-chung-ta-hay-su-troi-day-cua-mot-the-gioi-moi-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuoc-thap-tu-chinh-cuoi-cung-cua-chung-ta-hay-su-troi-day-cua-mot-the-gioi-moi-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ouran-high-school-host-club
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — canh-hoa-luan-hoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — pluto
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chang-duong-cua-pon
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vung-dat-quy-du-no-mau
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cu-ke-chien-ky
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sonic-prime-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sonic-prime-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sonic-prime-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — spriggan
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chien-tranh-giua-cac-vi-sao-tam-nhin-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chien-tranh-giua-cac-vi-sao-tam-nhin-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chien-tranh-giua-cac-vi-sao-tam-nhin-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chien-binh-tau-khong-gian-cuoc-xam-lang-chien-doi-thien-ha-xam-luoc
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — sturgill-simpson-gioi-thieu-sound-fury
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — biet-doi-sieu-gian
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — co-dau-phap-su-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — co-dau-phap-su-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — vi-vua-manh-nhat-lam-gi-o-kiep-thu-hai-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-1-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-2-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-3-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-4-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-5-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nhat-nhan-chi-ha-phan-6-nguoi-tren-van-nguoi
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — rua-do
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — the-gioi-bi-mat-cua-arrietty
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — that-hinh-dai-toi-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — bay-hiep-si-cua-vuong-quoc-marronnier
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — phim-super-mario-thien-ha
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — hau-phuong-manh-nhat-the-gioi-nha-khai-pha-tan-binh-cua-vuong-quoc-me-cung
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — kishibe-rohan-da-noi-vay
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — transformers-chien-tranh-cybertron-trai-dat-troi-day
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — transformers-chien-tranh-cybertron-cuoc-vay-ham
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — transformers-chien-tranh-cybertron-vuong-quoc
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ultraman-troi-day
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ultraman-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ultraman-phan-3
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — dai-chien-the-gioi-goliath
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — thuong-sac-truyen-thua
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — your-forma
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuaro-trung-hoc-phan-5
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — batman-aztec-de-che-huyet-chien
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-doi-bat-dau
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cau-chuyen-lego-batman
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — phim/sat-thu-ve-vuon, sat-thu-ve-vuon
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — happy-new-year-chuc-mung-nam-moi, chuc-mung-nam-moi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nu-than-chien-tranh, athena-nu-than-chien-tranh
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nhan-chung-mu, toi-ac-vo-hinh-cong-ly-mu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bay-tinh-yeu, bay-tinh-yeu-ban-dien-anh
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ke-san-mo, lien-minh-dao-mo
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cho-den-thoi-tan-the-2025, cho-den-thoi-tan-the
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — thu-toi, hung-thu-vo-hinh
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — 10-ngay-de-song, cuoc-doi-thu-ba
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — dear-m, gui-cau-tinh-dau-cua-toi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — endless-rain, neu-nhu-sau-con-mua
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — dien-nao-ma-oi, bat-ma-pha-an
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — helpless, luot-xem-dam-mau
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — xa-hoi-thuong-luu, khat-vong-thuong-luu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — biet-doi-hitrun-biet-doi-toc-do, biet-doi-hitandrun
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mat-vu-kingsman-2020, sat-thu-vo-cung-cuc
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — co-huong, mat-toi-cua-binh-yen
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — con-tin, con-tin-ngoi-sao-mat-tich
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — hwayi-cau-be-quai-vat, hwayi-sat-nhan-trang
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — vuong-trieu-xac-song-phan-1, vuong-gia-thien-ha-phan-1
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — vuong-trieu-xac-song-phan-2, vuong-gia-thien-ha-phan-2
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — kingmaker, vua-bau-cu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ky-nguyen-tan-bao, ac-quy-nghin-nam
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cuoc-song-2018, doi-canh-sat
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — that-lac, cuoc-doi-day-song
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — doi-ban-hoc-yeu, doi-ban-hoc-yeu-phim-bo
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ong-trum-2016, master
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nu-hoang-thang-5, nu-hoang-thang-nam
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — trang-sang-mua-dong, yoon-hee-cua-me
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mouse-ke-san-nguoi-ban-dien-anh, ke-san-nguoi, mouse-ke-san-nguoi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — anh-toi-vo-so-toi, anh-trai-phien-phuc-cua-toi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — chi-gai-bao-thu, vach-toi-2025
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ma-nu-dang-yeu, oi-co-ma
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mot-lan-nua, them-mot-lan-nua, tro-ve-nam-1997
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — dac-vu-bong-ma, phantom
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — tro-choi-kim-tu-thap, tro-choi-kim-tu-thap-ban-anime
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — thu-thach-than-tuong, danh-ca-dai-chien
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ma-nu-chung-cu, mui-huong-cua-ma-nu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — phuc-vu-nhan-dan, cam-do
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ho-sut, ho-sut-tu-than
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — tre-trau-khoi-nghiep, khoi-nghiep
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ve-dep-tam-hon, ve-dep-tiem-an
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ho-so-ba-linh, ho-so-berlin
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — thoa-thuan-voi-ac-quy, thoa-thuan-cua-quy
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nuoc-co-sinh-tu, van-co-sinh-tu-2-phan-no
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-vo-danh-tinh, sat-thu-vo-danh
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — the-pirates, hai-tac
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — gui-den-ngoi-sao-cua-anh-2021, gui-den-ngoi-sao-cua-anh
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ve-dep-dich-thuc, ve-dep-dich-thuc-2024
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mo-khoa-sep-tong, giai-cuu-ong-chu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — khi-nang-say-giac, su-that-sau-giac-ngu
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — tham-tu-lung-danh-conan-22-ke-han-phap-zero, tham-tu-lung-danh-conan-22-ke-hanh-phap-zero
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — hoi-phap-su-phan-1, fairy-tail-nu-te-cua-phuong-hoang
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — hoc-vien-sieu-anh-hung-nguoi-hung-troi-day, hoc-vien-anh-hung-the-ky-moi-cua-anh-hung
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — phim/sat-thu-ve-vuon, sat-thu-ve-vuon
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-ro-danh-cho-moi-nguoi, niem-dam-me-bong-ro
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1, tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — lam-nong-la-gan-chu-heo, butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — doraemon-chu-khung-long-cua-nobita-1980, doraemon-chu-khung-long-cua-nobita
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989, doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bay-vien-ngoc-rong-gt, 7-vien-ngoc-rong-gt
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — dau-an-rong-thieng-ban-1991, dau-an-rong-thieng-ban-2020
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — horimiya, horisan-va-miyamurakun
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — goc-khuat-cua-the-gioi-2016, goc-khuat-cua-the-gioi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mo-ra-mot-the-gioi-tuyet-voi-phan-3, phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cac-co-gai-cua-rokudo, gai-hu-cua-rokudo
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cac-cau-song-the-nao, thieu-nien-va-chim-diec
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-den-trong-tim-phan-1, boku-no-kokoro-no-yabai-yatsu-phan-1
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-den-trong-tim-phan-2, boku-no-kokoro-no-yabai-yatsu-phan-2
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac, sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — co-gai-co-khi, thieu-nu-punk-co-gai-co-khi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — khong-minh-thich-tiec-tung-ban-hoat-hinh, khong-minh-thich-tiec-tung
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — kaguyasama-muon-to-tinh-tinh-chien-cang-nao-cua-cac-thien-tai2, bi-duoi-khoi-to-doi-anh-hung-toi-nham-den-mot-cuoc-song-nhan-nha-o-vung-bien-cuong-phan-2
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — batman-tro-dua-chet-choc, nguoi-doi-sat-thu-joke
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-va-ninja-rua, lien-minh-nguoi-doi-va-ninja-rua
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-ngay-tan-cua-gotham, nguoi-doi-gotham-diet-vong
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ky-si-bong-dem-tro-lai-phan-2, nguoi-doi-ky-si-bong-dem-tro-lai-phan-2
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-lego-van-de-gia-dinh, lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Athena Goddess Of War. — nu-than-chien-tranh, athena-nu-than-chien-tranh
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Blind. — nhan-chung-mu, toi-ac-vo-hinh-cong-ly-mu
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Cheese in the Trap. — bay-tinh-yeu, bay-tinh-yeu-ban-dien-anh
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Collectors. — ke-san-mo, lien-minh-dao-mo
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Concrete. — cho-den-thoi-tan-the-2025, cho-den-thoi-tan-the
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Confession. — thu-toi, hung-thu-vo-hinh
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Countdown. — 10-ngay-de-song, cuoc-doi-thu-ba
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Dear. — dear-m, gui-cau-tinh-dau-cua-toi
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Endless Rain. — endless-rain, neu-nhu-sau-con-mua
+- **warning / duplicate-part**: Trùng tên phần trong nhóm From. — dien-nao-ma-oi, bat-ma-pha-an
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Helpless. — helpless, luot-xem-dam-mau
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Hitman. — mat-vu-kingsman-2020, sat-thu-vo-cung-cuc
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Hometown. — co-huong, mat-toi-cua-binh-yen
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Hostage Missing Celebrity. — con-tin, con-tin-ngoi-sao-mat-tich
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Hwayi A Monster Boy. — hwayi-cau-be-quai-vat, hwayi-sat-nhan-trang
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Kingdom. — vuong-trieu-xac-song-phan-1, vuong-gia-thien-ha-phan-1
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Kingdom. — vuong-trieu-xac-song-phan-2, vuong-gia-thien-ha-phan-2
+- **warning / duplicate-part**: Trùng tên phần trong nhóm KingMaker. — kingmaker, vua-bau-cu
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Kundo Age Of The Rampant. — ky-nguyen-tan-bao, ac-quy-nghin-nam
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Live. — cuoc-song-2018, doi-canh-sat
+- **warning / duplicate-part**: Trùng tên phần trong nhóm LOST. — that-lac, cuoc-doi-day-song
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Love (ft. Marriage and Divorce). — doi-ban-hoc-yeu, doi-ban-hoc-yeu-phim-bo
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Master. — ong-trum-2016, master
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Moonlit Winter. — trang-sang-mua-dong, yoon-hee-cua-me
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Mouse. — mouse-ke-san-nguoi-ban-dien-anh, ke-san-nguoi, mouse-ke-san-nguoi
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Once. — mot-lan-nua, them-mot-lan-nua, tro-ve-nam-1997
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Phantom. — dac-vu-bong-ma, phantom
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Pyramid Game. — tro-choi-kim-tu-thap, tro-choi-kim-tu-thap-ban-anime
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Running Man. — thu-thach-than-tuong, danh-ca-dai-chien
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Scent Of A Ghost. — ma-nu-chung-cu, mui-huong-cua-ma-nu
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Serve The People. — phuc-vu-nhan-dan, cam-do
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Sinkhole. — ho-sut, ho-sut-tu-than
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Start Up. — tre-trau-khoi-nghiep, khoi-nghiep
+- **warning / duplicate-part**: Trùng tên phần trong nhóm True. — ve-dep-dich-thuc, ve-dep-dich-thuc-2024
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Unlock My Boss. — mo-khoa-sep-tong, giai-cuu-ong-chu
+- **warning / duplicate-part**: Trùng tên phần trong nhóm While You Were Sleeping. — khi-nang-say-giac, su-that-sau-giac-ngu
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Sword Art Online. — dao-kiem-than-vuc-ranh-gioi-hu-ao-ngoai-truyen-2, sword-art-online-progressive-khuc-scherzo-duoi-hoang-hon-am-dam
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Ahiru No Sora. — bong-ro-danh-cho-moi-nguoi, niem-dam-me-bong-ro
+- **warning / duplicate-part**: Trùng tên phần trong nhóm As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World. — chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1, tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — batman-tro-dua-chet-choc, nguoi-doi-sat-thu-joke
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — nguoi-doi-va-ninja-rua, lien-minh-nguoi-doi-va-ninja-rua
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — nguoi-doi-ngay-tan-cua-gotham, nguoi-doi-gotham-diet-vong
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Butareba The Story of a Man Turned Into a Pig. — lam-nong-la-gan-chu-heo, butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Doraemon. — doraemon-chu-khung-long-cua-nobita-1980, doraemon-chu-khung-long-cua-nobita
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Doraemon. — doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989, doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Horimiya. — horimiya, horisan-va-miyamurakun
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Rokudo s Bad Girls. — cac-co-gai-cua-rokudo, gai-hu-cua-rokudo
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Sasaki and Peeps. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
+- **warning / duplicate-part**: Trùng tên phần trong nhóm VIRGIN PUNK Clockwork Girl. — co-gai-co-khi, thieu-nu-punk-co-gai-co-khi
+- **warning / duplicate-part**: Trùng tên phần trong nhóm ラグナクリムゾン. — ragna-crimson, sat-long-nhan
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman: The Dark Knight Returns,. — ky-si-bong-dem-tro-lai-phan-2, nguoi-doi-ky-si-bong-dem-tro-lai-phan-2
+- **warning / duplicate-part**: Trùng tên phần trong nhóm Lego. — nguoi-doi-lego-van-de-gia-dinh, lego-dc-nguoi-doi-va-van-de-dai-gia-dinh

@@ -65,7 +65,8 @@ argv.forEach((a) => {
   } else words.push(a);
 });
 const keyword = words.join(" ").trim();
-const DATA_FILE = path.resolve(flags.file || path.join(__dirname, "data.js"));
+const DATA_FILE = path.resolve(flags.file || path.join(__dirname, "../Backend/catalog-source.js"));
+require("./catalog-auto-export").autoExport(DATA_FILE);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -168,6 +169,8 @@ async function buildBlock(detail) {
   const lines = [
     `    title: ${q(title)},`,
     `    slug: ${q(m.slug)},`,
+    ...(countries[0] ? [`    country: ${q(countries[0])},`] : []),
+    ...(m.type ? [`    type: ${q(m.type)},`] : []),
     ...(Number(m.year) > 0 ? [`    year: ${Number(m.year)},`] : []),
     `    episodes: ${epCount || Number(m.episode_total) || 1},`,
     `    genres: ${q(genres)},`,
@@ -374,7 +377,7 @@ async function removeMode() {
     `\n✔ Đã xóa ${targets.length} phim (bản trước khi xóa: ${path.basename(DATA_FILE)}.bak)`,
   );
 
-  const sorter = path.join(path.dirname(DATA_FILE), "sort-movies.js");
+  const sorter = path.join(__dirname, "sort-movies.js");
   if (fs.existsSync(sorter)) {
     try {
       console.log(
@@ -780,7 +783,7 @@ async function fillYearMode() {
 
   // 5) Tự xếp lại bằng sort-movies.js nếu có
   const yearsBefore = countYears();
-  const sorter = path.join(path.dirname(DATA_FILE), "sort-movies.js");
+  const sorter = path.join(__dirname, "sort-movies.js");
   if (fs.existsSync(sorter)) {
     try {
       console.log(

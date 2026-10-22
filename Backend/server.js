@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const cors = require("cors");
 
 // Đọc file .env ở thư mục Backend
-require("dotenv").config();
+require("dotenv").config({ path: require("path").join(__dirname, ".env") });
 
 const app = express();
 app.use(express.json());
@@ -17,7 +17,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "bi_mat_khong_the_tiet_lo_123";
 // Kết nối CSDL - đọc từ .env để chạy được cả ở local (XAMPP) lẫn trên cloud
 // (Railway/Render...). Nếu không có biến môi trường nào, mặc định dùng cấu
 // hình XAMPP local như cũ.
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: process.env.DB_HOST || "localhost",
   port: process.env.DB_PORT || 3306,
   user: process.env.DB_USER || "root",
@@ -26,19 +26,21 @@ const db = mysql.createConnection({
 });
 
 // Không để lỗi kết nối MySQL làm sập cả server (các route TMDB không cần DB)
-db.connect((err) => {
+db.getConnection((err, connection) => {
   if (err) {
     console.warn(
       "⚠️  Không kết nối được MySQL (các API đăng nhập/watchlist sẽ lỗi, nhưng API TMDB vẫn chạy bình thường):",
       err.code,
     );
   } else {
+    connection.release();
     console.log("✅ Đã kết nối MySQL thành công.");
   }
 });
 db.on("error", (err) => {
   console.warn("⚠️  Lỗi kết nối MySQL:", err.code);
 });
+require("./catalog").registerCatalog(app, db);
 
 // Middleware xác thực JWT Token
 const authenticateToken = (req, res, next) => {

@@ -4,7 +4,24 @@
 // Hàm này được gọi từ các onclick trong index.html (Trang chủ, Danh sách
 // của tôi, Chi tiết, Xem phim...). Trước đây bị thiếu nên bấm không có
 // phản ứng gì.
-function switchPage(pageName) {
+// Retry a transient image failure once, then use the alternate image and a local placeholder.
+// Clear the error handler at the last step so a missing placeholder cannot loop forever.
+function handleMovieImageError(img) {
+  const attempt = Number(img.dataset.imageAttempt || 0);
+  img.dataset.imageAttempt = String(attempt + 1);
+  if (attempt === 0) {
+    const original = img.getAttribute("src");
+    setTimeout(() => { img.src = original; }, 400);
+  } else if (attempt === 1 && img.dataset.fallback && img.dataset.fallback !== img.getAttribute("src")) {
+    img.src = img.dataset.fallback;
+  } else {
+    img.onerror = null;
+    img.src = "Img/poster-placeholder.svg";
+  }
+}
+
+function switchPage(pageName, {updateUrl=true}={}) {
+  closeMobileMenu();
   // Đang ở detail.html / watch.html (không có các .page) -> quay về index.html
   if (!document.getElementById("page-home")) {
     window.location.href =
@@ -19,6 +36,10 @@ function switchPage(pageName) {
   const targetPage = document.getElementById(`page-${pageName}`);
   if (targetPage) {
     targetPage.classList.add("active");
+    if(updateUrl&&typeof CatalogState!=="undefined"){
+      const target=pageName==="home"?"index.html":"index.html?view="+encodeURIComponent(pageName);
+      if("index.html"+window.location.search!==target)window.history.pushState({},"",target);
+    }
   } else {
     console.warn(`switchPage: không tìm thấy #page-${pageName}`);
   }
@@ -59,6 +80,12 @@ function formatViews(n, { compact = false } = {}) {
   return v.toLocaleString("en-US");
 }
 
+function closeMobileMenu() {
+  document.getElementById("mobile-sidebar")?.classList.remove("mobile-open");
+  document.getElementById("sidebar-overlay")?.classList.remove("active");
+  document.getElementById("mobile-menu-btn")?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("menu-open");
+}
 // Menu mobile (nút ☰ + lớp phủ). Chạy chung cho index/detail/watch.
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("mobile-menu-btn");
@@ -66,13 +93,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("sidebar-overlay");
 
   if (menuBtn && sidebar && overlay) {
+    menuBtn.textContent = "☰";
+    menuBtn.setAttribute("role", "button");
+    menuBtn.setAttribute("tabindex", "0");
+    menuBtn.setAttribute("aria-label", "Mở menu");
+    menuBtn.setAttribute("aria-controls", "mobile-sidebar");
+    menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("mobile-open");
-      overlay.classList.toggle("active");
+      const open = sidebar.classList.toggle("mobile-open");
+      overlay.classList.toggle("active", open);
+      document.body.classList.toggle("menu-open", open);
+      menuBtn.setAttribute("aria-expanded", String(open));
     });
-    overlay.addEventListener("click", () => {
-      sidebar.classList.remove("mobile-open");
-      overlay.classList.remove("active");
+    menuBtn.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); menuBtn.click(); }
+    });
+    overlay.addEventListener("click", closeMobileMenu);
+    document.addEventListener("keydown", event => { if (event.key === "Escape") closeMobileMenu(); });
+    sidebar.addEventListener("click", event => {
+      if (event.target.closest(".genre-grid span") || event.target.closest("li[onclick]")) closeMobileMenu();
+    });
+    sidebar.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+      toggle.setAttribute("role", "button");
+      toggle.setAttribute("tabindex", "0");
+      toggle.setAttribute("aria-expanded", "false");
+      const activate = () => {
+        const parent = toggle.closest(".dropdown");
+        const open = parent.classList.toggle("active");
+        toggle.setAttribute("aria-expanded", String(open));
+      };
+      toggle.addEventListener("click", activate);
+      toggle.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); activate(); } });
     });
   }
 });

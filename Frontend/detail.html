@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title id="page-title">Chi tiết phim</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=12" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -101,6 +101,7 @@
 
     <div class="fd-wrap">
       <!-- Breadcrumb -->
+      <a id="catalog-back-link" class="catalog-back-link" href="index.html" hidden>← Quay lại danh sách</a>
       <div class="fd-breadcrumb" id="fd-breadcrumb">
         <a href="index.html">Trang chủ</a>
       </div>
@@ -308,13 +309,17 @@
 
     <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
-    <script src="./data.js?v=4"></script>
-    <script src="./cast-data.js?v=1"></script>
-    <script src="./api.js?v=5"></script>
-    <script src="./utils.js?v=4"></script>
+    <script src="./data.js?v=9"></script>
+    <script src="./country-utils.js?v=12"></script>
+    <script src="./genre-utils.js?v=12"></script>
+    <script src="./catalog-state.js?v=1"></script>
+    <script src="./catalog-format.js?v=1"></script>
+    <script src="./catalog-navigation.js?v=1"></script>
+    <script src="./api.js?v=12"></script>
+    <script src="./utils.js?v=12"></script>
     <script src="./wishlist.js?v=4"></script>
-    <script src="./render.js?v=4"></script>
-    <script src="./search.js?v=4"></script>
+    <script src="./render.js?v=12"></script>
+    <script src="./search.js?v=12"></script>
     <script src="./tmdb.js?v=4"></script>
     <script src="./tv-nav.js?v=4"></script>
 
@@ -348,6 +353,7 @@
           poster,
           episodes,
         });
+        rememberCatalogReturn(watchParams);
         window.location.href = `watch.html?${watchParams.toString()}`;
       }
 
@@ -426,6 +432,7 @@
               poster,
               episodes: episodeCount,
             });
+            rememberCatalogReturn(watchParams);
             window.location.href = `watch.html?${watchParams.toString()}`;
           };
           grid.appendChild(btn);
@@ -474,10 +481,7 @@
 
         // 1. Phần phim (nếu cùng series) - fetch riêng theo movie_group
         if (currentMovie && currentMovie.group) {
-          const parts = await fetchMovies({
-            group: currentMovie.group,
-            limit: 10,
-          });
+          const parts = await fetchMovieParts(currentMovie.group);
           addToGlobalMoviesList(parts);
           renderMovieParts(currentMovie.slug, currentMovie.group);
         }

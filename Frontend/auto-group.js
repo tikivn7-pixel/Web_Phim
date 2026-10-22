@@ -27,8 +27,9 @@ const path = require("path");
 
 const args = process.argv.slice(2);
 const FILE =
-  args.find((a) => !a.startsWith("--")) || path.join("Frontend", "data.js");
+  args.find((a) => !a.startsWith("--")) || path.join(__dirname, "../Backend/catalog-source.js");
 const WRITE = args.includes("--write");
+require("./catalog-auto-export").autoExport(FILE);
 const DESC_ALL = args.includes("--desc-all");
 const STRICT = args.includes("--strict");
 

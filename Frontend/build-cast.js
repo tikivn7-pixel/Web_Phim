@@ -4,6 +4,7 @@
 // Cần Node 18+ (có sẵn fetch). Chạy lại khi thêm phim mới vào data.js.
 const fs = require("fs");
 const vm = require("vm");
+const CAST_FILE = require("path").join(__dirname, "cast-data.js");
 
 const FORCE_ALL = process.argv.includes("--all");
 const CONCURRENCY = 3;
@@ -13,7 +14,7 @@ const RETRIES = 3;
 const ctx = { window: {}, console };
 vm.createContext(ctx);
 vm.runInContext(
-  fs.readFileSync("data.js", "utf8") +
+  fs.readFileSync(require("path").join(__dirname, "../Backend/catalog-source.js"), "utf8") +
     "\n;this.__list = typeof fallbackMoviesList !== 'undefined' ? fallbackMoviesList : null;",
   ctx,
 );
@@ -26,11 +27,11 @@ const slugs = [...new Set(movies.map((m) => m.slug).filter(Boolean))];
 
 // 2. Giữ lại kết quả cũ trong cast-data.js (để lần sau chỉ bù phần thiếu)
 let result = {};
-if (!FORCE_ALL && fs.existsSync("cast-data.js")) {
+if (!FORCE_ALL && fs.existsSync(CAST_FILE)) {
   try {
     const old = { window: {} };
     vm.createContext(old);
-    vm.runInContext(fs.readFileSync("cast-data.js", "utf8"), old);
+    vm.runInContext(fs.readFileSync(CAST_FILE, "utf8"), old);
     result = old.window.movieCastIndex || {};
   } catch (e) {
     console.warn("Không đọc được cast-data.js cũ, làm lại từ đầu");
@@ -101,7 +102,7 @@ async function main() {
   await Promise.all(workers);
 
   fs.writeFileSync(
-    "cast-data.js",
+    CAST_FILE,
     "// File tự sinh bởi build-cast.js\nwindow.movieCastIndex = " +
       JSON.stringify(result, null, 1) +
       ";\n",
@@ -124,5 +125,5 @@ async function main() {
     );
   }
 }
-main();
+main().then(() => require("./build-catalog").buildCatalog()).catch(err => { console.error(err.message); process.exitCode = 1; });
 //node build-cast.js --all

@@ -5,7 +5,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const file = path.resolve(process.argv[2] || path.join(__dirname, "data.js"));
+const file = path.resolve(process.argv[2] || path.join(__dirname, "../Backend/catalog-source.js"));
+require("./catalog-auto-export").autoExport(file);
 const src = fs.readFileSync(file, "utf8");
 
 const MARKER = "const fallbackMoviesList = [";

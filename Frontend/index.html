@@ -6,7 +6,7 @@
     <title>LauPhim - Xem Phim Online</title>
 
     <!-- Sử dụng đường dẫn tương đối (./) để tương thích tốt với cả Live Server và GitHub Pages -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css?v=12" />
 
     <!-- FontAwesome Icons -->
     <link
@@ -156,6 +156,12 @@
       </div>
 
       <!-- MỤC TIẾP TỤC XEM (CONTINUE WATCHING) -->
+      <div class="catalog-shortcuts" aria-label="Khám phá phim">
+        <button type="button" onclick="showCatalog()">Tất cả phim</button>
+        <button type="button" onclick="showCatalog({type:'series'})">Phim bộ</button>
+        <button type="button" onclick="showCatalog({type:'single'})">Phim lẻ</button>
+        <button type="button" onclick="showCatalog({type:'animation'})">Anime / Hoạt hình</button>
+      </div>
       <div
         class="slider-section"
         id="continue-watching-section"
@@ -170,6 +176,7 @@
       <!-- SLIDER PHIM MỚI -->
       <div class="slider-section">
         <h2>Phim Mới Cập Nhật</h2>
+        <p id="home-updates-note" class="catalog-note">Phim chưa có mốc cập nhật được xếp theo năm phát hành.</p>
         <button class="slider-btn prev-btn">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
@@ -349,18 +356,22 @@
     <!-- SCRIPT (Sử dụng đường dẫn tương đối chuẩn xác) -->
     <script src="./Episodes.js"></script>
     <!-- Thứ tự nạp RẤT QUAN TRỌNG: data -> api -> utils -> các module -> init -> tv-nav -->
-    <script src="./data.js?v=4"></script>
-    <script src="./cast-data.js?v=1"></script>
-    <script src="./api.js?v=5"></script>
-    <script src="./utils.js?v=4"></script>
+    <script src="./data.js?v=9"></script>
+    <script src="./country-utils.js?v=12"></script>
+    <script src="./genre-utils.js?v=12"></script>
+    <script src="./catalog-state.js?v=1"></script>
+    <script src="./catalog-format.js?v=1"></script>
+    <script src="./catalog-navigation.js?v=1"></script>
+    <script src="./api.js?v=12"></script>
+    <script src="./utils.js?v=12"></script>
     <script src="./auth.js?v=1"></script>
     <script src="./wishlist.js?v=4"></script>
     <script src="./hero.js?v=4"></script>
-    <script src="./continue-watching.js?v=4"></script>
-    <script src="./render.js?v=4"></script>
-    <script src="./search.js?v=4"></script>
+    <script src="./continue-watching.js?v=9"></script>
+    <script src="./render.js?v=12"></script>
+    <script src="./search.js?v=12"></script>
     <script src="./tmdb.js?v=4"></script>
-    <script src="./init.js?v=4"></script>
+    <script src="./init.js?v=12"></script>
     <script src="./tv-nav.js?v=4"></script>
   </body>
 </html>

@@ -14,8 +14,9 @@
 const fs = require("fs");
 
 const args = process.argv.slice(2);
-const FILE = args.find((a) => !a.startsWith("--")) || "Frontend/data.js";
+const FILE = args.find((a) => !a.startsWith("--")) || require("path").join(__dirname, "../Backend/catalog-source.js");
 const WRITE = args.includes("--write");
+require("./catalog-auto-export").autoExport(FILE);
 
 const strip = (s) =>
   s
