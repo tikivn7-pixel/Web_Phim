@@ -1,16 +1,38 @@
-<!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản lý phim — LauPhim</title><link rel="stylesheet" href="manage.css?v=1"></head>
-<body><header><a href="index.html">← Về website</a><h1>Quản lý phim</h1><p>Chỉnh sửa và xem trước trên trình duyệt. Bản nháp chỉ nằm trên thiết bị này; website chỉ đổi sau khi bạn xuất và cập nhật dữ liệu.</p></header>
-<div class="actions"><button id="add-movie">Thêm phim</button><button id="export-catalog">Xuất JSON để cập nhật</button><label class="file-button">Nhập JSON<input id="import-catalog" type="file" accept=".json,application/json"></label><button id="reset-draft">Bỏ bản nháp</button><button id="export-audit">Tải báo cáo rà soát</button><button id="export-playback">Tải báo lỗi phát</button></div>
+﻿<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Quản lý phim — LauPhim</title><link rel="stylesheet" href="manage.css?v=20261023d"></head>
+<body>
+<header><a href="index.html">← Về website</a><h1>Quản lý kho phim</h1><p>Chỉnh sửa thông tin và liên kết từng phim vào nhóm bằng slug. Bản nháp lưu trên thiết bị này; xuất JSON rồi nhập vào dự án để cập nhật website.</p></header>
+<nav class="manage-tabs" aria-label="Khu vực quản lý"><button id="tab-catalog" aria-pressed="true" aria-controls="catalog-panel">Thông tin phim</button><button id="tab-relations" aria-pressed="false" aria-controls="relations-panel">Nhóm &amp; các phần phim</button></nav>
+<div id="catalog-panel">
+<div class="actions"><button id="add-movie">Thêm phim</button><button id="export-catalog">Xuất JSON để cập nhật</button><label class="file-button">Nhập JSON<input id="import-catalog" type="file" accept=".json,application/json"></label><button id="reset-draft">Bỏ bản nháp phim</button><button id="export-audit">Tải báo cáo rà soát</button><button id="export-playback">Tải báo lỗi phát</button></div>
 <p id="manage-status" role="status">Đang tải kho phim...</p>
-<details><summary>Cách cập nhật website</summary><ol><li>Lưu các thay đổi vào bản nháp rồi bấm <b>Xuất JSON để cập nhật</b>.</li><li>Tại thư mục dự án, chạy <code>npm run catalog:import -- "đường-dẫn/catalog-import.json"</code>. Lệnh giữ bản sao nguồn cũ và xuất các file dữ liệu mới.</li><li>Đăng lại thư mục <code>Frontend/data</code> và những ảnh mới lên hosting. Không cần bật backend khi xem.</li></ol></details>
+<details><summary>Cách cập nhật thông tin phim</summary><ol><li>Lưu các thay đổi vào bản nháp rồi bấm <b>Xuất JSON để cập nhật</b>.</li><li>Tại thư mục dự án, chạy <code>npm run catalog:import -- "đường-dẫn/catalog-import.json"</code>.</li><li>Đăng lại thư mục <code>Frontend/data</code> và những ảnh mới lên hosting. Không cần bật backend khi xem.</li></ol></details>
 <main><section class="movie-list"><h2>Danh sách <span id="manage-count"></span></h2><label>Tìm tên hoặc slug<input id="manage-search" type="search" placeholder="Nhập tên phim..."></label><div id="manage-list"></div><div class="actions"><button id="list-prev">Trang trước</button><span id="list-page"></span><button id="list-next">Trang sau</button></div></section>
 <section><h2 id="editor-heading">Thông tin phim</h2><form id="movie-form"><div class="fields">
-<label>Tên phim<input name="title" required></label><label>Slug<input name="slug" required placeholder="ten-phim"></label>
+<label>Tên phim<input name="title" required maxlength="500"></label><label>Slug<input name="slug" required placeholder="ten-phim"></label>
 <label>Slug nguồn phát (nếu khác)<input name="apiSlug"></label><label>Năm<input name="year" type="number" min="1888" max="2100"></label>
 <label>Số tập<input name="episodes" type="number" min="1" step="1" required></label><label>Quốc gia chính<select name="country" required></select></label>
 <label>Loại phim<select name="type"><option value="series">Phim bộ</option><option value="single">Phim lẻ</option><option value="animation">Anime / Hoạt hình</option><option value="tvshows">TV Show</option></select></label><label>Thể loại (ngăn bằng dấu phẩy)<input name="genres"></label>
-<label>Poster<input name="poster" required></label><label>Ảnh nền<input name="banner"></label><label>Nhóm phim<input name="group"></label><label>Tên phần<input name="partName"></label><label>Diễn viên<input name="cast"></label><label>Đạo diễn<input name="director"></label>
-</div><label>Mô tả<textarea name="desc" rows="5"></textarea></label><button type="submit">Lưu bản nháp</button></form><article class="preview"><img id="poster-preview" src="Img/poster-placeholder.svg" alt="Xem trước poster"><div><h3 id="preview-title">Xem trước</h3><p id="preview-meta"></p><p id="preview-desc"></p></div></article></section></main>
+<label>Poster<input name="poster" required></label><label>Ảnh nền<input name="banner"></label><label>Nhóm phim<input name="group" readonly></label><label>Tên phần<input name="partName" readonly></label><label>Diễn viên<input name="cast"></label><label>Đạo diễn<input name="director"></label>
+</div><p class="field-help">Nhóm và tên phần được quản lý ở mục <button type="button" id="edit-movie-relations" class="text-button">Nhóm &amp; các phần phim</button>. Slug là mã cố định; dùng “Slug nguồn phát” nếu muốn đổi nguồn xem.</p><label>Mô tả<textarea name="desc" rows="5"></textarea></label><button type="submit">Lưu bản nháp</button><span id="movie-dirty" class="field-help" aria-live="polite"></span></form><article class="preview"><img id="poster-preview" src="Img/poster-placeholder.svg" alt="Xem trước poster"><div><h3 id="preview-title">Xem trước</h3><p id="preview-meta"></p><p id="preview-desc"></p></div></article></section></main>
 <section class="audit"><h2>Rà soát dữ liệu</h2><p id="audit-summary"></p><label>Lọc cảnh báo<select id="audit-code"><option value="">Tất cả</option></select></label><div id="audit-list"></div><button id="audit-more">Xem thêm cảnh báo</button><p>Cảnh báo cần đối chiếu nguồn chính thức; không tự xóa phim, gộp nhóm hoặc sửa quốc gia theo phỏng đoán.</p></section>
-<script src="country-utils.js?v=3"></script><script src="genre-utils.js?v=1"></script><script src="catalog-audit.js?v=1"></script><script src="manage.js?v=1"></script></body></html>
+</div>
+<section id="relations-panel" hidden aria-labelledby="relations-heading">
+<h2 id="relations-heading">Nhóm &amp; các phần phim</h2><p>Chọn rõ từng phim, đặt tên phần và xếp thứ tự. Phim trùng tên không tự được nối với nhau. Mỗi phim thuộc một nhóm chính.</p>
+<div class="actions"><button id="relations-new">Tạo nhóm</button><button id="relations-export">Xuất liên kết JSON</button><label class="file-button">Nhập liên kết JSON<input id="relations-import" type="file" accept=".json,application/json"></label><button id="relations-reset">Bỏ bản nháp liên kết</button></div>
+<p id="relations-status" role="status">Đang tải liên kết...</p>
+<details><summary>Cách áp dụng nhóm lên website</summary><ol><li>Chọn phim, đổi nhãn và sắp thứ tự. Nhập ít nhất một URL HTTPS làm nguồn đối chiếu, rồi lưu nhóm.</li><li>Bấm <b>Xuất liên kết JSON</b> và chạy <code>npm run relations:import -- "đường-dẫn/movie-relations-import.json"</code>. Nếu có phim mới trong bản nháp, nhập catalog trước.</li><li>Đăng lại <code>Frontend/data</code>. Nhóm được cập nhật cho cả trang thông tin và trang xem phim.</li></ol><p>Phim bị tách hoặc thuộc nhóm đã xóa sẽ không tự nối lại khi đồng bộ metadata. File xuất chứa toàn bộ nhóm đang chỉnh sửa; nhập file này sẽ thay thế cấu hình liên kết thủ công.</p></details>
+<div class="relation-layout">
+<section><h3>Danh sách nhóm <span id="relations-count"></span></h3><label>Tìm nhóm hoặc phim<input id="relations-search" type="search" placeholder="Tên nhóm, tên phim, slug..."></label><div id="relations-list"></div><button id="relations-more" hidden>Xem thêm nhóm</button></section>
+<section id="relation-editor"><p id="relation-empty">Chọn một nhóm hoặc tạo nhóm mới để bắt đầu.</p>
+<div id="relation-edit-content" hidden>
+<form id="relation-group-form"><div class="fields"><label>Tên nhóm<input id="relation-label" required maxlength="500"></label><label>Mã nhóm<input id="relation-id" readonly></label></div><label>Nguồn đối chiếu (mỗi dòng một URL HTTPS)<textarea id="relation-sources" rows="3" required placeholder="https://trang-chinh-thuc/..." spellcheck="false"></textarea></label><div class="actions"><button type="submit">Lưu nhóm</button><button type="button" id="relation-delete" class="danger">Xóa nhóm</button><span id="relation-dirty" class="field-help" aria-live="polite"></span></div></form>
+<h3>Các phần / mùa <span id="relation-member-count"></span></h3><p class="field-help">Nhãn hiển thị đầy đủ trên nút chọn phần. Dùng ↑ ↓ để đổi thứ tự; “Tách” chỉ bỏ liên kết, phim vẫn còn trong kho.</p><ol id="relation-members"></ol>
+<label>Thêm phim vào nhóm<input id="relation-movie-search" type="search" placeholder="Tìm tên hoặc slug để chọn phim..."></label><div id="relation-movie-results"></div>
+<div class="relation-preview"><h3>Xem trước nút chọn phần</h3><div id="relation-preview-parts"></div></div>
+</div>
+</section></div>
+</section>
+<script src="country-utils.js?v=20261023d"></script><script src="genre-utils.js?v=20261023d"></script><script src="catalog-audit.js?v=20261023d"></script><script src="relation-editor.js?v=20261023d"></script><script src="relation-manager.js?v=20261023d"></script><script src="manage.js?v=20261023d"></script>
+</body></html>

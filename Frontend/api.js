@@ -233,24 +233,32 @@ async function getCatalogFilters() {
 async function fetchCatalogPage(options = {}) {
   const source = await loadStaticCatalog();
   const query = normalizeSearchText(options.q).trim();
-  const castIndex = query ? await loadCatalogSearch() : null;
+  let castIndex=null,searchWarning="";
+  if(query)try{castIndex=await loadCatalogSearch();}catch(error){searchWarning="Chưa tải được mục diễn viên/đạo diễn; vẫn tìm theo tên và thông tin phim.";}
+  const ranks=new Map();
   const filtered = source.filter(movie => {
     if (options.genre && !MovieGenres.genres(movie.genres).some(genre => genre.toLowerCase() === options.genre.trim().toLowerCase())) return false;
     if (options.country && getMovieCountry(movie).toLowerCase() !== options.country.toLowerCase()) return false;
     if (options.group && movie.group !== options.group) return false;
     if (options.type && getCatalogType(movie) !== options.type) return false;
-    if (query && !normalizeSearchText([movie.title, movie.genres, getMovieCountry(movie), movie.cast, movie.director, castIndex?.[movie.slug]].filter(Boolean).join(" | ")).includes(query)) return false;
+    if(query){
+      const rank=typeof SiteTools!=="undefined"?SiteTools.score(movie,query,castIndex?.[movie.slug]):(normalizeSearchText([movie.title,movie.slug,movie.genres,getMovieCountry(movie),movie.cast,movie.director,castIndex?.[movie.slug]].join(" ")).includes(query)?1:-1);
+      if(rank<0)return false;ranks.set(movie.slug,rank);
+    }
     return true;
   });
   const counts = new Map();
   filtered.forEach(movie => { const year = Number(movie.year); if (year > 0) counts.set(year, (counts.get(year) || 0) + 1); });
   const matches = options.year ? filtered.filter(movie => Number(movie.year) === Number(options.year)) : filtered;
-  if (options.sort) matches.sort((a,b) => compareCatalogMovies(a,b,options.sort));
+  if(query&&(!options.sort||options.sort==="relevance"))matches.sort((a,b)=>(ranks.get(b.slug)||0)-(ranks.get(a.slug)||0)||compareCatalogMovies(a,b,"year"));
+  else if (options.sort) matches.sort((a,b) => compareCatalogMovies(a,b,options.sort));
+  else if(options.group)matches.sort((a,b)=>(a.relationOrder??9999)-(b.relationOrder??9999));
   const limit = Math.min(50, Math.max(1, parseInt(options.limit, 10) || 24));
   const page = Math.min(Math.max(1, Math.ceil(matches.length / limit)), Math.max(1, parseInt(options.page, 10) || 1));
   return {
     movies: matches.slice((page - 1) * limit, page * limit),
     currentPage: page, totalItems: matches.length, totalPages: Math.ceil(matches.length / limit),
+    searchWarning,
     years: [...counts].sort((a, b) => b[0] - a[0]).map(([year, count]) => ({ year, count })),
   };
 }
@@ -387,6 +395,7 @@ async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
     result = base; // API không có/lỗi -> dữ liệu local (có thể null)
   }
 
+  if(result&&apiMovie)result.declaredTotalEpisodes=Math.max(parseInt(base?.episodes,10)||0,parseInt(apiMovie.episodes,10)||0);
   // Chỉ cache khi có kết quả, để lần sau còn thử lại nếu mạng lỗi
   if (result) movieDetailCache.set(cacheKey, result);
   return result;

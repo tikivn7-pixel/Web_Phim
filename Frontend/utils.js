@@ -81,13 +81,41 @@ function formatViews(n, { compact = false } = {}) {
 }
 
 function closeMobileMenu() {
+  const wasOpen=document.body.classList.contains("menu-open");
   document.getElementById("mobile-sidebar")?.classList.remove("mobile-open");
   document.getElementById("sidebar-overlay")?.classList.remove("active");
   document.getElementById("mobile-menu-btn")?.setAttribute("aria-expanded", "false");
   document.body.classList.remove("menu-open");
+  if(wasOpen)document.getElementById("mobile-menu-btn")?.focus();
 }
 // Menu mobile (nút ☰ + lớp phủ). Chạy chung cho index/detail/watch.
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".logo[onclick],.nav-links li[onclick],.genre-grid span[onclick]").forEach(element=>{
+    element.setAttribute("role","button");element.tabIndex=0;
+    element.addEventListener("keydown",event=>{if(event.target===element&&(event.key==="Enter"||event.key===" ")){event.preventDefault();element.click();}});
+  });
+  document.querySelectorAll(".search-btn").forEach(button=>button.setAttribute("aria-label","Tìm kiếm"));
+  const nav=document.getElementById("mobile-sidebar");
+  if(nav){
+    const favorite=nav.querySelector('li[onclick*="wishlist"]');
+    if(favorite){favorite.removeAttribute('onclick');favorite.removeAttribute('role');favorite.removeAttribute('tabindex');const link=document.createElement('a');link.href='library.html';link.textContent='Thư viện';favorite.replaceChildren(link);}
+    for(const [href,text,className] of [["index.html?view=catalog","Khám phá","nav-discover"],["collections.html","Loạt phim","nav-collections"]]){
+      if(nav.querySelector('a[href="'+href+'"]'))continue;
+      const item=document.createElement("li"),link=document.createElement("a");item.className=className;link.href=href;link.textContent=text;item.append(link);
+      if(className==='nav-discover')nav.insertBefore(item,nav.children[1]||null);else nav.insertBefore(item,favorite||null);
+    }
+  }
+  document.querySelectorAll('.search-btn').forEach(button=>{button.textContent='⌕';});
+  if(!document.querySelector('footer')){
+    const footer=document.createElement('footer');footer.className='site-footer';const text=document.createElement('p');text.textContent='LauPhim · Một bộ phim hay, một khoảng thời gian cho bạn.';
+    const links=document.createElement('div');links.className='footer-links';for(const [href,label] of [['index.html?view=catalog','Khám phá'],['collections.html','Loạt phim'],['library.html#backup','Sao lưu thư viện'],['manage.html','Quản lý phim']]){const link=document.createElement('a');link.href=href;link.textContent=label;links.append(link);}footer.append(text,links);document.body.append(footer);
+  }
+  document.querySelectorAll('.home-footer a[href="#page-home"]').forEach(link=>{link.onclick=event=>{event.preventDefault();window.scrollTo({top:0,behavior:'smooth'});};});
+  document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.isComposing&&!event.target.closest('input,textarea,select,[contenteditable="true"],[role="dialog"]')){const input=document.getElementById('search-input');if(input){event.preventDefault();input.focus();}}});
+  const skip=document.createElement("a");skip.href="#main-content";skip.className="skip-link";skip.textContent="Bỏ qua menu";
+  const main=document.querySelector("#page-home,.fd-page,.fd-container,main,.page");if(main){main.id=main.id||"main-content";skip.href="#"+main.id;main.tabIndex=-1;document.body.prepend(skip);
+    skip.onclick=event=>{event.preventDefault();const active=document.querySelector('.page.active')||main;active.tabIndex=-1;active.focus();active.scrollIntoView({block:'start'});};
+  }
   const menuBtn = document.getElementById("mobile-menu-btn");
   const sidebar = document.getElementById("mobile-sidebar");
   const overlay = document.getElementById("sidebar-overlay");
@@ -110,6 +138,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     overlay.addEventListener("click", closeMobileMenu);
     document.addEventListener("keydown", event => { if (event.key === "Escape") closeMobileMenu(); });
+    document.addEventListener("keydown",event=>{
+      if(event.key!=="Tab"||!document.body.classList.contains("menu-open"))return;
+      const items=[menuBtn,...sidebar.querySelectorAll('a[href],button,[tabindex="0"]')].filter(item=>item.getClientRects().length&&getComputedStyle(item).visibility!=="hidden");
+      const first=items[0],last=items[items.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+    });
     sidebar.addEventListener("click", event => {
       if (event.target.closest(".genre-grid span") || event.target.closest("li[onclick]")) closeMobileMenu();
     });

@@ -4,7 +4,12 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
   const homeMovies = await renderHomePageMovies();
-  initHeroSlider(homeMovies);
+  initHeroSlider(homeMovies.length?await loadStaticCatalog():homeMovies);
+  if(!homeMovies.length){
+    document.getElementById("hero-title").textContent="Chưa tải được danh sách phim";
+    document.getElementById("hero-desc").textContent="Kiểm tra kết nối, rồi bấm Thử lại ở danh sách phim bên dưới.";
+    document.getElementById("hero-play-btn").disabled=true;document.getElementById("hero-info-btn").disabled=true;
+  }
 
   renderAnimeMovies();
   renderKoreanMovies();

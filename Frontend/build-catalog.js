@@ -5,6 +5,7 @@ const { readMovies, validateMovies, enrichMovies } = require("./catalog-tools");
 const { artifacts } = require("./catalog-artifacts");
 const { audit } = require("./catalog-audit");
 function buildCatalog() {
+  require("./build-relations").buildRelations();
   const source = readMovies();
   const report = validateMovies(source);
   if (report.errors.length) throw new Error(report.errors.join("\n"));

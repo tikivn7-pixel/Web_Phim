@@ -83,7 +83,7 @@ test("static browser catalog preserves all movies and needs no backend", async (
   const year = korean.years[0].year;
   const byYear = await ctx.fetchCatalogPage({country:"Hàn Quốc",year});
   assert.ok(byYear.movies.every(m => Number(m.year) === year));
-  const source = readSource();
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname,"../Frontend/data/movies.json"),"utf8"));
   const original = source.find(m => m.group && m.partName);
   const parts = await ctx.fetchMovieParts(original.group);
   assert.equal(parts.length,source.filter(m => m.group === original.group).length);
@@ -127,6 +127,7 @@ test("results pager and year selector request new server pages", async () => {
     set innerHTML(value) { this.children = []; this.html = value; }
     appendChild(child) { this.children.push(child); return child; }
     append(...children) { this.children.push(...children); }
+    replaceChildren(...children) { this.children = [...children]; }
     add(child) { this.appendChild(child); }
     insertAdjacentElement(position, child) { if (child.id) elements[child.id] = child; }
     remove() {}
@@ -159,4 +160,10 @@ test("results pager and year selector request new server pages", async () => {
   assert.equal(calls[2].year,'2024');
   assert.equal(calls[2].page,1);
   assert.equal(calls[2].country,'Hàn Quốc');
+  const chips=elements['catalog-active-filters'];
+  assert.equal(chips.children.length,2);
+  chips.children.find(chip=>chip.textContent.includes('Hàn Quốc')).onclick();
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(calls[3].country,undefined);
+  assert.equal(calls[3].year,'2024');
 });

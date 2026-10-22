@@ -8,6 +8,7 @@ const WISHLIST_KEY = "my_wishlist";
 function movieKey(m) {
   return (m && (m.slug || m.title)) || "";
 }
+function wishlistKey(movie) { return movieKey(movie); }
 
 async function login(email, password) {
   try {
@@ -34,9 +35,10 @@ function getWishlist() {
   try {
     const raw = localStorage.getItem(WISHLIST_KEY);
     const list = raw ? JSON.parse(raw) : [];
-    return Array.isArray(list) ? list : [];
+    if (typeof PersonalData !== "undefined") return PersonalData.normalize({my_wishlist:list}).my_wishlist;
+    return Array.isArray(list) ? list.filter(item => item && typeof item === "object" && (typeof item.slug === "string" || typeof item.title === "string")) : [];
   } catch (e) {
-    console.error("Wishlist bị hỏng, đã reset:", e);
+    console.warn("Chưa đọc được danh sách yêu thích:", e);
     return [];
   }
 }
@@ -44,17 +46,30 @@ function getWishlist() {
 // Lưu wishlist, bắt lỗi khi đầy bộ nhớ (QuotaExceededError)
 function saveWishlist(list) {
   try {
-    localStorage.setItem(WISHLIST_KEY, JSON.stringify(list));
+    const cleaned = typeof PersonalData !== "undefined" ? PersonalData.normalize({my_wishlist:list}).my_wishlist : list;
+    localStorage.setItem(WISHLIST_KEY, JSON.stringify(cleaned));
     return true;
   } catch (e) {
     console.error("Không lưu được wishlist (đầy bộ nhớ?):", e);
-    alert("Bộ nhớ trình duyệt đã đầy, không thể lưu thêm phim.");
+    alert("Không lưu được danh sách vì bộ nhớ trình duyệt bị chặn hoặc đã đầy.");
     return false;
   }
 }
 
 // Không giới hạn số lượng phim trong wishlist
 function toggleWishlist(movie) {
+  if (!movie || !movieKey(movie)) return;
+  try {
+    const raw = localStorage.getItem(WISHLIST_KEY);
+    if (raw !== null) {
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) throw new Error("invalid wishlist");
+      if (typeof PersonalData !== "undefined") PersonalData.normalize({my_wishlist:parsed}, true);
+    }
+  } catch (_) {
+    alert("Chưa đọc được danh sách yêu thích cũ. Dữ liệu được giữ nguyên; mở Thư viện để kiểm tra hoặc khôi phục bản sao.");
+    return;
+  }
   const wishlist = getWishlist();
   const key = movieKey(movie);
   const index = wishlist.findIndex((item) => movieKey(item) === key);
@@ -69,6 +84,7 @@ function toggleWishlist(movie) {
       desc: (movie.desc || "").slice(0, 300),
       episodes: movie.episodes,
       slug: movie.slug || "",
+      addedAt: Date.now(),
     });
   }
 
@@ -85,10 +101,9 @@ function toggleWishlist(movie) {
 }
 
 async function toggleFavoriteBackend(movieId) {
-  const token = localStorage.getItem("token");
-  if (!token) return;
-
   try {
+    const token = localStorage.getItem("token");
+    if (!token) return;
     await fetch(`${API_BASE_URL}/api/watchlist/toggle`, {
       method: "POST",
       headers: {
@@ -147,7 +162,9 @@ function updateWishlistUI() {
 
     // Tim trên poster
     if (posterHeart) {
+      const symbol=posterHeart.querySelector('.heart-symbol');if(symbol)symbol.textContent=isFav?'♥':'♡';
       posterHeart.classList.toggle("active", isFav);
+      posterHeart.setAttribute("aria-pressed", String(isFav));
       posterHeart.title = isFav
         ? "Xóa khỏi danh sách của tôi"
         : "Thêm vào danh sách của tôi";
@@ -190,6 +207,10 @@ function renderWishlistPage() {
   }
 
   wishlist.forEach((movie) => {
+    if (typeof createMovieCard === "function") {
+      container.appendChild(createMovieCard(movie));
+      return;
+    }
     const card = document.createElement("div");
     card.className = "movie-card";
     card.dataset.title = movie.title;
@@ -211,11 +232,11 @@ function renderWishlistPage() {
     const handlerSlug = escapeForInlineHandler(movie.slug || "");
 
     card.innerHTML = `
-      <img src="${movie.poster}" alt="${safeTitle}" onerror="this.src='https://placehold.co/350x500'" />
+      <img src="${escapeHtml(movie.poster || "Img/poster-placeholder.svg")}" alt="${safeTitle}" onerror="this.onerror=null;this.src='Img/poster-placeholder.svg'" />
       ${cardHeartHtml(movie)}
       <h4>${safeTitle}</h4>
       <div class="movie-hover-card">
-        <img src="${movie.poster}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+        <img src="${escapeHtml(movie.poster || "Img/poster-placeholder.svg")}" alt="${safeTitle}" class="hover-banner" onerror="this.onerror=null;this.src='Img/poster-placeholder.svg'" />
         <div class="hover-content">
           <h3 class="hover-title">${safeTitle}</h3>
           <div class="hover-actions">

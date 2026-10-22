@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b0f">
+  <title>Bộ sưu tập phim · LauPhim</title>
+  <meta name="description" content="Khám phá trọn loạt phim, các mùa và những phần liên quan trong từng bộ sưu tập LauPhim.">
+  <link rel="stylesheet" href="cinema.css?v=20261023d"><link rel="stylesheet" href="collections.css?v=20261023d">
+</head>
+<body class="collections-page">
+  <a href="#collection-content" class="collections-skip">Đến nội dung</a>
+  <header class="collections-header">
+    <a class="collections-brand" href="index.html" aria-label="LauPhim trang chủ"><span>Lau</span>Phim<span class="brand-dot" aria-hidden="true"></span></a>
+    <nav aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a href="index.html?view=catalog">Khám phá</a><a href="collections.html" aria-current="page">Loạt phim</a><a href="library.html">Thư viện của tôi</a></nav>
+    <a class="collections-library" href="library.html" aria-label="Thư viện của tôi">♡</a>
+  </header>
+  <main id="collection-content">
+    <div id="collections-loading" class="collections-state" role="status"><div class="collections-spinner" aria-hidden="true"></div><h1>Đang mở các bộ sưu tập…</h1><p>Mỗi câu chuyện đều có một hành trình.</p></div>
+    <div id="collections-error" class="collections-state" hidden><span class="empty-symbol" aria-hidden="true">↻</span><h1>Chưa tải được bộ sưu tập</h1><p id="collections-error-message">Kiểm tra kết nối rồi thử lại nhé.</p><button type="button" id="collections-retry" class="collection-primary">Thử lại</button><a href="index.html" class="collection-secondary">Về trang chủ</a></div>
+    <div id="collections-list" hidden>
+      <section class="collections-hero" aria-labelledby="collections-title">
+        <div class="collections-hero-glow" aria-hidden="true"></div>
+        <div class="collections-hero-copy"><p class="collections-eyebrow"><span aria-hidden="true">▰</span> NHỮNG CÂU CHUYỆN NỐI TIẾP</p><h1 id="collections-title">Một thế giới.<br><em>Nhiều hành trình.</em></h1><p class="collections-hero-description">Từ mùa đầu tiên đến phần mới nhất. Tìm các phim cùng loạt trong một nơi, chọn câu chuyện và bắt đầu khám phá.</p><a class="collection-primary" href="#collection-browser">Khám phá bộ sưu tập <span aria-hidden="true">↓</span></a><div class="collections-stat-line"><span><strong id="collections-total">—</strong> bộ sưu tập</span><span><strong id="collections-movie-total">—</strong> phim &amp; mùa</span><span>Chọn từng phần để xem</span></div></div>
+        <div class="collections-mosaic" id="collections-mosaic" aria-hidden="true"></div>
+      </section>
+      <section id="collection-browser" class="collections-browser" aria-labelledby="collection-browser-title">
+        <div class="collections-section-title"><div><p class="collections-eyebrow">CẢ KHO PHIM, THEO TỪNG LOẠT</p><h2 id="collection-browser-title">Tìm hành trình tiếp theo</h2></div><span id="collection-count" class="collection-count" aria-live="polite"></span></div>
+        <div class="collections-chips" role="group" aria-label="Chọn loại bộ sưu tập"><button type="button" data-type="" aria-pressed="true">Tất cả</button><button type="button" data-type="anime" aria-pressed="false">Anime / Hoạt hình</button><button type="button" data-type="series" aria-pressed="false">Phim bộ</button><button type="button" data-type="film" aria-pressed="false">Điện ảnh</button></div>
+        <form id="collection-filters" class="collection-filters" role="search">
+          <label class="collection-search-wrap"><span>Tìm bộ sưu tập</span><input type="search" id="collection-search" placeholder="Tên loạt phim hoặc một phần phim…" maxlength="180" autocomplete="off"></label>
+          <label><span>Quốc gia</span><select id="collection-country"><option value="">Tất cả quốc gia</option></select></label>
+          <label><span>Sắp xếp</span><select id="collection-sort"><option value="count">Nhiều phần nhất</option><option value="title">Tên A–Z</option><option value="year">Năm mới nhất</option></select></label>
+          <button type="button" id="collection-reset" class="collection-reset" hidden>Xóa bộ lọc</button>
+        </form>
+        <div id="collections-grid" class="collections-grid"></div>
+        <div id="collections-empty" class="collections-state collections-empty" hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h3>Chưa tìm thấy bộ sưu tập phù hợp</h3><p>Thử một tên phim khác hoặc bỏ bớt bộ lọc.</p><button type="button" id="collection-empty-reset" class="collection-primary">Xem tất cả bộ sưu tập</button></div>
+        <nav id="collection-pagination" class="collection-pagination" aria-label="Trang bộ sưu tập"></nav>
+      </section>
+    </div>
+    <section id="collection-detail" hidden aria-labelledby="collection-detail-title"></section>
+    <noscript><p class="collections-state">Bật JavaScript để xem các bộ sưu tập phim.</p></noscript>
+  </main>
+  <footer class="collections-footer"><a class="collections-brand" href="index.html"><span>Lau</span>Phim</a><p>Mỗi phần phim, thêm một cuộc phiêu lưu.</p><a href="index.html?view=catalog">Khám phá tất cả phim ↗</a></footer>
+  <script src="catalog-format.js?v=20261023d"></script><script src="site-tools.js?v=20261023d"></script><script src="collections-model.js?v=20261023d"></script><script src="collections.js?v=20261023d"></script>
+</body>
+</html>

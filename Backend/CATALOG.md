@@ -5,7 +5,9 @@ Frontend đọc `Frontend/data/catalog-index.json` từ hosting tĩnh và chỉ 
 chi tiết trong `Frontend/data/details/` khi mở phim. `data/movies.json` là
 bản đầy đủ dành cho trang quản lý và xuất/nhập dữ liệu, không tải ở trang chủ.
 Không cần MySQL, Railway hoặc chạy npm start để duyệt/tìm/xem phim.
-Toàn bộ 3.697 phim, nhóm/phần phim, năm và thông tin diễn viên được giữ lại.
+Toàn bộ 3.697 phim, năm và thông tin diễn viên được giữ lại. Quan hệ phần phim
+chỉ xuất khi có mã bộ phim hoặc nguồn đối chiếu, không suy ra từ tên giống nhau.
+Xem [RELATIONS.md](RELATIONS.md) để thêm liên kết từng slug và cập nhật metadata.
 Frontend/data.js chỉ chứa cấu hình và hàm hỗ trợ.
 
 Đưa toàn bộ thư mục Frontend lên hosting tĩnh, bao gồm cả thư mục data và details bên trong.
@@ -127,6 +129,11 @@ npm run catalog:import -- "C:\duong-dan\catalog-import.json"
 
 Lệnh kiểm tra dữ liệu, sao lưu nguồn vào Backend/catalog-source.js.before-import.bak,
 nhập lại catalog-source.js ở định dạng tương thích các script cũ rồi chạy build.
+Nguồn mới được ghi qua file tạm rồi thay thế. Nếu build thất bại (ví dụ file nhập
+bỏ một slug vẫn còn trong cấu hình liên kết), lệnh tự khôi phục nguyên nội dung
+catalog-source.js trước khi nhập; bản sao lưu vẫn được giữ. Sửa lỗi được báo rồi
+chạy lại `npm run catalog:build` để đồng bộ các file xuất trước khi đăng hosting.
+Lệnh khôi phục nguồn, không coi một lần build bị gián đoạn là bản dữ liệu để đăng.
 Nguồn nhập là dữ liệu đã xuất từ form, nên các bình luận trình bày trong nguồn cũ
 không được giữ ở bản mới; bản sao lưu vẫn giữ nguyên. Tên, mô tả, trường phụ được giữ.
 Nếu chỉ sửa bằng code, tiếp tục dùng catalog-source.js và catalog:build như trước.

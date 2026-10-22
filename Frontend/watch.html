@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Xem Phim - LauPhim</title>
-    <link rel="stylesheet" href="style.css?v=12" />
+    <link rel="stylesheet" href="style.css?v=20261023d" />
+    <link rel="stylesheet" href="cinema.css?v=20261023d" />
+    <link rel="stylesheet" href="player-controls.css?v=20261023d" />
 
     <!-- Font Awesome -->
     <link
@@ -310,21 +312,24 @@
 
     <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
-    <script src="./data.js?v=9"></script>
-    <script src="./country-utils.js?v=12"></script>
-    <script src="./genre-utils.js?v=12"></script>
-    <script src="./catalog-state.js?v=1"></script>
-    <script src="./catalog-format.js?v=1"></script>
-    <script src="./catalog-navigation.js?v=1"></script>
-    <script src="./api.js?v=12"></script>
-    <script src="./utils.js?v=12"></script>
-    <script src="./wishlist.js?v=4"></script>
-    <script src="./render.js?v=12"></script>
-    <script src="./search.js?v=12"></script>
-    <script src="./tmdb.js?v=4"></script>
-    <script src="./tv-nav.js?v=4"></script>
-    <script src="./playback-tools.js?v=9"></script>
-    <script src="./playback-options.js?v=1"></script>
+    <script src="./data.js?v=20261023d"></script>
+    <script src="./country-utils.js?v=20261023d"></script>
+    <script src="./genre-utils.js?v=20261023d"></script>
+    <script src="./catalog-state.js?v=20261023d"></script>
+    <script src="./catalog-format.js?v=20261023d"></script>
+    <script src="./catalog-navigation.js?v=20261023d"></script>
+    <script src="./site-tools.js?v=20261023d"></script>
+    <script src="./api.js?v=20261023d"></script>
+    <script src="./utils.js?v=20261023d"></script>
+    <script src="./personal-data.js?v=20261023d"></script>
+    <script src="./wishlist.js?v=20261023d"></script>
+    <script src="./render.js?v=20261023d"></script>
+    <script src="./search.js?v=20261023d"></script>
+    <script src="./tmdb.js?v=20261023d"></script>
+    <script src="./tv-nav.js?v=20261023d"></script>
+    <script src="./playback-tools.js?v=20261023d"></script>
+    <script src="./playback-options.js?v=20261023d"></script>
+    <script src="./player-controls.js?v=20261023d"></script>
 
     <!-- ================= WATCH SCRIPT ================= -->
     <script>
@@ -333,13 +338,13 @@
 
         const movieTitle = params.get("title");
 
-        let episodeNum = parseInt(params.get("ep")) || 1;
+        let episodeNum = Math.max(1, parseInt(params.get("ep")) || 1);
 
         const slug = params.get("slug") || "";
 
         const posterFromUrl = params.get("poster") || "";
 
-        const episodesFromUrl = parseInt(params.get("episodes")) || 20;
+        const episodesFromUrl = Math.max(1, parseInt(params.get("episodes")) || 1);
 
         if (!movieTitle) {
           document.getElementById("watch-movie-title").innerText =
@@ -369,6 +374,9 @@
         const realSlug = movieObj ? movieObj.slug : slug;
 
         let totalEp = movieObj ? movieObj.episodes : episodesFromUrl;
+        const declaredTotalEpisodes = Math.max(0, parseInt(movieObj?.episodes, 10) || 0,
+          parseInt(movieObj?.declaredTotalEpisodes, 10) || 0,
+          movieObj ? 0 : parseInt(params.get("episodes"), 10) || 0);
 
         // =========================
         // LẤY DANH SÁCH SERVER & TẬP TỪ API (phimapi.com)
@@ -406,6 +414,17 @@
           return [];
         }
 
+        function getEpisodeNavigation() {
+          const items = getCurrentServerEpisodes();
+          return PlaybackTools.logicalNeighbors(items.length ? items : Array.from({ length: Math.max(1, Number(totalEp) || 1) }, (_, i) => ({ name: String(i + 1) })), episodeNum - 1);
+        }
+
+        function isFinalSeriesEpisode() {
+          const items = getCurrentServerEpisodes();
+          const knownItems = items.length ? items : Array.from({ length: Math.max(1, Number(totalEp) || 1) }, (_, i) => ({ name: String(i + 1) }));
+          return PlaybackTools.isSeriesFinal(knownItems, episodeNum - 1, declaredTotalEpisodes);
+        }
+
         let unavailableEpisode = false;
         if (params.get("target_episode")) {
           const matched = PlaybackTools.findEpisodeIndex({ name: params.get("target_episode") }, getCurrentServerEpisodes());
@@ -422,6 +441,7 @@
         }
 
         const currentEpisodeName = getCurrentServerEpisodes()[episodeNum - 1]?.name || String(episodeNum);
+        const activeEpisodeSource = movieObj?.episodeSource || params.get("data_source") || "auto";
         const currentEpisodeLabel = /^\d+$/.test(currentEpisodeName) ? "Tập " + currentEpisodeName : currentEpisodeName;
         document.getElementById("page-title").innerText = `${realTitle} - ${currentEpisodeLabel}`;
 
@@ -502,6 +522,7 @@
           function setTheater(on) {
             document.body.classList.toggle("theater-mode", on);
             btn.classList.toggle("theater-on", on);
+            btn.setAttribute("aria-pressed", String(on));
             label.textContent = on ? "Bật đèn" : "Tắt đèn";
             icon.className = on
               ? "fa-solid fa-lightbulb"
@@ -521,29 +542,10 @@
           overlay.addEventListener("click", () => setTheater(false));
 
           document.addEventListener("keydown", (e) => {
-            // Bỏ qua khi đang gõ chữ (ô tìm kiếm, tìm tập...) hoặc bấm tổ hợp phím
-            const t = e.target;
-            if (
-              t &&
-              (t.tagName === "TEXTAREA" ||
-                t.tagName === "SELECT" ||
-                t.isContentEditable ||
-                (t.tagName === "INPUT" &&
-                  [
-                    "text",
-                    "search",
-                    "email",
-                    "url",
-                    "tel",
-                    "password",
-                    "number",
-                  ].includes(t.type)))
-            ) {
-              return;
-            }
-            if (e.ctrlKey || e.altKey || e.metaKey) return;
+            if (PlayerControls.shouldIgnoreShortcut(e, document)) return;
 
             if (e.key === "t" || e.key === "T") {
+              e.preventDefault();
               setTheater(!isOn());
             } else if (e.key === "Escape" && isOn()) {
               setTheater(false);
@@ -579,6 +581,8 @@
           if (allServers.length > 1) {
             navParams.set("server", currentServerIndex);
           }
+          const targetName = getCurrentServerEpisodes()[ep - 1]?.name;
+          if (targetName) navParams.set("target_episode", targetName);
           if (params.has("data_source")) navParams.set("data_source", params.get("data_source"));
 
           window.location.href = `watch.html?${navParams.toString()}`;
@@ -595,7 +599,7 @@
           if (matched < 0) { alert("Server này chưa có tập đang xem. Hãy chọn server khác."); return; }
           saveWatchHistory();
           const navParams = PlaybackTools.resumeParams(params, {
-            source: params.get("data_source") || movieObj?.episodeSource || "auto",
+            source: activeEpisodeSource,
             server: index, episode: matched + 1,
             time: Number(document.getElementById("video-player")?.currentTime) || 0,
           });
@@ -644,13 +648,13 @@
 
         const nextBtn = document.getElementById("wp-next-btn");
 
-        prevBtn.disabled = episodeNum <= 1;
+        prevBtn.disabled = getEpisodeNavigation().previous === null;
 
-        nextBtn.disabled = episodeNum >= totalEp;
+        nextBtn.disabled = getEpisodeNavigation().next === null;
 
-        prevBtn.onclick = () => goToEpisode(episodeNum - 1);
+        prevBtn.onclick = () => { const index = getEpisodeNavigation().previous; if (index !== null) goToEpisode(index + 1); };
 
-        nextBtn.onclick = () => goToEpisode(episodeNum + 1);
+        nextBtn.onclick = () => { const index = getEpisodeNavigation().next; if (index !== null) goToEpisode(index + 1); };
 
         // =========================
         // DANH SÁCH TẬP
@@ -690,6 +694,8 @@
             btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
 
             btn.innerText = epLabel;
+            btn.type = "button";
+            if (i === episodeNum) btn.setAttribute("aria-current", "true");
 
             btn.onclick = () => goToEpisode(i);
 
@@ -794,6 +800,12 @@
           console.error("Không tìm thấy video-player");
 
           return;
+        }
+
+        function autoNextUnavailable(reason) {
+          const toggle = document.getElementById("wp-autonext-toggle");
+          toggle.checked = false; toggle.disabled = true;
+          toggle.closest("label").title = reason;
         }
 
         let videoSrc = "";
@@ -915,12 +927,16 @@
 
         if (!videoSrc) {
           const wrap = document.getElementById("video-wrapper-box");
+          const checkedEmbed = PlaybackTools.safeEmbedUrl(embedUrl);
+          if (embedUrl && !checkedEmbed) showPlaybackError("Đường dẫn trình phát nhúng không hợp lệ.");
+          embedUrl = checkedEmbed;
 
           // Chỉ có link nhúng -> phát bằng iframe
           if (embedUrl && wrap) {
             video.style.display = "none";
 
             const frame = document.createElement("iframe");
+            frame.title = realTitle + " — " + currentEpisodeLabel;
             frame.src = embedUrl;
             frame.allowFullscreen = true;
             frame.setAttribute(
@@ -933,6 +949,7 @@
             wrap.appendChild(frame);
             playbackStatus.textContent = "Đang dùng trình phát nhúng. Chỉ lưu tập đã mở; nguồn nhúng không cung cấp thời điểm xem để khôi phục.";
             mountPlaybackOptions(null,true);
+            autoNextUnavailable("Tự động chuyển tập chưa hỗ trợ với trình phát nhúng.");
 
             // Iframe không đọc được thời gian xem -> chỉ ghi nhận "đã mở tập này"
             // vào Tiếp tục xem (progress = 0).
@@ -953,8 +970,9 @@
                 episode: episodeNum,
                 totalEpisodes: totalEp,
                 server: currentServerIndex,
-                source: params.get("data_source") || movieObj?.episodeSource || "auto",
+                source: activeEpisodeSource,
                 episodeName: currentEpisodeName,
+                episodeIsLast: isFinalSeriesEpisode(),
                 progress: 0,
                 currentTime: 0,
                 duration: 0,
@@ -969,6 +987,8 @@
           console.error("Không tìm thấy link video!");
           showPlaybackError("Chưa có link phát cho tập này.");
           mountPlaybackOptions();
+          autoNextUnavailable("Chưa có video để tự động chuyển tập.");
+          prevBtn.disabled = nextBtn.disabled = true;
           if (wrap) {
             wrap.insertAdjacentHTML(
               "beforeend",
@@ -1014,10 +1034,29 @@
 
         video.addEventListener("error", () => showPlaybackError("Không tải được video."));
         let stalledTimer;
+        let userHasPlayed = false;
         const clearStall = () => clearTimeout(stalledTimer);
-        video.addEventListener("waiting", () => { clearStall(); stalledTimer = setTimeout(() => showPlaybackError("Video chờ quá lâu."), 20000); });
-        video.addEventListener("playing", clearStall);
+        const waitForPlayback = () => {
+          clearStall();
+          stalledTimer = setTimeout(() => showPlaybackError(navigator.onLine === false
+            ? "Thiết bị đang mất kết nối Internet."
+            : "Video chờ quá lâu. Bạn có thể tải lại hoặc đổi nguồn."), 25000);
+        };
+        video.addEventListener("waiting", waitForPlayback);
+        video.addEventListener("stalled", waitForPlayback);
+        video.addEventListener("loadedmetadata", clearStall);
+        video.addEventListener("pause", clearStall);
+        video.addEventListener("playing", () => {
+          clearStall(); userHasPlayed = true;
+          if (recovery.classList.contains("has-error")) {
+            recovery.classList.remove("has-error"); playbackStatus.textContent = "Đã phát lại video. Tiến độ được lưu trên thiết bị này.";
+          }
+        });
+        window.addEventListener("offline", () => {
+          if (!video.paused || !userHasPlayed) showPlaybackError("Thiết bị đang mất kết nối Internet.");
+        });
         window.addEventListener("pagehide", clearStall);
+        waitForPlayback();
 
         // =========================
         // PLYR
@@ -1026,7 +1065,14 @@
         let player = null;
 
         if (typeof Plyr !== "undefined") {
+          const savedPreferences = PlayerControls.preferences(PlayerControls.read(
+            PlayerControls.getStorage(window, "localStorage"), PlayerControls.PREFS_KEY, {}));
           player = new Plyr(video, {
+            // One preference store also used by portable backups. Plyr applies its initial speed asynchronously.
+            storage: { enabled: false },
+            speed: { selected: savedPreferences.rate, options: PlayerControls.RATES },
+            volume: savedPreferences.volume,
+            muted: savedPreferences.muted,
             controls: [
               "play-large",
               "rewind",
@@ -1114,7 +1160,7 @@
         // Đã xem xong TẬP CUỐI của phim (video chạy hết hoặc >= 95%)?
         function isLastEpisodeFinished(progress) {
           return (
-            episodeNum >= totalEp &&
+            isFinalSeriesEpisode() &&
             (video.ended === true || progress >= FINISHED_PERCENT)
           );
         }
@@ -1192,7 +1238,8 @@
               episode: episodeNum,
               server: currentServerIndex,
               episodeName: getCurrentServerEpisodes()[episodeNum - 1]?.name || String(episodeNum),
-              source: params.get("data_source") || movieObj?.episodeSource || "auto",
+              episodeIsLast: isFinalSeriesEpisode(),
+              source: activeEpisodeSource,
 
               totalEpisodes: totalEp,
 
@@ -1219,7 +1266,8 @@
               currentTime,
               duration,
               server: currentServerIndex,
-              source: params.get("data_source") || movieObj?.episodeSource || "auto",
+              source: activeEpisodeSource,
+              episodeName: currentEpisodeName,
               progress,
               updatedAt: Date.now(),
             };
@@ -1249,13 +1297,16 @@
             let saved =
               positions[movieKey()] &&
               positions[movieKey()][String(episodeNum)];
+            const identity = { episodeName: currentEpisodeName, server: currentServerIndex, source: activeEpisodeSource };
+            if (!PlaybackTools.positionMatches(saved, identity)) saved = null;
 
             // Dự phòng: dữ liệu cũ chỉ có trong danh sách Tiếp tục xem
             if (!saved) {
               saved = getWatchHistory().find(
                 (item) =>
                   String(item.slug || item.title || "") === movieKey() &&
-                  Number(item.episode) === Number(episodeNum),
+                  Number(item.episode) === Number(episodeNum) &&
+                  PlaybackTools.positionMatches(item, identity),
               );
             }
 
@@ -1316,112 +1367,6 @@
         video.addEventListener("seeked", saveWatchHistory);
 
         // =========================
-        // NÚT BỎ QUA INTRO
-        // =========================
-        // Điền thời gian intro theo từng phim (đơn vị: giây).
-        // Key = slug của phim. start/end áp dụng cho mọi tập.
-        // Muốn riêng từng tập thì thêm: episodes: { 3: { start: 10, end: 100 } }
-        // Phim nào chưa điền sẽ dùng DEFAULT_INTRO bên dưới.
-        const INTRO_TIMES = {
-          // "ten-slug-phim": { start: 0, end: 90 },
-        };
-        const DEFAULT_INTRO = { start: 0, end: 90 };
-
-        function getIntroRange() {
-          const cfg = INTRO_TIMES[realSlug];
-          if (!cfg) return DEFAULT_INTRO;
-          const epCfg = cfg.episodes && cfg.episodes[episodeNum];
-          return epCfg || cfg;
-        }
-
-        (function setupSkipIntro() {
-          const style = document.createElement("style");
-          style.textContent = `
-            .skip-intro-btn {
-              position: absolute; right: 20px; bottom: 70px; z-index: 5;
-              padding: 10px 18px; border: 1px solid rgba(255,255,255,.7);
-              border-radius: 6px; background: rgba(0,0,0,.65); color: #fff;
-              font-size: 15px; font-weight: 600; cursor: pointer; display: none;
-            }
-            .skip-intro-btn:hover { background: #fff; color: #000; }
-            .skip-intro-btn.show { display: block; }
-          `;
-          document.head.appendChild(style);
-
-          const btn = document.createElement("button");
-          btn.className = "skip-intro-btn";
-          btn.textContent = "Bỏ qua intro ⏭";
-
-          // Gắn vào trong khung Plyr để vẫn hiện khi fullscreen
-          const host = player ? player.elements.container : video.parentElement;
-          host.appendChild(btn);
-
-          btn.addEventListener("click", () => {
-            video.currentTime = getIntroRange().end;
-            btn.classList.remove("show");
-          });
-
-          video.addEventListener("timeupdate", () => {
-            const { start, end } = getIntroRange();
-            const t = video.currentTime;
-            btn.classList.toggle("show", t >= start && t < end - 1);
-          });
-        })();
-
-        // =========================
-        // CÔNG CỤ ĐO INTRO (chỉ hiện khi URL có &introtool=1)
-        // =========================
-        // Cách dùng: mở tập phim, thêm &introtool=1 vào cuối URL, tua tới lúc
-        // intro bắt đầu bấm "Đặt START", tua tới lúc intro kết thúc bấm "Đặt END",
-        // rồi copy dòng hiện ra dán vào INTRO_TIMES ở trên.
-        if (new URLSearchParams(location.search).get("introtool") === "1") {
-          const panel = document.createElement("div");
-          panel.style.cssText =
-            "position:absolute;top:10px;right:10px;z-index:9;background:rgba(0,0,0,.8);" +
-            "color:#fff;padding:10px;border-radius:8px;font-size:13px;width:290px;";
-          panel.innerHTML = `
-            <div>Hiện tại: <b id="it-now">0</b>s</div>
-            <div style="margin:6px 0;display:flex;gap:6px">
-              <button id="it-start" style="flex:1;cursor:pointer">Đặt START</button>
-              <button id="it-end" style="flex:1;cursor:pointer">Đặt END</button>
-            </div>
-            <input id="it-out" readonly style="width:100%;box-sizing:border-box;font-size:12px" />
-          `;
-          (player
-            ? player.elements.container
-            : video.parentElement
-          ).appendChild(panel);
-
-          let itStart = 0;
-          let itEnd = 0;
-          const out = panel.querySelector("#it-out");
-          const refresh = () => {
-            out.value = `"${realSlug}": { start: ${itStart}, end: ${itEnd} },`;
-          };
-          refresh();
-
-          video.addEventListener("timeupdate", () => {
-            panel.querySelector("#it-now").textContent = Math.floor(
-              video.currentTime,
-            );
-          });
-          panel.querySelector("#it-start").onclick = () => {
-            itStart = Math.floor(video.currentTime);
-            refresh();
-          };
-          panel.querySelector("#it-end").onclick = () => {
-            itEnd = Math.ceil(video.currentTime);
-            refresh();
-          };
-          out.addEventListener("click", () => {
-            out.select();
-            try {
-              navigator.clipboard.writeText(out.value);
-            } catch (e) {}
-          });
-        }
-
-        // =========================
         // LƯU KHI ĐỔI TAB
         // =========================
 
@@ -1444,25 +1389,23 @@
 
         const AUTONEXT_KEY = "autonext_enabled";
         const AUTONEXT_COUNT_KEY = "autonext_count";
+        const playerStorage = PlayerControls.getStorage(window, "localStorage");
+        const playerSession = PlayerControls.getStorage(window, "sessionStorage");
         const MAX_AUTO_EPISODES = 3; // tối đa 3 tập tự chuyển liên tiếp nếu không tương tác
         const NEXT_COUNTDOWN_SECONDS = 5; // đếm ngược trước khi sang tập kế
 
         const autoNextToggle = document.getElementById("wp-autonext-toggle");
 
-        // Mặc định BẬT (chỉ tắt khi người dùng đã bỏ chọn), nhớ theo lựa chọn của người dùng
-        autoNextToggle.checked = localStorage.getItem(AUTONEXT_KEY) !== "0";
+        // Chỉ bật sau khi người dùng chọn.
+        autoNextToggle.checked = PlayerControls.read(playerStorage, AUTONEXT_KEY, 0) === 1;
         autoNextToggle.addEventListener("change", () => {
-          localStorage.setItem(
-            AUTONEXT_KEY,
-            autoNextToggle.checked ? "1" : "0",
-          );
+          PlayerControls.write(playerStorage, AUTONEXT_KEY, autoNextToggle.checked ? 1 : 0);
           // Tắt công tắc khi popup đang đếm -> hủy luôn
           if (!autoNextToggle.checked) closeNextPopup();
         });
 
         // Người dùng còn thao tác thì reset bộ đếm (chống ngủ quên)
-        const resetAutoCount = () =>
-          sessionStorage.setItem(AUTONEXT_COUNT_KEY, "0");
+        const resetAutoCount = () => PlayerControls.write(playerSession, AUTONEXT_COUNT_KEY, 0);
         ["pointerdown", "keydown", "touchstart"].forEach((evt) =>
           window.addEventListener(evt, resetAutoCount, { passive: true }),
         );
@@ -1480,21 +1423,37 @@
           }
         }
 
+        const playerControls = PlayerControls.attach({
+          video, player, panel: document.querySelector(".wp-player-card"),
+          introKey: JSON.stringify([realSlug, PlaybackTools.episodeKey(currentEpisodeName), activeEpisodeSource, allServers[currentServerIndex]?.server_name || currentServerIndex]),
+          onSleep: () => {
+            closeNextPopup(); autoNextToggle.checked = false;
+            PlayerControls.write(playerStorage, AUTONEXT_KEY, 0);
+          },
+        });
+        window.addEventListener("pagehide", closeNextPopup);
+
         // autoRun = true : đếm ngược 5s rồi tự chuyển tập
         // autoRun = false: chỉ hỏi (khi đã tự chuyển đủ MAX_AUTO_EPISODES tập mà không ai thao tác)
         function showNextEpisodePopup(autoRun) {
           closeNextPopup();
 
-          const nextNum = episodeNum + 1;
+          const nextIndex = getEpisodeNavigation().next;
+          if (nextIndex === null) return;
+          const nextNum = nextIndex + 1;
+          const nextName = getCurrentServerEpisodes()[nextNum - 1]?.name || String(nextNum);
+          const nextLabel = /^\d+$/.test(nextName) ? "Tập " + nextName : nextName;
           // Gắn vào khung Plyr để vẫn hiện khi bật toàn màn hình
           const host = player ? player.elements.container : video.parentElement;
 
           nextPopup = document.createElement("div");
           nextPopup.className = "next-ep-popup";
+          nextPopup.setAttribute("role", "region");
+          nextPopup.setAttribute("aria-label", "Tập tiếp theo");
           nextPopup.innerHTML = `
             <div class="next-ep-label">Tập tiếp theo</div>
-            <div class="next-ep-name">${escapeHtml(realTitle)} - Tập ${nextNum}</div>
-            <div class="next-ep-count"></div>
+            <div class="next-ep-name">${escapeHtml(realTitle)} - ${escapeHtml(nextLabel)}</div>
+            <div class="next-ep-count" role="status"></div>
             ${autoRun ? `<div class="next-ep-bar"><span style="animation-duration:${NEXT_COUNTDOWN_SECONDS}s"></span></div>` : ""}
             <div class="next-ep-actions">
               <button type="button" class="next-ep-play">Xem ngay</button>
@@ -1526,12 +1485,12 @@
 
           if (autoRun) {
             nextTimer = setInterval(() => {
+              if (!playerControls?.shouldAutoNext() || !autoNextToggle.checked) { closeNextPopup(); return; }
+              if (document.visibilityState === "hidden") return;
               left--;
               if (left <= 0) {
-                const count = Number(
-                  sessionStorage.getItem(AUTONEXT_COUNT_KEY) || 0,
-                );
-                sessionStorage.setItem(AUTONEXT_COUNT_KEY, String(count + 1));
+                const count = Number(PlayerControls.read(playerSession, AUTONEXT_COUNT_KEY, 0)) || 0;
+                PlayerControls.write(playerSession, AUTONEXT_COUNT_KEY, count + 1);
                 closeNextPopup();
                 goToEpisode(nextNum);
               } else {
@@ -1550,134 +1509,13 @@
           saveWatchHistory();
 
           // Tập cuối: không có tập kế để chuyển. Công tắc tắt: không hiện popup.
-          if (episodeNum >= totalEp || !autoNextToggle.checked) return;
+          const nextIndex = getEpisodeNavigation().next;
+          const nextKnown = nextIndex !== null && (getCurrentServerEpisodes()[nextIndex] || movieObj?.episodeUrls?.[nextIndex]
+            || (Array.isArray(window.allEpisodesData?.[realSlug]) && window.allEpisodesData[realSlug][nextIndex]));
+          if (nextIndex === null || !nextKnown || !autoNextToggle.checked || !playerControls?.shouldAutoNext()) return;
 
-          const count = Number(sessionStorage.getItem(AUTONEXT_COUNT_KEY) || 0);
+          const count = Number(PlayerControls.read(playerSession, AUTONEXT_COUNT_KEY, 0)) || 0;
           showNextEpisodePopup(count < MAX_AUTO_EPISODES);
-        });
-
-        // =========================
-        // PHÍM TẮT
-        // F: toàn màn hình | ← →: tua 10s | ↑ ↓: tăng/giảm âm | Space/K: phát/dừng | M: tắt tiếng
-        // =========================
-        document.addEventListener("keydown", (e) => {
-          // Không bắt phím khi đang gõ chữ hoặc bấm tổ hợp Ctrl/Alt/Cmd
-          // Chỉ bỏ qua khi đang gõ chữ. Thanh tua / thanh âm lượng (input range),
-          // checkbox, nút bấm... vẫn dùng phím tắt, và ta chặn hành vi mặc định
-          // của chúng để không bị tua / đổi âm lượng 2 lần.
-          const t = e.target;
-          const TEXT_TYPES = [
-            "text",
-            "search",
-            "email",
-            "url",
-            "tel",
-            "password",
-            "number",
-          ];
-          if (
-            t &&
-            (t.tagName === "TEXTAREA" ||
-              t.tagName === "SELECT" ||
-              t.isContentEditable ||
-              (t.tagName === "INPUT" && TEXT_TYPES.includes(t.type)))
-          ) {
-            return;
-          }
-          if (e.ctrlKey || e.altKey || e.metaKey) return;
-
-          const showToast = (text) => {
-            let toast = document.getElementById("key-toast");
-            if (!toast) {
-              toast = document.createElement("div");
-              toast.id = "key-toast";
-              toast.style.cssText =
-                "position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);" +
-                "background:rgba(0,0,0,.7);color:#fff;padding:10px 18px;border-radius:8px;" +
-                "font-size:18px;font-weight:600;z-index:8;pointer-events:none;" +
-                "opacity:0;transition:opacity .2s;";
-              (player
-                ? player.elements.container
-                : video.parentElement
-              ).appendChild(toast);
-            }
-            toast.textContent = text;
-            toast.style.opacity = "1";
-            clearTimeout(toast._t);
-            toast._t = setTimeout(() => (toast.style.opacity = "0"), 700);
-          };
-
-          switch (e.key) {
-            case "f":
-            case "F":
-              e.preventDefault();
-              if (player) {
-                player.fullscreen.toggle();
-              } else if (document.fullscreenElement) {
-                document.exitFullscreen();
-              } else {
-                video.requestFullscreen();
-              }
-              break;
-
-            case "ArrowLeft":
-              e.preventDefault();
-              video.currentTime = Math.max(0, video.currentTime - 10);
-              showToast("⏪ -10s");
-              break;
-
-            case "ArrowRight":
-              e.preventDefault();
-              video.currentTime = Math.min(
-                video.duration || Infinity,
-                video.currentTime + 10,
-              );
-              showToast("+10s ⏩");
-              break;
-
-            case "ArrowUp":
-              e.preventDefault();
-              video.muted = false;
-              video.volume = Math.min(
-                1,
-                Math.round((video.volume + 0.1) * 10) / 10,
-              );
-              showToast("🔊 " + Math.round(video.volume * 100) + "%");
-              break;
-
-            case "ArrowDown":
-              e.preventDefault();
-              video.volume = Math.max(
-                0,
-                Math.round((video.volume - 0.1) * 10) / 10,
-              );
-              showToast(
-                video.volume === 0
-                  ? "🔇 0%"
-                  : "🔉 " + Math.round(video.volume * 100) + "%",
-              );
-              break;
-
-            case " ":
-            case "k":
-            case "K":
-              e.preventDefault();
-              if (video.paused) video.play().catch(() => {});
-              else video.pause();
-              break;
-
-            case "m":
-            case "M":
-              video.muted = !video.muted;
-              showToast(video.muted ? "🔇 Tắt tiếng" : "🔊 Bật tiếng");
-              break;
-          }
-        });
-
-        document.addEventListener("keyup", (e) => {
-          if (e.key === " " && e.target && e.target.tagName === "BUTTON") {
-            e.preventDefault();
-          }
         });
 
         // =========================
@@ -1704,19 +1542,19 @@
             return b;
           };
 
-          if (episodeNum > 1) {
+          if (getEpisodeNavigation().previous !== null) {
             controls.insertBefore(
               makeBtn("fa-backward-step", "Tập trước", () =>
-                goToEpisode(episodeNum - 1),
+                goToEpisode(getEpisodeNavigation().previous + 1),
               ),
               rewindBtn,
             );
           }
 
-          if (episodeNum < totalEp) {
+          if (getEpisodeNavigation().next !== null) {
             forwardBtn.after(
               makeBtn("fa-forward-step", "Tập sau", () =>
-                goToEpisode(episodeNum + 1),
+                goToEpisode(getEpisodeNavigation().next + 1),
               ),
             );
           }
@@ -1730,7 +1568,7 @@
 
           const BOOST_KEY = "audio_boost";
           const LEVELS = [1, 1.5, 2, 3];
-          let level = Number(localStorage.getItem(BOOST_KEY)) || 1;
+          let level = Number(PlayerControls.read(playerStorage, BOOST_KEY, 1)) || 1;
           if (!LEVELS.includes(level)) level = 1;
 
           let audioCtx = null;
@@ -1778,7 +1616,7 @@
 
           function cycle() {
             level = LEVELS[(LEVELS.indexOf(level) + 1) % LEVELS.length];
-            localStorage.setItem(BOOST_KEY, String(level));
+            PlayerControls.write(playerStorage, BOOST_KEY, level);
             applyBoost();
             refreshBtn();
           }
@@ -1794,25 +1632,7 @@
 
           // Phím B để đổi mức tăng âm
           document.addEventListener("keydown", (e) => {
-            const t = e.target;
-            if (
-              t &&
-              (t.tagName === "TEXTAREA" ||
-                t.tagName === "SELECT" ||
-                t.isContentEditable ||
-                (t.tagName === "INPUT" &&
-                  [
-                    "text",
-                    "search",
-                    "email",
-                    "url",
-                    "tel",
-                    "password",
-                    "number",
-                  ].includes(t.type)))
-            )
-              return;
-            if (e.ctrlKey || e.altKey || e.metaKey) return;
+            if (PlayerControls.shouldIgnoreShortcut(e, document)) return;
             if (e.key === "b" || e.key === "B") cycle();
           });
 
@@ -1846,7 +1666,7 @@
         );
 
         try {
-          await video.play();
+          if (!playerControls || playerControls.shouldAutoNext()) await video.play();
         } catch (error) {
           console.log("Autoplay bị trình duyệt chặn. Hãy bấm Play.");
         }

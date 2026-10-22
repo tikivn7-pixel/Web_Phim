@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3697 phim; 0 lỗi; 313 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3697 phim; 0 lỗi; 265 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -91,7 +91,6 @@
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chuyen-xe-tam-tinh-phan-1
 - **warning / missing-year**: Chưa có năm phát hành. — tham-tu-lung-danh-conan-22-ke-han-phap-zero
 - **warning / missing-year**: Chưa có năm phát hành. — phim/sat-thu-ve-vuon
-- **warning / missing-part**: Có nhóm nhưng thiếu tên phần. — luc-do-toi-chuyen-sinh-thanh-slime-nuoc-mat-dai-duong
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — everest-nguoi-tuyet-be-nho
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — afro-samurai-resurrection
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — chang-the-ly-giai-noi-aharensan-phan-2
@@ -263,55 +262,8 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-ngay-tan-cua-gotham, nguoi-doi-gotham-diet-vong
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ky-si-bong-dem-tro-lai-phan-2, nguoi-doi-ky-si-bong-dem-tro-lai-phan-2
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-lego-van-de-gia-dinh, lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Athena Goddess Of War. — nu-than-chien-tranh, athena-nu-than-chien-tranh
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Blind. — nhan-chung-mu, toi-ac-vo-hinh-cong-ly-mu
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Cheese in the Trap. — bay-tinh-yeu, bay-tinh-yeu-ban-dien-anh
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Collectors. — ke-san-mo, lien-minh-dao-mo
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Concrete. — cho-den-thoi-tan-the-2025, cho-den-thoi-tan-the
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Confession. — thu-toi, hung-thu-vo-hinh
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Countdown. — 10-ngay-de-song, cuoc-doi-thu-ba
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Dear. — dear-m, gui-cau-tinh-dau-cua-toi
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Endless Rain. — endless-rain, neu-nhu-sau-con-mua
-- **warning / duplicate-part**: Trùng tên phần trong nhóm From. — dien-nao-ma-oi, bat-ma-pha-an
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Helpless. — helpless, luot-xem-dam-mau
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Hitman. — mat-vu-kingsman-2020, sat-thu-vo-cung-cuc
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Hometown. — co-huong, mat-toi-cua-binh-yen
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Hostage Missing Celebrity. — con-tin, con-tin-ngoi-sao-mat-tich
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Hwayi A Monster Boy. — hwayi-cau-be-quai-vat, hwayi-sat-nhan-trang
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Kingdom. — vuong-trieu-xac-song-phan-1, vuong-gia-thien-ha-phan-1
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Kingdom. — vuong-trieu-xac-song-phan-2, vuong-gia-thien-ha-phan-2
-- **warning / duplicate-part**: Trùng tên phần trong nhóm KingMaker. — kingmaker, vua-bau-cu
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Kundo Age Of The Rampant. — ky-nguyen-tan-bao, ac-quy-nghin-nam
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Live. — cuoc-song-2018, doi-canh-sat
-- **warning / duplicate-part**: Trùng tên phần trong nhóm LOST. — that-lac, cuoc-doi-day-song
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Love (ft. Marriage and Divorce). — doi-ban-hoc-yeu, doi-ban-hoc-yeu-phim-bo
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Master. — ong-trum-2016, master
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Moonlit Winter. — trang-sang-mua-dong, yoon-hee-cua-me
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Mouse. — mouse-ke-san-nguoi-ban-dien-anh, ke-san-nguoi, mouse-ke-san-nguoi
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Once. — mot-lan-nua, them-mot-lan-nua, tro-ve-nam-1997
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Phantom. — dac-vu-bong-ma, phantom
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Pyramid Game. — tro-choi-kim-tu-thap, tro-choi-kim-tu-thap-ban-anime
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Running Man. — thu-thach-than-tuong, danh-ca-dai-chien
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Scent Of A Ghost. — ma-nu-chung-cu, mui-huong-cua-ma-nu
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Serve The People. — phuc-vu-nhan-dan, cam-do
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Sinkhole. — ho-sut, ho-sut-tu-than
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Start Up. — tre-trau-khoi-nghiep, khoi-nghiep
-- **warning / duplicate-part**: Trùng tên phần trong nhóm True. — ve-dep-dich-thuc, ve-dep-dich-thuc-2024
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Unlock My Boss. — mo-khoa-sep-tong, giai-cuu-ong-chu
-- **warning / duplicate-part**: Trùng tên phần trong nhóm While You Were Sleeping. — khi-nang-say-giac, su-that-sau-giac-ngu
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Sword Art Online. — dao-kiem-than-vuc-ranh-gioi-hu-ao-ngoai-truyen-2, sword-art-online-progressive-khuc-scherzo-duoi-hoang-hon-am-dam
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Ahiru No Sora. — bong-ro-danh-cho-moi-nguoi, niem-dam-me-bong-ro
-- **warning / duplicate-part**: Trùng tên phần trong nhóm As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World. — chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1, tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — batman-tro-dua-chet-choc, nguoi-doi-sat-thu-joke
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — nguoi-doi-va-ninja-rua, lien-minh-nguoi-doi-va-ninja-rua
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman. — nguoi-doi-ngay-tan-cua-gotham, nguoi-doi-gotham-diet-vong
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Butareba The Story of a Man Turned Into a Pig. — lam-nong-la-gan-chu-heo, butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Doraemon. — doraemon-chu-khung-long-cua-nobita-1980, doraemon-chu-khung-long-cua-nobita
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Doraemon. — doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989, doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Horimiya. — horimiya, horisan-va-miyamurakun
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Rokudo s Bad Girls. — cac-co-gai-cua-rokudo, gai-hu-cua-rokudo
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Sasaki and Peeps. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
-- **warning / duplicate-part**: Trùng tên phần trong nhóm VIRGIN PUNK Clockwork Girl. — co-gai-co-khi, thieu-nu-punk-co-gai-co-khi
-- **warning / duplicate-part**: Trùng tên phần trong nhóm ラグナクリムゾン. — ragna-crimson, sat-long-nhan
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Batman: The Dark Knight Returns,. — ky-si-bong-dem-tro-lai-phan-2, nguoi-doi-ky-si-bong-dem-tro-lai-phan-2
-- **warning / duplicate-part**: Trùng tên phần trong nhóm Lego. — nguoi-doi-lego-van-de-gia-dinh, lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
+- **warning / duplicate-part**: Trùng tên phần trong nhóm tmdb-tv-237150. — chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1, tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1
+- **warning / season-gap**: Nhóm tmdb-tv-90937 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — beastars-the-gioi-nguoi-thu-phan-1, beastars-the-gioi-nguoi-thu-phan-3
+- **warning / season-gap**: Nhóm tmdb-tv-69500 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — huu-nhan-so-phan-1, huu-nhan-so-phan-3, huu-nhan-so-phan-4, huu-nhan-so-phan-5, huu-nhan-so-phan-6, huu-nhan-so-phan-7
+- **warning / duplicate-part**: Trùng tên phần trong nhóm tmdb-tv-206630. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
+- **warning / season-gap**: Nhóm tmdb-tv-83095 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — su-troi-day-cua-khien-hiep-si-phan-1, su-troi-day-cua-khien-hiep-si-phan-4

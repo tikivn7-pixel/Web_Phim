@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111114"><title>Thư viện của tôi · LauPhim</title><link rel="stylesheet" href="library.css?v=20261023d"><link rel="stylesheet" href="cinema.css?v=20261023d"></head>
+<body>
+  <a class="skip-link" href="#library-content">Đến thư viện</a>
+  <header class="library-header"><a class="brand" href="index.html"><span>Lau</span>Phim</a><nav aria-label="Điều hướng"><a href="index.html">Khám phá phim</a><a href="library.html" aria-current="page">Thư viện của tôi</a></nav></header>
+  <main id="library-content">
+    <section class="library-intro"><p class="eyebrow">GÓC RIÊNG CỦA BẠN</p><h1>Thư viện của tôi</h1><p>Phim muốn xem và các tập đang xem dở, lưu trên trình duyệt này.</p><p class="privacy-note">Không cần đăng nhập. Tải bản sao lưu để chuyển sang thiết bị khác; trình duyệt ẩn danh hoặc xóa dữ liệu website có thể làm mất danh sách.</p></section>
+    <p id="library-status" class="notice" role="status" hidden></p>
+    <section aria-label="Danh sách phim của tôi">
+      <div class="library-toolbar"><div class="view-tabs" role="group" aria-label="Chọn danh sách"><button type="button" id="favorites-tab" aria-pressed="true">Yêu thích <span id="favorites-count">0</span></button><button type="button" id="watching-tab" aria-pressed="false">Đang xem <span id="watching-count">0</span></button></div><a class="backup-jump" href="#backup">Sao lưu &amp; khôi phục ↓</a></div>
+      <div class="library-filters"><label>Tìm trong thư viện<input id="library-search" type="search" placeholder="Tên phim…" maxlength="200"></label><label>Sắp xếp<select id="library-sort"><option value="recent">Gần đây</option><option value="title">Tên A–Z</option><option value="year">Năm mới nhất</option></select></label><button id="clear-list" type="button" class="subtle danger">Xóa danh sách này</button></div>
+      <p id="result-count" class="result-count" aria-live="polite"></p><div id="library-grid" class="library-grid"></div><div id="library-more" class="library-more" hidden><button id="library-load-more" type="button">Xem thêm 60 phim</button></div>
+      <div id="library-empty" class="empty-state" hidden><div aria-hidden="true">♡</div><h2 id="empty-title">Danh sách còn trống</h2><p id="empty-description"></p><a class="primary button" href="index.html">Tìm phim để xem</a></div>
+    </section>
+    <section id="backup" class="backup-panel"><div><p class="eyebrow">GIỮ LẠI NHỮNG GÌ BẠN ĐANG XEM</p><h2>Sao lưu &amp; khôi phục</h2><p>Bản JSON gồm yêu thích, tiến độ từng tập, báo lỗi nguồn và thiết lập trình phát. Không gồm tài khoản, mật khẩu hay token đăng nhập.</p><button class="primary" id="export-personal" type="button">Tải bản sao lưu JSON</button></div><div class="import-box"><label class="file-label" for="import-personal">Khôi phục từ tệp JSON</label><input type="file" id="import-personal" accept="application/json,.json"><p class="muted">Chọn tệp để xem trước. Dữ liệu chưa thay đổi cho đến khi bạn bấm xác nhận. Khi gộp, thiết lập tốc độ/âm lượng hiện có được giữ lại; khi thay thế, thiết lập trong bản sao được dùng. Hẹn giờ tắt không được sao lưu.</p><div id="import-preview" hidden><p id="import-counts"></p><label>Cách khôi phục<select id="import-mode"><option value="merge">Gộp với dữ liệu hiện có (ưu tiên bản mới hơn)</option><option value="replace">Thay thế toàn bộ dữ liệu cá nhân hiện có</option></select></label><p id="import-result"></p><div class="button-row"><button class="primary" id="apply-import" type="button">Xác nhận khôi phục</button><button id="cancel-import" type="button">Hủy</button></div></div></div></section>
+    <noscript><p>Cần bật JavaScript để đọc thư viện đã lưu trong trình duyệt.</p></noscript>
+  </main><footer>LauPhim · Danh sách của bạn nằm trên thiết bị của bạn.</footer>
+  <script src="catalog-format.js?v=20261023d"></script><script src="personal-data.js?v=20261023d"></script><script src="site-tools.js?v=20261023d"></script><script src="library.js?v=20261023d"></script>
+</body></html>

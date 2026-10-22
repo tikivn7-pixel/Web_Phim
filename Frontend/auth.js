@@ -9,8 +9,8 @@
     typeof API_BASE_URL !== "undefined" ? API_BASE_URL : "";
 
   // ---------- Tiện ích token ----------
-  const getToken = () => localStorage.getItem(TOKEN_KEY);
-  const getUsername = () => localStorage.getItem(USER_KEY);
+  const getToken = () => {try{return localStorage.getItem(TOKEN_KEY);}catch(e){return null;}};
+  const getUsername = () => {try{return localStorage.getItem(USER_KEY);}catch(e){return null;}};
 
   function saveSession(token, username) {
     localStorage.setItem(TOKEN_KEY, token);
@@ -23,6 +23,7 @@
   }
 
   async function postJSON(path, body) {
+    if(!apiBase())throw Error("Tài khoản chưa được bật. Bạn vẫn có thể lưu yêu thích và sao lưu trong Thư viện.");
     const res = await fetch(`${apiBase()}${path}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -139,6 +140,9 @@
 
   function renderAuthArea() {
     authArea.innerHTML = "";
+    if(!apiBase()){
+      const backup=document.createElement("a");backup.className="auth-btn";backup.href="library.html#backup";backup.textContent="Sao lưu dữ liệu";backup.style.textDecoration="none";authArea.append(backup);return;
+    }
     if (getToken()) {
       const user = document.createElement("span");
       user.className = "auth-user";
@@ -172,6 +176,7 @@
 
   // Xác minh token còn hiệu lực với server (GET /api/auth/me)
   async function verifySession() {
+    if(!apiBase())return;
     const token = getToken();
     if (!token) return;
     try {

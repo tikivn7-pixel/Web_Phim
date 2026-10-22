@@ -15,6 +15,25 @@ body {
   min-height: 100vh;
 }
 
+/* Shared navigation and accessible catalog controls. */
+[hidden] { display:none !important; }
+a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible { outline:2px solid #f26d78; outline-offset:3px; }
+.nav-links a { color:inherit; text-decoration:none; display:block; }
+.skip-link { position:fixed; left:12px; top:-100px; z-index:20000; padding:12px 18px; color:#fff; background:#a5111d; border-radius:6px; }
+.skip-link:focus { top:12px; }
+.movie-card-link { display:block; text-decoration:none; color:inherit; border-radius:8px; }
+.movie-card-meta { color:#b8bac1; font-size:12px; margin-top:5px; }
+.heart-symbol { font-size:27px; line-height:1; }
+.movie-card-link img { width:100%; aspect-ratio:2/3; object-fit:cover; }
+.movie-card:focus-within .card-heart { opacity:1; }
+.movie-card:focus-within .movie-hover-card { display:none; }
+.search-suggest .ss-more { width:100%; color:#f2f2f2; font:inherit; border:0; border-top:1px solid #3b3b3b; text-align:left; background:#222; cursor:pointer; }
+.detail-load-status { padding:14px; margin:14px 0; border:1px solid #48505c; border-radius:8px; color:#d5d8dd; }
+.detail-load-status button { margin-left:10px; min-height:40px; padding:8px 12px; cursor:pointer; }
+.hero-pause { position:absolute; bottom:22px; right:24px; z-index:3; background:#161616d9; color:#fff; border:1px solid #999; border-radius:6px; padding:9px 14px; min-height:44px; cursor:pointer; }
+@media(max-width:600px){.movie-card-link img{height:auto;} .nav-links a{padding:10px 4px;min-height:44px;} .hero-pause{bottom:8px;right:12px;font-size:12px;padding:7px;}}
+@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto;}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}
+
 /* Catalog filters and controls shared across static pages. */
 .catalog-shortcuts { display:flex; gap:10px; flex-wrap:wrap; padding:20px 30px 0; }
 .catalog-shortcuts button, .year-filter button, .playback-recovery button {
@@ -253,7 +272,7 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 
 /* Menu Quốc Gia: gọn hơn menu Thể Loại (2 cột) - chỉ áp dụng trên desktop,
    mobile dùng chung kiểu dropdown tĩnh 100% ở media query bên dưới */
-@media (min-width: 993px) {
+@media (min-width: 1151px) {
   .dropdown-menu.country-menu {
     width: 340px;
   }
@@ -279,9 +298,9 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
    ========================================== */
 .hero-banner {
   position: relative;
-  height: 88vh;
-  min-height: 560px;
-  max-height: 820px;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 640px;
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
@@ -375,30 +394,36 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 .hero-dots {
   position: absolute;
   bottom: 20px;
-  right: 50px;
+  left: 24px;
   display: flex;
   gap: 8px;
   z-index: 10;
 }
 
 .hero-dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
+  width: 32px;
+  height: 44px;
+  background: transparent;
+  border:0;
+  display:grid;
+  place-items:center;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .hero-dot:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background: transparent;
 }
 
+.hero-dot::after { content:""; width:10px; height:10px; border-radius:50%; background:#ffffff75; }
+.hero-dot:hover::after { background:#fff; }
+
 .hero-dot.active {
-  background-color: #e50914;
-  width: 26px;
+  background:transparent;
+  width:32px;
   border-radius: 10px;
 }
+.hero-dot.active::after { background:#e50914; width:24px; border-radius:10px; }
 
 /* ==========================================
    SLIDER SECTION & MOVIE CARDS
@@ -1921,7 +1946,7 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 
 /* Tablet + Mobile */
 
-@media (max-width: 992px) {
+@media (max-width: 1150px) {
   .navbar {
     padding: 12px 15px;
     gap: 12px;
@@ -1929,7 +1954,7 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 
   .mobile-menu-btn {
     display: block;
-    order: 2;
+    order: 0;
   }
 
   .logo {
@@ -1943,6 +1968,8 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 
   .nav-links {
     position: fixed;
+    overflow-y:auto;
+    max-height:100dvh;
 
     top: 0;
     left: -280px;
@@ -1964,6 +1991,7 @@ button:focus-visible, select:focus-visible, [role="button"]:focus-visible { outl
 
     transition: left 0.3s ease;
   }
+  .navbar .auth-area { order:4; }
 
   .nav-links.mobile-open {
     left: 0;

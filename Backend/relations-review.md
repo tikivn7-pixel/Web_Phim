@@ -1,0 +1,1226 @@
+# Các liên kết cũ chưa đủ bằng chứng
+
+Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng không hiện chung mục Phần phim.
+
+- lang-quan-100-ngay: 100 Days My Prince — nhóm cũ: 100 Days
+- 100-ngay-lua-doi: 100 Days Of Deception — nhóm cũ: 100 Days
+- nhung-dua-tre-cua-the-ky-20: 20th Century Boy and Girl — nhóm cũ: 20th Century
+- co-gai-the-ky-20: 20th Century Girl — nhóm cũ: 20th Century
+- khoanh-khac-muon-thoi-gian-ngung-lai: About Time — nhóm cũ: About
+- chuyen-nha-banh-xep: About Family — nhóm cũ: About
+- cuoc-chien-xuyen-khong: Alienoid — nhóm cũ: Alienoid
+- alienoid-2-da-chieu-hon-chien: Alienoid: The Return to the Future — nhóm cũ: Alienoid
+- thu-thach-than-chet-giua-hai-the-gioi: Along With The Gods: The Two Worlds — nhóm cũ: Along with the Gods The
+- thu-thach-than-chet-2-49-ngay-cuoi-cung: Along with the Gods: The Last 49 Days — nhóm cũ: Along with the Gods The
+- chi-rieng-minh-em: Always — nhóm cũ: Always
+- luc-nao-ta-cung-se-gap-lai: Always Meet Again — nhóm cũ: Always
+- su-menh-cuoi-cung-cua-thien-than: Angel's Last Mission: Love — nhóm cũ: Angel s
+- lai-la-oh-hae-young: Another Miss Oh — nhóm cũ: Another
+- bi-mat-con-ghe: Another Child — nhóm cũ: Another
+- nu-than-chien-tranh: Athena: Goddess Of War — nhóm cũ: Athena Goddess Of War
+- athena-nu-than-chien-tranh: Athena: Goddess Of War — nhóm cũ: Athena Goddess Of War
+- tran-chien-hanh-phuc: Battle For Happiness (Happiness Battle) — nhóm cũ: Battle
+- dai-chien-van-menh: Battle Of Fates — nhóm cũ: Battle
+- gong-shim-dang-yeu: Beautiful Gong Shim — nhóm cũ: Beautiful
+- ma-ca-rong-xinh-dep: Beautiful Vampire — nhóm cũ: Beautiful
+- the-gioi-tuyet-voi: Beautiful World — nhóm cũ: Beautiful
+- beauty-water: Beauty Water — nhóm cũ: Beauty
+- mi-nu-va-quy-ngai-lang-man: Beauty And Mr. Romantic — nhóm cũ: Beauty
+- boi-vi-anh-yeu-em: Because I Love You — nhóm cũ: Because
+- cuoc-doi-dau-tien: Because This Is My First Life — nhóm cũ: Because
+- vi-toi-ghet-han-quoc: Because I Hate Korea — nhóm cũ: Because
+- dang-sau-moi-ngoi-sao: Behind Every Star — nhóm cũ: Behind
+- ban-tay-ma-thuat: Behind Your Touch — nhóm cũ: Behind
+- doc-chien: Believer — nhóm cũ: Believer
+- doc-chien-2: Believer 2 — nhóm cũ: Believer
+- hang-xom-2020: Best Friend — nhóm cũ: Best Friend
+- hang-xom-ke-ben: Best Friend (Next Door Neighbor) — nhóm cũ: Best Friend
+- tung-buoc-ben-nhau-tien-si-yeu-duong-phan-1: Between Steps (Season 1) — nhóm cũ: Between Steps
+- hon-ca-ac-ma: Beyond Evil — nhóm cũ: Beyond
+- giac-mo-nguoi-luat-su: Beyond The Bar — nhóm cũ: Beyond
+- song-bac: Big Bet — nhóm cũ: Big Bet
+- song-bac-phan-2: Big Bet (Season 2) — nhóm cũ: Big Bet
+- nhan-chung-mu: Blind — nhóm cũ: Blind
+- toi-ac-vo-hinh-cong-ly-mu: Blind — nhóm cũ: Blind
+- dong-pham: Blood and Ties — nhóm cũ: Blood
+- bac-si-ma-ca-rong: Blood — nhóm cũ: Blood
+- loai-thong-tri: Blood Free — nhóm cũ: Blood
+- trai-tim-dam-mau: Bloody Heart — nhóm cũ: Bloody
+- hoa-mau: Bloody Flower — nhóm cũ: Bloody
+- bon-appetit: Bon Appetit — nhóm cũ: Bon Appetit
+- ngu-tru-cua-bao-chua: Bon Appétit, Your Majesty — nhóm cũ: Bon Appetit
+- ong-trum-riize: Boss Riize — nhóm cũ: Boss
+- dai-ca-ha-ha-ha: Boss — nhóm cũ: Boss
+- co-giao-em-la-so-1: Brave Citizen — nhóm cũ: Brave
+- chien-nao-ma-kia: Bring It On, Ghost — nhóm cũ: Bring
+- dua-con-ve-nha: Bring Me Home — nhóm cũ: Bring
+- thieu-dot: Burning — nhóm cũ: Burning
+- ngay-doi-nguoi-yeu-phan-2: Change Days (Season 2) — nhóm cũ: Change Days
+- hanh-trinh-tim-lai-tinh-yeu: Check Out the Event — nhóm cũ: Check
+- quan-tro-hanyang: Check In Hanyang — nhóm cũ: Check
+- check-in-to-you: Check In To You — nhóm cũ: Check
+- tuoi-len-di-mr-lee: Cheer Up, Mr. Lee — nhóm cũ: Cheer Up
+- vu-dieu-tuoi-tre: Cheer Up — nhóm cũ: Cheer Up
+- bay-tinh-yeu: Cheese in the Trap — nhóm cũ: Cheese in the Trap
+- bay-tinh-yeu-ban-dien-anh: Cheese in the Trap — nhóm cũ: Cheese in the Trap
+- dua-tre-vo-danh: Children Of Nobody — nhóm cũ: Children
+- lo-lem-va-bon-chang-hiep-si: Cinderella And Four Knights — nhóm cũ: Cinderella
+- lo-lem-2-gio-sang: Cinderella At 2AM — nhóm cũ: Cinderella
+- tro-choi-lo-lem: Cinderella Game — nhóm cũ: Cinderella
+- tho-san-thanh-pho-2011: City Hunter — nhóm cũ: City
+- ban-than-phan-1: Close Friend (Season 1) — nhóm cũ: Close Friend
+- ke-san-mo: Collectors — nhóm cũ: Collectors
+- lien-minh-dao-mo: Collectors — nhóm cũ: Collectors
+- dia-dang-sup-do: Concrete Utopia — nhóm cũ: Concrete
+- cho-den-thoi-tan-the-2025: Concrete Market — nhóm cũ: Concrete
+- cho-den-thoi-tan-the: Concrete Market — nhóm cũ: Concrete
+- loi-thu-toi-cua-ke-sat-nhan: Confession Of Murder — nhóm cũ: Confession
+- thu-toi: Confession — nhóm cũ: Confession
+- hung-thu-vo-hinh: Confession — nhóm cũ: Confession
+- cong-su-bat-dac-di: Confidential Assignment — nhóm cũ: Confidential Assignment
+- dac-vu-xuyen-quoc-gia: Confidential Assignment 2: International — nhóm cũ: Confidential Assignment
+- 10-ngay-de-song: Countdown — nhóm cũ: Countdown
+- cuoc-doi-thu-ba: Countdown — nhóm cũ: Countdown
+- ha-canh-noi-anh: Crash Landing on You — nhóm cũ: Crash
+- khoa-hoc-yeu-cap-toc: Crash Course In Romance — nhóm cũ: Crash
+- tai-nan: Crash — nhóm cũ: Crash
+- ngot-ngao-dien-dai: Crazy Romance — nhóm cũ: Crazy
+- tinh-yeu-dien-cuong: Crazy Love — nhóm cũ: Crazy
+- ha-man: Curtain Call — nhóm cũ: Curtain
+- lop-hoc-cua-tae-ri: Curtain Up, Class! — nhóm cũ: Curtain
+- ho-den: Dark Hole — nhóm cũ: Dark Hole
+- ho-toi-phan-1: Dark Hole (Season 1) — nhóm cũ: Dark Hole
+- hay-hen-ho-voi-ban-toi-di: Date My Friend — nhóm cũ: Date
+- nguoi-chet-tro-ve: Dead Man — nhóm cũ: Dead
+- tinh-ban-tuoi-xe-chieu: Dear My Friends — nhóm cũ: Dear
+- wonnie-than-yeu-cua-toi: Dear My Wonnie — nhóm cũ: Dear
+- dear-m: Dear. M — nhóm cũ: Dear
+- gui-cau-tinh-dau-cua-toi: Dear M — nhóm cũ: Dear
+- gui-nguoi-khong-yeu-toi: Dear X Who Doesn't Love Me — nhóm cũ: Dear
+- gui-hyeri-than-yeu: Dear Hyeri — nhóm cũ: Dear
+- nuot-vang: Dear Hongrang — nhóm cũ: Dear
+- x-than-men: Dear X — nhóm cũ: Dear
+- tro-choi-sinh-tu-2023: Death's Game — nhóm cũ: Death
+- bay-tinh: Deep Trap — nhóm cũ: Deep
+- tham-tu-k-bi-mat-goa-phu: Detective K: Secret Of Virtuous Widow — nhóm cũ: Detective
+- tham-tu-k-bi-mat-dao-hoang: Detective K: Secret Of The Lost Island — nhóm cũ: Detective
+- tham-tu-k-ma-ca-rong-bao-thu: Detective K: Secret Of The Living Dead — nhóm cũ: Detective
+- thanh-tra-sat-nhan: Devils — nhóm cũ: Devils
+- ngai-quy: Devils Stay — nhóm cũ: Devils
+- nhat-ky-cong-to-vien: Diary of a Prosecutor — nhóm cũ: Diary of
+- chim-vao-mat-em-phan-1: Dive into You (Season 1) — nhóm cũ: Dive into You
+- bac-si-xu-la: Doctor Stranger — nhóm cũ: Doctor
+- bac-si-trinh-tham: Doctor Detective — nhóm cũ: Doctor
+- bac-si-yo-han: Doctor John — nhóm cũ: Doctor
+- bac-si-trai-giam: Doctor Prisoner — nhóm cũ: Doctor
+- bac-si-luat-su: Doctor Lawyer — nhóm cũ: Doctor
+- bac-si-cha: Doctor Cha — nhóm cũ: Doctor
+- not-tram-doi-bac-si: Doctor Slump — nhóm cũ: Doctor
+- bac-si-dao-hoang: Doctor on the Edge — nhóm cũ: Doctor
+- bac-si-shin: Doctor Shin — nhóm cũ: Doctor
+- bac-si-x: Doctor X: Mafia in White — nhóm cũ: Doctor
+- tro-choi-ma-quai: Don't Click — nhóm cũ: Don t
+- dont-worry-im-a-ghost: Don't Worry, I'm a Ghost — nhóm cũ: Don t
+- bo-doi-dai-truyen-hinh: Don't Dare to Dream — nhóm cũ: Don t
+- dung-lo: Don't Worry — nhóm cũ: Don t
+- don-hang-tu-sat-nhan: Don't Buy The Seller — nhóm cũ: Don t
+- doi-chi-song-mot-lan: Don't Call Me Ma'am — nhóm cũ: Don t
+- bong-hoa-uoc-vong: Door To The Night — nhóm cũ: Door
+- o-khoa-tu-than-ke-dot-nhap: Door Lock — nhóm cũ: Door
+- nhan-doi-tinh-yeu: Double Patty — nhóm cũ: Double
+- double-exposure: Double Exposure — nhóm cũ: Double
+- nguoi-thay-y-duc-phan-1: Dr. Romantic (Season 1) — nhóm cũ: Dr. Romantic
+- nguoi-thay-y-duc-phan-2: Dr. Romantic (Season 2) — nhóm cũ: Dr. Romantic
+- nguoi-thay-y-duc-phan-3: Dr. Romantic (Season 3) — nhóm cũ: Dr. Romantic
+- doi-bong-dream: Dream — nhóm cũ: Dream
+- giac-mo-trao-em: Dream To You — nhóm cũ: Dream
+- endless-rain: Endless Rain — nhóm cũ: Endless Rain
+- neu-nhu-sau-con-mua: Endless Rain — nhóm cũ: Endless Rain
+- thoat-khoi-mogadishu: Escape from Mogadishu — nhóm cũ: Escape
+- tau-thoat-2024: Escape — nhóm cũ: Escape
+- dem-nay-dau-tinh-yeu-nay-bien-mat-khoi-the-gian-2025: Even If This Love Disappears Tonight — nhóm cũ: Even
+- tinh-yeu-qua-canh-phan-4: EXchange (Season 4) — nhóm cũ: EXchange
+- vo-tinh-tim-thay-haru: Extraordinary Haru — nhóm cũ: Extraordinary
+- nu-luat-su-ky-la-woo-young-woo: Extraordinary Attorney Woo — nhóm cũ: Extraordinary
+- nghe-sieu-kho: Extreme Job — nhóm cũ: Extreme
+- tinh-than-gia-dinh: Family: The Unbreakable Bond — nhóm cũ: Family
+- chon-lam-nguoi-mot-nha: Family By Choice — nhóm cũ: Family
+- chuyen-gia-dinh: Family Matters — nhóm cũ: Family
+- loi-chua-noi: Family Secret — nhóm cũ: Family
+- trung-tam-mai-moi-joseon: Flower Crew: Joseon Marriage Agency — nhóm cũ: Flower
+- bong-hoa-ac-ma-hoa-cua-quy: Flower of Evil — nhóm cũ: Flower
+- uoc-mo-bi-cam-doan: Forbidden Dream — nhóm cũ: Forbidden
+- nghe-sieu-kho-noi: Forbidden Fairytale — nhóm cũ: Forbidden
+- dien-nao-ma-oi: From Now On, Showtime! — nhóm cũ: From
+- bat-ma-pha-an: From Now On, Showtime! — nhóm cũ: From
+- bui-doi-gangnam: Gangnam Blues — nhóm cũ: Gangnam
+- gangnam-that-thu: Gangnam Zombie — nhóm cũ: Gangnam
+- goc-khuat-o-gangnam: Gangnam B-Side — nhóm cũ: Gangnam
+- gangnam-1970: Gangnam 1970 — nhóm cũ: Gangnam
+- gieo-gi-gat-nay-ngoai-truyen: GBRB Spin Off: Cafeteria Operation — nhóm cũ: GBRB
+- gieo-gi-gat-nay-ngoai-truyen-mexico: GBRB: Joy Pops Laugh Pops — nhóm cũ: GBRB
+- gieo-gi-gat-nay-nong-trai-thang-tien: GBRB: Farm Operation - Go Go Farm — nhóm cũ: GBRB
+- quy-ong-bat-ma: Ghost Sweepers — nhóm cũ: Ghost
+- ngoi-nha-ky-quai: Ghost Mansion — nhóm cũ: Ghost
+- bac-si-ma: Ghost Doctor — nhóm cũ: Ghost
+- ga-tu-than-2025: Ghost Train — nhóm cũ: Ghost
+- ma-tu: Ghost in the Cell — nhóm cũ: Ghost
+- tien-len-cac-be-cun-phan-3: Go, Dog. Go! (Season 3) — nhóm cũ: Go, Dog. Go!
+- giac-ngu-hoang-kim: Golden Slumber — nhóm cũ: Golden
+- thien-than-ao-trang: Good Doctor — nhóm cũ: Good
+- sep-kim-dai-tai: Good Manager — nhóm cũ: Good
+- gia-danh: Good Casting — nhóm cũ: Good
+- doi-tac-hoan-hao: Good Job — nhóm cũ: Good
+- ngay-moi-tot-lanh: Good Morning — nhóm cũ: Good
+- cong-su-hoan-hao-2024: Good Partner — nhóm cũ: Good
+- kien-tuong: Good Boy — nhóm cũ: Good
+- ngay-tot-lanh: Good Day — nhóm cũ: Good
+- tin-tot-lanh: Good News — nhóm cũ: Good
+- thanh-tra-mau-muc-phan-1: Good Detective (Season 1) — nhóm cũ: Good Detective
+- thanh-tra-mau-muc-phan-2: Good Detective (Season 2) — nhóm cũ: Good Detective
+- tam-biet-trai-dat: Goodbye Earth — nhóm cũ: Goodbye
+- heart-blackened: Heart Blackened — nhóm cũ: Heart
+- cap-doi-dinh-menh: Heart Pairing — nhóm cũ: Heart
+- vet-tim: Heart Stain — nhóm cũ: Heart
+- ban-an-tu-dia-nguc-phan-1: Hellbound (Season 1) — nhóm cũ: Hellbound
+- ban-an-tu-dia-nguc-phan-2: Hellbound (Season 2) — nhóm cũ: Hellbound
+- ma-oi-chao-mi: Hello Ghost — nhóm cũ: Hello
+- xin-chao-toi-oi: Hello, Me! — nhóm cũ: Hello
+- helpless: Helpless — nhóm cũ: Helpless
+- luot-xem-dam-mau: Helpless — nhóm cũ: Helpless
+- tro-choi-tron-tim: Hide and Seek — nhóm cũ: HIDE
+- mat-tich-2024: HIDE — nhóm cũ: HIDE
+- gia-dinh-la-so-1-phan-3: High Kick (Season 3) — nhóm cũ: High Kick
+- mat-vu-kingsman-2020: Hitman : Agent Jun — nhóm cũ: Hitman
+- sat-thu-vo-cung-cuc: Hitman: Agent Jun — nhóm cũ: Hitman
+- sat-thu-vo-cung-cuc-hai: Hitman 2 — nhóm cũ: Hitman
+- hay-nam-tay-anh: Hold My Hand — nhóm cũ: Hold
+- om-em-that-chat-2018: Hold Me Tight — nhóm cũ: Hold
+- nam-dam-troi-ban: Holy Punch — nhóm cũ: Holy
+- dem-thanh-doi-san-quy: Holy Night: Demon Hunters — nhóm cũ: Holy
+- co-huong: Hometown — nhóm cũ: Hometown
+- mat-toi-cua-binh-yen: Hometown — nhóm cũ: Hometown
+- dieu-chachacha-lang-bien: Hometown Cha-Cha-Cha — nhóm cũ: Hometown
+- hy-vong-2013: Hope (Wish) — nhóm cũ: Hope
+- vung-tu-dia: Hope — nhóm cũ: Hope
+- cau-chuyen-kinh-di: Horror Stories — nhóm cũ: Horror
+- bong-ma-coi-mang: Horror Express — nhóm cũ: Horror
+- con-tin: Hostage: Missing Celebrity — nhóm cũ: Hostage Missing Celebrity
+- con-tin-ngoi-sao-mat-tich: Hostage: Missing Celebrity — nhóm cũ: Hostage Missing Celebrity
+- ngoi-nha-di-dong-vuot-dai-duong-phan-5: House On Wheels: Beyond The Ocean (Season 5) — nhóm cũ: House On Wheels: Beyond The Ocean
+- con-nguoi-khong-gian-thoi-gian-va-con-nguoi: Human, Space, Time and Human — nhóm cũ: Human
+- nguoi-khi: Human Vapor — nhóm cũ: Human
+- hwayi-cau-be-quai-vat: Hwayi: A Monster Boy — nhóm cũ: Hwayi A Monster Boy
+- hwayi-sat-nhan-trang: Hwayi: A Monster Boy — nhóm cũ: Hwayi A Monster Boy
+- gia-dinh-toi-ac: Idol — nhóm cũ: Idol
+- than-tuong-cuoc-dao-chinh: IDOL: The Coup — nhóm cũ: Idol
+- luat-su-cua-than-tuong: Idol I — nhóm cũ: Idol
+- nu-sinh-quyen-ru: Innocent Thing — nhóm cũ: Innocent
+- vuot-qua-an-tu: Innocent Defendant — nhóm cũ: Innocent
+- chung-nhan-hoan-hao: Innocent Witness — nhóm cũ: Innocent
+- mat-danh-iris-2-ban-dien-anh: Iris 2 — nhóm cũ: Iris
+- mat-danh-iris-ii: Iris II — nhóm cũ: Iris
+- nguoi-phu-nu-manh-me-2015: Iron Lady Cha — nhóm cũ: Iron
+- gia-dinh-darim: Iron Family — nhóm cũ: Iron
+- chi-co-the-la-yeu: It's Okay, That's Love — nhóm cũ: It s Okay
+- dien-thi-co-sao: It's Okay to Not Be Okay — nhóm cũ: It s Okay
+- roi-se-on-thoi: It's Okay! — nhóm cũ: It s Okay
+- josee-nang-tho-cua-toi: Josée — nhóm cũ: Josée
+- tro-choi-bat-coc-phan-1: kiDnap GAME (Season 1) — nhóm cũ: kiDnap GAME
+- tim-lai-chinh-minh: Kill Me, Heal Me — nhóm cũ: Kill
+- truy-sat-2019: Kill It — nhóm cũ: Kill
+- cuoc-chien-giay-got-nhon: Kill Heel — nhóm cũ: Kill
+- nu-sat-thu-bok-soon: Kill Boksoon — nhóm cũ: Kill
+- kill-it-slay-toi-ben: Kill It: Style Creator War — nhóm cũ: Kill
+- vuong-trieu-xac-song-ashin-phuong-bac: Kingdom: Ashin of the North — nhóm cũ: Kingdom
+- kingmaker: KingMaker — nhóm cũ: KingMaker
+- vua-bau-cu: Kingmaker — nhóm cũ: KingMaker
+- nu-hon-cua-yeu-tinh: Kiss Goblin — nhóm cũ: Kiss
+- nu-hon-cua-giac-quan-thu-sau: Kiss Sixth Sense — nhóm cũ: Kiss
+- rhapsody-thit-ba-chi-han-quoc: Korean Pork Belly Rhapsody — nhóm cũ: Korean
+- rhapsody-ga-ran-han-quoc: Korean Fried Chicken Rhapsody — nhóm cũ: Korean
+- ky-nguyen-tan-bao: Kundo: Age Of The Rampant — nhóm cũ: Kundo Age Of The Rampant
+- ac-quy-nghin-nam: Kundo: Age of the Rampant — nhóm cũ: Kundo Age Of The Rampant
+- au-trung-tinh-nghich-phan-1: Larva (Season 1) — nhóm cũ: Larva
+- au-trung-tinh-nghich-mat-day-chuyen: Larva Pendant — nhóm cũ: Larva
+- gia-dinh-au-trung: Larva Family — nhóm cũ: Larva
+- au-trung-tinh-nghich-o-sao-hoa: Larva In Mars — nhóm cũ: Larva
+- au-trung-tinh-nghich-phan-2: Larva (Season 2) — nhóm cũ: Larva
+- au-trung-tinh-nghich-phan-3: Larva (Season 3) — nhóm cũ: Larva
+- huyen-thoai-bien-xanh: Legend of the Blue Sea — nhóm cũ: Legend of the
+- cuoc-song-2018: Live — nhóm cũ: Live
+- doi-canh-sat: Live — nhóm cũ: Live
+- ky-uc-tuoi-18: Live On — nhóm cũ: Live
+- phat-truc-tiep: Live Stream — nhóm cũ: Live
+- chuoi-ngay-tu-lap-cua-hyo-sim: Live Your Own Life — nhóm cũ: Live
+- khong-thich-hen-ho-nhung-so-co-don: Lonely Enough to Love! — nhóm cũ: Lonely
+- be-ha-van-tue: Long Live the King — nhóm cũ: Long
+- ltns: Long Time No Sex — nhóm cũ: Long
+- that-lac: LOST — nhóm cũ: LOST
+- cuoc-doi-day-song: Lost — nhóm cũ: LOST
+- lac-trong-anh-sao: Lost in Starlight / I Byeol-e Pil-yohan — nhóm cũ: LOST
+- nga-ba-tinh: Love, In Between — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-ket-hon-va-ly-di-mua-2: Love (ft. Marriage And Divorce) Season 2 — nhóm cũ: Love (ft. Marriage And Divorce)
+- yeu-ket-hon-va-ly-di-mua-3: Love (ft. Marriage And Divorce) Season 3 — nhóm cũ: Love (ft. Marriage And Divorce)
+- con-mua-tinh-yeu: Love Rain — nhóm cũ: Love (ft. Marriage and Divorce)
+- bai-hoc-tinh-yeu: Love Lesson — nhóm cũ: Love (ft. Marriage and Divorce)
+- luu-luyen-2014: Love Affair — nhóm cũ: Love (ft. Marriage and Divorce)
+- love-clinic: Love Clinic — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-phai-nang-lam-chieu: Love Forecast — nhóm cũ: Love (ft. Marriage and Divorce)
+- chung-mot-mai-nha: Love From Today (Love On A Rooftop) — nhóm cũ: Love (ft. Marriage and Divorce)
+- huong-dan-vien-tinh-yeu: Love Guide for Dumpees — nhóm cũ: Love (ft. Marriage and Divorce)
+- may-hoa-anh-trang: Love in the Moonlight — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-yeu-gia-doi: Love, Lies — nhóm cũ: Love (ft. Marriage and Divorce)
+- du-ghet-van-yeu: Love Returns — nhóm cũ: Love (ft. Marriage and Divorce)
+- chong-cu-tinh-moi: Love, Again — nhóm cũ: Love (ft. Marriage and Divorce)
+- chuyen-tinh-anh-do-vat: Love+Sling — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-trong-dau-thuong: Love In Sadness — nhóm cũ: Love (ft. Marriage and Divorce)
+- chinh-phuc-tinh-yeu-hoan-hao: Love Conquest — nhóm cũ: Love (ft. Marriage and Divorce)
+- cach-mang-tinh-yeu: Love Revolution — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-ket-hon-va-ly-di-mua-1: Love (ft. Marriage and Divorce) Season 1 — nhóm cũ: Love (ft. Marriage and Divorce)
+- vong-xoay-tinh-yeu: Love Twist — nhóm cũ: Love (ft. Marriage and Divorce)
+- chay-den-ben-em-voi-van-toc-493km: Love All Play — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-yeu-va-troi-buoc: Love and Leashes — nhóm cũ: Love (ft. Marriage and Divorce)
+- hop-dong-tinh-yeu-2022: Love In Contract — nhóm cũ: Love (ft. Marriage and Divorce)
+- chuyen-tinh-cam-lanh: Love Is For Suckers — nhóm cũ: Love (ft. Marriage and Divorce)
+- bong-dung-duoc-yeu: Love My Scent — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-lai-vo-ngau: Love Reset — nhóm cũ: Love (ft. Marriage and Divorce)
+- ghet-ma-van-yeu: Love To Hate You — nhóm cũ: Love (ft. Marriage and Divorce)
+- thong-tha-nhip-yeu: Love Andante — nhóm cũ: Love (ft. Marriage and Divorce)
+- doi-ban-hoc-yeu: Love In The Big City — nhóm cũ: Love (ft. Marriage and Divorce)
+- doi-ban-hoc-yeu-phim-bo: Love In The Big City — nhóm cũ: Love (ft. Marriage and Divorce)
+- con-trai-ban-me: Love Next Door — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-ca-ao-mong: Love Song For Illusion — nhóm cũ: Love (ft. Marriage and Divorce)
+- phai-long-oan-gia: Love Your Enemy — nhóm cũ: Love (ft. Marriage and Divorce)
+- tay-anh-giu-mot-vi-sao: Love Barista — nhóm cũ: Love (ft. Marriage and Divorce)
+- buoc-vao-tim-em: Love Me — nhóm cũ: Love (ft. Marriage and Divorce)
+- noi-niem-cam-ki-ban-giao-huong-dinh-menh: Love Psychedelic — nhóm cũ: Love (ft. Marriage and Divorce)
+- chang-thu-ky-hoan-hao: Love Scout — nhóm cũ: Love (ft. Marriage and Divorce)
+- chuyen-tinh-toc-roi: Love Untangled — nhóm cũ: Love (ft. Marriage and Divorce)
+- tua-nhu-tinh-dau-them-mot-lan-yeu: Love, Take Two — nhóm cũ: Love (ft. Marriage and Divorce)
+- nhung-ban-nhac-tinh: Love: Track — nhóm cũ: Love (ft. Marriage and Divorce)
+- dong-dieu-yeu-thuong: Love In Sync — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-yeu-tren-thuc-don: Love On The Menu — nhóm cũ: Love (ft. Marriage and Divorce)
+- hoi-chung-so-yeu: Love Phobia — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-khan-cap: Love 911 — nhóm cũ: Love (ft. Marriage and Divorce)
+- vong-xoay-van-menh: Lovely Horribly — nhóm cũ: Lovely
+- cong-anh-ma-chay: Lovely Runner — nhóm cũ: Lovely
+- nuoc-mat-phu-nu: Make A Woman Cry — nhóm cũ: Make
+- chuyen-tinh-rung-cam: Make Me Tingle — nhóm cũ: Make
+- tinh-me-2014: Mama — nhóm cũ: Mama
+- ke-long-tien-nu-truyen: Mama Fairy and the Woodcutter — nhóm cũ: Mama
+- su-co-hon-nhan: Marriage Blue — nhóm cũ: Marriage
+- lay-anh-em-dam-khong: Marry Him If You Dare — nhóm cũ: Marry
+- lam-vo-anh-nhe: Marry Me Now — nhóm cũ: Marry
+- co-di-ma-lay-chong-toi: Marry My Husband — nhóm cũ: Marry
+- nen-duyen-vo-chong: Marry You — nhóm cũ: Marry
+- cai-chet-nhan-dao: Mary Kills People — nhóm cũ: Mary
+- mat-na: Mask — nhóm cũ: Mask
+- co-gai-mang-mat-na: Mask Girl — nhóm cũ: Mask
+- ong-trum-2016: Master — nhóm cũ: Master
+- master: Master — nhóm cũ: Master
+- ke-bi-xoa-so: Me And Me — nhóm cũ: Me And
+- kiem-ky-tham-thu-phai-tra: Memories Of The Sword — nhóm cũ: Memories of the
+- ky-uc-alhambra: Memories of the Alhambra — nhóm cũ: Memories of the
+- dau-tay-ngot-ngao-phan-1: Merry Berry Love (Season 1) — nhóm cũ: Merry Berry Love
+- tan-so-kinh-hoang: Midnight FM — nhóm cũ: Midnight
+- canh-sat-tap-su-2017: Midnight Runners — nhóm cũ: Midnight
+- nua-dem: Midnight — nhóm cũ: Midnight
+- anh-duong-trong-dem: Midnight Sun — nhóm cũ: Midnight
+- phep-mau-thu-gui-tong-thong: Miracle: Letters to the President — nhóm cũ: Miracle
+- phep-mau-2022: Miracle — nhóm cũ: Miracle
+- dieu-ki-dieu-o-phong-giam-so-7: Miracle In Cell No. 7 — nhóm cũ: Miracle
+- hot-girl-sieu-quay: Miss Change — nhóm cũ: Miss
+- ngoai-gia-tuoi-doi-muoi: Miss Granny — nhóm cũ: Miss
+- co-baek: Miss Baek — nhóm cũ: Miss
+- phi-vu-nu-quyen: Miss & Mrs. Cops — nhóm cũ: Miss
+- my-nhan-dao-chich: Miss Fortune — nhóm cũ: Miss
+- co-ay-ngay-va-dem: Miss, Night and Day — nhóm cũ: Miss
+- ngay-bao-thu: Missing You — nhóm cũ: Missing
+- mat-tich-bi-an: Missing: Lost Woman — nhóm cũ: Missing
+- tim-kiem: Missing — nhóm cũ: Missing
+- the-tu-bien-mat-roi: Missing Crown Prince — nhóm cũ: Missing
+- mat-trai-cua-mat-tich: Missing: The Other Side — nhóm cũ: Missing: The Other Side
+- mat-trai-cua-mat-tich-phan-2: Missing: The Other Side (Season 2) — nhóm cũ: Missing: The Other Side
+- nhiem-vu-kha-thi: Mission : Possible — nhóm cũ: Mission
+- dac-vu-tai-gia: Mission: Cross — nhóm cũ: Mission
+- nhiem-vu-tam-thiep-moi-sinh-nhat: Mission The Birthday Invitation — nhóm cũ: Mission
+- nhung-co-nhan-tinh: Mistress — nhóm cũ: Mistress
+- cai-gia-cua-tham-vong: Money Flower — nhóm cũ: Money
+- tien-den: Money — nhóm cũ: Money
+- phi-vu-trieu-do-han-quoc: Money Heist: Korea - Joint Economic Area — nhóm cũ: Money
+- lat-mat-tu-thu: Monster — nhóm cũ: Monster
+- trang-chu-tap-chi-hang-thang: Monthly Magazine Home — nhóm cũ: Monthly
+- trang-len-ban-ngay: Moon In The Day — nhóm cũ: Moon
+- song-trang-hoan-menh: Moon River — nhóm cũ: Moon
+- trang-sang-mua-dong: Moonlit Winter — nhóm cũ: Moonlit Winter
+- yoon-hee-cua-me: Moonlit Winter — nhóm cũ: Moonlit Winter
+- me-bau-sieu-ngau: More Than Family — nhóm cũ: More Than
+- hon-ca-tinh-ban: More Than Friends — nhóm cũ: More Than
+- mouse-ke-san-nguoi-ban-dien-anh: Mouse — nhóm cũ: Mouse
+- ke-san-nguoi: Mouse — nhóm cũ: Mouse
+- mouse-ke-san-nguoi: Mouse — nhóm cũ: Mouse
+- bay-chuot-phan-1: Mousetrap (Season 1) — nhóm cũ: Mousetrap
+- bao-boi-cua-ong: My Dearest Fu Bao — nhóm cũ: My Dearest
+- ke-thu-dau-yeu: My Dearest Nemesis — nhóm cũ: My Dearest
+- khong-co-lan-hai: Never Twice — nhóm cũ: Never
+- dung-quen-ke-thu: Never Forget Your Enemy — nhóm cũ: Never
+- hang-xom-tot-bung: Next Door Neighbor — nhóm cũ: Next
+- bay-nu-sinh: Next Sohee — nhóm cũ: Next
+- 9-lan-nguoc-thoi-gian: Nine: Nine Time Travels — nhóm cũ: Nine
+- chin-manh-ghep-bi-an: Nine Puzzles — nhóm cũ: Nine
+- hon-le-cua-chang-hoc-gia: Nobleman Ryu's Wedding — nhóm cũ: Nobleman Ryu s Wedding
+- hon-le-cua-chang-hoc-gia-ban-dien-anh: Nobleman Ryu's Wedding (Ver. Movie) — nhóm cũ: Nobleman Ryu s Wedding
+- rung-dong-ngot-ngao: Nothing Serious — nhóm cũ: Nothing
+- vach-tran-toi-ac: Nothing Uncovered — nhóm cũ: Nothing
+- van-phong-bi-an: Office — nhóm cũ: Office
+- scandal-chon-cong-so: Office Scandal — nhóm cũ: Office
+- mot-lan-nua: Once Again — nhóm cũ: Once
+- them-mot-lan-nua: Once Again — nhóm cũ: Once
+- nhat-ky-moi-tinh-dien-vien: Once Upon A Small Town — nhóm cũ: Once
+- tro-ve-nam-1997: Once Again — nhóm cũ: Once
+- khong-con-chung-ta: Once We Were Us — nhóm cũ: Once
+- muon-neo-tinh-yeu: Only Love — nhóm cũ: Only
+- ordinary-person: Ordinary Person — nhóm cũ: Ordinary
+- nguoi-lang: Ordinary People - The Villagers — nhóm cũ: Ordinary
+- ky-sinh-thu-vung-xam: Parasyte: The Grey — nhóm cũ: Parasyte The
+- tra-dua-tien-bac-va-quyen-luc: Payback: Money And Power — nhóm cũ: Payback
+- bao-thu-2026: Payback — nhóm cũ: Payback
+- am-muu-cua-lo-lem: Perfect Proposal — nhóm cũ: Perfect
+- cuoc-hon-nhan-hoan-hao: Perfect Marriage Revenge — nhóm cũ: Perfect
+- gia-dinh-hoan-hao: Perfect Family — nhóm cũ: Perfect
+- tinh-yeu-hoan-hao: Perfect Love — nhóm cũ: Perfect
+- phu-nhan-dai-quan-the-ky-21: Perfect Crown — nhóm cũ: Perfect
+- tham-tu-hong-gil-dong: Phantom Detective — nhóm cũ: Phantom
+- dac-vu-bong-ma: Phantom — nhóm cũ: Phantom
+- phantom: Phantom — nhóm cũ: Phantom
+- luat-su-bong-ma-van-phong-luat-su-shin-i-rang: Phantom Lawyer — nhóm cũ: Phantom
+- xin-dung-gap-anh-ay: Please Don't Date Him — nhóm cũ: Please
+- hoc-vien-canh-sat: Police University — nhóm cũ: Police
+- pororo-duong-dua-mao-hiem: Pororo: The Racing Adventure — nhóm cũ: Pororo
+- pororo-cuoc-phieu-luu-den-dinh-thu-rong: Pororo: Dragon Castle Adventure — nhóm cũ: Pororo
+- nang-cong-chua-aurora: Princess Aurora — nhóm cũ: Princess
+- doi-tu: Private Lives — nhóm cũ: Private
+- ke-hoach-san-soi: Project Wolf Hunting — nhóm cũ: Project
+- du-an-mat-tham-hoa-tren-cau: Project Silence — nhóm cũ: Project
+- project-y-gai-ngoan-doi-doi: Project Y — nhóm cũ: Project
+- tro-choi-kim-tu-thap: Pyramid Game — nhóm cũ: Pyramid Game
+- tro-choi-kim-tu-thap-ban-anime: Pyramid Game — nhóm cũ: Pyramid Game
+- 7-ngay-lam-vuong-hau: Queen For Seven Days — nhóm cũ: Queen
+- nu-hoang-mat-na: Queen Of Masks — nhóm cũ: Queen
+- nu-hoang-ly-hon: Queen of Divorce — nhóm cũ: Queen
+- nu-hoang-nuoc-mat: Queen of Tears — nhóm cũ: Queen
+- nu-hoang-woo: Queen Woo — nhóm cũ: Queen
+- sat-nhan-bo-ngua: Queen Mantis — nhóm cũ: Queen
+- ngoi-nha-cua-nu-hoang: Queen's House — nhóm cũ: Queen
+- cau-ut-nha-tai-phiet: Reborn Rich — nhóm cũ: Reborn
+- chu-tich-tap-su: Reborn Rookie — nhóm cũ: Reborn
+- hoi-ngo-10-nam-loi-hoi-dap-1988: Reply 1988 10th Anniversary — nhóm cũ: Reply
+- loi-hoi-dap-1988: Reply 1988 — nhóm cũ: Reply
+- loi-hoi-dap-1994: Reply 1994 — nhóm cũ: Reply
+- loi-hoi-dap-1997: Reply 1997 — nhóm cũ: Reply
+- chuyen-nguoi-lon-nhat-ban: Risqué Business: Japan — nhóm cũ: Risqué Business
+- chuyen-nguoi-lon-dai-loan: Risqué Business: Taiwan — nhóm cũ: Risqué Business
+- duong-toi-ngoi-vuong-mua-2: Road To Kingdom: Ace Of Ace — nhóm cũ: Road To
+- bac-si-noi-tru-ngoai-khoa: Road To Surgeon — nhóm cũ: Road To
+- poli-va-cac-ban-huong-dan-an-toan: Robocar POLI Safety Series — nhóm cũ: Robocar Poli
+- poli-va-cac-ban-phan-3: Robocar Poli (Season 3) — nhóm cũ: Robocar Poli
+- poli-va-cac-ban-phan-4: Robocar Poli (Season 4) — nhóm cũ: Robocar Poli
+- phu-luc-tinh-yeu: Romance Is A Bonus Book — nhóm cũ: Romance
+- romance-bible: Romance Bible — nhóm cũ: Romance
+- lang-man-tro-chuyen-2020: Romance, Talking — nhóm cũ: Romance
+- tinh-yeu-tro-ve-mai-am: Romance In The House — nhóm cũ: Romance
+- mon-no-tinh-yeu: Romantic Debtors — nhóm cũ: Romantic
+- mot-chuyen-tinh-noi-cong-xuong: Romantic Factory — nhóm cũ: Romantic
+- goo-hae-ryung-nha-su-hoc-tap-su: Rookie Historian Goo Hae-Ryung — nhóm cũ: Rookie
+- canh-sat-tan-binh: Rookie Cops — nhóm cũ: Rookie
+- thu-thach-than-tuong: Running Man — nhóm cũ: Running Man
+- danh-ca-dai-chien: Running Man — nhóm cũ: Running Man
+- tiem-lam-toc-fly-high-butterfly: Salon De Nabi — nhóm cũ: Salon De
+- holmes-cua-khu-pho: Salon De Holmes — nhóm cũ: Salon De
+- ma-hong-tho-ngay: Scarlet Innocence — nhóm cũ: Scarlet
+- nguoi-tinh-anh-trang: Scarlet Heart: Ryeo (Moon Lovers) — nhóm cũ: Scarlet
+- ma-nu-chung-cu: Scent Of A Ghost — nhóm cũ: Scent Of A Ghost
+- mui-huong-cua-ma-nu: Scent of a Ghost — nhóm cũ: Scent Of A Ghost
+- anh-em-ket-nghia: Secret Reunion — nhóm cũ: Secret
+- bi-mat-kinh-hoang-2013: Secret Love — nhóm cũ: Secret
+- so-thu-thoat-e: Secret Zoo — nhóm cũ: Secret
+- jo-yi-va-am-hanh-ngu-su-ngu-su-tai-ba-va-quy-co-thong-thai: Secret Royal Inspector & Joy — nhóm cũ: Secret
+- bi-mat-khong-the-noi-ban-han: Secret: Untold Melody — nhóm cũ: Secret
+- hen-gap-anh-o-kiep-thu-19: See You in My 19th Life — nhóm cũ: See You
+- sep-oi-mai-dung-gap-nhau: See You at Work Tomorrow! — nhóm cũ: See You
+- tim-tinh-yeu-o-seoul: Seoul Searching — nhóm cũ: Seoul
+- khoi-nguon-dai-dich-nha-ga-seoul: Seoul Station — nhóm cũ: Seoul
+- ruot-duoi-seoul: Seoul Vibe — nhóm cũ: Seoul
+- nhung-ke-pha-hoai-seoul: Seoul Busters — nhóm cũ: Seoul
+- seoul-unnie: Seoul Unnie — nhóm cũ: Seoul
+- phuc-vu-nhan-dan: Serve The People — nhóm cũ: Serve The People
+- cam-do: Serve the People — nhóm cũ: Serve The People
+- dem-7-nam: Seven Years Of Night — nhóm cũ: Seven
+- thanh-tra-vo-hinh: Shadow Detective — nhóm cũ: Shadow Detective
+- thanh-tra-vo-hinh-phan-2: Shadow Detective (Season 2) — nhóm cũ: Shadow Detective
+- ca-map-su-khoi-dau: Shark: The Beginning — nhóm cũ: Shark The
+- ca-map-con-bao: Shark: The Storm — nhóm cũ: Shark The
+- lan-dau-du-dua: Single & Ready to Mingle — nhóm cũ: Single
+- mot-minh-van-on: Single In Seoul — nhóm cũ: Single
+- ho-sut: Sinkhole — nhóm cũ: Sinkhole
+- ho-sut-tu-than: Sinkhole — nhóm cũ: Sinkhole
+- siren-sinh-ton-tren-dao-hoang: Siren: Survive The Island — nhóm cũ: Siren
+- nu-hon-siren: Siren's Kiss — nhóm cũ: Siren
+- giac-quan-thu-sau-mat-trai: Sixth Sense: B-Side — nhóm cũ: Sixth Sense
+- giac-quan-thu-sau-mua-3: Sixth Sense (Season 3) — nhóm cũ: Sixth Sense
+- soundtrack-1: Soundtrack #1 — nhóm cũ: Soundtrack
+- soundtrack-2: Soundtrack #2 — nhóm cũ: Soundtrack
+- con-tau-chien-thang: Space Sweepers — nhóm cũ: Space
+- tiem-banh-gao-vu-tru: Space Rice Cake Shop — nhóm cũ: Space
+- khu-rung-vu-tru-phan-1: Space Jungle (Season 1) — nhóm cũ: Space Jungle
+- nguoi-nhen-giang-ho: Spider-Noir — nhóm cũ: spdm
+- ai-oan-trong-vuon-xuan: Spring Garden — nhóm cũ: Spring
+- mua-xuan-tuoi-tre: Spring Of Youth — nhóm cũ: Spring
+- con-say-mua-xuan: Spring Fever — nhóm cũ: Spring
+- tro-choi-con-muc-phan-1: Squid Game (Season 1) — nhóm cũ: Squid Game
+- stand-by-me: Stand By Me — nhóm cũ: Stand By Me
+- star-struck-truy-tinh: Star Struck — nhóm cũ: Star
+- tre-trau-khoi-nghiep: Start-Up — nhóm cũ: Start Up
+- khoi-nghiep: Start-Up — nhóm cũ: Start Up
+- anh-sang-cua-doi-ta: Still Shining — nhóm cũ: Still
+- van-mai-tuoi-17: Still 17 — nhóm cũ: Still
+- tan-so-la-benh-vien-sat-nhan-dai-loan: Strange Frequencies: Taiwan Killer Hospital — nhóm cũ: Strange
+- thuc-quai-ky-dam: Strange Tale of Consumption — nhóm cũ: Strange
+- nguoi-la-den-tu-dia-nguc: Strangers From Hell — nhóm cũ: Strangers
+- nguoi-la-tung-yeu-thuong: Strangers Again — nhóm cũ: Strangers
+- he-roi-nghi-viec-thoi: Summer Strike — nhóm cũ: Summer
+- chua-ngot: Sweet & Sour — nhóm cũ: Sweet
+- chien-dich-ngam: Take Point — nhóm cũ: Take
+- take-1-bai-ca-duy-nhat: Take 1 — nhóm cũ: Take
+- hay-cham-soc-me: Take Care Of My Mom — nhóm cũ: Take
+- co-gi-lai-di-leo-nui: Take A Hike! — nhóm cũ: Take
+- nap-day-trai-tim: Take Charge Of My Heart — nhóm cũ: Take
+- ban-trai-toi-la-ho-ly-phan-2: Tale of the Nine Tailed 1938 (Season 2) — nhóm cũ: Tale of the Nine Tailed 1938
+- than-bip-tay-sat-gai: Tazza: The Hidden Card — nhóm cũ: Tazza
+- than-bai-jack-mot-mat: Tazza : One Eyed Jack — nhóm cũ: Tazza
+- cuoc-chien-sinh-ton-phan-1: The Escape Of The Seven (Season 1) — nhóm cũ: The Escape Of The Seven
+- cuoc-chien-sinh-ton-phan-2: The Escape Of The Seven (Season 2) — nhóm cũ: The Escape Of The Seven
+- nhung-nguoi-ung-cuu-dau-tien: The First Responders — nhóm cũ: The First Responders
+- nhung-nguoi-ung-cuu-dau-tien-phan-2: The First Responders (Season 2) — nhóm cũ: The First Responders
+- su-troi-day-cua-khien-hiep-si-phan-3: The Rising Of The Shield Hero (Season 3) — nhóm cũ: The Rising Of The Shield Hero
+- that-hinh-dai-toi-moi-thu-edinburgh: The Seven Deadly Sins: Grudge of Edinburgh Part 2 — nhóm cũ: The Seven Deadly Sins: Grudge of Edinburgh
+- nguoi-dich-chuyen-thoi-gian: Time Renegades — nhóm cũ: Time
+- gio-san-da-diem: Time To Hunt — nhóm cũ: Time
+- mo-song: Tomb of the River — nhóm cũ: Tomb
+- dao-quat-vuong-vua-trom-mo: Tomb Raider King — nhóm cũ: Tomb
+- ngay-mai-chien-thang: Tomorrow Victory — nhóm cũ: Tomorrow
+- ngay-mai: Tomorrow — nhóm cũ: Tomorrow
+- chuyen-tau-sinh-tu: Train to Busan — nhóm cũ: Train to Busan
+- train-to-busan-2-ban-dao-peninsula: Train to Busan 2 — nhóm cũ: Train to Busan
+- ve-dep-dich-thuc: True Beauty — nhóm cũ: True
+- chan-thanh-voi-tinh-yeu: True To Love — nhóm cũ: True
+- ve-dep-dich-thuc-2024: True Beauty — nhóm cũ: True
+- lang-nghe-giai-dieu-tinh-yeu: Tune In For Love — nhóm cũ: Tune In
+- tuoi-hai-lam-tuoi-hai-mot: Twenty Five Twenty One — nhóm cũ: Twenty
+- duoi-bong-trung-dien: Under The Queen's Umbrella — nhóm cũ: Under
+- duoi-hong-sung: Under The Gun — nhóm cũ: Under
+- mat-trai-cua-su-that: Undercover — nhóm cũ: Undercover
+- diep-vu-thanh-xuan: Undercover High School — nhóm cũ: Undercover
+- mat-vu-nam-vung-in-da-house-3-in-korea: Undercover Police — nhóm cũ: Undercover
+- dieu-tra-vien-hong: Undercover Miss Hong — nhóm cũ: Undercover
+- mo-khoa-sep-tong: Unlock My Boss — nhóm cũ: Unlock My Boss
+- giai-cuu-ong-chu: Unlock My Boss — nhóm cũ: Unlock My Boss
+- ac-nhan-2025: Villains — nhóm cũ: Villains
+- dat-nuoc-cua-phan-dien: Villains Everywhere — nhóm cũ: Villains
+- giong-noi-1: Voice 1 — nhóm cũ: Voice
+- thanh-am-cua-lang-thinh: Voice Of Silence — nhóm cũ: Voice
+- cung-thu-sieu-pham: War Of The Arrows — nhóm cũ: War Of The
+- nguoi-hung-yeu-duoi: Weak Hero Class 1 — nhóm cũ: weak-hero
+- nguoi-hung-yeu-duoi-2: Weak Hero Class 2 — nhóm cũ: weak-hero
+- nha-tro-waikiki: Welcome to Waikiki — nhóm cũ: Welcome to
+- sach-trang-ket-hon: Welcome To Wedding Hell — nhóm cũ: Welcome to
+- chao-mung-den-samdalri: Welcome to Samdal-ri — nhóm cũ: Welcome to
+- nha-minh-co-bien: What Happens To My Family? — nhóm cũ: What
+- khi-dan-ong-muon: What A Man Wants — nhóm cũ: What
+- thu-ky-kim-sao-the: What's Wrong with Secretary Kim — nhóm cũ: What
+- dien-vien-cha-sao-vay: What Happened To Mr. Cha? — nhóm cũ: What
+- cau-chuyen-sau-chia-tay: What Comes After Love — nhóm cũ: What
+- chuyen-tinh-ngay-ha: What Summer Loves! — nhóm cũ: What
+- khi-hoa-tra-no: When the Camellia Blooms — nhóm cũ: When
+- khi-tinh-yeu-no-ro: When My Love Blooms — nhóm cũ: When
+- troi-dep-em-se-den: When the Weather Is Fine — nhóm cũ: When
+- khi-dien-thoai-do-chuong: When The Phone Rings — nhóm cũ: When
+- khi-cuoc-doi-cho-ban-qua-quyt: When Life Gives You Tangerines — nhóm cũ: When
+- hoi-cac-vi-sao: When The Stars Gossip — nhóm cũ: When
+- con-toi-hen-ho-phan-2: When Our Kids Fall In Love (Season 2) — nhóm cũ: When Our Kids Fall In Love
+- noi-ngu-cua-florence: Where Florence Sleeps — nhóm cũ: Where
+- ban-muon-di-dau: Where Would You Like To Go? — nhóm cũ: Where
+- khi-nang-say-giac: While You Were Sleeping — nhóm cũ: While You Were Sleeping
+- su-that-sau-giac-ngu: While You Were Sleeping — nhóm cũ: While You Were Sleeping
+- loi-thi-tham-cua-toi-ac: Whisper — nhóm cũ: Whisper
+- hen-em-ngay-do: Will You Be There? — nhóm cũ: Will You Be
+- nguoi-quan-ly-cua-toi-oi: Will You Be My Manager? — nhóm cũ: Will You Be
+- giai-dieu-cua-ban-tieng-long-cua-toi: WISH YOU: Your Melody From My Heart — nhóm cũ: WISH YOU Your Melody From My Heart
+- giai-dieu-cua-ban-tieng-long-cua-toi-ban-dien-anh: WISH YOU: Your Melody From My Heart (Ver. Movie) — nhóm cũ: WISH YOU Your Melody From My Heart
+- cong-to-vien-phu-thuy: Witch's Court — nhóm cũ: Witch
+- co-vo-bat-dac-di: Wonderful Nightmare — nhóm cũ: Wonderful
+- the-gioi-tuoi-dep: Wonderful World — nhóm cũ: Wonderful
+- mot-tach-ca-phe-nhe: Would You Like A Cup Of Coffee? — nhóm cũ: Would You
+- hay-lay-em-di-anh-co-muon-cuoi-em-khong: Would You Marry Me? — nhóm cũ: Would You
+- lua-han-tinh-thu: Yellow Boots — nhóm cũ: Yellow
+- mau-vang-2021: Yellow — nhóm cũ: Yellow
+- yellow-door-cau-lac-bo-phim-han-thap-nien-90: Yellow Door: '90s Lo-fi Film Club — nhóm cũ: Yellow
+- thieu-nu-va-quy-ong: Young Lady and Gentleman — nhóm cũ: Young
+- ong-bo-doi-dau: Your Honor — nhóm cũ: Your
+- nhung-la-thu-cua-yeon: Your Letter — nhóm cũ: Your
+- chuyen-xe-tam-tinh-phan-1: Your Personal Taxi (Season 1) — nhóm cũ: Your Personal Taxi
+- cac-te-bao-cua-yumi: Yumi's Cells — nhóm cũ: Yumi's Cells
+- cac-te-bao-cua-yumi-phan-2: Yumi's Cells (Season 2) — nhóm cũ: Yumi's Cells
+- cac-te-bao-cua-yumi-phan-3: Yumi's Cells (Season 3) — nhóm cũ: Yumi's Cells
+- the-gioi-phep-thuat-hac-tam: Black Clover: Dark Triad — nhóm cũ: Black Clover
+- black-clover-thanh-kiem-cua-ma-phap-vuong: Black Clover: Sword of the Wizard King — nhóm cũ: Black Clover
+- boruto-naruto-the-movie: Boruto: Naruto The Movie — nhóm cũ: boruto
+- boruto-naruto-hau-sinh-kha-uy: Boruto: Naruto Next Generations — nhóm cũ: boruto
+- tho-san-quy-2022: Chainsaw Man — nhóm cũ: Chainsaw Man
+- chainsaw-man-the-movie-chuong-reze: Chainsaw Man - The Movie: Reze Arc — nhóm cũ: Chainsaw Man
+- tham-tu-lung-danh-conan-22-ke-han-phap-zero: Case Closed: Zero the Enforcer — nhóm cũ: Conan
+- tham-tu-lung-danh-conan: Detective Conan — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-qua-bom-choc-troi: Detective Conan: The Time Bombed Skyscraper — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-2-muc-tieu-thu-14: Detective Conan: The Fourteenth Target — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-3-ao-thuat-gia-cuoi-cung-cua-the-ky: Detective Conan: The Last Wizard of the Century — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-4-thu-pham-trong-doi-mat: Detective Conan: Captured in Her Eyes — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-5-nhung-giay-cuoi-cung-toi-thien-duong: Case Closed: Countdown to Heaven — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-bong-ma-duong-baker: Detective Conan: The Phantom of Baker Street — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-7-me-cung-trong-thanh-pho-co: Detective Conan: Crossroad in the Ancient Capital — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-8-nha-ao-thuat-voi-doi-canh-bac: Detective Conan: Magician of the Silver Sky — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-9-am-muu-tren-bien: Detective Conan: Strategy Above the Depths — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-10-le-cau-hon-cua-tham-tu: Detective Conan: The Private Eyes' Requiem — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-11-kho-bau-duoi-day-dai-duong: Detective Conan: Jolly Roger in the Deep Azure — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-12-tan-cung-cua-su-so-hai: Detective Conan: Full Score of Fear — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-13-truy-lung-to-chuc-ao-den: Detective Conan: The Raven Chaser — nhóm cũ: Conan
+- lupin-de-tam-tham-tu-conan: Lupin III vs. Detective Conan — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-14-con-tau-bien-mat-giua-troi-xanh: Detective Conan: The Lost Ship in the Sky — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-15-15-phut-tinh-lang: Detective Conan: Quarter Of Silence — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-16-tien-dao-thu-11: Detective Conan: The Eleventh Striker — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-17-con-mat-bi-an-ngoai-bien-xa: Detective Conan: Private Eye in the Distant Sea — nhóm cũ: Conan
+- lupin-de-tam-va-tham-tu-lung-danh-conan: Lupin III vs. Detective Conan: The Movie — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-sat-thu-ban-tia-khong-tuong: Detective Conan: Dimensional Sniper — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-19-hoa-huong-duong-ruc-lua: Detective Conan: Sunflowers of Inferno — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-20-con-ac-mong-den-toi: Detective Conan: The Darkest Nightmare — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-21-ban-tinh-ca-mau-do-tham: Case Closed: The Crimson Love Letter — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-23-cu-dam-sapphire-xanh: Case Closed: The Fist of Blue Sapphire — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-24-vien-dan-do: Detective Conan: The Scarlet Bullet — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-25-nang-dau-halloween: Detective Conan: The Bride of Halloween — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-hanzawa-chang-hung-thu-so-nho: Detective Conan: The Culprit Hanzawa — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-gio-tra-cua-zero: Detective Conan: Zero's Tea Time — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-26-tau-ngam-sat-mau-den: Detective Conan: Black Iron Submarine — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-ngoi-sao-5-canh-1-trieu-do: Detective Conan Movie 27: The Million Dollar Pentagram — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-28-du-anh-cua-doc-nhan: Detective Conan: One-Eyed Flashback — nhóm cũ: Conan
+- tham-tu-lung-danh-conan-vu-an-tien-gia-ultra-30: Detective Conan: The Counterfeit Case of Ultra 30 — nhóm cũ: Conan
+- cyberpunk-edgerunners: Cyberpunk Edgerunners (Season 2) — nhóm cũ: cyberpunk
+- cyberpunk-edgerunners-phan-2: Cyberpunk: Edgerunners — nhóm cũ: cyberpunk
+- fairy-tail-nu-te-cua-phuong-hoang: Fairy Tail (Season 1) — nhóm cũ: Fairy Tail
+- hoi-phap-su-nhiem-vu-100-nam: Fairy Tail: 100 Years Quest — nhóm cũ: Fairy Tail
+- movie-thieu-nu-ma-phap-illya-loi-the-duoi-tuyet: Fate/kaleid Liner Prisma Illya Movie — nhóm cũ: Fate
+- cuoc-chien-chen-thanh-loi-the-duoi-tuyet: Fate/Kaleid Liner Prisma Illya: The Movie - Oath Under Snow — nhóm cũ: Fate
+- cuoc-chien-chen-thanh-chien-tuyen-ma-thu-tuyet-doi-babylonia: Fate/Grand Order Absolute Demonic Front: Babylonia — nhóm cũ: Fate
+- fatestay-night-heavens-feel-ii-lost-butterfly: Fate/stay Night: Heaven's Feel II. Lost Butterfly — nhóm cũ: Fate
+- fatestay-night-heavens-feel-iii-khuc-xuan-ca: Fate/Stay Night: Heaven's Feel - III. Spring Song — nhóm cũ: Fate
+- fatestrange-fake: Fate/strange Fake — nhóm cũ: Fate
+- chen-thanh-cam-nhan-thien-duong-3-khuc-xuan-ca: Fate/stay night Movie: Heaven's Feel 3 — nhóm cũ: Fate
+- cang-gia-kim-thuat-su: Fullmetal Alchemist — nhóm cũ: Fullmetal Alchemist
+- gia-kim-thuat-su-brotherhood: Hagane No Renkinjutsushi: Fullmetal Alchemist Fullmetal Alchemist (2009) FMA FMAB — nhóm cũ: Fullmetal Alchemist
+- haikyu-tran-chien-bai-phe-lieu: HAIKYU!! The Dumpster Battle — nhóm cũ: Haikyu
+- chu-thuat-hoi-chien-0-truong-chuyen-chu-thuat-tokyo: Jujutsu Kaisen 0 — nhóm cũ: Jujutsu Kaisen
+- hoc-vien-sieu-anh-hung-2-nguoi-hung: My Hero Academia: Two Heroes — nhóm cũ: My Hero Academia
+- hoc-vien-sieu-anh-hung-nguoi-hung-troi-day: My Hero Academia: Heroes Rising — nhóm cũ: My Hero Academia
+- hoc-vien-anh-hung-3-nhiem-vu-giai-cuu-the-gioi: My Hero Academia: World Heroes' Mission — nhóm cũ: My Hero Academia
+- hoc-vien-anh-hung-ban-la-nguoi-tiep-theo: My Hero Academia: You're Next — nhóm cũ: My Hero Academia
+- naruto: Naruto — nhóm cũ: naruto
+- naruto-cuoc-chien-o-tuyet-quoc: Naruto the Movie: Ninja Clash in the Land of Snow — nhóm cũ: naruto
+- naruto-huyen-thoai-da-gelel: Naruto the Movie: Legend of the Stone of Gelel — nhóm cũ: naruto
+- naruto-nhung-linh-gac-cua-nguyet-quoc: Naruto the Movie: Guardians of the Crescent Moon Kingdom — nhóm cũ: naruto
+- naruto-shippuden: naruto shippuden — nhóm cũ: naruto
+- naruto-shippden-cai-chet-tien-doan: Naruto Shippuden the Movie — nhóm cũ: naruto
+- naruto-shippden-nhiem-vu-bi-mat: Naruto Shippuden the Movie: Bonds — nhóm cũ: naruto
+- naruto-shippden-nguoi-ke-thua-hoa-chi: Naruto Shippuden the Movie: The Will of Fire — nhóm cũ: naruto
+- naruto-shippden-toa-thap-bi-mat: Naruto Shippūden: The Lost Tower — nhóm cũ: naruto
+- naruto-shippden-huyet-nguc: Naruto Shippuden the Movie: Blood Prison — nhóm cũ: naruto
+- naruto-duong-toi-ninja: ROAD TO NINJA -NARUTO THE MOVIE — nhóm cũ: naruto
+- naruto-tran-chien-cuoi-cung: The Last: Naruto the Movie — nhóm cũ: naruto
+- dao-hai-tac: One Piece — nhóm cũ: One Piece
+- dao-hai-tac-1-dao-chau-bau: One Piece: The Movie — nhóm cũ: One Piece
+- dao-hai-tac-2-cuoc-phieu-luu-tren-dao-dong-ho: One Piece: Clockwork Island Adventure — nhóm cũ: One Piece
+- dao-hai-tac-4-cuoc-dua-tu-than: One Piece: Dead End Adventure — nhóm cũ: One Piece
+- vua-hai-tac-bao-ve-vo-dien-lon-cuoi-cung: One Piece: Mamore! Saigo no Dai Butai — nhóm cũ: One Piece
+- vua-hai-tac-vuon-ra-dai-duong-giac-mo-to-lon-cua-bo: One Piece: Oounabara Ni Hirake! Dekkai Dekkai Chichi No Yume! — nhóm cũ: One Piece
+- dao-hai-tac-8-cuoc-chien-o-vuong-quoc-alabasta: One Piece: The Desert Princess and the Pirates: Adventure in Alabasta — nhóm cũ: One Piece
+- dao-hai-tac-9-no-vao-mua-dong-hoa-sakura-dieu-ky: One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom — nhóm cũ: One Piece
+- dao-hai-tac-5-loi-nguyen-thanh-kiem: One Piece: Curse Of The Sacred Sword — nhóm cũ: One Piece
+- dao-hai-tac-7-ten-khong-lo-trong-lau-dai-karakuri: One Piece: Karakuri shiro no Mecha Kyohei — nhóm cũ: One Piece
+- dao-hai-tac-10-the-gioi-suc-manh: One Piece: Strong World — nhóm cũ: One Piece
+- dao-hai-tac-11-truy-tim-mu-rom: One Piece 3D: Straw Hat Chase — nhóm cũ: One Piece
+- dao-hai-tac-12-z-ky-phung-dich-thu: One Piece Film: Z — nhóm cũ: One Piece
+- vua-hai-tac-cuoc-phieu-luu-den-nebulandia: One Piece: Adventure Of Nebulandia — nhóm cũ: One Piece
+- vua-hai-tac-chuong-sabo-moi-lien-ket-cua-ba-anh-em-va-y-chi-duoc-ke-thua: One Piece: Episode Of Sabo — nhóm cũ: One Piece
+- dao-hai-tac-13-gold: One Piece Film: GOLD — nhóm cũ: One Piece
+- dao-hai-tac-trai-tim-vang: One Piece: Heart of Gold — nhóm cũ: One Piece
+- dao-hai-tac-chuong-skypiea: One Piece: Episode of Skypiea — nhóm cũ: One Piece
+- dao-hai-tac-14-le-hoi-hai-tac: One Piece: Stampede — nhóm cũ: One Piece
+- one-piece-film-red: ONE PIECE FILM RED — nhóm cũ: One Piece
+- dao-hai-tac-live-action-phan-1: ONE PIECE (Live Action) (Season 1) — nhóm cũ: One Piece
+- thu-cua-fan-onepiece: One Piece Fan Letter — nhóm cũ: One Piece
+- nhat-ky-hai-trinh-one-piece-truyen-ky-dao-nguoi-ca: One Piece Log: Fish-Man Island Saga — nhóm cũ: One Piece
+- one-piece-nu-hung: One Piece: Heroines — nhóm cũ: One Piece
+- dao-hai-tac-live-action-phan-2: ONE PIECE (Live Action) (Season 2) — nhóm cũ: One Piece
+- phim/sat-thu-ve-vuon: Sakamoto Days — nhóm cũ: Sakamoto Days
+- gia-dinh-x-diep-vien-ma-trang: SPY x FAMILY CODE: White — nhóm cũ: Spy x Family
+- dao-kiem-than-vuc-extra-edition: Sword Art Online: Extra Edition — nhóm cũ: Sword Art Online
+- dao-kiem-than-vuc-ranh-gioi-hu-ao-ngoai-truyen-2: Sword Art Online: Ordinal Scale — nhóm cũ: Sword Art Online
+- sword-art-online-progressive-khuc-scherzo-duoi-hoang-hon-am-dam: Sword Art Online the Movie -Progressive- Scherzo of Deep Night — nhóm cũ: Sword Art Online
+- luc-do-toi-chuyen-sinh-thanh-slime-nuoc-mat-dai-duong: That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea — nhóm cũ: That Time I Got Reincarnated As A Slime
+- ten-cau-la-gi: Your Name — nhóm cũ: Your
+- diamond-no-ace-act-ii-second-season: Ace of Diamond Act II Season 2 — nhóm cũ: Ace of Diamond Act II
+- su-gia-bon-mua-vu-dieu-mua-xuan: Agents Of The Four Seasons: Dance Of Spring — nhóm cũ: Agents
+- retsuko-hung-hang-phan-5: Aggretsuko (Season 5) — nhóm cũ: Aggretsuko
+- chang-the-ly-giai-noi-aharensan-phan-1: Aharen-san wa Hakarenai (Season 1) — nhóm cũ: Aharen-san wa Hakarenai
+- chang-the-ly-giai-noi-aharensan-phan-2: Aharen-san Wa Hakarenai (Season 2) — nhóm cũ: Aharen-san Wa Hakarenai
+- bong-ro-danh-cho-moi-nguoi: Ahiru No Sora — nhóm cũ: Ahiru No Sora
+- niem-dam-me-bong-ro: Ahiru No Sora — nhóm cũ: Ahiru No Sora
+- de-xong-mat-ca-to-nhung-ca-toi-cau-duoc-lai-con-to-hon: Always A Catch! — nhóm cũ: Always
+- trung-thien-than: Angel's Egg — nhóm cũ: Angel s
+- bong-dem-kinh-hoang-2012: Another — nhóm cũ: Another
+- khai-huyen-di-gioi-mynoghra-chinh-phuc-the-gioi-tu-nen-van-minh-suy-tan: Apocalypse Bringer Mynoghra: World Conquest Starts with the Civilization of Ruin — nhóm cũ: Apocalypse
+- khach-san-apocalypse: Apocalypse Hotel — nhóm cũ: Apocalypse
+- hat-tao: Appleseed — nhóm cũ: Appleseed
+- hat-tao-nguoi-may-noi-day: Appleseed: Ex Machina — nhóm cũ: Appleseed
+- arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-1: Arifureta: From Commonplace To World's Strongest (Season 1) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
+- arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-2: Arifureta: From Commonplace To World's Strongest (Season 2) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
+- arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-3: Arifureta: From Commonplace To World's Strongest (Season 3) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
+- lop-hoc-am-sat-365-ngay-ngoai-truyen: Assassination Classroom: 365 Days (Movie) — nhóm cũ: Assassination Classroom
+- phim-dien-anh-lop-hoc-am-sat-gio-cua-chung-ta: Assassination Classroom the Movie: Our Time — nhóm cũ: Assassination Classroom
+- dai-chien-titan-cung-ten-do-tham: Attack On Titan: Crimson Bow And Arrow — nhóm cũ: Attack On Titan
+- azur-lane-bisoku-zenshin-ni-phan-2: Azur Lane: Slow Ahead! (Season 2) — nhóm cũ: Azur Lane: Slow Ahead!
+- hanh-trinh-cua-baki-samurai-bat-bai: BAKI-DOU: The Invincible Samurai — nhóm cũ: BAKI
+- hanma-baki-vs-dau-si-ashura: Baki Hanma VS Kengan Ashura — nhóm cũ: Baki Hanma
+- bang-dream: BanG Dream! — nhóm cũ: BanG Dream
+- bang-dream-its-mygo: BanG Dream! It's MyGO!!!!! — nhóm cũ: BanG Dream
+- bang-dream-yumemita: BanG Dream! YUME∞MITA — nhóm cũ: BanG Dream
+- nguoi-doi-ninja: Batman Ninja — nhóm cũ: Batman
+- batman-ninja-doi-dau-lien-minh-yakuza: Batman Ninja vs. Yakuza League — nhóm cũ: Batman
+- battle-spirits-re-tuyet-gioi-thien-khong: Battle Spirits [Re] ZEKKAI NO KU — nhóm cũ: Battle
+- beastars-the-gioi-nguoi-thu-phan-2: BEASTARS (Season 2) — nhóm cũ: BEASTARS
+- ky-si-den-qua-trung-cua-nha-vua: Berserk: The Golden Age Arc I - The Egg Of The King — nhóm cũ: Berserk
+- ky-si-den-cuoc-vay-ham-thanh-doldrey: Berserk: The Golden Age Arc II - The Battle For Doldrey — nhóm cũ: Berserk
+- ky-si-den-chan-menh-de-vuong: Berserk: The Golden Age Arc III - The Advent — nhóm cũ: Berserk
+- berserk-arc-thoi-dai-hoang-kim: Berserk: The Golden Age Arc – Memorial Edition — nhóm cũ: Berserk
+- bao-thuc-cuong-nhan: Berserk Of Gluttony — nhóm cũ: Berserk
+- bach-quy-da-hanh-ky-hyakki-yagshosho: Beyond Twilight — nhóm cũ: Beyond
+- hac-quan-gia-cuon-sach-cua-dai-tay-duong: Black Butler: Book Of The Atlantic — nhóm cũ: Black Butler
+- hac-quan-gia-phan-3: Black Butler (Season 3) — nhóm cũ: Black Butler
+- hac-quan-gia-phan-4: Black Butler (Season 4) — nhóm cũ: Black Butler
+- hac-quan-gia-phan-5: Black Butler (Season 5) (Emerald Witch Arc) — nhóm cũ: Black Butler
+- black-lagoon-phan-1: Black Lagoon (Season 1) — nhóm cũ: Black Lagoon
+- bleach: Bleach — nhóm cũ: Bleach
+- bleach-movie-1-memories-of-nobody: Bleach the Movie: Memories of Nobody — nhóm cũ: Bleach
+- su-menh-than-chet-cuoc-muu-phan-cua-bui-kim-cuong-mot-thanh-hyorinmaru-khac: Bleach the Movie: The DiamondDust Rebellion — nhóm cũ: Bleach
+- su-menh-than-chet-tan-phai-vao-bong-dem-goi-ten-em: Bleach the Movie: Fade to Black — nhóm cũ: Bleach
+- su-menh-than-chet-huyet-chien-ngan-nam: Bleach: Thousand-Year Blood War — nhóm cũ: Bleach
+- su-menh-than-chet-huyet-chien-ngan-nam-chia-biet: Bleach: Thousand-Year Blood War - The Separation — nhóm cũ: Bleach
+- su-menh-than-chet-huyet-chien-ngan-nam-xung-khac: Bleach: Thousand-Year Blood War - The Conflict — nhóm cũ: Bleach
+- bleach-huyet-chien-ngan-nam-kiep-nan: Bleach Thousand-Year Blood War - The Calamity — nhóm cũ: Bleach
+- blood-the-last-vampire: BLOOD THE LAST VAMPIRE — nhóm cũ: Blood
+- lam-hoa-diet-quy: Blue Exorcist: The Movie — nhóm cũ: Blue Exorcist
+- ao-no-orchestra-2nd-season: Blue Orchestra Season 2 — nhóm cũ: Blue Orchestra
+- bocchi-the-rock-recap-part-1: Bocchi The Rock! Recap Part 1 — nhóm cũ: Bocchi The Rock! Recap
+- bocchi-the-rock-recap-part-2: Bocchi The Rock! Recap Part 2 — nhóm cũ: Bocchi The Rock! Recap
+- brave-story: Brave Story — nhóm cũ: Brave
+- shakugan-cua-shana: Burning Eyes Shana, Flaming Eyes Shana, Shana Of The Burning Eyes — nhóm cũ: Burning
+- lam-nong-la-gan-chu-heo: Butareba -The Story of a Man Turned Into a Pig- — nhóm cũ: Butareba The Story of a Man Turned Into a Pig
+- butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon: Butareba The Story Of A Man Turned Into A Pig — nhóm cũ: Butareba The Story of a Man Turned Into a Pig
+- tam-biet-trai-dat-phan-1: Bye Bye, Earth (Season 1) — nhóm cũ: Bye Bye, Earth
+- tam-biet-trai-dat-phan-2: Bye Bye, Earth (Season 2) — nhóm cũ: Bye Bye, Earth
+- doi-truong-tsubasa-phan-2: Captain Tsubasa (Season 2) — nhóm cũ: Captain Tsubasa
+- dau-bai-vanguard-willdress: Cardfight!! Vanguard: Will+Dress — nhóm cũ: Cardfight Vanguard
+- cardfight-vanguard-divinez-genma-seisenhen: Cardfight!! Vanguard- Divinez Parallactic Clash — nhóm cũ: Cardfight Vanguard
+- khi-cac-te-bao-lam-viec-ma-den: Cells at Work! (Code Black) — nhóm cũ: Cells at Work!
+- no-le-cua-ma-do-tinh-binh: Chained Soldier — nhóm cũ: Chained Soldier
+- chiikawa-phan-2: Chiikawa (Season 2) — nhóm cũ: Chiikawa
+- nhung-dua-tre-duoi-theo-tinh-tu: Children Who Chase Lost Voices — nhóm cũ: Children
+- lo-lem-ii-giac-mo-thanh-su-that: Cinderella II: Dreams Come True — nhóm cũ: Cinderella
+- city-the-animation: CITY THE ANIMATION — nhóm cũ: City
+- chao-mung-den-voi-lop-hoc-de-cao-thuc-luc-phan-1: Classroom Of The Elite (Season 1) — nhóm cũ: Classroom Of The Elite
+- chao-mung-den-voi-lop-hoc-de-cao-thuc-luc-phan-2: Classroom Of The Elite (Season 2) — nhóm cũ: Classroom Of The Elite
+- code-geass-lelouch-of-the-rebellion-i-initiation: Code Geass: Lelouch Of The Rebellion I - Initiation — nhóm cũ: Code Geass
+- code-geass-lelouch-of-the-rebellion-ii-transgression: Code Geass: Lelouch of the Rebellion II - Transgression — nhóm cũ: Code Geass
+- code-geass-lelouch-of-the-rebellion-iii-glorification: Code Geass: Lelouch Of The Rebellion III - Glorification — nhóm cũ: Code Geass
+- code-geass-su-phuc-sinh-cua-lelouch: Code Geass: Lelouch of the Re;Surrection — nhóm cũ: Code Geass
+- shikabane-hime-aka: Corpse Princess — nhóm cũ: Corpse Princess
+- shikabane-hime-kuro: Corpse Princess 2 — nhóm cũ: Corpse Princess
+- cao-boi-bebop: Cowboy Bebop — nhóm cũ: Cowboy Bebop
+- tho-san-tien-thuong-canh-cong-thien-dang: Cowboy Bebop: The Movie — nhóm cũ: Cowboy Bebop
+- crayon-shinchan-cuoc-phieu-luu-tuyet-voi-o-henderland: Crayon Shin-chan — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-cuoc-truy-duoi-vien-ngoc-hac-am: Crayon Shin-chan: Pursuit of the Balls of Darkness — nhóm cũ: Crayon Shin chan
+- crayon-shinchan-chien-tranh-chop-nhoang-phi-vu-bi-mat-cua-mong-lon: Crayon Shin-chan: Dengeki! Buta no Hizume Daisakusen — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-con-bao-rung-gia: Crayon Shin-chan: A Storm-invoking Jungle — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-16-sieu-con-bao-hung-hang-moi-goi-dung-si-kinpoko: Crayon Shin-chan: Fierceness That Invites Storm! The Hero of Kinpoko — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-17-gam-vuong-quoc-hoang-da-kasukabe: Crayon Shin-chan: Roar! Kasukabe Animal Kingdom — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-25-cuoc-xam-lang-cua-nguoi-ngoai-hanh-tinh-shiriri: Crayon Shin-chan: Invasion!! Alien Shiriri — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-26-kungfu-boys-mi-ramen-dai-chien: Crayon Shin-chan: Burst Serving! Kung Fu Boys ~Ramen Rebellion~ — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-32-nhat-ky-khung-long-cua-minh: Crayon Shin-chan the Movie: Our Dinosaur Diary — nhóm cũ: Crayon Shin chan
+- shin-cau-be-but-chi-33-nong-bong-tay-nhung-vu-cong-sieu-cay-kasukabe: Crayon Shin-chan the Movie: Super Hot! The Spicy Kasukabe Dancers — nhóm cũ: Crayon Shin chan
+- ba-vuong-hoc-duong: Crows Zero — nhóm cũ: Crows Zero
+- ba-vuong-hoc-duong-2: Crows Zero 2 — nhóm cũ: Crows Zero
+- date-a-live-ngoai-truyen-hen-thach-dau-tokisaki-kurumi: Date A Bullet — nhóm cũ: Date
+- cuoc-hen-song-con-phan-5: Date A Live (Season 5) — nhóm cũ: Date A Live
+- tu-khoan-2026: Dead Account — nhóm cũ: Dead
+- quyen-so-sinh-menh: Death Note — nhóm cũ: Death
+- deep-insanity-the-lost-child: Deep Insanity THE LOST CHILD — nhóm cũ: Deep
+- tham-tu-lung-danh-conan-thien-than-sa-nga-tren-xa-lo: Detective Conan: Fallen Angel of the Highway — nhóm cũ: Detective
+- nhat-ky-bo-de-gio-tan-truong: Diary Of Our Days At The Breakwater — nhóm cũ: Diary of
+- digimon-1999: Digimon Adventure (1999) — nhóm cũ: Digimon
+- digimon-adventure-02-con-bao-digimon-do-bo-digimental-hoang-kim: Digimon Adventure 02 - Hurricane Touchdown! The Golden Digimentals — nhóm cũ: Digimon
+- digimon-adventure-02-diaboromon-bao-thu: Digimon Adventure 02: Revenge Of Diaboromon — nhóm cũ: Digimon
+- digimon-tamers-tran-chien-cua-cac-mao-hiem-gia: Digimon Tamers: Boukensha-tachi no Tatakai Digimon Tamers: Battle of Adventurers — nhóm cũ: Digimon
+- digimon-tamers-locomon-noi-dien: Digimon Tamers: Bousou Digimon Tokkyuu Digimon Tamers: Runaway Locomon — nhóm cũ: Digimon
+- digimon-adventure-tri-part-1-reunion: Digimon Adventure tri. Part 1: Reunion — nhóm cũ: Digimon
+- cuoc-phieu-luu-cua-cac-con-thu: Digimon Adventure — nhóm cũ: Digimon
+- digimon-adventure-lan-tien-hoa-cuoi-cung-kizuna: Digimon Adventure: Last Evolution Kizuna — nhóm cũ: Digimon
+- digimon-beatbreak: Digimon Beatbreak — nhóm cũ: Digimon
+- digimon-adventure-tri-part-2-determination: Digimon Adventure tri. Part 2: Determination — nhóm cũ: Digimon
+- digimon-adventure-tri-part-3-confession: Digimon Adventure Tri. Part 3: Confession — nhóm cũ: Digimon
+- digimon-adventure-tri-part-4-loss: Digimon Adventure Tri. Part 4: Loss — nhóm cũ: Digimon
+- digimon-adventure-tri-part-5-coexistence: Digimon Adventure tri. Part 5: Coexistence — nhóm cũ: Digimon
+- digimon-adventure-tri-part-6-future: Digimon Adventure tri. Part 6: Future — nhóm cũ: Digimon
+- gauko-co-be-khung-long-phan-1: Dino Girl Gauko (Season 1) — nhóm cũ: Dino Girl Gauko
+- gauko-co-be-khung-long-phan-2: Dino Girl Gauko (Season 2) — nhóm cũ: Dino Girl Gauko
+- doraemon-chu-khung-long-cua-nobita-1980: Doraemon: Nobita's Dinosaur — nhóm cũ: Doraemon
+- doraemon-nobita-va-lich-su-khai-pha-vu-tru-1981: Doraemon: The Record of Nobita, Spaceblazer — nhóm cũ: Doraemon
+- doraemon-nobita-tham-hiem-vung-dat-moi: Doraemon: Nobita and the Haunts of Evil — nhóm cũ: Doraemon
+- doraemon-nobita-va-lau-dai-duoi-day-bien: Doraemon: Nobita and the Castle of the Undersea Devil — nhóm cũ: Doraemon
+- doraemon-nobita-va-chuyen-phieu-luu-vao-xu-quy-1984: Doraemon: Nobita's Great Adventure in the World of Magic — nhóm cũ: Doraemon
+- doraemon-nobita-va-cuoc-chien-vu-tru: Doraemon: Nobita's Little Star Wars — nhóm cũ: Doraemon
+- doraemon-nobita-va-binh-doan-nguoi-sat-1986: Doraemon: Nobita and the Steel Troops — nhóm cũ: Doraemon
+- doraemon-nobita-va-hiep-si-rong: Doraemon: Nobita and the Knights on Dinosaurs — nhóm cũ: Doraemon
+- doraemon-nobita-tay-du-ki: Doraemon: The Record of Nobita's Parallel Journey to the West — nhóm cũ: Doraemon
+- doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989: Doraemon: Nobita and the Birth of Japan — nhóm cũ: Doraemon
+- doraemon-nobita-va-hanh-tinh-muong-thu: Doraemon: Nobita and the Animal Planet — nhóm cũ: Doraemon
+- doraemon-nobita-o-xu-so-nghin-le-mot-dem: Doraemon: Nobita's Dorabian Nights — nhóm cũ: Doraemon
+- doraemon-nobita-va-vuong-quoc-tren-may: Doraemon: Nobita and the Kingdom of Clouds — nhóm cũ: Doraemon
+- doraemon-nobita-va-me-cung-thiec: Doraemon: Nobita and the Tin Labyrinth — nhóm cũ: Doraemon
+- doraemon-nobita-va-ba-chang-hiep-si-mong-mo: Doraemon: Nobita's Three Visionary Swordsmen — nhóm cũ: Doraemon
+- doraemon-nobita-va-chuyen-tau-toc-hanh-ngan-ha: Doraemon: Nobita and the Galaxy Super-express — nhóm cũ: Doraemon
+- doraemon-nobita-va-cuoc-phieu-luu-o-thanh-pho-day-cot: Doraemon: Nobita and the Spiral City — nhóm cũ: Doraemon
+- doraemon-nobita-du-hanh-bien-phuong-nam: Doraemon: Nobita's Great Adventure in the South Seas — nhóm cũ: Doraemon
+- doraemon-nobita-vu-tru-phieu-luu-ki: Doraemon: Nobita Drifts in the Universe — nhóm cũ: Doraemon
+- doraemon-nobita-va-truyen-thuyet-vua-mat-troi: Doraemon: Nobita and the Legend of the Sun King — nhóm cũ: Doraemon
+- doraemon-nobita-va-nhung-dung-si-co-canh: Doraemon: Nobita and the Winged Braves — nhóm cũ: Doraemon
+- doraemon-nobita-va-vuong-quoc-robot: Doraemon: Nobita and the Robot Kingdom — nhóm cũ: Doraemon
+- doraemon-nobita-va-nhung-phap-su-gio-bi-an: Doraemon: Nobita and the Windmasters — nhóm cũ: Doraemon
+- doraemon-nobita-o-vuong-quoc-cho-meo: Doraemon: Nobita in the Wan-Nyan Spacetime Odyssey — nhóm cũ: Doraemon
+- doraemon-chu-khung-long-cua-nobita: Doraemon: Nobita's Dinosaur — nhóm cũ: Doraemon
+- doraemon-nobita-va-chuyen-phieu-luu-vao-xu-quy: Doraemon: Nobita's New Great Adventure Into the Underworld - The Seven Magic Users — nhóm cũ: Doraemon
+- doraemon-nobita-va-nguoi-khong-lo-xanh: Doraemon: Nobita and the Green Giant Legend — nhóm cũ: Doraemon
+- doraemon-nobita-va-lich-su-khai-pha-vu-tru: Doraemon: The New Record of Nobita's Spaceblazer — nhóm cũ: Doraemon
+- doraemon-nobita-va-cuoc-dai-thuy-chien-o-xu-so-nguoi-ca: Doraemon: Nobita's Great Battle of the Mermaid King — nhóm cũ: Doraemon
+- doraemon-nobita-va-binh-doan-nguoi-sat: Doraemon: Nobita and the New Steel Troops: Winged Angels — nhóm cũ: Doraemon
+- doraemon-nobita-va-hon-dao-dieu-ki-cuoc-phieu-luu-cua-loai-thu: Doraemon: Nobita and the Island of Miracles – Animal Adventure — nhóm cũ: Doraemon
+- doraemon-nobita-va-vien-bao-tang-bao-boi: Doraemon: Nobita's Secret Gadget Museum — nhóm cũ: Doraemon
+- doraemon-nobita-tham-hiem-vung-dat-moi-peko-va-5-nha-tham-hiem: Doraemon: New Nobita's Great Demon - Peko and the Exploration Party of Five — nhóm cũ: Doraemon
+- doraemon-nobita-va-nhung-hiep-si-khong-gian: Doraemon: Nobita and the Space Heroes — nhóm cũ: Doraemon
+- doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy: Doraemon: Nobita and the Birth of Japan — nhóm cũ: Doraemon
+- doraemon-nobita-va-chuyen-tham-hiem-nam-cuc-kachi-kochi: Doraemon: Nobita's Great Adventure in the Antarctic Kachi Kochi — nhóm cũ: Doraemon
+- doraemon-nobita-va-dao-giau-vang: Doraemon: Nobita's Treasure Island — nhóm cũ: Doraemon
+- doraemon-nobita-va-mat-trang-phieu-luu-ky: Doraemon: Nobita's Chronicle of the Moon Exploration — nhóm cũ: Doraemon
+- doraemon-nobita-va-nhung-ban-khung-long-moi: Doraemon: Nobita's New Dinosaur — nhóm cũ: Doraemon
+- doraemon-nobita-va-cuoc-chien-vu-tru-ti-hon: Doraemon the Movie: Nobita's Little Star Wars — nhóm cũ: Doraemon
+- doraemon-nobita-va-vung-dat-ly-tuong-tren-bau-troi: Doraemon the Movie: Nobita's Sky Utopia — nhóm cũ: Doraemon
+- doraemon-nobita-va-ban-giao-huong-dia-cau: Doraemon the Movie: Nobita's Earth Symphony — nhóm cũ: Doraemon
+- doraemon-tuyen-tap-phim-giang-sinh: Doraemon: Christmas movie collection — nhóm cũ: Doraemon
+- doraemon-nobita-va-cuoc-phieu-luu-vao-the-gioi-trong-tranh: Doraemon The Movie: Nobita's Art World Tales — nhóm cũ: Doraemon
+- doraemon-tuyen-tap-moi-nhat: Doraemon: New Series — nhóm cũ: Doraemon
+- doraemon-nobita-va-lau-dai-duoi-day-bien-phien-ban-moi: Doraemon the Movie: New Nobita and the Castle of the Undersea Devil — nhóm cũ: Doraemon
+- drstone-ngoai-truyen-dr-stone-ryuusui: Dr. Stone: Stone Wars — nhóm cũ: Dr. STONE
+- jashin-phi-cuoc-x-mua-3: Dropkick On My Devil!! X Jashin-chan Dropkick (Season 3) — nhóm cũ: Dropkick On My Devil!! X Jashin-chan Dropkick
+- evangelion-10-you-are-not-alone: Evangelion Shin Gekijouban: Jo, Rebuild Of Evangelion: 1.0 You Are (Not) Alone, Evangelion: 1.01 You Are (Not) Alone, Evangelion: 1.11 You Are (Not) Alone — nhóm cũ: Evangelion
+- dac-vu-khong-gian-khong-don-doc: Evangelion: 1.0 You Are (Not) Alone — nhóm cũ: Evangelion
+- dac-vu-khong-gian-khong-lui-buoc: Evangelion: 2.0 You Can (Not) Advance — nhóm cũ: Evangelion
+- dac-vu-khong-gian-khong-the-lam-lai: Evangelion: 3.0 You Can (Not) Redo — nhóm cũ: Evangelion
+- evangelion-30101-thrice-upon-a-time: Evangelion: 3.0+1.01 Thrice Upon A Time — nhóm cũ: Evangelion
+- den-dui-khi-co-nghe-giam-dinh-si-nhung-toi-lai-la-nguoi-manh-nhat: Even Given the Worthless "Appraiser" Class, I'm Actually the Strongest — nhóm cũ: Even
+- ke-ca-ban-sao-cung-biet-yeu: Even A Replica Can Fall In Love — nhóm cũ: Even
+- hoi-hoc-sinh-cung-co-lo-hong: Even the Student Council Has Its Holes! — nhóm cũ: Even
+- du-toi-la-mot-co-gai-quy-toc-cuc-ky-nhut-nhat-toi-da-chap-nhan-loi-ca-cuoc-tu-vi-hon-phu-xao-quyet-cua-minh: Even Though I'm a Super Timid Noble Girl, I Accepted the Bet from My Cunning Fiancé — nhóm cũ: Even
+- nhung-trai-tim-toi-cuong: Extreme Hearts — nhóm cũ: Extreme
+- vo-si-quyen-anh-ippo-phan-1: Fighting Spirit (Season 1) — nhóm cũ: Fighting Spirit
+- vua-dau-bep-soma-phan-3: Food Wars!: Shokugeki No Soma (The Third Plate) — nhóm cũ: Food
+- vua-dau-bep-soma-phan-4: Food Wars!: Shokugeki No Soma (The Fourth Plate) — nhóm cũ: Food
+- vua-dau-bep-soma-phan-5: Food Wars!: Shokugeki No Soma (The Fifth Plate) — nhóm cũ: Food
+- cau-lac-bo-am-thuc-cua-toi: Food For The Soul — nhóm cũ: Food
+- ngon-doi-hoa-hong-anh: From Up On Poppy Hill — nhóm cũ: From
+- ong-chu-chuyen-sinh-thanh-tieu-thu-doc-ac: From Bureaucrat To Villainess: Dad's Been Reincarnated! — nhóm cũ: From
+- vung-dat-xa-xam: From Far Away — nhóm cũ: From
+- tu-bi-lu-mo-den-ap-dao: From Overshadowed To Overpowered: Second Reincarnation Of A Talentless Sage — nhóm cũ: From
+- gui-den-ban-hien-phan-1: From Me To You: Kimi Ni Todoke (Season 1) — nhóm cũ: From Me To You: Kimi Ni Todoke
+- gui-den-ban-hien-phan-2: From Me To You: Kimi Ni Todoke (Season 2) — nhóm cũ: From Me To You: Kimi Ni Todoke
+- gui-den-ban-hien-phan-3: From Me To You: Kimi Ni Todoke (Season 3) — nhóm cũ: From Me To You: Kimi Ni Todoke
+- fruits-basket-prelude: Fruits Basket: Prelude — nhóm cũ: Fruits Basket
+- chien-quoc-basara-bua-tiec-cuoi-cung: Gekijouban Sengoku Basara: The Last Party — nhóm cũ: Gekijouban
+- movie-hau-can-ma-ca-rong-alice-in-the-garden: Gekijouban Servamp: Alice In The Garden — nhóm cũ: Gekijouban
+- vo-boc-ma-1995: GHOST IN THE SHELL — nhóm cũ: Ghost
+- vo-boc-ma-2-vo-toi: Ghost In The Shell 2: Innocence — nhóm cũ: Ghost
+- vo-boc-ma-mat-cuoi: Ghost In The Shell: Stand Alone Complex - The Laughing Man — nhóm cũ: Ghost
+- vo-boc-ma-arise-border-1-noi-dau-ma: Ghost In The Shell Arise - Border 1: Ghost Pain — nhóm cũ: Ghost
+- vo-boc-ma-arise-border-2-ma-thi-tham: Ghost in the Shell: Arise - Border 2: Ghost Whispers — nhóm cũ: Ghost
+- vo-boc-ma-arise-border-3-nuoc-mat-ma: Ghost in the Shell Arise - Border 3: Ghost Tears — nhóm cũ: Ghost
+- vo-boc-ma-arise-border-4-ma-don-doc: Ghost in the Shell Arise - Border 4: Ghost Stands Alone — nhóm cũ: Ghost
+- vo-boc-ma-bo-phim-moi: Ghost in the Shell: The New Movie — nhóm cũ: Ghost
+- meo-ma-be-tha: Ghost Cat Anzu — nhóm cũ: Ghost
+- buoi-hoa-nhac-ma-nhung-bai-hat-that-lac: Ghost Concert: Missing Songs — nhóm cũ: Ghost
+- vo-boc-ma-sac_2045-phan-1: Ghost in the Shell: SAC_2045 (Season 1) — nhóm cũ: Ghost in the Shell: SAC_2045
+- vo-boc-ma-sac_2045-phan-2: Ghost In The Shell: SAC_2045 (Season 2) — nhóm cũ: Ghost In The Shell: SAC_2045
+- vo-boc-ma-sac_2045-chien-tranh-truong-ky: Ghost in the Shell: SAC_2045 Sustainable War — nhóm cũ: Ghost in the Shell: SAC_2045
+- linh-hon-bac-phan-1: Gintama (Season 1) — nhóm cũ: Gintama
+- linh-hon-bac-kiem-quy-benizakura: Gintama: The Movie — nhóm cũ: Gintama
+- linh-hon-bac-mai-mai-la-tiem-van-nang-2013: Gintama: The Movie: The Final Chapter: Be Forever Yorozuya — nhóm cũ: Gintama
+- gintama-thay-ginpachi-o-lop-3z: GINTAMA - Mr. Ginpachi's Zany Class — nhóm cũ: Gintama
+- gintama-the-movie-2026-yoshiwara-trong-bien-lua: Gintama The Movie 2026: Yoshiwara In Flames — nhóm cũ: Gintama
+- linh-hon-bac-phan-5: Gintama (Season 5) — nhóm cũ: Gintama
+- girls-panzer-motto-love-love-sakusen-desu: Girls und Panzer: Motto Lovey-Dovey Sakusen desu!, Girls und Panzer - Operation: More Love Love!, GaruLove — nhóm cũ: Girls und Panzer Motto
+- 12: Girls und Panzer: Motto Love Love Sakusen Desu! Act 2 — nhóm cũ: Girls und Panzer Motto
+- godzilla-hanh-tinh-quai-vat: Godzilla: Monster Planet — nhóm cũ: Godzilla
+- godzilla-diem-di-thuong: Godzilla Singular Point — nhóm cũ: Godzilla
+- cau-be-vang-1995: Golden Boy — nhóm cũ: Golden
+- chuc-the-gioi-ngu-ngon: GOOD NIGHT WORLD — nhóm cũ: Good
+- tam-biet-lara: Goodbye, Lara — nhóm cũ: Goodbye
+- ke-lua-dao-vi-dai-razbliuto: Great Pretender: Razbliuto — nhóm cũ: Great Pretender
+- gia-kim-thuat-su-nguoi-chinh-phuc-shamballa: Hagane No Renkinjutsushi: Shambala O Yuku Mono — nhóm cũ: Hagane No Renkinjutsushi
+- gia-kim-thuat-su-ngoi-sao-thanh-cua-milos: Hagane No Renkinjutsushi: Milos No Seinaru Hoshi — nhóm cũ: Hagane No Renkinjutsushi
+- haikyu-ban-dien-anh-3-thien-tai-troi-day: Haikyu!! Movie 3: Genius and Sense — nhóm cũ: Haikyu
+- haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien: Haikyu!! Movie 4: Battle of Concepts — nhóm cũ: Haikyu
+- haikyu-ban-dien-anh-1-ket-thuc-va-bat-dau: Haikyuu!! the Movie 1: The End and the Beginning — nhóm cũ: Haikyuu
+- thieu-nien-bong-chuyen-tai-nang-va-cam-giac: Haikyuu!! Movie 3: Genius and Sense — nhóm cũ: Haikyuu
+- thieu-nien-bong-chuyen-phan-4-part-1: Haikyuu!! Fourth Season, Haikyuu!! S4 Part1, Haikyuu!! 4th Season — nhóm cũ: Haikyuu
+- di-nguoc-thoi-gian-de-tim-em: HELLO WORLD — nhóm cũ: Hello
+- xin-chao-toi-la-mot-phu-thuy-va-nguoi-toi-tham-yeu-muon-toi-pha-che-mot-loai-thuoc-tinh-yeu: Hello, I Am A Witch And My Crush Wants Me To Make A Love Potion! — nhóm cũ: Hello
+- tro-thanh-nu-chinh-co-gai-nha-que-va-cong-viec-bi-mat: Heroine Tarumono!, Heroines Run The Show — nhóm cũ: Heroine
+- nu-anh-hung-thanh-nu-khong-toi-chi-la-mot-hau-gai-dam-dang-va-tu-hao-ve-dieu-do: Heroine? Saint? No, I'm an All-Works Maid (and Proud of It)! — nhóm cũ: Heroine
+- trung-hoc-dxd-phan-2: High School DxD (Season 2) — nhóm cũ: High School DxD
+- horimiya: Horimiya — nhóm cũ: Horimiya
+- horisan-va-miyamurakun: Horimiya — nhóm cũ: Horimiya
+- horimiya-nhung-manh-ghep-bi-mat: Horimiya: The Missing Pieces — nhóm cũ: Horimiya
+- horror-collector-kyoufu-collector: HORROR COLLECTOR — nhóm cũ: Horror
+- tho-san-ti-hon: Hunter X Hunter — nhóm cũ: Hunter
+- tho-san-ti-hon-movie-nhiem-vu-cuoi-cung: Hunter x Hunter: The Last Mission — nhóm cũ: Hunter
+- diet-slime-suot-300-nam-toi-level-max-luc-nao-chang-hay-phan-1: I've Been Killing Slimes For 300 Years And Maxed Out My Level (Season 1) — nhóm cũ: I've Been Killing Slimes For 300 Years And Maxed Out My Level
+- diet-slime-suot-300-nam-toi-level-max-luc-nao-chang-hay-phan-2: I've Been Killing Slimes For 300 Years And Maxed Out My Level (Season 2) — nhóm cũ: I've Been Killing Slimes For 300 Years And Maxed Out My Level
+- nguoi-sat-su-noi-gian-cua-technovore-nguoi-sat-su-troi-day-cua-technovore: Iron Man: Rise Of Technovore — nhóm cũ: Iron
+- dau-bep-sieu-dang: Iron Wok Jan! — nhóm cũ: Iron
+- co-gang-don-cac-co-gai-trong-nguc-toi-co-sai-khong-phan-2: Is It Wrong To Try To Pick Up Girls In A Dungeon? (Season 2) — nhóm cũ: Is It Wrong To Try To Pick Up Girls In A Dungeon?
+- day-la-xac-song-a-phan-2: Is This A Zombie? (Season 2) — nhóm cũ: Is This A Zombie?
+- tu-la-di-gioi-phan-1: Ishura (Season 1) — nhóm cũ: Ishura
+- tu-la-di-gioi-phan-2: Ishura (Season 2) — nhóm cũ: Ishura
+- josee-khi-nang-tho-yeu: Josee, the Tiger and the Fish — nhóm cũ: Josée
+- kon-phan-2: K-on! (Season 2) — nhóm cũ: K-on!
+- thiet-giap-chi-thanh: Kabaneri Of The Iron Fortress — nhóm cũ: Kabaneri Of The Iron Fortress
+- thiet-giap-chi-thanh-hai-mon-quyet-chien: Kabaneri of the Iron Fortress: The Battle of Unato — nhóm cũ: Kabaneri Of The Iron Fortress
+- cuoc-chien-to-tinh: Kaguya-sama: Love Is War — nhóm cũ: Kaguya sama
+- kaguyasama-cuoc-chien-to-tinh-ultra-romantic: Kaguya-sama Wa Kokurasetai: Tensai-tachi No Ren'ai Zunousen - Ultra Romantic — nhóm cũ: Kaguya sama
+- kaiji-nguoi-song-sot-cuoi-cung: Kaiji: Ultimate Survivor — nhóm cũ: Kaiji
+- kaiji-chong-lai-moi-quy-tac: Kaiji: Against All Rules — nhóm cũ: Kaiji
+- hoc-vien-do-den-song-sinh: KAKEGURUI TWIN — nhóm cũ: Kakegurui
+- hiep-si-mat-na-khe-uoc-ac-ma: Kamen Rider: Revice — nhóm cũ: Kamen Rider
+- hiep-si-mat-na-dau-truong-tham-vong: Kamen Rider: Geats — nhóm cũ: Kamen Rider
+- dau-si-ashura-mua-2: KENGAN ASHURA (Season 2) — nhóm cũ: KENGAN ASHURA
+- dau-si-ashura-mua-1-phan-1: KENGAN ASHURA (Season 1 - Part 1) — nhóm cũ: KENGAN ASHURA (Season 1
+- dau-si-ashura-mua-1-phan-2: KENGAN ASHURA (Season 1 - Part 2) — nhóm cũ: KENGAN ASHURA (Season 1
+- sat-thu-di-hoc: KILL BLUE — nhóm cũ: Kill
+- kizumonogatari-phan-1-thiet-huyet: Kizumonogatari Part 1: Tekketsu — nhóm cũ: Kizumonogatari
+- kizumonogatari-phan-2-nhiet-huyet: Kizumonogatari Part 2: Nekketsu — nhóm cũ: Kizumonogatari
+- kizumonogatari-phan-3-lanh-huyet: Kizumonogatari Part 3: Reiketsu — nhóm cũ: Kizumonogatari
+- mo-ra-mot-the-gioi-tuyet-voi-phan-3: KONOSUBA - God's Blessing On This Wonderful World! (Season 3) — nhóm cũ: KONOSUBA - God's Blessing On This Wonderful World!
+- tieu-diem-giai-mua-dong-anh-duong-va-bong-ro: Kuroko No Basket Movie 1: Winter Cup - Kage To Hikari — nhóm cũ: Kuroko No Basket Movie
+- tieu-diem-giai-mua-dong-vuot-qua-nguong-cua: Kuroko No Basket Movie 3: Winter Cup - Tobira No Mukou — nhóm cũ: Kuroko No Basket Movie
+- bong-ro-cua-kuroko-tran-dau-cuoi-cung: Kuroko No Basket Movie 4: Last Game — nhóm cũ: Kuroko No Basket Movie
+- kuroko-tuyen-thu-vo-hinh-cup-mua-dong-buoc-qua-canh-cua: Kuroko's Basketball: Winter Cup Highlights  ~Crossing The Door~ — nhóm cũ: Kuroko's Basketball
+- kuroko-tuyen-thu-vo-hinh-cup-mua-dong-bong-toi-va-anh-sang: Kuroko's Basketball: Winter Cup Highlights  ~Shadow and Light~ — nhóm cũ: Kuroko's Basketball
+- huyen-thoai-ve-thien-nien-ky-rong: Legend of the Millennium Dragon — nhóm cũ: Legend of the
+- huyen-thoai-ve-nhung-anh-hung-dai-ngan-ha-die-neue-these-dot-kich: Legend Of The Galactic Heroes: Die Neue These - Collision, Ginga Eiyuu Densetsu: Die Neue These - Gekitotsu — nhóm cũ: Legend of the
+- huyen-thoai-ve-nhung-anh-hung-dai-ngan-ha-die-neue-these-am-muu: Legend Of The Galactic Heroes: Die Neue This Season 4 — nhóm cũ: Legend Of The Galactic Heroes: Die Neue This
+- co-thanh-trong-guong: Lonely Castle In The Mirror — nhóm cũ: Lonely
+- ao-tuong-nhung-van-muon-yeu-soai-ca: Love, Chunibyo and Other Delusions! – Heart Throb- — nhóm cũ: Love (ft. Marriage and Divorce)
+- yeu-han-tinh-thu: Love Of Kill, Koroshi Ai, Cặp Đôi Sát Thủ — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-yeu-qua-lang-kinh: Love Through A Prism — nhóm cũ: Love (ft. Marriage and Divorce)
+- tinh-yeu-vo-hinh-noi-man-dem-trong-vat: Love Unseen Beneath The Clear Night Sky — nhóm cũ: Love (ft. Marriage and Divorce)
+- love-live-sieu-sao-mua-2: Love Live! Superstar!! (2nd Season) — nhóm cũ: Love (ft. Marriage and Divorce)
+- lupin-de-tam-lau-dai-gia-toc-cagliostro: Lupin III: The Castle of Cagliostro — nhóm cũ: Lupin III The
+- lupin-de-iii-lan-dau: Lupin III: The First — nhóm cũ: Lupin III The
+- den-tu-abyss-ngay-khong-tat-nang-o-lang-hoang-kim: Made In Abyss: The Golden City Of The Scorching Sun — nhóm cũ: Made In Abyss
+- magi-sinbad-phieu-luu-ky: Magi: Adventure Of Sinbad — nhóm cũ: Magi
+- sieu-dao-chich-kaito-kid: Magic Kaito: Kid the Phantom Thief — nhóm cũ: Magic
+- ao-thuat-gia-kaito-1412: Magic Kaito — nhóm cũ: Magic
+- cach-tao-ra-phep-thuat-o-the-gioi-khac: Magic Maker: How To Make Magic In Another World — nhóm cũ: Magic
+- hiep-si-phep-thuat-rayearth: Magic Knight Rayearth — nhóm cũ: Magic
+- thu-hoi-cuong-che-ma-luc-da-cho-muon-bang-hinh-thuc-tra-gop: Magic Repo Man: Dumped by My Party, I'll Cash In with a Cute Support Fairy to Become the Strongest! — nhóm cũ: Magic
+- ma-phap-thieu-nu-nanoha-movie-1: Magical Girl Lyrical Nanoha: The Movie 1st — nhóm cũ: Magical
+- khi-toi-tai-sinh-thanh-nhan-vat-phu-manh-nhat-chuyen-sinh-thanh-nhan-vat-phu-trong-game-nguoi-lon: Magical Explorer — nhóm cũ: Magical
+- thieu-nu-phep-thuat-nanoha-exceeds: Magical Girl Lyrical NANOHA EXCEEDS Gun Blaze Vengeance — nhóm cũ: Magical
+- du-an-nuoi-duong-co-gai-phep-thuat-khoi-dong-lai: Magical Girl Raising Project: Restart — nhóm cũ: Magical
+- mahou-no-shimai-lulutto-lilly: Magical Sisters LuluttoLilly — nhóm cũ: Magical
+- kabushikigaisha-magi-lumiere-ss2: Magilumiere Magical Girls Inc. Season 2 — nhóm cũ: Magilumiere Magical Girls Inc.
+- nhung-co-gai-phep-thuat: Mahoutsukai Precure! Movie: Kiseki no Henshin! Cure Mofurun! — nhóm cũ: Mahoutsukai
+- binh-minh-cua-phu-thuy: Mahoutsukai Reimeiki, The Dawn Of The Witch — nhóm cũ: Mahoutsukai
+- make-my-day: Make My Day — nhóm cũ: Make
+- mai-moi-cho-doc-su: Marriage Toxin (Marriagetoxin) — nhóm cũ: Marriage
+- mary-va-doa-hoa-phu-thuy: Mary and the Witch's Flower — nhóm cũ: Mary
+- mashle-ma-thuat-va-co-bap: Mashle: Magic And Muscles — nhóm cũ: MASHLE: MAGIC AND MUSCLES
+- mashle-ma-thuat-va-co-bap-phan-2: MASHLE: MAGIC AND MUSCLES (Season 2) — nhóm cũ: MASHLE: MAGIC AND MUSCLES
+- uchuujin-muumuu: Me and the Alien MuMu / 宇宙人ムームー — nhóm cũ: Me And
+- hau-gai-rong-nha-kobayashi-rong-co-don-muon-duoc-yeu-thuong: Miss Kobayashi'S Dragon Maid: A Lonely Dragon Wants To Be Loved — nhóm cũ: Miss Kobayashi's Dragon Maid
+- nhiem-vu-gia-dinh-yozakura-phan-2-yozakurasan-chi-no-daisakusen: Mission: Yozakura Family (Season 2) — nhóm cũ: Mission: Yozakura Family
+- nu-chu-kanan-thuc-ra-rat-de-du: Mistress Kanan Is Devilishly Easy — nhóm cũ: Mistress
+- cau-be-sieu-nang-luc-phan-1: Mob Psycho 100 (Season 1) — nhóm cũ: Mob Psycho 100
+- cau-be-sieu-nang-luc-phan-2: Mob Psycho 100 (Season 2) — nhóm cũ: Mob Psycho 100
+- cau-be-sieu-nang-luc-phan-3: Mob Psycho 100 (Season 3) — nhóm cũ: Mob Psycho 100
+- chien-si-co-dong-gundam-char-phan-cong: Mobile Suit Gundam: Char's Counterattack — nhóm cũ: Mobile Suit Gundam
+- chien-binh-gundam-hoang-hon-axis: Mobile Suit Gundam: Twilight Axis — nhóm cũ: Mobile Suit Gundam
+- chien-si-co-dong-gundam-tia-chop-hathaway: Mobile Suit Gundam Hathaway — nhóm cũ: Mobile Suit Gundam
+- mobile-suit-gundam-seed-freedom: Mobile Suit Gundam SEED FREEDOM — nhóm cũ: Mobile Suit Gundam
+- kidou-senshi-gundam-gquuuuuux: Mobile Suit Gundam: GQuuuuuuX — nhóm cũ: Mobile Suit Gundam
+- mobile-suit-gundam-tia-chop-hathaway-mobile-suit-gundam-hathaway-ma-thuat-nu-than-circe: MOBILE SUIT GUNDAM HATHAWAY The Sorcery of Nymph Circe — nhóm cũ: Mobile Suit Gundam
+- chien-si-co-dong-gundam-thiet-huyet-co-nhi-phan-2: Mobile Suit Gundam: Iron-Blooded Orphans (Season 2) — nhóm cũ: Mobile Suit Gundam: Iron-Blooded Orphans
+- mobile-suit-gundam-phap-su-den-tu-sao-thuy-phan-1: Mobile Suit Gundam: The Witch From Mercury (Season 1) — nhóm cũ: Mobile Suit Gundam: The Witch From Mercury
+- mobile-suit-gundam-phap-su-den-tu-sao-thuy-phan-2: Mobile Suit Gundam: The Witch From Mercury (Season 2) — nhóm cũ: Mobile Suit Gundam: The Witch From Mercury
+- mononoke-phim-dien-anh-bong-ma-trong-mua: Mononoke the Movie: The Phantom in the Rain — nhóm cũ: Mononoke the Movie The
+- mononoke-phim-dien-anh-chuong-iii-loi-nguyen-cua-ran: Mononoke the Movie: Chapter III - The Curse of the Serpent — nhóm cũ: Mononoke the Movie The
+- monster-eater: Monster Eater — nhóm cũ: Monster
+- nguyet-san-thieu-nu-nozakikun: Monthly Shojo Magazine Nozaki-kun — nhóm cũ: Monthly
+- mat-trang-laika-va-cong-chua-hut-mau: Moon, Laika, And The Bloodsucking Princess — nhóm cũ: Moon
+- tren-ca-vo-chong-nhung-duoi-tinh-nhan: More Than A Married Couple, But Not Lovers — nhóm cũ: More Than
+- cuoc-hon-nhan-hanh-phuc-cua-toi-phan-1: My Happy Marriage (Season 1) — nhóm cũ: My Happy Marriage
+- cuoc-hon-nhan-hanh-phuc-cua-toi-phan-2: My Happy Marriage (Season 2) — nhóm cũ: My Happy Marriage
+- hoc-vien-anh-hung-the-ky-moi-cua-anh-hung: My Hero Academia: Heroes Rising — nhóm cũ: My Hero Academia
+- bien-nien-su-nanoha-phan-3: Nanoha (Season 3) — nhóm cũ: Nanoha
+- huu-nhan-so-ishi-okoshi-to-ayashiki-raihousha: Natsume's Book of Friends — nhóm cũ: Natsume's Book Of Friends
+- huu-nhan-so-phan-2: Natsume's Book Of Friends (Season 2) — nhóm cũ: Natsume's Book Of Friends
+- lang-khach-ninja: Ninja Scroll — nhóm cũ: Ninja
+- ninja-kamui: Ninja Kamui — nhóm cũ: Ninja
+- cho-den-ngay-phu-thuy-lia-doi: Once Upon A Witch's Death — nhóm cũ: Once
+- vua-hai-tac-cuoc-dua-tu-than: One Piece The Movie Dead End No Bouken (Movie 4) — nhóm cũ: One Piece
+- vua-hai-tac-thanh-kiem-bi-nguyen-rua: One Piece Cursed Holy Sword One Piece: Norowareta Seiken (Movie 5) — nhóm cũ: One Piece
+- vua-hai-tac-ten-linh-may-khong-lo-trong-lau-dai-karakuri: One Piece The Movie Karakuri Jou No Meka Kyohei (Movie 7) — nhóm cũ: One Piece
+- vua-hai-tac-chuong-chopper-plus-no-ro-giua-mua-dong-cay-hoa-anh-dao-huyen-dieu: One Piece Movie 9: Episode Of Chopper Plus - Fuyu Ni Saku, Kiseki No Sakura — nhóm cũ: One Piece
+- dao-hai-tac-dao-tren-troi-2018: ONE PIECE Episode Of Skypiea  2018 — nhóm cũ: One Piece
+- dao-hai-tac-le-hoi-hai-tac-2019: ONE PIECE STAMPEDE 2019 — nhóm cũ: One Piece
+- chi-con-ngay-hom-qua: Only Yesterday — nhóm cũ: Only
+- overlord-chien-binh-bong-toi: Overlord: The Dark Warrior — nhóm cũ: Overlord
+- overlord-vi-vua-bat-tu: Overlord: The Undead King — nhóm cũ: Overlord
+- overlord-thanh-quoc: OVERLORD: The Sacred Kingdom — nhóm cũ: Overlord
+- ky-sinh-thu: Parasyte: The Maxim — nhóm cũ: Parasyte The
+- mau-xanh-ao-giac: Perfect Blue — nhóm cũ: Perfect
+- su-nghien-ngap-hoan-hao: Perfect Addiction — nhóm cũ: Perfect
+- xin-thay-co-giup-do-onegai-sensei: Please Teacher! — nhóm cũ: Please
+- xin-hay-mac-no-vao-takaminesan: Please Put Them On, Takamine-san — nhóm cũ: Please
+- xin-hay-thu-loi-cho-cac-em-trai-cua-toi: Please Excuse My Younger Brothers — nhóm cũ: Please
+- pokemon: Pokémon (TV Series) — nhóm cũ: Pokémon
+- pokemon-xyz-volkenion-va-magiana-sieu-may-moc: Pokémon the Movie: Volcanion and the Mechanical Marvel — nhóm cũ: Pokémon
+- pokemon-the-movie-to-chon-cau: Pokémon the Movie: I Choose You! — nhóm cũ: Pokémon
+- pokemon-mewtwo-phan-cong-tien-hoa: Pokémon the Movie: Mewtwo Strikes Back - Evolution — nhóm cũ: Pokémon
+- pokemon-mat-troi-mat-trang: Pokémon: Sun & Moon — nhóm cũ: Pokémon
+- pokemon-the-movie-bi-mat-rung-ram: Pokémon the Movie: Secrets of the Jungle — nhóm cũ: Pokémon
+- hanh-trinh-pokemon-loat-phim-pokemon-master-journeys: Pokémon Journeys: The Series — nhóm cũ: Pokémon
+- pokemon-concierge: Pokémon Concierge — nhóm cũ: Pokémon
+- hakozume-nu-canh-sat-phan-cong: Police In A Pod, Hakozume: Kouban Joshi No Gyakushuu — nhóm cũ: Police
+- nu-ho-ve-xinh-dep-thuy-thu-mat-trang-vinh-hang-ban-dien-anh: Pretty Guardian Sailor Moon Eternal -  The Movie — nhóm cũ: Pretty Guardian Sailor Moon Eternal The MOVIE
+- thuy-thu-mat-trang-vinh-hang: Pretty Guardian Sailor Moon Eternal The MOVIE Part 2 — nhóm cũ: Pretty Guardian Sailor Moon Eternal The MOVIE
+- cong-chua-soi-mononoke: Princess Mononoke — nhóm cũ: Princess
+- cong-chua-hieu-truong-nam-nu-diep-vu: Princess Principal — nhóm cũ: Princess
+- nam-nu-diep-vu-tho-xu-ly-vuong-mien-1: Princess Principal Crown Handler: Chapter 1 — nhóm cũ: Princess
+- cong-chua-me-doc-sach: Princess Of The Bibliophile — nhóm cũ: Princess
+- nam-nu-diep-vu-tho-xu-ly-vuong-mien-2: Princess Principal: Crown Handler: Chapter 2 – Revealing Reviews — nhóm cũ: Princess
+- nam-nu-diep-vu-tho-xu-ly-vuong-mien-3: Princess Principal: Crown Handler - Chapter 3 — nhóm cũ: Princess
+- nam-nu-diep-vu-tho-xu-ly-vuong-mien-4: Princess Principal Crown Handler: Chapter 4 — nhóm cũ: Princess
+- gia-su-cua-cong-tuoc-tieu-thu: Private Tutor To The Duke's Daughter — nhóm cũ: Private
+- bang-xep-hang-quoc-vuong-ousama-ranking: Ranking Of Kings — nhóm cũ: Ranking Of Kings
+- bang-xep-hang-quoc-vuong-su-dung-cam: Ranking Of Kings: The Treasure Chest Of Courage — nhóm cũ: Ranking Of Kings
+- hoi-chung-tuoi-thanh-xuan-phan-1: Rascal Does Not Dream Of Bunny Girl Senpai — nhóm cũ: Rascal Does Not Dream of
+- hoi-chung-tuoi-moi-lon: Rascal Does Not Dream of a Dreaming Girl — nhóm cũ: Rascal Does Not Dream of
+- hoi-chung-tuoi-thanh-xuan-em-gai-xuat-hanh: Rascal Does Not Dream Of A Sister Venturing Out — nhóm cũ: Rascal Does Not Dream of
+- hoi-chung-tuoi-thanh-xuan-phan-2: Rascal Does Not Dream Of Santa Claus — nhóm cũ: Rascal Does Not Dream of
+- gia-su-hitman-reborn-katekyo-hitman-reborn: REBORN! — nhóm cũ: Reborn
+- vung-dat-quy-du-phat-tac: Resident Evil: Degeneration — nhóm cũ: Resident
+- vung-dat-quy-du-loi-nguyen: Resident Evil: Damnation — nhóm cũ: Resident
+- vung-dat-quy-du-no-mau: Resident Evil: Vendetta — nhóm cũ: Resident
+- vung-dat-quy-du-bong-toi-vo-tan: RESIDENT EVIL: Infinite Darkness — nhóm cũ: Resident
+- vung-dat-quy-du-dao-tu-than: Resident Evil: Death Island — nhóm cũ: Resident
+- cau-lac-bo-boi-nam-boi-den-tan-cung-the-gioi-giac-mo: Road to the World — nhóm cũ: Road To
+- strike-witches-duong-den-berlin: ROAD To BERLIN — nhóm cũ: Road To
+- cac-co-gai-cua-rokudo: Rokudo's Bad Girls — nhóm cũ: Rokudo s Bad Girls
+- gai-hu-cua-rokudo: Rokudo's Bad Girls — nhóm cũ: Rokudo s Bad Girls
+- ke-sat-nhan-lang-man: Romantic Killer — nhóm cũ: Romantic
+- co-be-thien-than: Saint Tail — nhóm cũ: Saint
+- thanh-dau-si: Saint Seiya: Legend Of Sanctuary — nhóm cũ: Saint
+- sat-thu-ve-vuon: Sakamoto Days — nhóm cũ: Sakamoto Days
+- sasaki-va-miyano: Sasaki And Miyano, Sasamiya, Sasaki To Miyano — nhóm cũ: Sasaki And Miyano
+- sasaki-va-miyano-tot-nghiep: Sasaki And Miyano: Graduation — nhóm cũ: Sasaki And Miyano
+- lien-ket-ruc-do: SCARLET NEXUS — nhóm cũ: Scarlet
+- khi-cong-chua-bao-thu-scarlet: Scarlet — nhóm cũ: Scarlet
+- hen-gap-cau-ngay-mai-o-khu-am-thuc-fudo-koto-de-mata-ashita: See You Tomorrow At The Food Court — nhóm cũ: See You
+- chien-quoc-yeu-ho-phan-1: Sengoku Youko (Season 1) — nhóm cũ: Sengoku Youko
+- chien-quoc-yeu-ho-phan-2: Sengoku Youko (Season 2) — nhóm cũ: Sengoku Youko
+- senpai-thich-gia-gai: Senpai Is An Otokonoko — nhóm cũ: Senpai Is An Otokonoko
+- senpai-thich-gia-gai-senpai-wa-otokonoko-movie-ame-nochi-hare: Senpai Is An Otokonoko Movie: Sunshine After The Rain — nhóm cũ: Senpai Is An Otokonoko
+- bay-hiep-si-nguoi-ke-vi-anh-hung: Seven Knights Revolution: The Hero's Successor, Seven Knights Revolution -Eiyuu No Keishousha — nhóm cũ: Seven
+- vua-dau-bep-soma: Shokugeki No Soma — nhóm cũ: Shokugeki No
+- vua-dau-bep-soma-phan-2: Shokugeki No Souma: Ni No Sara — nhóm cũ: Shokugeki No
+- slam-dunk-tv-series: Slam Dunk — nhóm cũ: Slam Dunk
+- slam-dunk-3-crisis-of-shohoku-school: Slam Dunk 3: Crisis of Shohoku School — nhóm cũ: Slam Dunk
+- thuyen-truong-harlock: Space Pirate Captain Harlock — nhóm cũ: Space
+- doraemon-doi-ban-than: Stand by Me Doraemon — nhóm cũ: Stand By Me
+- doraemon-doi-ban-than-2: Stand by Me Doraemon 2 — nhóm cũ: Stand By Me
+- meitantei-precure: Star Detective Precure! — nhóm cũ: Star
+- ngay-he-cua-coo: Summer Days With Coo — nhóm cũ: Summer
+- cuoc-chien-mua-he: Summer Wars — nhóm cũ: Summer
+- hon-ma-mua-ha: Summer Ghost — nhóm cũ: Summer
+- vinh-biet-mua-he: Summer Time Rendering — nhóm cũ: Summer
+- summer-pockets: Summer Pockets — nhóm cũ: Summer
+- kiep-chuyen-sinh-ngot-ngao: Sweet Reincarnation — nhóm cũ: Sweet
+- sword-of-the-stranger: Sword Of The Stranger — nhóm cũ: Sword Of The
+- thanh-kiem-cua-tho-san-quy: Sword Of The Demon Hunter: Kijin Gentosho — nhóm cũ: Sword Of The
+- tp-bon: T・P BON — nhóm cũ: T・P BON
+- tp-bon-phan-2: T・P BON (Season 2) — nhóm cũ: T・P BON
+- nhat-quy-nhi-ma-thu-ba-takagi-phan-3: Teasing Master Takagi-san (Season 3) — nhóm cũ: Teasing Master Takagi-san
+- ve-chuyen-toi-chuyen-sinh-thanh-slime-oad: Tensei Shitara Slime Datta Ken OVA, That Time I Got Reincarnated As A Slime OAD — nhóm cũ: Tensei
+- cuoc-song-tai-di-gioi-cua-hien-gia-tai-sinh-toi-nhan-duoc-chuc-nghiep-thu-hai-va-da-tro-thanh-nguoi-manh-nhat-the-gioi: Tensei Kenja No Isekai Life: Dai-2 No Shokugyou Wo Ete Sekai Saikyou Ni Narimashita My Isekai Life: I Gained A Second Character Class And Became The Strongest Sage In The World — nhóm cũ: Tensei
+- boku-no-kokoro-no-yabai-yatsu-phan-1: The Dangers in My Heart (Season 1) — nhóm cũ: The Dangers in My Heart
+- boku-no-kokoro-no-yabai-yatsu-phan-2: The Dangers in My Heart (Season 2) — nhóm cũ: The Dangers in My Heart
+- ta-muon-tro-thanh-chua-te-bong-toi-phan-1: The Eminence in Shadow (Season 1) — nhóm cũ: The Eminence in Shadow
+- ta-muon-tro-thanh-chua-te-bong-toi-phan-2: The Eminence in Shadow (Season 2) — nhóm cũ: The Eminence in Shadow
+- phap-su-bang-kiem-phap-su-bang-kiem-se-thong-tri-the-gioi-phan-2: The Iceblade Sorcerer Shall Rule The World (Season 2) — nhóm cũ: The Iceblade Sorcerer Shall Rule The World
+- bat-thuong-tai-truong-phep-thuat-phan-1: The Irregular at Magic High School (Season 1) — nhóm cũ: The Irregular at Magic High School
+- bat-thuong-tai-truong-phep-thuat-phan-2: The Irregular At Magic High School (Season 2) — nhóm cũ: The Irregular At Magic High School
+- bat-thuong-tai-truong-phep-thuat-co-gai-trieu-hoi-nhung-vi-sao: The Irregular At Magic High School: The Girl Who Summons The Stars — nhóm cũ: The Irregular at Magic High School
+- hoc-vien-uu-tu-o-truong-cao-trung-ma-phap-hoi-uc: The Irregular At Magic High School: Reminiscence Arc, Mahouka Koukou No Rettousei: Tsuioku-hen — nhóm cũ: The Irregular at Magic High School
+- hoc-vien-ma-vuong-phan-1: The Misfit Of Demon King Academy (Season 1) — nhóm cũ: The Misfit Of Demon King Academy
+- hoc-vien-ma-vuong-phan-2: The Misfit Of Demon King Academy (Season 2) — nhóm cũ: The Misfit Of Demon King Academy
+- nha-co-nam-nang-dau-ban-dien-anh: The Quintessential Quintuplets Movie — nhóm cũ: The Quintessential Quintuplets
+- su-troi-day-cua-khien-hiep-si-phan-2: The Rising Of The Shield Hero (Season 2) — nhóm cũ: The Rising Of The Shield Hero
+- that-hinh-dai-toi-loi-nguyen-cua-anh-sang: The Seven Deadly Sins: Cursed by Light — nhóm cũ: The Seven Deadly Sins
+- that-hinh-dai-toi-phan-2: The Seven Deadly Sins (Season 2) — nhóm cũ: The Seven Deadly Sins
+- that-hinh-dai-toi-moi-thu-edinburgh-phan-1: The Seven Deadly Sins: Grudge Of Edinburgh (Part 1) — nhóm cũ: The Seven Deadly Sins: Grudge Of Edinburgh
+- ong-chong-yakuza-noi-tro-phan-1: The Way Of The Househusband (Season 1) — nhóm cũ: The Way Of The Househusband
+- ong-chong-yakuza-noi-tro-phan-2: The Way Of The Househusband (Season 2) — nhóm cũ: The Way Of The Househusband
+- khong-doi-nao-toi-co-the-co-nguoi-yeu-hoac-co-the-la-co-watashi-ga-koibito-ni-nareru-wake-nai-jan-muri-muri: There's No Freaking Way I'll Be Your Lover! Unless... — nhóm cũ: There
+- co-mot-co-gai-de-thuong-trong-to-doi-anh-hung-nen-toi-thu-to-tinh: There Was a Cute Girl in the Hero's Party, so I Tried Confessing to Her — nhóm cũ: There
+- tiger-bunny-khoi-dau: TIGER & BUNNY: The Beginning — nhóm cũ: TIGER & BUNNY
+- tiger-bunny-troi-day: TIGER & BUNNY: The Rising — nhóm cũ: TIGER & BUNNY
+- tiger-bunny-phan-2: TIGER & BUNNY (Season 2) — nhóm cũ: TIGER & BUNNY
+- thoi-dai-eve: Time Of EVE: The Movie — nhóm cũ: Time
+- tokyo-revengers: Tokyo Revengers — nhóm cũ: Tokyo Revengers
+- tokyo-revengers-cuoc-chien-cua-ba-titan: Tokyo Revengers: War of the Three Titan Arc — nhóm cũ: Tokyo Revengers
+- du-sao-cung-de-thuong-mua-2: Tonikaku Kawaii (Season 2) — nhóm cũ: Tonikaku Kawaii
+- transformers-chien-tranh-cybertron-trai-dat-troi-day: Transformers: War for Cybertron: Earthrise — nhóm cũ: Transformers War for Cybertron
+- transformers-chien-tranh-cybertron-cuoc-vay-ham: Transformers: War for Cybertron: Siege — nhóm cũ: Transformers War for Cybertron
+- transformers-chien-tranh-cybertron-vuong-quoc: Transformers: War for Cybertron: Kingdom — nhóm cũ: Transformers War for Cybertron
+- doi-san-toi-pham: Trigun: Badlands Rumble — nhóm cũ: Trigun
+- cuoc-dieu-hanh-trigun-phan-1: Trigun Stampede — nhóm cũ: Trigun
+- cuoc-dieu-hanh-trigun-phan-2: Trigun Stargaze — nhóm cũ: Trigun
+- tieu-dau-bep-cung-dinh: True Cooking Master Boy — nhóm cũ: True
+- nguyet-dao-di-gioi-phan-1: Tsukimichi -Moonlit Fantasy- (Season 1) — nhóm cũ: Tsukimichi -Moonlit Fantasy
+- nguyet-dao-di-gioi-phan-2: Tsukimichi -Moonlit Fantasy- (Season 2) — nhóm cũ: Tsukimichi -Moonlit Fantasy
+- tim-moi-tinh-dau-qua-giong-noi: Tune In To The Midnight Heart — nhóm cũ: Tune In
+- sieu-nhan-dien-quang-geed: Ultraman Geed — nhóm cũ: Ultraman
+- ultraman-troi-day: Ultraman: Rising — nhóm cũ: Ultraman
+- ultraman-2: Ultraman (Season 2) — nhóm cũ: Ultraman
+- ultraman-phan-3: Ultraman (Season 3) — nhóm cũ: Ultraman
+- chu-toi-tro-ve-tu-di-gioi: Uncle From Another World — nhóm cũ: Uncle
+- noi-am-anh-cua-ong-chu-voi-nhung-thu-de-thuong: Uncle's Obsession With Cute Things — nhóm cũ: Uncle
+- bat-tu-va-bat-hanh: Undead Unluck — nhóm cũ: Undead Unluck
+- undead-unluck-winterhen: Undead Unluck: Winter-hen — nhóm cũ: Undead Unluck
+- nhan-gia-an-than: Under Ninja — nhóm cũ: Under
+- tho-san-ma-ca-rong-khat-mau: Vampire Hunter D: Bloodlust — nhóm cũ: Vampire
+- ma-ca-rong-trong-khu-vuon: Vampire In The Garden — nhóm cũ: Vampire
+- vinland-saga-ban-hung-ca-viking-phan-1: Vinland Saga (Season 1) — nhóm cũ: Vinland Saga
+- vinland-saga-ban-hung-ca-viking-phan-2: Vinland Saga (Season 2) — nhóm cũ: Vinland Saga
+- bup-be-ky-uc-tap-dac-biet: Violet Evergarden: Special — nhóm cũ: Violet Evergarden
+- bup-be-ky-uc: Violet Evergarden — nhóm cũ: Violet Evergarden
+- bup-be-ky-uc-violet-evergarden: Violet Evergarden: Eternity And The Auto Memories Doll — nhóm cũ: Violet Evergarden
+- violet-evergarden-hoi-uc-khong-quen: Violet Evergarden the Movie — nhóm cũ: Violet Evergarden
+- bup-be-ky-uc-hoi-tuong: Violet Evergarden: Recollections — nhóm cũ: Violet Evergarden
+- co-gai-co-khi: VIRGIN PUNK Clockwork Girl — nhóm cũ: VIRGIN PUNK Clockwork Girl
+- thieu-nu-punk-co-gai-co-khi: Virgin Punk: Clockwork Girl — nhóm cũ: VIRGIN PUNK Clockwork Girl
+- thieu-nien-bong-chuyen-ket-thuc-va-bat-dau: Volleyball Junior — nhóm cũ: Volleyball Junior
+- thieu-nien-bong-chuyen-nguoi-thang-va-ke-bai: Volleyball Junior Haikyu!! The Movie 2: The Winner And The Loser — nhóm cũ: Volleyball Junior
+- dai-chien-the-gioi-goliath: War of the Worlds: Goliath — nhóm cũ: War Of The
+- phieu-luu-ngoai-khong-gian: Welcome to the Space Show — nhóm cũ: Welcome to
+- marnie-trong-ky-uc: When Marnie Was There — nhóm cũ: When
+- loi-thi-tham-cua-trai-tim: Whisper Of The Heart — nhóm cũ: Whisper
+- khe-hat-loi-yeu-sasayaku-you-ni-koi-wo-utau: Whisper Me A Love Song — nhóm cũ: Whisper
+- phu-thuy-quan-sat: Witch Watch — nhóm cũ: Witch
+- xuong-phep-thuat: Witch Hat Atelier — nhóm cũ: Witch
+- phieu-luu-cung-nguoi-ban-da-tro-thanh-thieu-nu-xinh-dep-o-di-gioi: With a Fogie Reincarnated as a Pretty Fantasy Girl, Fabiniku, Isekai Bishoujo Juniku Ojisan — nhóm cũ: With
+- em-den-cung-mua-ame-to-kimi-to: With You And The Rain — nhóm cũ: With
+- voi-em-tinh-yeu-cua-chung-ta-se-vuot-qua: With You, Our Love Will Make It Through — nhóm cũ: With
+- nhung-dua-con-cua-soi-ame-va-yuki: Wolf Children — nhóm cũ: Wolf
+- lang-nu-va-hoang-tu-hac-am: Wolf Girl and Black Prince — nhóm cũ: Wolf
+- ki-nguyen-trigger-phan-1: World Trigger (Season 1) — nhóm cũ: World Trigger
+- ki-nguyen-trigger-phan-2: World Trigger (Season 2) — nhóm cũ: World Trigger
+- ki-nguyen-trigger-phan-3: World Trigger (Season 3) — nhóm cũ: World Trigger
+- khong-minh-thich-tiec-tung-ban-hoat-hinh: Ya Boy Kongming! — nhóm cũ: Ya Boy Kongming
+- khong-minh-thich-tiec-tung: Ya Boy Kongming! — nhóm cũ: Ya Boy Kongming
+- cong-chua-ban-yeu-phan-1: Yashahime: Princess Half-Demon — nhóm cũ: Yashahime Princess Half Demon
+- cong-chua-ban-yeu-phan-2: Yashahime: Princess Half-Demon: The Second Act — nhóm cũ: Yashahime Princess Half Demon
+- tieu-thu-khong-choi-game-doi-khang: Young Ladies Don't Play Fighting Games — nhóm cũ: Young
+- thang-tu-la-loi-noi-doi-cua-em: Your Lie In April — nhóm cũ: Your
+- your-forma: Your Forma — nhóm cũ: Your
+- cuaro-trung-hoc-phan-5: Yowamushi Pedal (Season 5) — nhóm cũ: Yowamushi Pedal
+- vua-tro-choi-2000: Yu-Gi-Oh! Duel Monsters — nhóm cũ: Yu Gi Oh
+- yu-gi-oh-gx: Yu-Gi-Oh! GX — nhóm cũ: Yu Gi Oh
+- vua-tro-choi: Yu-Gi-Oh! Bonds Beyond Time — nhóm cũ: Yu Gi Oh
+- yugioh-chieu-khong-gian-toi: Yu-Gi-Oh!: The Dark Side Of Dimensions — nhóm cũ: Yu Gi Oh
+- vung-dat-thay-ma-2018: ZOMBIE LAND SAGA — nhóm cũ: ZOMBIE LAND SAGA
+- zombie-land-saga-movie-thien-duong-ngan-ha-mong-tuong: Zombie Land Saga: Yumeginga Paradise — nhóm cũ: ZOMBIE LAND SAGA
+- nang-kaguya-muon-duoc-tho-lo-tinh-chien-cang-nao-cua-cac-thien-tai: かぐや様は告らせたい～天才たちの恋愛頭脳戦～ — nhóm cũ: かぐや様は告らせたい
+- kaguyasama-muon-to-tinh-tinh-chien-cang-nao-cua-cac-thien-tai2: かぐや様は告らせたい～天才たちの恋爱头脳戦～ 第 2 期 — nhóm cũ: かぐや様は告らせたい
+- kaguyasama-muon-to-tinh-tinh-chien-cang-nao-cua-cac-thien-tai-ova: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～ OVA — nhóm cũ: かぐや様は告らせたい
+- kaguyasama-cuoc-chien-to-tinh-nu-hon-dau-khong-hoi-ket: かぐや様は告らせたい-ファーストキッスは終わらない- — nhóm cũ: かぐや様は告らせたい
+- kaguyasama-wa-kokurasetai-otona-e-no-kaidan: かぐや様は告らせたい 大人への階段 — nhóm cũ: かぐや様は告らせたい
+- ragna-crimson: ラグナクリムゾン — nhóm cũ: ラグナクリムゾン
+- sat-long-nhan: ラグナクリムゾン — nhóm cũ: ラグナクリムゾン
+- nguoi-doi-1989: Batman — nhóm cũ: Batman
+- nguoi-doi-tro-lai: Batman Returns — nhóm cũ: Batman
+- batman-mat-na-ma: Batman: Mask Of The Phantasm — nhóm cũ: Batman
+- nguoi-doi-va-robin: Batman & Robin — nhóm cũ: Batman
+- batman-su-tro-lai-cua-joker: Batman Beyond: Return of the Joker — nhóm cũ: Batman
+- batman-bi-an-doi-nu: Batman: Mystery Of The Batwoman — nhóm cũ: Batman
+- nguoi-doi-bat-dau: Batman Begins — nhóm cũ: Batman
+- batman-gotham-knight: Batman: Gotham Knight — nhóm cũ: Batman
+- nguoi-doi-nam-dau-tien: Batman: Year One — nhóm cũ: Batman
+- batman-arkham-that-thu: Batman: Assault on Arkham — nhóm cũ: Batman
+- batman-unlimited-ban-nang-thu-tinh: Batman Unlimited: Animal Instincts — nhóm cũ: Batman
+- nguoi-doi-quai-vat-noi-loan: Batman Unlimited: Monster Mayhem — nhóm cũ: Batman
+- nguoi-doi-tran-chien-nhung-ke-khong-lo: Batman Unlimited: Mechs vs. Mutants — nhóm cũ: Batman
+- batman-dai-chien-superman-anh-sang-cong-ly: Batman v Superman: Dawn of Justice — nhóm cũ: Batman
+- nguoi-doi-moi-han-thu: Batman: Bad Blood — nhóm cũ: Batman
+- batman-tro-dua-chet-choc: Batman: The Killing Joke — nhóm cũ: Batman
+- nguoi-doi-sat-thu-joke: Batman: The Killing Joke — nhóm cũ: Batman
+- nguoi-doi-va-harley-quinn: Batman And Harley Quinn — nhóm cũ: Batman
+- nguoi-doi-dai-chien-voi-haimat: Batman vs. Two-Face — nhóm cũ: Batman
+- nguoi-doi-gotham-cua-gaslight: Batman: Gotham By Gaslight — nhóm cũ: Batman
+- nguoi-doi-va-ninja-rua: Batman vs Teenage Mutant Ninja Turtles — nhóm cũ: Batman
+- lien-minh-nguoi-doi-va-ninja-rua: Batman Vs. Teenage Mutant Ninja Turtles — nhóm cũ: Batman
+- nguoi-doi-ac-nhan-bi-an: Batman: Hush — nhóm cũ: Batman
+- nguoi-doi-linh-hon-cua-rong: Batman: Soul of the Dragon — nhóm cũ: Batman
+- nguoi-doi-dem-truong-halloween: Batman: The Long Halloween — nhóm cũ: Batman
+- nguoi-doi-dem-truong-halloween-phan-2: Batman: The Long Halloween, Part Two — nhóm cũ: Batman
+- batman-va-superman-tran-chien-cua-cac-anh-hung-nhi: Batman and Superman: Battle of the Super Sons — nhóm cũ: Batman
+- nguoi-doi-ngay-tan-cua-gotham: Batman: The Doom That Came To Gotham — nhóm cũ: Batman
+- nguoi-doi-gotham-diet-vong: Batman: The Doom That Came to Gotham — nhóm cũ: Batman
+- batman-su-sup-do-cua-hiep-si-phan-1: Batman: Knightfall Part 1: Knightfall — nhóm cũ: Batman
+- nguoi-doi-dem-truong-halloween-2: Batman: The Long Halloween 2 — nhóm cũ: Batman
+- nguoi-doi-ky-si-bong-dem-tro-lai-phan-1: Batman: The Dark Knight Returns, Part 1 — nhóm cũ: Batman: The Dark Knight Returns,
+- ky-si-bong-dem-tro-lai-phan-2: Batman: The Dark Knight Returns, Part 2 — nhóm cũ: Batman: The Dark Knight Returns,
+- nguoi-doi-ky-si-bong-dem-tro-lai-phan-2: Batman: The Dark Knight Returns, Part 2 — nhóm cũ: Batman: The Dark Knight Returns,
+- lego-batman-the-movie-dc-super-heroes-unite: Lego Batman: The Movie - DC Super Heroes Unite — nhóm cũ: Lego
+- nguoi-doi-lego-van-de-gia-dinh: LEGO DC Batman: Family Matters — nhóm cũ: Lego
+- lego-dc-nguoi-doi-va-van-de-dai-gia-dinh: Lego DC Batman: Family Matters — nhóm cũ: Lego
+- pennyworth-nguon-goc-quan-gia-cua-nguoi-doi-phan-3: Pennyworth: The Origin of Batman's Butler (Season 3) — nhóm cũ: Pennyworth: The Origin of Batman's Butler
+- nguoi-nhen-hang-xom-than-thien: Your Friendly Neighborhood Spider-Man — nhóm cũ: spdm
+- sieu-nhan-va-nguoi-doi-ke-thu-quoc-gia: Superman - Batman: Public Enemies — nhóm cũ: Superman Batman
+- sieu-nhan-va-nguoi-doi-khai-huyen: Superman Batman: Apocalypse — nhóm cũ: Superman Batman

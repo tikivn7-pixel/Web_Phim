@@ -12,6 +12,7 @@ const FINISHED_PERCENT = 95;
 // Bản ghi cũ thiếu totalEpisodes thì coi như chưa xong để không xóa nhầm.
 function isFinishedSeries(item) {
   if (!item) return false;
+  if (typeof item.episodeIsLast === "boolean") return item.episodeIsLast && Number(item.progress) >= FINISHED_PERCENT;
   const total = Number(item.totalEpisodes);
   const episode = Number(item.episode);
   if (!total || !episode) return false;
@@ -27,6 +28,9 @@ function getContinueWatchingList() {
     list = [];
   }
   if (!Array.isArray(list)) return [];
+  if (typeof PersonalData !== "undefined") {
+    return PersonalData.normalize({continue_watching_list:list}).continue_watching_list.filter(item => !isFinishedSeries(item));
+  }
 
   // Mỗi phim chỉ giữ 1 bản ghi mới nhất (dọn dữ liệu cũ bị lưu theo từng tập)
   const seen = new Set();
@@ -34,7 +38,7 @@ function getContinueWatchingList() {
     .slice()
     .sort((a, b) => (b?.updatedAt || 0) - (a?.updatedAt || 0))
     .filter((item) => {
-      if (!item || (!item.slug && !item.title)) return false;
+      if (!item || typeof item !== "object" || typeof (item.slug || item.title) !== "string") return false;
       const key = item.slug || item.title;
       if (seen.has(key)) return false;
       seen.add(key);
@@ -56,6 +60,15 @@ function removeFromContinueWatching(slugOrTitle) {
   const key = String(slugOrTitle);
 
   try {
+    if (typeof PersonalData !== "undefined") {
+      const current = PersonalData.read(localStorage);
+      if (current.warnings.length) throw new Error("Chưa đọc được dữ liệu lưu. Mở Thư viện để kiểm tra trước khi xóa.");
+      current.data.continue_watching_list = current.data.continue_watching_list.filter(item => String(item.slug || item.title) !== key);
+      delete current.data.episode_positions[key];
+      PersonalData.write(localStorage, current.data);
+      renderContinueWatching();
+      return;
+    }
     const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
     const list = raw ? JSON.parse(raw) : [];
     if (Array.isArray(list)) {
@@ -73,17 +86,19 @@ function removeFromContinueWatching(slugOrTitle) {
     }
   } catch (e) {
     console.error("Không xóa được khỏi Tiếp tục xem:", e);
+    alert(e.message || "Không lưu được vì bộ nhớ trình duyệt bị chặn hoặc đã đầy.");
   }
 
   renderContinueWatching();
 }
 
-function renderContinueWatching() {
+async function renderContinueWatching() {
   const section = document.getElementById("continue-watching-section");
   const slider = document.getElementById("continue-watching-slider");
   if (!section || !slider) return;
 
   const list = getContinueWatchingList();
+  const request={};slider._posterRequest=request;
 
   if (list.length === 0) {
     slider.innerHTML = "";
@@ -91,16 +106,22 @@ function renderContinueWatching() {
     return;
   }
 
+  // The homepage only loads a few sliders into globalMoviesList. Resolve history
+  // against the complete cached index, including movies outside those sliders.
+  let catalog=typeof globalMoviesList!=="undefined"?globalMoviesList:[];
+  if(typeof loadStaticCatalog==="function")try{catalog=await loadStaticCatalog();}catch(error){}
+  if(slider._posterRequest!==request)return;
+  const bySlug=new Map(catalog.map(movie=>[movie.slug,movie]));
+
   section.style.display = "block";
   slider.innerHTML = "";
 
   list.forEach((item) => {
     const movieMeta =
-      globalMoviesList.find((m) => item.slug ? m.slug === item.slug : m.title === item.title) || {};
-    const posterSrc =
-      item.poster || movieMeta.poster || "https://placehold.co/350x500";
+      (item.slug?bySlug.get(item.slug):catalog.find(movie=>movie.title===item.title)) || {};
     const safeTitle = escapeHtml(item.title);
     const safeDesc = escapeHtml(item.desc || movieMeta.desc || "");
+    const episodeLabel = item.episodeName ? (/^\d+$/.test(item.episodeName) ? "Tập " + item.episodeName : item.episodeName) : "Tập " + (Number(item.episode) || 1);
 
     const card = document.createElement("div");
     card.className = "movie-card";
@@ -113,20 +134,26 @@ function renderContinueWatching() {
       if (item.episodeName) params.set("target_episode",item.episodeName);
       window.location.href = "watch.html?" + params;
     };
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+    card.setAttribute("aria-label", "Xem tiếp " + item.title);
+    card.addEventListener("keydown", event => {
+      if (event.target === card && event.key === "Enter") { event.preventDefault(); card.onclick(); }
+    });
 
     card.innerHTML = `
-      <img src="${escapeHtml(posterSrc)}" alt="${safeTitle}" loading="lazy" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
-      <h4>${safeTitle} - Tập ${item.episode}</h4>
+      <img alt="${safeTitle}" loading="lazy" referrerpolicy="no-referrer" />
+      <h4>${safeTitle} - ${escapeHtml(episodeLabel)}</h4>
      
       <div style="width: 100%; background: rgba(255,255,255,0.2); height: 4px; border-radius: 2px; margin-top: 5px; overflow: hidden;">
         <div style="width: ${Math.min(100, Math.max(0, Number(item.progress) || 0))}%; background: #e50914; height: 100%;"></div>
       </div>
 
       <div class="movie-hover-card">
-        <img src="${posterSrc}" alt="${safeTitle}" class="hover-banner" onerror="this.src='https://placehold.co/350x500'" />
+        <img alt="${safeTitle}" class="hover-banner" loading="lazy" referrerpolicy="no-referrer" />
         <div class="hover-content">
           <h3 class="hover-title">${safeTitle}</h3>
-          <p style="color: #e50914; font-weight: bold; margin-bottom: 5px;">Đang xem: Tập ${item.episode}</p>
+          <p style="color: #e50914; font-weight: bold; margin-bottom: 5px;">Đang xem: ${escapeHtml(episodeLabel)}</p>
           <div class="hover-actions">
             <button class="btn-hover play">
               <i class="fa-solid fa-play"></i> Xem tiếp (${Math.floor(item.progress)}%)
@@ -136,12 +163,14 @@ function renderContinueWatching() {
         </div>
       </div>
     `;
+    card.dataset.slug=item.slug||"";
+    card.querySelectorAll('img').forEach(image=>SiteTools.setPoster(image,item,movieMeta));
     const remove = document.createElement("button");
     remove.className = "continue-remove";
     remove.type = "button";
     remove.textContent = "×";
     remove.setAttribute("aria-label", "Xóa " + item.title + " khỏi Tiếp tục xem");
-    remove.onclick = event => { event.stopPropagation(); removeFromContinueWatching(item.slug || item.title); };
+    remove.onclick = event => { event.stopPropagation(); if (confirm(`Xóa tiến độ xem “${item.title}”, gồm vị trí các tập đã lưu?`)) removeFromContinueWatching(item.slug || item.title); };
     card.appendChild(remove);
     const hint = document.createElement("p");
     hint.className = "continue-time";

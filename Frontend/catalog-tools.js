@@ -4,6 +4,7 @@ const vm = require("vm");
 const crypto = require("crypto");
 const { primaryCountry, genreCountries } = require("./country-utils");
 const { genres } = require("./genre-utils");
+const {applyRelations}=require("./relation-policy");
 const root = __dirname;
 function readMovies() {
   const ctx = { window: {}, console };
@@ -70,6 +71,6 @@ function enrichMovies(movies, manifest, now = new Date().toISOString()) {
     if (fs.existsSync(path.join(root, local))) { result.remotePoster = movie.poster; result.poster = local; }
     return result;
   });
-  return { movies: output, manifest: { version: 1, movies: records } };
+  return { movies: applyRelations(output), manifest: { version: 1, movies: records } };
 }
 module.exports = { readMovies, validateMovies, enrichMovies, classifyMovie };

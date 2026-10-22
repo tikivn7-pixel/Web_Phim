@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "korean-war-landing-films",
+      "label": "Operation Chromite / The Battle of Jangsari",
+      "kind": "related-films",
+      "basis": "official-producer-film-council",
+      "sources": [
+        "https://www.koreanfilm.or.kr/eng/news/newfilm.jsp?mode=VIEW&seq=371"
+      ],
+      "members": [
+        {
+          "slug": "nhiem-vu-toi-mat",
+          "label": "Operation Chromite (2016)",
+          "order": 0
+        },
+        {
+          "slug": "chien-truong-jangsari",
+          "label": "The Battle of Jangsari (2019)",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "the-witch-films",
+      "label": "The Witch",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://wellgousa.com/films/witch-2-other-one"
+      ],
+      "members": [
+        {
+          "slug": "sat-thu-nhan-tao",
+          "label": "The Witch: Part 1. The Subversion",
+          "order": 0
+        },
+        {
+          "slug": "sat-thu-nhan-tao-2-mau-vat-con-lai",
+          "label": "The Witch: Part 2. The Other One",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "hospital-playlist-universe",
+      "label": "Hospital Playlist / Resident Playbook",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://about.netflix.com/en/news/netflixs-resident-playbook-trailer-promises-warmth-humor-and-heartfelt"
+      ],
+      "members": [
+        {
+          "slug": "nhung-bac-si-tai-hoa-phan-1",
+          "label": "Hospital Playlist (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "nhung-bac-si-tai-hoa-phan-2",
+          "label": "Hospital Playlist (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "chuyen-doi-bac-si-noi-tru",
+          "label": "Resident Playbook",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "spider-man-raimi",
+      "label": "Spider-Man (Sam Raimi)",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://www.sonypictures.com/movies/spiderman2"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-nhen-2002",
+          "label": "Spider-Man",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-nhen-2",
+          "label": "Spider-Man 2",
+          "order": 1
+        },
+        {
+          "slug": "nguoi-nhen-3",
+          "label": "Spider-Man 3",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "amazing-spider-man",
+      "label": "The Amazing Spider-Man",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://www.sonypictures.com/movies/theamazingspiderman2"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-nhen-sieu-dang",
+          "label": "The Amazing Spider-Man",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-nhen-sieu-dang-2",
+          "label": "The Amazing Spider-Man 2",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "spider-man-holland",
+      "label": "Spider-Man (Tom Holland)",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://www.sonypictures.com/movies/spidermanbrandnewday"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-nhen-tro-ve-nha",
+          "label": "Spider-Man: Homecoming",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-nhen-xa-nha",
+          "label": "Spider-Man: Far From Home",
+          "order": 1
+        },
+        {
+          "slug": "nguoi-nhen-khong-con-nha",
+          "label": "Spider-Man: No Way Home",
+          "order": 2
+        },
+        {
+          "slug": "nguoi-nhen-khoi-dau-moi",
+          "label": "Spider-Man: Brand New Day",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "spider-verse",
+      "label": "Spider-Verse",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://www.sonypictures.com/movies/spidermanacrossthespiderverse"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-nhen-vu-tru-moi",
+          "label": "Spider-Man: Into The Spider-Verse",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-nhen-du-hanh-vu-tru-nhen",
+          "label": "Spider-Man: Across The Spider-Verse",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "demon-slayer",
+      "label": "Demon Slayer",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://kimetsu.com/anime/",
+        "https://kimetsu.com/news/?id=58453"
+      ],
+      "members": [
+        {
+          "slug": "thanh-guom-diet-quy-phan-1-kamado-tanjiro-lap-chi",
+          "label": "Demon Slayer (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "thanh-guom-diet-quy-chuyen-di-cua-anh-em",
+          "label": "Demon Slayer: Brother and Sister Bond",
+          "order": 1
+        },
+        {
+          "slug": "thanh-guom-diet-quy-asakusa",
+          "label": "Demon Slayer: Kimetsu No Yaiba Asakusa Arc",
+          "order": 2
+        },
+        {
+          "slug": "thanh-guom-diet-quy-dinh-thu-tsuzumi",
+          "label": "Demon Slayer: Kimetsu no Yaiba Tsuzumi Mansion Arc",
+          "order": 3
+        },
+        {
+          "slug": "thanh-guom-diet-quy-chuyen-tau-vo-tan",
+          "label": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+          "order": 4
+        },
+        {
+          "slug": "thanh-guom-diet-quy-phan-2-chuyen-tau-vo-tan",
+          "label": "Demon Slayer (Season 2)",
+          "order": 5
+        },
+        {
+          "slug": "thanh-guom-diet-quy-phan-3-ky-vien-tran",
+          "label": "Demon Slayer (Season 3)",
+          "order": 6
+        },
+        {
+          "slug": "thanh-guom-diet-quy-phan-4-lang-tho-ren",
+          "label": "Demon Slayer (Season 4)",
+          "order": 7
+        },
+        {
+          "slug": "thanh-guom-diet-quy-phan-5-dai-tru-dac-huan",
+          "label": "Demon Slayer (Season 5)",
+          "order": 8
+        },
+        {
+          "slug": "thanh-guom-diet-quy-vo-han-thanh",
+          "label": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan",
+      "label": "Attack on Titan",
+      "kind": "franchise",
+      "basis": "official-publisher",
+      "sources": [
+        "https://shingeki.tv/movie_final/",
+        "https://shingeki.tv/news/archives/6636"
+      ],
+      "members": [
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-1",
+          "label": "Attack On Titan (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-2",
+          "label": "Attack On Titan (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-3",
+          "label": "Attack On Titan (Season 3)",
+          "order": 2
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-4",
+          "label": "Attack On Titan (Season 4)",
+          "order": 3
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-5",
+          "label": "Attack On Titan (Season 5)",
+          "order": 4
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-6",
+          "label": "Attack On Titan (Season 6)",
+          "order": 5
+        },
+        {
+          "slug": "dai-chien-titan-oad",
+          "label": "Attack On Titan OAD",
+          "order": 6
+        },
+        {
+          "slug": "dai-chien-titan-vi-khach-bat-ngo",
+          "label": "Attack On Titan: Totsuzen No Raihousha, Attack On Titan: The Sudden Visitor",
+          "order": 7
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-lan-tan-cong-cuoi-cung-dai-chien-titan",
+          "label": "Attack On Titan: The Last Attack",
+          "order": 8
+        }
+      ]
+    }
+  ],
+  "standalone": [
+    {
+      "slug": "battle-spirits-re-tuyet-gioi-thien-khong",
+      "reason": "Anime Battle Spirits riêng, không thuộc nhóm các phim có chữ Battle.",
+      "sources": [
+        "https://www.bn-pictures.co.jp/battlespirits/index.php"
+      ]
+    },
+    {
+      "slug": "tran-chien-hanh-phuc",
+      "reason": "Không có bằng chứng liên quan tới các mục trong nhóm Battle cũ.",
+      "sources": [
+        "https://phimapi.com/phim/tran-chien-hanh-phuc"
+      ]
+    },
+    {
+      "slug": "dai-chien-van-menh",
+      "reason": "Không có bằng chứng liên quan tới các mục trong nhóm Battle cũ.",
+      "sources": [
+        "https://phimapi.com/phim/dai-chien-van-menh"
+      ]
+    }
+  ]
+}

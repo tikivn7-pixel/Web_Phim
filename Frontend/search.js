@@ -87,6 +87,7 @@ async function fetchMovieDataFromBackend(movieTitle) {
 }
 
 function handleSearch(event) {
+  if(event.isComposing||event.keyCode===229)return;
   if (event.key === "Enter" || event.keyCode === 13) {
     event.preventDefault();
     event.stopPropagation(); // không cho module remote TV bắt thêm phím Enter này
@@ -134,12 +135,17 @@ async function renderFilteredResults(container, options, emptyHtml) {
     container.insertAdjacentElement("beforebegin", bar);
   }
   bar.innerHTML = "";
-  const selected = { ...options, sort: options.sort || "updated" };
+  let chips=document.getElementById('catalog-active-filters');
+  if(!chips){chips=document.createElement('div');chips.id='catalog-active-filters';chips.className='catalog-active-filters';chips.setAttribute('aria-label','Bộ lọc đang áp dụng');bar.insertAdjacentElement('afterend',chips);}
+  chips.replaceChildren();
+  const selected = { ...options, sort: options.sort || (options.q?"relevance":"updated") };
   let initial=true;
   const load = async (page = 1, scroll = false) => {
+    if(container._pager){container._pager.remove();container._pager=null;}
     const request = {};
     token.request = request;
     container.innerHTML = '<p style="color:#888;grid-column:1/-1">Đang tải...</p>';
+    container.setAttribute("aria-busy","true");
     try {
       const [result, facets] = await Promise.all([
         fetchCatalogPage({ ...selected, page, limit: MOVIE_PAGE_SIZE }),
@@ -174,15 +180,22 @@ async function renderFilteredResults(container, options, emptyHtml) {
       addSelect("genre", "Thể loại", facets.genres.map(g => [g,g]), "Tất cả");
       addSelect("year", "Năm", result.years.map(y => [y.year, y.year + " (" + y.count + ")"]), "Tất cả");
       addSelect("type", "Loại phim", [["series","Phim bộ"],["single","Phim lẻ"],["animation","Anime / Hoạt hình"],["tvshows","TV Show"]], "Tất cả");
-      addSelect("sort", "Sắp xếp", [["updated","Mới cập nhật"],["year","Năm mới nhất"],["title","Tên A–Z"]]);
+      addSelect("sort", "Sắp xếp", [...(selected.q?[["relevance","Phù hợp nhất"]]:[]),["updated","Mới cập nhật"],["year","Năm mới nhất"],["title","Tên A–Z"]]);
       const reset = document.createElement("button");
       reset.textContent = "Xóa bộ lọc";
       reset.onclick = () => { ["country","genre","year","type"].forEach(key => delete selected[key]); selected.sort = "updated"; load(1); };
       const count = document.createElement("span");
       count.className = "catalog-result-count";
       count.setAttribute("aria-live", "polite");
-      count.textContent = result.totalItems + " phim";
+      count.textContent = result.totalItems + " phim"+(result.searchWarning?" · "+result.searchWarning:"");
       bar.append(reset, count);
+      chips.replaceChildren();
+      for(const key of ['q','country','genre','year','type']){
+        if(!selected[key])continue;
+        const label=key==='type'?({series:'Phim bộ',single:'Phim lẻ',animation:'Hoạt hình',tvshows:'TV Show'})[selected[key]]||selected[key]:selected[key];
+        const chip=document.createElement('button');chip.type='button';chip.className='filter-chip';chip.textContent=label+' ×';chip.setAttribute('aria-label','Bỏ lọc: '+label);
+        chip.onclick=()=>{delete selected[key];if(key==='q'){selected.sort='updated';const input=document.getElementById('search-input');if(input)input.value='';}load(1);};chips.append(chip);
+      }
       if (result.totalPages > 1) {
         ensurePaginationStyle();
         const pager = document.createElement("div");
@@ -191,10 +204,12 @@ async function renderFilteredResults(container, options, emptyHtml) {
         container._pager = pager;
         drawPager(pager, result.currentPage, result.totalPages, load);
       }
+      container.setAttribute("aria-busy","false");
       if (scroll) container.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       if (container._catalogRequest !== token || token.request !== request) return;
       if (container._pager) { container._pager.remove(); container._pager = null; }
+      container.setAttribute("aria-busy","false");
       container.innerHTML = "";
       const message = document.createElement("p");
       message.style.cssText = "color:#ddd;grid-column:1/-1";
@@ -209,6 +224,7 @@ async function renderFilteredResults(container, options, emptyHtml) {
 }
 
 function showCatalog(options = {}) {
+  if(typeof closeLiveSearch==="function")closeLiveSearch();
   if (!document.getElementById("page-search")) {
     window.location.href = "index.html?" + new URLSearchParams(options);
     return;
@@ -363,6 +379,7 @@ function closeLiveSearch() {
   liveSearchReqId++; // huỷ các request đang chờ
   liveSearchItems = [];
   liveSearchActive = -1;
+  const input=document.getElementById("search-input");if(input){input.setAttribute("aria-expanded","false");input.removeAttribute("aria-activedescendant");}
   if (liveSearchBox) {
     liveSearchBox.classList.remove("open");
     liveSearchBox.innerHTML = "";
@@ -393,14 +410,17 @@ function setLiveSearchActive(index) {
   liveSearchActive = index;
   liveSearchBox.querySelectorAll(".ss-item").forEach((el, i) => {
     el.classList.toggle("active", i === index);
+    el.setAttribute("aria-selected",String(i===index));
     if (i === index) el.scrollIntoView({ block: "nearest" });
   });
+  const input=document.getElementById("search-input");if(input){if(index>=0)input.setAttribute("aria-activedescendant","search-option-"+index);else input.removeAttribute("aria-activedescendant");}
 }
 
 function renderLiveSearch(movies, query) {
   if (!liveSearchBox) return;
   liveSearchItems = movies;
   liveSearchActive = -1;
+  const searchInput=document.getElementById("search-input");searchInput?.setAttribute("aria-expanded","true");searchInput?.removeAttribute("aria-activedescendant");
 
   if (movies.length === 0) {
     liveSearchBox.innerHTML = `<div class="ss-empty">Không tìm thấy phim phù hợp với "${escapeHtml(query)}"</div>`;
@@ -413,6 +433,7 @@ function renderLiveSearch(movies, query) {
   movies.forEach((movie, index) => {
     const item = document.createElement("div");
     item.className = "ss-item";
+    item.id="search-option-"+index;item.setAttribute("role","option");item.setAttribute("aria-selected","false");
 
     // Dòng phụ: năm · quốc gia (hoặc thể loại đầu tiên nếu chưa có quốc gia)
     const extra =
@@ -420,18 +441,20 @@ function renderLiveSearch(movies, query) {
     const meta = [movie.year, extra].filter(Boolean).join(" · ");
 
     item.innerHTML = `
-      <img src="${movie.poster}" alt="" onerror="this.src='https://placehold.co/80x110'" />
+      <img alt="" />
       <div class="ss-info">
         <div class="ss-title">${escapeHtml(movie.title)}</div>
         <div class="ss-meta">${escapeHtml(meta)}</div>
       </div>
     `;
+    const image=item.querySelector("img");image.src=SiteTools.imageUrl(movie.poster);image.dataset.fallback=SiteTools.imageUrl(movie.remotePoster||movie.banner);image.referrerPolicy="no-referrer";image.onerror=()=>handleMovieImageError(image);
     item.addEventListener("click", () => openLiveSearchMovie(movie));
     item.addEventListener("mouseenter", () => setLiveSearchActive(index));
     liveSearchBox.appendChild(item);
   });
 
-  const more = document.createElement("div");
+  const more = document.createElement("button");
+  more.type="button";
   more.className = "ss-more";
   more.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i> Xem tất cả kết quả cho "${escapeHtml(query)}"`;
   more.addEventListener("click", () => executeSearch());
@@ -461,15 +484,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   liveSearchBox = document.createElement("div");
   liveSearchBox.className = "search-suggest";
+  liveSearchBox.id="search-suggestions";liveSearchBox.setAttribute("role","listbox");liveSearchBox.setAttribute("aria-label","Phim gợi ý");
   // mousedown preventDefault: bấm vào gợi ý không làm ô nhập mất focus
   liveSearchBox.addEventListener("mousedown", (e) => e.preventDefault());
   box.appendChild(liveSearchBox);
 
   input.setAttribute("autocomplete", "off");
+  input.setAttribute("role","combobox");input.setAttribute("aria-autocomplete","list");input.setAttribute("aria-controls","search-suggestions");input.setAttribute("aria-expanded","false");input.setAttribute("aria-label","Tìm phim, thể loại hoặc diễn viên");
 
   input.addEventListener("input", () => {
     const q = input.value.trim();
-    clearTimeout(liveSearchTimer);
+    closeLiveSearch(); // Clear both stale responses and the old keyboard selection.
     if (q.length < LIVE_SEARCH_MIN_CHARS) {
       closeLiveSearch();
       return;
@@ -478,8 +503,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   input.addEventListener("keydown", (e) => {
+    if(e.isComposing)return;
     const open = liveSearchBox.classList.contains("open");
     if (e.key === "Escape") {
+      closeLiveSearch();
+    } else if(e.key==="Tab"){
       closeLiveSearch();
     } else if (open && liveSearchItems.length > 0) {
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -502,13 +530,14 @@ document.addEventListener("DOMContentLoaded", () => {
       runLiveSearch(q);
     } else if (liveSearchItems.length > 0) {
       liveSearchBox.classList.add("open");
+      input.setAttribute("aria-expanded","true");
     }
   });
 
   // Bấm ra ngoài thì đóng (giữ lại nội dung ô nhập)
   document.addEventListener("click", (e) => {
     if (!box.contains(e.target)) {
-      liveSearchBox.classList.remove("open");
+      closeLiveSearch();
     }
   });
 });

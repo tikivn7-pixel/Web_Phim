@@ -49,6 +49,7 @@ function createMovieCard(movie) {
   const card = document.createElement("div");
   card.className = "movie-card";
   card.dataset.title = movie.title;
+  card.dataset.slug = movie.slug || "";
   card.onclick = () =>
     showDetail(
       movie.title,
@@ -58,37 +59,31 @@ function createMovieCard(movie) {
       movie.slug,
     );
 
-  const safeTitle = escapeHtml(movie.title);
-  const safeDesc = escapeHtml(movie.desc || "");
-  const imageFallback = escapeHtml(movie.remotePoster || movie.banner || "");
-  const handlerTitle = escapeForInlineHandler(movie.title);
-  const handlerDesc = escapeForInlineHandler(movie.desc || "");
-
-  card.innerHTML = `
-    <img src="${movie.poster}" data-fallback="${imageFallback}" alt="${safeTitle}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
-    ${cardHeartHtml(movie)}
-    <h4>${safeTitle}</h4>
-    <div class="movie-views"><i class="fa-regular fa-eye"></i> ${formatViews(movie.views, { compact: true })} lượt xem</div>
-    <div class="movie-hover-card">
-      <img src="${movie.poster}" data-fallback="${imageFallback}" alt="${safeTitle}" class="hover-banner" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
-      <div class="hover-content">
-        <h3 class="hover-title">${safeTitle}</h3>
-        <div class="hover-actions">
-          <button class="btn-hover play" onclick="event.stopPropagation(); playEpisodeDirect('${handlerTitle}', 1, ${getTotalEpisodes(movie)}, '${movie.slug || ""}')">
-            <i class="fa-solid fa-play"></i> Xem ngay
-          </button>
-          <button
-            class="btn-hover icon"
-            title="Yêu thích"
-            onclick="event.stopPropagation(); toggleWishlist({title: '${handlerTitle}', poster: '${movie.poster}', desc: '${handlerDesc}', episodes: ${getTotalEpisodes(movie)}, slug: '${movie.slug || ""}'})"
-          >
-            <i class="fa-regular fa-heart"></i>
-          </button>
-        </div>
-        <p class="hover-genres">${safeDesc}</p>
-      </div>
-    </div>
-  `;
+  // User/provider text is assigned through DOM properties, never inline handlers.
+  const link=document.createElement("a");link.className="movie-card-link";
+  link.href=SiteTools.detailUrl(movie);link.setAttribute("aria-label","Thông tin phim: "+movie.title);
+  link.onclick=event=>{event.stopPropagation();if(!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey){event.preventDefault();card.onclick();}};
+  const img=document.createElement("img");img.alt=movie.title||"Poster phim";
+  img.loading="lazy";img.decoding="async";img.width=180;img.height=270;img.referrerPolicy="no-referrer";
+  SiteTools.setPoster(img,{},movie);
+  const poster=document.createElement('span');poster.className='movie-poster';
+  const type=document.createElement('span');type.className='poster-type';
+  const kind=getCatalogType(movie);type.textContent=({animation:/anime/i.test(movie.genres||'')?'Anime':'Hoạt hình',single:'Phim lẻ',series:'Phim bộ',tvshows:'TV Show'})[kind]||'Phim';
+  const episodes=document.createElement('span');episodes.className='poster-episodes';episodes.textContent=kind==='single'?'Phim lẻ':getTotalEpisodes(movie)+' tập';
+  const play=document.createElement('span');play.className='poster-play';play.textContent='▶';play.setAttribute('aria-hidden','true');poster.append(img,type,episodes,play);
+  const heading=document.createElement("h4");heading.textContent=movie.title;link.append(poster,heading);
+  const heart=document.createElement("button");heart.type="button";heart.className="card-heart";heart.dataset.wishKey=movieKey(movie);
+  heart.setAttribute("aria-label","Yêu thích: "+movie.title);heart.innerHTML='<span class="heart-symbol" aria-hidden="true">♡</span>';
+  heart.onclick=event=>{event.stopPropagation();toggleWishlist(movie);};
+  const meta=document.createElement("p");meta.className="movie-card-meta";
+  meta.textContent=[movie.year,getMovieCountry(movie)].filter(Boolean).join(" · ");
+  const views=document.createElement("div");views.className="movie-views";views.textContent=formatViews(movie.views,{compact:true})+" lượt xem";
+  views.hidden=!(Number(movie.views)>0);
+  const hover=document.createElement("div");hover.className="movie-hover-card";hover.setAttribute("aria-hidden","true");
+  const content=document.createElement("div");content.className="hover-content";
+  const title=document.createElement("h3");title.className="hover-title";title.textContent=movie.title;
+  const description=document.createElement("p");description.className="hover-genres";description.textContent=movie.desc||movie.genres||"";
+  content.append(title,description);hover.append(content);card.append(link,heart,meta,views,hover);
   return card;
 }
 
@@ -130,6 +125,8 @@ function drawPager(pager, current, total, goTo) {
     b.type = "button";
     b.className = `mp-btn ${extraClass}`.trim();
     b.textContent = label;
+    if(extraClass==="active"){b.setAttribute("aria-current","page");b.disabled=true;}
+    else b.setAttribute("aria-label","Đến trang "+page);
     b.onclick = () => goTo(page, true);
     pager.appendChild(b);
   };
@@ -264,7 +261,8 @@ function renderMovieParts(currentSlug, currentGroup) {
     return;
   }
 
-  const relatedParts = globalMoviesList.filter((m) => m.group === currentGroup);
+  const relatedParts = globalMoviesList.filter((m) => m.group === currentGroup)
+    .sort((a,b)=>(a.relationOrder??9999)-(b.relationOrder??9999));
 
   if (relatedParts.length <= 1) {
     partsSection.style.display = "none";
@@ -291,7 +289,7 @@ function renderMovieParts(currentSlug, currentGroup) {
   });
 }
 
-function renderRelatedSuggestions(currentSlug, currentGenres) {
+function renderRelatedSuggestions(currentSlug, currentGenres, recommendations) {
   const container = document.getElementById("fd-suggestions");
   if (!container) return;
 
@@ -300,7 +298,7 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
     .map((g) => g.trim().toLowerCase())
     .filter(Boolean);
 
-  const related = globalMoviesList
+  const related = recommendations || globalMoviesList
     .filter((m) => {
       if (m.slug === currentSlug) return false;
       if (!m.genres) return false;
@@ -316,9 +314,12 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
 
   container.innerHTML = "";
   related.forEach((movie) => {
-    const item = document.createElement("div");
+    const item = document.createElement("a");
     item.className = "fd-suggest-item";
-    item.onclick = () =>
+    item.href=SiteTools.detailUrl(movie);item.style.cssText="color:inherit;text-decoration:none";
+    item.onclick = event => {
+      if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+      event.preventDefault();
       showDetail(
         movie.title,
         movie.poster,
@@ -326,13 +327,15 @@ function renderRelatedSuggestions(currentSlug, currentGenres) {
         getTotalEpisodes(movie),
         movie.slug,
       );
+    };
     item.innerHTML = `
-      <img src="${movie.poster}" data-fallback="${escapeHtml(movie.remotePoster || movie.banner || "")}" alt="${escapeHtml(movie.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="handleMovieImageError(this)" />
+      <img alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
       <div class="fd-suggest-info">
         <h4>${escapeHtml(movie.title)}</h4>
         <span>${escapeHtml((movie.genres || "").split(",")[0] || "")}</span>
       </div>
     `;
+    const image=item.querySelector("img");image.src=SiteTools.imageUrl(movie.poster);image.dataset.fallback=SiteTools.imageUrl(movie.remotePoster||movie.banner);image.onerror=()=>handleMovieImageError(image);
     container.appendChild(item);
   });
 }

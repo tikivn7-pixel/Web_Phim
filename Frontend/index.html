@@ -3,375 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LauPhim - Xem Phim Online</title>
-
-    <!-- Sử dụng đường dẫn tương đối (./) để tương thích tốt với cả Live Server và GitHub Pages -->
-    <link rel="stylesheet" href="./style.css?v=12" />
-
-    <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- HLS.js Library -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
-    <!-- Plyr CSS & JS (Thư viện Video Player Chuyên Nghiệp) -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-
-    <!-- Tùy chỉnh màu sắc Plyr theo tông Netflix/Đỏ của web -->
-    <style>
-      :root {
-        --plyr-color-main: #e50914; /* Màu chủ đạo đỏ Netflix cho Plyr */
-      }
-      .plyr {
-        border-radius: 8px;
-        overflow: hidden;
-      }
-    </style>
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta name="description" content="Khám phá phim, anime và những loạt phim yêu thích trên LauPhim. Tìm kiếm, lưu phim và tiếp tục câu chuyện của bạn." />
+    <title>LauPhim — Câu chuyện tiếp theo của bạn</title>
+    <link rel="stylesheet" href="./style.css?v=20261023d" />
+    <link rel="stylesheet" href="./cinema.css?v=20261023d" />
+    <link rel="stylesheet" href="./home-experience.css?v=20261023d" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
+  <body class="cinema-home">
+    <nav class="navbar" aria-label="Điều hướng chính">
       <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
-      <div class="mobile-menu-btn" id="mobile-menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
+      <div class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars" aria-hidden="true"></i></div>
       <ul class="nav-links" id="mobile-sidebar">
         <li onclick="switchPage('home')">Trang chủ</li>
-
-        <!-- Mục Thể Loại có Dropdown Menu -->
         <li class="dropdown" id="genre-dropdown">
-          <span class="dropdown-toggle"
-            >Thể Loại <i class="fa-solid fa-caret-down"></i
-          ></span>
-          <div class="dropdown-menu">
-            <div class="genre-grid">
-              <span onclick="filterByGenre('Bí Ẩn')">Bí Ẩn</span>
-              <span onclick="filterByGenre('Chiến Tranh')">Chiến Tranh</span>
-              <span onclick="filterByGenre('Chính Kịch')">Chính Kịch</span>
-              <span onclick="filterByGenre('Cổ Trang')">Cổ Trang</span>
-              <span onclick="filterByGenre('Gia Đình')">Gia Đình</span>
-              <span onclick="filterByGenre('Hài Hước')">Hài Hước</span>
-              <span onclick="filterByGenre('Hành Động')">Hành Động</span>
-              <span onclick="filterByGenre('Hình Sự')">Hình Sự</span>
-              <span onclick="filterByGenre('Học Đường')">Học Đường</span>
-              <span onclick="filterByGenre('Khoa Học')">Khoa Học</span>
-              <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
-              <span onclick="filterByGenre('Kinh Điển')">Kinh Điển</span>
-              <span onclick="filterByGenre('Lịch Sử')">Lịch Sử</span>
-              <span onclick="filterByGenre('Phim Ngắn')">Phim Ngắn</span>
-              <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
-              <span onclick="filterByGenre('Thần Thoại')">Thần Thoại</span>
-              <span onclick="filterByGenre('Thể Thao')">Thể Thao</span>
-              <span onclick="filterByGenre('Trẻ Em')">Trẻ Em</span>
-              <span onclick="filterByGenre('Tài Liệu')">Tài Liệu</span>
-              <span onclick="filterByGenre('Tâm Lý')">Tâm Lý</span>
-              <span onclick="filterByGenre('Tình Cảm')">Tình Cảm</span>
-              <span onclick="filterByGenre('Viễn Tưởng')">Viễn Tưởng</span>
-              <span onclick="filterByGenre('Võ Thuật')">Võ Thuật</span>
-              <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
-              <span onclick="filterByGenre('Anime')">Anime</span>
-              <span onclick="filterByGenre('TVShow')">TVShow</span>
-            </div>
-          </div>
+          <span class="dropdown-toggle">Thể loại <i class="fa-solid fa-caret-down" aria-hidden="true"></i></span>
+          <div class="dropdown-menu"><div class="genre-grid">
+            <span onclick="filterByGenre('Anime')">Anime</span>
+            <span onclick="filterByGenre('Hành Động')">Hành Động</span>
+            <span onclick="filterByGenre('Tình Cảm')">Tình Cảm</span>
+            <span onclick="filterByGenre('Bí Ẩn')">Bí Ẩn</span>
+            <span onclick="filterByGenre('Hài Hước')">Hài Hước</span>
+            <span onclick="filterByGenre('Chính Kịch')">Chính Kịch</span>
+            <span onclick="filterByGenre('Kinh Dị')">Kinh Dị</span>
+            <span onclick="filterByGenre('Phiêu Lưu')">Phiêu Lưu</span>
+            <span onclick="filterByGenre('Khoa Học')">Khoa Học</span>
+            <span onclick="filterByGenre('Viễn Tưởng')">Viễn Tưởng</span>
+            <span onclick="filterByGenre('Hình Sự')">Hình Sự</span>
+            <span onclick="filterByGenre('Gia Đình')">Gia Đình</span>
+            <span onclick="filterByGenre('Cổ Trang')">Cổ Trang</span>
+            <span onclick="filterByGenre('Chiến Tranh')">Chiến Tranh</span>
+            <span onclick="filterByGenre('Học Đường')">Học Đường</span>
+            <span onclick="filterByGenre('Tâm Lý')">Tâm Lý</span>
+            <span onclick="filterByGenre('Trẻ Em')">Trẻ Em</span>
+            <span onclick="filterByGenre('Hoạt Hình')">Hoạt Hình</span>
+            <span onclick="filterByGenre('Thể Thao')">Thể Thao</span>
+            <span onclick="filterByGenre('Âm Nhạc')">Âm Nhạc</span>
+          </div></div>
         </li>
-
-        <!-- Mục Quốc Gia có Dropdown Menu -->
         <li class="dropdown" id="country-dropdown">
-          <span class="dropdown-toggle"
-            >Quốc Gia <i class="fa-solid fa-caret-down"></i
-          ></span>
-          <div class="dropdown-menu country-menu">
-            <div class="genre-grid">
-              <span onclick="filterByCountry('Trung Quốc')">Trung Quốc</span>
-              <span onclick="filterByCountry('Hàn Quốc')">Hàn Quốc</span>
-              <span onclick="filterByCountry('Mỹ')">Mỹ</span>
-              <span onclick="filterByCountry('Nhật Bản')">Nhật Bản</span>
-              <span onclick="filterByCountry('Việt Nam')">Việt Nam</span>
-              <span onclick="filterByCountry('Thái Lan')">Thái Lan</span>
-              <span onclick="filterByCountry('Anh')">Anh</span>
-              <span onclick="filterByCountry('Pháp')">Pháp</span>
-              <span onclick="filterByCountry('Đài Loan')">Đài Loan</span>
-              <span onclick="filterByCountry('Hồng Kông')">Hồng Kông</span>
-              <span onclick="filterByCountry('Ấn Độ')">Ấn Độ</span>
-            </div>
-          </div>
+          <span class="dropdown-toggle">Quốc gia <i class="fa-solid fa-caret-down" aria-hidden="true"></i></span>
+          <div class="dropdown-menu country-menu"><div class="genre-grid">
+            <span onclick="filterByCountry('Trung Quốc')">Trung Quốc</span>
+            <span onclick="filterByCountry('Hàn Quốc')">Hàn Quốc</span>
+            <span onclick="filterByCountry('Mỹ')">Mỹ</span>
+            <span onclick="filterByCountry('Nhật Bản')">Nhật Bản</span>
+            <span onclick="filterByCountry('Việt Nam')">Việt Nam</span>
+            <span onclick="filterByCountry('Thái Lan')">Thái Lan</span>
+            <span onclick="filterByCountry('Anh')">Anh</span>
+            <span onclick="filterByCountry('Pháp')">Pháp</span>
+            <span onclick="filterByCountry('Đài Loan')">Đài Loan</span>
+            <span onclick="filterByCountry('Hồng Kông')">Hồng Kông</span>
+            <span onclick="filterByCountry('Ấn Độ')">Ấn Độ</span>
+          </div></div>
         </li>
-
         <li onclick="switchPage('wishlist')">Danh sách của tôi</li>
       </ul>
-
-      <!-- Thanh tìm kiếm -->
       <div class="search-box">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Tìm tên phim, thể loại..."
-          onkeydown="handleSearch(event)"
-        />
-        <button class="search-btn" onclick="executeSearch()">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <input type="text" id="search-input" placeholder="Bạn muốn xem gì?" onkeydown="handleSearch(event)" />
+        <button class="search-btn" onclick="executeSearch()" aria-label="Tìm phim"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
       </div>
     </nav>
-
-    <!-- SIDEBAR OVERLAY (Dán ngay dưới navbar) -->
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
-    <!-- TRANG TÌM KIẾM -->
     <section id="page-search" class="page">
       <div class="slider-section">
-        <h2>
-          Kết Quả Tìm Kiếm:
-          <span id="search-keyword" style="color: #e50914"></span>
-        </h2>
-        <div id="search-container" class="movie-slider" style="flex-wrap: wrap">
-          <!-- Phim phù hợp sẽ tự động render vào đây qua script.js -->
-        </div>
+        <div class="catalog-heading"><p class="section-kicker">CHỌN CÂU CHUYỆN CỦA BẠN</p><h1>Khám phá kho phim</h1><p id="search-keyword"></p></div>
+        <div id="search-container" class="movie-slider" style="flex-wrap:wrap"></div>
       </div>
     </section>
 
-    <!-- TRANG CHỦ -->
-    <section id="page-home" class="page active">
-      <!-- HERO BANNER -->
-      <div class="hero-banner" id="hero-banner">
+    <main id="page-home" class="page active">
+      <section class="hero-banner" id="hero-banner" aria-label="Lựa chọn hôm nay" aria-roledescription="trình chiếu phim">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <span class="badge">Phim Nổi Bật</span>
-          <h1 id="hero-title">Đang tải...</h1>
-          <p id="hero-desc">Đang cập nhật nội dung phim...</p>
+          <div class="hero-kicker"><span class="hero-live-dot" aria-hidden="true"></span> MỖI NGÀY MỘT CÂU CHUYỆN</div>
+          <h1 id="hero-title">Câu chuyện tiếp theo<br />của bạn.</h1>
+          <div class="hero-meta" id="hero-meta"><span>LauPhim</span><span>Phim · Anime · Series</span></div>
+          <p id="hero-desc">Một thế giới điện ảnh, ngay trong tầm tay. Tìm một bộ phim và để câu chuyện bắt đầu.</p>
+          <div id="hero-genres" class="hero-genres"></div>
           <div class="hero-buttons">
-            <button class="btn btn-primary" id="hero-play-btn">
-              <i class="fa-solid fa-play"></i> Xem ngay
-            </button>
-            <button class="btn btn-secondary" id="hero-info-btn">
-              <i class="fa-solid fa-circle-info"></i> Thông tin
-            </button>
+            <button class="btn btn-primary" id="hero-play-btn"><span aria-hidden="true">▶</span> Xem ngay</button>
+            <button class="btn btn-secondary" id="hero-info-btn">Thông tin phim <span aria-hidden="true">↗</span></button>
           </div>
         </div>
-      </div>
+        <div class="hero-visual" aria-label="Các phim được chọn hôm nay">
+          <div class="hero-orbit" aria-hidden="true"></div>
+          <div id="hero-featured-posters" class="hero-featured-posters">
+            <img class="hero-initial-poster" src="Img/Your Name.jpg" alt="Your Name" width="280" height="420" />
+          </div>
+          <span class="hero-visual-label">CHỌN MỘT PHIM. BẮT ĐẦU MỘT HÀNH TRÌNH.</span>
+        </div>
+        <div class="hero-bottom">
+          <p id="home-catalog-count">Khám phá câu chuyện tiếp theo của bạn</p>
+          <span id="hero-index" aria-hidden="true">01 / 04</span>
+        </div>
+      </section>
 
-      <!-- MỤC TIẾP TỤC XEM (CONTINUE WATCHING) -->
-      <div class="catalog-shortcuts" aria-label="Khám phá phim">
-        <button type="button" onclick="showCatalog()">Tất cả phim</button>
-        <button type="button" onclick="showCatalog({type:'series'})">Phim bộ</button>
-        <button type="button" onclick="showCatalog({type:'single'})">Phim lẻ</button>
-        <button type="button" onclick="showCatalog({type:'animation'})">Anime / Hoạt hình</button>
-      </div>
-      <div
-        class="slider-section"
-        id="continue-watching-section"
-        style="display: none"
-      >
-        <h2>Danh sách Tiếp tục xem</h2>
-        <div class="movie-slider" id="continue-watching-slider">
-          <!-- Phim đang xem dở sẽ tự động render vào đây qua script.js -->
+      <div class="home-explore-bar">
+        <div><span class="home-eyebrow">KHÔNG GIAN ĐIỆN ẢNH CỦA BẠN</span><h2>Hôm nay, bạn muốn xem gì?</h2></div>
+        <div class="catalog-shortcuts" aria-label="Khám phá phim">
+          <button type="button" onclick="showCatalog()">Tất cả phim <span aria-hidden="true">↗</span></button>
+          <button type="button" onclick="showCatalog({type:'series'})">Phim bộ</button>
+          <button type="button" onclick="showCatalog({type:'single'})">Phim lẻ</button>
+          <button type="button" onclick="showCatalog({type:'animation'})">Anime / Hoạt hình</button>
         </div>
       </div>
 
-      <!-- SLIDER PHIM MỚI -->
-      <div class="slider-section">
-        <h2>Phim Mới Cập Nhật</h2>
+      <section class="slider-section" id="continue-watching-section" style="display:none">
+        <div class="home-section-heading"><div><span class="home-eyebrow">CÂU CHUYỆN CÒN DANG DỞ</span><h2>Tiếp tục xem</h2></div><a class="home-view-all" href="library.html">Thư viện của bạn <span aria-hidden="true">→</span></a></div>
+        <div class="movie-slider" id="continue-watching-slider"></div>
+      </section>
+
+      <section class="home-discovery" id="home-discovery" aria-labelledby="home-discovery-title">
+        <div class="home-section-heading"><div><span class="home-eyebrow">THEO CẢM HỨNG CỦA BẠN</span><h2 id="home-discovery-title">Đi tìm một thế giới mới</h2></div><a class="home-view-all" href="index.html?view=catalog">Khám phá tất cả →</a></div>
+        <div class="home-topic-grid" id="home-topic-grid"></div>
+      </section>
+
+      <section class="slider-section">
+        <div class="home-section-heading"><div><span class="home-eyebrow">THÊM VÀO DANH SÁCH CỦA BẠN</span><h2>Khám phá kho phim</h2></div><a class="home-view-all" href="index.html?view=catalog&amp;sort=updated">Xem tất cả →</a></div>
         <p id="home-updates-note" class="catalog-note">Phim chưa có mốc cập nhật được xếp theo năm phát hành.</p>
-        <button class="slider-btn prev-btn">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
+        <button class="slider-btn prev-btn" aria-label="Xem các phim trước"><span aria-hidden="true">‹</span></button>
         <div class="movie-slider" id="home-movie-slider"></div>
-        <button class="slider-btn next-btn">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
+        <button class="slider-btn next-btn" aria-label="Xem các phim tiếp theo"><span aria-hidden="true">›</span></button>
+      </section>
 
-      <!--SLIDER ANIME-->
-      <div class="slider-section">
-        <h2>Anime</h2>
+      <section class="home-collections-section" id="home-collections-section" aria-labelledby="home-collections-title">
+        <div class="home-section-heading"><div><span class="home-eyebrow">MỘT THẾ GIỚI. NHIỀU CÂU CHUYỆN.</span><h2 id="home-collections-title">Đắm mình trong cả loạt phim</h2></div><a class="home-view-all" href="collections.html">Tất cả loạt phim →</a></div>
+        <div class="home-collection-grid" id="home-collection-preview"></div>
+      </section>
+
+      <section class="slider-section">
+        <div class="home-section-heading"><div><span class="home-eyebrow">TỪ NHỮNG TRANG VẼ ĐẾN MÀN ẢNH</span><h2>Thế giới Anime</h2></div><a class="home-view-all" href="index.html?view=catalog&amp;type=animation">Xem tất cả →</a></div>
+        <button class="slider-btn prev-btn" aria-label="Xem các anime trước"><span aria-hidden="true">‹</span></button>
         <div class="movie-slider" id="anime-movie-slider"></div>
-      </div>
-
-      <!-- SLIDER PHIM HÀN QUỐC -->
-      <div class="slider-section">
-        <h2>Hàn Quốc</h2>
-        <button class="slider-btn prev-btn">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
+        <button class="slider-btn next-btn" aria-label="Xem các anime tiếp theo"><span aria-hidden="true">›</span></button>
+      </section>
+      <section class="slider-section">
+        <div class="home-section-heading"><div><span class="home-eyebrow">CHUYỆN PHIM XỨ KIM CHI</span><h2>Góc phim Hàn Quốc</h2></div><a class="home-view-all" href="index.html?view=catalog&amp;country=H%C3%A0n+Qu%E1%BB%91c">Xem tất cả →</a></div>
+        <button class="slider-btn prev-btn" aria-label="Xem các phim Hàn trước"><span aria-hidden="true">‹</span></button>
         <div class="movie-slider" id="korean-movie-slider"></div>
-        <button class="slider-btn next-btn">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
+        <button class="slider-btn next-btn" aria-label="Xem các phim Hàn tiếp theo"><span aria-hidden="true">›</span></button>
+      </section>
 
-      <!-- SLIDER PHIM HÀNH ĐỘNG -->
-      <div class="slider-section">
-        <h2>Hành Động</h2>
-        <button class="slider-btn prev-btn">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
+      <section class="home-random-section" aria-labelledby="home-random-title">
+        <div class="home-random-art" aria-hidden="true"><span>✦</span><span>↻</span><span>✧</span></div>
+        <div class="home-random-copy"><span class="home-eyebrow">ĐÔI KHI, CỨ ĐỂ SỰ TÌNH CỜ QUYẾT ĐỊNH</span><h2 id="home-random-title">Không biết xem gì?</h2><p>Thử một bộ phim ngoài danh sách quen thuộc của bạn.</p><button type="button" id="home-random-pick" disabled>Chọn giúp tôi một phim <span aria-hidden="true">↗</span></button></div>
+        <div id="home-random-result" class="home-random-result" aria-live="polite" hidden></div>
+      </section>
+
+      <section class="slider-section">
+        <div class="home-section-heading"><div><span class="home-eyebrow">KHÔNG RỜI MẮT KHỎI MÀN HÌNH</span><h2>Hành động &amp; phiêu lưu</h2></div><a class="home-view-all" href="index.html?view=catalog&amp;genre=H%C3%A0nh+%C4%90%E1%BB%99ng">Xem tất cả →</a></div>
+        <button class="slider-btn prev-btn" aria-label="Xem các phim hành động trước"><span aria-hidden="true">‹</span></button>
         <div class="movie-slider" id="action-movie-slider"></div>
-        <button class="slider-btn next-btn">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-
-      <!-- SLIDER PHIM TÌNH CẢM -->
-      <div class="slider-section">
-        <h2>Tình Cảm</h2>
-        <button class="slider-btn prev-btn">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
+        <button class="slider-btn next-btn" aria-label="Xem các phim hành động tiếp theo"><span aria-hidden="true">›</span></button>
+      </section>
+      <section class="slider-section">
+        <div class="home-section-heading"><div><span class="home-eyebrow">CHO NHỮNG KHOẢNH KHẮC RUNG ĐỘNG</span><h2>Một chút tình cảm</h2></div><a class="home-view-all" href="index.html?view=catalog&amp;genre=T%C3%ACnh+C%E1%BA%A3m">Xem tất cả →</a></div>
+        <button class="slider-btn prev-btn" aria-label="Xem các phim tình cảm trước"><span aria-hidden="true">‹</span></button>
         <div class="movie-slider" id="romance-movie-slider"></div>
-        <button class="slider-btn next-btn">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-    </section>
+        <button class="slider-btn next-btn" aria-label="Xem các phim tình cảm tiếp theo"><span aria-hidden="true">›</span></button>
+      </section>
+    </main>
 
-    <!-- TRANG WISHLIST -->
     <section id="page-wishlist" class="page">
-      <div class="slider-section">
-        <h2>Danh Sách Phim Yêu Thích</h2>
-        <div id="wishlist-container" class="movie-slider">
-          <!-- Phim sẽ tự động render vào đây qua script.js -->
-        </div>
-      </div>
+      <div class="slider-section"><h2>Danh sách phim yêu thích</h2><div id="wishlist-container" class="movie-slider"></div></div>
     </section>
 
-    <!-- TRANG CHI TIẾT PHIM -->
-    <section id="page-detail" class="page">
-      <div class="detail-container">
-        <div class="detail-poster">
-          <img id="detail-poster-img" src="" alt="Poster phim" />
-        </div>
-        <div class="detail-info">
-          <h1 id="detail-title">--</h1>
-          <div class="meta">
-            <span>
-              <i class="fa-solid fa-star"></i>
-              <span id="detail-rating">--</span>/10
-            </span>
-            <span id="detail-year">----</span>
-            <span id="detail-episodes-count">-- Tập</span>
-          </div>
-          <p class="description" id="detail-desc">Đang tải thông tin phim...</p>
-          <div class="credits">
-            <p>
-              <strong>Đạo diễn:</strong>
-              <span id="detail-director">Đang cập nhật</span>
-            </p>
-            <p>
-              <strong>Diễn viên:</strong>
-              <span id="detail-cast">Đang cập nhật</span>
-            </p>
-            <p>
-              <strong>Thể loại:</strong>
-              <span id="detail-genres">Đang cập nhật</span>
-            </p>
-          </div>
+    <footer class="home-footer"><a class="home-footer-logo" href="index.html">Lau<span>Phim</span><span class="home-footer-dot">.</span></a><p>Một bộ phim hay. Một khoảng thời gian cho riêng bạn.</p><div><a href="collections.html">Loạt phim</a><a href="library.html">Thư viện</a><a href="manage.html">Quản lý phim</a><a href="#page-home">Lên đầu trang ↑</a></div></footer>
 
-          <div class="episodes-section">
-            <h3>Danh Sách Tập</h3>
-            <div class="episode-grid" id="detail-episode-grid">
-              <!-- Tập phim render động từ JS -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRANG XEM PHIM (NETFLIX PLAYER INTERFACE) -->
-    <section id="page-watch" class="page">
-      <div class="watch-container">
-        <div class="video-player-wrapper">
-          <!-- Video Element chính -->
-          <video
-            id="video-player"
-            playsinline
-            style="width: 100%; aspect-ratio: 16/9"
-          ></video>
-
-          <!-- Nút Back quay lại trang Chi tiết góc trên bên trái -->
-          <button
-            class="netflix-back-btn"
-            onclick="switchPage('detail')"
-            title="Quay lại"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <!-- Drawer chọn tập trượt từ lề phải qua màn hình -->
-          <div id="netflix-ep-drawer" class="netflix-ep-drawer">
-            <div class="drawer-header">
-              <h3>Danh Sách Tập</h3>
-              <button onclick="toggleEpDrawer()">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-            <div class="episode-grid" id="drawer-episode-grid">
-              <!-- Render danh sách tập đè lên Player -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Thông tin tập bên dưới -->
-        <div class="watch-details" style="margin-top: 15px">
-          <h2>
-            <span id="watch-movie-title">Tên Phim</span> -
-            <span id="current-ep-title">Tập 1</span>
-          </h2>
-          <hr />
-          <h3>Chọn tập phim:</h3>
-          <div class="episode-grid" id="watch-episode-grid">
-            <!-- Tập phim render động từ JS -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CUSTOM MODAL THÔNG BÁO XEM TIẾP (CĂN GIỮA MÀN HÌNH NETFLIX STYLE) -->
-    <div id="resume-modal" class="custom-modal-overlay">
-      <div class="custom-modal-box">
-        <div class="modal-icon">
-          <i class="fa-solid fa-circle-play"></i>
-        </div>
-        <h3>Tiếp tục xem phim?</h3>
-        <p>
-          Bạn đã dừng lại ở phút
-          <span id="modal-resume-time" class="highlight-time">00:00</span>. Bạn
-          có muốn xem tiếp từ vị trí này không?
-        </p>
-        <div class="modal-actions">
-          <button id="btn-modal-cancel" class="btn-modal btn-cancel">
-            Xem từ đầu
-          </button>
-          <button id="btn-modal-confirm" class="btn-modal btn-confirm">
-            Xem tiếp
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- SCRIPT (Sử dụng đường dẫn tương đối chuẩn xác) -->
     <script src="./Episodes.js"></script>
-    <!-- Thứ tự nạp RẤT QUAN TRỌNG: data -> api -> utils -> các module -> init -> tv-nav -->
-    <script src="./data.js?v=9"></script>
-    <script src="./country-utils.js?v=12"></script>
-    <script src="./genre-utils.js?v=12"></script>
-    <script src="./catalog-state.js?v=1"></script>
-    <script src="./catalog-format.js?v=1"></script>
-    <script src="./catalog-navigation.js?v=1"></script>
-    <script src="./api.js?v=12"></script>
-    <script src="./utils.js?v=12"></script>
-    <script src="./auth.js?v=1"></script>
-    <script src="./wishlist.js?v=4"></script>
-    <script src="./hero.js?v=4"></script>
-    <script src="./continue-watching.js?v=9"></script>
-    <script src="./render.js?v=12"></script>
-    <script src="./search.js?v=12"></script>
-    <script src="./tmdb.js?v=4"></script>
-    <script src="./init.js?v=12"></script>
-    <script src="./tv-nav.js?v=4"></script>
+    <script src="./data.js?v=20261023d"></script>
+    <script src="./country-utils.js?v=20261023d"></script>
+    <script src="./genre-utils.js?v=20261023d"></script>
+    <script src="./catalog-state.js?v=20261023d"></script>
+    <script src="./catalog-format.js?v=20261023d"></script>
+    <script src="./catalog-navigation.js?v=20261023d"></script>
+    <script src="./site-tools.js?v=20261023d"></script>
+    <script src="./api.js?v=20261023d"></script>
+    <script src="./utils.js?v=20261023d"></script>
+    <script src="./auth.js?v=20261023d"></script>
+    <script src="./personal-data.js?v=20261023d"></script>
+    <script src="./wishlist.js?v=20261023d"></script>
+    <script src="./hero.js?v=20261023d"></script>
+    <script src="./continue-watching.js?v=20261023d"></script>
+    <script src="./render.js?v=20261023d"></script>
+    <script src="./search.js?v=20261023d"></script>
+    <script src="./tmdb.js?v=20261023d"></script>
+    <script src="./home-experience.js?v=20261023d"></script>
+    <script src="./init.js?v=20261023d"></script>
+    <script src="./tv-nav.js?v=20261023d"></script>
   </body>
 </html>

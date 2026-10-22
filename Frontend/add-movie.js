@@ -125,17 +125,6 @@ function ask(question) {
   );
 }
 
-// "Abc (Season 2)" / "Abc Phần 2" / "Abc Part 2" -> { group: "Abc", partName: "Abc 2" }
-function detectPart(title) {
-  const m = String(title).match(
-    /^(.*?)[\s\-:]*\(?\s*(?:Season|Phần|Part|Mùa)\s*(\d+)\s*\)?\s*$/i,
-  );
-  if (!m || !m[1].trim()) return null;
-  return { group: m[1].trim(), partName: `${m[1].trim()} ${m[2]}` };
-}
-
-// Tạo khối phim đúng form các phim cũ trong data.js:
-//   title, slug, year, episodes, genres, poster, banner, desc, [group, partName]
 async function buildBlock(detail) {
   const m = detail.movie;
   const servers = detail.episodes || [];
@@ -155,16 +144,15 @@ async function buildBlock(detail) {
   const poster = m.poster_url || m.thumb_url || "";
   const banner = m.thumb_url || m.poster_url || "";
 
-  const part = detectPart(title);
   const group =
-    typeof flags.group === "string" ? flags.group : part && part.group;
+    typeof flags.group === "string" ? flags.group : null;
   // --part="TV Series" để tự đặt partName (mặc định: = tên phim khi có --group, hoặc "Tên 2" khi tên có Season/Phần/Part N)
   const partName =
     typeof flags.part === "string"
       ? flags.part
       : typeof flags.group === "string"
         ? title
-        : part && part.partName;
+        : null;
 
   const lines = [
     `    title: ${q(title)},`,

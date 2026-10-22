@@ -63,6 +63,8 @@
   function getFocusableElements() {
     return Array.from(document.querySelectorAll(FOCUSABLE_SELECTOR)).filter(
       (el) => {
+        if(el.matches(':disabled,[hidden]')||getComputedStyle(el).visibility==='hidden')return false;
+        if(el.matches('.movie-card')&&el.querySelector('.movie-card-link'))return false;
         if (el.offsetParent === null) return false;
         // Mục nằm trong menu dropdown đang đóng (ẩn bằng opacity/visibility)
         // thì không cho remote nhảy vào
@@ -133,6 +135,9 @@
   }
 
   document.addEventListener("keydown", (e) => {
+    if(e.defaultPrevented||e.isComposing||e.altKey||e.ctrlKey||e.metaKey)return;
+    const focused=document.activeElement;
+    if(focused?.matches('input,textarea,select,[contenteditable="true"],video')||focused?.closest('.plyr,[role="dialog"],dialog'))return;
     const directions = {
       ArrowUp: "up",
       ArrowDown: "down",
@@ -142,12 +147,12 @@
 
     // Trang xem phim: mũi tên dành cho trình phát (tua 10s / âm lượng),
     // không dùng để di chuyển focus giữa các phần tử nữa
-    if (directions[e.key] && document.getElementById("video-player")) return;
+    if (directions[e.key] && document.getElementById("video-player")?.offsetParent!==null && document.getElementById("video-player")) return;
 
     if (directions[e.key]) {
       getFocusableElements().forEach(ensureFocusable);
-      const current =
-        lastFocused && document.body.contains(lastFocused) ? lastFocused : null;
+      const current = focused&&focused!==document.body&&getFocusableElements().includes(focused)
+        ? focused : lastFocused&&document.body.contains(lastFocused)?lastFocused:null;
       const next = findNextElement(current, directions[e.key]);
       if (next) {
         next.focus();
@@ -169,7 +174,8 @@
       ) {
         return;
       }
-      const current = lastFocused || active;
+      if(active?.matches('button,a[href],summary,[role="button"]'))return;
+      const current = active&&active!==document.body?active:lastFocused;
       if (current) {
         current.click();
         e.preventDefault();
@@ -182,9 +188,5 @@
   window.addEventListener("load", () => {
     const all = getFocusableElements();
     all.forEach(ensureFocusable);
-    if (all[0]) {
-      all[0].focus();
-      markFocus(all[0]);
-    }
   });
 })();
