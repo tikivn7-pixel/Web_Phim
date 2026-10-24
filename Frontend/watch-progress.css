@@ -1,0 +1,15 @@
+.wp-tracker-wrap { margin: 0 0 14px; }
+.wp-current-tracking { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 10px 0 0; }
+.wp-current-tracking button, .wp-episode-tools button, #wp-episode-more { border: 1px solid #46505f; border-radius: 7px; padding: 8px 12px; background: #252c37; color: #e6ebf2; cursor: pointer; font: inherit; font-size: 12px; }
+.wp-current-tracking button[aria-pressed="true"] { color: #bce9d1; border-color: #40725a; background: #1c3b2e; }
+.wp-current-tracking p { margin: 0; font-size: 12px; line-height: 1.5; color: #a2adbc; flex: 1; }
+.wp-current-tracking p.has-error { color: #ffb6b9; }
+.wp-episode-tools { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 8px 0 12px; }
+#wp-episode-count { color: #a2adbc; font-size: 12px; line-height: 1.5; }
+#wp-episode-more { display: block; width: 100%; margin: 12px 0 0; }
+#wp-episode-more[hidden] { display: none; }
+#watch-episode-grid .ep-btn.watched { border-color: #40725a; background: #203b30; color: #bce9d1; }
+#watch-episode-grid .ep-btn.watched::before { content: "✓ "; font-weight: 700; }
+#watch-episode-grid .ep-btn.active { outline: 2px solid #f0444e; outline-offset: 2px; }
+.wp-episode-empty { padding: 16px 0; color: #a2adbc; font-size: 13px; }
+@media (max-width: 600px) { .wp-current-tracking { align-items: flex-start; } .wp-current-tracking p { min-width: 200px; } .wp-ep-header { flex-wrap: wrap; gap: 12px; } .wp-episode-tools button { flex-shrink: 0; } }

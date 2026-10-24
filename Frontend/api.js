@@ -48,7 +48,7 @@ function kkNames(arr) {
 async function fetchKkphimMovieBySlug(slug) {
   const res = await fetch(
     `${KKPHIM_BASE_URL}/phim/${encodeURIComponent(slug)}`,
-    { signal: AbortSignal.timeout(12000) },
+    { signal: AbortSignal.timeout(12000), cache: 'no-store' },
   );
   if (!res.ok) throw new Error(`kkphim /phim/${slug} lỗi ${res.status}`);
   const data = await res.json();
@@ -189,7 +189,7 @@ async function loadStaticCatalog() {
         if (!Array.isArray(movies)) throw new Error("Danh sách phim không hợp lệ.");
         catalogIsFull = Array.isArray(data);
         catalogDetailFiles = data.details || [];
-        return movies;
+        return typeof PublishedEpisodes !== 'undefined' ? PublishedEpisodes.overlay(movies, await PublishedEpisodes.load()) : movies;
       })
       .catch(err => { staticCatalogPromise = null; throw err; });
   }
@@ -297,8 +297,9 @@ async function findCatalogMovieBySlug(slug) {
   }
   const movie = { ...full };
   movie.episodeUrls = (window.allEpisodesData && window.allEpisodesData[slug]) || [];
-  addToGlobalMoviesList([movie]);
-  return movie;
+  const current = typeof PublishedEpisodes !== 'undefined' ? PublishedEpisodes.apply(movie, await PublishedEpisodes.load()) : movie;
+  addToGlobalMoviesList([current]);
+  return current;
 }
 
 // Lấy link tập theo slug từ API (kkphim -> nguonc), trả null nếu không nguồn nào có
@@ -354,12 +355,13 @@ function fillMissingFields(base, extra) {
 
 // Cache theo slug để detail.html / watch.html không gọi API lặp lại
 const movieDetailCache = new Map();
+const movieDetailCheckedAt = new Map();
 
 async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
   if (!slug) return null;
   const dataSource = resolveDataSource(source);
   const cacheKey = `${dataSource}:${slug}`;
-  if (movieDetailCache.has(cacheKey)) return movieDetailCache.get(cacheKey);
+  if (movieDetailCache.has(cacheKey) && Date.now() - (movieDetailCheckedAt.get(cacheKey) || 0) < 60000) return movieDetailCache.get(cacheKey);
 
   const base = await findCatalogMovieBySlug(slug); // giữ group và partName từ kho phim
   let apiMovie = null;
@@ -395,9 +397,15 @@ async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
     result = base; // API không có/lỗi -> dữ liệu local (có thể null)
   }
 
-  if(result&&apiMovie)result.declaredTotalEpisodes=Math.max(parseInt(base?.episodes,10)||0,parseInt(apiMovie.episodes,10)||0);
+  if(result&&apiMovie){
+    const available=Math.max(0,...apiMovie.episodeServers.map(server=>server.items.filter(item=>item.m3u8||item.embed).length));
+    result.declaredTotalEpisodes=Math.max(parseInt(base?.episodes,10)||0,parseInt(apiMovie.episodes,10)||0);
+    result.episodes=Math.max(available,parseInt(apiMovie.episodes,10)||0,parseInt(base?.episodes,10)||0);
+    result.availableEpisodes=available;
+    result.status=apiMovie.status||result.status;
+  }
   // Chỉ cache khi có kết quả, để lần sau còn thử lại nếu mạng lỗi
-  if (result) movieDetailCache.set(cacheKey, result);
+  if (result && apiMovie) { movieDetailCache.set(cacheKey, result); movieDetailCheckedAt.set(cacheKey, Date.now()); }
   return result;
 }
 

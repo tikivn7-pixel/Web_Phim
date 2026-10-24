@@ -129,12 +129,13 @@ test("changing source preserves position and removes stale target episode marker
 });
 function historyContext(initial, denied=false) {
   const records = new Map(Object.entries(initial));
-  const ctx = {console,URLSearchParams, window:{addEventListener(){}},document:{getElementById(){return null;}},localStorage:{
+  const events = [];
+  const ctx = {console,URLSearchParams,Event, window:{addEventListener(){},dispatchEvent(event){events.push(event.type);}},document:{getElementById(){return null;}},localStorage:{
     getItem(k) { if(denied) throw Error("blocked"); return records.get(k) || null; },setItem(k,v){records.set(k,v);}
   }};
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(__dirname,"continue-watching.js"),"utf8"),ctx);
-  return {ctx,records};
+  return {ctx,records,events};
 }
 test("continue watching deduplicates entries, hides completed finales and tolerates blocked storage", () => {
   const entries = [null,{slug:"one",episode:1,progress:20,updatedAt:1},{slug:"one",episode:2,progress:50,updatedAt:2},{slug:"done",episode:3,totalEpisodes:3,progress:96}];
@@ -144,10 +145,11 @@ test("continue watching deduplicates entries, hides completed finales and tolera
   assert.equal(result[0].episode,2);
   assert.equal(historyContext({},true).ctx.getContinueWatchingList().length,0);
 });
-test("remove from continue watching clears all episode positions for that film only", () => {
-  const {ctx,records} = historyContext({continue_watching_list:JSON.stringify([{slug:"one"},{slug:"two"}]),episode_positions:JSON.stringify({one:{1:{currentTime:30}},two:{1:{currentTime:60}}})});
+test("remove from continue watching clears only that film and notifies same-page session views", () => {
+  const {ctx,records,events} = historyContext({continue_watching_list:JSON.stringify([{slug:"one"},{slug:"two"}]),episode_positions:JSON.stringify({one:{1:{currentTime:30}},two:{1:{currentTime:60}}})});
   ctx.removeFromContinueWatching("one");
   assert.equal(JSON.parse(records.get("continue_watching_list"))[0].slug,"two");
   assert.equal(JSON.parse(records.get("episode_positions")).one,undefined);
   assert.equal(JSON.parse(records.get("episode_positions")).two[1].currentTime,60);
+  assert.deepEqual(events,['continue-watching-change']);
 });

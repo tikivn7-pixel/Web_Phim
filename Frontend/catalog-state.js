@@ -14,7 +14,7 @@
     if(Number(state.page)>1)params.set("p",Math.floor(Number(state.page)));
     return "index.html?"+params;
   }
-  function safeReturn(value){return typeof value==="string"&&/^index\.html(?:\?[^#]*)?(?:#.*)?$/.test(value)?value:null;}
+  function safeReturn(value){return typeof value==="string"&&/^(?:index|discover)\.html(?:\?[^#]*)?(?:#.*)?$/.test(value)?value:null;}
   const api={read,url,safeReturn};
   if(typeof module!=="undefined"&&module.exports)module.exports=api;else root.CatalogState=api;
 })(globalThis);

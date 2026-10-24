@@ -42,6 +42,7 @@ async function main() {
   const waitFor=async expression=>{const until=Date.now()+15000;while(Date.now()<until){if(await evaluate(expression))return;await pause(100);}throw Error('UI timeout: '+expression);};
   const reload=async()=>{await evaluate('window.__smokeOldDocument=true');await call('Page.reload');await waitFor('!window.__smokeOldDocument && document.readyState === "complete"');};
   await call('Page.enable');await call('Runtime.enable');await call('Network.enable');
+  await call('Browser.setDownloadBehavior',{behavior:'deny'});
   await call('Network.setBlockedURLs',{urls:['https://*','http://fonts.*']});
   // Isolate UI checks from external streaming providers and avoid downloading video.
   await call('Page.addScriptToEvaluateOnNewDocument',{source:`
@@ -66,11 +67,15 @@ async function main() {
   await waitFor("document.querySelectorAll('#home-movie-slider .movie-card').length === 20");
   await waitFor("document.querySelectorAll('.home-topic-card').length===6 && document.querySelectorAll('.home-collection-card').length===3");
   assert.equal(await evaluate("document.querySelectorAll('.hero-poster-choice').length"),3);
+  await waitFor("document.getElementById('session-favorites').textContent==='0' && !document.getElementById('session-empty').hidden");
+  assert.equal(await evaluate("document.querySelector('.session-overview').getAttribute('href')"),'stats.html');
   assert.ok(await evaluate("document.querySelectorAll('#hero-meta span').length>=3"));
   await evaluate("document.getElementById('home-random-pick').click()");
   assert.ok(await evaluate("!document.getElementById('home-random-result').hidden && document.querySelector('#home-random-result a').getAttribute('href').includes('slug=')"));
   assert.equal(await evaluate("document.querySelectorAll('.catalog-shortcuts button').length"),4);
   assert.ok(requests.some(url=>url.includes('catalog-index.json')));
+  assert.ok(requests.some(url=>url.includes('episode-summary.json')),'published counts should load from the lightweight summary');
+  assert.ok(!requests.some(url=>url.includes('episode-snapshots.json')),'homepage must never download the full episode-name archive');
   assert.ok(!requests.some(url=>url.includes('data/movies.json')||url.includes('catalog-search.json')||url.includes('/details/')),'home should not request full catalog or details');
   assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'mobile home overflows');
   await evaluate("document.getElementById('mobile-menu-btn').click()");
@@ -80,8 +85,25 @@ async function main() {
   const screenshot=async name=>{const result=await call('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(folder,name+'.png'),Buffer.from(result.data,'base64'));};
   await pause(1000);
   await screenshot('mobile-home');
+  assert.equal(await evaluate("document.querySelector('.nav-discover a').getAttribute('href')"),'discover.html');
+  assert.equal(await evaluate("document.querySelectorAll('.home-hub-grid>a').length"),3);
+  await call('Emulation.setDeviceMetricsOverride',{width:320,height:844,deviceScaleFactor:1,mobile:true});
+  await evaluate("window.scrollTo({top:document.querySelector('.home-hub').getBoundingClientRect().top+scrollY-140,behavior:'instant'})");
+  assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'mobile hub overflows at 320px');
+  await screenshot('home-hub-mobile');
+  await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
+  await evaluate("window.scrollTo({top:document.querySelector('.home-hub').getBoundingClientRect().top+scrollY-100,behavior:'instant'})");
+  assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'desktop hub overflows');
+  await screenshot('home-hub-desktop');
+  await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  await evaluate("window.scrollTo({top:0,behavior:'instant'})");
   await evaluate("document.querySelector('#home-movie-slider .card-heart').click()");
+  await waitFor("document.getElementById('session-favorites').textContent==='1'");
   assert.equal(await evaluate("document.querySelector('#home-movie-slider .card-heart').getAttribute('aria-pressed')"),'true');
+  await waitFor("document.querySelectorAll('#personal-movie-slider .movie-card').length>0");
+  assert.equal(await evaluate("getComputedStyle(document.getElementById('personal-empty')).display"),'none');
+  assert.ok(await evaluate("/Từ phim bạn đã lưu:|Cùng loạt với/.test(document.querySelector('#personal-movie-slider .personal-reason').textContent)"));
+  assert.equal(await evaluate("(()=>{const seed=JSON.parse(localStorage.getItem('my_wishlist'))[0].slug;return [...document.querySelectorAll('#personal-movie-slider .movie-card')].some(card=>card.dataset.slug===seed);})()"),false);
   assert.equal(await evaluate("document.querySelector('#home-movie-slider .movie-card-link').tagName"),'A');
   assert.equal(await evaluate("(()=>{const c=createMovieCard({slug:'smoke-safe',title:'<img src=x onerror=alert(1)>',poster:'javascript:alert(1)',episodes:1});return !c.querySelector('h4 img')&&c.querySelector('img').getAttribute('src')==='Img/poster-placeholder.svg';})()"),true);
   await evaluate("(()=>{const i=document.getElementById('search-input');i.value='titan attack';i.dispatchEvent(new Event('input'));})()");
@@ -115,6 +137,7 @@ async function main() {
   const catalogReturn=await evaluate("'index.html'+location.search");
   await evaluate("window.scrollTo(0,180);document.querySelector('#search-container .movie-card').click()");
   await waitFor("location.pathname.endsWith('/detail.html') && !document.getElementById('catalog-back-link').hidden");
+  await waitFor("document.getElementById('detail-title')?.textContent !== 'Đang mở phim…'");
   assert.ok(requests.some(url=>url.includes('/details/')),'detail page should request a detail shard');
   await evaluate("document.getElementById('catalog-back-link').click()");
   await waitFor("location.pathname.endsWith('/index.html') && document.querySelector('.mp-info')?.textContent.startsWith('Trang 2')");
@@ -136,6 +159,18 @@ async function main() {
   await waitFor("document.querySelectorAll('#detail-parts-grid button').length===2");
   assert.equal(await evaluate("document.querySelectorAll('#detail-parts-grid button')[1].classList.contains('active')"),true);
   assert.ok(await evaluate("document.getElementById('fd-collection-link').getAttribute('href').includes('group=the-witch-films')"));
+  await waitFor("document.querySelector('#fd-journal select')!==null");
+  await evaluate("(()=>{const select=document.querySelector('#fd-journal select');select.value='planned';select.dispatchEvent(new Event('change'));document.querySelectorAll('#fd-journal .journal-star')[3].click();})()");
+  assert.deepEqual(await evaluate("MovieJournal.get('sat-thu-nhan-tao-2-mau-vat-con-lai') && [MovieJournal.get('sat-thu-nhan-tao-2-mau-vat-con-lai').status,MovieJournal.get('sat-thu-nhan-tao-2-mau-vat-con-lai').rating]"),['planned',4]);
+  await call('Page.navigate',{url:origin+'/library.html?tab=planned'});
+  await waitFor("document.querySelector('.library-card[data-slug=\"sat-thu-nhan-tao-2-mau-vat-con-lai\"]')!==null");
+  await evaluate("(()=>{const select=document.querySelector('.library-card[data-slug=\"sat-thu-nhan-tao-2-mau-vat-con-lai\"] .journal-controls select');select.value='completed';select.dispatchEvent(new Event('change'));})()");
+  await waitFor("document.getElementById('completed-count').textContent==='1'");
+  await evaluate("document.getElementById('completed-tab').click()");
+  assert.equal(await evaluate("document.querySelectorAll('.library-card').length"),1);
+  assert.equal(await evaluate("document.querySelector('.journal-rating').dataset.rating"),'4');
+  assert.equal(await evaluate("PersonalData.backup(PersonalData.read(localStorage).data).data.movie_journal_v1.entries['sat-thu-nhan-tao-2-mau-vat-con-lai'].rating"),4);
+  await screenshot('journal-library-desktop');
   await call('Network.setCacheDisabled',{cacheDisabled:true});
   await call('Network.setBlockedURLs',{urls:['https://*','*/data/details/*']});
   await call('Page.navigate',{url:origin+'/detail.html?slug=sat-thu-nhan-tao'});
@@ -146,6 +181,8 @@ async function main() {
   assert.equal(await evaluate("document.querySelector('.detail-load-status').hidden"),true);
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'mobile detail overflows');
+  assert.ok(await evaluate("document.getElementById('fd-journal').getBoundingClientRect().width>=document.querySelector('.fd-hero').getBoundingClientRect().width-1"),'journal must span both mobile hero columns');
+  assert.ok(await evaluate("(()=>{const box=document.getElementById('fd-journal').getBoundingClientRect();return [...document.querySelectorAll('#fd-journal .journal-star')].every(button=>button.getBoundingClientRect().right<=box.right);})()"),'journal stars must fit inside the widget');
   await screenshot('detail-mobile');
   await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
   await call('Page.navigate',{url:origin+'/watch.html?slug=yeu-tinh-goblin&ep=2&title=Goblin'});
@@ -252,6 +289,7 @@ async function main() {
   await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
   assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'desktop home overflows');
   await screenshot('home-desktop');
+  assert.ok(await evaluate("(()=>{const hero=document.querySelector('.home-stage .hero-banner').getBoundingClientRect(),side=document.querySelector('.home-session').getBoundingClientRect();return side.left>=hero.right+10&&Math.abs(side.top-hero.top)<2;})()"),'desktop hero and personal session should form a two-column stage');
   await call('Emulation.setDeviceMetricsOverride',{width:1024,height:768,deviceScaleFactor:1,mobile:false});
   assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'tablet home overflows');
   await screenshot('home-tablet');
@@ -278,9 +316,49 @@ async function main() {
   assert.equal(await evaluate("new URLSearchParams(location.search).get('data_source')"),'nguonc');
   assert.equal(await evaluate("new URLSearchParams(location.search).get('server')"),'1');
   assert.equal(await evaluate("new URLSearchParams(location.search).get('target_episode')"),'2');
+  // Manual journal status hides a row without rewriting any playback history.
+  await call('Page.navigate',{url:origin+'/index.html'});
+  await waitFor("document.querySelectorAll('#home-movie-slider .movie-card').length===20");
+  await waitFor("!document.getElementById('session-resume').hidden && document.querySelector('#session-resume a').href.includes('slug=yeu-tinh-goblin')");
+  assert.equal(await evaluate("(()=>{const p=new URL(document.querySelector('#session-resume a').href).searchParams;return p.get('ep')==='2'&&p.get('target_episode')==='2'&&p.get('data_source')==='nguonc'&&p.get('server')==='1';})()"),true,'home session must retain raw provider index and logical episode identity');
+  await evaluate("window.scrollTo({top:0,behavior:'instant'})");
+  await screenshot('home-session-tablet');
+  await evaluate("window.__savedHistory=localStorage.getItem('continue_watching_list');MovieJournal.set('yeu-tinh-goblin',{status:'completed'})");
+  await waitFor("!document.querySelector('#continue-watching-slider [data-slug=\"yeu-tinh-goblin\"]')");
+  await waitFor("!document.querySelector('#session-resume a')?.href.includes('slug=yeu-tinh-goblin')");
+  assert.equal(await evaluate("localStorage.getItem('continue_watching_list')===window.__savedHistory"),true);
+  await evaluate("MovieJournal.set('yeu-tinh-goblin',{status:''})");
+  await waitFor("document.querySelector('#continue-watching-slider [data-slug=\"yeu-tinh-goblin\"]')!==null");
+  await waitFor("document.querySelectorAll('#personal-movie-slider .movie-card').length>0");
+  assert.ok(await evaluate("[...document.querySelectorAll('#personal-movie-slider .personal-reason')].some(item=>item.textContent.includes('đánh giá cao'))"),'a private high rating should supply recommendation reasons');
+  await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
+  await evaluate("document.getElementById('personal-home').scrollIntoView();document.querySelector('#personal-home .next-btn').click()");
+  await waitFor("document.getElementById('personal-movie-slider').scrollLeft>0");
+  await screenshot('personal-home-desktop');
+  await call('Emulation.setDeviceMetricsOverride',{width:320,height:844,deviceScaleFactor:1,mobile:true});
+  assert.ok(await evaluate('document.documentElement.scrollWidth <= innerWidth + 1'),'personal home at 320px overflows');
+  await evaluate("document.getElementById('personal-home').scrollIntoView()");
+  await screenshot('personal-home-mobile');
+  // A damaged key must be reported as unknown, without overwriting its raw data
+  // or presenting stale sidebar counters. Restoring the key recovers in place.
+  await evaluate("window.__sessionWishlist=localStorage.getItem('my_wishlist');window.__sessionFavoriteCount=PersonalData.read(localStorage).data.my_wishlist.length;localStorage.setItem('my_wishlist','{broken session wishlist');window.dispatchEvent(new StorageEvent('storage',{key:'my_wishlist'}))");
+  await waitFor("document.getElementById('session-favorites').textContent==='—' && !document.getElementById('session-data-status').hidden");
+  assert.equal(await evaluate("localStorage.getItem('my_wishlist')"),'{broken session wishlist');
+  assert.equal(await evaluate("document.querySelector('#session-resume a')?.href.includes('slug=yeu-tinh-goblin')"),true,'unrelated broken wishlist must preserve readable resume history');
+  await evaluate("localStorage.setItem('my_wishlist',window.__sessionWishlist);window.dispatchEvent(new StorageEvent('storage',{key:'my_wishlist'}))");
+  await waitFor("Number(document.getElementById('session-favorites').textContent)===window.__sessionFavoriteCount && document.getElementById('session-data-status').hidden");
+  // Removing the newest continue card updates the personal sidebar in this
+  // document and preserves positions belonging to every other movie.
+  await evaluate("(()=>{const data=PersonalData.read(localStorage).data;data.episode_positions['cua-hang-sat-thu-phan-1']={'1':{currentTime:321,duration:1200,progress:26.75,server:0,source:'kkphim',episodeName:'1',updatedAt:1234}};PersonalData.write(localStorage,data)})();window.__sessionDocument=true;window.__sessionRemoved=new URL(document.querySelector('#session-resume a').href).searchParams.get('slug');window.__sessionCount=Number(document.getElementById('session-watching').textContent);window.__sessionHistory=PersonalData.read(localStorage).data.continue_watching_list;window.__sessionPositions=PersonalData.read(localStorage).data.episode_positions;[...document.querySelectorAll('#continue-watching-slider .movie-card')].find(card=>card.dataset.slug===window.__sessionRemoved).querySelector('.continue-remove').click()");
+  await waitFor("Number(document.getElementById('session-watching').textContent)===window.__sessionCount-1 && !document.querySelector('#session-resume a')?.href.includes('slug='+window.__sessionRemoved)");
+  assert.equal(await evaluate("window.__sessionDocument"),true,'continue removal must update without a page reload');
+  assert.equal(await evaluate("JSON.stringify(PersonalData.read(localStorage).data.continue_watching_list)===JSON.stringify(window.__sessionHistory.filter(item=>item.slug!==window.__sessionRemoved))"),true);
+  assert.equal(await evaluate("JSON.stringify(PersonalData.read(localStorage).data.episode_positions)===JSON.stringify(Object.fromEntries(Object.entries(window.__sessionPositions).filter(([slug])=>slug!==window.__sessionRemoved)))"),true,'removal preserves other episode positions');
+  await evaluate("window.scrollTo({top:document.querySelector('.home-session').getBoundingClientRect().top+scrollY-140,behavior:'instant'})");
+  await screenshot('home-session-mobile');
   console.log('Simulated 4G: catalog cards ready in '+catalogReadyMs+' ms at 1.6 Mbps / 150 ms latency. External posters and streaming providers are excluded.');
   assert.deepEqual(exceptions,[],'unhandled browser exceptions');
-  console.log('PASS: responsive home/detail/library/manager; safe cards; accessible search; URL history; detail retry; playback, intro, speed and sleep; personal backup preview/merge; relation ordering/export/drafts.');
+  console.log('PASS: responsive home/detail/library/manager; safe cards; accessible search; URL history; detail retry; playback, intro, speed and sleep; personal backup preview/merge; journal statuses/ratings; personal recommendations; relation ordering/export/drafts.');
   console.log('Screenshots: '+folder);
 }
 main().catch(err=>{console.error(err);process.exitCode=1;}).finally(async()=>{

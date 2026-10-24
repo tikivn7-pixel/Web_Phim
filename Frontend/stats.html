@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111114">
+  <title>Góc nhìn của tôi · LauPhim</title><meta name="description" content="Nhìn lại gu phim, nhật ký và những dấu ấn bạn đã lưu trên thiết bị này.">
+  <link rel="stylesheet" href="stats.css?v=20261024b"><link rel="stylesheet" href="cinema.css?v=20261024b">
+  <link rel="stylesheet" href="app-navigation.css?v=20261024b">
+<link rel="stylesheet" href="hub.css?v=20261025a">
+<script src="profile-store.js?v=20261025a"></script>
+<script src="hub-client.js?v=20261025a"></script>
+<script src="hub-catalog.js?v=20261025a"></script>
+<script src="movie-journal.js?v=20261025a"></script>
+<script src="episode-tracker.js?v=20261025a"></script>
+<script src="personal-lists.js?v=20261025a"></script>
+<script src="movie-notes.js?v=20261025a"></script>
+<script src="release-planner.js?v=20261025a"></script>
+<script src="episode-updates.js?v=20261025a"></script>
+<script src="notification-center.js?v=20261025a"></script>
+<script src="personal-data.js?v=20261025a"></script>
+<script src="cloud-sync-model.js?v=20261025a"></script>
+<script src="cloud-sync.js?v=20261025a"></script>
+<script src="hub-common.js?v=20261025a"></script>
+<link rel="manifest" href="manifest.webmanifest"></head>
+<body>
+  <a class="skip-link" href="#stats-content">Đến tổng quan cá nhân</a>
+  <header class="stats-header"><a class="brand" href="index.html"><span>Lau</span>Phim</a><nav aria-label="Điều hướng"><a href="discover.html">Khám phá</a><a href="library.html">Thư viện</a><a href="lists.html">Danh sách riêng</a><a href="stats.html" aria-current="page">Góc nhìn của tôi</a></nav></header>
+  <main id="stats-content">
+    <section class="stats-hero">
+      <div><p class="stats-eyebrow">HÀNH TRÌNH CỦA RIÊNG BẠN</p><h1>Gu phim.<br>Qua những dấu ấn.</h1><p class="stats-lead">Những phim đã lưu, tập đã đánh dấu và câu chuyện muốn nhớ. Một góc nhìn từ chính lựa chọn của bạn.</p><p class="stats-privacy"><span aria-hidden="true">◈</span> Chỉ từ dữ liệu lưu trên trình duyệt này · Không cần đăng nhập</p></div>
+      <aside class="stats-hero-card"><span class="stats-hero-symbol" aria-hidden="true">▶</span><p>MỖI LỰA CHỌN, MỘT CÂU CHUYỆN</p><strong>Hành trình này<br>là của bạn.</strong><a href="library.html#backup">Giữ lại bằng bản sao lưu ↗</a></aside>
+    </section>
+    <div class="stats-scope"><div><h2>Không gian phim của bạn</h2><p id="stats-scope-description">Các bản ghi đang có, không phải tổng số lần xem.</p></div><label>Thời điểm cập nhật bản ghi<select id="stats-period"><option value="all">Tất cả thời gian</option><option value="7">7 ngày gần đây</option><option value="30">30 ngày gần đây</option></select></label></div>
+    <p id="stats-storage-warning" class="stats-warning" role="status" hidden></p>
+    <p id="stats-catalog-error" class="stats-warning" role="status" hidden><span>Chưa tải được kho phim. Số liệu cá nhân vẫn hiển thị; thể loại và quốc gia sẽ có khi kết nối lại.</span> <button type="button" id="stats-retry">Thử tải lại</button></p>
+    <section class="stats-counters" aria-label="Số liệu cá nhân">
+      <article><span class="stats-counter-icon" aria-hidden="true">◫</span><strong id="stats-personal-count">0</strong><h3>phim trong không gian riêng</h3><p>Mỗi phim chỉ được tính một lần.</p></article>
+      <article><span class="stats-counter-icon" aria-hidden="true">✓</span><strong id="stats-completed-count">0</strong><h3>phim tự đánh dấu đã xem</h3><p>Từ trạng thái trong nhật ký.</p></article>
+      <article><span class="stats-counter-icon" aria-hidden="true">▤</span><strong id="stats-episodes-count">0</strong><h3>tập đánh dấu đã xem</h3><p>Không đếm lại giữa các nguồn.</p></article>
+      <article><span class="stats-counter-icon" aria-hidden="true">⚑</span><strong id="stats-bookmarks-count">0</strong><h3>mốc cảnh đang lưu</h3><p>Những khoảnh khắc để trở lại.</p></article>
+    </section>
+    <p id="stats-period-note" class="stats-help"></p>
+    <section id="stats-empty" class="stats-empty" hidden><p class="stats-eyebrow">MỘT CÂU CHUYỆN MỚI</p><h2>Bắt đầu từ bộ phim bạn thích.</h2><p>Lưu phim vào yêu thích, chọn trạng thái hoặc đánh dấu một tập đã xem. Dấu ấn đầu tiên sẽ xuất hiện ở đây.</p><a href="discover.html" class="stats-primary">Tìm phim của bạn →</a></section>
+    <section id="stats-resume" class="stats-resume" hidden aria-label="Trở lại phim đang xem"><img id="stats-resume-poster" alt=""><div><p class="stats-eyebrow">TRỞ LẠI CÂU CHUYỆN GẦN NHẤT</p><h2 id="stats-resume-title"></h2><p id="stats-resume-description"></p><a id="stats-resume-link" class="stats-primary" href="library.html">Xem tiếp →</a></div></section>
+    <div class="stats-grid">
+      <section class="stats-panel"><div class="stats-panel-heading"><span class="stats-index">01</span><div><p class="stats-eyebrow">NHỊP XEM CỦA BẠN</p><h2>Nhật ký hiện tại</h2></div><a href="library.html">Mở nhật ký ↗</a></div><div id="stats-status-bars" class="stats-bars"></div><p class="stats-help">Chỉ tính phim đã chọn trạng thái. “Đã xem” do bạn đánh dấu, không suy ra từ vị trí phát.</p></section>
+      <section class="stats-panel"><div class="stats-panel-heading"><span class="stats-index">02</span><div><p class="stats-eyebrow">ĐIỂM RIÊNG, GU RIÊNG</p><h2>Những ngôi sao của bạn</h2></div></div><div id="stats-rating-bars" class="stats-bars stats-rating-bars"></div><p id="stats-rating-summary" class="stats-help"></p></section>
+      <section class="stats-panel"><div class="stats-panel-heading"><span class="stats-index">03</span><div><p class="stats-eyebrow">CÁC CÂU CHUYỆN BẠN CHỌN</p><h2>Thể loại nổi bật</h2></div></div><div id="stats-genres" class="stats-bars"></div><p class="stats-help">Một phim có thể thuộc nhiều thể loại. Bấm vào tên để khám phá thêm.</p></section>
+      <section class="stats-panel"><div class="stats-panel-heading"><span class="stats-index">04</span><div><p class="stats-eyebrow">ĐIỆN ẢNH QUA TỪNG MIỀN</p><h2>Quốc gia trong thư viện</h2></div></div><div id="stats-countries" class="stats-bars"></div><p id="stats-catalog-note" class="stats-help">Đang kết nối kho phim…</p></section>
+    </div>
+    <div class="stats-bottom-grid">
+      <section class="stats-panel stats-activity"><div class="stats-panel-heading"><div><p class="stats-eyebrow">NHỮNG DẤU ẤN GẦN ĐÂY</p><h2>Gần đây bạn đã…</h2></div><span id="stats-activity-total"></span></div><p class="stats-help">Lần cập nhật gần nhất của mỗi bản ghi còn lưu. Đây không phải toàn bộ lịch sử thao tác; nội dung ghi chú được giữ kín.</p><ol id="stats-timeline"></ol><p id="stats-timeline-empty" class="stats-inset-empty" hidden>Chưa có bản ghi với thời điểm hợp lệ trong khoảng này.</p></section>
+      <aside class="stats-side"><section class="stats-panel"><p class="stats-eyebrow">ĐỂ DÀNH CHO MỘT DỊP KHÁC</p><h2>Danh sách của bạn</h2><div id="stats-lists"></div><a class="stats-text-link" href="lists.html">Tất cả danh sách →</a></section><section class="stats-notes-card"><span aria-hidden="true">✎</span><h2>Những điều muốn nhớ.</h2><p id="stats-notes-summary">Ghi lại cảm nhận và lưu những cảnh đáng nhớ.</p><a href="notes.html">Mở sổ tay phim →</a></section></aside>
+    </div>
+    <details class="stats-definitions"><summary>Cách tính những con số này</summary><p>Phim trong không gian riêng là tập hợp không trùng từ yêu thích, vị trí đang xem, nhật ký, tập đã đánh dấu, ghi chú, mốc cảnh và danh sách riêng còn tồn tại. Các mục đã bỏ đánh dấu hoặc đã xóa không được tính.</p><p>Bộ lọc 7/30 ngày dựa trên thời điểm cập nhật gần nhất của từng bản ghi cá nhân, không dựa trên ngày phát hành phim. Một phim trong danh sách riêng dùng thời điểm cập nhật của danh sách. Các bản ghi không có thời điểm hợp lệ chỉ được tính ở “Tất cả thời gian”.</p><p>Thể loại và quốc gia lấy từ những phim khớp mã trong kho hiện tại, mỗi phim chỉ tính một lần cho mỗi nhãn. Không dùng vị trí xem dở để tính giờ xem. Ghi chú, mốc cảnh và dữ liệu khác của bạn không bị thay đổi khi mở trang này.</p></details>
+    <noscript><p>Cần bật JavaScript để đọc tổng quan dữ liệu cá nhân trên thiết bị này.</p></noscript>
+  </main><footer class="stats-footer"><a class="brand" href="index.html"><span>Lau</span>Phim</a><p>Những bộ phim đi qua. Những dấu ấn ở lại.</p><a href="library.html#backup">Sao lưu dữ liệu cá nhân</a></footer>
+  <script src="catalog-format.js?v=20261024b"></script><script src="published-episodes.js?v=20261024b"></script><script src="country-utils.js?v=20261024b"></script><script src="genre-utils.js?v=20261024b"></script><script src="site-tools.js?v=20261024b"></script><script src="viewing-stats.js?v=20261024b"></script><script src="stats.js?v=20261024b"></script>
+  <script src="app-navigation.js?v=20261024b"></script>
+<script src="pwa.js?v=20261025a"></script></body></html>

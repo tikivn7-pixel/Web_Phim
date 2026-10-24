@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b0f">
+  <title>Tối nay xem gì? · LauPhim</title>
+  <meta name="description" content="Chọn gu của bạn, tìm một bộ phim phù hợp từ kho phim LauPhim. Gợi ý ngẫu nhiên không lặp lại trong lượt chọn.">
+  <link rel="stylesheet" href="cinema.css?v=20261024b"><link rel="stylesheet" href="picker.css?v=20261024b">
+<link rel="stylesheet" href="app-navigation.css?v=20261024b"><link rel="stylesheet" href="hub.css?v=20261025a">
+<script src="profile-store.js?v=20261025a"></script>
+<script src="hub-client.js?v=20261025a"></script>
+<script src="hub-catalog.js?v=20261025a"></script>
+<script src="movie-journal.js?v=20261025a"></script>
+<script src="episode-tracker.js?v=20261025a"></script>
+<script src="personal-lists.js?v=20261025a"></script>
+<script src="movie-notes.js?v=20261025a"></script>
+<script src="release-planner.js?v=20261025a"></script>
+<script src="episode-updates.js?v=20261025a"></script>
+<script src="notification-center.js?v=20261025a"></script>
+<script src="personal-data.js?v=20261025a"></script>
+<script src="cloud-sync-model.js?v=20261025a"></script>
+<script src="cloud-sync.js?v=20261025a"></script>
+<script src="hub-common.js?v=20261025a"></script>
+<link rel="manifest" href="manifest.webmanifest"></head>
+<body>
+  <a class="picker-skip" href="#picker-main">Đến nội dung</a>
+  <header class="picker-header"><a class="picker-brand" href="index.html"><span>Lau</span>Phim<i aria-hidden="true"></i></a><nav aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a href="discover.html">Khám phá</a><a href="updates.html">Tập mới</a><a href="picker.html" aria-current="page">Tối nay xem gì?</a><a href="library.html">Thư viện</a></nav></header>
+  <main id="picker-main">
+    <section class="picker-intro"><div><p class="picker-eyebrow">ÍT ĐẮN ĐO. THÊM MỘT CÂU CHUYỆN.</p><h1>Tối nay<br><em>xem gì?</em></h1></div><p>Không cần lướt mãi mới chọn được phim.<br>Cho biết gu của bạn, để những câu chuyện<br>phù hợp tự tìm đến.</p><span class="picker-orbit" aria-hidden="true">✳</span></section>
+    <section id="picker-loading" class="picker-loading" role="status"><span aria-hidden="true"></span>Đang mở kho phim…</section>
+    <section id="picker-error" class="picker-notice" hidden><h2>Chưa tải được danh sách phim</h2><p>Kiểm tra kết nối rồi thử lại nhé.</p><button id="picker-retry" type="button" class="picker-primary">Thử lại</button><a href="index.html">Về trang chủ</a></section>
+    <div id="picker-app" hidden>
+      <nav class="picker-stages" aria-label="Các bước chọn phim"><button type="button" data-stage="0"><span>01</span> Kiểu phim</button><button type="button" data-stage="1"><span>02</span> Thể loại</button><button type="button" data-stage="2"><span>03</span> Thêm một chút</button><button type="button" data-stage="3"><span>04</span> Lựa chọn của bạn</button></nav>
+      <div class="picker-layout"><section class="picker-panel" aria-labelledby="picker-step-title">
+        <div class="picker-panel-heading"><p class="picker-eyebrow" id="picker-step-number">BƯỚC 01 / 04</p><h2 id="picker-step-title" tabindex="-1">Bạn muốn bắt đầu thế nào?</h2><p id="picker-step-description">Một bộ phim gọn gàng, hay một thế giới để theo dõi lâu hơn?</p></div>
+        <div class="picker-step" data-panel="0"><div id="picker-types" class="picker-type-grid"><button type="button" data-type="" aria-pressed="true"><span class="type-icon" aria-hidden="true">✳</span><strong>Cứ để bất ngờ</strong><span>Tất cả phim trong kho</span></button><button type="button" data-type="film" aria-pressed="false"><span class="type-icon" aria-hidden="true">▰</span><strong>Một bộ phim lẻ</strong><span>Một câu chuyện trọn vẹn</span></button><button type="button" data-type="series" aria-pressed="false"><span class="type-icon" aria-hidden="true">▤</span><strong>Theo một phim bộ</strong><span>Nhiều tập để khám phá</span></button><button type="button" data-type="anime" aria-pressed="false"><span class="type-icon" aria-hidden="true">✧</span><strong>Anime / Hoạt hình</strong><span>Những thế giới giàu tưởng tượng</span></button></div></div>
+        <div class="picker-step" data-panel="1" hidden><div id="picker-genres" class="picker-genres" role="group" aria-label="Thể loại phim"></div><p class="picker-hint">Mỗi lựa chọn dùng thể loại có sẵn trong dữ liệu phim. Không chắc? Chọn “Thể loại nào cũng được”.</p></div>
+        <div class="picker-step" data-panel="2" hidden><div class="picker-select-grid"><label>Quốc gia<select id="picker-country"><option value="">Không giới hạn quốc gia</option></select></label><label>Từ năm<select id="picker-from"><option value="">Bất kỳ năm nào</option></select></label><label>Đến năm<select id="picker-to"><option value="">Bất kỳ năm nào</option></select></label></div><div class="picker-year-presets"><button type="button" data-years="all">Mọi thời kỳ</button><button type="button" data-years="recent">5 năm gần đây</button><button type="button" data-years="classic">Trước năm 2010</button></div><p class="picker-hint">Năm và quốc gia lấy từ thông tin trong kho phim. Gợi ý không xác nhận tình trạng phát hành hay nguồn phát.</p></div>
+        <div class="picker-step" data-panel="3" hidden><div class="picker-result-toolbar"><div class="picker-draw-modes" role="group" aria-label="Số phim gợi ý"><button type="button" data-count="1" aria-pressed="false">Một lựa chọn</button><button type="button" data-count="3" aria-pressed="true">Ba lựa chọn</button></div><button id="picker-share" class="picker-text-button" type="button">Sao chép bộ lọc ↗</button></div><div id="picker-results" class="picker-results"></div><div id="picker-empty" class="picker-notice" hidden><span aria-hidden="true">◌</span><h3>Gu này hơi khó tìm rồi</h3><p id="picker-empty-description">Chưa có phim khớp tất cả lựa chọn. Thử bỏ bớt một bộ lọc nhé.</p><button id="picker-loosen" class="picker-primary" type="button">Chọn lại bộ lọc</button><button id="picker-clear" class="picker-text-button" type="button">Xem toàn bộ kho phim</button></div><div id="picker-draw-actions" class="picker-draw-actions"><button id="picker-draw" class="picker-primary" type="button">Đổi gợi ý <span aria-hidden="true">↻</span></button><p id="picker-remaining" aria-live="polite"></p><button id="picker-restart-pool" type="button" class="picker-text-button" hidden>Bắt đầu lại lượt chọn</button></div></div>
+        <div class="picker-bottom"><button id="picker-back" class="picker-text-button" type="button">← Quay lại</button><span id="picker-progress">Bước 1 / 4</span><button id="picker-next" class="picker-primary" type="button">Tiếp theo <span aria-hidden="true">→</span></button></div>
+      </section><aside class="picker-summary"><p class="picker-eyebrow">DÀNH CHO LỰA CHỌN NÀY</p><div class="picker-count"><strong id="picker-count">—</strong><span>phim phù hợp</span></div><div id="picker-summary-filters" class="picker-summary-filters"></div><label class="picker-completed"><input id="picker-hide-completed" type="checkbox" checked><span>Bỏ qua phim đã xem<small>Theo nhật ký trên trình duyệt này</small></span></label><p id="picker-journal-note" class="picker-hint"></p><div class="picker-summary-line"></div><p class="picker-summary-note">Không lặp lại phim đã gợi ý trong lượt chọn hiện tại. Đổi bộ lọc sẽ mở một lượt mới.</p><button id="picker-reset" type="button" class="picker-text-button">Đặt lại lựa chọn</button></aside></div>
+      <p id="picker-status" class="picker-status" role="status" aria-live="polite"></p>
+    </div>
+    <noscript><p class="picker-notice">Bật JavaScript để chọn phim theo gu của bạn.</p></noscript>
+  </main>
+  <footer class="picker-footer"><span>Một buổi tối. Một câu chuyện mới.</span><a href="index.html?view=catalog">Tự khám phá kho phim ↗</a></footer>
+  <script src="catalog-format.js?v=20261024b"></script><script src="published-episodes.js?v=20261024b"></script><script src="site-tools.js?v=20261024b"></script><script src="picker-model.js?v=20261024b"></script><script src="picker.js?v=20261024b"></script>
+<script src="app-navigation.js?v=20261024b"></script><script src="pwa.js?v=20261025a"></script></body>
+</html>

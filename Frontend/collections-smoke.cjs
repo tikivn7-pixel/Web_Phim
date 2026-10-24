@@ -38,6 +38,7 @@ async function main() {
     const waitFor = async expression => { const until = Date.now() + 15000; while (Date.now() < until) { if (await evaluate(expression)) return; await pause(100); } throw Error('Collection UI timeout: ' + expression); };
     const screenshot = async name => { const result = await call('Page.captureScreenshot', { format: 'png' }); fs.writeFileSync(path.join(folder, name + '.png'), Buffer.from(result.data, 'base64')); };
     await call('Page.enable'); await call('Runtime.enable'); await call('Network.enable');
+    await call('Browser.setDownloadBehavior',{behavior:'deny'});
     await call('Network.setBlockedURLs', { urls: ['https://*'] });
     await call('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1100, deviceScaleFactor: 1, mobile: false });
     await call('Page.navigate', { url: origin + '/collections.html' });

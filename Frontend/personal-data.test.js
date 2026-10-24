@@ -4,6 +4,13 @@ function memory(initial={}) {
   return {values,getItem:key=>values.has(key)?values.get(key):null,setItem:(key,value)=>values.set(key,value),removeItem:key=>values.delete(key)};
 }
 const film=(slug,extra={})=>({slug,title:slug,poster:"https://example.org/poster.jpg",...extra});
+
+test('private notes and scene tombstones survive backup and stale imports without resetting playback',()=>{
+  const N=require('./movie-notes'),store=memory();N.setNote('film',{text:'Một ghi chú riêng',spoiler:true},store);const mark=N.addBookmark('film',{label:'Mở đầu',time:0,episodeName:'Tập 2',episode:7,source:'kkphim',server:1},store);const old=N.read(store);N.setNote('film',{text:'',spoiler:false},store);N.removeBookmark('film',mark.id,store);
+  const data={movie_notes_v1:N.read(store),episode_positions:{film:{7:{currentTime:92,updatedAt:20,episodeName:'Tập 2'}}},my_wishlist:[film('film')]},combined=P.merge(data,{movie_notes_v1:old}),restored=P.parseBackup(JSON.stringify(P.backup(combined)));
+  assert.equal(restored.movie_notes_v1.movies.film.note.text,'');assert.equal(restored.movie_notes_v1.movies.film.bookmarks[mark.id].deleted,true);assert.equal(restored.episode_positions.film[7].currentTime,92);assert.equal(restored.my_wishlist.length,1);
+  P.write(store,restored);assert.deepEqual(JSON.parse(store.getItem(N.KEY)),restored.movie_notes_v1);assert.throws(()=>P.normalize({movie_notes_v1:{version:99,movies:{}}},true));
+});
 test("every published local poster survives normalization and backup, including spaces, punctuation and Vietnamese",()=>{
   const movies=require('./data/movies.json'),local=movies.filter(movie=>/^(?:\.\/)?Img\//.test(movie.poster));
   assert.ok(local.length>=250);
@@ -68,4 +75,18 @@ test("player preferences stay local on merge while per-episode intro markers mer
 test("poster URLs cannot export embedded credentials or sensitive tokens and reject executable schemes and control characters",()=>{
   for(const value of ["https://user:secret@example.org/a.jpg","https://example.org/a.jpg?access_token=PRIVATE","javascript:alert(1)","data:text/html,hello","https://example.org/a\n.jpg","https://example.org\\@evil.test/a.jpg"])assert.equal(P.imageUrl(value),"",value);
   assert.equal(P.imageUrl("Img/poster-placeholder.svg"),"Img/poster-placeholder.svg");assert.equal(P.imageUrl("https://example.org/a.jpg?w=300"),"https://example.org/a.jpg?w=300");
+});
+test("journal backup keeps private ratings and merges newest statuses including clears without resetting saved episodes",()=>{
+  const journal=entries=>({version:1,entries});
+  const local={movie_journal_v1:journal({one:{status:"",rating:0,updatedAt:30},two:{status:"planned",rating:0,updatedAt:10}}),continue_watching_list:[film("one",{episode:2,currentTime:80,updatedAt:5})],episode_positions:{one:{2:{currentTime:80,updatedAt:5}}}};
+  const incoming={movie_journal_v1:journal({one:{status:"completed",rating:5,updatedAt:20},two:{status:"completed",rating:4,updatedAt:40,token:"PRIVATE"}})};
+  const merged=P.merge(local,incoming), restored=P.parseBackup(JSON.stringify(P.backup(merged)));
+  assert.deepEqual(restored.movie_journal_v1.entries.one,{status:"",rating:0,updatedAt:30});
+  assert.deepEqual(restored.movie_journal_v1.entries.two,{status:"completed",rating:4,updatedAt:40});
+  assert.equal(restored.continue_watching_list[0].currentTime,80);assert.equal(restored.episode_positions.one[2].currentTime,80);
+  assert.doesNotMatch(JSON.stringify(restored),/PRIVATE|token/);
+  const old=P.parseBackup(JSON.stringify(P.backup({my_wishlist:[film("old")]})));
+  assert.equal(old.movie_journal_v1,undefined);assert.equal(P.merge(local,old).movie_journal_v1.entries.two.status,"planned");
+  const storage=memory();P.write(storage,restored);assert.equal(JSON.parse(storage.getItem("movie_journal_v1")).entries.two.rating,4);
+  assert.throws(()=>P.normalize({movie_journal_v1:{version:1,entries:{one:{status:"garbage",rating:0,updatedAt:1}}}},true),/không hợp lệ/);
 });

@@ -1,7 +1,13 @@
 // Shared browser / Node helpers. Only these explicitly named keys enter a backup.
 (function (root) {
   "use strict";
-  const KEYS = ["my_wishlist", "continue_watching_list", "episode_positions", "playback_reports", "player_preferences_v1", "player_intro_ranges_v1", "autonext_enabled", "audio_boost"];
+  const Journal = typeof module !== "undefined" && module.exports ? require("./movie-journal") : root.MovieJournal;
+  const Tracker = typeof module !== "undefined" && module.exports ? require("./episode-tracker") : root.EpisodeTracker;
+  const Lists = typeof module !== "undefined" && module.exports ? require("./personal-lists") : root.PersonalLists;
+  const Notes = typeof module !== "undefined" && module.exports ? require("./movie-notes") : root.MovieNotes;
+  const Planner = typeof module !== "undefined" && module.exports ? require("./release-planner") : root.ReleasePlanner;
+  const Center = typeof module !== "undefined" && module.exports ? require("./notification-center") : root.NotificationCenter;
+  const KEYS = ["my_wishlist", "continue_watching_list", "episode_positions", "playback_reports", "player_preferences_v1", "player_intro_ranges_v1", "autonext_enabled", "audio_boost", "movie_journal_v1", "episode_tracker_v1", "movie_lists_v1", "movie_notes_v1", "release_planner_v1", "notification_center_v1"];
   const FORMAT = "lauphim-personal-data", VERSION = 1;
   const isObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
   const text = (value, limit = 500) => typeof value === "string" ? value.slice(0, limit).trim() : "";
@@ -111,6 +117,27 @@
         out.player_intro_ranges_v1 = Object.fromEntries(entries.slice(0,300));
       }
     }
+    if (data.movie_journal_v1 !== undefined) {
+      if (!Journal) throw new Error("Chưa tải được dữ liệu nhật ký phim. Hãy tải lại trang trước khi khôi phục.");
+      if (data.movie_journal_v1 === null && strict) throw new Error("Nhật ký phim không hợp lệ.");
+      out.movie_journal_v1 = Journal.normalize(data.movie_journal_v1, strict);
+    }
+    if (data.episode_tracker_v1 !== undefined) {
+      if (!Tracker) throw new Error("Chưa tải được dữ liệu tập đã xem. Hãy tải lại trang trước khi khôi phục.");
+      out.episode_tracker_v1 = Tracker.normalize(data.episode_tracker_v1, strict);
+    }
+    if (data.movie_lists_v1 !== undefined) {
+      if (!Lists) throw new Error("Chưa tải được bộ sưu tập cá nhân. Hãy tải lại trang trước khi khôi phục.");
+      out.movie_lists_v1 = Lists.normalize(data.movie_lists_v1, strict);
+    }
+    if (data.movie_notes_v1 !== undefined) {
+      if (!Notes) throw new Error("Chưa tải được ghi chú phim. Hãy tải lại trang trước khi khôi phục.");
+      out.movie_notes_v1 = Notes.normalize(data.movie_notes_v1, strict);
+    }
+    for (const [name, helper] of [["release_planner_v1", Planner], ["notification_center_v1", Center]]) if (data[name] !== undefined) {
+      if (!helper) throw new Error("Chưa tải được dữ liệu lịch và thông báo. Hãy tải lại trang.");
+      out[name] = helper.normalize(data[name], strict);
+    }
     return out;
   }
   function read(storage) {
@@ -149,6 +176,12 @@
       out.player_intro_ranges_v1 = {...a.player_intro_ranges_v1};
       for (const [id, value] of Object.entries(b.player_intro_ranges_v1 || {})) if (!out.player_intro_ranges_v1[id] || value.updatedAt > out.player_intro_ranges_v1[id].updatedAt) out.player_intro_ranges_v1[id] = value;
     }
+    if (a.movie_journal_v1 || b.movie_journal_v1) out.movie_journal_v1 = Journal.merge(a.movie_journal_v1, b.movie_journal_v1);
+    if (a.episode_tracker_v1 || b.episode_tracker_v1) out.episode_tracker_v1 = Tracker.merge(a.episode_tracker_v1, b.episode_tracker_v1);
+    if (a.movie_lists_v1 || b.movie_lists_v1) out.movie_lists_v1 = Lists.merge(a.movie_lists_v1, b.movie_lists_v1);
+    if (a.movie_notes_v1 || b.movie_notes_v1) out.movie_notes_v1 = Notes.merge(a.movie_notes_v1, b.movie_notes_v1);
+    if (a.release_planner_v1 || b.release_planner_v1) out.release_planner_v1 = Planner.merge(a.release_planner_v1, b.release_planner_v1);
+    if (a.notification_center_v1 || b.notification_center_v1) out.notification_center_v1 = Center.merge(a.notification_center_v1, b.notification_center_v1);
     return normalize(out);
   }
   function write(storage, data) {

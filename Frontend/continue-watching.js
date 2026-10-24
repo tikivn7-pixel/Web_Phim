@@ -67,6 +67,7 @@ function removeFromContinueWatching(slugOrTitle) {
       delete current.data.episode_positions[key];
       PersonalData.write(localStorage, current.data);
       renderContinueWatching();
+      window.dispatchEvent(new Event('continue-watching-change'));
       return;
     }
     const raw = localStorage.getItem(CONTINUE_WATCHING_KEY);
@@ -90,6 +91,7 @@ function removeFromContinueWatching(slugOrTitle) {
   }
 
   renderContinueWatching();
+  window.dispatchEvent(new Event('continue-watching-change'));
 }
 
 async function renderContinueWatching() {
@@ -97,7 +99,8 @@ async function renderContinueWatching() {
   const slider = document.getElementById("continue-watching-slider");
   if (!section || !slider) return;
 
-  const list = getContinueWatchingList();
+  const entries = typeof MovieJournal !== "undefined" ? MovieJournal.read().entries : {};
+  const list = getContinueWatchingList().filter(item => !["completed", "paused", "planned"].includes(entries[item.slug]?.status));
   const request={};slider._posterRequest=request;
 
   if (list.length === 0) {
@@ -186,4 +189,5 @@ async function renderContinueWatching() {
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) renderContinueWatching();
 });
-window.addEventListener("storage", event => { if (event.key === CONTINUE_WATCHING_KEY) renderContinueWatching(); });
+window.addEventListener("storage", event => { if (!event.key || [CONTINUE_WATCHING_KEY,"movie_journal_v1"].includes(event.key)) renderContinueWatching(); });
+window.addEventListener("movie-journal-change", renderContinueWatching);

@@ -1,0 +1,29 @@
+services:
+  hub:
+    build:
+      context: ..
+      dockerfile: Backend/Dockerfile
+    # Keep the listener private when an HTTPS reverse proxy runs on the host.
+    ports:
+      - "127.0.0.1:8787:8787"
+    environment:
+      HUB_HOST: "0.0.0.0"
+      HUB_PORT: "8787"
+      HUB_DATA_DIR: "/var/lib/lauphim"
+      HUB_ALLOWED_ORIGINS: "${HUB_ALLOWED_ORIGINS:?Set the exact GitHub Pages origin, without a path or trailing slash}"
+      HUB_PUBLIC_ORIGIN: "${HUB_PUBLIC_ORIGIN:-}"
+      HUB_EPISODES_ENABLED: "${HUB_EPISODES_ENABLED:-true}"
+      HUB_EPISODE_INTERVAL_MS: "21600000"
+    volumes:
+      - hub-data:/var/lib/lauphim
+    restart: unless-stopped
+    stop_grace_period: 40s
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  hub-data:

@@ -7,9 +7,10 @@ test("audit identifies duplicates, missing group labels, season gaps and inconsi
  assert.ok(audit([base("same"),base("same")]).errors>0);
 });
 test("compact index preserves card fields, omits cast and full description, and resolves full detail shards",()=>{
- const movies=[base("one",{cast:"Long Cast",director:"Director",desc:"A".repeat(1000),remotePoster:"https://phimimg.com/remote.jpg"}),base("two")],result=artifacts(movies),rows=decode(result.index);
+ const movies=[base("one",{cast:"Long Cast",director:"Director",desc:"A".repeat(1000),remotePoster:"https://phimimg.com/remote.jpg",apiSlug:"actual-provider-slug"}),base("two")],result=artifacts(movies),rows=decode(result.index);
  assert.equal(rows.length,2);assert.equal(rows[0].country,movies[0].country);assert.equal(rows[0].poster,movies[0].poster);assert.equal(rows[0].cast,undefined);assert.equal(rows[0].desc.length,140);
  const shard=JSON.parse(result.files[rows[0].detailShard].text);assert.equal(shard.one.desc.length,1000);assert.equal(shard.one.cast,"Long Cast");assert.match(result.search.one,/long cast/);
+ assert.equal(rows[0].apiSlug,'actual-provider-slug');assert.equal(rows[1].apiSlug,undefined);
 });
 test("generated index is substantially smaller and every archived movie is present in its detail shard",()=>{
  const full=JSON.parse(fs.readFileSync(path.join(__dirname,"data/movies.json"),"utf8"));const index=JSON.parse(fs.readFileSync(path.join(__dirname,"data/catalog-index.json"),"utf8")),rows=decode(index),shards=new Map();
@@ -18,6 +19,7 @@ test("generated index is substantially smaller and every archived movie is prese
 });
 test("URL state roundtrips combined filters and page without confusing wishlist routes",()=>{
  const state={q:"Gong Yoo",country:"Hàn Quốc",genre:"Hài Hước",year:"2024",type:"series",sort:"title",page:3},url=State.url(state),read=State.read(url.split("?")[1]);for(const key of Object.keys(state))assert.equal(read[key],state[key]);assert.equal(read.catalog,true);assert.equal(State.read("?page=wishlist").catalog,false);assert.equal(State.read("?page=wishlist").view,"wishlist");assert.equal(State.safeReturn("https://example.com"),null);assert.equal(State.safeReturn("javascript:alert(1)"),null);assert.equal(State.safeReturn(url),url);
+ assert.equal(State.safeReturn('discover.html?country=Nh%E1%BA%ADt+B%E1%BA%A3n&page=2'),'discover.html?country=Nh%E1%BA%ADt+B%E1%BA%A3n&page=2');assert.equal(State.safeReturn('//example.com/discover.html'),null);
 });
 test("editor import preserves unknown fields and produces source compatible with maintenance tools",()=>{
  const movies=[base("one",{desc:"Quotes \" & </script>",subtitles:[{label:"Vietnamese",src:"https://example.com/captions.vtt"}]})];const result=prepare(movies),text=sourceText(result),ctx={};vm.runInNewContext(text+";this.movies=fallbackMoviesList",ctx);assert.equal(ctx.movies[0].subtitles[0].src,movies[0].subtitles[0].src);assert.match(text,/\n\s+title:/);assert.throws(()=>prepare([base("one"),base("one")]));assert.throws(()=>prepare([base("bad",{episodes:0})]));

@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "LauPhim — Câu chuyện của bạn",
+  "short_name": "LauPhim",
+  "description": "Kho phim, lịch xem và hành trình xem phim cá nhân.",
+  "lang": "vi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101312",
+  "theme_color": "#101312",
+  "icons": [
+    { "src": "Img/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "Img/app-icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Thư viện cá nhân", "url": "./library.html" },
+    { "name": "Lịch hẹn xem phim", "url": "./calendar.html" },
+    { "name": "Thông báo tập mới", "url": "./notifications.html" }
+  ]
+}

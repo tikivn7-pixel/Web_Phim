@@ -69,7 +69,7 @@ function createMovieCard(movie) {
   const poster=document.createElement('span');poster.className='movie-poster';
   const type=document.createElement('span');type.className='poster-type';
   const kind=getCatalogType(movie);type.textContent=({animation:/anime/i.test(movie.genres||'')?'Anime':'Hoạt hình',single:'Phim lẻ',series:'Phim bộ',tvshows:'TV Show'})[kind]||'Phim';
-  const episodes=document.createElement('span');episodes.className='poster-episodes';episodes.textContent=kind==='single'?'Phim lẻ':getTotalEpisodes(movie)+' tập';
+  const episodes=document.createElement('span');episodes.className='poster-episodes';episodes.textContent=kind==='single'?'Phim lẻ':Number.isInteger(movie.availableEpisodes)?movie.availableEpisodes+' / '+getTotalEpisodes(movie)+' tập':getTotalEpisodes(movie)+' tập';
   const play=document.createElement('span');play.className='poster-play';play.textContent='▶';play.setAttribute('aria-hidden','true');poster.append(img,type,episodes,play);
   const heading=document.createElement("h4");heading.textContent=movie.title;link.append(poster,heading);
   const heart=document.createElement("button");heart.type="button";heart.className="card-heart";heart.dataset.wishKey=movieKey(movie);

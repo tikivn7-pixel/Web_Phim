@@ -2,7 +2,7 @@
   const $=id=>document.getElementById(id),form=$("movie-form"),status=$("manage-status");
   const DRAFT="catalog_editor_draft_v1",fields=["title","slug","apiSlug","year","episodes","country","type","genres","poster","banner","group","partName","cast","director","desc"];
   for(const name of ["group","partName"]){const input=form.elements.namedItem(name);input.readOnly=true;input.title="Liên kết được quản lý bằng slug và nguồn tại Backend/movie-relations.manual.json";}
-  let original=[],movies=[],selected=null,page=1,report,issueLimit=100,dirty=false,storageFailed=false;
+  let original=[],movies=[],selected=null,page=1,report,issueLimit=100,dirty=false,storageFailed=false,pendingImport=null;
   const setDirty=value=>{dirty=value;$("movie-dirty").textContent=value?"Có thay đổi chưa lưu.":"";};
   const discardEdits=()=>!dirty||window.confirm("Thông tin phim đang sửa chưa lưu. Bỏ thay đổi trong các ô nhập?");
   const tell=(message,error=false)=>{status.textContent=message;status.classList.toggle("error",error);};
@@ -17,7 +17,7 @@
   }
   function preview(){const value=name=>form.elements.namedItem(name).value;$("preview-title").textContent=value("title")||"Phim mới";$("preview-meta").textContent=[value("year"),value("country"),value("genres")].filter(Boolean).join(" · ");$("preview-desc").textContent=value("desc");const img=$("poster-preview");img.onerror=()=>{img.onerror=null;img.src="Img/poster-placeholder.svg";};img.referrerPolicy="no-referrer";img.src=value("poster")||"Img/poster-placeholder.svg";}
   function updateRelationFields(){const relation=window.RelationsManager?.membership(selected),member=relation?.members.find(item=>item.slug===selected);if(window.RelationsManager?.isReady()){form.elements.namedItem("group").value=relation?.id||"";form.elements.namedItem("partName").value=member?.label||"";}}
-  function edit(movie,force=false){if(!force&&!discardEdits())return false;selected=movie?.slug||null;form.reset();fields.forEach(name=>{form.elements.namedItem(name).value=movie?.[name]??(name==="episodes"?1:name==="type"?"series":"");});form.elements.namedItem("slug").readOnly=Boolean(movie);form.elements.namedItem("slug").title=movie?"Slug là mã cố định của phim. Dùng slug nguồn phát để thay đổi nguồn xem.":"";setDirty(false);updateRelationFields();$("editor-heading").textContent=movie?"Sửa phim: "+movie.title:"Thêm phim";preview();drawList();return true;}
+  function edit(movie,force=false){if(!force&&!discardEdits())return false;pendingImport=null;selected=movie?.slug||null;form.reset();fields.forEach(name=>{form.elements.namedItem(name).value=movie?.[name]??(name==="episodes"?1:name==="type"?"series":"");});form.elements.namedItem("slug").readOnly=Boolean(movie);form.elements.namedItem("slug").title=movie?"Slug là mã cố định của phim. Dùng slug nguồn phát để thay đổi nguồn xem.":"";setDirty(false);updateRelationFields();$("editor-heading").textContent=movie?"Sửa phim: "+movie.title:"Thêm phim";preview();drawList();return true;}
   function drawAudit(){
     report=CatalogAudit.audit(movies);$("audit-summary").textContent=`${report.total} phim · ${report.errors} lỗi · ${report.warnings} mục cần kiểm tra`;
     const select=$("audit-code"),chosen=select.value;select.replaceChildren(new Option("Tất cả",""));[...new Set(report.issues.map(i=>i.code))].sort().forEach(code=>select.add(new Option(code,code)));select.value=chosen;
@@ -31,10 +31,18 @@
     drawAudit();edit(movies[0]);tell(`Đã tải ${movies.length} phim. Thay đổi được lưu vào bản nháp, chưa đăng lên website.`);
   }catch(error){tell(error.message,true);return;}
   window.RelationsManager.init({getMovies:()=>movies,onChange:updateRelationFields,beforeOpen:()=>{if(!discardEdits())return false;if(dirty)edit(movies.find(movie=>movie.slug===selected),true);return true;}});
+  window.ManagerProvider.init({getMovies:()=>movies,openExisting:movie=>{if(!edit(movie))return false;form.scrollIntoView({behavior:"smooth"});return true;},openDraft:movie=>{
+    if(!edit(null))return false;
+    pendingImport={sourceCountries:movie.sourceCountries.slice(),source:movie.source};
+    fields.forEach(name=>{form.elements.namedItem(name).value=movie[name]??"";});
+    setDirty(true);preview();form.scrollIntoView({behavior:"smooth"});
+    form.elements.namedItem(movie.country?"title":"country").focus();
+    tell("Thông tin từ nguồn đã điền vào biểu mẫu, chưa lưu. Kiểm tra và bấm Lưu bản nháp khi đã đúng.");return true;
+  }});
   form.addEventListener("input",()=>{setDirty(true);preview();});
   window.addEventListener("beforeunload",event=>{if(dirty||storageFailed){event.preventDefault();event.returnValue="";}});
   form.onsubmit=event=>{
-    event.preventDefault();const prior=movies.find(m=>m.slug===selected),movie={...(prior||{})};fields.forEach(name=>{const value=form.elements.namedItem(name).value.trim();if(value!=="")movie[name]=value;else delete movie[name];});
+    event.preventDefault();const prior=movies.find(m=>m.slug===selected),movie={...(prior||pendingImport||{})};fields.forEach(name=>{const value=form.elements.namedItem(name).value.trim();if(value!=="")movie[name]=value;else delete movie[name];});
     movie.episodes=Number(movie.episodes);if(movie.year)movie.year=Number(movie.year);movie.genres=MovieGenres.genres(movie.genres).join(", ");movie.banner=movie.banner||movie.poster;movie.updatedAt=new Date().toISOString();if(!prior)movie.addedAt=movie.updatedAt;
     const next=selected?movies.map(m=>m.slug===selected?movie:m):[movie,...movies];const checked=CatalogAudit.audit(next);
     if(checked.errors){tell(checked.issues.filter(i=>i.severity==="error").map(i=>i.message+" "+i.slugs.join(", ")).join("\n"),true);return;}

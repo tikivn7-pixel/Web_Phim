@@ -12,8 +12,9 @@ test('home topic counts and sample posters follow exact catalog filters', () => 
     assert.equal(topic.count, catalog.filter(movie => matches(movie, topic.filter)).length);
     assert.ok(matches(topic.movie, topic.filter));
     assert.ok(topic.movie.slug);
-    const params = new URL(catalogHref(topic.filter), 'https://local.test/').searchParams;
-    assert.equal(params.get('view'), 'catalog');
+    const destination = new URL(catalogHref(topic.filter), 'https://local.test/');
+    const params = destination.searchParams;
+    assert.equal(destination.pathname, '/discover.html');
     for (const [key, value] of Object.entries(topic.filter)) assert.equal(params.get(key), value);
   }
   assert.equal(matches({ country: 'Mỹ', sourceCountries: ['Mỹ', 'Nhật Bản'] }, { country: 'Nhật Bản' }), false);

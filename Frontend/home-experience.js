@@ -47,7 +47,7 @@
     return pool[Math.min(pool.length - 1, Math.max(0, Math.floor(random() * pool.length)))];
   }
   function catalogHref(filter) {
-    return 'index.html?' + new URLSearchParams({ view: 'catalog', ...filter });
+    return 'discover.html?' + new URLSearchParams(filter);
   }
   async function init() {
     if (!document.getElementById('home-discovery')) return;

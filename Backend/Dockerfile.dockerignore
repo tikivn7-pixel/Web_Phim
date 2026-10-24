@@ -1,0 +1,15 @@
+# Dockerfile-specific ignore file; build context is the repository root.
+**/.git
+**/node_modules
+**/.env
+**/.env.*
+**/.hub-data
+**/*.log
+**/*.tmp
+**/*.test.js
+**/*-smoke.cjs
+.codex
+.agents
+.vscode
+**/hub.json
+**/hub.lock

@@ -91,6 +91,7 @@ function toggleWishlist(movie) {
   if (!saveWishlist(wishlist)) return;
 
   updateWishlistUI();
+  window.dispatchEvent(new Event('wishlist-changed'));
 
   const wishlistPage = document.getElementById("page-wishlist");
   if (wishlistPage && wishlistPage.classList.contains("active")) {
@@ -101,6 +102,7 @@ function toggleWishlist(movie) {
 }
 
 async function toggleFavoriteBackend(movieId) {
+  if (window.HubClient) return; // Profile snapshots are synchronized by CloudSync.
   try {
     const token = localStorage.getItem("token");
     if (!token) return;

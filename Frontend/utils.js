@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(nav){
     const favorite=nav.querySelector('li[onclick*="wishlist"]');
     if(favorite){favorite.removeAttribute('onclick');favorite.removeAttribute('role');favorite.removeAttribute('tabindex');const link=document.createElement('a');link.href='library.html';link.textContent='Thư viện';favorite.replaceChildren(link);}
-    for(const [href,text,className] of [["index.html?view=catalog","Khám phá","nav-discover"],["collections.html","Loạt phim","nav-collections"]]){
+    for(const [href,text,className] of [["discover.html","Khám phá","nav-discover"],["collections.html","Loạt phim","nav-collections"],["picker.html","Chọn phim","nav-picker"]]){
       if(nav.querySelector('a[href="'+href+'"]'))continue;
       const item=document.createElement("li"),link=document.createElement("a");item.className=className;link.href=href;link.textContent=text;item.append(link);
       if(className==='nav-discover')nav.insertBefore(item,nav.children[1]||null);else nav.insertBefore(item,favorite||null);
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.search-btn').forEach(button=>{button.textContent='⌕';});
   if(!document.querySelector('footer')){
     const footer=document.createElement('footer');footer.className='site-footer';const text=document.createElement('p');text.textContent='LauPhim · Một bộ phim hay, một khoảng thời gian cho bạn.';
-    const links=document.createElement('div');links.className='footer-links';for(const [href,label] of [['index.html?view=catalog','Khám phá'],['collections.html','Loạt phim'],['library.html#backup','Sao lưu thư viện'],['manage.html','Quản lý phim']]){const link=document.createElement('a');link.href=href;link.textContent=label;links.append(link);}footer.append(text,links);document.body.append(footer);
+    const links=document.createElement('div');links.className='footer-links';for(const [href,label] of [['discover.html','Khám phá'],['updates.html','Tập mới'],['lists.html','Danh sách riêng'],['notes.html','Ghi chú & mốc cảnh'],['library.html#backup','Sao lưu thư viện'],['manage.html','Quản lý phim']]){const link=document.createElement('a');link.href=href;link.textContent=label;links.append(link);}footer.append(text,links);document.body.append(footer);
   }
   document.querySelectorAll('.home-footer a[href="#page-home"]').forEach(link=>{link.onclick=event=>{event.preventDefault();window.scrollTo({top:0,behavior:'smooth'});};});
   document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.isComposing&&!event.target.closest('input,textarea,select,[contenteditable="true"],[role="dialog"]')){const input=document.getElementById('search-input');if(input){event.preventDefault();input.focus();}}});

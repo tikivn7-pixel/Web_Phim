@@ -5,7 +5,7 @@ function artifacts(movies) {
   const bucketFor=slug=>crypto.createHash("sha256").update(slug).digest()[0]%32;
   movies.forEach(movie=>{buckets[bucketFor(movie.slug)][movie.slug]=movie;});
   const files=buckets.map((bucket,i)=>{const text=JSON.stringify(bucket);return {file:`data/details/${i.toString(16).padStart(2,"0")}-${crypto.createHash("sha256").update(text).digest("hex").slice(0,12)}.json`,text};});
-  const fields=["slug","title","year","episodes","country","genres","type","poster","banner","remotePoster","group","partName","relationOrder","relationVerified","addedAt","updatedAt","views"];
+  const fields=["slug","title","year","episodes","country","genres","type","poster","banner","remotePoster","group","partName","relationOrder","relationVerified","addedAt","updatedAt","views","apiSlug"];
   const index=movies.map(movie=>{
     const row={};fields.forEach(field=>{if(movie[field]!==undefined&&movie[field]!==null&&movie[field]!=="")row[field]=movie[field];});
     row.detailShard=bucketFor(movie.slug);
@@ -13,7 +13,7 @@ function artifacts(movies) {
     return row;
   });
   const search={};movies.forEach(movie=>{const value=normalize([movie.cast,movie.director].filter(Boolean).join(" | "));if(value.trim())search[movie.slug]=value;});
-  const columns=["slug","title","poster","year","episodes","genres","country","type","detailShard","banner","group","partName","updatedAt","addedAt","views","desc","remotePoster","relationOrder","relationVerified"];
+  const columns=["slug","title","poster","year","episodes","genres","country","type","detailShard","banner","group","partName","updatedAt","addedAt","views","desc","remotePoster","relationOrder","relationVerified","apiSlug"];
   const dictionaries={genres:[],country:[],type:[]},maps={genres:new Map(),country:new Map(),type:new Map()};
   const imageBase="https://phimimg.com/";
   const rows=index.map(movie=>{

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Xem Phim - LauPhim</title>
-    <link rel="stylesheet" href="style.css?v=20261023d" />
-    <link rel="stylesheet" href="cinema.css?v=20261023d" />
-    <link rel="stylesheet" href="player-controls.css?v=20261023d" />
+    
+    <link rel="stylesheet" href="style.css?v=20261024b" />
+    <link rel="stylesheet" href="cinema.css?v=20261024b" />
+    <link rel="stylesheet" href="player-controls.css?v=20261024b" />
+    <link rel="stylesheet" href="scene-bookmarks.css?v=20261024b" />
+    <link rel="stylesheet" href="episode-tracker.css?v=20261024b" />
+    <link rel="stylesheet" href="watch-progress.css?v=20261024b" />
+    <link rel="stylesheet" href="watch-experience.css?v=20261024b" />
+    <link rel="stylesheet" href="custom-subtitles.css?v=20261024c" />
+    <link rel="stylesheet" href="watch-room.css?v=20261024c" />
 
     <!-- Font Awesome -->
     <link
@@ -88,9 +95,24 @@
         font-weight: 600;
       }
     </style>
-  </head>
+  <link rel="stylesheet" href="app-navigation.css?v=20261024b"><link rel="stylesheet" href="hub.css?v=20261025a">
+<script src="profile-store.js?v=20261025a"></script>
+<script src="hub-client.js?v=20261025a"></script>
+<script src="hub-catalog.js?v=20261025a"></script>
+<script src="movie-journal.js?v=20261025a"></script>
+<script src="episode-tracker.js?v=20261025a"></script>
+<script src="personal-lists.js?v=20261025a"></script>
+<script src="movie-notes.js?v=20261025a"></script>
+<script src="release-planner.js?v=20261025a"></script>
+<script src="episode-updates.js?v=20261025a"></script>
+<script src="notification-center.js?v=20261025a"></script>
+<script src="personal-data.js?v=20261025a"></script>
+<script src="cloud-sync-model.js?v=20261025a"></script>
+<script src="cloud-sync.js?v=20261025a"></script>
+<script src="hub-common.js?v=20261025a"></script>
+<link rel="manifest" href="manifest.webmanifest"></head>
 
-  <body>
+  <body class="watch-page">
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
@@ -187,149 +209,92 @@
         <a href="index.html">Trang chủ</a>
       </div>
 
-      <div class="fd-layout">
-        <!-- ================= MAIN ================= -->
-        <div class="fd-main">
-          <!-- Player -->
-          <div class="wp-player-card">
-            <div class="video-wrapper" id="video-wrapper-box">
-              <video id="video-player" controls playsinline></video>
-            </div>
-
+      <div class="watch-stage-label"><span>Không gian xem phim</span><a href="library.html">Thư viện của tôi <span aria-hidden="true">↗</span></a></div>
+      <div class="fd-layout watch-layout" id="watch-layout">
+        <main class="fd-main" id="watch-main">
+          <section class="wp-player-card" aria-label="Trình phát phim">
+            <div class="watch-screen-heading"><span class="watch-screen-indicator" aria-hidden="true"></span><span id="watch-screen-episode">Đang mở phim</span><span id="watch-screen-source"></span></div>
+            <div class="video-wrapper" id="video-wrapper-box"><video id="video-player" controls playsinline></video></div>
             <div class="wp-player-toolbar">
-              <div class="wp-now-playing">
-                <h1 id="watch-movie-title">Đang tải tên phim...</h1>
-
-                <p id="current-ep-title">Tập 1</p>
-
-                <div class="wp-views" id="wp-views"></div>
-              </div>
-
+              <div class="wp-now-playing"><p class="watch-eyebrow">Bạn đang xem</p><h1 id="watch-movie-title">Đang tải tên phim...</h1><div class="watch-current-meta"><p id="current-ep-title">Tập 1</p><div class="wp-views" id="wp-views"></div></div></div>
               <div class="wp-nav-btns">
-                <button id="wp-prev-btn" class="wp-nav-btn">
-                  <i class="fa-solid fa-backward-step"></i>
-                  Tập trước
-                </button>
-
-                <label class="wp-autonext">
-                  <input type="checkbox" id="wp-autonext-toggle" />
-                  Tự động chuyển tập
-                </label>
-
-                <button id="wp-next-btn" class="wp-nav-btn">
-                  Tập sau
-                  <i class="fa-solid fa-forward-step"></i>
-                </button>
-
-                <!-- Chế độ rạp phim: tắt đèn / bật đèn (phím T) -->
-                <button
-                  id="wp-theater-btn"
-                  class="wp-nav-btn"
-                  type="button"
-                  title="Chế độ rạp phim (phím T)"
-                >
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <span>Tắt đèn</span>
-                </button>
+                <button id="wp-prev-btn" class="wp-nav-btn" type="button"><span aria-hidden="true">←</span> Tập trước</button>
+                <button id="wp-next-btn" class="wp-nav-btn" type="button">Tập sau <span aria-hidden="true">→</span></button>
+                <label class="wp-autonext"><input type="checkbox" id="wp-autonext-toggle" /> Tự động chuyển tập</label>
+              </div>
+              <div class="watch-view-actions">
+                <button id="wp-theater-btn" class="wp-nav-btn" type="button" title="Chế độ rạp phim (phím T)"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span>Tắt đèn</span></button>
+                <button id="watch-rail-toggle" class="wp-nav-btn" type="button" aria-controls="watch-side-panel" aria-expanded="true"><span aria-hidden="true">☷</span><span>Ẩn bảng tập</span></button>
+                <a id="watch-film-link" href="#wp-movie-info">Thông tin phim <span aria-hidden="true">↓</span></a>
               </div>
             </div>
-          </div>
-
-          <!-- Phần phim -->
-          <div id="parts-section" style="display: none; margin-bottom: 20px">
-            <h3
-              style="
-                border-bottom: 2px solid #e50914;
-                display: inline-block;
-                padding-bottom: 5px;
-                margin-bottom: 12px;
-              "
-            >
-              Phần Phim
-            </h3>
-
-            <div
-              id="detail-parts-grid"
-              style="display: flex; flex-wrap: wrap; gap: 10px"
-            ></div>
-          </div>
-
-          <!-- Danh sách tập -->
-          <div class="episodes-section">
-            <div class="wp-ep-header">
-              <h3 style="margin: 0">Danh Sách Tập</h3>
-
-              <div class="wp-ep-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                  type="text"
-                  id="wp-ep-search-input"
-                  placeholder="Tìm tập..."
-                />
-              </div>
-            </div>
-
-            <!-- CHỌN SERVER / NGUỒN PHIM (Vietsub, Thuyết Minh, Lồng Tiếng) -->
-            <div class="server-tabs" id="server-tabs-container">
-              <span style="color: #aaa; font-size: 13px"
-                >Đang tải nguồn phim...</span
-              >
-            </div>
-
-            <div class="wp-episode-scroll">
-              <div id="watch-episode-grid" class="episode-grid"></div>
-            </div>
-          </div>
-
-          <!-- Mini info phim -->
-          <div class="wp-movie-mini">
+          </section>
+          <section class="wp-movie-mini" id="wp-movie-info" aria-labelledby="wp-mini-title">
             <img id="wp-mini-poster" src="" alt="Poster" />
-
-            <div class="wp-mini-info">
-              <h4 id="wp-mini-title"></h4>
-
-              <p class="wp-mini-genres" id="wp-mini-genres"></p>
-
-              <p id="wp-mini-desc"></p>
-
-              <a id="wp-mini-detail-link" href="#" class="wp-mini-link">
-                Xem thông tin phim
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
+            <div class="wp-mini-info"><p class="watch-eyebrow">Về bộ phim</p><h2 id="wp-mini-title"></h2><p class="wp-mini-genres" id="wp-mini-genres"></p><p id="wp-mini-desc"></p><a id="wp-mini-detail-link" href="#" class="wp-mini-link">Xem thông tin phim <span aria-hidden="true">→</span></a></div>
+          </section>
+          <section id="parts-section" class="watch-parts-section" style="display:none"><p class="watch-eyebrow">Theo đúng loạt phim</p><h2>Khám phá các phần khác</h2><div id="detail-parts-grid" style="display:flex;flex-wrap:wrap;gap:10px"></div></section>
+        </main>
+        <aside class="watch-side-panel" id="watch-side-panel" aria-label="Tập phim và công cụ xem">
+          <div class="watch-panel-heading"><div><p class="watch-eyebrow">Tiếp tục câu chuyện</p><h2>Tập &amp; trải nghiệm</h2></div><span class="watch-panel-count" id="watch-panel-count" aria-label="Số tập từ nguồn">…</span></div>
+          <div class="watch-panel-tabs" role="tablist" aria-label="Bảng điều khiển xem phim">
+            <button type="button" role="tab" id="watch-tab-episodes" data-watch-panel="episodes" aria-controls="watch-panel-episodes" aria-selected="true" tabindex="0">Tập phim</button>
+            <button type="button" role="tab" id="watch-tab-sources" data-watch-panel="sources" aria-controls="watch-panel-sources" aria-selected="false" tabindex="-1">Nguồn phát<span class="watch-source-warning" aria-label="Nguồn đang gặp lỗi" hidden>!</span></button>
+            <button type="button" role="tab" id="watch-tab-tools" data-watch-panel="tools" aria-controls="watch-panel-tools" aria-selected="false" tabindex="-1">Tiện ích</button>
           </div>
-        </div>
-
-        <!-- ================= SIDEBAR ================= -->
-        <div class="fd-sidebar">
-          <h3>Có Thể Bạn Thích</h3>
-
-          <div id="fd-suggestions"></div>
-        </div>
+          <div class="watch-panel-body">
+            <section class="watch-panel episodes-section" id="watch-panel-episodes" role="tabpanel" aria-labelledby="watch-tab-episodes" tabindex="0">
+              <div class="wp-ep-header"><h3>Chọn tập để xem</h3><label class="wp-ep-search"><span aria-hidden="true">⌕</span><input type="search" id="wp-ep-search-input" placeholder="Tìm tập..." aria-label="Tìm tập phim" /></label></div>
+              <div class="wp-episode-tools"><span id="wp-episode-count" role="status"></span><button type="button" id="wp-current-jump">Tới tập đang mở</button></div>
+              <div class="wp-episode-scroll"><div id="watch-episode-grid" class="episode-grid"></div></div><button type="button" id="wp-episode-more" hidden>Tải thêm 60 tập</button>
+              <details class="watch-tracking-details"><summary>Tiến độ các tập của tôi</summary><div class="wp-tracker-wrap" id="wp-tracker-wrap" hidden><div id="wp-tracker-panel"></div><div class="wp-current-tracking"><button type="button" id="wp-current-watched" aria-pressed="false">Đánh dấu tập này đã xem</button><p id="wp-tracker-status" role="status">Chỉ tự đánh dấu khi video phát đến 95%. Nguồn nhúng cần đánh dấu thủ công.</p></div></div></details>
+              <p class="watch-panel-hint">Tập đang mở có viền đỏ. Dấu ✓ là tập bạn đã xem.</p>
+            </section>
+            <section class="watch-panel" id="watch-panel-sources" role="tabpanel" aria-labelledby="watch-tab-sources" tabindex="0" hidden>
+              <div class="watch-panel-intro"><h3>Chọn bản phát phù hợp</h3><p>Đổi server hoặc nguồn khi video không tải được. Vị trí xem được giữ khi có cùng tập.</p></div>
+              <div class="server-tabs" id="server-tabs-container"><span>Đang tải nguồn phim...</span></div>
+            </section>
+            <section class="watch-panel" id="watch-panel-tools" role="tabpanel" aria-labelledby="watch-tab-tools" tabindex="0" hidden>
+              <div class="watch-panel-intro"><h3>Xem theo cách của bạn</h3><p>Hẹn giờ ngủ, bỏ qua đoạn mở đầu và lưu lại những cảnh muốn xem lại.</p></div>
+              <div id="watch-utilities-slot"></div><div id="watch-subtitles-slot"></div><div id="watch-room-slot"></div><div id="watch-scenes-slot"></div>
+              <a class="watch-notes-link" href="notes.html">Mở sổ tay phim của tôi <span aria-hidden="true">↗</span></a>
+            </section>
+          </div>
+        </aside>
+        <section class="fd-sidebar watch-suggestions" aria-labelledby="watch-suggestions-heading"><div class="watch-suggestions-heading"><div><p class="watch-eyebrow">Sau bộ phim này</p><h2 id="watch-suggestions-heading">Có thể bạn thích</h2></div><a href="discover.html">Khám phá thêm <span aria-hidden="true">→</span></a></div><div id="fd-suggestions"></div></section>
       </div>
     </div>
 
-    <!-- Thứ tự nạp giống index.html: Episodes -> data -> api -> utils -> wishlist -> render -> search -> tmdb -> tv-nav -->
     <script src="./Episodes.js"></script>
-    <script src="./data.js?v=20261023d"></script>
-    <script src="./country-utils.js?v=20261023d"></script>
-    <script src="./genre-utils.js?v=20261023d"></script>
-    <script src="./catalog-state.js?v=20261023d"></script>
-    <script src="./catalog-format.js?v=20261023d"></script>
-    <script src="./catalog-navigation.js?v=20261023d"></script>
-    <script src="./site-tools.js?v=20261023d"></script>
-    <script src="./api.js?v=20261023d"></script>
-    <script src="./utils.js?v=20261023d"></script>
-    <script src="./personal-data.js?v=20261023d"></script>
-    <script src="./wishlist.js?v=20261023d"></script>
-    <script src="./render.js?v=20261023d"></script>
-    <script src="./search.js?v=20261023d"></script>
-    <script src="./tmdb.js?v=20261023d"></script>
-    <script src="./tv-nav.js?v=20261023d"></script>
-    <script src="./playback-tools.js?v=20261023d"></script>
-    <script src="./playback-options.js?v=20261023d"></script>
-    <script src="./player-controls.js?v=20261023d"></script>
+    <script src="./data.js?v=20261024b"></script>
+    <script src="./country-utils.js?v=20261024b"></script>
+    <script src="./genre-utils.js?v=20261024b"></script>
+    <script src="./catalog-state.js?v=20261024b"></script>
+    <script src="./catalog-format.js?v=20261024b"></script><script src="published-episodes.js?v=20261024b"></script>
+    <script src="./catalog-navigation.js?v=20261024b"></script>
+    <script src="./site-tools.js?v=20261024b"></script>
+    <script src="./api.js?v=20261024b"></script>
+    <script src="./utils.js?v=20261024b"></script>
+    
+    
+    
+    
+    <script src="./scene-bookmarks.js?v=20261024b"></script>
+    
+    <script src="./wishlist.js?v=20261024b"></script>
+    <script src="./render.js?v=20261024b"></script>
+    <script src="./search.js?v=20261024b"></script>
+    <script src="./tmdb.js?v=20261024b"></script>
+    <script src="./tv-nav.js?v=20261024b"></script>
+    <script src="./playback-tools.js?v=20261024b"></script>
+    <script src="./playback-options.js?v=20261024b"></script>
+    <script src="./player-controls.js?v=20261024b"></script>
+    <script src="./episode-tracker-ui.js?v=20261024b"></script>
+    <script src="./watch-progress.js?v=20261024b"></script>
+
+    <script src="./watch-experience.js?v=20261024b"></script>
+    <script src="./custom-subtitles.js?v=20261024c"></script>
+    <script src="./watch-room.js?v=20261024c"></script>
 
     <!-- ================= WATCH SCRIPT ================= -->
     <script>
@@ -493,7 +458,7 @@
 
           html +=
             `<span class="sep">/</span>` +
-            `<span class="current">Tập ${episodeNum}</span>`;
+            `<span class="current">${safe(currentEpisodeLabel)}</span>`;
 
           bc.innerHTML = html;
         }
@@ -542,13 +507,17 @@
           overlay.addEventListener("click", () => setTheater(false));
 
           document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && isOn()) {
+              e.preventDefault();
+              setTheater(false);
+              btn.focus();
+              return;
+            }
             if (PlayerControls.shouldIgnoreShortcut(e, document)) return;
 
             if (e.key === "t" || e.key === "T") {
               e.preventDefault();
               setTheater(!isOn());
-            } else if (e.key === "Escape" && isOn()) {
-              setTheater(false);
             }
           });
 
@@ -562,7 +531,7 @@
         // ĐIỀU HƯỚNG TẬP
         // =========================
 
-        function goToEpisode(ep) {
+        async function goToEpisode(ep) {
           if (ep < 1 || ep > totalEp) {
             return;
           }
@@ -584,15 +553,16 @@
           const targetName = getCurrentServerEpisodes()[ep - 1]?.name;
           if (targetName) navParams.set("target_episode", targetName);
           if (params.has("data_source")) navParams.set("data_source", params.get("data_source"));
+          if (params.has("room")) navParams.set("room", params.get("room"));
 
-          window.location.href = `watch.html?${navParams.toString()}`;
+          if (!window.WatchRoom || await WatchRoom.beforeNavigate(navParams)) window.location.href = `watch.html?${navParams.toString()}`;
         }
 
         // =========================
         // RENDER DANH SÁCH SERVER (Vietsub, Thuyết Minh, Lồng Tiếng)
         // =========================
 
-        function switchServer(index) {
+        async function switchServer(index) {
           if (index === currentServerIndex) return;
           const current = getCurrentServerEpisodes()[episodeNum - 1] || { name: String(episodeNum) };
           const matched = PlaybackTools.findEpisodeIndex(current, allServers[index]?.server_data || []);
@@ -603,7 +573,7 @@
             server: index, episode: matched + 1,
             time: Number(document.getElementById("video-player")?.currentTime) || 0,
           });
-          window.location.href = `watch.html?${navParams.toString()}`;
+          if (!window.WatchRoom || await WatchRoom.beforeNavigate(navParams)) window.location.href = `watch.html?${navParams.toString()}`;
         }
 
         const serverTabsContainer = document.getElementById(
@@ -661,53 +631,107 @@
         // =========================
 
         const grid = document.getElementById("watch-episode-grid");
+        const episodeSearch = document.getElementById("wp-ep-search-input");
+        const episodeCount = document.getElementById("wp-episode-count");
+        const episodeMore = document.getElementById("wp-episode-more");
+        const currentJump = document.getElementById("wp-current-jump");
+        const trackerWrap = document.getElementById("wp-tracker-wrap");
+        const currentWatched = document.getElementById("wp-current-watched");
+        const trackerStatus = document.getElementById("wp-tracker-status");
+        const knownCurrentEpisode = getCurrentServerEpisodes()[episodeNum - 1];
+        const canTrackEpisode = Boolean(movieObj && !sourceLoadError && !unavailableEpisode && knownCurrentEpisode?.name);
+        let episodeLimit = 60;
+        let episodeFilter = "all";
+        let episodeMarking = false;
+        let trackerCleanup = null;
 
-        function renderEpisodeGrid(filterText = "") {
-          grid.innerHTML = "";
-
-          const keyword = filterText.trim();
-
-          const serverEps = getCurrentServerEpisodes();
-
-          for (let i = 1; i <= totalEp; i++) {
-            const rawName =
-              serverEps[i - 1] && serverEps[i - 1].name
-                ? String(serverEps[i - 1].name)
-                : "";
-
-            const epLabel = !rawName
-              ? `Tập ${i}`
-              : /^\d+$/.test(rawName)
-                ? `Tập ${rawName}`
-                : rawName;
-
-            if (
-              keyword &&
-              !String(i).includes(keyword) &&
-              !epLabel.toLowerCase().includes(keyword.toLowerCase())
-            ) {
-              continue;
-            }
-
-            const btn = document.createElement("button");
-
-            btn.className = `ep-btn ${i === episodeNum ? "active" : ""}`;
-
-            btn.innerText = epLabel;
-            btn.type = "button";
-            if (i === episodeNum) btn.setAttribute("aria-current", "true");
-
-            btn.onclick = () => goToEpisode(i);
-
-            grid.appendChild(btn);
+        function getTrackerEntries() {
+          return getCurrentServerEpisodes().filter(item => item?.name).map(item => ({
+            name: String(item.name), episode: getCurrentServerEpisodes().indexOf(item) + 1,
+            source: activeEpisodeSource, server: currentServerIndex,
+          }));
+        }
+        function isEpisodeWatched(name) {
+          if (!canTrackEpisode) return false;
+          try { return EpisodeTracker.isWatched(realSlug, name); } catch (_) { return false; }
+        }
+        function refreshCurrentWatched() {
+          if (!canTrackEpisode) return;
+          const watched = isEpisodeWatched(currentEpisodeName);
+          currentWatched.setAttribute("aria-pressed", String(watched));
+          currentWatched.textContent = watched ? "✓ Đã xem tập này · Bỏ đánh dấu" : "Đánh dấu tập này đã xem";
+        }
+        function markEpisode(name) {
+          try {
+            const watched = !isEpisodeWatched(name);
+            EpisodeTracker.set(realSlug, name, watched);
+            trackerStatus.classList.remove("has-error");
+            trackerStatus.textContent = watched ? "Đã lưu tập đã xem trên thiết bị này." : "Đã bỏ đánh dấu. Mốc tiếp tục xem vẫn được giữ.";
+            trackerCleanup?.refresh();
+          } catch (_) {
+            trackerStatus.classList.add("has-error");
+            trackerStatus.textContent = "Không lưu được đánh dấu. Hãy kiểm tra dung lượng hoặc quyền lưu dữ liệu của trình duyệt.";
           }
         }
-
+        function renderEpisodeGrid() {
+          grid.innerHTML = "";
+          const serverEps = getCurrentServerEpisodes();
+          const entries = serverEps.length ? serverEps.map((entry, index) => ({ name: String(entry.name || index + 1), episode: index + 1 }))
+            : Array.from({ length: Math.max(0, Number(totalEp) || 0) }, (_, index) => ({ name: String(index + 1), episode: index + 1 }));
+          const matches = WatchProgress.filterEntries(entries, { query: episodeSearch.value, filter: episodeFilter, isWatched: isEpisodeWatched });
+          const visible = matches.slice(0, episodeLimit);
+          for (const entry of visible) {
+            const i = entry.episode;
+            const epLabel = /^\d+$/.test(entry.name) ? `Tập ${entry.name}` : entry.name;
+            const watched = isEpisodeWatched(entry.name);
+            const btn = document.createElement("button");
+            btn.className = `ep-btn ${i === episodeNum ? "active" : ""}${watched ? " watched" : ""}`;
+            btn.innerText = epLabel;
+            btn.type = "button";
+            btn.dataset.episode = String(i);
+            btn.dataset.episodeName = entry.name;
+            btn.title = (watched ? "Đã xem. " : "Chưa đánh dấu đã xem. ") + (episodeMarking ? "Bấm để đổi đánh dấu." : "Bấm để mở tập.");
+            btn.setAttribute("aria-label", epLabel + (watched ? ", đã xem" : "") + (episodeMarking ? ", đổi đánh dấu" : ""));
+            if (i === episodeNum) btn.setAttribute("aria-current", "true");
+            btn.onclick = () => episodeMarking && canTrackEpisode ? markEpisode(entry.name) : goToEpisode(i);
+            grid.appendChild(btn);
+          }
+          if (!matches.length) {
+            const empty = document.createElement("p"); empty.className = "wp-episode-empty";
+            empty.textContent = "Không có tập phù hợp. Hãy đổi bộ lọc hoặc từ khóa."; grid.appendChild(empty);
+          }
+          episodeCount.textContent = `Hiển thị ${visible.length}/${matches.length} tập${matches.length !== entries.length ? ` · ${entries.length} tập ở nguồn này` : ""}`;
+          episodeMore.hidden = visible.length >= matches.length;
+          episodeMore.textContent = `Tải thêm ${Math.min(60, matches.length - visible.length)} tập`;
+          currentJump.hidden = !entries.some(entry => entry.episode === episodeNum);
+          refreshCurrentWatched();
+        }
+        if (canTrackEpisode) {
+          trackerWrap.hidden = false;
+          trackerCleanup = EpisodeTrackerUI.mount(movieObj, document.getElementById("wp-tracker-panel"), {
+            getEntries: getTrackerEntries,
+            onPlay: entry => goToEpisode(entry.episode),
+            onChange: state => {
+              if (state.filter !== episodeFilter || state.marking !== episodeMarking) episodeLimit = 60;
+              episodeFilter = state.filter; episodeMarking = state.marking; renderEpisodeGrid();
+            },
+          });
+          currentWatched.onclick = () => markEpisode(currentEpisodeName);
+        }
         renderEpisodeGrid();
-
-        document
-          .getElementById("wp-ep-search-input")
-          .addEventListener("input", (e) => renderEpisodeGrid(e.target.value));
+        episodeSearch.addEventListener("input", () => { episodeLimit = 60; renderEpisodeGrid(); });
+        episodeMore.onclick = () => { episodeLimit += 60; renderEpisodeGrid(); };
+        currentJump.onclick = () => {
+          episodeSearch.value = "";
+          if (trackerCleanup?.setFilter) trackerCleanup.setFilter("all");
+          episodeFilter = "all";
+          const entries = WatchProgress.orderedEntries(getCurrentServerEpisodes().length ? getTrackerEntries()
+            : Array.from({ length: Math.max(0, Number(totalEp) || 0) }, (_, index) => ({ name: String(index + 1), episode: index + 1 })));
+          const index = entries.findIndex(entry => entry.episode === episodeNum);
+          episodeLimit = Math.max(60, Math.ceil((index + 1) / 60) * 60);
+          renderEpisodeGrid(); grid.querySelector('[aria-current="true"]')?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          grid.querySelector('[aria-current="true"]')?.focus({ preventScroll: true });
+        };
 
         // =========================
         // MINI INFO
@@ -724,7 +748,7 @@
         const miniDetail = document.getElementById("wp-mini-detail-link");
 
         if (movieObj) {
-          miniPoster.src = movieObj.poster || "";
+          SiteTools.setPoster(miniPoster, {}, movieObj);
 
           miniTitle.innerText = movieObj.title || "";
 
@@ -742,7 +766,7 @@
 
           miniDetail.href = `detail.html?${detailParams.toString()}`;
         } else {
-          miniPoster.src = realPoster || "";
+          SiteTools.setPoster(miniPoster, {}, { poster: realPoster });
 
           miniTitle.innerText = realTitle;
 
@@ -827,23 +851,29 @@
         const retryPlayback = document.createElement("button");
         retryPlayback.type = "button";
         retryPlayback.textContent = "Tải lại nguồn";
-        retryPlayback.onclick = () => {
+        retryPlayback.onclick = async () => {
           const nav = PlaybackTools.resumeParams(params, { source:sourceSelect.value, server:currentServerIndex,
             episode:episodeNum, time:Number(video.currentTime) || 0, episodeName:currentEpisodeName });
-          window.location.href = "watch.html?" + nav;
+          if (!window.WatchRoom || await WatchRoom.beforeNavigate(nav)) window.location.href = "watch.html?" + nav;
         };
         recovery.appendChild(retryPlayback);
         serverTabsContainer?.insertAdjacentElement("beforebegin", recovery);
-        sourceSelect.onchange = () => {
+        sourceSelect.onchange = async () => {
           const currentTime = Number(video.currentTime) || Number(params.get("resume")) || 0;
           // The selected episode must be matched by name on the next source, never silently clamped to another episode.
           const current = getCurrentServerEpisodes()[episodeNum - 1];
           const nav = PlaybackTools.resumeParams(params, { source: sourceSelect.value, episode: episodeNum, time: currentTime,
             episodeName: current?.name || params.get("target_episode") || String(episodeNum) });
-          window.location.href = "watch.html?" + nav;
+          if (!window.WatchRoom || await WatchRoom.beforeNavigate(nav)) window.location.href = "watch.html?" + nav;
+          else sourceSelect.value = params.get("data_source") || "auto";
         };
         let lastPlaybackError="";
+        let sceneBookmarks = null;
+        let customSubtitles = null, watchRoom = null;
         function mountPlaybackOptions(hls=null,embedded=false){
+          if (!sceneBookmarks) sceneBookmarks = SceneBookmarks.attach({video,slug:realSlug,title:realTitle,episodeName:currentEpisodeName,episode:episodeNum,source:activeEpisodeSource,server:currentServerIndex,embedded,available:!unavailableEpisode && !!(videoSrc || embedUrl),container:document.getElementById("watch-scenes-slot") || recovery.parentElement});
+          if (!customSubtitles) customSubtitles = CustomSubtitles.attach(video, document.getElementById("watch-subtitles-slot"), { embedded });
+          if (!watchRoom) watchRoom = WatchRoom.attach({video,container:document.getElementById("watch-room-slot"),embedded,getContext:()=>({slug:realSlug,episodeName:currentEpisodeName,episode:episodeNum,source:activeEpisodeSource,server:currentServerIndex})});
           return PlaybackOptions.attach({video:embedded?null:video,hls,panel:recovery,embedded,getContext:()=>({slug:realSlug,title:realTitle,episode:episodeNum,episodeName:currentEpisodeName,source:sourceSelect.value,server:currentServerIndex,error:lastPlaybackError})});
         }
         function showPlaybackError(message) {
@@ -1312,14 +1342,15 @@
 
             hasRestoredPosition = true;
 
-            if (!saved && !Number(params.get("resume"))) {
+            if (!saved && !params.has("resume")) {
               return;
             }
 
-            const savedTime = Number(params.get("resume")) || Number(saved?.currentTime) || 0;
+            const explicitResume = params.has("resume");
+            const savedTime = explicitResume ? Number(params.get("resume")) : Number(saved?.currentTime) || 0;
 
-            if (savedTime > 5 && savedTime < video.duration - 10) {
-              video.currentTime = Math.min(savedTime, video.duration - 10);
+            if (Number.isFinite(savedTime) && savedTime >= 0 && savedTime < video.duration && (explicitResume || (savedTime > 5 && savedTime < video.duration - 10))) {
+              video.currentTime = explicitResume ? savedTime : Math.min(savedTime, video.duration - 10);
 
               console.log(
                 `▶ Khôi phục Tập ${episodeNum} tại ${Math.floor(
@@ -1423,8 +1454,10 @@
           }
         }
 
+        const episodeObserver = WatchProgress.attach({ video, slug: realSlug, name: currentEpisodeName, available: !unavailableEpisode && Boolean(getCurrentServerEpisodes()[episodeNum - 1]), onChange: () => trackerCleanup?.refresh(), onError: error => { document.getElementById('wp-tracker-panel').title = error.message; } });
+        window.addEventListener('pagehide', () => episodeObserver.destroy());
         const playerControls = PlayerControls.attach({
-          video, player, panel: document.querySelector(".wp-player-card"),
+          video, player, panel: document.getElementById("watch-utilities-slot") || document.querySelector(".wp-player-card"),
           introKey: JSON.stringify([realSlug, PlaybackTools.episodeKey(currentEpisodeName), activeEpisodeSource, allServers[currentServerIndex]?.server_name || currentServerIndex]),
           onSleep: () => {
             closeNextPopup(); autoNextToggle.checked = false;
@@ -1682,5 +1715,5 @@
         wrap.append(message, retry);
       });
     </script>
-  </body>
+  <script src="app-navigation.js?v=20261024b"></script><script src="pwa.js?v=20261025a"></script></body>
 </html>

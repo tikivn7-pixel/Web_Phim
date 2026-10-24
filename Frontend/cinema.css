@@ -103,6 +103,13 @@ a { text-underline-offset:4px; }
 .library-intro .privacy-note { max-width:640px; }.library-toolbar{border-color:var(--cinema-border);}
 .view-tabs button[aria-pressed=true] { background:#f43f501a;color:#ff9fa9; }
 .backup-panel { border-color:var(--cinema-border);background:var(--cinema-panel);border-radius:18px; }
+.personal-subtitle { color:var(--cinema-muted);font-size:12px;margin:-10px 0 18px; }
+.personal-empty { display:flex;justify-content:space-between;gap:25px;align-items:center;padding:28px 30px;border:1px solid #f43f5022;border-radius:16px;background:radial-gradient(ellipse at left top,#f43f5014,transparent 70%),var(--cinema-panel); }
+.personal-empty h3 { font-size:19px;margin:7px 0;letter-spacing:-.4px; }.personal-empty p{font-size:12px;line-height:1.8;color:var(--cinema-muted);max-width:610px;}
+.personal-empty-symbol { font-size:26px;color:#ff8c99; }.personal-empty>a{color:#fff;background:var(--cinema-red);padding:12px 16px;border-radius:8px;text-decoration:none;font-size:12px;white-space:nowrap;}
+.personal-reason { color:#d3a6b2;font-size:10px;line-height:1.6;margin:8px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; }
+.home-picker-link { display:block;margin-top:14px;color:#efb5bd;font-size:11px;text-underline-offset:4px; }
+@media(max-width:650px){.personal-empty{padding:22px;flex-direction:column;align-items:start;gap:17px;}.personal-empty h3{font-size:18px;}.personal-empty p{font-size:11px;}.personal-empty>a{min-height:44px;}.personal-subtitle{font-size:11px;line-height:1.7;}}
 @media(min-width:1500px) { .movie-card { width:196px;min-width:196px; } }
 @media(max-width:1250px) { .navbar { gap:18px;padding-left:24px;padding-right:24px; }.navbar .nav-links{gap:18px;}.navbar .search-box{min-width:150px;}.navbar .search-box input,.navbar .search-box input:focus{width:145px;} }
 @media(max-width:1150px) { .navbar .nav-links { background:#111118;padding-top:78px;gap:16px; }.navbar .nav-links li{font-size:14px;}.navbar .nav-links a[aria-current=page]::after{display:none;} }

@@ -164,7 +164,9 @@
     try {
       const [registry, data] = await Promise.all([getJson('data/movie-relations.json'), getJson('data/catalog-index.json')]);
       if (!Array.isArray(registry.groups)) throw Error('Dữ liệu bộ sưu tập chưa sẵn sàng.');
-      groups = model.build(registry, window.CatalogFormat.decode(data)); byId = new Map(groups.map(group => [group.id, group]));
+      const decoded = window.CatalogFormat.decode(data);
+      const movies = typeof PublishedEpisodes!=="undefined" ? PublishedEpisodes.overlay(decoded,await PublishedEpisodes.load()) : decoded;
+      groups = model.build(registry, movies); byId = new Map(groups.map(group => [group.id, group]));
       if (!groups.length) throw Error('Chưa có bộ sưu tập phim để hiển thị.');
       $('collections-total').textContent = groups.length.toLocaleString('vi');
       $('collections-movie-total').textContent = new Set(groups.flatMap(group => group.members.map(member => member.slug))).size.toLocaleString('vi');

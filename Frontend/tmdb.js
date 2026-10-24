@@ -42,7 +42,7 @@ async function loadMovieDetailsFromTMDB(movie) {
     setText("detail-director", movie.director);
     setText("detail-cast", movie.cast);
     setText("detail-genres", movie.genres);
-    setText("fd-status", movie.status);
+    setText("fd-status", movie.episodeCurrent || movie.status);
   } catch (error) {
     console.error("Không thể hiển thị thông tin chi tiết phim:", error);
   }

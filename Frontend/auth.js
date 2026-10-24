@@ -124,6 +124,7 @@
   }
 
   function openAuthModal(tab = "login") {
+    if(window.HubClient){window.location.href='account.html';return;}
     switchTab(tab);
     overlay.classList.add("open");
     const first = overlay.querySelector(".auth-form.active input");
@@ -140,6 +141,7 @@
 
   function renderAuthArea() {
     authArea.innerHTML = "";
+    if(window.HubClient){const account=document.createElement('a');account.className='auth-btn';account.href='account.html';account.textContent=window.HubClient.session()?.user.username||'Tài khoản & hồ sơ';account.style.textDecoration='none';authArea.append(account);return;}
     if(!apiBase()){
       const backup=document.createElement("a");backup.className="auth-btn";backup.href="library.html#backup";backup.textContent="Sao lưu dữ liệu";backup.style.textDecoration="none";authArea.append(backup);return;
     }

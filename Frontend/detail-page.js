@@ -1,5 +1,10 @@
 // Local information paints first; a streaming provider never gates this page.
 let fdCurrentMovie = null;
+let fdJournalCleanup = null;
+let fdListCleanup = null;
+let fdNoteCleanup = null;
+let fdTrackerCleanup = null;
+let fdTrackerState = { filter: 'all', marking: false };
 let fdSavedPosition = null;
 let fdEpisodeEntries = [];
 let fdEpisodeLimit = 60;
@@ -91,14 +96,32 @@ function fdEpisodeLabel(name, index) {
 function fdPaintEpisodeButtons() {
   const grid = document.getElementById('detail-episode-grid'); grid.replaceChildren();
   const query = SiteTools.normalize(document.getElementById('fd-episode-search').value);
-  const filtered = fdEpisodeEntries.filter((entry, index) => !query || SiteTools.normalize(fdEpisodeLabel(entry.name, index + 1)).includes(query));
+  const tracked = EpisodeTracker.read().movies[slug]?.episodes || {};
+  const watched = entry => tracked[EpisodeTracker.canonical(entry.name)]?.watched === true;
+  const filtered = fdEpisodeEntries.filter((entry, index) => (!query || SiteTools.normalize(fdEpisodeLabel(entry.name, index + 1)).includes(query)) && (fdTrackerState.filter === 'all' || watched(entry) === (fdTrackerState.filter === 'watched')));
   filtered.slice(0, fdEpisodeLimit).forEach(entry => {
     const button = document.createElement('button'); button.className = 'ep-btn';
-    button.textContent = fdEpisodeLabel(entry.name, entry.episode);
+    const label = fdEpisodeLabel(entry.name, entry.episode), seen = watched(entry);
+    button.textContent = (seen ? '✓ ' : '') + label;
+    button.dataset.episodeName = entry.name;
+    button.dataset.watched = String(seen);
+    button.classList.toggle('fd-episode-watched', seen);
+    button.classList.toggle('fd-episode-marking', fdTrackerState.marking);
+    button.setAttribute('aria-label', label + (seen ? ' · Đã xem' : ' · Chưa xem') + (fdTrackerState.marking ? ' · Bấm để ' + (seen ? 'bỏ đánh dấu' : 'đánh dấu đã xem') : ' · Mở tập phim'));
+    if (fdTrackerState.marking) button.setAttribute('aria-pressed', String(seen));
     const saved = fdSavedPosition;
     const isSaved = saved && (saved.episodeName ? saved.episodeName === entry.name : saved.episode === entry.episode);
-    if (isSaved) { button.classList.add('fd-episode-saved'); button.setAttribute('aria-label', button.textContent + ' · Tập đang xem'); }
-    button.onclick = () => { window.location.href = 'watch.html?' + fdWatchParams(entry.episode, entry); };
+    if (isSaved) { button.classList.add('fd-episode-saved'); button.setAttribute('aria-label', button.getAttribute('aria-label') + ' · Tập đang xem'); }
+    button.onclick = () => {
+      if (!fdTrackerState.marking) { window.location.href = 'watch.html?' + fdWatchParams(entry.episode, entry); return; }
+      const feedback = document.getElementById('fd-episode-feedback');
+      try {
+        EpisodeTracker.set(slug, entry.name, !seen);
+        feedback.textContent = (seen ? 'Đã bỏ đánh dấu ' : 'Đã đánh dấu đã xem: ') + label + '.';
+        const replacement = [...grid.querySelectorAll('button')].find(node => node.dataset.episodeName === entry.name);
+        (replacement || document.querySelector('#fd-episode-tracker select'))?.focus({ preventScroll: true });
+      } catch (error) { feedback.textContent = error.message; }
+    };
     grid.append(button);
   });
   const more = document.getElementById('fd-more-episodes'); more.hidden = filtered.length <= fdEpisodeLimit;
@@ -117,6 +140,7 @@ function fdRenderEpisodeGrid(episodeCount, movie = fdCurrentMovie) {
     fdEpisodeEntries = Array.from({ length: Math.min(2000, Math.max(1, Number(episodeCount) || 1)) }, (_, index) => ({ episode: index + 1, name: String(index + 1) }));
     document.getElementById('fd-episode-note').textContent = 'Danh sách theo kho phim. Tình trạng tập và nguồn phát sẽ được kiểm tra khi mở phim.';
   }
+  if (fdTrackerCleanup) fdTrackerCleanup.refresh();
   fdPaintEpisodeButtons();
 }
 function fdRenderMetadata(movie) {
@@ -213,6 +237,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   window.addEventListener('storage', event => { if (event.key === 'continue_watching_list' || event.key === null) { fdRenderResume(); fdPaintEpisodeButtons(); } if (event.key === 'my_wishlist' || event.key === null) fdUpdateFollowUI(); });
   function paint(movie) {
     fdCurrentMovie = movie; title = movie.title; poster = SiteTools.imageUrl(movie.poster); desc = movie.desc || '';
+    if (!fdJournalCleanup) fdJournalCleanup = JournalControls.mount(movie, document.getElementById('fd-journal'));
+    if (!fdListCleanup) fdListCleanup = ListControls.mount(movie, document.getElementById('fd-list-control'));
+    if (!fdNoteCleanup) fdNoteCleanup = NoteControls.mount(movie, document.getElementById('fd-note-control'));
     episodes = Math.min(2000, Math.max(1, parseInt(movie.episodes, 10) || 1));
     document.title = title + ' — LauPhim'; document.getElementById('detail-title').textContent = title;
     const image = document.getElementById('detail-poster-img'); image.alt = 'Poster ' + title;
@@ -227,6 +254,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('detail-country').textContent = getMovieCountry(movie) || 'Đang cập nhật';
     loadMovieDetailsFromTMDB(movie);
     fdRenderMetadata(movie); fdRenderAdditional(movie); fdRenderResume(); fdRenderEpisodeGrid(episodes, movie); fdRenderBreadcrumb(movie.genres); fdUpdateFollowUI();
+    if (!fdTrackerCleanup) fdTrackerCleanup = EpisodeTrackerUI.mount(movie, document.getElementById('fd-episode-tracker'), {
+      getEntries: () => fdEpisodeEntries,
+      onChange: state => { if (state.filter !== fdTrackerState.filter) fdEpisodeLimit = 60; fdTrackerState = state; fdPaintEpisodeButtons(); },
+      onPlay: entry => { window.location.href = 'watch.html?' + fdWatchParams(entry.episode, entry); }
+    });
     watchButtons.forEach(button => { button.disabled = false; });
     document.getElementById('fd-follow-btn').disabled = false;
   }
