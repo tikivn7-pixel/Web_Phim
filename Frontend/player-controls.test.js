@@ -123,6 +123,28 @@ test("page cache restore rechecks elapsed sleep without starting duplicate timer
   ui.win.dispatchEvent(event); assert.equal(ui.slept(), 1); assert.equal(ui.intervals.size, 1);
   ui.win.dispatchEvent(event); assert.equal(ui.intervals.size, 1); ui.control.destroy(); assert.equal(ui.intervals.size, 0);
 });
+test('opening markers preserve fractional timestamps and skipping remains available until the exact end',()=>{
+  const ui=fixture({introKey:'exact'}),buttons=ui.all(ui.panel).filter(el=>el.tagName==='BUTTON'),skip=ui.all(ui.host).find(el=>el.className==='player-skip-intro');
+  ui.video.currentTime=12.375;buttons[0].dispatchEvent(new Event('click'));ui.video.currentTime=83.625;buttons[1].dispatchEvent(new Event('click'));
+  const stored=JSON.parse(ui.storage.getItem(Controls.INTRO_KEY));assert.equal(stored.exact.start,12.375);assert.equal(stored.exact.end,83.625);
+  ui.video.currentTime=83.5;ui.video.dispatchEvent(new Event('timeupdate'));assert.equal(skip.hidden,false);skip.dispatchEvent(new Event('click'));assert.equal(ui.video.currentTime,83.625);assert.equal(skip.hidden,true);
+  ui.video.currentTime=5;skip.dispatchEvent(new Event('click'));assert.equal(ui.video.currentTime,5,'a stale click outside the opening must not seek');ui.control.destroy();
+});
+test('opening timestamp parser accepts milliseconds and rejects ambiguous or invalid times',()=>{
+  for(const [input,expected]of [['1:32.500',92.5],['0:00',0],['1:02:03.125',3723.125],['92.750',92.75]])assert.equal(Controls.parseIntroTime(input),expected);
+  for(const input of ['','-2','1:60','1:60:02','abc','Infinity','1e3','1:02.1234'])assert.ok(Number.isNaN(Controls.parseIntroTime(input)),input);
+  assert.equal(Controls.introTimeLabel(92.5),'1:32.500');
+});
+test('manually entered opening is validated before replacing the previous exact range',()=>{
+  const ui=fixture({introKey:'manual'}),inputs=ui.all(ui.panel).filter(el=>el.tagName==='INPUT'),save=ui.all(ui.panel).find(el=>el.textContent==='Lưu mốc opening'&&el.tagName==='BUTTON');
+  inputs[0].value='0:10.250';inputs[1].value='1:30.750';save.dispatchEvent(new Event('click'));const before=ui.storage.getItem(Controls.INTRO_KEY);assert.equal(JSON.parse(before).manual.end,90.75);
+  inputs[1].value='20:00';save.dispatchEvent(new Event('click'));assert.equal(ui.storage.getItem(Controls.INTRO_KEY),before);ui.video.duration=NaN;save.dispatchEvent(new Event('click'));assert.equal(ui.storage.getItem(Controls.INTRO_KEY),before);ui.control.destroy();
+});
+test('saving one opening keeps other tabs ranges and preserves corrupted storage byte for byte',()=>{
+  const storage=memory(),ui=fixture({storage,introKey:'first'}),buttons=ui.all(ui.panel).filter(el=>el.tagName==='BUTTON');
+  storage.setItem(Controls.INTRO_KEY,JSON.stringify({other:{start:4,end:14,updatedAt:1}}));ui.video.currentTime=10;buttons[0].dispatchEvent(new Event('click'));ui.video.currentTime=20;buttons[1].dispatchEvent(new Event('click'));assert.equal(JSON.parse(storage.getItem(Controls.INTRO_KEY)).other.end,14);
+  storage.setItem(Controls.INTRO_KEY,'broken-old-data');ui.video.currentTime=30;buttons[0].dispatchEvent(new Event('click'));ui.video.currentTime=40;buttons[1].dispatchEvent(new Event('click'));assert.equal(storage.getItem(Controls.INTRO_KEY),'broken-old-data');assert.ok(ui.all(ui.panel).find(el=>el.className==='player-utility-status').textContent.includes('Chưa lưu được'));ui.control.destroy();
+});
 test("logical episode navigation preserves raw indices while correcting reordered numeric servers", () => {
   const episodes = [{ name: "Tập 02" }, { name: "Tập 1" }, { name: "3" }];
   assert.deepEqual(Playback.logicalNeighbors(episodes, 0), { previous: 1, next: 2, isFirst: false, isLast: false });

@@ -5,9 +5,15 @@ Frontend đọc `Frontend/data/catalog-index.json` từ hosting tĩnh và chỉ 
 chi tiết trong `Frontend/data/details/` khi mở phim. `data/movies.json` là
 bản đầy đủ dành cho trang quản lý và xuất/nhập dữ liệu, không tải ở trang chủ.
 Không cần MySQL, Railway hoặc chạy npm start để duyệt/tìm/xem phim.
-Toàn bộ 3.697 phim, năm và thông tin diễn viên được giữ lại. Quan hệ phần phim
+Toàn bộ 3.700 bản ghi phim, năm và thông tin diễn viên được giữ lại. Quan hệ phần phim
 chỉ xuất khi có mã bộ phim hoặc nguồn đối chiếu, không suy ra từ tên giống nhau.
 Xem [RELATIONS.md](RELATIONS.md) để thêm liên kết từng slug và cập nhật metadata.
+Các bản đăng trùng đã đối chiếu được đánh dấu `duplicateOf` và `duplicateSources`
+trong nguồn. Trang duyệt hiện một thẻ cho mỗi phim đã xác nhận; dữ liệu đầy đủ
+vẫn giữ bản phụ và `catalog-index.json.aliases` giữ đường dẫn chi tiết để các URL
+cũ tiếp tục mở được. Hiện có 3.644 thẻ duyệt và 56 bản phụ đã xác nhận. Không tự
+gộp phim chỉ vì trùng tên hoặc poster; khi thêm đánh dấu phải có nguồn HTTPS,
+mã phim chính phải tồn tại và không được tự trỏ/nối vòng.
 Frontend/data.js chỉ chứa cấu hình và hàm hỗ trợ.
 
 Đưa toàn bộ thư mục Frontend lên hosting tĩnh, bao gồm cả thư mục data và details bên trong.
@@ -160,3 +166,7 @@ Chrome giả lập 1,6 Mbps/150 ms cho danh sách sẵn sàng khoảng 6,5 giây
 phép thử local, loại trừ ảnh ngoài web và nguồn phim, không phải cam kết tốc độ hosting.
 File chi tiết có tên chứa hash để cache an toàn. Build giữ phần cũ để tránh hỏng
 phiên đang dùng index cũ; khi đăng hosting hãy đăng file chi tiết trước, index sau.
+
+## Duplicate review
+
+Run `npm run catalog:duplicates` for an offline whole-catalog report, or append `-- --refresh` to refresh source evidence. See `DUPLICATES.md`, `duplicate-decisions.json` and `duplicate-evidence.json`. Matching titles, artwork and cached IDs only nominate candidates; reviewed explicit `duplicateOf` mappings control visible cards. Alternate names remain searchable; full records and old slugs remain available.

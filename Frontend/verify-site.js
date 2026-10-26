@@ -25,9 +25,12 @@ function verifySite(){
   const movies=JSON.parse(fs.readFileSync(path.join(root,'data/movies.json'),'utf8'));
   const index=JSON.parse(fs.readFileSync(path.join(root,'data/catalog-index.json'),'utf8'));
   const cards=require('./catalog-format').decode(index),shards=new Map();
-  assert.equal(cards.length,movies.length,'Index/archive movie count mismatch');
+  const aliases=Object.values(index.aliases||{}),allCards=[...cards,...aliases],visible=new Set(cards.map(movie=>movie.slug));
+  assert.equal(allCards.length,movies.length,'Index/archive movie count mismatch');
+  assert.equal(new Set(allCards.map(movie=>movie.slug)).size,movies.length,'Repeated catalog identity');
+  for(const card of aliases){assert.equal(index.aliases[card.slug],card,'Alias key mismatch');assert.ok(visible.has(card.duplicateOf),'Alias must reference a visible film');}
   const archived=new Map(movies.map(movie=>[movie.slug,movie]));
-  for(const card of cards){
+  for(const card of allCards){
     const file=index.details[card.detailShard];assert.ok(/^data\/details\/[a-f0-9-]+\.json$/.test(file),'Invalid detail path');
     if(!shards.has(file))shards.set(file,JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
     assert.deepEqual(shards.get(file)[card.slug],archived.get(card.slug),'Stale detail: '+card.slug);

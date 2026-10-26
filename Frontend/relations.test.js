@@ -23,10 +23,13 @@ test('published Battle Spirits is isolated and every published group has evidenc
   const registry=require('../Backend/movie-relations.json'),published=require('./data/movies.json');
   const index=indexRelations(registry,new Set(published.map(m=>m.slug)));
   assert.equal(published.find(m=>m.slug==='battle-spirits-re-tuyet-gioi-thien-khong').group,undefined);
-  assert.equal(published.length,3697);
+  assert.equal(published.length,3700);
   for(const movie of published.filter(m=>m.group)){assert.equal(index.get(movie.slug).group.id,movie.group);assert.equal(movie.relationVerified,true);}
   const bySlug=new Map(published.map(m=>[m.slug,m]));
   assert.equal(bySlug.get('sat-thu-nhan-tao').group,bySlug.get('sat-thu-nhan-tao-2-mau-vat-con-lai').group);
   assert.notEqual(bySlug.get('sat-thu-nhan-tao').group,bySlug.get('phai-long-nang-phu-thuy').group);
   assert.notEqual(bySlug.get('nguoi-nhen-2002').group,bySlug.get('nguoi-nhen-tro-ve-nha').group);
+  const taken=registry.groups.find(group=>group.id==='taken-films');
+  assert.deepEqual(taken.members.map(member=>member.slug),['cuong-doat','cuong-doat-2','cuong-doat-3']);
+  for(const member of taken.members){const film=bySlug.get(member.slug);assert.equal(film.group,'taken-films');assert.equal(film.type,'single');assert.equal(film.episodes,1);assert.equal(film.relationVerified,true);assert.equal(film.poster,'Img/posters/'+member.slug+'.jpg');}
 });

@@ -22,6 +22,7 @@ function buildCatalog() {
   const write=(name,value)=>{const target=path.join(__dirname,name);fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target+".tmp",value);fs.renameSync(target+".tmp",target);};
   generated.files.forEach(item=>write(item.file,item.text));
   write("data/catalog-search.json",JSON.stringify(generated.search));
+  write("data/catalog-cast.json",JSON.stringify(generated.cast));
   write("data/catalog-index.json",JSON.stringify(generated.index));
   const audited=audit(result.movies);
   const sizes={archive:Buffer.byteLength(output),index:Buffer.byteLength(JSON.stringify(generated.index)),search:Buffer.byteLength(JSON.stringify(generated.search)),largestDetailShard:Math.max(...generated.files.map(f=>Buffer.byteLength(f.text)))};

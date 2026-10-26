@@ -9,6 +9,7 @@
 .player-utilities details p{line-height:1.7;margin:10px 0;color:#aaa}
 .player-intro-actions{display:flex;flex-wrap:wrap;gap:8px}
 .player-intro-actions button{font-size:12px}
+.player-intro-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.player-intro-inputs label{font-size:11px;color:#c4c5d1;min-width:0}.player-intro-inputs input{display:block;box-sizing:border-box;width:100%;min-width:0;margin-top:6px;padding:10px;border:1px solid #47515b;border-radius:6px;background:#0d1019;color:#fff;font:13px system-ui;font-variant-numeric:tabular-nums}.player-intro-actions button:disabled{opacity:.5;cursor:not-allowed}
 .player-utility-status{margin:10px 0 0;font-size:13px;line-height:1.6;color:#a7dbb6}
 .player-utility-status:empty{display:none}
 .player-key-toast{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.8);color:white;padding:10px 16px;border-radius:8px;z-index:8;pointer-events:none;opacity:0;transition:opacity .15s;white-space:nowrap}

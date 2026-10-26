@@ -787,9 +787,11 @@ const fallbackMoviesList = [
   {
     title: "A Year-End Medley",
     slug: "happy-new-year-chuc-mung-nam-moi",
+    type: "single",
+    cast: "Han Ji-min, Lee Dong-wook, Kang Ha-neul, Seo Kang-joon, Yoona, Won Jin-ah, Lee Hye-young, Jung Jin-young, Kim Young-kwang, Lee Kwang-soo, Ko Sung-hee, Lee Jin-wook, Cho Jun-young, Won Ji-an, Lee Kyoo-hyung, Bae Hae-seon, Lee Joong-ok, Oh Min-ae, Jung Eu-g, Won Jin-a",
     year: 2021,
     episodes: 1,
-    genres: "Hài Hước, Tình Cảm, Hàn Quốc",
+    genres: "Hài Hước, Tình Cảm, Hàn Quốc, Hành Động",
     poster:
     "https://phimimg.com/upload/vod/20231113-1/e64f15af85ea74bf52295772ded03773.jpg",
     banner:
@@ -799,6 +801,8 @@ const fallbackMoviesList = [
   {
     title: "A Year-End Medley",
     slug: "chuc-mung-nam-moi",
+    duplicateSources: ["https://phimapi.com/phim/chuc-mung-nam-moi","https://phimapi.com/phim/happy-new-year-chuc-mung-nam-moi"],
+    duplicateOf: "happy-new-year-chuc-mung-nam-moi",
     year: 2021,
     episodes: 1,
     genres: "Hành Động, Hài Hước, Tình Cảm, Hàn Quốc",
@@ -1415,9 +1419,11 @@ const fallbackMoviesList = [
   {
     title: "Athena: Goddess Of War",
     slug: "nu-than-chien-tranh",
+    type: "single",
+    cast: "Jung Woo-sung, Cha Seung-won, Soo Ae, Kim Min-jong, Ricky Kim, Lee Ji-ah, Choi Si-won, Kim Seung-woo, Kim So-yeon, Lee El, Lee Ji-hyun, Sean Dulake, Cha Seoung Won, Su Ae",
     year: 2011,
     episodes: 1,
-    genres: "Hành Động, Tâm Lý, Chính Kịch, Hàn Quốc",
+    genres: "Hành Động, Tâm Lý, Chính Kịch, Hàn Quốc, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20250823-1/a3d75174734424ba8f52759e2dc56643.jpg",
     banner:
@@ -1429,6 +1435,9 @@ const fallbackMoviesList = [
   {
     title: "Athena: Goddess Of War",
     slug: "athena-nu-than-chien-tranh",
+    apiSlug: "nu-than-chien-tranh",
+    duplicateSources: ["https://phimapi.com/phim/athena-nu-than-chien-tranh","https://phimapi.com/phim/nu-than-chien-tranh"],
+    duplicateOf: "nu-than-chien-tranh",
     year: 2011,
     episodes: 1,
     genres: "Hành Động, Phiêu Lưu, Hàn Quốc",
@@ -2636,9 +2645,11 @@ const fallbackMoviesList = [
   {
     title: "Bread Barbershop",
     slug: "nha-tao-mau-toc-sieu-dang",
+    type: "animation",
+    cast: "Um Sang-hyun, Park Yun-hee, Kang Shi-hyun",
     year: 2019,
     episodes: 39,
-    genres: "Hài Hước, Phiêu Lưu, Hàn Quốc",
+    genres: "Hài Hước, Phiêu Lưu, Hàn Quốc, Trẻ Em, Tâm Lý, Hoạt Hình",
     poster:
     "https://phimimg.com/upload/vod/20241119-1/8544a99e9451ee48c425981f7313d579.jpg",
     banner:
@@ -2650,6 +2661,8 @@ const fallbackMoviesList = [
   {
     title: "Bread Barbershop (Season 1)",
     slug: "nha-tao-mau-toc-sieu-dang-phan-1",
+    duplicateSources: ["https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang","https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1"],
+    duplicateOf: "nha-tao-mau-toc-sieu-dang",
     year: 2019,
     episodes: 39,
     genres: "Hài Hước, Trẻ Em, Tâm Lý, Hoạt Hình, Hàn Quốc",
@@ -3498,6 +3511,8 @@ const fallbackMoviesList = [
   {
     title: "Collectors",
     slug: "ke-san-mo",
+    duplicateSources: ["https://phimapi.com/phim/ke-san-mo","https://phimapi.com/phim/lien-minh-dao-mo"],
+    duplicateOf: "lien-minh-dao-mo",
     year: 2020,
     episodes: 1,
     genres: "Hành Động, Phiêu Lưu, Hàn Quốc",
@@ -3512,9 +3527,11 @@ const fallbackMoviesList = [
   {
     title: "Collectors",
     slug: "lien-minh-dao-mo",
+    type: "single",
+    cast: "Lee Je-hoon, Jo Woo-jin, Shin Hye-sun, Im Won-hee, Song Young-chang, Ju Jin-mo, Lee Sung-wook, Park Se-wan, Park Jin-woo, Lee Jun-hyeok, Shin Hae Sun",
     year: 2020,
     episodes: 1,
-    genres: "Hành Động, Hàn Quốc",
+    genres: "Hành Động, Hàn Quốc, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20231002-1/3f992fcde670be5383ae4a3ddfe70df3.jpg",
     banner:
@@ -4119,6 +4136,8 @@ const fallbackMoviesList = [
   {
     title: "Dear. M",
     slug: "dear-m",
+    duplicateSources: ["https://phimapi.com/phim/dear-m","https://phimapi.com/phim/gui-cau-tinh-dau-cua-toi"],
+    duplicateOf: "gui-cau-tinh-dau-cua-toi",
     year: 2021,
     episodes: 12,
     genres: "Tâm Lý, Học Đường, Hàn Quốc",
@@ -4133,9 +4152,11 @@ const fallbackMoviesList = [
   {
     title: "Dear M",
     slug: "gui-cau-tinh-dau-cua-toi",
+    type: "series",
+    cast: "Park Hye-su, Jaehyun, Roh Jeong-eui, Bae Hyeon-seong, Lee Jin-hyuk, Woo Da-vi, Kwon Eun-bin, Hwang Bo-reum-byeol, Lee Jung-sic, Yoon Jin-sol, Kim Joon-ho, Piao Hui Xiu, Jeong-eui Roh, Pei Xian Sheng",
     year: 2022,
     episodes: 12,
-    genres: "Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc",
+    genres: "Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc, Học Đường",
     poster:
     "https://phimimg.com/upload/vod/20250318-1/a1253049c04a9622a86e4a01ab609b62.jpg",
     banner:
@@ -5280,6 +5301,8 @@ const fallbackMoviesList = [
   {
     title: "Endless Rain",
     slug: "endless-rain",
+    duplicateSources: ["https://phimapi.com/phim/endless-rain","https://phimapi.com/phim/neu-nhu-sau-con-mua","https://phimapi.com/phim/cho-em-den-ngay-mua","https://m.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20193068"],
+    duplicateOf: "neu-nhu-sau-con-mua",
     year: 2021,
     episodes: 1,
     genres: "Tình Cảm, Hàn Quốc",
@@ -5294,6 +5317,8 @@ const fallbackMoviesList = [
   {
     title: "Endless Rain",
     slug: "neu-nhu-sau-con-mua",
+    type: "single",
+    cast: "Kang Ha-neul, Chun Woo-hee, Kang So-ra, Lee Sul, Lim Ju-hwan, Lee Hang-na, Lee Yang-hee, Park Se-hyun, Kim Sung-kyun, Ko Gun-han",
     year: 2021,
     episodes: 1,
     genres: "Tình Cảm, Gia Đình, Chính Kịch, Hàn Quốc",
@@ -6022,6 +6047,8 @@ const fallbackMoviesList = [
   {
     title: "From Now On, Showtime!",
     slug: "dien-nao-ma-oi",
+    duplicateSources: ["https://phimapi.com/phim/bat-ma-pha-an","https://phimapi.com/phim/dien-nao-ma-oi"],
+    duplicateOf: "bat-ma-pha-an",
     year: 2022,
     episodes: 16,
     genres: "Tình Cảm, Hài Hước, Tâm Lý, Hàn Quốc",
@@ -6036,9 +6063,11 @@ const fallbackMoviesList = [
   {
     title: "From Now On, Showtime!",
     slug: "bat-ma-pha-an",
+    type: "series",
+    cast: "Park Hae Jin, Jin Ki Joo, Jung Joon Ho",
     year: 2022,
     episodes: 16,
-    genres: "Hài Hước, Tâm Lý, Bí Ẩn, Hàn Quốc",
+    genres: "Hài Hước, Tâm Lý, Bí Ẩn, Hàn Quốc, Tình Cảm",
     poster:
     "https://phimimg.com/upload/vod/20240205-1/ba88913f6abaf04d9a446e7953d49c11.jpg",
     banner:
@@ -7364,9 +7393,11 @@ const fallbackMoviesList = [
   {
     title: "Hit And Run Squad",
     slug: "biet-doi-hitrun-biet-doi-toc-do",
+    type: "single",
+    cast: "Gong Hyo-jin, Ryu Jun-yeol, Cho Jung-seok, Yum Jung-ah, Jeon Hye-jin, Son Suk-ku, Key, Lee Sung-min, Lee Sung-wook, Lee Hak-ju, Park Ye-yeong, Ryu Kyung-soo, Kim Go-eun, Lim Sun-woo, Yoo Yeon-soo, Park Hyoung-soo, Bae Yu-ram, Lee Myeong-ja, Na Chul, Ahn S",
     year: 2019,
     episodes: 1,
-    genres: "Hình Sự, Hành Động, Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc",
+    genres: "Hình Sự, Hành Động, Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20250715-1/e8647e4872c5b4ec24ff1d1f2ff1cfdc.jpg",
     banner:
@@ -7388,6 +7419,8 @@ const fallbackMoviesList = [
   {
     title: "Hit-and-Run Squad",
     slug: "biet-doi-hitandrun",
+    duplicateSources: ["https://phimapi.com/phim/biet-doi-hitandrun","https://phimapi.com/phim/biet-doi-hitrun-biet-doi-toc-do"],
+    duplicateOf: "biet-doi-hitrun-biet-doi-toc-do",
     year: 2019,
     episodes: 1,
     genres: "Hành Động, Hình Sự, Phiêu Lưu, Hàn Quốc",
@@ -7400,6 +7433,8 @@ const fallbackMoviesList = [
   {
     title: "Hitman : Agent Jun",
     slug: "mat-vu-kingsman-2020",
+    duplicateSources: ["https://phimapi.com/phim/mat-vu-kingsman-2020","https://phimapi.com/phim/sat-thu-vo-cung-cuc"],
+    duplicateOf: "sat-thu-vo-cung-cuc",
     year: 2020,
     episodes: 1,
     genres: "Hành Động, Hài Hước, Tình Cảm, Phiêu Lưu, Hàn Quốc",
@@ -7414,9 +7449,11 @@ const fallbackMoviesList = [
   {
     title: "Hitman: Agent Jun",
     slug: "sat-thu-vo-cung-cuc",
+    type: "single",
+    cast: "Kwon Sang-woo, Jung Jun-ho, Hwang Woo-seul-hye, Lee Yi-kyung, Lee Ji-won, Heo Sung-tae, Jo Woon, Heo Dong-won, Lee Jun-hyeok, Lee Jung-ok, Ju Seo-eun, Lee Sang-yi, Park Doo-sik, Park Ye-chan, Kim Mi-hui, Bae Min-jun, Hwang Byeng-gug, Park Sung-jin, Choi Y, Jung Joon-ho, Lee Joong-ok",
     year: 2020,
     episodes: 1,
-    genres: "Hành Động, Hài Hước, Hàn Quốc",
+    genres: "Hành Động, Hài Hước, Hàn Quốc, Tình Cảm, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20250318-1/1d83069d37bf783da0d17446aa9bd182.jpg",
     banner:
@@ -7534,9 +7571,11 @@ const fallbackMoviesList = [
   {
     title: "Hometown",
     slug: "co-huong",
+    type: "series",
+    cast: "유재명, 한예리, 엄태구, 김새벽, 최광일, 이레, 박미현, 김예은, Heo Jung-eun, 조복래, Yoo Jae Myung, Han Ye Ri, Uhm Tae Goo",
     year: 2021,
     episodes: 12,
-    genres: "Hình Sự, Chính Kịch, Bí Ẩn, Hàn Quốc",
+    genres: "Hình Sự, Chính Kịch, Bí Ẩn, Hàn Quốc, Kinh Dị",
     poster:
     "https://phimimg.com/upload/vod/20241017-1/7ab4986b079c34727d006be3e93d3361.jpg",
     banner:
@@ -7548,6 +7587,8 @@ const fallbackMoviesList = [
   {
     title: "Hometown",
     slug: "mat-toi-cua-binh-yen",
+    duplicateSources: ["https://phimapi.com/phim/co-huong","https://phimapi.com/phim/mat-toi-cua-binh-yen"],
+    duplicateOf: "co-huong",
     year: 2021,
     episodes: 12,
     genres: "Kinh Dị, Bí Ẩn, Hàn Quốc",
@@ -7733,6 +7774,8 @@ const fallbackMoviesList = [
   {
     title: "Hostage: Missing Celebrity",
     slug: "con-tin",
+    duplicateSources: ["https://phimapi.com/phim/con-tin","https://phimapi.com/phim/con-tin-ngoi-sao-mat-tich"],
+    duplicateOf: "con-tin-ngoi-sao-mat-tich",
     year: 2021,
     episodes: 1,
     genres: "Hành Động, Kinh Dị, Hàn Quốc",
@@ -7747,9 +7790,11 @@ const fallbackMoviesList = [
   {
     title: "Hostage: Missing Celebrity",
     slug: "con-tin-ngoi-sao-mat-tich",
+    type: "single",
+    cast: "Hwang Jung-min, Kim Jae-bum, Lee You-mi, Ryu Kyung-soo, Jung Jae-won, Lee Gyu-woon, Lee Ho-jung, Jo Kyung-hyun, Shin Hyun-jong, Back Joo-hee, Jeong Min, Kyoo Won, Lee Ho Jeong",
     year: 2021,
     episodes: 1,
-    genres: "Hành Động, Hàn Quốc",
+    genres: "Hành Động, Hàn Quốc, Kinh Dị",
     poster:
     "https://phimimg.com/upload/vod/20230930-1/dfa483aa96eab9e84cd940bbb82f44d0.jpg",
     banner:
@@ -7979,6 +8024,8 @@ const fallbackMoviesList = [
   {
     title: "Hwayi: A Monster Boy",
     slug: "hwayi-cau-be-quai-vat",
+    duplicateSources: ["https://phimapi.com/phim/hwayi-cau-be-quai-vat","https://phimapi.com/phim/hwayi-sat-nhan-trang"],
+    duplicateOf: "hwayi-sat-nhan-trang",
     year: 2013,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hình Sự, Phiêu Lưu, Hàn Quốc",
@@ -7993,6 +8040,8 @@ const fallbackMoviesList = [
   {
     title: "Hwayi: A Monster Boy",
     slug: "hwayi-sat-nhan-trang",
+    type: "single",
+    cast: "Kim Yoon-seok, Yeo Jin-goo, Cho Jin-woong, Jang Hyun-sung, Kim Sung-kyun, Park Hae-jun, Im Ji-eun, Park Yong-woo, Kim Young-min, Seo Young-hwa, Yoo Yeon-seok, Nam Ji-hyun, Lee Kyung-young, Moon Sung-keun, Han Joo-wan, Lee You-mi, Park Gyu-ri, Park Jin-woo",
     year: 2013,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hình Sự, Phiêu Lưu, Hàn Quốc",
@@ -9153,6 +9202,8 @@ const fallbackMoviesList = [
   {
     title: "KingMaker",
     slug: "kingmaker",
+    duplicateSources: ["https://phimapi.com/phim/kingmaker","https://phimapi.com/phim/vua-bau-cu"],
+    duplicateOf: "vua-bau-cu",
     year: 2022,
     episodes: 1,
     genres: "Tâm Lý, Hàn Quốc",
@@ -9167,9 +9218,11 @@ const fallbackMoviesList = [
   {
     title: "Kingmaker",
     slug: "vua-bau-cu",
+    type: "single",
+    cast: "Sol Kyung-gu, Lee Sun-kyun, Yoo Jae-myung, Jo Woo-jin, Park In-hwan, Bae Jong-ok, Kim Sae-byuk, Lee Hae-yeong, Kim Sung-oh, Jeon Bae-soo",
     year: 2022,
     episodes: 1,
-    genres: "Chính Kịch, Hàn Quốc",
+    genres: "Chính Kịch, Hàn Quốc, Tâm Lý",
     poster:
     "https://phimimg.com/upload/vod/20230921-1/f36fb1c82b6f46158af29bdb49f92504.jpg",
     banner:
@@ -9298,6 +9351,8 @@ const fallbackMoviesList = [
   {
     title: "Kundo: Age Of The Rampant",
     slug: "ky-nguyen-tan-bao",
+    duplicateSources: ["https://phimapi.com/phim/ac-quy-nghin-nam","https://phimapi.com/phim/ky-nguyen-tan-bao"],
+    duplicateOf: "ac-quy-nghin-nam",
     year: 2014,
     episodes: 1,
     genres: "Hành Động, Hàn Quốc",
@@ -9312,6 +9367,8 @@ const fallbackMoviesList = [
   {
     title: "Kundo: Age of the Rampant",
     slug: "ac-quy-nghin-nam",
+    type: "single",
+    cast: "Ha Jung-woo, Gang Dong-won, Lee Kyung-young, Lee Sung-min, Cho Jin-woong, Ma Dong-seok, Yoon Ji-hye, Kim Hae-sook, Han Yeri, Jeong Man-sik, Ju Jin-mo, Song Young-chang, Kim Sung-kyun, Lee Da-wit, Nam Da-reum, Park Myung-shin, Kim Kkob-bi, Kim Jae-young, L",
     year: 2014,
     episodes: 1,
     genres: "Hành Động, Chính Kịch, Hàn Quốc",
@@ -9760,9 +9817,11 @@ const fallbackMoviesList = [
   {
     title: "Live",
     slug: "cuoc-song-2018",
+    type: "series",
+    cast: "Jung Yu-mi, Lee Kwang-soo, Bae Sung-woo, Bae Jong-ok, Sung Dong-il, Jang Hyun-sung, Lee Eol, Lee Joo-young, Lee Si-eon, Shin Dong-wook, Kim Gun-woo, Cho Wan-ki, Baek Seung-do, Lee Soon-jae, Kim Jong-hoon, Bae Seong Woo",
     year: 2018,
     episodes: 18,
-    genres: "Chính Kịch, Hình Sự, Hài Hước, Tâm Lý, Tình Cảm, Hàn Quốc",
+    genres: "Chính Kịch, Hình Sự, Hài Hước, Tâm Lý, Tình Cảm, Hàn Quốc, Hành Động",
     poster:
     "https://phimimg.com/uploads/movies/20260930/cuoc-song-2018-poster.webp",
     banner:
@@ -9774,6 +9833,8 @@ const fallbackMoviesList = [
   {
     title: "Live",
     slug: "doi-canh-sat",
+    duplicateSources: ["https://phimapi.com/phim/cuoc-song-2018","https://phimapi.com/phim/doi-canh-sat"],
+    duplicateOf: "cuoc-song-2018",
     year: 2018,
     episodes: 18,
     genres:
@@ -11112,6 +11173,8 @@ const fallbackMoviesList = [
   {
     title: "Master",
     slug: "ong-trum-2016",
+    type: "single",
+    cast: "Lee Byung-hun, Gang Dong-won, Kim Woo-bin, Uhm Ji-won, Oh Dal-su, Jin Kyung, Jung Won-joong, Yoo Yeon-soo, Cho Hyun-chul, Park Hae-soo, Park Jeong-ja, Ju Seok-tae, Song Yo-sep, Lee Soon-won, Kim Sung-gon, Choi Kwang-je, Woo Do-hwan, Jeong Soo-kyo, Kang Dong Won, Woo-bin Kim, Ji-won Uhm, 吳達洙",
     year: 2016,
     episodes: 1,
     genres: "Hình Sự, Hành Động, Hàn Quốc",
@@ -11126,6 +11189,8 @@ const fallbackMoviesList = [
   {
     title: "Master",
     slug: "master",
+    duplicateSources: ["https://phimapi.com/phim/master","https://phimapi.com/phim/ong-trum-2016"],
+    duplicateOf: "ong-trum-2016",
     year: 2016,
     episodes: 1,
     genres: "Hành Động, Hàn Quốc",
@@ -11176,6 +11241,8 @@ const fallbackMoviesList = [
   {
     title: "May Queen",
     slug: "nu-hoang-thang-5",
+    duplicateSources: ["https://phimapi.com/phim/nu-hoang-thang-5","https://phimapi.com/phim/nu-hoang-thang-nam"],
+    duplicateOf: "nu-hoang-thang-nam",
     year: 2012,
     episodes: 76,
     genres: "Chính Kịch, Tâm Lý, Tình Cảm, Hàn Quốc",
@@ -11188,6 +11255,8 @@ const fallbackMoviesList = [
   {
     title: "May Queen",
     slug: "nu-hoang-thang-nam",
+    type: "series",
+    cast: "Han Ji-hye, Kim Jae-won, Jae Hee, Son Eun-seo, Ahn Nae-sang, Geum Bo-ra, Lee Duck-hwa, Yang Mi-kyung, Kim Kyu-chul, Kim Ji-young, Sunwoo Jae-duk, Kim Yoo-jung, Park Ji-bin, Park Gun-tae, Kang Ji-woo, Jung Zi-so, Seo Young-joo, Baek Seoung-hee, Yoon Jong-h, Kim You-jung",
     year: 2012,
     episodes: 76,
     genres: "Chính Kịch, Tình Cảm, Tâm Lý, Hàn Quốc",
@@ -12084,6 +12153,8 @@ const fallbackMoviesList = [
   {
     title: "Moonlit Winter",
     slug: "trang-sang-mua-dong",
+    type: "single",
+    cast: "Kim Hee-ae, Yuko Nakamura, Kim So-hye, So-hye Kim",
     year: 2019,
     episodes: 1,
     genres: "Tình Cảm, Tâm Lý, Hàn Quốc",
@@ -12098,6 +12169,9 @@ const fallbackMoviesList = [
   {
     title: "Moonlit Winter",
     slug: "yoon-hee-cua-me",
+    apiSlug: "trang-sang-mua-dong",
+    duplicateSources: ["https://phimapi.com/phim/trang-sang-mua-dong","https://phimapi.com/phim/yoon-hee-cua-me"],
+    duplicateOf: "trang-sang-mua-dong",
     year: 2019,
     episodes: 1,
     genres: "Tâm Lý, Hàn Quốc",
@@ -12186,11 +12260,13 @@ const fallbackMoviesList = [
     desc: "Mourning Grave Aka The Girl's Grave",
   },
   {
-    title: "Mouse",
+    title: "Mouse (Movie Version)",
     slug: "mouse-ke-san-nguoi-ban-dien-anh",
+    type: "single",
+    cast: "Lee Seung Gi, Lee Hee-jun, Park Juhyun, Kyong Soo Jin, Lee Hee Joon, Park Joo Hyun, Kyung Soo Jin",
     year: 2021,
-    episodes: 20,
-    genres: "Bí Ẩn, Hình Sự, Kinh Dị, Tâm Lý, Hàn Quốc",
+    episodes: 1,
+    genres: "Bí Ẩn, Hình Sự, Kinh Dị, Tâm Lý, Hàn Quốc, Hành Động, Tình Cảm",
     poster: IMG_BASE + "Mouse.jpg",
     banner: IMG_BASE + "Mouse.jpg",
     desc: "Thước phim trinh thám giật gân xoay quanh kẻ sát nhân biến thái.",
@@ -12214,6 +12290,8 @@ const fallbackMoviesList = [
   {
     title: "Mouse",
     slug: "mouse-ke-san-nguoi",
+    duplicateSources: ["https://phimapi.com/phim/mouse-ke-san-nguoi","https://phimapi.com/phim/mouse-ke-san-nguoi-ban-dien-anh"],
+    duplicateOf: "mouse-ke-san-nguoi-ban-dien-anh",
     year: 2021,
     episodes: 1,
     genres: "Kinh Dị, Hành Động, Tâm Lý, Tình Cảm, Hàn Quốc",
@@ -14624,6 +14702,8 @@ const fallbackMoviesList = [
   {
     title: "Phantom",
     slug: "dac-vu-bong-ma",
+    type: "single",
+    cast: "Sol Kyung-gu, Lee Ha-nee, Park So-dam, Park Hae-soo, Seo Hyun-woo, Kim Dong-hee, Kim Hye-ok, Kim Jong-soo, Esom, Lee Joo-young",
     year: 2023,
     episodes: 1,
     genres: "Hành Động, Hình Sự, Phiêu Lưu, Hàn Quốc",
@@ -14638,6 +14718,8 @@ const fallbackMoviesList = [
   {
     title: "Phantom",
     slug: "phantom",
+    duplicateSources: ["https://phimapi.com/phim/dac-vu-bong-ma","https://phimapi.com/phim/phantom"],
+    duplicateOf: "dac-vu-bong-ma",
     year: 2023,
     episodes: 1,
     genres: "Hành Động, Hàn Quốc",
@@ -16361,9 +16443,11 @@ const fallbackMoviesList = [
   {
     title: "Scent Of A Ghost",
     slug: "ma-nu-chung-cu",
+    type: "single",
+    cast: "Lee El, Kang Kyung-joon, Jeon Su-kyung, Sung Ji-ru, Oh Yoon-ah, Son Byung-ho, Choi Moo-seong, Choi Gyu-hwan, Lee You-mi, Jung Han-yong, Jeong A-mi, Han Ji-eun, Joo Young-ho, Park Ji-a, Jang Seo-kyung",
     year: 2019,
     episodes: 1,
-    genres: "Kinh Dị, Tình Cảm, Hài Hước, Chính Kịch, Hàn Quốc",
+    genres: "Kinh Dị, Tình Cảm, Hài Hước, Chính Kịch, Hàn Quốc, Tâm Lý",
     poster:
     "https://phimimg.com/upload/vod/20250701-1/c5360b55caa28e3b239b8ae05559b785.jpg",
     banner:
@@ -16375,6 +16459,8 @@ const fallbackMoviesList = [
   {
     title: "Scent of a Ghost",
     slug: "mui-huong-cua-ma-nu",
+    duplicateSources: ["https://phimapi.com/phim/ma-nu-chung-cu","https://phimapi.com/phim/mui-huong-cua-ma-nu"],
+    duplicateOf: "ma-nu-chung-cu",
     year: 2019,
     episodes: 1,
     genres: "Kinh Dị, Tình Cảm, Hài Hước, Tâm Lý, Hàn Quốc",
@@ -16714,6 +16800,8 @@ const fallbackMoviesList = [
   {
     title: "Serve The People",
     slug: "phuc-vu-nhan-dan",
+    duplicateSources: ["https://phimapi.com/phim/cam-do","https://phimapi.com/phim/phuc-vu-nhan-dan"],
+    duplicateOf: "cam-do",
     year: 2022,
     episodes: 1,
     genres: "Tình Cảm, Hàn Quốc",
@@ -16728,6 +16816,8 @@ const fallbackMoviesList = [
   {
     title: "Serve the People",
     slug: "cam-do",
+    type: "single",
+    cast: "Yeon Woo-jin, Ji An, Cho Seong-ha, Jeong Gyu-su, Kim Ji-chul, Kim Byeong-man, Jang Hae-min, Park Jung-eon",
     year: 2022,
     episodes: 1,
     genres: "Tình Cảm, Chính Kịch, Hàn Quốc",
@@ -17066,6 +17156,8 @@ const fallbackMoviesList = [
   {
     title: "Sinkhole",
     slug: "ho-sut",
+    duplicateSources: ["https://phimapi.com/phim/ho-sut","https://phimapi.com/phim/ho-sut-tu-than"],
+    duplicateOf: "ho-sut-tu-than",
     year: 2021,
     episodes: 1,
     genres: "Tâm Lý, Bí Ẩn, Hàn Quốc",
@@ -17080,9 +17172,11 @@ const fallbackMoviesList = [
   {
     title: "Sinkhole",
     slug: "ho-sut-tu-than",
+    type: "single",
+    cast: "Cha Seung-won, Kim Sung-kyun, Lee Kwang-soo, Kwon So-hyun, Kim Hye-jun, Kim Jae-hwa, Nam Da-reum, Jung Young-sook, Lee Hak-ju, Han Hye-rin",
     year: 2021,
     episodes: 1,
-    genres: "Hài Hước, Chính Kịch, Hành Động, Phiêu Lưu, Hàn Quốc",
+    genres: "Hài Hước, Chính Kịch, Hành Động, Phiêu Lưu, Hàn Quốc, Tâm Lý, Bí Ẩn",
     poster:
     "https://phimimg.com/upload/vod/20230925-1/f2f7e4334828328b83a408f447793a36.jpg",
     banner:
@@ -18702,6 +18796,8 @@ const fallbackMoviesList = [
   {
     title: "The Berlin File",
     slug: "ho-so-ba-linh",
+    type: "single",
+    cast: "Ha Jung-woo, Han Suk-kyu, Ryoo Seung-bum, Jun Ji-hyun, Lee Kyung-young, Kwak Do-won, Yoon Jong-bin, Kim Seo-hyung, Choi Moo-seong, Dong Bang-woo, John Keogh, Numan Acar, Pasquale Aleardi, Thomas Thieme, Tayfun Bademsoy, Werner Daehn, Sinja Dieks, Toni Var, Choi Moo-sung, Toni Varv",
     year: 2013,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hình Sự, Hàn Quốc",
@@ -18714,6 +18810,8 @@ const fallbackMoviesList = [
   {
     title: "The Berlin File",
     slug: "ho-so-berlin",
+    duplicateSources: ["https://phimapi.com/phim/ho-so-ba-linh","https://phimapi.com/phim/ho-so-berlin"],
+    duplicateOf: "ho-so-ba-linh",
     year: 2013,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hình Sự, Hàn Quốc",
@@ -19038,6 +19136,8 @@ const fallbackMoviesList = [
   {
     title: "The Devil's Deal",
     slug: "thoa-thuan-voi-ac-quy",
+    type: "single",
+    cast: "Cho Jin-woong, Lee Sung-min, Kim Moo-yul, Won Hyun-jun, Kim Min-jae",
     year: 2023,
     episodes: 1,
     genres: "Chính Kịch, Hình Sự, Hàn Quốc",
@@ -19050,6 +19150,8 @@ const fallbackMoviesList = [
   {
     title: "The Devil's Deal",
     slug: "thoa-thuan-cua-quy",
+    duplicateSources: ["https://phimapi.com/phim/thoa-thuan-cua-quy","https://phimapi.com/phim/thoa-thuan-voi-ac-quy"],
+    duplicateOf: "thoa-thuan-voi-ac-quy",
     year: 2023,
     episodes: 1,
     genres: "Chính Kịch, Hình Sự, Hàn Quốc",
@@ -19112,9 +19214,9 @@ const fallbackMoviesList = [
     desc: "The Divine Fury",
   },
   {
-    title: "The Divine Move",
+    title: "The Divine Move (2014)",
     slug: "nuoc-co-sinh-tu",
-    year: 2019,
+    year: 2014,
     episodes: 1,
     genres: "Hành Động, Phiêu Lưu, Hàn Quốc",
     poster:
@@ -19124,7 +19226,7 @@ const fallbackMoviesList = [
     desc: "The Divine Move",
   },
   {
-    title: "The Divine Move",
+    title: "The Divine Move 2: The Wrathful (2019)",
     slug: "van-co-sinh-tu-2-phan-no",
     year: 2019,
     episodes: 1,
@@ -20296,6 +20398,8 @@ const fallbackMoviesList = [
   {
     title: "The Man From Nowhere",
     slug: "nguoi-vo-danh-tinh",
+    duplicateSources: ["https://phimapi.com/phim/nguoi-vo-danh-tinh","https://phimapi.com/phim/sat-thu-vo-danh"],
+    duplicateOf: "sat-thu-vo-danh",
     year: 2010,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hàn Quốc",
@@ -20308,9 +20412,11 @@ const fallbackMoviesList = [
   {
     title: "The Man from Nowhere",
     slug: "sat-thu-vo-danh",
+    type: "single",
+    cast: "Won Bin, Kim Sae-ron, Kim Tae-hun, Kim Hee-won, Kim Sung-oh, Thanayong Wongtrakul, Kwak Do-won, Kim Hyo-seo, Jo Jae-yun, Song Young-chang",
     year: 2010,
     episodes: 1,
-    genres: "Hành Động, Hình Sự, Hàn Quốc",
+    genres: "Hành Động, Hình Sự, Hàn Quốc, Tâm Lý",
     poster:
     "https://phimimg.com/upload/vod/20230921-1/6ab3857da9ec62ee759db75398e81137.jpg",
     banner:
@@ -20770,6 +20876,8 @@ const fallbackMoviesList = [
   {
     title: "The Pirates",
     slug: "the-pirates",
+    duplicateSources: ["https://phimapi.com/phim/hai-tac","https://phimapi.com/phim/the-pirates"],
+    duplicateOf: "hai-tac",
     year: 2014,
     episodes: 1,
     genres: "Hành Động, Hài Hước, Phiêu Lưu, Chính Kịch, Hàn Quốc",
@@ -20782,9 +20890,11 @@ const fallbackMoviesList = [
   {
     title: "The Pirates",
     slug: "hai-tac",
+    type: "single",
+    cast: "Son Ye-jin, Kim Nam-gil, Oh Dal-su",
     year: 2014,
     episodes: 1,
-    genres: "Hành Động, Phiêu Lưu, Hài Hước, Lịch Sử, Giả Tượng, Hàn Quốc",
+    genres: "Hành Động, Phiêu Lưu, Hài Hước, Lịch Sử, Giả Tượng, Hàn Quốc, Chính Kịch",
     poster:
     "https://phimimg.com/upload/vod/20231109-1/2aa565ecfe68c0e96ae90265e4837847.jpg",
     banner:
@@ -22910,9 +23020,11 @@ const fallbackMoviesList = [
   {
     title: "Unlock My Boss",
     slug: "mo-khoa-sep-tong",
+    type: "series",
+    cast: "Chae Jong-hyeop, Seo Eun-soo, Park Sung-woong, Lee Sang-hee, Kim Seung-oh, Jeong Dong-hwan, Kim Beong-choun, Gi So-you, Heo Ji-na, Choi Jin-ho, Kim Young-sun, Ahn Nae-sang, Yoon Byung-hee, Bang Joo-hwan, Do Yu, Byun Jun Seo",
     year: 2022,
     episodes: 24,
-    genres: "Hài Hước, Chính Kịch, Tâm Lý, Hàn Quốc",
+    genres: "Hài Hước, Chính Kịch, Tâm Lý, Hàn Quốc, Tình Cảm",
     poster:
     "https://phimimg.com/uploads/movies/20260821/mo-khoa-sep-tong-poster.webp",
     banner:
@@ -22924,6 +23036,8 @@ const fallbackMoviesList = [
   {
     title: "Unlock My Boss",
     slug: "giai-cuu-ong-chu",
+    duplicateSources: ["https://phimapi.com/phim/giai-cuu-ong-chu","https://phimapi.com/phim/mo-khoa-sep-tong"],
+    duplicateOf: "mo-khoa-sep-tong",
     year: 2022,
     episodes: 12,
     genres: "Tình Cảm, Hài Hước, Hàn Quốc",
@@ -23296,6 +23410,8 @@ const fallbackMoviesList = [
   {
     title: "Waiting For Rain",
     slug: "cho-em-den-ngay-mua",
+    duplicateSources: ["https://phimapi.com/phim/endless-rain","https://phimapi.com/phim/neu-nhu-sau-con-mua","https://phimapi.com/phim/cho-em-den-ngay-mua","https://m.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20193068"],
+    duplicateOf: "neu-nhu-sau-con-mua",
     year: 2021,
     episodes: 1,
     genres: "Tình Cảm, Chính Kịch, Hàn Quốc",
@@ -24748,6 +24864,9 @@ const fallbackMoviesList = [
   {
     title: "Case Closed: Zero the Enforcer",
     slug: "tham-tu-lung-danh-conan-22-ke-han-phap-zero",
+    apiSlug: "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
+    duplicateSources: ["https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-han-phap-zero","https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-hanh-phap-zero"],
+    duplicateOf: "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
     episodes: 1,
     genres: "Hoạt Hình, Hành Động, Bí Ẩn, Hình Sự, Anime, Nhật Bản",
     poster: IMG_BASE + "Case Closed Zero the Enforcer.jpg",
@@ -25278,8 +25397,9 @@ const fallbackMoviesList = [
     partName: "Phần 1",
   },
   {
-    title: "Fairy Tail (Season 1)",
+    title: "Fairy Tail: Phoenix Priestess",
     slug: "fairy-tail-nu-te-cua-phuong-hoang",
+    type: "animation",
     year: 2012,
     episodes: 1,
     genres:
@@ -26278,6 +26398,8 @@ const fallbackMoviesList = [
   {
     title: "Sakamoto Days",
     slug: "phim/sat-thu-ve-vuon",
+    duplicateSources: ["https://phimapi.com/phim/sat-thu-ve-vuon"],
+    duplicateOf: "sat-thu-ve-vuon",
     apiSlug: "sat-thu-ve-vuon",
     episodes: 22,
     genres:
@@ -27063,6 +27185,8 @@ const fallbackMoviesList = [
   {
     title: "Ahiru No Sora",
     slug: "bong-ro-danh-cho-moi-nguoi",
+    duplicateSources: ["https://phimapi.com/phim/bong-ro-danh-cho-moi-nguoi","https://phimapi.com/phim/niem-dam-me-bong-ro"],
+    duplicateOf: "niem-dam-me-bong-ro",
     year: 2019,
     episodes: 50,
     genres: "Chính Kịch, Học Đường, Nhật Bản",
@@ -27077,9 +27201,11 @@ const fallbackMoviesList = [
   {
     title: "Ahiru No Sora",
     slug: "niem-dam-me-bong-ro",
+    type: "animation",
+    cast: "Kishō Taniyama, Mamoru Miyano, Yuuma Uchida, Taku Yashiro, Katsuyuki Konishi, Sayaka Senbongi, Yuma Uchida, Yuki Kaji",
     year: 2019,
     episodes: 50,
-    genres: "Thể Thao, Học Đường, Nhật Bản",
+    genres: "Thể Thao, Học Đường, Nhật Bản, Chính Kịch",
     poster:
     "https://phimimg.com/upload/vod/20240215-1/c7ff9cd8e65344b54fd2f5ed725c7cfb.jpg",
     banner:
@@ -27579,6 +27705,8 @@ const fallbackMoviesList = [
     title:
     "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1)",
     slug: "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+    type: "animation",
+    cast: "Natsumi Fujiwara, Taito Ban, Narumi Kaho, Miho Okasaki, Kana Hanazawa, Hiroki Touchi, Hitomi Nabatame, Haruka Tomatsu, Yuki Tanaka",
     year: 2024,
     episodes: 12,
     genres: "Viễn Tưởng, Khoa Học, Nhật Bản",
@@ -27596,6 +27724,8 @@ const fallbackMoviesList = [
     title:
     "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1)",
     slug: "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1",
+    duplicateSources: ["https://phimapi.com/phim/chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1","https://phimapi.com/phim/tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1"],
+    duplicateOf: "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
     year: 2024,
     episodes: 12,
     genres: "Khoa Học, Viễn Tưởng, Nhật Bản",
@@ -28980,9 +29110,10 @@ const fallbackMoviesList = [
   {
     title: "Bungo Stray Dogs Wan!",
     slug: "dac-nhiem-tham-tu-wan",
+    type: "animation",
     year: 2021,
     episodes: 12,
-    genres: "Bí Ẩn, Hài Hước, Nhật Bản",
+    genres: "Bí Ẩn, Hài Hước, Nhật Bản, Chính Kịch, Tâm Lý",
     poster:
     "https://phimimg.com/upload/vod/20240615-1/79f9fe78a7680e92960a5bb7c74e9c39.jpg",
     banner:
@@ -28994,6 +29125,8 @@ const fallbackMoviesList = [
   {
     title: "Bungo Stray Dogs WAN! (Season 1)",
     slug: "dac-nhiem-tham-tu-wan-phan-1",
+    duplicateSources: ["https://phimapi.com/phim/dac-nhiem-tham-tu-wan","https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1"],
+    duplicateOf: "dac-nhiem-tham-tu-wan",
     year: 2021,
     episodes: 12,
     genres: "Hài Hước, Chính Kịch, Tâm Lý, Nhật Bản",
@@ -29036,6 +29169,9 @@ const fallbackMoviesList = [
   {
     title: "Butareba -The Story of a Man Turned Into a Pig-",
     slug: "lam-nong-la-gan-chu-heo",
+    apiSlug: "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+    duplicateSources: ["https://phimapi.com/phim/butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon","https://phimapi.com/phim/lam-nong-la-gan-chu-heo"],
+    duplicateOf: "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
     year: 2023,
     episodes: 1,
     genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Hài Hước, Nhật Bản",
@@ -29050,9 +29186,11 @@ const fallbackMoviesList = [
   {
     title: "Butareba The Story Of A Man Turned Into A Pig",
     slug: "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+    type: "animation",
+    cast: "松岡禎丞, 楠木ともり, Yoshitsugu Matsuoka, Tomori Kusunoki, Kent Ito, Miyu Tomita, Mamiko Noto",
     year: 2023,
     episodes: 12,
-    genres: "Hài Hước, Phiêu Lưu, Viễn Tưởng, Nhật Bản",
+    genres: "Hài Hước, Phiêu Lưu, Viễn Tưởng, Nhật Bản, Hành Động, Khoa Học",
     poster:
     "https://phimimg.com/upload/vod/20240825-1/2198a6ddee74f1e88c6f2d3a1d2a01d0.jpg",
     banner:
@@ -29254,9 +29392,11 @@ const fallbackMoviesList = [
   {
     title: "Case Closed: Zero the Enforcer",
     slug: "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
+    type: "animation",
+    cast: "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, Rikiya Koyama, Toru Furuya, Aya Ueto, Daikichi Hakata, Yukiko Iwai, Wataru Takagi, Ikue Otani, Kenichi Ogata, Megumi Hayashibara, Naoko Matsui, Mikiko Enomoto, Gara Takashima, Asako Dodo, Yukimasa Kishin",
     year: 2018,
     episodes: 2,
-    genres: "Hình Sự, Bí Ẩn, Hành Động, Chính Kịch, Nhật Bản",
+    genres: "Hình Sự, Bí Ẩn, Hành Động, Chính Kịch, Nhật Bản, Hoạt Hình, Anime",
     poster:
     "https://phimimg.com/upload/vod/20231019-1/2406bb467e6435cda705392936e73729.jpg",
     banner:
@@ -31738,6 +31878,7 @@ const fallbackMoviesList = [
   {
     title: "Dragon Ball GT",
     slug: "bay-vien-ngoc-rong-gt",
+    type: "animation",
     year: 1996,
     episodes: 64,
     genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Nhật Bản",
@@ -31750,6 +31891,8 @@ const fallbackMoviesList = [
   {
     title: "Dragon Ball GT",
     slug: "7-vien-ngoc-rong-gt",
+    duplicateSources: ["https://phimapi.com/phim/7-vien-ngoc-rong-gt","https://phimapi.com/phim/bay-vien-ngoc-rong-gt","https://en.dragon-ball-official.com/about/dragon_ball_history.html"],
+    duplicateOf: "bay-vien-ngoc-rong-gt",
     year: 1999,
     episodes: 64,
     genres: "Hành Động, Viễn Tưởng, Phiêu Lưu, Nhật Bản",
@@ -33846,6 +33989,8 @@ const fallbackMoviesList = [
   {
     title: "Haikyu!! Movie 3: Genius and Sense",
     slug: "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+    type: "animation",
+    cast: "Ayumu Murase, Kaito Ishikawa, Yoshimasa Hosoya, Toshiki Masuda, Nobuhiko Okamoto, Satoshi Hino, Kaori Nazuka, Miyu Irino, Koki Uchiyama, Sumire Morohoshi, Soma Saito, Hiroshi Kamiya, Kazunari Tanaka",
     year: 2017,
     episodes: 1,
     genres: "Hoạt Hình, Hài Hước, Chính Kịch, Nhật Bản",
@@ -33888,6 +34033,9 @@ const fallbackMoviesList = [
   {
     title: "Haikyuu!! Movie 3: Genius and Sense",
     slug: "thieu-nien-bong-chuyen-tai-nang-va-cam-giac",
+    apiSlug: "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+    duplicateSources: ["https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day","https://phimapi.com/phim/thieu-nien-bong-chuyen-tai-nang-va-cam-giac"],
+    duplicateOf: "haikyu-ban-dien-anh-3-thien-tai-troi-day",
     year: 2017,
     episodes: 1,
     genres: "Hoạt Hình, Hài Hước, Chính Kịch, Nhật Bản",
@@ -34240,9 +34388,11 @@ const fallbackMoviesList = [
   {
     title: "Horimiya",
     slug: "horimiya",
+    type: "animation",
+    cast: "Haruka Tomatsu, Koki Uchiyama, Seiichiro Yamashita, Yurie Kozakai, Nobuhiko Okamoto, Mao Ichimichi, Reina Kondo, Daiki Yamashita, Jun Fukuyama, Taku Yashiro, Shoya Chiba, Momo Asakura, Daisuke Ono, Ai Kayano, Yuka Terasaki, Hisako Kanemoto",
     year: 2021,
     episodes: 13,
-    genres: "Hài Hước, Chính Kịch, Nhật Bản",
+    genres: "Hài Hước, Chính Kịch, Nhật Bản, Tình Cảm, Học Đường",
     poster:
     "https://phimimg.com/upload/vod/20241229-1/008d822472339cb644a5ce65c1dd74d2.jpg",
     banner:
@@ -34254,6 +34404,8 @@ const fallbackMoviesList = [
   {
     title: "Horimiya",
     slug: "horisan-va-miyamurakun",
+    duplicateSources: ["https://phimapi.com/phim/horimiya","https://phimapi.com/phim/horisan-va-miyamurakun"],
+    duplicateOf: "horimiya",
     year: 2021,
     episodes: 13,
     genres: "Tình Cảm, Học Đường, Nhật Bản",
@@ -34868,9 +35020,11 @@ const fallbackMoviesList = [
   {
     title: "In This Corner Of The World",
     slug: "goc-khuat-cua-the-gioi-2016",
+    type: "animation",
+    cast: "Non, Yoshimasa Hosoya, Natsuki Inaba, Minori Omi, Daisuke Ono, Megumi Han, Nanase Iwai, Shigeru Ushiyama, Mayumi Shintani, Tsuyoshi Koyama, Masumi Tsuda, Kanata Omori, Kotone Tachibana, Hiromi Seta, Kikuyo Semi, Nozomu Sasaki, Tomoko Shiota, Hisako Kyoda",
     year: 2016,
     episodes: 1,
-    genres: "Chính Kịch, Tình Cảm, Chiến Tranh, Lịch Sử, Tâm Lý, Nhật Bản",
+    genres: "Chính Kịch, Tình Cảm, Chiến Tranh, Lịch Sử, Tâm Lý, Nhật Bản, Hoạt Hình",
     poster:
     "https://phimimg.com/upload/vod/20251030-1/a3d309df81357f33e0d18c498765b3a1.jpg",
     banner:
@@ -34880,6 +35034,8 @@ const fallbackMoviesList = [
   {
     title: "In This Corner Of The World",
     slug: "goc-khuat-cua-the-gioi",
+    duplicateSources: ["https://phimapi.com/phim/goc-khuat-cua-the-gioi","https://phimapi.com/phim/goc-khuat-cua-the-gioi-2016"],
+    duplicateOf: "goc-khuat-cua-the-gioi-2016",
     year: 2017,
     episodes: 1,
     genres: "Chính Kịch, Hoạt Hình, Tình Cảm, Chiến Tranh, Lịch Sử, Nhật Bản",
@@ -36095,6 +36251,8 @@ const fallbackMoviesList = [
   {
     title: "KONOSUBA - God's Blessing On This Wonderful World! (Season 3)",
     slug: "mo-ra-mot-the-gioi-tuyet-voi-phan-3",
+    duplicateSources: ["https://phimapi.com/phim/mo-ra-mot-the-gioi-tuyet-voi-phan-3","https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"],
+    duplicateOf: "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3",
     year: 2024,
     episodes: 11,
     genres: "Hành Động, Hài Hước, Viễn Tưởng, Phiêu Lưu, Khoa Học, Nhật Bản",
@@ -36151,6 +36309,8 @@ const fallbackMoviesList = [
   {
     title: "KonoSuba God's Blessing On This Wonderful World! (Season 3)",
     slug: "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3",
+    type: "animation",
+    cast: "Jun Fukushima, Sora Amamiya, Rie Takahashi, Ai Kayano, Kanon Takao, Sayuri Yahagi, Reina Ueda",
     year: 2024,
     episodes: 13,
     genres:
@@ -40114,6 +40274,8 @@ const fallbackMoviesList = [
   {
     title: "Rent-a-Girlfriend",
     slug: "dich-vu-thue-ban-gai",
+    duplicateSources: ["https://phimapi.com/phim/ban-gai-thue-phan-1","https://phimapi.com/phim/dich-vu-thue-ban-gai"],
+    duplicateOf: "ban-gai-thue-phan-1",
     year: 2020,
     episodes: 12,
     genres: "Hài Hước, Nhật Bản",
@@ -40128,6 +40290,8 @@ const fallbackMoviesList = [
   {
     title: "Rent-A-Girlfriend (Season 1)",
     slug: "ban-gai-thue-phan-1",
+    type: "animation",
+    cast: "Shun Horie, Sora Amamiya, Aoi Yuuki, Nao Toyama, Rie Takahashi, Yu Serizawa, Yukari Nozawa, Sayuri Sadaoka, Masayuki Akasaka, Gakuto Kajiwara, Aoi Yuki",
     year: 2020,
     episodes: 12,
     genres: "Hài Hước, Chính Kịch, Tình Cảm, Tâm Lý, Nhật Bản",
@@ -40441,9 +40605,11 @@ const fallbackMoviesList = [
   {
     title: "Rokudo's Bad Girls",
     slug: "cac-co-gai-cua-rokudo",
+    type: "animation",
+    cast: "Gen Sato, Sumire Uesaka, Naomi Ohzora, Yuki Yomichi, Misato Matsuoka, Hitomi Sekine, Haruki Ishiya",
     year: 2023,
     episodes: 12,
-    genres: "Phiêu Lưu, Nhật Bản",
+    genres: "Phiêu Lưu, Nhật Bản, Hài Hước, Học Đường, Hành Động",
     poster:
     "https://phimimg.com/upload/vod/20240314-1/10c3cc12193bc7c51065decf2c9971b8.jpg",
     banner:
@@ -40455,6 +40621,8 @@ const fallbackMoviesList = [
   {
     title: "Rokudo's Bad Girls",
     slug: "gai-hu-cua-rokudo",
+    duplicateSources: ["https://phimapi.com/phim/cac-co-gai-cua-rokudo","https://phimapi.com/phim/gai-hu-cua-rokudo"],
+    duplicateOf: "cac-co-gai-cua-rokudo",
     year: 2023,
     episodes: 12,
     genres: "Hài Hước, Học Đường, Hành Động, Nhật Bản",
@@ -40755,9 +40923,11 @@ const fallbackMoviesList = [
   {
     title: "Sakamoto Days",
     slug: "sat-thu-ve-vuon",
+    type: "animation",
+    cast: "Tomokazu Sugita, Nobunaga Shimazaki, Ayane Sakura, Nao Toyama, Hina Kino, Ryota Suzuki, Miyari Nemoto",
     year: 2025,
     episodes: 22,
-    genres: "Hài Hước, Hành Động, Phiêu Lưu, Nhật Bản",
+    genres: "Hài Hước, Hành Động, Phiêu Lưu, Nhật Bản, Khoa Học, Viễn Tưởng, Tâm Lý, Anime",
     poster:
     "https://phimimg.com/upload/vod/20250112-1/19e480c57fc804cdcebfb39f409ffa31.jpg",
     banner:
@@ -40857,7 +41027,7 @@ const fallbackMoviesList = [
     partName: "Sasaki and Peeps 1",
   },
   {
-    title: "Sasaki and Peeps (Season 1)",
+    title: "Sasaki and Peeps (Season 2)",
     slug: "sasaki-va-p-chan-phan-2",
     year: 2026,
     episodes: 2,
@@ -42839,6 +43009,8 @@ const fallbackMoviesList = [
   {
     title: "The Boy and the Heron",
     slug: "cac-cau-song-the-nao",
+    type: "animation",
+    cast: "Soma Santoki, Masaki Suda, Ko Shibasaki, Aimyon, Yoshino Kimura, Takuya Kimura, Keiko Takeshita, Jun Fubuki, Sawako Agawa, Karen Takizawa, Shinobu Otake, Jun Kunimura, Kaoru Kobayashi, Shōhei Hino, 菅田将暉, 木村拓哉, 風吹ジュン",
     year: 2023,
     episodes: 1,
     genres: "Hoạt Hình, Phiêu Lưu, Viễn Tưởng, Chính Kịch, Nhật Bản",
@@ -42851,6 +43023,8 @@ const fallbackMoviesList = [
   {
     title: "The Boy and the Heron",
     slug: "thieu-nien-va-chim-diec",
+    duplicateSources: ["https://phimapi.com/phim/cac-cau-song-the-nao","https://phimapi.com/phim/thieu-nien-va-chim-diec"],
+    duplicateOf: "cac-cau-song-the-nao",
     year: 2023,
     episodes: 1,
     genres: "Hoạt Hình, Phiêu Lưu, Viễn Tưởng, Nhật Bản",
@@ -42997,9 +43171,10 @@ const fallbackMoviesList = [
   {
     title: "The Dangers In My Heart (Season 1)",
     slug: "bong-den-trong-tim-phan-1",
+    type: "animation",
     year: 2023,
     episodes: 12,
-    genres: "Hài Hước, Tình Cảm, Nhật Bản",
+    genres: "Hài Hước, Tình Cảm, Nhật Bản, Học Đường",
     poster:
     "https://phimimg.com/upload/vod/20241227-1/77e070b3dee7126f74af452043b273f3.jpg",
     banner:
@@ -43011,6 +43186,8 @@ const fallbackMoviesList = [
   {
     title: "The Dangers in My Heart (Season 1)",
     slug: "boku-no-kokoro-no-yabai-yatsu-phan-1",
+    duplicateSources: ["https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-1","https://phimapi.com/phim/bong-den-trong-tim-phan-1"],
+    duplicateOf: "bong-den-trong-tim-phan-1",
     year: 2023,
     episodes: 12,
     genres: "Hài Hước, Học Đường, Nhật Bản",
@@ -43025,9 +43202,10 @@ const fallbackMoviesList = [
   {
     title: "The Dangers In My Heart (Season 2)",
     slug: "bong-den-trong-tim-phan-2",
+    type: "animation",
     year: 2024,
     episodes: 14,
-    genres: "Hài Hước, Tình Cảm, Nhật Bản",
+    genres: "Hài Hước, Tình Cảm, Nhật Bản, Học Đường",
     poster:
     "https://phimimg.com/upload/vod/20241227-1/f891d7faa72636e597f4f2e1b89c08c9.jpg",
     banner:
@@ -43039,6 +43217,8 @@ const fallbackMoviesList = [
   {
     title: "The Dangers in My Heart (Season 2)",
     slug: "boku-no-kokoro-no-yabai-yatsu-phan-2",
+    duplicateSources: ["https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-2","https://phimapi.com/phim/bong-den-trong-tim-phan-2"],
+    duplicateOf: "bong-den-trong-tim-phan-2",
     year: 2024,
     episodes: 14,
     genres: "Hài Hước, Học Đường, Nhật Bản",
@@ -44512,6 +44692,8 @@ const fallbackMoviesList = [
     title:
     "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
     slug: "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac",
+    type: "animation",
+    cast: "Kenji Akabane, Reina Ueda, Yuuki Takada, Shino Shimoji, Toshiyuki Morikawa, Chiaki Takahashi, Yukari Tamura, Junpei Morita, 赤羽根健治, 上田麗奈, 高田憂希, 下地紫野, 森川智之, たかはし智秋, 田村ゆかり, 森田順平",
     year: 2021,
     episodes: 12,
     genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Nhật Bản",
@@ -44525,6 +44707,8 @@ const fallbackMoviesList = [
     title:
     "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
     slug: "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc",
+    duplicateSources: ["https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc","https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac"],
+    duplicateOf: "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac",
     year: 2021,
     episodes: 12,
     genres: "Hành Động, Phiêu Lưu, Khoa Học, Viễn Tưởng, Nhật Bản",
@@ -45077,9 +45261,11 @@ const fallbackMoviesList = [
   {
     title: "Tonikaku Kawaii (Season 1)",
     slug: "du-sao-cung-de-thuong-mua-1",
+    type: "animation",
+    cast: "Akari Kito, Junya Enoki, Yu Serizawa, Sumire Uesaka, Konomi Kohara, Hitomi Ohwada, Yuki Nagaku, Kazuyuki Okitsu, Shiori Mikami, Misaki Kuno, Fumi Hirano",
     year: 2020,
     episodes: 13,
-    genres: "Hài Hước, Trẻ Em, Tình Cảm, Nhật Bản",
+    genres: "Hài Hước, Trẻ Em, Tình Cảm, Nhật Bản, Tâm Lý, Chính Kịch",
     poster:
     "https://phimimg.com/upload/vod/20241202-1/fb7b7891ff7c0a5d095fd7b645a70435.jpg",
     banner:
@@ -45105,6 +45291,8 @@ const fallbackMoviesList = [
   {
     title: "TONIKAWA: Over The Moon For You (Season 1)",
     slug: "du-sao-cung-de-thuong-phan-1",
+    duplicateSources: ["https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1","https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1"],
+    duplicateOf: "du-sao-cung-de-thuong-mua-1",
     year: 2020,
     episodes: 13,
     genres: "Hài Hước, Tình Cảm, Tâm Lý, Chính Kịch, Nhật Bản",
@@ -45845,6 +46033,8 @@ const fallbackMoviesList = [
   {
     title: "VIRGIN PUNK Clockwork Girl",
     slug: "co-gai-co-khi",
+    type: "animation",
+    cast: "Saki Miyashita, Katsuyuki Konishi, Taku Yashiro, Rui Tanabe, Norio Wakamoto, Fuka Izumi, Sumire Uesaka",
     year: 2025,
     episodes: 1,
     genres: "Hành Động, Khoa Học, Viễn Tưởng, Tâm Lý, Nhật Bản",
@@ -45859,6 +46049,8 @@ const fallbackMoviesList = [
   {
     title: "Virgin Punk: Clockwork Girl",
     slug: "thieu-nu-punk-co-gai-co-khi",
+    duplicateSources: ["https://phimapi.com/phim/co-gai-co-khi","https://phimapi.com/phim/thieu-nu-punk-co-gai-co-khi"],
+    duplicateOf: "co-gai-co-khi",
     year: 2025,
     episodes: 1,
     genres: "Hành Động, Khoa Học, Viễn Tưởng, Nhật Bản",
@@ -46363,9 +46555,11 @@ const fallbackMoviesList = [
   {
     title: "Ya Boy Kongming!",
     slug: "khong-minh-thich-tiec-tung-ban-hoat-hinh",
+    type: "animation",
+    cast: "Kaede Hondo, Ryotaro Okiayu, Jun Fukushima, Shoya Chiba, Hibiku Yamamura",
     year: 2022,
     episodes: 12,
-    genres: "Hài Hước, Chính Kịch, Tâm Lý, Nhật Bản",
+    genres: "Hài Hước, Chính Kịch, Tâm Lý, Nhật Bản, Bí Ẩn",
     poster:
     "https://phimimg.com/upload/vod/20250502-1/abc658703d4a672741bb7d1ac506437e.jpg",
     banner:
@@ -46377,6 +46571,8 @@ const fallbackMoviesList = [
   {
     title: "Ya Boy Kongming!",
     slug: "khong-minh-thich-tiec-tung",
+    duplicateSources: ["https://phimapi.com/phim/khong-minh-thich-tiec-tung","https://phimapi.com/phim/khong-minh-thich-tiec-tung-ban-hoat-hinh"],
+    duplicateOf: "khong-minh-thich-tiec-tung-ban-hoat-hinh",
     year: 2022,
     episodes: 12,
     genres: "Hài Hước, Bí Ẩn, Nhật Bản",
@@ -46937,6 +47133,8 @@ const fallbackMoviesList = [
   {
     title: "ラグナクリムゾン",
     slug: "ragna-crimson",
+    duplicateSources: ["https://phimapi.com/phim/ragna-crimson","https://phimapi.com/phim/sat-long-nhan"],
+    duplicateOf: "sat-long-nhan",
     year: 2023,
     episodes: 24,
     genres: "Hành Động, Viễn Tưởng, Nhật Bản",
@@ -46951,9 +47149,11 @@ const fallbackMoviesList = [
   {
     title: "ラグナクリムゾン",
     slug: "sat-long-nhan",
+    type: "animation",
+    cast: "Chiaki Kobayashi, Ayumu Murase, Inori Minase, Mamiko Noto, Hiroki Touchi, Reina Ueda, Takehito Koyasu, Shunsuke Takeuchi, Kozo Shioya, Nobutoshi Canna",
     year: 2023,
     episodes: 24,
-    genres: "Chính Kịch, Khoa Học, Viễn Tưởng, Nhật Bản",
+    genres: "Chính Kịch, Khoa Học, Viễn Tưởng, Nhật Bản, Hành Động",
     poster:
     "https://phimimg.com/upload/vod/20240305-1/09c5447c07081197a427a525619d756f.jpg",
     banner:
@@ -47262,9 +47462,11 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Killing Joke",
     slug: "batman-tro-dua-chet-choc",
+    type: "animation",
+    cast: "Kevin Conroy, Mark Hamill, Tara Strong, Ray Wise, John DiMaggio, Robin Atkin Downes, Brian George, JP Karliak, Andrew Kishino, Nolan North, Maury Sterling, Fred Tatasciore, Bruce Timm, Anna Vocino, Kari Wahlgren, Rick D. Wasserman",
     year: 2016,
     episodes: 1,
-    genres: "Hành Động, Hoạt Hình, Hình Sự, Chính Kịch, Mỹ",
+    genres: "Hành Động, Hoạt Hình, Hình Sự, Chính Kịch, Mỹ, Tâm Lý, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20231023-1/f0f3615c4530d124f226368b459a0773.jpg",
     banner:
@@ -47276,6 +47478,8 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Killing Joke",
     slug: "nguoi-doi-sat-thu-joke",
+    duplicateOf: "batman-tro-dua-chet-choc",
+    duplicateSources: ["https://phimapi.com/phim/batman-tro-dua-chet-choc","https://phimapi.com/phim/nguoi-doi-sat-thu-joke"],
     year: 2016,
     episodes: 1,
     genres: "Hành Động, Tâm Lý, Hình Sự, Phiêu Lưu, Mỹ",
@@ -47332,9 +47536,11 @@ const fallbackMoviesList = [
   {
     title: "Batman vs Teenage Mutant Ninja Turtles",
     slug: "nguoi-doi-va-ninja-rua",
+    type: "animation",
+    cast: "Troy Baker, Eric Bauza, Darren Criss, Kyle Mooney, Baron Vaughn, Rachel Bloom, Ben Giroux, Brian George, Jim Meskimen, Tom Kenny, John DiMaggio, Tara Strong, Carlos Alazraqui, Cas Anvar, Keith Ferguson, Andrew Kishino",
     year: 2019,
     episodes: 1,
-    genres: "Hoạt Hình, Hành Động, Gia Đình, Mỹ",
+    genres: "Hoạt Hình, Hành Động, Gia Đình, Mỹ, Phiêu Lưu",
     poster:
     "https://phimimg.com/upload/vod/20231023-1/4907ae69acee89a0f3242a8a0d0972e6.jpg",
     banner:
@@ -47346,6 +47552,8 @@ const fallbackMoviesList = [
   {
     title: "Batman Vs. Teenage Mutant Ninja Turtles",
     slug: "lien-minh-nguoi-doi-va-ninja-rua",
+    duplicateSources: ["https://phimapi.com/phim/nguoi-doi-va-ninja-rua","https://phimapi.com/phim/lien-minh-nguoi-doi-va-ninja-rua"],
+    duplicateOf: "nguoi-doi-va-ninja-rua",
     year: 2019,
     episodes: 1,
     genres: "Hành Động, Phiêu Lưu, Mỹ",
@@ -47402,9 +47610,11 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Long Halloween, Part Two",
     slug: "nguoi-doi-dem-truong-halloween-phan-2",
+    type: "animation",
+    cast: "Jensen Ackles, Josh Duhamel, Naya Rivera, Billy Burke, Titus Welliver, David Dastmalchian, Julie Nathanson, Alastair Duncan, Katee Sackhoff, Robin Atkin Downes, John DiMaggio, Laila Berzins, Fred Tatasciore, Amy Landecker, Troy Baker, Alyssa Diaz, Gary Le",
     year: 2021,
     episodes: 1,
-    genres: "Hoạt Hình, Bí Ẩn, Hành Động, Hình Sự, Mỹ",
+    genres: "Hoạt Hình, Bí Ẩn, Hành Động, Hình Sự, Mỹ, Viễn Tưởng, Phiêu Lưu, Khoa Học",
     poster:
     "https://phimimg.com/upload/vod/20231129-1/cd30035e4ac1f7503401aede8608d12c.jpg",
     banner:
@@ -47430,9 +47640,11 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Doom That Came To Gotham",
     slug: "nguoi-doi-ngay-tan-cua-gotham",
+    type: "animation",
+    cast: "David Giuntoli, )Tati Gabrielle, David Dastmalchian, Patrick Fabian, John DiMaggio, Karan Brar, Navid Negahban, Darin De Paul, Emily O'Brien, Christopher Gorham, Tim Russ",
     year: 2023,
     episodes: 1,
-    genres: "Phiêu Lưu, Mỹ",
+    genres: "Phiêu Lưu, Mỹ, Viễn Tưởng, Kinh Dị, Hành Động, Bí Ẩn",
     poster:
     "https://phimimg.com/upload/vod/20240227-1/a4d1b8f983e28dfea6da15a2c1e3d872.jpg",
     banner:
@@ -47444,6 +47656,8 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Doom That Came to Gotham",
     slug: "nguoi-doi-gotham-diet-vong",
+    duplicateSources: ["https://phimapi.com/phim/nguoi-doi-gotham-diet-vong","https://phimapi.com/phim/nguoi-doi-ngay-tan-cua-gotham","https://www.dc.com/movies/batman-the-doom-that-came-to-gotham-2023"],
+    duplicateOf: "nguoi-doi-ngay-tan-cua-gotham",
     year: 2023,
     episodes: 1,
     genres: "Viễn Tưởng, Kinh Dị, Hành Động, Bí Ẩn, Mỹ",
@@ -47473,6 +47687,8 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Long Halloween 2",
     slug: "nguoi-doi-dem-truong-halloween-2",
+    duplicateSources: ["https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2","https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"],
+    duplicateOf: "nguoi-doi-dem-truong-halloween-phan-2",
     year: 2021,
     episodes: 1,
     genres: "Hành Động, Viễn Tưởng, Phiêu Lưu, Khoa Học, Bí Ẩn, Mỹ",
@@ -47501,6 +47717,8 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Dark Knight Returns, Part 2",
     slug: "ky-si-bong-dem-tro-lai-phan-2",
+    duplicateSources: ["https://phimapi.com/phim/ky-si-bong-dem-tro-lai-phan-2","https://phimapi.com/phim/nguoi-doi-ky-si-bong-dem-tro-lai-phan-2","https://www.dc.com/movies/batman-the-dark-knight-returns-part-2-2013"],
+    duplicateOf: "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2",
     year: 2013,
     episodes: 1,
     genres: "Hành Động, Viễn Tưởng, Khoa Học, Kinh Dị, Mỹ",
@@ -47515,9 +47733,11 @@ const fallbackMoviesList = [
   {
     title: "Batman: The Dark Knight Returns, Part 2",
     slug: "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2",
+    type: "animation",
+    cast: "Peter Weller, Ariel Winter, David Selby, Michael Emerson, Mark Valley, Grey DeLisle, Frank Welker, Dee Bradley Baker, Michael McKean, James Patrick Stuart, Maria Canals-Barrera, Gwendoline Yeo, Danny Jacobs, Townsend Coleman, Michael Jackson, Bruce Timm",
     year: 2013,
     episodes: 1,
-    genres: "Khoa Học, Hành Động, Hoạt Hình, Bí Ẩn, Mỹ",
+    genres: "Khoa Học, Hành Động, Hoạt Hình, Bí Ẩn, Mỹ, Viễn Tưởng, Kinh Dị",
     poster:
     "https://phimimg.com/upload/vod/20231023-1/d5ff1f10912a981c8f7a57fae1ccfd69.jpg",
     banner:
@@ -47543,6 +47763,8 @@ const fallbackMoviesList = [
   {
     title: "LEGO DC Batman: Family Matters",
     slug: "nguoi-doi-lego-van-de-gia-dinh",
+    duplicateOf: "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+    duplicateSources: ["https://phimapi.com/phim/lego-dc-nguoi-doi-va-van-de-dai-gia-dinh","https://phimapi.com/phim/nguoi-doi-lego-van-de-gia-dinh"],
     year: 2019,
     episodes: 1,
     genres: "Hài Hước, Mỹ",
@@ -47557,6 +47779,8 @@ const fallbackMoviesList = [
   {
     title: "Lego DC Batman: Family Matters",
     slug: "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+    type: "animation",
+    cast: "Troy Baker, Jason Spisak, Will Friedle, Tara Strong, Alyson Stoner, Scott Menville, Nolan North, Christian Lanz, Zach Callison, Cam Clarke, Tom Kenny, Steve Blum, André Sogliuzzo, Jake Green, Josh Keaton, Ralph Garman, Fred Tatasciore",
     year: 2019,
     episodes: 1,
     genres: "Hoạt Hình, Gia Đình, Hành Động, Hài Hước, Đan Mạch, Mỹ",
@@ -47813,5 +48037,86 @@ const fallbackMoviesList = [
     banner:
     "https://phimimg.com/upload/vod/20231023-1/59272e776cb42561111ac7882e2b28fe.jpg",
     desc: "The Lego Batman Movie",
+  },
+
+  // Taken trilogy - exact KKPhim slugs, explicit verified collection.
+  {
+    "title": "Cưỡng Đoạt (Taken)",
+    "slug": "cuong-doat",
+    "apiSlug": "cuong-doat",
+    "year": 2008,
+    "episodes": 1,
+    "country": "Pháp",
+    "type": "single",
+    "genres": "Hành Động, Tâm Lý",
+    "poster": "https://phimimg.com/upload/vod/20231201-1/f76a74b5723c4256fa026cf3412f1a52.jpg",
+    "banner": "https://phimimg.com/upload/vod/20231201-1/e8b7f5a2472dfb52502a7fff48826cf6.jpg",
+    "desc": "Bryan là điệp viên đã nghĩ hưu muốn dùng thời gian đó để bù đắp cho Kim- con gái cưng của ông vì thời gian còn làm việc ông đã không có thời gian dành cho vợ con đến nỗi vợ chồng ông phải li dị để vợ ông tìm một bến đỗ mới. Khi con gái muốn đi Paris chơi cùng với cô bạn thân, ông đã có linh tính chẳng lành. Thật vậy, hai cô gái đã bị bắt cóc khi vừa xuống máy bay. Phim Taken là cuộc giải cứu con gái trong vòng 96 tiếng, bằng những kỹ năng của một cựu điệp viên, ông có làm được điều đó không?",
+    "cast": "Liam Neeson, Maggie Grace, Leland Orser, Famke Janssen, Jon Gries, David Warshofsky, Holly Valance, Katie Cassidy, Xander Berkeley, Olivier Rabourdin, Gérard Watkins, Marc Amyot, Arben Bajraktaraj, Radivoje Bukvić, Mathieu Busson, Michel Flash, Nicolas Gi",
+    "director": "Pierre Morel",
+    "sourceCountries": [
+      "Pháp",
+      "Âu Mỹ",
+      "Anh"
+    ],
+    "source": "kkphim",
+    "originalTitle": "Taken",
+    "sourceUrl": "https://phimapi.com/phim/cuong-doat",
+    "quality": "HD",
+    "language": "Vietsub",
+    "status": "completed",
+    "episodeCurrent": "Full"
+  },
+  {
+    "title": "Cưỡng Đoạt 2 (Taken 2)",
+    "slug": "cuong-doat-2",
+    "apiSlug": "cuong-doat-2",
+    "year": 2012,
+    "episodes": 1,
+    "country": "Pháp",
+    "type": "single",
+    "genres": "Hành Động, Hình Sự, Tâm Lý",
+    "poster": "https://phimimg.com/upload/vod/20231022-1/2111addeccc4a34f1ed390e578efb805.jpg",
+    "banner": "https://phimimg.com/upload/vod/20231022-1/a40dc684866a3525834cdd4253ecf6a9.jpg",
+    "desc": "Bryan Mills làm vệ sĩ cho những người nổi tiếng. Trong 1 chuyến đi tới Itstanbul, Bryan có mời vợ cũ Lenore và cô con gái Kim cùng tới du lịch cùng mình, đúng lúc này những kẻ thù năm xưa xuất hiện cầm đầu là tên trùm nguy hiểm Murad chúng đã bắt cóc Leonare. Một lần nữa Bryan đã đương đầu với bọn tội phạm nguy hiểm… Với bối cảnh đẹp của Itstanbul cùng những pha hành động gay cấn Taken 2 đã thu hút khán giả ở mọi lứa tuổi. Nội dung phim cũng ca ngợi tình nghĩa vợ chồng, tình phụ tử.",
+    "cast": "Liam Neeson, Maggie Grace, Famke Janssen, Leland Orser, D.B. Sweeney, Jon Gries, Rade Šerbedžija, Luke Grimes, Kevork Malikyan, Alain Figlarz, Frank Alvarez, Murat Tuncelli, Ali Yildirim, Ergun Kuyucu, Cengiz Bozkurt, Hakan Karahan, Saruhan Sari, Naci Adi",
+    "director": "Olivier Megaton",
+    "sourceCountries": [
+      "Pháp",
+      "Âu Mỹ"
+    ],
+    "source": "kkphim",
+    "originalTitle": "Taken 2",
+    "sourceUrl": "https://phimapi.com/phim/cuong-doat-2",
+    "quality": "HD",
+    "language": "Vietsub",
+    "status": "completed",
+    "episodeCurrent": "Full"
+  },
+  {
+    "title": "Cưỡng Đoạt 3 (Taken 3)",
+    "slug": "cuong-doat-3",
+    "apiSlug": "cuong-doat-3",
+    "year": 2014,
+    "episodes": 1,
+    "country": "Pháp",
+    "type": "single",
+    "genres": "Tâm Lý, Hành Động",
+    "poster": "https://phimimg.com/upload/vod/20231018-1/8bcf7e83ed8452c8e6b7c2ca1642f9ff.jpg",
+    "banner": "https://phimimg.com/upload/vod/20231018-1/571b948ddda503e545ac7ef077e11534.jpg",
+    "desc": "Trong phần phim này, nhân vật của Liam Neeson trở thành người bị săn đuổi sau khi bị buộc tội giết người. Ông phải lên đường chạy trốn và sẽ làm hết sức để thoát thân.  Từ một người tuân thủ luật pháp và có uy tín, Bryan Mills trở thành người chạy trốn. Bryan Mills trung thành phục vụ đất nước của mình, nhưng bây giờ họ truy bắt ông.",
+    "cast": "Liam Neeson, Forest Whitaker, Maggie Grace, Dougray Scott, Famke Janssen, Sam Spruell, Don Harvey, Dylan Bruno, Leland Orser, David Warshofsky, Jon Gries, Andrew Howard, Jonny Weston, Andrew Borba, Judi Beecher, Cedric Cirotteau, Catherine Dyer, Jimmy Pal",
+    "director": "Olivier Megaton",
+    "sourceCountries": [
+      "Pháp",
+      "Âu Mỹ"
+    ],
+    "source": "kkphim",
+    "originalTitle": "Taken 3",
+    "sourceUrl": "https://phimapi.com/phim/cuong-doat-3",
+    "quality": "HD",
+    "language": "Vietsub",
+    "status": "completed",
+    "episodeCurrent": "Full"
   },
 ];

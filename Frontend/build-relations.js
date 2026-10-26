@@ -7,7 +7,8 @@ function deriveRelations(movies,cache,manual={groups:[],standalone:[]}){
     if(!known.has(member.slug))throw Error("Standalone tham chiếu slug không tồn tại: "+member.slug);
     if((manual.groups||[]).some(group=>group.members.some(item=>item.slug===member.slug)))throw Error("Slug vừa standalone vừa trong nhóm: "+member.slug);
   }
-  const manualIndex=indexRelations(manual,known),excluded=new Set([...(manual.standalone||[]).map(m=>m.slug),...manualIndex.keys()]);
+  const duplicates=new Set(movies.filter(movie=>movie.duplicateOf).map(movie=>movie.slug));
+  const manualIndex=indexRelations(manual,known),excluded=new Set([...(manual.standalone||[]).map(m=>m.slug),...manualIndex.keys(),...duplicates]);
   const buckets=new Map();
   movies.forEach((movie,position)=>{
     if(excluded.has(movie.slug))return;
@@ -15,7 +16,7 @@ function deriveRelations(movies,cache,manual={groups:[],standalone:[]}){
     if(evidence?.status!=="found"||evidence.apiSlug!==(movie.apiSlug||movie.slug)||tmdb?.type!=="tv"||!Number.isInteger(tmdb.id)||tmdb.id<=0)return;
     const id="tmdb-tv-"+tmdb.id;const items=buckets.get(id)||[];items.push({movie,evidence,position});buckets.set(id,items);
   });
-  const groups=[...(manual.groups||[])],reservedIDs=new Set(groups.map(group=>group.id));
+  const groups=(manual.groups||[]).map(group=>({...group,members:group.members.filter(member=>!duplicates.has(member.slug))})).filter(group=>group.members.length>=2),reservedIDs=new Set((manual.groups||[]).map(group=>group.id));
   for(const [id,items] of buckets){
     // A group imported from the editor owns its exact membership. New metadata
     // must not create a second group with the same ID or silently add films.

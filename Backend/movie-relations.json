@@ -289,6 +289,35 @@
       ]
     },
     {
+      "id": "taken-films",
+      "label": "Cưỡng Đoạt / Taken",
+      "kind": "franchise",
+      "basis": "official-publisher-collection",
+      "sources": [
+        "https://moviesanywhere.com/collection/taken-collection",
+        "https://www.20thcenturystudios.com/movies/taken",
+        "https://www.20thcenturystudios.com/movies/taken-2",
+        "https://www.20thcenturystudios.com/movies/taken-3"
+      ],
+      "members": [
+        {
+          "slug": "cuong-doat",
+          "label": "Taken (2008)",
+          "order": 0
+        },
+        {
+          "slug": "cuong-doat-2",
+          "label": "Taken 2 (2012)",
+          "order": 1
+        },
+        {
+          "slug": "cuong-doat-3",
+          "label": "Taken 3 (2014)",
+          "order": 2
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -539,7 +568,6 @@
       "sources": [
         "https://www.themoviedb.org/tv/129832",
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang",
-        "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1",
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-2",
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-3",
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-4"
@@ -553,30 +581,23 @@
           "checkedAt": "2026-10-22T18:01:21.647Z"
         },
         {
-          "slug": "nha-tao-mau-toc-sieu-dang-phan-1",
-          "label": "Bread Barbershop (Season 1)",
-          "order": 1,
-          "season": 1,
-          "checkedAt": "2026-10-22T18:01:21.648Z"
-        },
-        {
           "slug": "nha-tao-mau-toc-sieu-dang-phan-2",
           "label": "Bread Barbershop (Season 2)",
-          "order": 2,
+          "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T18:01:21.649Z"
         },
         {
           "slug": "nha-tao-mau-toc-sieu-dang-phan-3",
           "label": "Bread Barbershop (Season 3)",
-          "order": 3,
+          "order": 2,
           "season": 3,
           "checkedAt": "2026-10-22T18:01:21.656Z"
         },
         {
           "slug": "nha-tao-mau-toc-sieu-dang-phan-4",
           "label": "Bread Barbershop (Season 4)",
-          "order": 4,
+          "order": 3,
           "season": 4,
           "checkedAt": "2026-10-22T18:01:21.860Z"
         }
@@ -2376,7 +2397,6 @@
       "sources": [
         "https://www.themoviedb.org/tv/237150",
         "https://phimapi.com/phim/chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
-        "https://phimapi.com/phim/tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1",
         "https://phimapi.com/phim/tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-2",
         "https://phimapi.com/phim/chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-3"
       ],
@@ -2389,23 +2409,16 @@
           "checkedAt": "2026-10-22T17:56:39.981Z"
         },
         {
-          "slug": "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1",
-          "label": "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1)",
-          "order": 1,
-          "season": 1,
-          "checkedAt": "2026-10-22T17:56:40.012Z"
-        },
-        {
           "slug": "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-2",
           "label": "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 2)",
-          "order": 2,
+          "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T17:56:40.158Z"
         },
         {
           "slug": "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-3",
           "label": "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 3)",
-          "order": 3,
+          "order": 2,
           "season": 3,
           "checkedAt": "2026-10-22T17:56:40.191Z"
         }
@@ -2794,7 +2807,6 @@
       "sources": [
         "https://www.themoviedb.org/tv/110837",
         "https://phimapi.com/phim/dac-nhiem-tham-tu-wan",
-        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1",
         "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-2"
       ],
       "members": [
@@ -2806,16 +2818,9 @@
           "checkedAt": "2026-10-22T17:56:58.380Z"
         },
         {
-          "slug": "dac-nhiem-tham-tu-wan-phan-1",
-          "label": "Bungo Stray Dogs WAN! (Season 1)",
-          "order": 1,
-          "season": 1,
-          "checkedAt": "2026-10-22T17:56:58.421Z"
-        },
-        {
           "slug": "dac-nhiem-tham-tu-wan-phan-2",
           "label": "Bungo Stray Dogs WAN! (Season 2)",
-          "order": 2,
+          "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T17:56:58.528Z"
         }
@@ -5048,12 +5053,11 @@
     },
     {
       "id": "tmdb-tv-96316",
-      "label": "Rent-a-Girlfriend",
+      "label": "Rent-A-Girlfriend (Season 1)",
       "kind": "series",
       "basis": "provider-exact-tmdb-tv-id",
       "sources": [
         "https://www.themoviedb.org/tv/96316",
-        "https://phimapi.com/phim/dich-vu-thue-ban-gai",
         "https://phimapi.com/phim/ban-gai-thue-phan-1",
         "https://phimapi.com/phim/ban-gai-thue-phan-2",
         "https://phimapi.com/phim/ban-gai-thue-phan-3",
@@ -5062,44 +5066,37 @@
       ],
       "members": [
         {
-          "slug": "dich-vu-thue-ban-gai",
-          "label": "Rent-a-Girlfriend",
-          "order": 0,
-          "season": 1,
-          "checkedAt": "2026-10-22T17:59:00.330Z"
-        },
-        {
           "slug": "ban-gai-thue-phan-1",
           "label": "Rent-A-Girlfriend (Season 1)",
-          "order": 1,
+          "order": 0,
           "season": 1,
           "checkedAt": "2026-10-22T17:59:00.522Z"
         },
         {
           "slug": "ban-gai-thue-phan-2",
           "label": "Rent-A-Girlfriend (Season 2)",
-          "order": 2,
+          "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T17:59:00.525Z"
         },
         {
           "slug": "ban-gai-thue-phan-3",
           "label": "Rent-A-Girlfriend (Season 3)",
-          "order": 3,
+          "order": 2,
           "season": 3,
           "checkedAt": "2026-10-22T17:59:00.556Z"
         },
         {
           "slug": "ban-gai-thue-phan-4",
           "label": "Rent-A-Girlfriend (Season 4)",
-          "order": 4,
+          "order": 3,
           "season": 4,
           "checkedAt": "2026-10-22T17:59:00.543Z"
         },
         {
           "slug": "ban-gai-thue-phan-5",
           "label": "Rent-A-Girlfriend (Season 5)",
-          "order": 5,
+          "order": 4,
           "season": 5,
           "checkedAt": "2026-10-22T17:59:00.724Z"
         }
@@ -5276,7 +5273,7 @@
         },
         {
           "slug": "sasaki-va-p-chan-phan-2",
-          "label": "Sasaki and Peeps (Season 1)",
+          "label": "Sasaki and Peeps (Season 2)",
           "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T17:59:14.621Z"
@@ -6108,7 +6105,6 @@
       "sources": [
         "https://www.themoviedb.org/tv/100049",
         "https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1",
-        "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1",
         "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-2"
       ],
       "members": [
@@ -6120,16 +6116,9 @@
           "checkedAt": "2026-10-22T18:00:06.475Z"
         },
         {
-          "slug": "du-sao-cung-de-thuong-phan-1",
-          "label": "TONIKAWA: Over The Moon For You (Season 1)",
-          "order": 1,
-          "season": 1,
-          "checkedAt": "2026-10-22T18:00:06.627Z"
-        },
-        {
           "slug": "du-sao-cung-de-thuong-phan-2",
           "label": "TONIKAWA: Over The Moon For You (Season 2)",
-          "order": 2,
+          "order": 1,
           "season": 2,
           "checkedAt": "2026-10-22T18:00:06.665Z"
         }

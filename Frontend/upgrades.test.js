@@ -12,10 +12,21 @@ test("compact index preserves card fields, omits cast and full description, and 
  const shard=JSON.parse(result.files[rows[0].detailShard].text);assert.equal(shard.one.desc.length,1000);assert.equal(shard.one.cast,"Long Cast");assert.match(result.search.one,/long cast/);
  assert.equal(rows[0].apiSlug,'actual-provider-slug');assert.equal(rows[1].apiSlug,undefined);
 });
+test('only explicitly verified duplicate uploads share one browsing card; same titles remain separate',()=>{
+ const movies=[base('original',{title:'Same',year:2016}),base('alternate',{title:'Same',year:2016,duplicateOf:'original',duplicateSources:['https://example.com/verified']}),base('remake',{title:'Same',year:2024}),base('unverified',{title:'Same',year:2016})],result=artifacts(movies);
+ assert.deepEqual(decode(result.index).map(movie=>movie.slug),['original','remake','unverified']);assert.equal(result.index.aliases.alternate.duplicateOf,'original');
+ const archived=JSON.parse(result.files[result.index.aliases.alternate.detailShard].text).alternate;assert.equal(archived.slug,'alternate');assert.equal(archived.duplicateOf,'original');
+ const {validateMovies}=require('./catalog-tools');assert.ok(validateMovies([base('bad',{duplicateOf:'missing',duplicateSources:['https://example.com']})]).errors.length);assert.ok(validateMovies([base('self',{duplicateOf:'self',duplicateSources:['https://example.com']})]).errors.length);assert.ok(validateMovies([base('original'),base('unverified',{duplicateOf:'original'})]).errors.length);
+});
+test('the two verified Batman duplicate pairs keep alternative slugs without duplicate browsing cards',()=>{
+ const raw=JSON.parse(fs.readFileSync(path.join(__dirname,'data/catalog-index.json'),'utf8')),cards=decode(raw);
+ for(const [alias,canonical]of [['nguoi-doi-sat-thu-joke','batman-tro-dua-chet-choc'],['nguoi-doi-lego-van-de-gia-dinh','lego-dc-nguoi-doi-va-van-de-dai-gia-dinh']]){assert.equal(raw.aliases[alias].duplicateOf,canonical);assert.equal(cards.filter(movie=>movie.slug===canonical).length,1);assert.equal(cards.some(movie=>movie.slug===alias),false);}
+});
 test("generated index is substantially smaller and every archived movie is present in its detail shard",()=>{
  const full=JSON.parse(fs.readFileSync(path.join(__dirname,"data/movies.json"),"utf8"));const index=JSON.parse(fs.readFileSync(path.join(__dirname,"data/catalog-index.json"),"utf8")),rows=decode(index),shards=new Map();
- assert.equal(rows.length,full.length);assert.ok(fs.statSync(path.join(__dirname,"data/catalog-index.json")).size < fs.statSync(path.join(__dirname,"data/movies.json")).size*.5);
- for(const [i,movie] of full.entries()){const file=index.details[rows[i].detailShard];if(!shards.has(file))shards.set(file,JSON.parse(fs.readFileSync(path.join(__dirname,file),"utf8")));assert.deepEqual(shards.get(file)[movie.slug],movie);}
+ const allCards=[...rows,...Object.values(index.aliases||{})],bySlug=new Map(allCards.map(movie=>[movie.slug,movie]));
+ assert.equal(allCards.length,full.length);assert.equal(bySlug.size,full.length);assert.ok(fs.statSync(path.join(__dirname,"data/catalog-index.json")).size < fs.statSync(path.join(__dirname,"data/movies.json")).size*.5);
+ for(const movie of full){const file=index.details[bySlug.get(movie.slug).detailShard];if(!shards.has(file))shards.set(file,JSON.parse(fs.readFileSync(path.join(__dirname,file),"utf8")));assert.deepEqual(shards.get(file)[movie.slug],movie);}
 });
 test("URL state roundtrips combined filters and page without confusing wishlist routes",()=>{
  const state={q:"Gong Yoo",country:"Hàn Quốc",genre:"Hài Hước",year:"2024",type:"series",sort:"title",page:3},url=State.url(state),read=State.read(url.split("?")[1]);for(const key of Object.keys(state))assert.equal(read[key],state[key]);assert.equal(read.catalog,true);assert.equal(State.read("?page=wishlist").catalog,false);assert.equal(State.read("?page=wishlist").view,"wishlist");assert.equal(State.safeReturn("https://example.com"),null);assert.equal(State.safeReturn("javascript:alert(1)"),null);assert.equal(State.safeReturn(url),url);

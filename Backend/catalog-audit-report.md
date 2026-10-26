@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3697 phim; 0 lỗi; 265 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3700 phim; 0 lỗi; 268 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -183,7 +183,15 @@
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-doi-bat-dau
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cau-chuyen-lego-batman
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuong-doat
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuong-doat-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuong-doat-3
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — nu-than-chien-tranh, athena-nu-than-chien-tranh
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — trang-sang-mua-dong, yoon-hee-cua-me
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — tham-tu-lung-danh-conan-22-ke-han-phap-zero, tham-tu-lung-danh-conan-22-ke-hanh-phap-zero
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — phim/sat-thu-ve-vuon, sat-thu-ve-vuon
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — lam-nong-la-gan-chu-heo, butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon
+- **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — haikyu-ban-dien-anh-3-thien-tai-troi-day, thieu-nien-bong-chuyen-tai-nang-va-cam-giac
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — happy-new-year-chuc-mung-nam-moi, chuc-mung-nam-moi
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nu-than-chien-tranh, athena-nu-than-chien-tranh
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nhan-chung-mu, toi-ac-vo-hinh-cong-ly-mu
@@ -212,7 +220,7 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ong-trum-2016, master
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nu-hoang-thang-5, nu-hoang-thang-nam
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — trang-sang-mua-dong, yoon-hee-cua-me
-- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mouse-ke-san-nguoi-ban-dien-anh, ke-san-nguoi, mouse-ke-san-nguoi
+- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ke-san-nguoi, mouse-ke-san-nguoi
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — anh-toi-vo-so-toi, anh-trai-phien-phuc-cua-toi
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — chi-gai-bao-thu, vach-toi-2025
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ma-nu-dang-yeu, oi-co-ma
@@ -227,7 +235,6 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ve-dep-tam-hon, ve-dep-tiem-an
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ho-so-ba-linh, ho-so-berlin
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — thoa-thuan-voi-ac-quy, thoa-thuan-cua-quy
-- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nuoc-co-sinh-tu, van-co-sinh-tu-2-phan-no
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-vo-danh-tinh, sat-thu-vo-danh
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — the-pirates, hai-tac
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — gui-den-ngoi-sao-cua-anh-2021, gui-den-ngoi-sao-cua-anh
@@ -235,7 +242,6 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mo-khoa-sep-tong, giai-cuu-ong-chu
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — khi-nang-say-giac, su-that-sau-giac-ngu
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — tham-tu-lung-danh-conan-22-ke-han-phap-zero, tham-tu-lung-danh-conan-22-ke-hanh-phap-zero
-- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — hoi-phap-su-phan-1, fairy-tail-nu-te-cua-phuong-hoang
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — hoc-vien-sieu-anh-hung-nguoi-hung-troi-day, hoc-vien-anh-hung-the-ky-moi-cua-anh-hung
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — phim/sat-thu-ve-vuon, sat-thu-ve-vuon
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-ro-danh-cho-moi-nguoi, niem-dam-me-bong-ro
@@ -249,7 +255,6 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — goc-khuat-cua-the-gioi-2016, goc-khuat-cua-the-gioi
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — mo-ra-mot-the-gioi-tuyet-voi-phan-3, phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cac-co-gai-cua-rokudo, gai-hu-cua-rokudo
-- **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — cac-cau-song-the-nao, thieu-nien-va-chim-diec
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-den-trong-tim-phan-1, boku-no-kokoro-no-yabai-yatsu-phan-1
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — bong-den-trong-tim-phan-2, boku-no-kokoro-no-yabai-yatsu-phan-2
@@ -262,8 +267,6 @@
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-ngay-tan-cua-gotham, nguoi-doi-gotham-diet-vong
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — ky-si-bong-dem-tro-lai-phan-2, nguoi-doi-ky-si-bong-dem-tro-lai-phan-2
 - **warning / duplicate-title**: Trùng tên; có thể là bản làm lại hoặc phần khác, cần đối chiếu. — nguoi-doi-lego-van-de-gia-dinh, lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
-- **warning / duplicate-part**: Trùng tên phần trong nhóm tmdb-tv-237150. — chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1, tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1
 - **warning / season-gap**: Nhóm tmdb-tv-90937 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — beastars-the-gioi-nguoi-thu-phan-1, beastars-the-gioi-nguoi-thu-phan-3
 - **warning / season-gap**: Nhóm tmdb-tv-69500 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — huu-nhan-so-phan-1, huu-nhan-so-phan-3, huu-nhan-so-phan-4, huu-nhan-so-phan-5, huu-nhan-so-phan-6, huu-nhan-so-phan-7
-- **warning / duplicate-part**: Trùng tên phần trong nhóm tmdb-tv-206630. — sasaki-va-p-chan-phan-1, sasaki-va-p-chan-phan-2
 - **warning / season-gap**: Nhóm tmdb-tv-83095 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — su-troi-day-cua-khien-hiep-si-phan-1, su-troi-day-cua-khien-hiep-si-phan-4

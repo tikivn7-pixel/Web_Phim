@@ -52,6 +52,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - ong-trum-riize: Boss Riize — nhóm cũ: Boss
 - dai-ca-ha-ha-ha: Boss — nhóm cũ: Boss
 - co-giao-em-la-so-1: Brave Citizen — nhóm cũ: Brave
+- nha-tao-mau-toc-sieu-dang-phan-1: Bread Barbershop (Season 1) — nhóm cũ: Bread Barbershop
 - chien-nao-ma-kia: Bring It On, Ghost — nhóm cũ: Bring
 - dua-con-ve-nha: Bring Me Home — nhóm cũ: Bring
 - thieu-dot: Burning — nhóm cũ: Burning
@@ -357,7 +358,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - yoon-hee-cua-me: Moonlit Winter — nhóm cũ: Moonlit Winter
 - me-bau-sieu-ngau: More Than Family — nhóm cũ: More Than
 - hon-ca-tinh-ban: More Than Friends — nhóm cũ: More Than
-- mouse-ke-san-nguoi-ban-dien-anh: Mouse — nhóm cũ: Mouse
+- mouse-ke-san-nguoi-ban-dien-anh: Mouse (Movie Version) — nhóm cũ: Mouse
 - ke-san-nguoi: Mouse — nhóm cũ: Mouse
 - mouse-ke-san-nguoi: Mouse — nhóm cũ: Mouse
 - bay-chuot-phan-1: Mousetrap (Season 1) — nhóm cũ: Mousetrap
@@ -615,7 +616,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - tham-tu-lung-danh-conan-vu-an-tien-gia-ultra-30: Detective Conan: The Counterfeit Case of Ultra 30 — nhóm cũ: Conan
 - cyberpunk-edgerunners: Cyberpunk Edgerunners (Season 2) — nhóm cũ: cyberpunk
 - cyberpunk-edgerunners-phan-2: Cyberpunk: Edgerunners — nhóm cũ: cyberpunk
-- fairy-tail-nu-te-cua-phuong-hoang: Fairy Tail (Season 1) — nhóm cũ: Fairy Tail
+- fairy-tail-nu-te-cua-phuong-hoang: Fairy Tail: Phoenix Priestess — nhóm cũ: Fairy Tail
 - hoi-phap-su-nhiem-vu-100-nam: Fairy Tail: 100 Years Quest — nhóm cũ: Fairy Tail
 - movie-thieu-nu-ma-phap-illya-loi-the-duoi-tuyet: Fate/kaleid Liner Prisma Illya Movie — nhóm cũ: Fate
 - cuoc-chien-chen-thanh-loi-the-duoi-tuyet: Fate/Kaleid Liner Prisma Illya: The Movie - Oath Under Snow — nhóm cũ: Fate
@@ -693,6 +694,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-1: Arifureta: From Commonplace To World's Strongest (Season 1) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
 - arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-2: Arifureta: From Commonplace To World's Strongest (Season 2) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
 - arifureta-tu-tam-thuong-den-bat-kha-chien-bai-phan-3: Arifureta: From Commonplace To World's Strongest (Season 3) — nhóm cũ: Arifureta: From Commonplace To World's Strongest
+- tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1: As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1) — nhóm cũ: As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World
 - lop-hoc-am-sat-365-ngay-ngoai-truyen: Assassination Classroom: 365 Days (Movie) — nhóm cũ: Assassination Classroom
 - phim-dien-anh-lop-hoc-am-sat-gio-cua-chung-ta: Assassination Classroom the Movie: Our Time — nhóm cũ: Assassination Classroom
 - dai-chien-titan-cung-ten-do-tham: Attack On Titan: Crimson Bow And Arrow — nhóm cũ: Attack On Titan
@@ -731,6 +733,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - bocchi-the-rock-recap-part-1: Bocchi The Rock! Recap Part 1 — nhóm cũ: Bocchi The Rock! Recap
 - bocchi-the-rock-recap-part-2: Bocchi The Rock! Recap Part 2 — nhóm cũ: Bocchi The Rock! Recap
 - brave-story: Brave Story — nhóm cũ: Brave
+- dac-nhiem-tham-tu-wan-phan-1: Bungo Stray Dogs WAN! (Season 1) — nhóm cũ: Bungo Stray Dogs WAN!
 - shakugan-cua-shana: Burning Eyes Shana, Flaming Eyes Shana, Shana Of The Burning Eyes — nhóm cũ: Burning
 - lam-nong-la-gan-chu-heo: Butareba -The Story of a Man Turned Into a Pig- — nhóm cũ: Butareba The Story of a Man Turned Into a Pig
 - butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon: Butareba The Story Of A Man Turned Into A Pig — nhóm cũ: Butareba The Story of a Man Turned Into a Pig
@@ -1044,6 +1047,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - hoi-chung-tuoi-thanh-xuan-em-gai-xuat-hanh: Rascal Does Not Dream Of A Sister Venturing Out — nhóm cũ: Rascal Does Not Dream of
 - hoi-chung-tuoi-thanh-xuan-phan-2: Rascal Does Not Dream Of Santa Claus — nhóm cũ: Rascal Does Not Dream of
 - gia-su-hitman-reborn-katekyo-hitman-reborn: REBORN! — nhóm cũ: Reborn
+- dich-vu-thue-ban-gai: Rent-a-Girlfriend — nhóm cũ: Rent-A-Girlfriend
 - vung-dat-quy-du-phat-tac: Resident Evil: Degeneration — nhóm cũ: Resident
 - vung-dat-quy-du-loi-nguyen: Resident Evil: Damnation — nhóm cũ: Resident
 - vung-dat-quy-du-no-mau: Resident Evil: Vendetta — nhóm cũ: Resident
@@ -1115,6 +1119,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - tokyo-revengers: Tokyo Revengers — nhóm cũ: Tokyo Revengers
 - tokyo-revengers-cuoc-chien-cua-ba-titan: Tokyo Revengers: War of the Three Titan Arc — nhóm cũ: Tokyo Revengers
 - du-sao-cung-de-thuong-mua-2: Tonikaku Kawaii (Season 2) — nhóm cũ: Tonikaku Kawaii
+- du-sao-cung-de-thuong-phan-1: TONIKAWA: Over The Moon For You (Season 1) — nhóm cũ: TONIKAWA: Over The Moon For You
 - transformers-chien-tranh-cybertron-trai-dat-troi-day: Transformers: War for Cybertron: Earthrise — nhóm cũ: Transformers War for Cybertron
 - transformers-chien-tranh-cybertron-cuoc-vay-ham: Transformers: War for Cybertron: Siege — nhóm cũ: Transformers War for Cybertron
 - transformers-chien-tranh-cybertron-vuong-quoc: Transformers: War for Cybertron: Kingdom — nhóm cũ: Transformers War for Cybertron

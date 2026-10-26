@@ -1,0 +1,696 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T04:37:43.938Z",
+  "recordsReviewed": 3700,
+  "groups": [
+    {
+      "canonical": "batman-tro-dua-chet-choc",
+      "aliases": [
+        "nguoi-doi-sat-thu-joke"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/batman-tro-dua-chet-choc",
+        "https://phimapi.com/phim/nguoi-doi-sat-thu-joke"
+      ],
+      "reason": "Previously verified duplicate."
+    },
+    {
+      "canonical": "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+      "aliases": [
+        "nguoi-doi-lego-van-de-gia-dinh"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+        "https://phimapi.com/phim/nguoi-doi-lego-van-de-gia-dinh"
+      ],
+      "reason": "Previously verified duplicate."
+    },
+    {
+      "canonical": "happy-new-year-chuc-mung-nam-moi",
+      "aliases": [
+        "chuc-mung-nam-moi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuc-mung-nam-moi",
+        "https://phimapi.com/phim/happy-new-year-chuc-mung-nam-moi"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "lien-minh-dao-mo",
+      "aliases": [
+        "ke-san-mo"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ke-san-mo",
+        "https://phimapi.com/phim/lien-minh-dao-mo"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "bat-ma-pha-an",
+      "aliases": [
+        "dien-nao-ma-oi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bat-ma-pha-an",
+        "https://phimapi.com/phim/dien-nao-ma-oi"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "biet-doi-hitrun-biet-doi-toc-do",
+      "aliases": [
+        "biet-doi-hitandrun"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/biet-doi-hitandrun",
+        "https://phimapi.com/phim/biet-doi-hitrun-biet-doi-toc-do"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "sat-thu-vo-cung-cuc",
+      "aliases": [
+        "mat-vu-kingsman-2020"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mat-vu-kingsman-2020",
+        "https://phimapi.com/phim/sat-thu-vo-cung-cuc"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "hwayi-sat-nhan-trang",
+      "aliases": [
+        "hwayi-cau-be-quai-vat"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hwayi-cau-be-quai-vat",
+        "https://phimapi.com/phim/hwayi-sat-nhan-trang"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "vua-bau-cu",
+      "aliases": [
+        "kingmaker"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/kingmaker",
+        "https://phimapi.com/phim/vua-bau-cu"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "ac-quy-nghin-nam",
+      "aliases": [
+        "ky-nguyen-tan-bao"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ac-quy-nghin-nam",
+        "https://phimapi.com/phim/ky-nguyen-tan-bao"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "cuoc-song-2018",
+      "aliases": [
+        "doi-canh-sat"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-2018",
+        "https://phimapi.com/phim/doi-canh-sat"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "ong-trum-2016",
+      "aliases": [
+        "master"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/master",
+        "https://phimapi.com/phim/ong-trum-2016"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "nu-hoang-thang-nam",
+      "aliases": [
+        "nu-hoang-thang-5"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nu-hoang-thang-5",
+        "https://phimapi.com/phim/nu-hoang-thang-nam"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "dac-vu-bong-ma",
+      "aliases": [
+        "phantom"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dac-vu-bong-ma",
+        "https://phimapi.com/phim/phantom"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "ma-nu-chung-cu",
+      "aliases": [
+        "mui-huong-cua-ma-nu"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ma-nu-chung-cu",
+        "https://phimapi.com/phim/mui-huong-cua-ma-nu"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "cam-do",
+      "aliases": [
+        "phuc-vu-nhan-dan"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cam-do",
+        "https://phimapi.com/phim/phuc-vu-nhan-dan"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "ho-so-ba-linh",
+      "aliases": [
+        "ho-so-berlin"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ho-so-ba-linh",
+        "https://phimapi.com/phim/ho-so-berlin"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "thoa-thuan-voi-ac-quy",
+      "aliases": [
+        "thoa-thuan-cua-quy"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/thoa-thuan-cua-quy",
+        "https://phimapi.com/phim/thoa-thuan-voi-ac-quy"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "sat-thu-vo-danh",
+      "aliases": [
+        "nguoi-vo-danh-tinh"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-vo-danh-tinh",
+        "https://phimapi.com/phim/sat-thu-vo-danh"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "hai-tac",
+      "aliases": [
+        "the-pirates"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hai-tac",
+        "https://phimapi.com/phim/the-pirates"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "mo-khoa-sep-tong",
+      "aliases": [
+        "giai-cuu-ong-chu"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/giai-cuu-ong-chu",
+        "https://phimapi.com/phim/mo-khoa-sep-tong"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "sat-thu-ve-vuon",
+      "aliases": [
+        "phim/sat-thu-ve-vuon"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/sat-thu-ve-vuon"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "niem-dam-me-bong-ro",
+      "aliases": [
+        "bong-ro-danh-cho-moi-nguoi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bong-ro-danh-cho-moi-nguoi",
+        "https://phimapi.com/phim/niem-dam-me-bong-ro"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+      "aliases": [
+        "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+        "https://phimapi.com/phim/tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3",
+      "aliases": [
+        "mo-ra-mot-the-gioi-tuyet-voi-phan-3"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mo-ra-mot-the-gioi-tuyet-voi-phan-3",
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "cac-co-gai-cua-rokudo",
+      "aliases": [
+        "gai-hu-cua-rokudo"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cac-co-gai-cua-rokudo",
+        "https://phimapi.com/phim/gai-hu-cua-rokudo"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "cac-cau-song-the-nao",
+      "aliases": [
+        "thieu-nien-va-chim-diec"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cac-cau-song-the-nao",
+        "https://phimapi.com/phim/thieu-nien-va-chim-diec"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac",
+      "aliases": [
+        "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc",
+        "https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "co-gai-co-khi",
+      "aliases": [
+        "thieu-nu-punk-co-gai-co-khi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/co-gai-co-khi",
+        "https://phimapi.com/phim/thieu-nu-punk-co-gai-co-khi"
+      ],
+      "reason": "Reviewed fresh source title/year/format and cast/director or exact provider identity."
+    },
+    {
+      "canonical": "nu-than-chien-tranh",
+      "aliases": [
+        "athena-nu-than-chien-tranh"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/athena-nu-than-chien-tranh",
+        "https://phimapi.com/phim/nu-than-chien-tranh"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "gui-cau-tinh-dau-cua-toi",
+      "aliases": [
+        "dear-m"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dear-m",
+        "https://phimapi.com/phim/gui-cau-tinh-dau-cua-toi"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "neu-nhu-sau-con-mua",
+      "aliases": [
+        "endless-rain",
+        "cho-em-den-ngay-mua"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/endless-rain",
+        "https://phimapi.com/phim/neu-nhu-sau-con-mua",
+        "https://phimapi.com/phim/cho-em-den-ngay-mua",
+        "https://m.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20193068"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "co-huong",
+      "aliases": [
+        "mat-toi-cua-binh-yen"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/co-huong",
+        "https://phimapi.com/phim/mat-toi-cua-binh-yen"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "con-tin-ngoi-sao-mat-tich",
+      "aliases": [
+        "con-tin"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/con-tin",
+        "https://phimapi.com/phim/con-tin-ngoi-sao-mat-tich"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "trang-sang-mua-dong",
+      "aliases": [
+        "yoon-hee-cua-me"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/trang-sang-mua-dong",
+        "https://phimapi.com/phim/yoon-hee-cua-me"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "ho-sut-tu-than",
+      "aliases": [
+        "ho-sut"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ho-sut",
+        "https://phimapi.com/phim/ho-sut-tu-than"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
+      "aliases": [
+        "tham-tu-lung-danh-conan-22-ke-han-phap-zero"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-han-phap-zero",
+        "https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-hanh-phap-zero"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+      "aliases": [
+        "lam-nong-la-gan-chu-heo"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+        "https://phimapi.com/phim/lam-nong-la-gan-chu-heo"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "horimiya",
+      "aliases": [
+        "horisan-va-miyamurakun"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/horimiya",
+        "https://phimapi.com/phim/horisan-va-miyamurakun"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "bong-den-trong-tim-phan-1",
+      "aliases": [
+        "boku-no-kokoro-no-yabai-yatsu-phan-1"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-1",
+        "https://phimapi.com/phim/bong-den-trong-tim-phan-1"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "bong-den-trong-tim-phan-2",
+      "aliases": [
+        "boku-no-kokoro-no-yabai-yatsu-phan-2"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-2",
+        "https://phimapi.com/phim/bong-den-trong-tim-phan-2"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "khong-minh-thich-tiec-tung-ban-hoat-hinh",
+      "aliases": [
+        "khong-minh-thich-tiec-tung"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/khong-minh-thich-tiec-tung",
+        "https://phimapi.com/phim/khong-minh-thich-tiec-tung-ban-hoat-hinh"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "sat-long-nhan",
+      "aliases": [
+        "ragna-crimson"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ragna-crimson",
+        "https://phimapi.com/phim/sat-long-nhan"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "bay-vien-ngoc-rong-gt",
+      "aliases": [
+        "7-vien-ngoc-rong-gt"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/7-vien-ngoc-rong-gt",
+        "https://phimapi.com/phim/bay-vien-ngoc-rong-gt",
+        "https://en.dragon-ball-official.com/about/dragon_ball_history.html"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "goc-khuat-cua-the-gioi-2016",
+      "aliases": [
+        "goc-khuat-cua-the-gioi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi",
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi-2016"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2",
+      "aliases": [
+        "ky-si-bong-dem-tro-lai-phan-2"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ky-si-bong-dem-tro-lai-phan-2",
+        "https://phimapi.com/phim/nguoi-doi-ky-si-bong-dem-tro-lai-phan-2",
+        "https://www.dc.com/movies/batman-the-dark-knight-returns-part-2-2013"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "nguoi-doi-va-ninja-rua",
+      "aliases": [
+        "lien-minh-nguoi-doi-va-ninja-rua"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-va-ninja-rua",
+        "https://phimapi.com/phim/lien-minh-nguoi-doi-va-ninja-rua"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "nguoi-doi-ngay-tan-cua-gotham",
+      "aliases": [
+        "nguoi-doi-gotham-diet-vong"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-gotham-diet-vong",
+        "https://phimapi.com/phim/nguoi-doi-ngay-tan-cua-gotham",
+        "https://www.dc.com/movies/batman-the-doom-that-came-to-gotham-2023"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "nguoi-doi-dem-truong-halloween-phan-2",
+      "aliases": [
+        "nguoi-doi-dem-truong-halloween-2"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2",
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "nha-tao-mau-toc-sieu-dang",
+      "aliases": [
+        "nha-tao-mau-toc-sieu-dang-phan-1"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang",
+        "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "dac-nhiem-tham-tu-wan",
+      "aliases": [
+        "dac-nhiem-tham-tu-wan-phan-1"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan",
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "ban-gai-thue-phan-1",
+      "aliases": [
+        "dich-vu-thue-ban-gai"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ban-gai-thue-phan-1",
+        "https://phimapi.com/phim/dich-vu-thue-ban-gai"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "du-sao-cung-de-thuong-mua-1",
+      "aliases": [
+        "du-sao-cung-de-thuong-phan-1"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1",
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+      "aliases": [
+        "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "https://phimapi.com/phim/thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "mouse-ke-san-nguoi-ban-dien-anh",
+      "aliases": [
+        "mouse-ke-san-nguoi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mouse-ke-san-nguoi",
+        "https://phimapi.com/phim/mouse-ke-san-nguoi-ban-dien-anh"
+      ],
+      "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    }
+  ],
+  "separate": [
+    {
+      "slugs": [
+        "10-ngay-de-song",
+        "cuoc-doi-thu-ba"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/10-ngay-de-song",
+        "https://phimapi.com/phim/cuoc-doi-thu-ba"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "helpless",
+        "luot-xem-dam-mau"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/helpless",
+        "https://phimapi.com/phim/luot-xem-dam-mau"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "anh-toi-vo-so-toi",
+        "anh-trai-phien-phuc-cua-toi"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/anh-toi-vo-so-toi",
+        "https://phimapi.com/phim/anh-trai-phien-phuc-cua-toi"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "mot-lan-nua",
+        "them-mot-lan-nua"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mot-lan-nua",
+        "https://phimapi.com/phim/them-mot-lan-nua"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "doraemon-chu-khung-long-cua-nobita",
+        "doraemon-chu-khung-long-cua-nobita-1980"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/doraemon-chu-khung-long-cua-nobita",
+        "https://phimapi.com/phim/doraemon-chu-khung-long-cua-nobita-1980"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy",
+        "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy",
+        "https://phimapi.com/phim/doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    },
+    {
+      "slugs": [
+        "dau-an-rong-thieng-ban-1991",
+        "dau-an-rong-thieng-ban-2020"
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dau-an-rong-thieng-ban-1991",
+        "https://phimapi.com/phim/dau-an-rong-thieng-ban-2020"
+      ],
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads."
+    }
+  ]
+}

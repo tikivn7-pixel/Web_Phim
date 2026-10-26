@@ -17,8 +17,14 @@ function readMovies() {
 function validateMovies(movies) {
   const errors = [], warnings = [], seen = new Set(), apiSeen = new Set();
   if (!movies.length) errors.push("Kho phim đang rỗng.");
+  const bySlug = new Map(movies.map(movie => [movie.slug, movie]));
   for (const movie of movies) {
     const label = movie.slug || movie.title || "Phim chưa có tên";
+    if (movie.duplicateOf !== undefined) {
+      const target = bySlug.get(movie.duplicateOf);
+      if (!target || target === movie || target.duplicateOf || typeof movie.duplicateOf !== 'string') errors.push(`${label}: bản trùng phải trỏ tới một phim chính có thật, không tự trỏ hoặc nối vòng.`);
+      if (!Array.isArray(movie.duplicateSources) || !movie.duplicateSources.length || movie.duplicateSources.some(url => typeof url !== 'string' || !/^https:\/\//.test(url))) errors.push(`${label}: cần nguồn đối chiếu HTTPS trước khi gộp thẻ phim.`);
+    }
     if (movie.country && (typeof movie.country !== "string" || /[,?\uFFFD]/.test(movie.country))) errors.push(`${label}: country phải là một quốc gia chính, kiểm tra lại mã hóa tiếng Việt.`);
     const legacyAlias = /^phim\/[a-z0-9_-]+$/.test(movie.slug || "") && /^[a-z0-9][a-z0-9_-]*$/.test(movie.apiSlug || "");
     if (!movie.slug || (!/^[a-z0-9][a-z0-9_-]*$/.test(movie.slug) && !legacyAlias)) errors.push(`${label}: slug không hợp lệ.`);

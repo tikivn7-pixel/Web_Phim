@@ -1,0 +1,5482 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T04:45:52.580Z",
+  "summary": {
+    "records": 3700,
+    "visibleCards": 3644,
+    "confirmedAliases": 56,
+    "candidatePairs": 171,
+    "sourceChecks": 260,
+    "decisions": {
+      "already-linked": 55,
+      "strong-match": 0,
+      "keep-separate": 116,
+      "needs-review": 0
+    }
+  },
+  "pairs": [
+    {
+      "slugs": [
+        "chuc-mung-nam-moi",
+        "happy-new-year-chuc-mung-nam-moi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "chuc-mung-nam-moi",
+          "title": "A Year-End Medley",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "happy-new-year-chuc-mung-nam-moi"
+        },
+        {
+          "slug": "happy-new-year-chuc-mung-nam-moi",
+          "title": "A Year-End Medley",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuc-mung-nam-moi",
+        "https://phimapi.com/phim/happy-new-year-chuc-mung-nam-moi"
+      ]
+    },
+    {
+      "slugs": [
+        "athena-nu-than-chien-tranh",
+        "nu-than-chien-tranh"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "athena-nu-than-chien-tranh",
+          "title": "Athena: Goddess Of War",
+          "year": 2011,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nu-than-chien-tranh"
+        },
+        {
+          "slug": "nu-than-chien-tranh",
+          "title": "Athena: Goddess Of War",
+          "year": 2011,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nu-than-chien-tranh",
+        "https://phimapi.com/phim/nu-than-chien-tranh"
+      ]
+    },
+    {
+      "slugs": [
+        "nhan-chung-mu",
+        "toi-ac-vo-hinh-cong-ly-mu"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "nhan-chung-mu",
+          "title": "Blind",
+          "year": 2011,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "toi-ac-vo-hinh-cong-ly-mu",
+          "title": "Blind",
+          "year": 2022,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nhan-chung-mu",
+        "https://phimapi.com/phim/toi-ac-vo-hinh-cong-ly-mu"
+      ]
+    },
+    {
+      "slugs": [
+        "bay-tinh-yeu",
+        "bay-tinh-yeu-ban-dien-anh"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "bay-tinh-yeu",
+          "title": "Cheese in the Trap",
+          "year": 2016,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "bay-tinh-yeu-ban-dien-anh",
+          "title": "Cheese in the Trap",
+          "year": 2018,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bay-tinh-yeu",
+        "https://phimapi.com/phim/bay-tinh-yeu-ban-dien-anh"
+      ]
+    },
+    {
+      "slugs": [
+        "ke-san-mo",
+        "lien-minh-dao-mo"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ke-san-mo",
+          "title": "Collectors",
+          "year": 2020,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "lien-minh-dao-mo"
+        },
+        {
+          "slug": "lien-minh-dao-mo",
+          "title": "Collectors",
+          "year": 2020,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ke-san-mo",
+        "https://phimapi.com/phim/lien-minh-dao-mo"
+      ]
+    },
+    {
+      "slugs": [
+        "cho-den-thoi-tan-the",
+        "cho-den-thoi-tan-the-2025"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "cho-den-thoi-tan-the",
+          "title": "Concrete Market",
+          "year": 2025,
+          "episodes": 7,
+          "type": "series"
+        },
+        {
+          "slug": "cho-den-thoi-tan-the-2025",
+          "title": "Concrete Market",
+          "year": 2025,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cho-den-thoi-tan-the",
+        "https://phimapi.com/phim/cho-den-thoi-tan-the-2025"
+      ]
+    },
+    {
+      "slugs": [
+        "hung-thu-vo-hinh",
+        "thu-toi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "hung-thu-vo-hinh",
+          "title": "Confession",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "thu-toi",
+          "title": "Confession",
+          "year": 2019,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hung-thu-vo-hinh",
+        "https://phimapi.com/phim/thu-toi"
+      ]
+    },
+    {
+      "slugs": [
+        "10-ngay-de-song",
+        "cuoc-doi-thu-ba"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "10-ngay-de-song",
+          "title": "Countdown",
+          "year": 2011,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "cuoc-doi-thu-ba",
+          "title": "Countdown",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/10-ngay-de-song",
+        "https://phimapi.com/phim/cuoc-doi-thu-ba"
+      ]
+    },
+    {
+      "slugs": [
+        "dear-m",
+        "gui-cau-tinh-dau-cua-toi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "dear-m",
+          "title": "Dear. M",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "gui-cau-tinh-dau-cua-toi"
+        },
+        {
+          "slug": "gui-cau-tinh-dau-cua-toi",
+          "title": "Dear M",
+          "year": 2022,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dear-m",
+        "https://phimapi.com/phim/gui-cau-tinh-dau-cua-toi"
+      ]
+    },
+    {
+      "slugs": [
+        "endless-rain",
+        "neu-nhu-sau-con-mua"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "endless-rain",
+          "title": "Endless Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "neu-nhu-sau-con-mua"
+        },
+        {
+          "slug": "neu-nhu-sau-con-mua",
+          "title": "Endless Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/endless-rain",
+        "https://phimapi.com/phim/neu-nhu-sau-con-mua"
+      ]
+    },
+    {
+      "slugs": [
+        "bat-ma-pha-an",
+        "dien-nao-ma-oi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "bat-ma-pha-an",
+          "title": "From Now On, Showtime!",
+          "year": 2022,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "dien-nao-ma-oi",
+          "title": "From Now On, Showtime!",
+          "year": 2022,
+          "episodes": 16,
+          "type": "series",
+          "duplicateOf": "bat-ma-pha-an"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bat-ma-pha-an",
+        "https://phimapi.com/phim/dien-nao-ma-oi"
+      ]
+    },
+    {
+      "slugs": [
+        "helpless",
+        "luot-xem-dam-mau"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "helpless",
+          "title": "Helpless",
+          "year": 2012,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "luot-xem-dam-mau",
+          "title": "Helpless",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/helpless",
+        "https://phimapi.com/phim/luot-xem-dam-mau"
+      ]
+    },
+    {
+      "slugs": [
+        "khat-vong-thuong-luu",
+        "xa-hoi-thuong-luu"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "khat-vong-thuong-luu",
+          "title": "High Society",
+          "year": 2018,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "xa-hoi-thuong-luu",
+          "title": "High Society",
+          "year": 2015,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/khat-vong-thuong-luu",
+        "https://phimapi.com/phim/xa-hoi-thuong-luu"
+      ]
+    },
+    {
+      "slugs": [
+        "biet-doi-hitandrun",
+        "biet-doi-hitrun-biet-doi-toc-do"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "biet-doi-hitandrun",
+          "title": "Hit-and-Run Squad",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "biet-doi-hitrun-biet-doi-toc-do"
+        },
+        {
+          "slug": "biet-doi-hitrun-biet-doi-toc-do",
+          "title": "Hit And Run Squad",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/biet-doi-hitandrun",
+        "https://phimapi.com/phim/biet-doi-hitrun-biet-doi-toc-do"
+      ]
+    },
+    {
+      "slugs": [
+        "mat-vu-kingsman-2020",
+        "sat-thu-vo-cung-cuc"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "mat-vu-kingsman-2020",
+          "title": "Hitman : Agent Jun",
+          "year": 2020,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "sat-thu-vo-cung-cuc"
+        },
+        {
+          "slug": "sat-thu-vo-cung-cuc",
+          "title": "Hitman: Agent Jun",
+          "year": 2020,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mat-vu-kingsman-2020",
+        "https://phimapi.com/phim/sat-thu-vo-cung-cuc"
+      ]
+    },
+    {
+      "slugs": [
+        "co-huong",
+        "mat-toi-cua-binh-yen"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "co-huong",
+          "title": "Hometown",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "mat-toi-cua-binh-yen",
+          "title": "Hometown",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "co-huong"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/co-huong",
+        "https://phimapi.com/phim/mat-toi-cua-binh-yen"
+      ]
+    },
+    {
+      "slugs": [
+        "con-tin",
+        "con-tin-ngoi-sao-mat-tich"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "con-tin",
+          "title": "Hostage: Missing Celebrity",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "con-tin-ngoi-sao-mat-tich"
+        },
+        {
+          "slug": "con-tin-ngoi-sao-mat-tich",
+          "title": "Hostage: Missing Celebrity",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/con-tin",
+        "https://phimapi.com/phim/con-tin-ngoi-sao-mat-tich"
+      ]
+    },
+    {
+      "slugs": [
+        "hwayi-cau-be-quai-vat",
+        "hwayi-sat-nhan-trang"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "hwayi-cau-be-quai-vat",
+          "title": "Hwayi: A Monster Boy",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "hwayi-sat-nhan-trang"
+        },
+        {
+          "slug": "hwayi-sat-nhan-trang",
+          "title": "Hwayi: A Monster Boy",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hwayi-cau-be-quai-vat",
+        "https://phimapi.com/phim/hwayi-sat-nhan-trang"
+      ]
+    },
+    {
+      "slugs": [
+        "vuong-gia-thien-ha-phan-1",
+        "vuong-trieu-xac-song-phan-1"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "vuong-gia-thien-ha-phan-1",
+          "title": "Kingdom (Season 1)",
+          "year": 2012,
+          "episodes": 38,
+          "type": "series"
+        },
+        {
+          "slug": "vuong-trieu-xac-song-phan-1",
+          "title": "Kingdom (Season 1)",
+          "year": 2019,
+          "episodes": 6,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vuong-gia-thien-ha-phan-1",
+        "https://phimapi.com/phim/vuong-trieu-xac-song-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "vuong-gia-thien-ha-phan-2",
+        "vuong-trieu-xac-song-phan-2"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "vuong-gia-thien-ha-phan-2",
+          "title": "Kingdom (Season 2)",
+          "year": 2013,
+          "episodes": 39,
+          "type": "series"
+        },
+        {
+          "slug": "vuong-trieu-xac-song-phan-2",
+          "title": "Kingdom (Season 2)",
+          "year": 2020,
+          "episodes": 6,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vuong-gia-thien-ha-phan-2",
+        "https://phimapi.com/phim/vuong-trieu-xac-song-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "kingmaker",
+        "vua-bau-cu"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "kingmaker",
+          "title": "KingMaker",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "vua-bau-cu"
+        },
+        {
+          "slug": "vua-bau-cu",
+          "title": "Kingmaker",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/kingmaker",
+        "https://phimapi.com/phim/vua-bau-cu"
+      ]
+    },
+    {
+      "slugs": [
+        "ac-quy-nghin-nam",
+        "ky-nguyen-tan-bao"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ac-quy-nghin-nam",
+          "title": "Kundo: Age of the Rampant",
+          "year": 2014,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "ky-nguyen-tan-bao",
+          "title": "Kundo: Age Of The Rampant",
+          "year": 2014,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ac-quy-nghin-nam"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ac-quy-nghin-nam",
+        "https://phimapi.com/phim/ky-nguyen-tan-bao"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-2018",
+        "doi-canh-sat"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cuoc-song-2018",
+          "title": "Live",
+          "year": 2018,
+          "episodes": 18,
+          "type": "series"
+        },
+        {
+          "slug": "doi-canh-sat",
+          "title": "Live",
+          "year": 2018,
+          "episodes": 18,
+          "type": "series",
+          "duplicateOf": "cuoc-song-2018"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-2018",
+        "https://phimapi.com/phim/doi-canh-sat"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-doi-day-song",
+        "that-lac"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "cuoc-doi-day-song",
+          "title": "Lost",
+          "year": 2025,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "that-lac",
+          "title": "LOST",
+          "year": 2021,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-doi-day-song",
+        "https://phimapi.com/phim/that-lac"
+      ]
+    },
+    {
+      "slugs": [
+        "doi-ban-hoc-yeu",
+        "doi-ban-hoc-yeu-phim-bo"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "doi-ban-hoc-yeu",
+          "title": "Love In The Big City",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "doi-ban-hoc-yeu-phim-bo",
+          "title": "Love In The Big City",
+          "year": 2024,
+          "episodes": 8,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/doi-ban-hoc-yeu",
+        "https://phimapi.com/phim/doi-ban-hoc-yeu-phim-bo"
+      ]
+    },
+    {
+      "slugs": [
+        "master",
+        "ong-trum-2016"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "master",
+          "title": "Master",
+          "year": 2016,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ong-trum-2016"
+        },
+        {
+          "slug": "ong-trum-2016",
+          "title": "Master",
+          "year": 2016,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/master",
+        "https://phimapi.com/phim/ong-trum-2016"
+      ]
+    },
+    {
+      "slugs": [
+        "nu-hoang-thang-5",
+        "nu-hoang-thang-nam"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nu-hoang-thang-5",
+          "title": "May Queen",
+          "year": 2012,
+          "episodes": 76,
+          "type": "series",
+          "duplicateOf": "nu-hoang-thang-nam"
+        },
+        {
+          "slug": "nu-hoang-thang-nam",
+          "title": "May Queen",
+          "year": 2012,
+          "episodes": 76,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nu-hoang-thang-5",
+        "https://phimapi.com/phim/nu-hoang-thang-nam"
+      ]
+    },
+    {
+      "slugs": [
+        "trang-sang-mua-dong",
+        "yoon-hee-cua-me"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "trang-sang-mua-dong",
+          "title": "Moonlit Winter",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "yoon-hee-cua-me",
+          "title": "Moonlit Winter",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "trang-sang-mua-dong"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/trang-sang-mua-dong",
+        "https://phimapi.com/phim/trang-sang-mua-dong"
+      ]
+    },
+    {
+      "slugs": [
+        "ke-san-nguoi",
+        "mouse-ke-san-nguoi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "ke-san-nguoi",
+          "title": "Mouse",
+          "year": 2021,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "mouse-ke-san-nguoi",
+          "title": "Mouse",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "mouse-ke-san-nguoi-ban-dien-anh"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ke-san-nguoi",
+        "https://phimapi.com/phim/mouse-ke-san-nguoi"
+      ]
+    },
+    {
+      "slugs": [
+        "anh-toi-vo-so-toi",
+        "anh-trai-phien-phuc-cua-toi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "anh-toi-vo-so-toi",
+          "title": "My Annoying Brother",
+          "year": 2016,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "anh-trai-phien-phuc-cua-toi",
+          "title": "My Annoying Brother",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/anh-toi-vo-so-toi",
+        "https://phimapi.com/phim/anh-trai-phien-phuc-cua-toi"
+      ]
+    },
+    {
+      "slugs": [
+        "chi-gai-bao-thu",
+        "vach-toi-2025"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "chi-gai-bao-thu",
+          "title": "No Mercy",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "vach-toi-2025",
+          "title": "No Mercy",
+          "year": 2025,
+          "episodes": 8,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chi-gai-bao-thu",
+        "https://phimapi.com/phim/vach-toi-2025"
+      ]
+    },
+    {
+      "slugs": [
+        "ma-nu-dang-yeu",
+        "oi-co-ma"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "ma-nu-dang-yeu",
+          "title": "Oh My Ghost",
+          "year": 2015,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "oi-co-ma",
+          "title": "Oh! My Ghost",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ma-nu-dang-yeu",
+        "https://phimapi.com/phim/oi-co-ma"
+      ]
+    },
+    {
+      "slugs": [
+        "mot-lan-nua",
+        "them-mot-lan-nua"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "mot-lan-nua",
+          "title": "Once Again",
+          "year": 2020,
+          "episodes": 50,
+          "type": "series"
+        },
+        {
+          "slug": "them-mot-lan-nua",
+          "title": "Once Again",
+          "year": 2022,
+          "episodes": 8,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mot-lan-nua",
+        "https://phimapi.com/phim/them-mot-lan-nua"
+      ]
+    },
+    {
+      "slugs": [
+        "mot-lan-nua",
+        "tro-ve-nam-1997"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "mot-lan-nua",
+          "title": "Once Again",
+          "year": 2020,
+          "episodes": 50,
+          "type": "series"
+        },
+        {
+          "slug": "tro-ve-nam-1997",
+          "title": "Once Again",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mot-lan-nua",
+        "https://phimapi.com/phim/tro-ve-nam-1997"
+      ]
+    },
+    {
+      "slugs": [
+        "them-mot-lan-nua",
+        "tro-ve-nam-1997"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "them-mot-lan-nua",
+          "title": "Once Again",
+          "year": 2022,
+          "episodes": 8,
+          "type": "series"
+        },
+        {
+          "slug": "tro-ve-nam-1997",
+          "title": "Once Again",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/them-mot-lan-nua",
+        "https://phimapi.com/phim/tro-ve-nam-1997"
+      ]
+    },
+    {
+      "slugs": [
+        "dac-vu-bong-ma",
+        "phantom"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "dac-vu-bong-ma",
+          "title": "Phantom",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "phantom",
+          "title": "Phantom",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "dac-vu-bong-ma"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dac-vu-bong-ma",
+        "https://phimapi.com/phim/phantom"
+      ]
+    },
+    {
+      "slugs": [
+        "tro-choi-kim-tu-thap",
+        "tro-choi-kim-tu-thap-ban-anime"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "tro-choi-kim-tu-thap",
+          "title": "Pyramid Game",
+          "year": 2024,
+          "episodes": 10,
+          "type": "series"
+        },
+        {
+          "slug": "tro-choi-kim-tu-thap-ban-anime",
+          "title": "Pyramid Game",
+          "year": 2025,
+          "episodes": 9,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/tro-choi-kim-tu-thap",
+        "https://phimapi.com/phim/tro-choi-kim-tu-thap-ban-anime"
+      ]
+    },
+    {
+      "slugs": [
+        "danh-ca-dai-chien",
+        "thu-thach-than-tuong"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "danh-ca-dai-chien",
+          "title": "Running Man",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "thu-thach-than-tuong",
+          "title": "Running Man",
+          "year": 2010,
+          "episodes": 659,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/danh-ca-dai-chien",
+        "https://phimapi.com/phim/thu-thach-than-tuong"
+      ]
+    },
+    {
+      "slugs": [
+        "ma-nu-chung-cu",
+        "mui-huong-cua-ma-nu"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ma-nu-chung-cu",
+          "title": "Scent Of A Ghost",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "mui-huong-cua-ma-nu",
+          "title": "Scent of a Ghost",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ma-nu-chung-cu"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ma-nu-chung-cu",
+        "https://phimapi.com/phim/mui-huong-cua-ma-nu"
+      ]
+    },
+    {
+      "slugs": [
+        "cam-do",
+        "phuc-vu-nhan-dan"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cam-do",
+          "title": "Serve the People",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "phuc-vu-nhan-dan",
+          "title": "Serve The People",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "cam-do"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cam-do",
+        "https://phimapi.com/phim/phuc-vu-nhan-dan"
+      ]
+    },
+    {
+      "slugs": [
+        "ho-sut",
+        "ho-sut-tu-than"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ho-sut",
+          "title": "Sinkhole",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ho-sut-tu-than"
+        },
+        {
+          "slug": "ho-sut-tu-than",
+          "title": "Sinkhole",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ho-sut",
+        "https://phimapi.com/phim/ho-sut-tu-than"
+      ]
+    },
+    {
+      "slugs": [
+        "khoi-nghiep",
+        "tre-trau-khoi-nghiep"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "khoi-nghiep",
+          "title": "Start-Up",
+          "year": 2020,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "tre-trau-khoi-nghiep",
+          "title": "Start-Up",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/khoi-nghiep",
+        "https://phimapi.com/phim/tre-trau-khoi-nghiep"
+      ]
+    },
+    {
+      "slugs": [
+        "ve-dep-tam-hon",
+        "ve-dep-tiem-an"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "ve-dep-tam-hon",
+          "title": "The Beauty Inside",
+          "year": 2015,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "ve-dep-tiem-an",
+          "title": "The Beauty Inside",
+          "year": 2018,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ve-dep-tam-hon",
+        "https://phimapi.com/phim/ve-dep-tiem-an"
+      ]
+    },
+    {
+      "slugs": [
+        "ho-so-ba-linh",
+        "ho-so-berlin"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ho-so-ba-linh",
+          "title": "The Berlin File",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "ho-so-berlin",
+          "title": "The Berlin File",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ho-so-ba-linh"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ho-so-ba-linh",
+        "https://phimapi.com/phim/ho-so-berlin"
+      ]
+    },
+    {
+      "slugs": [
+        "thoa-thuan-cua-quy",
+        "thoa-thuan-voi-ac-quy"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "thoa-thuan-cua-quy",
+          "title": "The Devil's Deal",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "thoa-thuan-voi-ac-quy"
+        },
+        {
+          "slug": "thoa-thuan-voi-ac-quy",
+          "title": "The Devil's Deal",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/thoa-thuan-cua-quy",
+        "https://phimapi.com/phim/thoa-thuan-voi-ac-quy"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-vo-danh-tinh",
+        "sat-thu-vo-danh"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nguoi-vo-danh-tinh",
+          "title": "The Man From Nowhere",
+          "year": 2010,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "sat-thu-vo-danh"
+        },
+        {
+          "slug": "sat-thu-vo-danh",
+          "title": "The Man from Nowhere",
+          "year": 2010,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-vo-danh-tinh",
+        "https://phimapi.com/phim/sat-thu-vo-danh"
+      ]
+    },
+    {
+      "slugs": [
+        "hai-tac",
+        "the-pirates"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "hai-tac",
+          "title": "The Pirates",
+          "year": 2014,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "the-pirates",
+          "title": "The Pirates",
+          "year": 2014,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "hai-tac"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hai-tac",
+        "https://phimapi.com/phim/the-pirates"
+      ]
+    },
+    {
+      "slugs": [
+        "gui-den-ngoi-sao-cua-anh",
+        "gui-den-ngoi-sao-cua-anh-2021"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "gui-den-ngoi-sao-cua-anh",
+          "title": "To My Star",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "gui-den-ngoi-sao-cua-anh-2021",
+          "title": "To My Star",
+          "year": 2021,
+          "episodes": 9,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/gui-den-ngoi-sao-cua-anh",
+        "https://phimapi.com/phim/gui-den-ngoi-sao-cua-anh-2021"
+      ]
+    },
+    {
+      "slugs": [
+        "ve-dep-dich-thuc",
+        "ve-dep-dich-thuc-2024"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "ve-dep-dich-thuc",
+          "title": "True Beauty",
+          "year": 2020,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "ve-dep-dich-thuc-2024",
+          "title": "True Beauty",
+          "year": 2024,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ve-dep-dich-thuc",
+        "https://phimapi.com/phim/ve-dep-dich-thuc-2024"
+      ]
+    },
+    {
+      "slugs": [
+        "giai-cuu-ong-chu",
+        "mo-khoa-sep-tong"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "giai-cuu-ong-chu",
+          "title": "Unlock My Boss",
+          "year": 2022,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "mo-khoa-sep-tong"
+        },
+        {
+          "slug": "mo-khoa-sep-tong",
+          "title": "Unlock My Boss",
+          "year": 2022,
+          "episodes": 24,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/giai-cuu-ong-chu",
+        "https://phimapi.com/phim/mo-khoa-sep-tong"
+      ]
+    },
+    {
+      "slugs": [
+        "khi-nang-say-giac",
+        "su-that-sau-giac-ngu"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "khi-nang-say-giac",
+          "title": "While You Were Sleeping",
+          "year": 2017,
+          "episodes": 16,
+          "type": "series"
+        },
+        {
+          "slug": "su-that-sau-giac-ngu",
+          "title": "While You Were Sleeping",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/khi-nang-say-giac",
+        "https://phimapi.com/phim/su-that-sau-giac-ngu"
+      ]
+    },
+    {
+      "slugs": [
+        "tham-tu-lung-danh-conan-22-ke-han-phap-zero",
+        "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "tham-tu-lung-danh-conan-22-ke-han-phap-zero",
+          "title": "Case Closed: Zero the Enforcer",
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero"
+        },
+        {
+          "slug": "tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
+          "title": "Case Closed: Zero the Enforcer",
+          "year": 2018,
+          "episodes": 2,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-hanh-phap-zero",
+        "https://phimapi.com/phim/tham-tu-lung-danh-conan-22-ke-hanh-phap-zero"
+      ]
+    },
+    {
+      "slugs": [
+        "hoc-vien-anh-hung-the-ky-moi-cua-anh-hung",
+        "hoc-vien-sieu-anh-hung-nguoi-hung-troi-day"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source formats (film/series/special).",
+      "movies": [
+        {
+          "slug": "hoc-vien-anh-hung-the-ky-moi-cua-anh-hung",
+          "title": "My Hero Academia: Heroes Rising",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "hoc-vien-sieu-anh-hung-nguoi-hung-troi-day",
+          "title": "My Hero Academia: Heroes Rising",
+          "year": 2019,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoc-vien-anh-hung-the-ky-moi-cua-anh-hung",
+        "https://phimapi.com/phim/hoc-vien-sieu-anh-hung-nguoi-hung-troi-day"
+      ]
+    },
+    {
+      "slugs": [
+        "phim/sat-thu-ve-vuon",
+        "sat-thu-ve-vuon"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-provider",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "phim/sat-thu-ve-vuon",
+          "title": "Sakamoto Days",
+          "episodes": 22,
+          "type": "animation",
+          "duplicateOf": "sat-thu-ve-vuon"
+        },
+        {
+          "slug": "sat-thu-ve-vuon",
+          "title": "Sakamoto Days",
+          "year": 2025,
+          "episodes": 22,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/sat-thu-ve-vuon",
+        "https://phimapi.com/phim/sat-thu-ve-vuon"
+      ]
+    },
+    {
+      "slugs": [
+        "bong-ro-danh-cho-moi-nguoi",
+        "niem-dam-me-bong-ro"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "bong-ro-danh-cho-moi-nguoi",
+          "title": "Ahiru No Sora",
+          "year": 2019,
+          "episodes": 50,
+          "type": "series",
+          "duplicateOf": "niem-dam-me-bong-ro"
+        },
+        {
+          "slug": "niem-dam-me-bong-ro",
+          "title": "Ahiru No Sora",
+          "year": 2019,
+          "episodes": 50,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bong-ro-danh-cho-moi-nguoi",
+        "https://phimapi.com/phim/niem-dam-me-bong-ro"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+        "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+          "title": "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1)",
+          "year": 2024,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1",
+          "title": "As A Reincarnated Aristocrat, I'll Use My Appraisal Skill To Rise In The World (Season 1)",
+          "year": 2024,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-sinh-thanh-quy-toc-toi-su-dung-ky-nang-giam-dinh-de-tien-than-trong-the-gioi-phan-1",
+        "https://phimapi.com/phim/tai-sinh-thanh-quy-toc-toi-co-ky-nang-tham-dinh-ba-dao-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+        "lam-nong-la-gan-chu-heo"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+          "title": "Butareba The Story Of A Man Turned Into A Pig",
+          "year": 2023,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "lam-nong-la-gan-chu-heo",
+          "title": "Butareba -The Story of a Man Turned Into a Pig-",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon",
+        "https://phimapi.com/phim/butareba-cau-chuyen-nguoi-dan-ong-bien-thanh-lon"
+      ]
+    },
+    {
+      "slugs": [
+        "doraemon-chu-khung-long-cua-nobita",
+        "doraemon-chu-khung-long-cua-nobita-1980"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "doraemon-chu-khung-long-cua-nobita",
+          "title": "Doraemon: Nobita's Dinosaur",
+          "year": 2006,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "doraemon-chu-khung-long-cua-nobita-1980",
+          "title": "Doraemon: Nobita's Dinosaur",
+          "year": 1980,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/doraemon-chu-khung-long-cua-nobita",
+        "https://phimapi.com/phim/doraemon-chu-khung-long-cua-nobita-1980"
+      ]
+    },
+    {
+      "slugs": [
+        "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy",
+        "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy",
+          "title": "Doraemon: Nobita and the Birth of Japan",
+          "year": 2016,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989",
+          "title": "Doraemon: Nobita and the Birth of Japan",
+          "year": 1989,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy",
+        "https://phimapi.com/phim/doraemon-nobita-va-nuoc-nhat-thoi-nguyen-thuy-1989"
+      ]
+    },
+    {
+      "slugs": [
+        "7-vien-ngoc-rong-gt",
+        "bay-vien-ngoc-rong-gt"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "7-vien-ngoc-rong-gt",
+          "title": "Dragon Ball GT",
+          "year": 1999,
+          "episodes": 64,
+          "type": "series",
+          "duplicateOf": "bay-vien-ngoc-rong-gt"
+        },
+        {
+          "slug": "bay-vien-ngoc-rong-gt",
+          "title": "Dragon Ball GT",
+          "year": 1996,
+          "episodes": 64,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/7-vien-ngoc-rong-gt",
+        "https://phimapi.com/phim/bay-vien-ngoc-rong-gt"
+      ]
+    },
+    {
+      "slugs": [
+        "dau-an-rong-thieng-ban-1991",
+        "dau-an-rong-thieng-ban-2020"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Reviewed separately: different release years and different cast/directors identify separate productions or remakes, not duplicate uploads.",
+      "movies": [
+        {
+          "slug": "dau-an-rong-thieng-ban-1991",
+          "title": "Dragon Quest: The Adventure Of Dai",
+          "year": 1991,
+          "episodes": 46,
+          "type": "series"
+        },
+        {
+          "slug": "dau-an-rong-thieng-ban-2020",
+          "title": "Dragon Quest: The Adventure Of Dai",
+          "year": 2020,
+          "episodes": 100,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dau-an-rong-thieng-ban-1991",
+        "https://phimapi.com/phim/dau-an-rong-thieng-ban-2020"
+      ]
+    },
+    {
+      "slugs": [
+        "horimiya",
+        "horisan-va-miyamurakun"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "horimiya",
+          "title": "Horimiya",
+          "year": 2021,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "horisan-va-miyamurakun",
+          "title": "Horimiya",
+          "year": 2021,
+          "episodes": 13,
+          "type": "series",
+          "duplicateOf": "horimiya"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/horimiya",
+        "https://phimapi.com/phim/horisan-va-miyamurakun"
+      ]
+    },
+    {
+      "slugs": [
+        "goc-khuat-cua-the-gioi",
+        "goc-khuat-cua-the-gioi-2016"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "goc-khuat-cua-the-gioi",
+          "title": "In This Corner Of The World",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "goc-khuat-cua-the-gioi-2016"
+        },
+        {
+          "slug": "goc-khuat-cua-the-gioi-2016",
+          "title": "In This Corner Of The World",
+          "year": 2016,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi",
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi-2016"
+      ]
+    },
+    {
+      "slugs": [
+        "mo-ra-mot-the-gioi-tuyet-voi-phan-3",
+        "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "mo-ra-mot-the-gioi-tuyet-voi-phan-3",
+          "title": "KONOSUBA - God's Blessing On This Wonderful World! (Season 3)",
+          "year": 2024,
+          "episodes": 11,
+          "type": "series",
+          "duplicateOf": "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+        },
+        {
+          "slug": "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3",
+          "title": "KonoSuba God's Blessing On This Wonderful World! (Season 3)",
+          "year": 2024,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mo-ra-mot-the-gioi-tuyet-voi-phan-3",
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "cac-co-gai-cua-rokudo",
+        "gai-hu-cua-rokudo"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cac-co-gai-cua-rokudo",
+          "title": "Rokudo's Bad Girls",
+          "year": 2023,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "gai-hu-cua-rokudo",
+          "title": "Rokudo's Bad Girls",
+          "year": 2023,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "cac-co-gai-cua-rokudo"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cac-co-gai-cua-rokudo",
+        "https://phimapi.com/phim/gai-hu-cua-rokudo"
+      ]
+    },
+    {
+      "slugs": [
+        "cac-cau-song-the-nao",
+        "thieu-nien-va-chim-diec"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cac-cau-song-the-nao",
+          "title": "The Boy and the Heron",
+          "year": 2023,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "thieu-nien-va-chim-diec",
+          "title": "The Boy and the Heron",
+          "year": 2023,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "cac-cau-song-the-nao"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cac-cau-song-the-nao",
+        "https://phimapi.com/phim/thieu-nien-va-chim-diec"
+      ]
+    },
+    {
+      "slugs": [
+        "boku-no-kokoro-no-yabai-yatsu-phan-1",
+        "bong-den-trong-tim-phan-1"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "boku-no-kokoro-no-yabai-yatsu-phan-1",
+          "title": "The Dangers in My Heart (Season 1)",
+          "year": 2023,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "bong-den-trong-tim-phan-1"
+        },
+        {
+          "slug": "bong-den-trong-tim-phan-1",
+          "title": "The Dangers In My Heart (Season 1)",
+          "year": 2023,
+          "episodes": 12,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-1",
+        "https://phimapi.com/phim/bong-den-trong-tim-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "boku-no-kokoro-no-yabai-yatsu-phan-2",
+        "bong-den-trong-tim-phan-2"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "boku-no-kokoro-no-yabai-yatsu-phan-2",
+          "title": "The Dangers in My Heart (Season 2)",
+          "year": 2024,
+          "episodes": 14,
+          "type": "series",
+          "duplicateOf": "bong-den-trong-tim-phan-2"
+        },
+        {
+          "slug": "bong-den-trong-tim-phan-2",
+          "title": "The Dangers In My Heart (Season 2)",
+          "year": 2024,
+          "episodes": 14,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/boku-no-kokoro-no-yabai-yatsu-phan-2",
+        "https://phimapi.com/phim/bong-den-trong-tim-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc",
+        "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc",
+          "title": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac"
+        },
+        {
+          "slug": "sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac",
+          "title": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
+          "year": 2021,
+          "episodes": 12,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc",
+        "https://phimapi.com/phim/sat-thu-de-nhat-the-gioi-chuyen-sinh-thanh-quy-toc-o-the-gioi-khac"
+      ]
+    },
+    {
+      "slugs": [
+        "co-gai-co-khi",
+        "thieu-nu-punk-co-gai-co-khi"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "co-gai-co-khi",
+          "title": "VIRGIN PUNK Clockwork Girl",
+          "year": 2025,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "thieu-nu-punk-co-gai-co-khi",
+          "title": "Virgin Punk: Clockwork Girl",
+          "year": 2025,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "co-gai-co-khi"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/co-gai-co-khi",
+        "https://phimapi.com/phim/thieu-nu-punk-co-gai-co-khi"
+      ]
+    },
+    {
+      "slugs": [
+        "khong-minh-thich-tiec-tung",
+        "khong-minh-thich-tiec-tung-ban-hoat-hinh"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "khong-minh-thich-tiec-tung",
+          "title": "Ya Boy Kongming!",
+          "year": 2022,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "khong-minh-thich-tiec-tung-ban-hoat-hinh"
+        },
+        {
+          "slug": "khong-minh-thich-tiec-tung-ban-hoat-hinh",
+          "title": "Ya Boy Kongming!",
+          "year": 2022,
+          "episodes": 12,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/khong-minh-thich-tiec-tung",
+        "https://phimapi.com/phim/khong-minh-thich-tiec-tung-ban-hoat-hinh"
+      ]
+    },
+    {
+      "slugs": [
+        "ragna-crimson",
+        "sat-long-nhan"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ragna-crimson",
+          "title": "ラグナクリムゾン",
+          "year": 2023,
+          "episodes": 24,
+          "type": "series",
+          "duplicateOf": "sat-long-nhan"
+        },
+        {
+          "slug": "sat-long-nhan",
+          "title": "ラグナクリムゾン",
+          "year": 2023,
+          "episodes": 24,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ragna-crimson",
+        "https://phimapi.com/phim/sat-long-nhan"
+      ]
+    },
+    {
+      "slugs": [
+        "batman-tro-dua-chet-choc",
+        "nguoi-doi-sat-thu-joke"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "batman-tro-dua-chet-choc",
+          "title": "Batman: The Killing Joke",
+          "year": 2016,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "nguoi-doi-sat-thu-joke",
+          "title": "Batman: The Killing Joke",
+          "year": 2016,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "batman-tro-dua-chet-choc"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/batman-tro-dua-chet-choc",
+        "https://phimapi.com/phim/nguoi-doi-sat-thu-joke"
+      ]
+    },
+    {
+      "slugs": [
+        "lien-minh-nguoi-doi-va-ninja-rua",
+        "nguoi-doi-va-ninja-rua"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "lien-minh-nguoi-doi-va-ninja-rua",
+          "title": "Batman Vs. Teenage Mutant Ninja Turtles",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-va-ninja-rua"
+        },
+        {
+          "slug": "nguoi-doi-va-ninja-rua",
+          "title": "Batman vs Teenage Mutant Ninja Turtles",
+          "year": 2019,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/lien-minh-nguoi-doi-va-ninja-rua",
+        "https://phimapi.com/phim/nguoi-doi-va-ninja-rua"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-doi-gotham-diet-vong",
+        "nguoi-doi-ngay-tan-cua-gotham"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nguoi-doi-gotham-diet-vong",
+          "title": "Batman: The Doom That Came to Gotham",
+          "year": 2023,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-ngay-tan-cua-gotham"
+        },
+        {
+          "slug": "nguoi-doi-ngay-tan-cua-gotham",
+          "title": "Batman: The Doom That Came To Gotham",
+          "year": 2023,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-gotham-diet-vong",
+        "https://phimapi.com/phim/nguoi-doi-ngay-tan-cua-gotham"
+      ]
+    },
+    {
+      "slugs": [
+        "ky-si-bong-dem-tro-lai-phan-2",
+        "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ky-si-bong-dem-tro-lai-phan-2",
+          "title": "Batman: The Dark Knight Returns, Part 2",
+          "year": 2013,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2"
+        },
+        {
+          "slug": "nguoi-doi-ky-si-bong-dem-tro-lai-phan-2",
+          "title": "Batman: The Dark Knight Returns, Part 2",
+          "year": 2013,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ky-si-bong-dem-tro-lai-phan-2",
+        "https://phimapi.com/phim/nguoi-doi-ky-si-bong-dem-tro-lai-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+        "nguoi-doi-lego-van-de-gia-dinh"
+      ],
+      "reasons": [
+        "same-title",
+        "same-first-season-title"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+          "title": "Lego DC Batman: Family Matters",
+          "year": 2019,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "nguoi-doi-lego-van-de-gia-dinh",
+          "title": "LEGO DC Batman: Family Matters",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "lego-dc-nguoi-doi-va-van-de-dai-gia-dinh"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/lego-dc-nguoi-doi-va-van-de-dai-gia-dinh",
+        "https://phimapi.com/phim/nguoi-doi-lego-van-de-gia-dinh"
+      ]
+    },
+    {
+      "slugs": [
+        "nha-tao-mau-toc-sieu-dang",
+        "nha-tao-mau-toc-sieu-dang-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nha-tao-mau-toc-sieu-dang",
+          "title": "Bread Barbershop",
+          "year": 2019,
+          "episodes": 39,
+          "type": "animation"
+        },
+        {
+          "slug": "nha-tao-mau-toc-sieu-dang-phan-1",
+          "title": "Bread Barbershop (Season 1)",
+          "year": 2019,
+          "episodes": 39,
+          "type": "animation",
+          "duplicateOf": "nha-tao-mau-toc-sieu-dang"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang",
+        "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "ho-den",
+        "ho-toi-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "ho-den",
+          "title": "Dark Hole",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "ho-toi-phan-1",
+          "title": "Dark Hole (Season 1)",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ho-den",
+        "https://phimapi.com/phim/ho-toi-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "dac-nhiem-tham-tu-wan",
+        "dac-nhiem-tham-tu-wan-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "dac-nhiem-tham-tu-wan",
+          "title": "Bungo Stray Dogs Wan!",
+          "year": 2021,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "dac-nhiem-tham-tu-wan-phan-1",
+          "title": "Bungo Stray Dogs WAN! (Season 1)",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "dac-nhiem-tham-tu-wan"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan",
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "no-le-cua-ma-do-tinh-binh",
+        "no-le-cua-ma-do-tinh-binh-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "no-le-cua-ma-do-tinh-binh",
+          "title": "Chained Soldier",
+          "year": 2024,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "no-le-cua-ma-do-tinh-binh-phan-1",
+          "title": "Chained Soldier (Season 1)",
+          "year": 2024,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/no-le-cua-ma-do-tinh-binh",
+        "https://phimapi.com/phim/no-le-cua-ma-do-tinh-binh-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+        "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+          "title": "KonoSuba God's Blessing On This Wonderful World!",
+          "year": 2016,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-1",
+          "title": "KonoSuba God's Blessing On This Wonderful World! (Season 1)",
+          "year": 2016,
+          "episodes": 11,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "huu-nhan-so-ishi-okoshi-to-ayashiki-raihousha",
+        "huu-nhan-so-phan-1"
+      ],
+      "reasons": [
+        "same-first-season-title"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "huu-nhan-so-ishi-okoshi-to-ayashiki-raihousha",
+          "title": "Natsume's Book of Friends",
+          "year": 2021,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "huu-nhan-so-phan-1",
+          "title": "Natsume's Book Of Friends (Season 1)",
+          "year": 2008,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/huu-nhan-so-ishi-okoshi-to-ayashiki-raihousha",
+        "https://phimapi.com/phim/huu-nhan-so-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "ban-gai-thue-phan-1",
+        "dich-vu-thue-ban-gai"
+      ],
+      "reasons": [
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ban-gai-thue-phan-1",
+          "title": "Rent-A-Girlfriend (Season 1)",
+          "year": 2020,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "dich-vu-thue-ban-gai",
+          "title": "Rent-a-Girlfriend",
+          "year": 2020,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "ban-gai-thue-phan-1"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ban-gai-thue-phan-1",
+        "https://phimapi.com/phim/dich-vu-thue-ban-gai"
+      ]
+    },
+    {
+      "slugs": [
+        "phu-ta-phan-1",
+        "phu-ta-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "phu-ta-phan-1",
+          "title": "Chief Of Staff (Season 1)",
+          "year": 2019,
+          "episodes": 10,
+          "type": "series"
+        },
+        {
+          "slug": "phu-ta-phan-2",
+          "title": "Chief Of Staff (Season 2)",
+          "year": 2019,
+          "episodes": 10,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/phu-ta-phan-1",
+        "https://phimapi.com/phim/phu-ta-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "cho-em-den-ngay-mua",
+        "neu-nhu-sau-con-mua"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cho-em-den-ngay-mua",
+          "title": "Waiting For Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "neu-nhu-sau-con-mua"
+        },
+        {
+          "slug": "neu-nhu-sau-con-mua",
+          "title": "Endless Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cho-em-den-ngay-mua",
+        "https://phimapi.com/phim/neu-nhu-sau-con-mua"
+      ]
+    },
+    {
+      "slugs": [
+        "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-7",
+        "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-8"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-7",
+          "title": "Miraculous Tales Of Ladybug & Cat Noir (Season 7)",
+          "year": 2026,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-8",
+          "title": "Miraculous Tales Of Ladybug & Cat Noir (Season 8)",
+          "year": 2026,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-7",
+        "https://phimapi.com/phim/vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-8"
+      ]
+    },
+    {
+      "slugs": [
+        "kaguyasama-cuoc-chien-to-tinh-ultra-romantic",
+        "tim-kiem"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "kaguyasama-cuoc-chien-to-tinh-ultra-romantic",
+          "title": "Kaguya-sama Wa Kokurasetai: Tensai-tachi No Ren'ai Zunousen - Ultra Romantic",
+          "year": 2022,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "tim-kiem",
+          "title": "Missing",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/kaguyasama-cuoc-chien-to-tinh-ultra-romantic",
+        "https://phimapi.com/phim/tim-kiem"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-yeu-dau-phan-1",
+        "nguoi-yeu-dau-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nguoi-yeu-dau-phan-1",
+          "title": "My Dearest (Season 1)",
+          "year": 2023,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "nguoi-yeu-dau-phan-2",
+          "title": "My Dearest (Season 2)",
+          "year": 2023,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-yeu-dau-phan-1",
+        "https://phimapi.com/phim/nguoi-yeu-dau-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "rung-dong-dau-doi",
+        "rung-dong-dau-doi-2"
+      ],
+      "reasons": [
+        "same-credits",
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "rung-dong-dau-doi",
+          "title": "My First First Love",
+          "year": 2019,
+          "episodes": 8,
+          "type": "series"
+        },
+        {
+          "slug": "rung-dong-dau-doi-2",
+          "title": "My First First Love 2",
+          "year": 2019,
+          "episodes": 8,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/rung-dong-dau-doi",
+        "https://phimapi.com/phim/rung-dong-dau-doi-2"
+      ]
+    },
+    {
+      "slugs": [
+        "hon-le-cua-chang-hoc-gia",
+        "hon-le-cua-chang-hoc-gia-ban-dien-anh"
+      ],
+      "reasons": [
+        "same-credits",
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hon-le-cua-chang-hoc-gia",
+          "title": "Nobleman Ryu's Wedding",
+          "year": 2021,
+          "episodes": 8,
+          "type": "series"
+        },
+        {
+          "slug": "hon-le-cua-chang-hoc-gia-ban-dien-anh",
+          "title": "Nobleman Ryu's Wedding (Ver. Movie)",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hon-le-cua-chang-hoc-gia",
+        "https://phimapi.com/phim/hon-le-cua-chang-hoc-gia-ban-dien-anh"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-chien-sinh-ton-phan-1",
+        "cuoc-chien-sinh-ton-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-chien-sinh-ton-phan-1",
+          "title": "The Escape Of The Seven (Season 1)",
+          "year": 2023,
+          "episodes": 17,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-chien-sinh-ton-phan-2",
+          "title": "The Escape Of The Seven (Season 2)",
+          "year": 2023,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-chien-sinh-ton-phan-1",
+        "https://phimapi.com/phim/cuoc-chien-sinh-ton-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "giai-dieu-cua-ban-tieng-long-cua-toi",
+        "giai-dieu-cua-ban-tieng-long-cua-toi-ban-dien-anh"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "giai-dieu-cua-ban-tieng-long-cua-toi",
+          "title": "WISH YOU: Your Melody From My Heart",
+          "year": 2020,
+          "episodes": 8,
+          "type": "series"
+        },
+        {
+          "slug": "giai-dieu-cua-ban-tieng-long-cua-toi-ban-dien-anh",
+          "title": "WISH YOU: Your Melody From My Heart (Ver. Movie)",
+          "year": 2020,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/giai-dieu-cua-ban-tieng-long-cua-toi",
+        "https://phimapi.com/phim/giai-dieu-cua-ban-tieng-long-cua-toi-ban-dien-anh"
+      ]
+    },
+    {
+      "slugs": [
+        "bocchi-the-rock-recap-part-1",
+        "bocchi-the-rock-recap-part-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "bocchi-the-rock-recap-part-1",
+          "title": "Bocchi The Rock! Recap Part 1",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "bocchi-the-rock-recap-part-2",
+          "title": "Bocchi The Rock! Recap Part 2",
+          "year": 2024,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bocchi-the-rock-recap-part-1",
+        "https://phimapi.com/phim/bocchi-the-rock-recap-part-2"
+      ]
+    },
+    {
+      "slugs": [
+        "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+          "title": "Haikyu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien",
+          "title": "Haikyu!! Movie 4: Battle of Concepts",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien"
+      ]
+    },
+    {
+      "slugs": [
+        "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
+      ],
+      "reasons": [
+        "same-credits",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+          "title": "Haikyu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "thieu-nien-bong-chuyen-tai-nang-va-cam-giac",
+          "title": "Haikyuu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "haikyu-ban-dien-anh-3-thien-tai-troi-day"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day"
+      ]
+    },
+    {
+      "slugs": [
+        "haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien",
+        "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien",
+          "title": "Haikyu!! Movie 4: Battle of Concepts",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "thieu-nien-bong-chuyen-tai-nang-va-cam-giac",
+          "title": "Haikyuu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "haikyu-ban-dien-anh-3-thien-tai-troi-day"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien",
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day"
+      ]
+    },
+    {
+      "slugs": [
+        "kizumonogatari-phan-1-thiet-huyet",
+        "kizumonogatari-phan-2-nhiet-huyet"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "kizumonogatari-phan-1-thiet-huyet",
+          "title": "Kizumonogatari Part 1: Tekketsu",
+          "year": 2016,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "kizumonogatari-phan-2-nhiet-huyet",
+          "title": "Kizumonogatari Part 2: Nekketsu",
+          "year": 2016,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/kizumonogatari-phan-1-thiet-huyet",
+        "https://phimapi.com/phim/kizumonogatari-phan-2-nhiet-huyet"
+      ]
+    },
+    {
+      "slugs": [
+        "thanh-dau-si-seiya-hiep-si-hoang-dao-phan-1",
+        "thanh-dau-si-seiya-hiep-si-hoang-dao-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "thanh-dau-si-seiya-hiep-si-hoang-dao-phan-1",
+          "title": "​Saint Seiya: Knights Of The Zodiac (Season 1)",
+          "year": 2020,
+          "episodes": 6,
+          "type": "series"
+        },
+        {
+          "slug": "thanh-dau-si-seiya-hiep-si-hoang-dao-phan-2",
+          "title": "​Saint Seiya: Knights Of The Zodiac (Season 2)",
+          "year": 2020,
+          "episodes": 6,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/thanh-dau-si-seiya-hiep-si-hoang-dao-phan-1",
+        "https://phimapi.com/phim/thanh-dau-si-seiya-hiep-si-hoang-dao-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-doi-dem-truong-halloween",
+        "nguoi-doi-dem-truong-halloween-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nguoi-doi-dem-truong-halloween",
+          "title": "Batman: The Long Halloween",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-phan-2",
+          "title": "Batman: The Long Halloween, Part Two",
+          "year": 2021,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween",
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-doi-dem-truong-halloween",
+        "nguoi-doi-dem-truong-halloween-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nguoi-doi-dem-truong-halloween",
+          "title": "Batman: The Long Halloween",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-2",
+          "title": "Batman: The Long Halloween 2",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-dem-truong-halloween-phan-2"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween",
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-doi-dem-truong-halloween-2",
+        "nguoi-doi-dem-truong-halloween-phan-2"
+      ],
+      "reasons": [
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-2",
+          "title": "Batman: The Long Halloween 2",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-dem-truong-halloween-phan-2"
+        },
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-phan-2",
+          "title": "Batman: The Long Halloween, Part Two",
+          "year": 2021,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2",
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "hoan-hon-phan-1",
+        "hoan-hon-phan-2"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoan-hon-phan-1",
+          "title": "Alchemy Of Souls 1",
+          "year": 2022,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "hoan-hon-phan-2",
+          "title": "Alchemy Of Souls 2",
+          "year": 2022,
+          "episodes": 10,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoan-hon-phan-1",
+        "https://phimapi.com/phim/hoan-hon-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "sinh-vat-gyeongseong-phan-1",
+        "sinh-vat-gyeongseong-phan-2"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "sinh-vat-gyeongseong-phan-1",
+          "title": "Gyeongseong Creature (Season 1)",
+          "year": 2023,
+          "episodes": 10,
+          "type": "series"
+        },
+        {
+          "slug": "sinh-vat-gyeongseong-phan-2",
+          "title": "Gyeongseong Creature (Season 2)",
+          "year": 2024,
+          "episodes": 10,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/sinh-vat-gyeongseong-phan-1",
+        "https://phimapi.com/phim/sinh-vat-gyeongseong-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "dai-chien-nguoi-khong-lo-phan-5",
+        "dai-chien-nguoi-khong-lo-phan-6"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-5",
+          "title": "Attack On Titan (Season 5)",
+          "year": 2022,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "dai-chien-nguoi-khong-lo-phan-6",
+          "title": "Attack On Titan (Season 6)",
+          "year": 2022,
+          "episodes": 12,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dai-chien-nguoi-khong-lo-phan-5",
+        "https://phimapi.com/phim/dai-chien-nguoi-khong-lo-phan-6"
+      ]
+    },
+    {
+      "slugs": [
+        "the-gioi-phep-thuat-phan-1",
+        "the-gioi-phep-thuat-phan-2"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "the-gioi-phep-thuat-phan-1",
+          "title": "Black Clover (Season 1)",
+          "year": 2017,
+          "episodes": 170,
+          "type": "animation"
+        },
+        {
+          "slug": "the-gioi-phep-thuat-phan-2",
+          "title": "Black Clover (Season 2)",
+          "year": 2026,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/the-gioi-phep-thuat-phan-1",
+        "https://phimapi.com/phim/the-gioi-phep-thuat-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-1",
+        "hoi-phap-su-phan-2"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-1",
+          "title": "Fairy Tail (Season 1)",
+          "year": 2009,
+          "episodes": 175,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-2",
+          "title": "Fairy Tail (Season 2)",
+          "year": 2014,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-1",
+        "https://phimapi.com/phim/hoi-phap-su-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-1",
+        "hoi-phap-su-phan-3"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-1",
+          "title": "Fairy Tail (Season 1)",
+          "year": 2009,
+          "episodes": 175,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-3",
+          "title": "Fairy Tail (Season 3)",
+          "year": 2015,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-1",
+        "https://phimapi.com/phim/hoi-phap-su-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-1",
+        "hoi-phap-su-phan-4"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-1",
+          "title": "Fairy Tail (Season 1)",
+          "year": 2009,
+          "episodes": 175,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-4",
+          "title": "Fairy Tail (Season 4)",
+          "year": 2018,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-1",
+        "https://phimapi.com/phim/hoi-phap-su-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-2",
+        "hoi-phap-su-phan-3"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-2",
+          "title": "Fairy Tail (Season 2)",
+          "year": 2014,
+          "episodes": 51,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-3",
+          "title": "Fairy Tail (Season 3)",
+          "year": 2015,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-2",
+        "https://phimapi.com/phim/hoi-phap-su-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-2",
+        "hoi-phap-su-phan-4"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-2",
+          "title": "Fairy Tail (Season 2)",
+          "year": 2014,
+          "episodes": 51,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-4",
+          "title": "Fairy Tail (Season 4)",
+          "year": 2018,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-2",
+        "https://phimapi.com/phim/hoi-phap-su-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-phap-su-phan-3",
+        "hoi-phap-su-phan-4"
+      ],
+      "reasons": [
+        "same-poster"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-phap-su-phan-3",
+          "title": "Fairy Tail (Season 3)",
+          "year": 2015,
+          "episodes": 51,
+          "type": "animation"
+        },
+        {
+          "slug": "hoi-phap-su-phan-4",
+          "title": "Fairy Tail (Season 4)",
+          "year": 2018,
+          "episodes": 51,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-phap-su-phan-3",
+        "https://phimapi.com/phim/hoi-phap-su-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "vua-bong-chuyen-haikyuu-phan-4",
+        "vua-bong-chuyen-haikyuu-phan-4-2"
+      ],
+      "reasons": [
+        "same-poster",
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "vua-bong-chuyen-haikyuu-phan-4",
+          "title": "Haikyu!! (Season 4)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "vua-bong-chuyen-haikyuu-phan-4-2",
+          "title": "Haikyu!! (Season 4) 2",
+          "year": 2020,
+          "episodes": 12,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vua-bong-chuyen-haikyuu-phan-4",
+        "https://phimapi.com/phim/vua-bong-chuyen-haikyuu-phan-4-2"
+      ]
+    },
+    {
+      "slugs": [
+        "nha-tro-waikiki",
+        "nha-tro-waikiki-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nha-tro-waikiki",
+          "title": "Welcome to Waikiki",
+          "year": 2018,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "nha-tro-waikiki-2",
+          "title": "Eulachacha Waikiki 2",
+          "year": 2019,
+          "episodes": 16,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nha-tro-waikiki",
+        "https://phimapi.com/phim/nha-tro-waikiki-2"
+      ]
+    },
+    {
+      "slugs": [
+        "huong-vi-cua-bien-huong-vi-cua-bien-o-calape",
+        "huong-vi-cua-bien-mua-3"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "huong-vi-cua-bien-huong-vi-cua-bien-o-calape",
+          "title": "Fresh Off The Sea (In Calape)",
+          "year": 2026,
+          "episodes": 5,
+          "type": "series"
+        },
+        {
+          "slug": "huong-vi-cua-bien-mua-3",
+          "title": "Fresh Off The Sea (Season 3)",
+          "year": 2026,
+          "episodes": 11,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/huong-vi-cua-bien-huong-vi-cua-bien-o-calape",
+        "https://phimapi.com/phim/huong-vi-cua-bien-mua-3"
+      ]
+    },
+    {
+      "slugs": [
+        "su-menh-than-chet-huyet-chien-ngan-nam",
+        "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam",
+          "title": "Bleach: Thousand-Year Blood War",
+          "year": 2022,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet",
+          "title": "Bleach: Thousand-Year Blood War - The Separation",
+          "year": 2023,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-chia-biet"
+      ]
+    },
+    {
+      "slugs": [
+        "su-menh-than-chet-huyet-chien-ngan-nam",
+        "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam",
+          "title": "Bleach: Thousand-Year Blood War",
+          "year": 2022,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac",
+          "title": "Bleach: Thousand-Year Blood War - The Conflict",
+          "year": 2024,
+          "episodes": 14,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ]
+    },
+    {
+      "slugs": [
+        "bleach-huyet-chien-ngan-nam-kiep-nan",
+        "su-menh-than-chet-huyet-chien-ngan-nam"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "bleach-huyet-chien-ngan-nam-kiep-nan",
+          "title": "Bleach Thousand-Year Blood War - The Calamity",
+          "year": 2026,
+          "episodes": 8,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam",
+          "title": "Bleach: Thousand-Year Blood War",
+          "year": 2022,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bleach-huyet-chien-ngan-nam-kiep-nan",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam"
+      ]
+    },
+    {
+      "slugs": [
+        "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet",
+        "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet",
+          "title": "Bleach: Thousand-Year Blood War - The Separation",
+          "year": 2023,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac",
+          "title": "Bleach: Thousand-Year Blood War - The Conflict",
+          "year": 2024,
+          "episodes": 14,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-chia-biet",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ]
+    },
+    {
+      "slugs": [
+        "bleach-huyet-chien-ngan-nam-kiep-nan",
+        "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "bleach-huyet-chien-ngan-nam-kiep-nan",
+          "title": "Bleach Thousand-Year Blood War - The Calamity",
+          "year": 2026,
+          "episodes": 8,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-chia-biet",
+          "title": "Bleach: Thousand-Year Blood War - The Separation",
+          "year": 2023,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bleach-huyet-chien-ngan-nam-kiep-nan",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-chia-biet"
+      ]
+    },
+    {
+      "slugs": [
+        "bleach-huyet-chien-ngan-nam-kiep-nan",
+        "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "bleach-huyet-chien-ngan-nam-kiep-nan",
+          "title": "Bleach Thousand-Year Blood War - The Calamity",
+          "year": 2026,
+          "episodes": 8,
+          "type": "animation"
+        },
+        {
+          "slug": "su-menh-than-chet-huyet-chien-ngan-nam-xung-khac",
+          "title": "Bleach: Thousand-Year Blood War - The Conflict",
+          "year": 2024,
+          "episodes": 14,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bleach-huyet-chien-ngan-nam-kiep-nan",
+        "https://phimapi.com/phim/su-menh-than-chet-huyet-chien-ngan-nam-xung-khac"
+      ]
+    },
+    {
+      "slugs": [
+        "nhoc-shin-phieu-luu-ky",
+        "shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        },
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky",
+        "https://phimapi.com/phim/shin"
+      ]
+    },
+    {
+      "slugs": [
+        "shin",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/shin",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "den-truong-cung-shin",
+        "shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/den-truong-cung-shin",
+        "https://phimapi.com/phim/shin"
+      ]
+    },
+    {
+      "slugs": [
+        "o-nha-cung-shin-phan-1",
+        "shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1",
+        "https://phimapi.com/phim/shin"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/shin"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-1",
+        "shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin",
+          "title": "Cậu Bé Bút Chì",
+          "year": 2019,
+          "episodes": 300,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1",
+        "https://phimapi.com/phim/shin"
+      ]
+    },
+    {
+      "slugs": [
+        "nhoc-shin-phieu-luu-ky",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "den-truong-cung-shin",
+        "nhoc-shin-phieu-luu-ky"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/den-truong-cung-shin",
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky"
+      ]
+    },
+    {
+      "slugs": [
+        "nhoc-shin-phieu-luu-ky",
+        "o-nha-cung-shin-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "nhoc-shin-phieu-luu-ky"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-1",
+        "nhoc-shin-phieu-luu-ky"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "nhoc-shin-phieu-luu-ky",
+          "title": "Shinchan Adventures",
+          "year": 2019,
+          "episodes": 23,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1",
+        "https://phimapi.com/phim/nhoc-shin-phieu-luu-ky"
+      ]
+    },
+    {
+      "slugs": [
+        "den-truong-cung-shin",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/den-truong-cung-shin",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "o-nha-cung-shin-phan-1",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-1",
+        "shin-va-nhung-nguoi-ban"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "shin-va-nhung-nguoi-ban",
+          "title": "Shinchan And Friends",
+          "year": 2019,
+          "episodes": 22,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1",
+        "https://phimapi.com/phim/shin-va-nhung-nguoi-ban"
+      ]
+    },
+    {
+      "slugs": [
+        "den-truong-cung-shin",
+        "o-nha-cung-shin-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/den-truong-cung-shin",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "den-truong-cung-shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/den-truong-cung-shin"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-1",
+        "den-truong-cung-shin"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "den-truong-cung-shin",
+          "title": "Shinchan School Time",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1",
+        "https://phimapi.com/phim/den-truong-cung-shin"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "o-nha-cung-shin-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-1",
+        "o-nha-cung-shin-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-1",
+          "title": "Shinchan At Home (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-1",
+        "cuoc-song-cua-shin-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-1",
+          "title": "Shinchan Nohara Family (Season 1)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-song-cua-shin-phan-1",
+          "title": "Shinchan's Life (Season 1)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-1",
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "bay-vien-ngoc-rong-z-kai",
+        "bay-vien-ngoc-rong-z-kai-chuong-cuoi"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "bay-vien-ngoc-rong-z-kai",
+          "title": "Dragon Ball Z Kai",
+          "year": 2009,
+          "episodes": 167,
+          "type": "animation"
+        },
+        {
+          "slug": "bay-vien-ngoc-rong-z-kai-chuong-cuoi",
+          "title": "Dragon Ball Z Kai: The Final Chapters",
+          "year": 2009,
+          "episodes": 69,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/bay-vien-ngoc-rong-z-kai",
+        "https://phimapi.com/phim/bay-vien-ngoc-rong-z-kai-chuong-cuoi"
+      ]
+    },
+    {
+      "slugs": [
+        "vua-dau-bep-soma",
+        "vua-dau-bep-soma-phan-5"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "vua-dau-bep-soma",
+          "title": "Shokugeki No Soma",
+          "year": 2015,
+          "episodes": 24,
+          "type": "series"
+        },
+        {
+          "slug": "vua-dau-bep-soma-phan-5",
+          "title": "Food Wars!: Shokugeki No Soma (The Fifth Plate)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vua-dau-bep-soma",
+        "https://phimapi.com/phim/vua-dau-bep-soma-phan-5"
+      ]
+    },
+    {
+      "slugs": [
+        "vua-dau-bep-soma-phan-2",
+        "vua-dau-bep-soma-phan-5"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "vua-dau-bep-soma-phan-2",
+          "title": "Shokugeki No Souma: Ni No Sara",
+          "year": 2016,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "vua-dau-bep-soma-phan-5",
+          "title": "Food Wars!: Shokugeki No Soma (The Fifth Plate)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vua-dau-bep-soma-phan-2",
+        "https://phimapi.com/phim/vua-dau-bep-soma-phan-5"
+      ]
+    },
+    {
+      "slugs": [
+        "vua-dau-bep-soma",
+        "vua-dau-bep-soma-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "vua-dau-bep-soma",
+          "title": "Shokugeki No Soma",
+          "year": 2015,
+          "episodes": 24,
+          "type": "series"
+        },
+        {
+          "slug": "vua-dau-bep-soma-phan-2",
+          "title": "Shokugeki No Souma: Ni No Sara",
+          "year": 2016,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/vua-dau-bep-soma",
+        "https://phimapi.com/phim/vua-dau-bep-soma-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "goc-khuat-cua-the-gioi-2016",
+        "goc-khuat-cua-the-gioi-2019"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "goc-khuat-cua-the-gioi-2016",
+          "title": "In This Corner Of The World",
+          "year": 2016,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "goc-khuat-cua-the-gioi-2019",
+          "title": "In This Corner And Other Corners Of The World",
+          "year": 2019,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi-2016",
+        "https://phimapi.com/phim/goc-khuat-cua-the-gioi-2019"
+      ]
+    },
+    {
+      "slugs": [
+        "kaiji-chong-lai-moi-quy-tac",
+        "kaiji-nguoi-song-sot-cuoi-cung"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "kaiji-chong-lai-moi-quy-tac",
+          "title": "Kaiji: Against All Rules",
+          "year": 2011,
+          "episodes": 26,
+          "type": "series"
+        },
+        {
+          "slug": "kaiji-nguoi-song-sot-cuoi-cung",
+          "title": "Kaiji: Ultimate Survivor",
+          "year": 2007,
+          "episodes": 26,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/kaiji-chong-lai-moi-quy-tac",
+        "https://phimapi.com/phim/kaiji-nguoi-song-sot-cuoi-cung"
+      ]
+    },
+    {
+      "slugs": [
+        "dau-si-ashura-mua-1-phan-1",
+        "dau-si-ashura-mua-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "dau-si-ashura-mua-1-phan-1",
+          "title": "KENGAN ASHURA (Season 1 - Part 1)",
+          "year": 2019,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "dau-si-ashura-mua-2",
+          "title": "KENGAN ASHURA (Season 2)",
+          "year": 2023,
+          "episodes": 28,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dau-si-ashura-mua-1-phan-1",
+        "https://phimapi.com/phim/dau-si-ashura-mua-2"
+      ]
+    },
+    {
+      "slugs": [
+        "dau-si-ashura-mua-1-phan-2",
+        "dau-si-ashura-mua-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "dau-si-ashura-mua-1-phan-2",
+          "title": "KENGAN ASHURA (Season 1 - Part 2)",
+          "year": 2019,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "dau-si-ashura-mua-2",
+          "title": "KENGAN ASHURA (Season 2)",
+          "year": 2023,
+          "episodes": 28,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dau-si-ashura-mua-1-phan-2",
+        "https://phimapi.com/phim/dau-si-ashura-mua-2"
+      ]
+    },
+    {
+      "slugs": [
+        "dau-si-ashura-mua-1-phan-1",
+        "dau-si-ashura-mua-1-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "dau-si-ashura-mua-1-phan-1",
+          "title": "KENGAN ASHURA (Season 1 - Part 1)",
+          "year": 2019,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "dau-si-ashura-mua-1-phan-2",
+          "title": "KENGAN ASHURA (Season 1 - Part 2)",
+          "year": 2019,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dau-si-ashura-mua-1-phan-1",
+        "https://phimapi.com/phim/dau-si-ashura-mua-1-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+        "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+          "title": "KonoSuba God's Blessing On This Wonderful World!",
+          "year": 2016,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3",
+          "title": "KonoSuba God's Blessing On This Wonderful World! (Season 3)",
+          "year": 2024,
+          "episodes": 13,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay",
+        "https://phimapi.com/phim/phuc-lanh-cho-the-gioi-tuyet-voi-nay-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "pokemon",
+        "pokemon-mat-troi-mat-trang"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "pokemon",
+          "title": "Pokémon (TV Series)",
+          "year": 1997,
+          "episodes": 1648,
+          "type": "series"
+        },
+        {
+          "slug": "pokemon-mat-troi-mat-trang",
+          "title": "Pokémon: Sun & Moon",
+          "year": 2019,
+          "episodes": 145,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/pokemon",
+        "https://phimapi.com/phim/pokemon-mat-troi-mat-trang"
+      ]
+    },
+    {
+      "slugs": [
+        "hoi-chung-tuoi-thanh-xuan-phan-1",
+        "hoi-chung-tuoi-thanh-xuan-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "hoi-chung-tuoi-thanh-xuan-phan-1",
+          "title": "Rascal Does Not Dream Of Bunny Girl Senpai",
+          "year": 2018,
+          "episodes": 13,
+          "type": "series"
+        },
+        {
+          "slug": "hoi-chung-tuoi-thanh-xuan-phan-2",
+          "title": "Rascal Does Not Dream Of Santa Claus",
+          "year": 2025,
+          "episodes": 13,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/hoi-chung-tuoi-thanh-xuan-phan-1",
+        "https://phimapi.com/phim/hoi-chung-tuoi-thanh-xuan-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-2",
+        "o-nha-cung-shin-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-2",
+          "title": "Shinchan Nohara Family (Season 2)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-2",
+          "title": "Shinchan At Home (Season 2)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-2",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-2",
+        "o-nha-cung-shin-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-2",
+          "title": "Shinchan's Life (Season 2)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-2",
+          "title": "Shinchan At Home (Season 2)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-2",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-2",
+        "cuoc-song-cua-shin-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-2",
+          "title": "Shinchan Nohara Family (Season 2)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-song-cua-shin-phan-2",
+          "title": "Shinchan's Life (Season 2)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-2",
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-3",
+        "o-nha-cung-shin-phan-3"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-3",
+          "title": "Shinchan Nohara Family (Season 3)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-3",
+          "title": "Shinchan At Home (Season 3)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-3",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-3",
+        "o-nha-cung-shin-phan-3"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-3",
+          "title": "Shinchan's Life (Season 3)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-3",
+          "title": "Shinchan At Home (Season 3)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-3",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-3",
+        "cuoc-song-cua-shin-phan-3"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-3",
+          "title": "Shinchan Nohara Family (Season 3)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-song-cua-shin-phan-3",
+          "title": "Shinchan's Life (Season 3)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-3",
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-3"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-4",
+        "o-nha-cung-shin-phan-4"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-4",
+          "title": "Shinchan Nohara Family (Season 4)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-4",
+          "title": "Shinchan At Home (Season 4)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-4",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-song-cua-shin-phan-4",
+        "o-nha-cung-shin-phan-4"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-song-cua-shin-phan-4",
+          "title": "Shinchan's Life (Season 4)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        },
+        {
+          "slug": "o-nha-cung-shin-phan-4",
+          "title": "Shinchan At Home (Season 4)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-4",
+        "https://phimapi.com/phim/o-nha-cung-shin-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "chuyen-nha-nohara-phan-4",
+        "cuoc-song-cua-shin-phan-4"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "chuyen-nha-nohara-phan-4",
+          "title": "Shinchan Nohara Family (Season 4)",
+          "year": 2019,
+          "episodes": 20,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-song-cua-shin-phan-4",
+          "title": "Shinchan's Life (Season 4)",
+          "year": 2019,
+          "episodes": 25,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/chuyen-nha-nohara-phan-4",
+        "https://phimapi.com/phim/cuoc-song-cua-shin-phan-4"
+      ]
+    },
+    {
+      "slugs": [
+        "to-love-ru-darkness-2nd",
+        "to-loveru-darkness"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-love-ru-darkness-2nd",
+          "title": "To Love Ru Darkness 2Nd",
+          "year": 2015,
+          "episodes": 18,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru-darkness",
+          "title": "To LOVE-Ru Darkness",
+          "year": 2012,
+          "episodes": 18,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-love-ru-darkness-2nd",
+        "https://phimapi.com/phim/to-loveru-darkness"
+      ]
+    },
+    {
+      "slugs": [
+        "to-love-ru-darkness-2nd",
+        "to-loveru-motto"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-love-ru-darkness-2nd",
+          "title": "To Love Ru Darkness 2Nd",
+          "year": 2015,
+          "episodes": 18,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru-motto",
+          "title": "To LOVE-Ru Motto",
+          "year": 2010,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-love-ru-darkness-2nd",
+        "https://phimapi.com/phim/to-loveru-motto"
+      ]
+    },
+    {
+      "slugs": [
+        "to-love-ru-darkness-2nd",
+        "to-loveru"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-love-ru-darkness-2nd",
+          "title": "To Love Ru Darkness 2Nd",
+          "year": 2015,
+          "episodes": 18,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru",
+          "title": "To LOVE-Ru Trouble",
+          "year": 2008,
+          "episodes": 32,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-love-ru-darkness-2nd",
+        "https://phimapi.com/phim/to-loveru"
+      ]
+    },
+    {
+      "slugs": [
+        "to-loveru-darkness",
+        "to-loveru-motto"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-loveru-darkness",
+          "title": "To LOVE-Ru Darkness",
+          "year": 2012,
+          "episodes": 18,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru-motto",
+          "title": "To LOVE-Ru Motto",
+          "year": 2010,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-loveru-darkness",
+        "https://phimapi.com/phim/to-loveru-motto"
+      ]
+    },
+    {
+      "slugs": [
+        "to-loveru",
+        "to-loveru-darkness"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-loveru",
+          "title": "To LOVE-Ru Trouble",
+          "year": 2008,
+          "episodes": 32,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru-darkness",
+          "title": "To LOVE-Ru Darkness",
+          "year": 2012,
+          "episodes": 18,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-loveru",
+        "https://phimapi.com/phim/to-loveru-darkness"
+      ]
+    },
+    {
+      "slugs": [
+        "to-loveru",
+        "to-loveru-motto"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "to-loveru",
+          "title": "To LOVE-Ru Trouble",
+          "year": 2008,
+          "episodes": 32,
+          "type": "series"
+        },
+        {
+          "slug": "to-loveru-motto",
+          "title": "To LOVE-Ru Motto",
+          "year": 2010,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/to-loveru",
+        "https://phimapi.com/phim/to-loveru-motto"
+      ]
+    },
+    {
+      "slugs": [
+        "du-sao-cung-de-thuong-mua-1",
+        "du-sao-cung-de-thuong-phan-1"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "du-sao-cung-de-thuong-mua-1",
+          "title": "Tonikaku Kawaii (Season 1)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "du-sao-cung-de-thuong-phan-1",
+          "title": "TONIKAWA: Over The Moon For You (Season 1)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "series",
+          "duplicateOf": "du-sao-cung-de-thuong-mua-1"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1",
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "cuoc-dieu-hanh-trigun-phan-1",
+        "cuoc-dieu-hanh-trigun-phan-2"
+      ],
+      "reasons": [
+        "same-cached-id"
+      ],
+      "decision": "keep-separate",
+      "reason": "Different source original titles (may be separate seasons, parts or editions).",
+      "movies": [
+        {
+          "slug": "cuoc-dieu-hanh-trigun-phan-1",
+          "title": "Trigun Stampede",
+          "year": 2023,
+          "episodes": 12,
+          "type": "series"
+        },
+        {
+          "slug": "cuoc-dieu-hanh-trigun-phan-2",
+          "title": "Trigun Stargaze",
+          "year": 2026,
+          "episodes": 12,
+          "type": "series"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cuoc-dieu-hanh-trigun-phan-1",
+        "https://phimapi.com/phim/cuoc-dieu-hanh-trigun-phan-2"
+      ]
+    }
+  ]
+}

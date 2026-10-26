@@ -27,7 +27,7 @@
 .watch-view-actions { display:flex;align-items:center;flex-wrap:wrap;gap:9px;border-top:1px solid #242631;padding:13px 0; }
 .watch-view-actions .wp-nav-btn { background:none;border-color:transparent;font-size:10px;min-height:34px;padding:6px 9px; }
 .watch-view-actions>a { margin-left:auto;color:#84899a;font-size:10px;text-decoration:none;padding:10px 0; }
-.watch-side-panel { min-width:0;border:1px solid #262833;background:#101117;border-radius:16px;overflow:hidden;position:sticky;top:100px; }
+.watch-side-panel { min-width:0;border:1px solid #262833;background:#101117;border-radius:16px;overflow:hidden;position:static; }
 .watch-panel-heading { display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 20px 19px; }
 .watch-panel-heading h2 { margin:0;font-size:19px;font-weight:700;letter-spacing:-.5px; }
 .watch-panel-heading .watch-eyebrow { color:#737889; }

@@ -6,7 +6,7 @@
     <title id="page-title">Chi tiết phim</title>
     <link rel="stylesheet" href="style.css?v=20261024b" />
     <link rel="stylesheet" href="cinema.css?v=20261024b" />
-    <link rel="stylesheet" href="detail-experience.css?v=20261024b" />
+    <link rel="stylesheet" href="detail-experience.css?v=20261025-people" />
     <link rel="stylesheet" href="journal-controls.css?v=20261024b" />
     <link rel="stylesheet" href="episode-tracker-ui.css?v=20261024b" />
     <link rel="stylesheet" href="list-controls.css?v=20261024b" />
@@ -34,7 +34,7 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
+      <a class="logo" href="index.html" aria-label="LauPhim — Trang chủ">Lau<span>Phim</span></a>
       <div class="mobile-menu-btn" id="mobile-menu-btn">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -206,8 +206,8 @@
     <script src="./catalog-state.js?v=20261024b"></script>
     <script src="./catalog-format.js?v=20261024b"></script><script src="published-episodes.js?v=20261024b"></script>
     <script src="./catalog-navigation.js?v=20261024b"></script>
-    <script src="./site-tools.js?v=20261024b"></script>
-    <script src="./api.js?v=20261024b"></script>
+    <script src="./site-tools.js?v=20261026-review"></script>
+    <script src="./api.js?v=20261026-review"></script>
     <script src="./utils.js?v=20261024b"></script>
     
     
@@ -230,6 +230,6 @@
       let episodes = Math.min(2000, Math.max(1, parseInt(params.get('episodes'), 10) || 1));
       const slug = params.get('slug') || '';
     </script>
-    <script src="note-controls.js?v=20261024b"></script><script src="./detail-page.js?v=20261024b"></script>
+    <script src="note-controls.js?v=20261024b"></script><script src="movie-people.js?v=20261025-people"></script><script src="./detail-page.js?v=20261025-people"></script>
   <script src="app-navigation.js?v=20261024b"></script><script src="pwa.js?v=20261025a"></script></body>
 </html>

@@ -7,11 +7,11 @@
     
     <link rel="stylesheet" href="style.css?v=20261024b" />
     <link rel="stylesheet" href="cinema.css?v=20261024b" />
-    <link rel="stylesheet" href="player-controls.css?v=20261024b" />
+    <link rel="stylesheet" href="player-controls.css?v=20261025-opening" />
     <link rel="stylesheet" href="scene-bookmarks.css?v=20261024b" />
     <link rel="stylesheet" href="episode-tracker.css?v=20261024b" />
     <link rel="stylesheet" href="watch-progress.css?v=20261024b" />
-    <link rel="stylesheet" href="watch-experience.css?v=20261024b" />
+    <link rel="stylesheet" href="watch-experience.css?v=20261025-panel" />
     <link rel="stylesheet" href="custom-subtitles.css?v=20261024c" />
     <link rel="stylesheet" href="watch-room.css?v=20261024c" />
 
@@ -115,7 +115,7 @@
   <body class="watch-page">
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo" onclick="switchPage('home')">Lau<span>Phim</span></div>
+      <a class="logo" href="index.html" aria-label="LauPhim — Trang chủ">Lau<span>Phim</span></a>
       <div class="mobile-menu-btn" id="mobile-menu-btn">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -224,6 +224,7 @@
               </div>
               <div class="watch-view-actions">
                 <button id="wp-theater-btn" class="wp-nav-btn" type="button" title="Chế độ rạp phim (phím T)"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span>Tắt đèn</span></button>
+                <button id="wp-opening-btn" class="wp-nav-btn" type="button" disabled title="Đặt mốc opening cho video phát trực tiếp"><span aria-hidden="true">↠</span><span>Opening</span></button>
                 <button id="watch-rail-toggle" class="wp-nav-btn" type="button" aria-controls="watch-side-panel" aria-expanded="true"><span aria-hidden="true">☷</span><span>Ẩn bảng tập</span></button>
                 <a id="watch-film-link" href="#wp-movie-info">Thông tin phim <span aria-hidden="true">↓</span></a>
               </div>
@@ -272,8 +273,8 @@
     <script src="./catalog-state.js?v=20261024b"></script>
     <script src="./catalog-format.js?v=20261024b"></script><script src="published-episodes.js?v=20261024b"></script>
     <script src="./catalog-navigation.js?v=20261024b"></script>
-    <script src="./site-tools.js?v=20261024b"></script>
-    <script src="./api.js?v=20261024b"></script>
+    <script src="./site-tools.js?v=20261026-review"></script>
+    <script src="./api.js?v=20261026-review"></script>
     <script src="./utils.js?v=20261024b"></script>
     
     
@@ -288,7 +289,7 @@
     <script src="./tv-nav.js?v=20261024b"></script>
     <script src="./playback-tools.js?v=20261024b"></script>
     <script src="./playback-options.js?v=20261024b"></script>
-    <script src="./player-controls.js?v=20261024b"></script>
+    <script src="./player-controls.js?v=20261025-opening"></script>
     <script src="./episode-tracker-ui.js?v=20261024b"></script>
     <script src="./watch-progress.js?v=20261024b"></script>
 
@@ -1464,6 +1465,9 @@
             PlayerControls.write(playerStorage, AUTONEXT_KEY, 0);
           },
         });
+        const openingButton = document.getElementById('wp-opening-btn');
+        openingButton.disabled = false;
+        openingButton.onclick = () => { window.WatchExperience?.open('tools'); playerControls?.openIntro(); };
         window.addEventListener("pagehide", closeNextPopup);
 
         // autoRun = true : đếm ngược 5s rồi tự chuyển tập

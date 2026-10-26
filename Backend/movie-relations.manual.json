@@ -286,6 +286,35 @@
           "order": 8
         }
       ]
+    },
+    {
+      "id": "taken-films",
+      "label": "Cưỡng Đoạt / Taken",
+      "kind": "franchise",
+      "basis": "official-publisher-collection",
+      "sources": [
+        "https://moviesanywhere.com/collection/taken-collection",
+        "https://www.20thcenturystudios.com/movies/taken",
+        "https://www.20thcenturystudios.com/movies/taken-2",
+        "https://www.20thcenturystudios.com/movies/taken-3"
+      ],
+      "members": [
+        {
+          "slug": "cuong-doat",
+          "label": "Taken (2008)",
+          "order": 0
+        },
+        {
+          "slug": "cuong-doat-2",
+          "label": "Taken 2 (2012)",
+          "order": 1
+        },
+        {
+          "slug": "cuong-doat-3",
+          "label": "Taken 3 (2014)",
+          "order": 2
+        }
+      ]
     }
   ],
   "standalone": [

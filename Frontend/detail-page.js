@@ -169,11 +169,14 @@ function fdRenderMetadata(movie) {
   document.getElementById('fd-language').textContent = movie.language || '';
 }
 function fdRenderAdditional(movie) {
+  const renderLinks=(id,values,key)=>{const host=document.getElementById(id);host.replaceChildren();if(!values.length){host.textContent='Đang cập nhật';return;}values.forEach((label,index)=>{if(index)host.append(document.createTextNode(', '));const link=document.createElement('a');link.className='fd-metadata-link';link.textContent=label;link.href='discover.html?'+new URLSearchParams({[key]:label})+'#discover-browser';link.title=key==='actor'?'Xem phim có '+label:'Xem phim thuộc thể loại '+label;host.append(link);});};
+  renderLinks('detail-genres',MovieGenres.genres(movie.genres),'genre');
+  renderLinks('detail-cast',MoviePeople.names(movie.cast),'actor');
   const castList = document.getElementById('fd-cast-list'); castList.replaceChildren();
-  const people = [...new Set(String(movie.cast || '').split(',').map(name => name.trim()).filter(name => name && !/^đang cập nhật$/i.test(name)))].slice(0, 40);
+  const people = MoviePeople.names(movie.cast).slice(0, 40);
   document.getElementById('fd-tab-cast').hidden = !people.length;
   people.forEach(name => {
-    const person = document.createElement('a'); person.className = 'fd-cast-person'; person.href = 'index.html?' + new URLSearchParams({ view: 'catalog', q: name });
+    const person = document.createElement('a'); person.className = 'fd-cast-person'; person.href = 'discover.html?' + new URLSearchParams({ actor: name }) + '#discover-browser';
     const initials = document.createElement('span'); initials.className = 'fd-cast-initials'; initials.setAttribute('aria-hidden', 'true'); initials.textContent = name.split(/\s+/).map(value => value[0]).slice(-2).join('').toLocaleUpperCase();
     const label = document.createElement('span'); label.textContent = name; person.append(initials, label); castList.append(person);
   });

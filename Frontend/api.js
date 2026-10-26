@@ -177,6 +177,7 @@ function resolveDataSource(explicitSource) {
 // ==========================================
 let staticCatalogPromise = null;
 let catalogDetailFiles = [], catalogIsFull = false;
+let catalogAliasCards = {};
 let catalogSearchPromise = null;
 const catalogShardCache = new Map();
 async function loadStaticCatalog() {
@@ -189,7 +190,9 @@ async function loadStaticCatalog() {
         if (!Array.isArray(movies)) throw new Error("Danh sách phim không hợp lệ.");
         catalogIsFull = Array.isArray(data);
         catalogDetailFiles = data.details || [];
-        return typeof PublishedEpisodes !== 'undefined' ? PublishedEpisodes.overlay(movies, await PublishedEpisodes.load()) : movies;
+        catalogAliasCards = Array.isArray(data) ? Object.fromEntries(movies.filter(movie=>movie.duplicateOf).map(movie=>[movie.slug,movie])) : data.aliases || {};
+        const listing = movies.filter(movie=>!movie.duplicateOf);
+        return typeof PublishedEpisodes !== 'undefined' ? PublishedEpisodes.overlay(listing, await PublishedEpisodes.load()) : listing;
       })
       .catch(err => { staticCatalogPromise = null; throw err; });
   }
@@ -242,7 +245,7 @@ async function fetchCatalogPage(options = {}) {
     if (options.group && movie.group !== options.group) return false;
     if (options.type && getCatalogType(movie) !== options.type) return false;
     if(query){
-      const rank=typeof SiteTools!=="undefined"?SiteTools.score(movie,query,castIndex?.[movie.slug]):(normalizeSearchText([movie.title,movie.slug,movie.genres,getMovieCountry(movie),movie.cast,movie.director,castIndex?.[movie.slug]].join(" ")).includes(query)?1:-1);
+      const rank=typeof SiteTools!=="undefined"?SiteTools.score(movie,query,castIndex?.[movie.slug]):(normalizeSearchText([movie.title,movie.slug,movie.alternateTitles,movie.alternateSlugs,movie.genres,getMovieCountry(movie),movie.cast,movie.director,castIndex?.[movie.slug]].join(" ")).includes(query)?1:-1);
       if(rank<0)return false;ranks.set(movie.slug,rank);
     }
     return true;
@@ -281,7 +284,7 @@ async function searchMoviesAPI(query, limit = 40) {
 }
 async function findCatalogMovieBySlug(slug) {
   const source = await loadStaticCatalog();
-  const original = source.find(movie => movie.slug === slug);
+  const original = source.find(movie => movie.slug === slug) || (Object.hasOwn(catalogAliasCards, slug) ? catalogAliasCards[slug] : null);
   if (!original) return null;
   let full = original;
   if (!catalogIsFull) {

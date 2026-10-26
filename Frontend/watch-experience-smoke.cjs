@@ -69,10 +69,14 @@ async function main() {
     await evaluate("const speed=document.querySelector('[aria-label=\"Tốc độ phát\"]');speed.value='1.5';speed.dispatchEvent(new Event('change'));const sleep=document.querySelector('[aria-label=\"Hẹn giờ dừng\"]');sleep.value='15';sleep.dispatchEvent(new Event('change'))");
     assert.equal(await evaluate("window.__canvasVideo.playbackRate"), 1.5);
     assert.ok(await evaluate("JSON.parse(sessionStorage.getItem('player_sleep_deadline_v1'))>Date.now()"));
-    await evaluate("document.querySelector('.player-intro-editor').open=true;const video=document.getElementById('video-player');video.currentTime=10;document.querySelectorAll('.player-intro-actions button')[0].click();video.currentTime=30;document.querySelectorAll('.player-intro-actions button')[1].click();video.currentTime=15;video.dispatchEvent(new Event('timeupdate'))");
+    await evaluate("WatchExperience.open('episodes');document.getElementById('watch-rail-toggle').click();document.getElementById('wp-opening-btn').click()");
+    assert.equal(await evaluate("!document.getElementById('watch-side-panel').hidden && !document.getElementById('watch-panel-tools').hidden && document.querySelector('.player-intro-editor').open"),true);
+    assert.equal(await evaluate("document.activeElement.textContent"),'Đánh dấu bắt đầu');
+    await evaluate("const video=document.getElementById('video-player');video.currentTime=10.25;document.querySelectorAll('.player-intro-actions button')[0].click();video.currentTime=30.75;document.querySelectorAll('.player-intro-actions button')[1].click();video.currentTime=30.5;video.dispatchEvent(new Event('timeupdate'))");
     assert.equal(await evaluate("document.querySelector('.player-skip-intro').hidden"), false);
     await evaluate("document.querySelector('.player-skip-intro').click();document.querySelector('.scene-bookmarks input').value='Cảnh thử';document.querySelector('.scene-capture').click()");
-    assert.equal(await evaluate("document.getElementById('video-player').currentTime"), 30);
+    assert.equal(await evaluate("document.getElementById('video-player').currentTime"), 30.75);
+    assert.equal(await evaluate("document.querySelector('.player-skip-intro').hidden"),true);
     assert.equal(await evaluate("Object.values(MovieNotes.get('yeu-tinh-goblin').bookmarks).filter(b=>!b.deleted).length"), 1);
     assert.equal(await evaluate("window.__canvasVideo===document.getElementById('video-player')"), true, 'tab changes must preserve video identity');
     await screenshot('watch-tools-desktop');
