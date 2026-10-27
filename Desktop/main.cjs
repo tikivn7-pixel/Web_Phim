@@ -51,7 +51,8 @@ function createWindow(url=HOME){
     else if(params.selectionText)entries.push({role:'copy'});
     if(entries.length)Menu.buildFromTemplate(entries).popup({window:win});
   });
-  win.loadURL(isSite(url)?url:HOME).catch(()=>{});
+  // HTTP cache only: viewing history, accounts and saved lists stay intact.
+  session.clearCache().catch(()=>{}).then(()=>{if(alive(win))win.loadURL(isSite(url)?url:HOME,{extraHeaders:'Cache-Control: no-cache\n'}).catch(()=>{});});
   return win;
 }
 function menu(){
@@ -59,7 +60,7 @@ function menu(){
   Menu.setApplicationMenu(Menu.buildFromTemplate([
     {label:'LauPhim',submenu:[{label:'Trang chủ',accelerator:'Alt+Home',click:()=>goHome(current())},{label:'Mở web bằng trình duyệt',click:()=>shell.openExternal(HOME)},{type:'separator'},{role:'quit',label:'Thoát'}]},
     {label:'Chỉnh sửa',submenu:[{role:'undo'},{role:'redo'},{type:'separator'},{role:'cut'},{role:'copy'},{role:'paste'},{role:'selectAll'}]},
-    {label:'Hiển thị',submenu:[{role:'reload',label:'Tải lại'},{role:'forceReload',label:'Tải lại bỏ qua bộ nhớ đệm'},{type:'separator'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen',label:'Toàn màn hình'}]},
+    {label:'Hiển thị',submenu:[{label:'Cập nhật giao diện',accelerator:'CommandOrControl+Shift+U',click:async()=>{const win=current();if(!alive(win))return;await win.webContents.session.clearCache();if(alive(win))win.webContents.reloadIgnoringCache();}},{role:'reload',label:'Tải lại'},{role:'forceReload',label:'Tải lại bỏ qua bộ nhớ đệm'},{type:'separator'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen',label:'Toàn màn hình'}]},
     {label:'Trợ giúp',submenu:[{label:'Thông tin ứng dụng',click:()=>dialog.showMessageBox(current(),{title:'LauPhim',message:'LauPhim '+app.getVersion(),detail:'Ứng dụng dùng chung website trên GitHub Pages. Phim cần Internet. Dữ liệu cá nhân được lưu riêng với trình duyệt. Nhấn Alt để mở menu, F11 để bật/tắt toàn màn hình.'})}]}
   ]));
 }

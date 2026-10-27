@@ -5,10 +5,11 @@ const assert = require('node:assert/strict');
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 async function main() {
   const folder = fs.mkdtempSync(path.join(os.tmpdir(), 'lauphim-watch-canvas-'));
-  let browser, socket;
+  let browser, socket, releaseOverride;
   const exceptions = [], requests = [];
   const server = http.createServer((req, res) => {
     const url = new URL(req.url, 'http://localhost'); requests.push(url.pathname);
+    if(url.pathname==='/release.json'&&releaseOverride){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(releaseOverride));return;}
     const file = path.resolve(__dirname, '.' + decodeURIComponent(url.pathname));
     if (!file.startsWith(__dirname + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404); res.end(); return; }
     res.setHeader('Content-Type', ({ '.html': 'text/html; charset=utf-8', '.js': 'application/javascript', '.json': 'application/json', '.css': 'text/css', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg' })[path.extname(file)] || 'application/octet-stream');
@@ -128,6 +129,14 @@ async function main() {
     await evaluate("document.getElementById('watch-tab-sources').click()");
     assert.ok(await evaluate('document.documentElement.scrollWidth<=innerWidth+1'), 'sources mobile overflow');
     await screenshot('watch-sources-mobile');
+    await waitFor('!!window.LauPhimUpdates');
+    await evaluate("window.__updateVideo=document.getElementById('video-player');window.__updatePage=location.href;window.__updateTime=window.__updateVideo.currentTime");
+    releaseOverride={schemaVersion:1,version:'f'.repeat(64),publishedAt:'2099-01-01T00:00:00.000Z'};
+    await evaluate('LauPhimUpdates.check(true)');
+    await waitFor("!!document.querySelector('.app-update-notice button')");
+    assert.equal(await evaluate("location.href===window.__updatePage && document.getElementById('video-player')===window.__updateVideo && window.__updateVideo.currentTime===window.__updateTime"),true,'release updates must preserve the current watch page and video');
+    assert.ok(await evaluate('document.documentElement.scrollWidth<=innerWidth+1'),'update notice mobile overflow');
+    await screenshot('watch-update-ready');
     assert.deepEqual(exceptions, []);
     assert.ok(!requests.some(url => url.includes('data/movies.json')), 'watch must use compact catalog and detail shards');
     console.log('Watch canvas browser checks passed:', JSON.stringify({ artifacts: folder, widths: [1440, 1024, 320], panels: 3, episodeOrder: true, preservedVideo: true }));

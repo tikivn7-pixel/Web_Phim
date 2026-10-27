@@ -1,0 +1,4 @@
+.app-update-notice{position:fixed;bottom:74px;left:50%;transform:translateX(-50%);z-index:10010;display:flex;align-items:center;gap:16px;max-width:calc(100vw - 32px);width:max-content;box-sizing:border-box;padding:14px 18px;background:#21171d;border:1px solid #743544;border-radius:12px;box-shadow:0 10px 35px #0008;color:#f6e9ed;font:13px/1.6 system-ui}
+.app-update-notice button{border:0;border-radius:7px;background:#ed304c;color:#fff;font:600 12px system-ui;white-space:nowrap;padding:10px 14px;cursor:pointer;min-height:40px}
+.app-update-notice button:focus-visible{outline:2px solid white;outline-offset:3px}
+@media(max-width:600px){.app-update-notice{bottom:80px;gap:10px;padding:12px;font-size:11px}}

@@ -18,6 +18,10 @@ try{
   const branch=git(['symbolic-ref','--quiet','--short','HEAD'],true);
   if(branch.status!==0)throw Error('Select a branch before committing and pushing.');
   required(['remote','get-url','origin']);
+  // Stamp changed HTML/assets before committing, so web and desktop clients
+  // see the same published release and do not reuse stale asset URLs.
+  const release=require('./build-release.cjs').buildRelease();
+  console.log('Web/app release: '+release.version.slice(0,16));
   required(['add','--all','.']);
   const staged=git(['diff','--cached','--quiet'],true);
   if(staged.status===1){

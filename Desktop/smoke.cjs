@@ -35,6 +35,8 @@ async function main(){
     await call('Browser.setDownloadBehavior',{behavior:'deny'});
     await wait("document.readyState==='complete' && !!document.querySelector('a[href*=\"detail.html\"]')");
     console.log('Live homepage ready.');
+    await wait("document.querySelector('.lauphim-brand img')?.naturalWidth>0");
+    assert.ok(await evaluate("document.querySelector('.lauphim-brand img').getAttribute('src').includes('lauphim-logo.png')"),'desktop must load the current unified website logo');
     assert.equal(await evaluate('typeof window.require'),'undefined');assert.equal(await evaluate('typeof window.process'),'undefined');
     await evaluate("localStorage.setItem('desktop_smoke_check','retained')");
     for(const key of ['ArrowDown','ArrowRight']){await call('Input.dispatchKeyEvent',{type:'keyDown',key});await call('Input.dispatchKeyEvent',{type:'keyUp',key});}

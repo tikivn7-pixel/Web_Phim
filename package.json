@@ -8,7 +8,7 @@
     "relations:sync": "node Frontend/sync-relations.js --build",
     "relations:build": "node Frontend/build-relations.js",
     "relations:import": "node Frontend/import-relations.js",
-    "test": "node --test Backend/catalog.test.js Frontend/features.test.js Frontend/upgrades.test.js Frontend/relations.test.js Frontend/site-tools.test.js Frontend/player-controls.test.js Frontend/personal-data.test.js Frontend/manager-relations.test.js Frontend/catalog-import.test.js Frontend/home-experience.test.js Frontend/collections-model.test.js Frontend/movie-journal.test.js Frontend/picker-model.test.js Frontend/catalog-provider.test.js Frontend/personal-recommendations.test.js Frontend/personal-lists.test.js Frontend/watch-progress.test.js Frontend/episode-tracker.test.js Frontend/discover-model.test.js Frontend/lists-model.test.js Frontend/episode-updates.test.js Frontend/published-episodes.test.js Frontend/sync-episodes.test.js Frontend/movie-notes.test.js Frontend/library-bulk.test.js Frontend/home-session-model.test.js Frontend/app-navigation.test.js Frontend/viewing-stats.test.js Frontend/audit-duplicates.test.cjs",
+    "test": "node --test Backend/catalog.test.js Frontend/features.test.js Frontend/upgrades.test.js Frontend/relations.test.js Frontend/site-tools.test.js Frontend/player-controls.test.js Frontend/personal-data.test.js Frontend/manager-relations.test.js Frontend/catalog-import.test.js Frontend/home-experience.test.js Frontend/collections-model.test.js Frontend/movie-journal.test.js Frontend/picker-model.test.js Frontend/catalog-provider.test.js Frontend/personal-recommendations.test.js Frontend/personal-lists.test.js Frontend/watch-progress.test.js Frontend/episode-tracker.test.js Frontend/discover-model.test.js Frontend/lists-model.test.js Frontend/episode-updates.test.js Frontend/published-episodes.test.js Frontend/sync-episodes.test.js Frontend/movie-notes.test.js Frontend/library-bulk.test.js Frontend/home-session-model.test.js Frontend/app-navigation.test.js Frontend/viewing-stats.test.js Frontend/audit-duplicates.test.cjs scripts/build-release.test.cjs Frontend/app-updates.test.cjs",
     "test:browser": "node Frontend/browser-smoke.cjs",
     "test:navigation": "node Frontend/app-navigation-smoke.cjs",
     "test:stats": "node Frontend/stats-smoke.cjs",
@@ -28,7 +28,9 @@
     "desktop:build": "npm run build --prefix Desktop",
     "desktop:installer": "npm run build:installer --prefix Desktop",
     "desktop:test": "npm test --prefix Desktop",
-    "desktop:smoke": "npm run test:smoke --prefix Desktop"
+    "desktop:smoke": "npm run test:smoke --prefix Desktop",
+    "release:build": "node scripts/build-release.cjs",
+    "test:release": "node --test scripts/build-release.test.cjs Frontend/app-updates.test.cjs"
   },
   "dependencies": {
     "mysql2": "^3.24.6"

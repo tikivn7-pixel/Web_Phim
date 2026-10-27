@@ -6,12 +6,14 @@ const root = __dirname;
 const chrome = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const folder = fs.mkdtempSync(path.join(os.tmpdir(),'lauphim-ui-'));
 let browser, socket, server;
+let releaseOverride;
 const requests=[];
 const pause = ms => new Promise(resolve=>setTimeout(resolve,ms));
 async function main() {
   server = http.createServer((req,res)=>{
     const url = new URL(req.url,'http://localhost');
     requests.push(url.pathname);
+    if(url.pathname==='/release.json'&&releaseOverride){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(releaseOverride));return;}
     const file = path.resolve(root,'.'+decodeURIComponent(url.pathname));
     if (!file.startsWith(root+path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404);res.end();return; }
     const ext = path.extname(file);
@@ -356,6 +358,15 @@ async function main() {
   assert.equal(await evaluate("JSON.stringify(PersonalData.read(localStorage).data.episode_positions)===JSON.stringify(Object.fromEntries(Object.entries(window.__sessionPositions).filter(([slug])=>slug!==window.__sessionRemoved)))"),true,'removal preserves other episode positions');
   await evaluate("window.scrollTo({top:document.querySelector('.home-session').getBoundingClientRect().top+scrollY-140,behavior:'instant'})");
   await screenshot('home-session-mobile');
+  await evaluate('window.__oldUpdateDoc=true');
+  await call('Page.navigate',{url:origin+'/index.html'});
+  await waitFor("!window.__oldUpdateDoc && document.readyState==='complete' && !!window.LauPhimUpdates && !LauPhimUpdates.state().checking && !!document.querySelector('a[href*=\"detail.html\"]')");
+  await evaluate("window.__updateProbe=true;localStorage.setItem('release_personal_probe','retained');document.activeElement?.blur()");
+  releaseOverride={schemaVersion:1,version:'f'.repeat(64),publishedAt:'2099-01-01T00:00:00.000Z'};
+  await evaluate('LauPhimUpdates.check(true)');
+  await waitFor("new URLSearchParams(location.search).get('__release')==='ffffffffffffffff' && !window.__updateProbe && document.readyState==='complete'");
+  assert.equal(await evaluate("localStorage.getItem('release_personal_probe')"),'retained','release refresh preserves personal storage');
+  await waitFor("!!document.querySelector('.app-update-notice')");
   console.log('Simulated 4G: catalog cards ready in '+catalogReadyMs+' ms at 1.6 Mbps / 150 ms latency. External posters and streaming providers are excluded.');
   assert.deepEqual(exceptions,[],'unhandled browser exceptions');
   console.log('PASS: responsive home/detail/library/manager; safe cards; accessible search; URL history; detail retry; playback, intro, speed and sleep; personal backup preview/merge; journal statuses/ratings; personal recommendations; relation ordering/export/drafts.');
