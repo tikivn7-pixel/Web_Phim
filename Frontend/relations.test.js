@@ -2,6 +2,15 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const {deriveRelations}=require('./build-relations');
 const {applyRelations,indexRelations}=require('./relation-policy');
 const movies=[{slug:'a',title:'Battle One',group:'Battle'},{slug:'b',title:'Battle Two',group:'Battle'},{slug:'c',title:'Unrelated title',group:'Other'}];
+test('Harry Potter includes eight ordered features and one 2022 reunion without duplicate cards',()=>{
+  const archive=require('./data/movies.json'),bySlug=new Map(archive.map(movie=>[movie.slug,movie]));
+  const ordered=['harry-potter-va-hon-da-phu-thuy','harry-potter-va-can-phong-bi-mat','harry-potter-va-tu-nhan-azkaban','harry-potter-va-chiec-coc-lua','harry-potter-va-menh-lenh-phuong-hoang','harry-potter-va-hoang-tu-lai','harry-potter-va-bao-boi-tu-than-phan-1','harry-potter-va-bao-boi-tu-than-phan-2','ky-niem-20-nam-harry-potter-tro-lai-hogwarts'];
+  const years=[2001,2002,2004,2005,2007,2009,2010,2011,2022],alias='ky-niem-20-nam-harry-potter-tuu-truong-hogwarts';
+  for(const [i,slug]of ordered.entries()){const movie=bySlug.get(slug);assert.equal(movie.apiSlug,slug);assert.equal(movie.episodes,1);assert.equal(movie.year,years[i]);assert.equal(movie.type,'single');assert.equal(movie.country,'Anh');assert.equal(movie.group,'harry-potter-films');assert.equal(movie.relationVerified,true);assert.equal(movie.poster,'Img/posters/'+slug+'.jpg');assert.ok(require('node:fs').statSync(require('node:path').join(__dirname,movie.poster)).size>1000);}
+  const group=require('../Backend/movie-relations.json').groups.find(group=>group.id==='harry-potter-films');assert.deepEqual(group.members.map(member=>member.slug),ordered);assert.match(group.members[8].label,/Reunion Special/);
+  assert.equal(bySlug.get(alias).duplicateOf,ordered[8]);assert.equal(bySlug.get(alias).year,2022);assert.equal(bySlug.get(alias).sourceYear,2021);
+  const cards=require('./catalog-format').decode(require('./data/catalog-index.json'));assert.equal(cards.filter(movie=>ordered.includes(movie.slug)||movie.slug===alias).length,9);assert.ok(!cards.some(movie=>movie.slug===alias));assert.ok(require('./site-tools').score(cards.find(movie=>movie.slug===ordered[8]),bySlug.get(alias).title)>=0);
+});
 test('Teen Titans adds all eight sources as seven films with separate continuities and one verified Mayhem alias',()=>{
   const archive=require('./data/movies.json'),bySlug=new Map(archive.map(movie=>[movie.slug,movie])),index=require('./data/catalog-index.json'),cards=require('./catalog-format').decode(index);
   const canonical='teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru',alias='biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru';
@@ -57,7 +66,7 @@ test('published Battle Spirits is isolated and every published group has evidenc
   const registry=require('../Backend/movie-relations.json'),published=require('./data/movies.json');
   const index=indexRelations(registry,new Set(published.map(m=>m.slug)));
   assert.equal(published.find(m=>m.slug==='battle-spirits-re-tuyet-gioi-thien-khong').group,undefined);
-  assert.equal(published.length,3725);
+  assert.equal(published.length,3735);
   for(const movie of published.filter(m=>m.group)){assert.equal(index.get(movie.slug).group.id,movie.group);assert.equal(movie.relationVerified,true);}
   const bySlug=new Map(published.map(m=>[m.slug,m]));
   assert.equal(bySlug.get('sat-thu-nhan-tao').group,bySlug.get('sat-thu-nhan-tao-2-mau-vat-con-lai').group);

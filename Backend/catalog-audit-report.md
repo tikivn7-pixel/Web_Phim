@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3725 phim; 0 lỗi; 270 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3735 phim; 0 lỗi; 280 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -188,6 +188,16 @@
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuong-doat-3
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — kung-fu-gau-truc-3
 - **warning / missing-image**: Thiếu ảnh banner. — bi-kip-luyen-rong-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-hoang-tu-lai
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-menh-lenh-phuong-hoang
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-chiec-coc-lua
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-tu-nhan-azkaban
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-can-phong-bi-mat
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-hon-da-phu-thuy
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-bao-boi-tu-than-phan-2
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — harry-potter-va-bao-boi-tu-than-phan-1
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ky-niem-20-nam-harry-potter-tuu-truong-hogwarts
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ky-niem-20-nam-harry-potter-tro-lai-hogwarts
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — nu-than-chien-tranh, athena-nu-than-chien-tranh
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — trang-sang-mua-dong, yoon-hee-cua-me
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — tham-tu-lung-danh-conan-22-ke-han-phap-zero, tham-tu-lung-danh-conan-22-ke-hanh-phap-zero

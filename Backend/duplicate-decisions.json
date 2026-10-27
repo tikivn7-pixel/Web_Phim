@@ -624,6 +624,18 @@
         "https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru"
       ],
       "reason": "Reviewed same 2022 animated feature: matching original title, year, cast and director; two Vietnamese translations. Keep both source records but one browsing card."
+    },
+    {
+      "canonical": "ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+      "aliases": [
+        "ky-niem-20-nam-harry-potter-tuu-truong-hogwarts"
+      ],
+      "sources": [
+        "https://www.harrypotter.com/news/watch-trailer-for-harry-potter-retrospective-show",
+        "https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+        "https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tuu-truong-hogwarts"
+      ],
+      "reason": "Same Return to Hogwarts reunion; the official premiere was January 1, 2022. The 2021 provider record is a duplicate with an incorrect release year."
     }
   ],
   "separate": [

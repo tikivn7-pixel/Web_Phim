@@ -1,11 +1,11 @@
 # Catalog duplicate review
 
 {
-  "records": 3725,
-  "visibleCards": 3668,
-  "confirmedAliases": 57,
+  "records": 3735,
+  "visibleCards": 3677,
+  "confirmedAliases": 58,
   "candidatePairs": 171,
-  "sourceChecks": 268,
+  "sourceChecks": 278,
   "decisions": {
     "already-linked": 55,
     "strong-match": 0,

@@ -524,6 +524,71 @@
       ]
     },
     {
+      "id": "harry-potter-films",
+      "label": "Harry Potter",
+      "kind": "franchise",
+      "sources": [
+        "https://www.harrypotter.com/discover/films",
+        "https://www.harrypotter.com/news/watch-trailer-for-harry-potter-retrospective-show",
+        "https://phimapi.com/phim/harry-potter-va-hoang-tu-lai",
+        "https://phimapi.com/phim/harry-potter-va-menh-lenh-phuong-hoang",
+        "https://phimapi.com/phim/harry-potter-va-chiec-coc-lua",
+        "https://phimapi.com/phim/harry-potter-va-tu-nhan-azkaban",
+        "https://phimapi.com/phim/harry-potter-va-can-phong-bi-mat",
+        "https://phimapi.com/phim/harry-potter-va-hon-da-phu-thuy",
+        "https://phimapi.com/phim/harry-potter-va-bao-boi-tu-than-phan-2",
+        "https://phimapi.com/phim/harry-potter-va-bao-boi-tu-than-phan-1",
+        "https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tro-lai-hogwarts"
+      ],
+      "members": [
+        {
+          "slug": "harry-potter-va-hon-da-phu-thuy",
+          "label": "1 - Philosopher's Stone (2001)",
+          "order": 0
+        },
+        {
+          "slug": "harry-potter-va-can-phong-bi-mat",
+          "label": "2 - Chamber of Secrets (2002)",
+          "order": 1
+        },
+        {
+          "slug": "harry-potter-va-tu-nhan-azkaban",
+          "label": "3 - Prisoner of Azkaban (2004)",
+          "order": 2
+        },
+        {
+          "slug": "harry-potter-va-chiec-coc-lua",
+          "label": "4 - Goblet of Fire (2005)",
+          "order": 3
+        },
+        {
+          "slug": "harry-potter-va-menh-lenh-phuong-hoang",
+          "label": "5 - Order of the Phoenix (2007)",
+          "order": 4
+        },
+        {
+          "slug": "harry-potter-va-hoang-tu-lai",
+          "label": "6 - Half-Blood Prince (2009)",
+          "order": 5
+        },
+        {
+          "slug": "harry-potter-va-bao-boi-tu-than-phan-1",
+          "label": "7 - Deathly Hallows: Part 1 (2010)",
+          "order": 6
+        },
+        {
+          "slug": "harry-potter-va-bao-boi-tu-than-phan-2",
+          "label": "8 - Deathly Hallows: Part 2 (2011)",
+          "order": 7
+        },
+        {
+          "slug": "ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+          "label": "Return to Hogwarts (2022) - Reunion Special",
+          "order": 8
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
