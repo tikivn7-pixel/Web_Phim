@@ -2,7 +2,7 @@
 a.lauphim-brand {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 0;
   flex-shrink: 0;
   white-space: nowrap;
   text-decoration: none;
@@ -10,29 +10,19 @@ a.lauphim-brand {
 }
 .lauphim-brand > .brand-image {
   display: block;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
+  width: 168px;
+  height: 48px;
+  flex: 0 0 auto;
   object-fit: contain;
-  border-radius: 9px;
-  background: #fff4dc;
+  border-radius: 0;
+  background: transparent;
 }
-.lauphim-brand > .brand-wordmark {
-  color: #f3314c;
-  font-size: inherit;
-  font-weight: inherit;
-  letter-spacing: -1px;
-}
-.lauphim-brand > .brand-wordmark > span { color: #fff; }
 .home-footer .lauphim-brand > .brand-image,
 .discover-footer .lauphim-brand > .brand-image,
 .collections-footer .lauphim-brand > .brand-image {
-  width: 32px;
-  height: 32px;
-  flex-basis: 32px;
-  border-radius: 7px;
+  width: 140px;
+  height: 40px;
 }
 @media (max-width: 600px) {
-  a.lauphim-brand { gap: 7px; }
-  .lauphim-brand > .brand-image { width: 34px; height: 34px; flex-basis: 34px; border-radius: 8px; }
+  .lauphim-brand > .brand-image { width: 134px; height: 40px; }
 }

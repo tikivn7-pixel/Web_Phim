@@ -2,6 +2,32 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const {deriveRelations}=require('./build-relations');
 const {applyRelations,indexRelations}=require('./relation-policy');
 const movies=[{slug:'a',title:'Battle One',group:'Battle'},{slug:'b',title:'Battle Two',group:'Battle'},{slug:'c',title:'Unrelated title',group:'Other'}];
+test('Teen Titans adds all eight sources as seven films with separate continuities and one verified Mayhem alias',()=>{
+  const archive=require('./data/movies.json'),bySlug=new Map(archive.map(movie=>[movie.slug,movie])),index=require('./data/catalog-index.json'),cards=require('./catalog-format').decode(index);
+  const canonical='teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru',alias='biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru';
+  const slugs=['teen-titans-rac-roi-o-tokyo','teen-titans-go-to-the-movies',canonical,'teen-titans-thoa-thuan-judas','lien-minh-cong-ly-vs-teen-titans',alias,'biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-2','biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-1'];
+  for(const slug of slugs){const movie=bySlug.get(slug);assert.equal(movie.apiSlug,slug);assert.equal(movie.episodes,1);assert.equal(movie.type,'animation');assert.equal(movie.country,'Mỹ');assert.equal(movie.poster,'Img/posters/'+slug+'.jpg');assert.ok(require('node:fs').statSync(require('node:path').join(__dirname,movie.poster)).size>1000);}
+  assert.equal(cards.filter(movie=>slugs.includes(movie.slug)).length,7);assert.ok(!cards.some(movie=>movie.slug===alias));assert.equal(index.aliases[alias].duplicateOf,canonical);assert.equal(bySlug.get(alias).duplicateOf,canonical);
+  assert.ok(require('./site-tools').score(cards.find(movie=>movie.slug===canonical),bySlug.get(alias).title)>=0);
+  assert.equal(bySlug.get(slugs[0]).group,undefined);assert.equal(bySlug.get(slugs[1]).group,'teen-titans-go-films');assert.equal(bySlug.get(canonical).group,'teen-titans-go-films');assert.equal(bySlug.get(slugs[3]).group,'teen-titans-dcamu');assert.equal(bySlug.get(slugs[4]).group,'teen-titans-dcamu');
+  const groups=require('../Backend/movie-relations.json').groups;
+  assert.equal(groups.find(group=>group.id==='teen-titans-go-films').members.length,4);assert.deepEqual(groups.find(group=>group.id==='teen-titans-dcamu').members.map(member=>member.slug),['lien-minh-cong-ly-vs-teen-titans','teen-titans-thoa-thuan-judas']);
+});
+test('Gumball entries retain provider episode counts and distinguish the 2025 continuation',()=>{
+  const bySlug=new Map(require('./data/movies.json').map(movie=>[movie.slug,movie]));
+  const entries=[['the-gioi-ki-dieu-cua-gumball-phan-1',18,2011,'Mỹ'],['the-gioi-ki-dieu-cua-gumball-phan-2',20,2012,'Mỹ'],['the-gioi-ky-ao-cua-gumball',20,2025,'Anh']];
+  for(const [slug,episodes,year,country]of entries){const movie=bySlug.get(slug);assert.equal(movie.apiSlug,slug);assert.equal(movie.episodes,episodes);assert.equal(movie.year,year);assert.equal(movie.country,country);assert.equal(movie.type,'animation');assert.equal(movie.group,'gumball');assert.equal(movie.relationVerified,true);assert.equal(movie.poster,'Img/posters/'+slug+'.jpg');assert.ok(require('node:fs').statSync(require('node:path').join(__dirname,movie.poster)).size>1000);}
+  const group=require('../Backend/movie-relations.json').groups.find(group=>group.id==='gumball');assert.deepEqual(group.members.map(member=>member.slug),entries.map(([slug])=>slug));assert.match(group.members[2].label,/Wonderfully Weird.*2025/);assert.equal(group.members[2].season,1);
+});
+test('Dragon franchise retains all six films, identifies specials and keeps live action distinct from animation',()=>{
+  const published=require('./data/movies.json'),bySlug=new Map(published.map(movie=>[movie.slug,movie]));
+  const slugs=['bi-kip-luyen-rong','bi-kip-luyen-rong-mon-qua-cua-sun-rang','bi-kip-luyen-rong-2','bi-kip-luyen-rong-vung-dat-bi-an','bi-kip-luyen-rong-tro-ve-nha','bi-kip-luyen-rong-2025'];
+  const group=require('../Backend/movie-relations.json').groups.find(group=>group.id==='how-to-train-your-dragon');
+  assert.deepEqual(group.members.map(member=>member.slug),slugs);
+  for(const slug of slugs){const movie=bySlug.get(slug);assert.equal(movie.apiSlug,slug);assert.equal(movie.episodes,1);assert.equal(movie.type,slug.endsWith('2025')?'single':'animation');assert.equal(movie.country,'Mỹ');assert.equal(movie.relationVerified,true);assert.ok(!movie.duplicateOf);assert.equal(movie.poster,'Img/posters/'+slug+'.jpg');assert.ok(require('node:fs').statSync(require('node:path').join(__dirname,movie.poster)).size>1000);}
+  assert.equal(bySlug.get(slugs[0]).year,2010);assert.equal(bySlug.get(slugs[5]).year,2025);
+  assert.match(group.members[1].label,/Special/);assert.match(group.members[4].label,/Special/);assert.match(group.members[5].label,/Live Action/);
+});
 test('all eight requested Kung Fu Panda entries have exact source identities, posters and separate film/TV groups',()=>{
   const published=require('./data/movies.json'),bySlug=new Map(published.map(movie=>[movie.slug,movie]));
   const entries=[['kung-fu-gau-truc',1],['kung-fu-gau-truc-2',1],['kung-fu-gau-truc-3',1],['kung-fu-gau-truc-4',1],['gau-truc-kung-fu-ky-nghi-le',1],['kung-fu-panda-hiep-si-rong',11],['kung-fu-panda-hiep-si-rong-phan-2',12],['kung-fu-panda-hiep-si-rong-phan-3',19]];
@@ -31,7 +57,7 @@ test('published Battle Spirits is isolated and every published group has evidenc
   const registry=require('../Backend/movie-relations.json'),published=require('./data/movies.json');
   const index=indexRelations(registry,new Set(published.map(m=>m.slug)));
   assert.equal(published.find(m=>m.slug==='battle-spirits-re-tuyet-gioi-thien-khong').group,undefined);
-  assert.equal(published.length,3708);
+  assert.equal(published.length,3725);
   for(const movie of published.filter(m=>m.group)){assert.equal(index.get(movie.slug).group.id,movie.group);assert.equal(movie.relationVerified,true);}
   const bySlug=new Map(published.map(m=>[m.slug,m]));
   assert.equal(bySlug.get('sat-thu-nhan-tao').group,bySlug.get('sat-thu-nhan-tao-2-mau-vat-con-lai').group);

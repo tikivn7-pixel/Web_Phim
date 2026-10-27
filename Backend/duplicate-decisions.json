@@ -612,6 +612,18 @@
         "https://phimapi.com/phim/mouse-ke-san-nguoi-ban-dien-anh"
       ],
       "reason": "Manually reviewed source identities, cast/transliterations, episode format, story and release/edition differences; not inferred from a matching name alone."
+    },
+    {
+      "canonical": "teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru",
+      "aliases": [
+        "biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru"
+      ],
+      "sources": [
+        "https://www.dc.com/movies/teen-titans-go-and-dc-super-hero-girls-mayhem-in-the-multiverse",
+        "https://phimapi.com/phim/teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru",
+        "https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru"
+      ],
+      "reason": "Reviewed same 2022 animated feature: matching original title, year, cast and director; two Vietnamese translations. Keep both source records but one browsing card."
     }
   ],
   "separate": [

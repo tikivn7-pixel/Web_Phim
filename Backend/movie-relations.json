@@ -388,6 +388,142 @@
       ]
     },
     {
+      "id": "how-to-train-your-dragon",
+      "label": "How to Train Your Dragon",
+      "kind": "franchise",
+      "sources": [
+        "https://www.universalpicturesathome.com/movies/how-to-train-your-dragon-the-ultimate-collection",
+        "https://www.universalpicturesathome.com/movies/how-to-train-your-dragon-2025",
+        "https://phimapi.com/phim/bi-kip-luyen-rong",
+        "https://phimapi.com/phim/bi-kip-luyen-rong-2",
+        "https://phimapi.com/phim/bi-kip-luyen-rong-mon-qua-cua-sun-rang",
+        "https://phimapi.com/phim/bi-kip-luyen-rong-vung-dat-bi-an",
+        "https://phimapi.com/phim/bi-kip-luyen-rong-tro-ve-nha",
+        "https://phimapi.com/phim/bi-kip-luyen-rong-2025"
+      ],
+      "members": [
+        {
+          "slug": "bi-kip-luyen-rong",
+          "label": "How to Train Your Dragon (2010)",
+          "order": 0
+        },
+        {
+          "slug": "bi-kip-luyen-rong-mon-qua-cua-sun-rang",
+          "label": "Gift of the Night Fury (2011) - Special",
+          "order": 1
+        },
+        {
+          "slug": "bi-kip-luyen-rong-2",
+          "label": "How to Train Your Dragon 2 (2014)",
+          "order": 2
+        },
+        {
+          "slug": "bi-kip-luyen-rong-vung-dat-bi-an",
+          "label": "The Hidden World (2019)",
+          "order": 3
+        },
+        {
+          "slug": "bi-kip-luyen-rong-tro-ve-nha",
+          "label": "Homecoming (2019) - Special",
+          "order": 4
+        },
+        {
+          "slug": "bi-kip-luyen-rong-2025",
+          "label": "How to Train Your Dragon (2025) - Live Action",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "gumball",
+      "label": "Gumball",
+      "kind": "franchise",
+      "sources": [
+        "https://prasa.wbdpoland.pl/post/gumball-powraca-cartoon-network-international-prezentuje-zwiastu",
+        "https://phimapi.com/phim/the-gioi-ki-dieu-cua-gumball-phan-1",
+        "https://phimapi.com/phim/the-gioi-ki-dieu-cua-gumball-phan-2",
+        "https://phimapi.com/phim/the-gioi-ky-ao-cua-gumball"
+      ],
+      "members": [
+        {
+          "slug": "the-gioi-ki-dieu-cua-gumball-phan-1",
+          "label": "The Amazing World of Gumball - Season 1 (2011)",
+          "order": 0,
+          "season": 1
+        },
+        {
+          "slug": "the-gioi-ki-dieu-cua-gumball-phan-2",
+          "label": "The Amazing World of Gumball - Season 2 (2012)",
+          "order": 1,
+          "season": 2
+        },
+        {
+          "slug": "the-gioi-ky-ao-cua-gumball",
+          "label": "The Wonderfully Weird World of Gumball (2025)",
+          "order": 2,
+          "season": 1
+        }
+      ]
+    },
+    {
+      "id": "teen-titans-go-films",
+      "label": "Teen Titans Go!",
+      "kind": "franchise",
+      "sources": [
+        "https://www.dc.com/movies/teen-titans-go-and-dc-super-hero-girls-mayhem-in-the-multiverse",
+        "https://www.dc.com/blog/2017/08/01/cee-lo-green-puffy-ami-yumi-and-more-tackle-teen-titans-go",
+        "https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-1",
+        "https://phimapi.com/phim/teen-titans-go-to-the-movies",
+        "https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-2",
+        "https://phimapi.com/phim/teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru"
+      ],
+      "members": [
+        {
+          "slug": "biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-1",
+          "label": "The Night Begins to Shine - Special (2017)",
+          "order": 0
+        },
+        {
+          "slug": "teen-titans-go-to-the-movies",
+          "label": "Teen Titans Go! To the Movies (2018)",
+          "order": 1
+        },
+        {
+          "slug": "biet-doi-thieu-nien-titan-xuat-kich-dem-toi-bat-dau-bung-sang-phan-2",
+          "label": "The Night Begins to Shine 2 - Special (2020)",
+          "order": 2
+        },
+        {
+          "slug": "teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru",
+          "label": "Mayhem in the Multiverse (2022)",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "teen-titans-dcamu",
+      "label": "Teen Titans - DC Animated Movie Universe",
+      "kind": "related-films",
+      "sources": [
+        "https://www.dc.com/movies/justice-league-vs-teen-titans-2016",
+        "https://www.dc.com/movies/teen-titans-the-judas-contract-2017",
+        "https://phimapi.com/phim/lien-minh-cong-ly-vs-teen-titans",
+        "https://phimapi.com/phim/teen-titans-thoa-thuan-judas"
+      ],
+      "members": [
+        {
+          "slug": "lien-minh-cong-ly-vs-teen-titans",
+          "label": "Justice League vs. Teen Titans (2016)",
+          "order": 0
+        },
+        {
+          "slug": "teen-titans-thoa-thuan-judas",
+          "label": "The Judas Contract (2017)",
+          "order": 1
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -6525,6 +6661,13 @@
       "reason": "Không có bằng chứng liên quan tới các mục trong nhóm Battle cũ.",
       "sources": [
         "https://phimapi.com/phim/dai-chien-van-menh"
+      ]
+    },
+    {
+      "slug": "teen-titans-rac-roi-o-tokyo",
+      "reason": "Original Teen Titans continuity; not a sequel in the Teen Titans Go! or DCAMU film groups.",
+      "sources": [
+        "https://phimapi.com/phim/teen-titans-rac-roi-o-tokyo"
       ]
     }
   ]
