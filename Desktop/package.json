@@ -1,0 +1,40 @@
+{
+  "name": "lauphim-desktop",
+  "version": "1.0.0",
+  "description": "LauPhim cho Windows, dung chung website tren GitHub Pages",
+  "author": "LauPhim",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test policy.test.cjs",
+    "build": "electron-builder --win portable --x64 --publish never",
+    "build:installer": "electron-builder --win nsis --x64 --publish never",
+    "test:smoke": "node smoke.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "vn.lauphim.desktop",
+    "productName": "LauPhim",
+    "asar": true,
+    "directories": { "output": "../dist-desktop" },
+    "files": ["main.cjs", "policy.cjs", "offline.html", "icon.png", "package.json"],
+    "win": {
+      "target": [{ "target": "portable", "arch": ["x64"] }],
+      "icon": "icon.ico",
+      "artifactName": "LauPhim-${version}-${arch}.${ext}",
+      "signExecutable": false
+    },
+    "nsis": {
+      "artifactName": "LauPhim-Setup-${version}-${arch}.${ext}",
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

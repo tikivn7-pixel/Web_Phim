@@ -21,7 +21,13 @@
     "test:notes": "node Frontend/notes-smoke.cjs",
     "test:bulk": "node Frontend/library-bulk-smoke.cjs",
     "site:check": "node Frontend/verify-site.js",
-    "catalog:duplicates": "node Frontend/audit-duplicates.cjs"
+    "catalog:duplicates": "node Frontend/audit-duplicates.cjs",
+    "desktop:install": "npm ci --prefix Desktop",
+    "desktop:start": "npm start --prefix Desktop",
+    "desktop:build": "npm run build --prefix Desktop",
+    "desktop:installer": "npm run build:installer --prefix Desktop",
+    "desktop:test": "npm test --prefix Desktop",
+    "desktop:smoke": "npm run test:smoke --prefix Desktop"
   },
   "dependencies": {
     "mysql2": "^3.24.6"
