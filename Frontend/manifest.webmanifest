@@ -10,12 +10,37 @@
   "background_color": "#101312",
   "theme_color": "#101312",
   "icons": [
-    { "src": "Img/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
-    { "src": "Img/app-icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+    {
+      "src": "Img/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Img/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Img/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "Thư viện cá nhân", "url": "./library.html" },
-    { "name": "Lịch hẹn xem phim", "url": "./calendar.html" },
-    { "name": "Thông báo tập mới", "url": "./notifications.html" }
+    {
+      "name": "Thư viện cá nhân",
+      "url": "./library.html"
+    },
+    {
+      "name": "Lịch hẹn xem phim",
+      "url": "./calendar.html"
+    },
+    {
+      "name": "Thông báo tập mới",
+      "url": "./notifications.html"
+    }
   ]
 }

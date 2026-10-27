@@ -1,8 +1,8 @@
 # Catalog duplicate review
 
 {
-  "records": 3700,
-  "visibleCards": 3644,
+  "records": 3708,
+  "visibleCards": 3652,
   "confirmedAliases": 56,
   "candidatePairs": 171,
   "sourceChecks": 260,

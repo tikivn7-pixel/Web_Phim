@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "push": "node scripts/git-push.cjs",
     "catalog:build": "node Frontend/build-catalog.js",
     "episodes:sync": "node Frontend/sync-episodes.cjs",
     "catalog:check": "node Frontend/check-catalog.js",

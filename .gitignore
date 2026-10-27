@@ -4,3 +4,5 @@ dist-desktop/
 .aider*
 Backend/.hub-data/
 Backend/.hub-data-*/
+
+Desktop/.electron-runtime/

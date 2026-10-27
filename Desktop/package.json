@@ -1,6 +1,6 @@
 {
   "name": "lauphim-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LauPhim cho Windows, dung chung website tren GitHub Pages",
   "author": "LauPhim",
   "private": true,
@@ -20,10 +20,25 @@
     "appId": "vn.lauphim.desktop",
     "productName": "LauPhim",
     "asar": true,
-    "directories": { "output": "../dist-desktop" },
-    "files": ["main.cjs", "policy.cjs", "offline.html", "icon.png", "package.json"],
+    "directories": {
+      "output": "../dist-desktop"
+    },
+    "files": [
+      "main.cjs",
+      "policy.cjs",
+      "offline.html",
+      "icon.png",
+      "package.json"
+    ],
     "win": {
-      "target": [{ "target": "portable", "arch": ["x64"] }],
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
       "icon": "icon.ico",
       "artifactName": "LauPhim-${version}-${arch}.${ext}",
       "signExecutable": false

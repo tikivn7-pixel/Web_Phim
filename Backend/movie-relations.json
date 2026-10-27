@@ -318,6 +318,76 @@
       ]
     },
     {
+      "id": "kung-fu-panda-films",
+      "label": "Kung Fu Panda",
+      "kind": "franchise",
+      "sources": [
+        "https://www.dreamworks.com/kung-fu-panda",
+        "https://phimapi.com/phim/kung-fu-gau-truc",
+        "https://phimapi.com/phim/kung-fu-gau-truc-2",
+        "https://phimapi.com/phim/kung-fu-gau-truc-3",
+        "https://phimapi.com/phim/kung-fu-gau-truc-4",
+        "https://phimapi.com/phim/gau-truc-kung-fu-ky-nghi-le"
+      ],
+      "members": [
+        {
+          "slug": "kung-fu-gau-truc",
+          "label": "Kung Fu Panda (2008)",
+          "order": 0
+        },
+        {
+          "slug": "gau-truc-kung-fu-ky-nghi-le",
+          "label": "Kung Fu Panda Holiday (2010)",
+          "order": 1
+        },
+        {
+          "slug": "kung-fu-gau-truc-2",
+          "label": "Kung Fu Panda 2 (2011)",
+          "order": 2
+        },
+        {
+          "slug": "kung-fu-gau-truc-3",
+          "label": "Kung Fu Panda 3 (2016)",
+          "order": 3
+        },
+        {
+          "slug": "kung-fu-gau-truc-4",
+          "label": "Kung Fu Panda 4 (2024)",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "kung-fu-panda-dragon-knight",
+      "label": "Kung Fu Panda: The Dragon Knight",
+      "kind": "franchise",
+      "sources": [
+        "https://phimapi.com/phim/kung-fu-panda-hiep-si-rong",
+        "https://phimapi.com/phim/kung-fu-panda-hiep-si-rong-phan-2",
+        "https://phimapi.com/phim/kung-fu-panda-hiep-si-rong-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "kung-fu-panda-hiep-si-rong",
+          "label": "The Dragon Knight - Season 1",
+          "order": 0,
+          "season": 1
+        },
+        {
+          "slug": "kung-fu-panda-hiep-si-rong-phan-2",
+          "label": "The Dragon Knight - Season 2",
+          "order": 1,
+          "season": 2
+        },
+        {
+          "slug": "kung-fu-panda-hiep-si-rong-phan-3",
+          "label": "The Dragon Knight - Season 3",
+          "order": 2,
+          "season": 3
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",

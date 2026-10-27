@@ -15,9 +15,12 @@
 <script src="cloud-sync-model.js?v=20261025a"></script>
 <script src="cloud-sync.js?v=20261025a"></script>
 <script src="hub-common.js?v=20261025a"></script>
-<link rel="manifest" href="manifest.webmanifest"></head>
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="brand.css?v=20261027-logo">
+<link rel="icon" type="image/png" sizes="32x32" href="Img/app-icon-32.png?v=20261027-logo">
+<link rel="apple-touch-icon" sizes="180x180" href="Img/app-icon-180.png?v=20261027-logo">
+</head>
 <body class="lists-page"><a class="skip-link" href="#main">Đến nội dung</a>
-<header class="library-header"><a class="brand" href="index.html"><span>Lau</span>Phim</a><nav aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a href="discover.html">Khám phá</a><a href="updates.html">Tập mới</a><a href="lists.html" aria-current="page">Danh sách riêng</a><a href="library.html">Thư viện</a></nav></header>
+<header class="library-header"><a class="brand lauphim-brand" href="index.html" aria-label="LauPhim - Trang chủ"><img class="brand-image" src="Img/app-icon-192.png?v=20261027-logo" alt="" width="40" height="40" decoding="async"><span class="brand-wordmark">Lau<span>Phim</span></span></a><nav aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a href="discover.html">Khám phá</a><a href="updates.html">Tập mới</a><a href="lists.html" aria-current="page">Danh sách riêng</a><a href="library.html">Thư viện</a></nav></header>
 <main id="main">
   <section class="lists-intro"><div><p class="eyebrow">MỖI TÂM TRẠNG, MỘT DANH SÁCH</p><h1>Rạp phim của riêng bạn.</h1><p>Gom những phim muốn xem cùng nhau. Tự chọn thứ tự cho buổi tối tiếp theo.</p></div><button class="primary" id="show-create" type="button">+ Tạo danh sách</button></section>
   <section class="list-create-panel" id="create-panel" hidden><h2>Tạo một cuộc hẹn với điện ảnh</h2><form id="create-list"><label>Tên danh sách<input id="list-name" required maxlength="80" placeholder="Cuối tuần, Xem cùng bạn…"></label><label>Mô tả <span>(không bắt buộc)</span><textarea id="list-description" maxlength="500" rows="2" placeholder="Một chút ghi chú cho danh sách này"></textarea></label><div class="button-row"><button class="primary" type="submit">Tạo danh sách</button><button id="cancel-create" type="button">Hủy</button></div></form></section>

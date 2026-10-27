@@ -64,7 +64,7 @@
     let rows; try { rows = items(readCache(), read()).filter(row => !row.read && !delivered[row.id]); } catch (_) { return; }
     const registration = await root.navigator.serviceWorker?.getRegistration().catch(() => null);
     for (const row of rows.slice(0, 3)) {
-      const options = { body: row.title + ' · Tập ' + row.name, tag: 'lauphim-' + row.slug, icon: 'Img/app-icon.svg', data: { path: watchURL(row) } };
+      const options = { body: row.title + ' · Tập ' + row.name, tag: 'lauphim-' + row.slug, icon: 'Img/app-icon-192.png', data: { path: watchURL(row) } };
       try {
         if (registration?.active) await registration.showNotification('Tập mới trên LauPhim', options);
         else { const note = new root.Notification('Tập mới trên LauPhim', options); note.onclick = () => { root.location.assign(watchURL(row)); note.close(); }; }

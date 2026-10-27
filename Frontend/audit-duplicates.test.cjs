@@ -19,7 +19,7 @@ test('source checks reject wrong identities and store fingerprints without strea
 test('all reviewed aliases retain detail records, search terms and a visible canonical card',()=>{
   const movies=require('./catalog-tools').readMovies(),result=artifacts(movies),cards=decode(result.index),bySlug=new Map(cards.map(movie=>[movie.slug,movie]));
   const decisions=require('../Backend/duplicate-decisions.json');
-  assert.equal(movies.length,3700);assert.equal(cards.length,3644);assert.equal(Object.keys(result.index.aliases).length,56);
+  assert.equal(movies.length,3708);assert.equal(cards.length,3652);assert.equal(Object.keys(result.index.aliases).length,56);
   for(const group of decisions.groups)for(const slug of group.aliases){
     assert.ok(bySlug.has(group.canonical));assert.ok(!bySlug.has(slug));
     assert.equal(result.index.aliases[slug].duplicateOf,group.canonical);

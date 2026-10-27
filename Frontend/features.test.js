@@ -101,7 +101,7 @@ test("real catalog country filters do not put Japanese anime in China or USA", a
   assert.ok(china.some(m=>m.slug==="nhat-nhan-chi-ha-phan-3-nguoi-tren-van-nguoi"));
   assert.ok(usa.some(m=>m.slug==="phim-super-mario-thien-ha"));
   assert.ok(usa.some(m=>m.slug==="sonic-prime-phan-3"));
-  assert.equal(movies.length,3700);
+  assert.equal(movies.length,3708);
 });
 function playback() {
   const ctx = {URLSearchParams};

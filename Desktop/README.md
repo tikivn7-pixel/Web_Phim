@@ -3,7 +3,7 @@
 Hai cách mở cùng một website:
 
 - Web: https://tikivn7-pixel.github.io/Web_Phim/Frontend/index.html
-- Windows: mở `dist-desktop/LauPhim-1.0.0-x64.exe`. Đây là bản portable, không cần cài Node.js hoặc chạy server. Có thể di chuyển file này sang thư mục khác hoặc máy Windows x64 khác.
+- Windows: mở `dist-desktop/LauPhim-1.0.1-x64.exe`. Đây là bản portable, không cần cài Node.js hoặc chạy server. Có thể di chuyển file này sang thư mục khác hoặc máy Windows x64 khác.
 
 Ứng dụng mở website thật trong cửa sổ riêng. Cập nhật web trên GitHub Pages sẽ cập nhật nội dung ứng dụng khi tải lại; không cần đóng gói lại chỉ vì thêm phim hoặc sửa giao diện. Video cần kết nối Internet. Khi mất kết nối không tải được trang, ứng dụng có trang thử kết nối lại.
 
@@ -27,7 +27,7 @@ Muốn có bản cài đặt và shortcut:
 npm run desktop:installer
 ```
 
-Bản cài đặt tên `LauPhim-Setup-1.0.0-x64.exe`. Đây là bản Windows x64. Bản phát hành hiện chưa ký chứng thư nhà phát hành. Không tắt bảo vệ Windows; chỉ dùng bản tự build hoặc nhận từ nguồn bạn tin cậy.
+Bản cài đặt tên `LauPhim-Setup-1.0.1-x64.exe`. Đây là bản Windows x64. Bản phát hành hiện chưa ký chứng thư nhà phát hành. Không tắt bảo vệ Windows; chỉ dùng bản tự build hoặc nhận từ nguồn bạn tin cậy.
 
 ```powershell
 npm run desktop:test
