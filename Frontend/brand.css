@@ -11,7 +11,7 @@ a.lauphim-brand {
 .lauphim-brand > .brand-image {
   display: block;
   width: 168px;
-  height: 48px;
+  height: 64px;
   flex: 0 0 auto;
   object-fit: contain;
   border-radius: 0;
@@ -21,8 +21,8 @@ a.lauphim-brand {
 .discover-footer .lauphim-brand > .brand-image,
 .collections-footer .lauphim-brand > .brand-image {
   width: 140px;
-  height: 40px;
+  height: 56px;
 }
 @media (max-width: 600px) {
-  .lauphim-brand > .brand-image { width: 134px; height: 40px; }
+  .lauphim-brand > .brand-image { width: 134px; height: 52px; }
 }
