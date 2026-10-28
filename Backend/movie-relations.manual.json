@@ -1154,6 +1154,39 @@
           "order": 3
         }
       ]
+    },
+    {
+      "id": "thor-mcu-films",
+      "label": "Thor (MCU)",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/than-sam-i",
+        "https://phimapi.com/phim/than-sam-ii-the-gioi-bong-toi",
+        "https://phimapi.com/phim/than-sam-iii-tan-the-ragnarok",
+        "https://phimapi.com/phim/than-sam-iv-tinh-yeu-va-sam-set"
+      ],
+      "members": [
+        {
+          "slug": "than-sam-i",
+          "label": "Thor",
+          "order": 0
+        },
+        {
+          "slug": "than-sam-ii-the-gioi-bong-toi",
+          "label": "Thor: The Dark World",
+          "order": 1
+        },
+        {
+          "slug": "than-sam-iii-tan-the-ragnarok",
+          "label": "Thor: Ragnarok",
+          "order": 2
+        },
+        {
+          "slug": "than-sam-iv-tinh-yeu-va-sam-set",
+          "label": "Thor: Love And Thunder",
+          "order": 3
+        }
+      ]
     }
   ],
   "standalone": [

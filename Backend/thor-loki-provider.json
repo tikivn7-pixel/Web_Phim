@@ -1,0 +1,1318 @@
+{
+  "checkedAt": "2026-10-28T15:37:02.699Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "10195",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.8,
+          "vote_count": 22427
+        },
+        "imdb": {
+          "id": "tt0800369",
+          "vote_average": 7,
+          "vote_count": 963947
+        },
+        "created": {
+          "time": "2023-11-23T21:00:31.000Z"
+        },
+        "modified": {
+          "time": "2025-09-23T10:21:04.000Z"
+        },
+        "_id": "16bda725ae44af3bb9316f416bd13b1b",
+        "name": "Thần Sấm I",
+        "slug": "than-sam-i",
+        "origin_name": "Thor",
+        "alternative_names": [
+          "Mighty Thor",
+          "Thor, God of Thunder",
+          "Thor 3D",
+          "Тор 3D",
+          "Tor",
+          "마블 토르: 천둥의 신",
+          "Thor: God of Thunder",
+          "토르 천둥의 신",
+          "Marvel Studios' Thor",
+          "Thần Sấm",
+          "Thor - Mut ist unsterblich",
+          "マイティ・ソー：2011",
+          "Thor 1",
+          "雷神",
+          "Thor.2011",
+          "ثور",
+          "Thor"
+        ],
+        "content": "<p>Bộ phim xoay quanh một chiến binh hùng mạnh nhưng do kiêu ngạo, bị tước hết quyền năng và bị đày xuống Trái Đất.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250923-1/9b0213e8ba9d51708e6d332ba90527c4.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250923-1/a94f79bd7f548ae7004230dab689e8ef.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=uHBnrJowBZE",
+        "time": "115 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2011,
+        "view": 198,
+        "actor": [
+          "Chris Hemsworth",
+          "Natalie Portman",
+          "Tom Hiddleston",
+          "Anthony Hopkins",
+          "Stellan Skarsgård",
+          "Kat Dennings",
+          "Clark Gregg",
+          "Colm Feore",
+          "Idris Elba",
+          "Ray Stevenson",
+          "Tadanobu Asano",
+          "Josh Dallas",
+          "Jaimie Alexander",
+          "Rene Russo",
+          "Adriana Barraza",
+          "Maximiliano Hernández",
+          "Rich"
+        ],
+        "director": [
+          "Kenneth Branagh"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm I - Thor - 2011 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/eeRpOwbc/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/eeRpOwbc/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm I - Thor - 2011 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/5HxFiGGk/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/5HxFiGGk/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "76338",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.5,
+          "vote_count": 18404
+        },
+        "imdb": {
+          "id": "tt1981115",
+          "vote_average": 6.7,
+          "vote_count": 776160
+        },
+        "created": {
+          "time": "2023-10-19T23:44:20.000Z"
+        },
+        "modified": {
+          "time": "2025-09-23T10:23:16.000Z"
+        },
+        "_id": "69dafe8b58066478aea48f3d0f384820",
+        "name": "Thần Sấm II: Thế Giới Bóng Tối",
+        "slug": "than-sam-ii-the-gioi-bong-toi",
+        "origin_name": "Thor: The Dark World",
+        "alternative_names": [
+          "Thor 2",
+          "Marvel's Thor: The Dark World",
+          "Thor - The Dark World",
+          "Thor 2: Σκοτεινός Κόσμος",
+          "마블 토르: 다크 월드",
+          "Thor: Un mundo oscuro",
+          "Thor: Mroczny świat",
+          "Thor Mroczny Świat - Thor The Dark World",
+          "Thor - The Dark Kingdom",
+          "Marvel Studios' Thor: The Dark World",
+          "Thor 2: Thế Giới Bóng Tối",
+          "Թոր՝ մութ աշխարհ",
+          "토르 2",
+          "토르 다크 월드",
+          "Thor II",
+          "ธอร์: เทพเจ้าสายฟ้าโลกาทมิฬ",
+          "Thor II: The Dark World",
+          "マイティ・ソー／ダーク・ワールド：2013",
+          "Thor 2: The Dark World",
+          "雷神2：黑暗世界",
+          "Thor: Karanlık Dünya",
+          "ثور العالم المظلم",
+          "Thor: The Dark World"
+        ],
+        "content": "<p>Thor: Thần Sấm phải chiến đấu để cứu trái đất và tất cả Cửu Giới từ một kẻ thù trong bóng tối. Trong khi Thor chiến đấu để lập lại trật tự trên vũ trụ thì một chủng tộc cổ xưa Malekith vì lợi nhuận đã làm mọi cách để kéo vũ trụ trở lại vào bóng tối. Phải đối mặt với một kẻ thù mà ngay cả Odin và Asgard không thể chịu được, Thor phải bắt tay vào hành trình nguy hiểm nhất. Đặc biệt, Thor lại cơ hội tái hợp lại với Jane Foster nhưng anh buộc phải hy sinh mọi thứ để cứu tất cả chúng ta. Liệu Thor sẽ chọn Jane Foster hay chấp nhận đánh đổi vì sứ mạng của mình? Là rồi Thần Sấm có giải cứu được trái đất?</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250923-1/e4ba7b6bbd53ecef3e7740405648310b.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250923-1/59eb1a450d1c31635548241d4ff3031b.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=npvJ9FTgZbM",
+        "time": "195 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2013,
+        "view": 184,
+        "actor": [
+          "Chris Hemsworth",
+          "Natalie Portman",
+          "Tom Hiddleston",
+          "Christopher Eccleston",
+          "Anthony Hopkins",
+          "Jaimie Alexander",
+          "Zachary Levi",
+          "Ray Stevenson",
+          "Tadanobu Asano",
+          "Idris Elba",
+          "Rene Russo",
+          "Adewale Akinnuoye-Agbaje",
+          "Kat Dennings",
+          "Stellan Skarsgård",
+          "Alice Krige",
+          "Clive"
+        ],
+        "director": [
+          "Alan Taylor"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm II: Thế Giới Bóng Tối - Thor: The Dark World - 2013 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/XJ221V5r/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/XJ221V5r/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm II: Thế Giới Bóng Tối - Thor: The Dark World - 2013 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/5USSKbZX/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/5USSKbZX/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "284053",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7.6,
+          "vote_count": 22106
+        },
+        "imdb": {
+          "id": "tt3501632",
+          "vote_average": 7.9,
+          "vote_count": 892533
+        },
+        "created": {
+          "time": "2023-10-18T23:24:22.000Z"
+        },
+        "modified": {
+          "time": "2025-09-23T10:26:17.000Z"
+        },
+        "_id": "e45823afe1e5120cec11fc4c379a0c67",
+        "name": "Thần Sấm III: Tận Thế Ragnarok",
+        "slug": "than-sam-iii-tan-the-ragnarok",
+        "origin_name": "Thor: Ragnarok",
+        "alternative_names": [
+          "Thor 3",
+          "Тор 3: Рагнарёк",
+          "ธอร์: แร็กนาร็อค",
+          "Thor 3: Ragnarok",
+          "Thor 3 - Ragnarok",
+          "Thor - Tag der Entscheidung",
+          "마블 토르: 라그나로크",
+          "Thor 3: Tag der Entscheidung",
+          "Marvel Studios' Thor: Ragnarok",
+          "Thor 3: Tận Thế Ragnarok",
+          "토르 3",
+          "マイティ・ソー バトルロイヤル：2017",
+          "雷神3：诸神黄昏",
+          "Thor: Ragnarök",
+          "ثور راقناروك",
+          "Thor: Ragnarok"
+        ],
+        "content": "<p>Ở bên kia vũ trụ, Thor (Chris Hemsworth) phải bước vào một cuộc chiến đầy khốc liệt với đối thủ mà anh sẽ gặp là một đồng đội cũ đến từ biệt đội Avenger – Hulk. Cuộc tìm kiếm sự sống còn của Thor khiến anh phải chạy đua với thời gian để ngăn chặn Hela (Cate Blanchett) tiêu diệt cả thế giới anh đang sống cùng nền văn minh Asgard.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250923-1/b3a03143b24418fea856bbee98426d35.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250923-1/59decafde7b70d889356c7b148296018.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=MW6oP4M9OuA",
+        "time": "131 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2017,
+        "view": 218,
+        "actor": [
+          "Chris Hemsworth",
+          "Mark Ruffalo",
+          "Tom Hiddleston",
+          "Cate Blanchett",
+          "Idris Elba",
+          "Jeff Goldblum",
+          "Tessa Thompson",
+          "Karl Urban",
+          "Anthony Hopkins",
+          "Benedict Cumberbatch",
+          "Taika Waititi",
+          "Rachel House",
+          "Clancy Brown",
+          "Tadanobu Asano",
+          "Ray Stevenson",
+          "Zachary Levi",
+          "Georgia Bl"
+        ],
+        "director": [
+          "Taika Waititi"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm III: Tận Thế Ragnarok - Thor: Ragnarok - 2017 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/Ou6IingA/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/Ou6IingA/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm III: Tận Thế Ragnarok - Thor: Ragnarok - 2017 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/yX1PvpBg/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/yX1PvpBg/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "616037",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.4,
+          "vote_count": 8625
+        },
+        "imdb": {
+          "id": "tt10648342",
+          "vote_average": 6.1,
+          "vote_count": 459337
+        },
+        "created": {
+          "time": "2024-07-11T20:26:06.000Z"
+        },
+        "modified": {
+          "time": "2025-09-23T10:27:10.000Z"
+        },
+        "_id": "04c0e78a0e5ff3259fd1fc0239065a3a",
+        "name": "Thần Sấm IV:  Tình Yêu Và Sấm Sét",
+        "slug": "than-sam-iv-tinh-yeu-va-sam-set",
+        "origin_name": "Thor: Love And Thunder",
+        "alternative_names": [
+          "雷神4：爱与雷霆",
+          "Thor 4",
+          "Тор 4",
+          "থর: প্রেম এবং বজ্রপাত",
+          "Marvel Studios' Thor: Love and Thunder",
+          "Thor: Love and Thunder de Marvel Studios",
+          "Thor : Amour et tonnerre de Marvel Studios",
+          "Thor 4: Tình Yêu và Sấm Sét",
+          "თორი: სიყვარული და ჭექა-ქუხილი",
+          "토르 4",
+          "Թոր: Սեր և ամպրոպ",
+          "תור: אהבה ורעם",
+          "Thor: Cinta dan Guntur",
+          "마블 토르: 러브 앤 썬더",
+          "토르 러브 앤 썬더",
+          "ธอร์: ด้วยรักและอัสนี",
+          "Thor 4 - Love and Thunder",
+          "Θορ: Έρωτας και Κεραυνός",
+          "Thor - Love and Thunder",
+          "Thor: Láska jako hrom",
+          "Тор: Любовь и гром",
+          "Thor IV",
+          "باوکی ڕوحی",
+          "Thor Miłość i grom",
+          "Thor: Sevgi və Göy Gurultusu",
+          "Thor 4: Love and Thunder",
+          "ثور الحب والرعد",
+          "Thor: Love and Thunder"
+        ],
+        "content": "<p>Vốn từng là một chiến binh hùng mạnh của Asgard, trải qua vô số trận chiến lớn nhỏ nhưng sau sự kiện trong Avengers: Endgame (2019) cùng vô số mất mát, Thần Sấm không còn muốn theo đuổi con đường siêu anh hùng. Từ đây, anh lên đường tìm ra ý nghĩa của cuộc sống và nhìn nhận lại bản thân mình.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250923-1/2777ecb8ac6e48fb907b583df8f34117.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250923-1/56b59045be261e78ae5a4aa6a3a2bbc1.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=KHPrDP0F5_o",
+        "time": "119 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 179,
+        "actor": [
+          "Chris Hemsworth",
+          "Natalie Portman",
+          "Christian Bale",
+          "Tessa Thompson",
+          "Taika Waititi",
+          "Russell Crowe",
+          "Jaimie Alexander",
+          "Idris Elba",
+          "Chris Pratt",
+          "Dave Bautista",
+          "Karen Gillan",
+          "Pom Klementieff",
+          "Sean Gunn",
+          "Vin Diesel",
+          "Bradley Cooper",
+          "Carly Rees",
+          "Kat Dennings",
+          "Brett"
+        ],
+        "director": [
+          "Taika Waititi"
+        ],
+        "category": [
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm IV:  Tình Yêu Và Sấm Sét - Thor: Love And Thunder - 2022 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/dkr6QUmr/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/dkr6QUmr/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm IV:  Tình Yêu Và Sấm Sét - Thor: Love And Thunder - 2022 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250923/XHtVWjHq/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250923/XHtVWjHq/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-29T00:00:08.000Z"
+        },
+        "modified": {
+          "time": "2023-12-07T15:12:15.000Z"
+        },
+        "_id": "b11b7e3409b27e5c6e332399362105f8",
+        "name": "Thần Sấm: Truyền Thuyết Về Asgard",
+        "slug": "than-sam-truyen-thuyet-ve-asgard",
+        "origin_name": "Thor: Tales of Asgard",
+        "alternative_names": [],
+        "content": "<p>Khao khát phiêu lưu, Thor bí mật dấn thân vào cuộc hành trình để đời, cùng với người anh trai trung thành Loki, người có ma thuật mới chớm nở trang bị cho anh ta đủ phép thuật để gây ra rắc rối, cùng với Warriors Three - một nhóm du khách khoe khoang không muốn ra khơi trong bất kỳ cuộc phiêu lưu nào có thể thực sự nguy hiểm. Nhưng khởi đầu là một cuộc truy tìm kho báu vô hại nhanh chóng trở nên chết chóc, và giờ đây Thor phải chứng tỏ mình xứng đáng với số phận mà anh khao khát bằng cách cứu lấy chính Asgard.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231129-1/7488f46024b79962a333e2bdae69a281.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231129-1/c1c6723d3c7e28017eb9137e9dcac11a.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "77 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2011,
+        "view": 132,
+        "actor": [
+          "Matthew Wolf",
+          "Rick Gomez",
+          "Alistair Abell",
+          "Tara Strong",
+          "Paul Dobson",
+          "Chris Britton",
+          "Clancy Brown",
+          "Jay Brazeau",
+          "Ashleigh Ball",
+          "Ron Halder",
+          "Cathy Weseluck",
+          "Michael Dobson",
+          "John Novak",
+          "Mark Acheson",
+          "Brian Drummond",
+          "Mark Gibbon",
+          "Jillian Michaels",
+          "Ty Olsson",
+          "Ve"
+        ],
+        "director": [
+          "Sam Liu"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thần Sấm: Truyền Thuyết Về Asgard - Thor: Tales of Asgard - 2011 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231206/Mn4dDxKK/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231206/Mn4dDxKK/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-01-08T22:52:04.000Z"
+        },
+        "modified": {
+          "time": "2024-01-31T04:47:37.000Z"
+        },
+        "_id": "5159f683253665f2122788b700686d8b",
+        "name": "Chiếc Búa Quyền Năng",
+        "slug": "chiec-bua-quyen-nang",
+        "origin_name": "Almighty Thor",
+        "alternative_names": [],
+        "content": "<p>Loki phá hủy pháo đài Valhalla và đánh cắp Hammer of Invincibility, chỉ có anh hùng trẻ tuổi Thor mới có thể bảo vệ Trái đất khỏi Armageddon.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240108-1/4a668e92f6613566669e5866d13c912f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240108-1/dae69f8f119d750e38d6d31a20efd2fc.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "88 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2011,
+        "view": 99,
+        "actor": [
+          "Cody Deal",
+          "Patricia Velásquez",
+          "Richard Grieco",
+          "Kevin Nash",
+          "Jess Allen"
+        ],
+        "director": [
+          "Christopher Ray"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chiếc Búa Quyền Năng - Almighty Thor - 2011 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240121/N4GjJoJf/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240121/N4GjJoJf/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "84958",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 8.2,
+          "vote_count": 12474
+        },
+        "imdb": {
+          "id": "tt9140554",
+          "vote_average": 8.2,
+          "vote_count": 470715
+        },
+        "created": {
+          "time": "2024-06-15T22:21:52.000Z"
+        },
+        "modified": {
+          "time": "2026-07-13T06:59:30.000Z"
+        },
+        "_id": "dd2bdf6cb881176bc2c0c568e1a180fa",
+        "name": "Loki (Phần 1)",
+        "slug": "loki-phan-1",
+        "origin_name": "Loki (Season 1)",
+        "alternative_names": [
+          "Marvels - Loki",
+          "ლოკი",
+          "Локи",
+          "โลกิ",
+          "Локі",
+          "Marvel Studios' Loki",
+          "Loki: Thần Lừa Lọc",
+          "Loki"
+        ],
+        "content": "<p>Khi Steve Rogers, Tony Stark và Scott Lang quay trở về cột mốc 2012, ngay khi trận chiến ở New York kết thúc, để “mượn tạm” quyền trượng của Loki. Nhưng một tai nạn bất ngờ xảy đến, khiến Loki nhặt được khối lặp phương Tesseract và tiện thể tẩu thoát. Cuộc trốn thoát này đã dẫn đến dòng thời gian bị rối loạn. Cục TVA – tổ chức bảo vệ tính nguyên vẹn của dòng chảy thời gian, buộc phải can thiệp, đi gô cổ ông thần này về làm việc. Tại đây, Loki có hai lựa chọn, một là giúp TVA ổn định lại thời gian, không thì bị tiêu hủy. Dĩ nhiên Loki chọn lựa chọn thứ nhất. Nhưng đây là nước đi vô cùng mạo hiểm, vì ông thần này thường lọc lừa, “lươn lẹo”, chuyên đâm lén như bản tính tự nhiên của gã.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/uploads/movies/20260713/loki-phan-1-thumb.webp",
+        "poster_url": "https://phimimg.com/uploads/movies/20260713/loki-phan-1-poster.webp",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=lDToq9SuEmI",
+        "time": "51 phút/tập",
+        "episode_current": "Hoàn Tất (6/6)",
+        "episode_total": 6,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 428,
+        "actor": [
+          "Tom Hiddleston",
+          "Sophia Di Martino",
+          "Wunmi Mosaku",
+          "Eugene Cordero",
+          "Ke Huy Quan",
+          "Owen Wilson",
+          "Gugu Mbatha-Raw"
+        ],
+        "director": [
+          "Michael Waldron"
+        ],
+        "category": [
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/8yuNs8c4/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/8yuNs8c4/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/jLKdC2oq/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/jLKdC2oq/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/ckiyaftP/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/ckiyaftP/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/mHvXyz2h/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/mHvXyz2h/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/ff0j5Kmx/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/ff0j5Kmx/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/4ARfuLWG/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/4ARfuLWG/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/X0xAkHbt/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/X0xAkHbt/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/ZWw28qid/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/ZWw28qid/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/YsfIhgZ3/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/YsfIhgZ3/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/y0scDKRw/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/y0scDKRw/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/CfHxn7kc/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/CfHxn7kc/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Loki (Phần 1) - Loki (Season 1) - 2021 - FHD - Thuyết Minh - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/cQAVSkAc/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/cQAVSkAc/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "84958",
+          "type": "tv",
+          "season": 2,
+          "vote_average": 8.2,
+          "vote_count": 12474
+        },
+        "imdb": {
+          "id": "tt9140554",
+          "vote_average": 8.2,
+          "vote_count": 470715
+        },
+        "created": {
+          "time": "2024-08-07T14:12:58.000Z"
+        },
+        "modified": {
+          "time": "2026-07-13T07:01:44.000Z"
+        },
+        "_id": "762dd577d6ff90976d1269075d4ebae5",
+        "name": "Loki (Phần 2)",
+        "slug": "loki-phan-2",
+        "origin_name": "Loki (Season 2)",
+        "alternative_names": [
+          "Marvels - Loki",
+          "ლოკი",
+          "Локи",
+          "โลกิ",
+          "Локі",
+          "Marvel Studios' Loki",
+          "Loki: Thần Lừa Lọc",
+          "Loki"
+        ],
+        "content": "<p>Khi Steve Rogers, Tony Stark và Scott Lang quay trở về cột mốc 2012, ngay khi trận chiến ở New York kết thúc, để “mượn tạm” quyền trượng của Loki. Nhưng một tai nạn bất ngờ xảy đến, khiến Loki nhặt được khối lặp phương Tesseract và tiện thể tẩu thoát. Cuộc trốn thoát này đã dẫn đến dòng thời gian bị rối loạn. Cục TVA – tổ chức bảo vệ tính nguyên vẹn của dòng chảy thời gian, buộc phải can thiệp, đi gô cổ ông thần này về làm việc. Tại đây, Loki có hai lựa chọn, một là giúp TVA ổn định lại thời gian, không thì bị tiêu hủy. Dĩ nhiên Loki chọn lựa chọn thứ nhất. Nhưng đây là nước đi vô cùng mạo hiểm, vì ông thần này thường lọc lừa, “lươn lẹo”, chuyên đâm lén như bản tính tự nhiên của gã.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/uploads/movies/20260713/loki-phan-2-thumb.webp",
+        "poster_url": "https://phimimg.com/uploads/movies/20260713/loki-phan-2-poster.webp",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=dug56u8NN7g",
+        "time": "51 phút/tập",
+        "episode_current": "Hoàn Tất (6/6)",
+        "episode_total": 6,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2023,
+        "view": 363,
+        "actor": [
+          "Tom Hiddleston",
+          "Sophia Di Martino",
+          "Wunmi Mosaku",
+          "Eugene Cordero",
+          "Ke Huy Quan",
+          "Owen Wilson",
+          "Gugu Mbatha-Raw"
+        ],
+        "director": [
+          "Michael Waldron"
+        ],
+        "category": [
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/r0n6AcBM/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/r0n6AcBM/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/zz2TB8CU/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/zz2TB8CU/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/tTGbJf7d/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/tTGbJf7d/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/fqW4et8K/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/fqW4et8K/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/O5HXhYCY/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/O5HXhYCY/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/sbnBWtMx/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/sbnBWtMx/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/KYT7M6fX/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/KYT7M6fX/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/PKjoYuTG/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/PKjoYuTG/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/wkK4jJcf/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/wkK4jJcf/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/EcXxJeuI/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/EcXxJeuI/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/aZtZkvQS/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/aZtZkvQS/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Loki (Phần 2) - Loki (Season 2) - 2023 - FHD - Thuyết Minh - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260712/Hpxdvjiq/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260712/Hpxdvjiq/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-27T00:02:22.000Z"
+        },
+        "modified": {
+          "time": "2024-01-22T14:42:08.000Z"
+        },
+        "_id": "878cbc9ed11d6c167ef0065805a85392",
+        "name": "The Good, The Bart, And The Loki",
+        "slug": "the-good-the-bart-and-the-loki",
+        "origin_name": "The Good, The Bart, And The Loki",
+        "alternative_names": [],
+        "content": "<p>Loki tham gia lực lượng với Bart Simpson để chiến đấu chống lại những đối thủ khó khăn nhất của mình ở Springfield sau khi anh ta bị trục xuất khỏi ASGARD một lần nữa.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231227-1/0639003fc1a840e177ec1074cc180b0e.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231227-1/06ea3d2010f0484f6931cfdf8b4a4cd9.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=4MuKQpPSgEQ",
+        "time": "6 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 71,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "The Good, The Bart, And The Loki - The Good, The Bart, And The Loki - 2021 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240113/mfxBMfHw/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240113/mfxBMfHw/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

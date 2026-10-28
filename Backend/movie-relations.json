@@ -1157,6 +1157,39 @@
       ]
     },
     {
+      "id": "thor-mcu-films",
+      "label": "Thor (MCU)",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/than-sam-i",
+        "https://phimapi.com/phim/than-sam-ii-the-gioi-bong-toi",
+        "https://phimapi.com/phim/than-sam-iii-tan-the-ragnarok",
+        "https://phimapi.com/phim/than-sam-iv-tinh-yeu-va-sam-set"
+      ],
+      "members": [
+        {
+          "slug": "than-sam-i",
+          "label": "Thor",
+          "order": 0
+        },
+        {
+          "slug": "than-sam-ii-the-gioi-bong-toi",
+          "label": "Thor: The Dark World",
+          "order": 1
+        },
+        {
+          "slug": "than-sam-iii-tan-the-ragnarok",
+          "label": "Thor: Ragnarok",
+          "order": 2
+        },
+        {
+          "slug": "than-sam-iv-tinh-yeu-va-sam-set",
+          "label": "Thor: Love And Thunder",
+          "order": 3
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -7667,6 +7700,33 @@
           "order": 2,
           "season": 3,
           "checkedAt": "2026-10-28T15:29:47.820Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-84958",
+      "label": "Loki (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/84958",
+        "https://phimapi.com/phim/loki-phan-1",
+        "https://phimapi.com/phim/loki-phan-2"
+      ],
+      "members": [
+        {
+          "slug": "loki-phan-1",
+          "label": "Loki (Phần 1) (Loki (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T15:37:02.699Z"
+        },
+        {
+          "slug": "loki-phan-2",
+          "label": "Loki (Phần 2) (Loki (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T15:37:02.699Z"
         }
       ]
     }
