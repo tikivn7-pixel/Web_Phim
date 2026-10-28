@@ -50,7 +50,7 @@ async function main() {
       window.fetch=(url,init)=>String(url).startsWith('https://phimapi.com/phim/')?Promise.resolve(new Response(JSON.stringify({status:true,movie:{slug:'yeu-tinh-goblin',name:'Goblin',episode_total:'2'},episodes:[{server_name:'Vietsub',server_data:[{name:'1',slug:'1',link_m3u8:'/broken.mp4'},{name:'2',slug:'2',link_m3u8:'/broken.mp4'}]}]}))):realFetch(url,init);
     `});
     await call('Page.navigate',{url:origin+'/notes.html'});
-    await waitFor("document.getElementById('notes-status').textContent.includes('0 phim')");
+    await waitFor("document.getElementById('notes-status')?.textContent.includes('0 phim')");
     await evaluate("MovieNotes.setNote('yeu-tinh-goblin',{text:'N\u1ed9i dung b\u00ed m\u1eadt',spoiler:true});MovieNotes.addBookmark('yeu-tinh-goblin',{label:'L\u1ea7n g\u1eb7p \u0111\u1ea7u',time:42,episodeName:'1',episode:1,source:'kkphim',server:0});");
     await waitFor("document.querySelectorAll('.notes-card').length===1");
     assert.equal(await evaluate("document.body.textContent.includes('N\u1ed9i dung b\u00ed m\u1eadt')"),false);

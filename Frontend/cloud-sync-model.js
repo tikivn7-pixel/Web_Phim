@@ -8,6 +8,7 @@
     // over a stale copy. New additions from either device remain present.
     for(const key of ['my_wishlist','continue_watching_list']){const old=new Set(b[key].map(m=>m.slug)),left=new Set(l[key].map(m=>m.slug)),right=new Set(r[key].map(m=>m.slug));out[key]=out[key].filter(m=>!old.has(m.slug)||left.has(m.slug)&&right.has(m.slug));}
     for(const [slug,episodes]of Object.entries(b.episode_positions)){if(!Object.hasOwn(l.episode_positions,slug)||!Object.hasOwn(r.episode_positions,slug)){delete out.episode_positions[slug];continue;}for(const key of Object.keys(episodes))if(!Object.hasOwn(l.episode_positions[slug],key)||!Object.hasOwn(r.episode_positions[slug],key))delete out.episode_positions[slug]?.[key];}
+    for(const id of Object.keys(b.player_intro_ranges_v1||{}))if(!Object.hasOwn(l.player_intro_ranges_v1||{},id)||!Object.hasOwn(r.player_intro_ranges_v1||{},id))delete out.player_intro_ranges_v1?.[id];
     for(const key of ['player_preferences_v1','autonext_enabled','audio_boost']){const value=same(l[key],b[key])?r[key]:l[key];if(value===undefined)delete out[key];else out[key]=value;}
     return P.normalize(out);
   }

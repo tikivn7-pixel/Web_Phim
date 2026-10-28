@@ -7,6 +7,7 @@ function candidates(movies,metadata={movies:{}}){
   const pairs=new Map();
   function bucket(reason,keyFor){const buckets=new Map();for(const movie of movies){const key=keyFor(movie);if(!key)continue;const rows=buckets.get(key)||[];rows.push(movie);buckets.set(key,rows);}for(const rows of buckets.values())if(rows.length>1)for(let i=0;i<rows.length;i++)for(let j=i+1;j<rows.length;j++){const slugs=[rows[i].slug,rows[j].slug].sort(),key=JSON.stringify(slugs),pair=pairs.get(key)||{slugs,reasons:[]};if(!pair.reasons.includes(reason))pair.reasons.push(reason);pairs.set(key,pair);}}
   bucket('same-title',movie=>People.normalize(movie.title));
+  bucket('verified-identity',movie=>movie.duplicateOf||movie.slug);
   bucket('same-first-season-title',movie=>People.normalize(movie.title).replace(/\bseason\s+1\b/g,'').replace(/\s+/g,' ').trim());
   bucket('same-credits',movie=>{const cast=People.names(movie.cast).slice(0,3).map(People.normalize).sort(),directors=People.names(movie.director).map(People.normalize).sort();return movie.year&&cast.length===3&&directors.length?[movie.year,cast.join('|'),directors.join('|')].join('::'):'';});
   bucket('same-provider',movie=>movie.apiSlug||movie.slug);

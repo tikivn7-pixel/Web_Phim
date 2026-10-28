@@ -28,7 +28,9 @@
     if (event.defaultPrevented || event.ctrlKey || event.altKey || event.metaKey || event.isComposing) return true;
     const target = event.target;
     if (target?.isContentEditable || target?.closest?.("input, textarea, select, button, a, summary, [role=slider], [role=button], [contenteditable=true]")) return true;
-    return !!doc?.querySelector?.("dialog[open], [aria-modal=true]:not([hidden])");
+    const selector='dialog[open], [aria-modal="true"]';
+    const dialogs=doc?.querySelectorAll?doc.querySelectorAll(selector):[doc?.querySelector?.(selector)];
+    return Array.from(dialogs).some(item=>item&&!item.hidden&&(!item.getClientRects||(item.getClientRects().length&&doc.defaultView?.getComputedStyle(item).visibility!=='hidden')));
   }
   function seekTarget(current, delta, duration) {
     const time = Number.isFinite(Number(current)) ? Number(current) : 0;

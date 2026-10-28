@@ -1,0 +1,2091 @@
+{
+  "checkedAt": "2026-10-28T10:15:40.832Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "224263",
+          "type": "tv",
+          "season": 2,
+          "vote_average": 7.6,
+          "vote_count": 108
+        },
+        "imdb": {
+          "id": "tt27486290",
+          "vote_average": 5.8,
+          "vote_count": 6215
+        },
+        "created": {
+          "time": "2026-09-17T15:58:08.000Z"
+        },
+        "modified": {
+          "time": "2026-09-18T01:28:02.000Z"
+        },
+        "_id": "2a7c81b4946dab2850aeb73b7bc0cfcf",
+        "name": "Cậu Bé Mất Tích: Chuyện Năm 85 (Phần 2)",
+        "slug": "cau-be-mat-tich-chuyen-nam-85-phan-2",
+        "origin_name": "Stranger Things: Tales From '85 (Season 2)",
+        "alternative_names": [
+          "怪奇物语：1985故事集",
+          "Очень странные дела: Истории из 85-го",
+          "Stranger Things: Sene 1985",
+          "Stranger Things: Tales from '85"
+        ],
+        "content": "<p>Mùa đông. Hawkins. 1985. Chào mừng trở lại thị trấn đầy bí mật, nơi hội bạn thân quen đối mặt với loạt bí ẩn mới... và một giống loài kỳ dị hoàn toàn mới.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/uploads/movies/20260917/cau-be-mat-tich-chuyen-nam-85-phan-2-thumb.webp",
+        "poster_url": "https://phimimg.com/uploads/movies/20260917/cau-be-mat-tich-chuyen-nam-85-phan-2-poster.webp",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=kajCUhg36R0",
+        "time": "30 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2026,
+        "view": 162,
+        "actor": [
+          "Đang cập nhật"
+        ],
+        "director": [
+          "Eric Robles",
+          "Jennifer Muro"
+        ],
+        "category": [
+          {
+            "id": "d9983d88d8929b1d9f767884e2999e27",
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh"
+          },
+          {
+            "id": "0bcf4077916678de9b48c89221fcf8ae",
+            "name": "Khoa Học",
+            "slug": "khoa-hoc"
+          },
+          {
+            "id": "68564911f00849030f9c9c144ea1b931",
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong"
+          },
+          {
+            "id": "2fb53017b3be83cd754a08adab3e916c",
+            "name": "Bí Ẩn",
+            "slug": "bi-an"
+          },
+          {
+            "id": "9822be111d2ccc29c7172c78b8af8ff5",
+            "name": "Hành Động",
+            "slug": "hanh-dong"
+          },
+          {
+            "id": "66c78b23908113d478d8d85390a244b4",
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu"
+          }
+        ],
+        "country": [
+          {
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a",
+            "name": "Âu Mỹ",
+            "slug": "au-my"
+          },
+          {
+            "id": "435a85571578e419ed511257881a1e75",
+            "name": "Úc",
+            "slug": "uc"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Stranger Things- Tales From '85 S02E01 - Chapter One- A Haunting in Hawkins",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/GJXg809z/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/GJXg809z/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Stranger Things- Tales From '85 S02E02 - Chapter Two- The Mine",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/pQq1BCO0/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/pQq1BCO0/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Stranger Things- Tales From '85 S02E03 - Chapter Three- The Curse of Bloodaxe Bill",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/Yn9cJMgt/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/Yn9cJMgt/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Stranger Things- Tales From '85 S02E04 - Chapter Four- The Séance",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/dIQ7SS0l/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/dIQ7SS0l/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Stranger Things- Tales From '85 S02E05 - Chapter Five- Split the Party",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/6wQa0fwB/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/6wQa0fwB/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Stranger Things- Tales From '85 S02E06 - Chapter Six- The Lich",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/IJoSXUsM/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/IJoSXUsM/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Stranger Things- Tales From '85 S02E07 - Chapter Seven- The Golem",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/pfLb2awQ/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/pfLb2awQ/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Stranger Things- Tales From '85 S02E08 - Chapter Eight- Count to Five",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/iYmbaTJK/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/iYmbaTJK/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Stranger Things- Tales From '85 S02E01 - Chapter One- A Haunting in Hawkins (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/l6QCYP2k/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/l6QCYP2k/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Stranger Things- Tales From '85 S02E02 - Chapter Two- The Mine (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/Wlk2f0Nq/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/Wlk2f0Nq/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Stranger Things- Tales From '85 S02E03 - Chapter Three- The Curse of Bloodaxe Bill (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/ohRSk1PZ/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/ohRSk1PZ/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Stranger Things- Tales From '85 S02E04 - Chapter Four- The Séance (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/gqIEJ9gz/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/gqIEJ9gz/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Stranger Things- Tales From '85 S02E05 - Chapter Five- Split the Party (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/o19OG943/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/o19OG943/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Stranger Things- Tales From '85 S02E06 - Chapter Six- The Lich (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/4x6USXBE/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/4x6USXBE/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Stranger Things- Tales From '85 S02E07 - Chapter Seven- The Golem (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/qoBlTB6j/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/qoBlTB6j/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Stranger Things- Tales From '85 S02E08 - Chapter Eight- Count to Five (1)",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260917/QHkZu5Q6/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260917/QHkZu5Q6/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "224263",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 7.6,
+          "vote_count": 85
+        },
+        "imdb": {
+          "id": "tt27486290",
+          "vote_average": 5.8,
+          "vote_count": 6215
+        },
+        "created": {
+          "time": "2026-04-28T16:50:52.000Z"
+        },
+        "modified": {
+          "time": "2026-09-17T20:33:15.000Z"
+        },
+        "_id": "cb61843a4d547a8d2a199fe80a7a1add",
+        "name": "Cậu Bé Mất Tích: Chuyện Năm 85 (Phần 1)",
+        "slug": "cau-be-mat-tich-chuyen-nam-85-phan-1",
+        "origin_name": "Stranger Things: Tales From '85 (Season 1)",
+        "alternative_names": [
+          "怪奇物语：1985故事集",
+          "Очень странные дела: Истории из 85-го",
+          "Stranger Things: Sene 1985",
+          "Stranger Things: Tales from '85"
+        ],
+        "content": "<p>Mùa đông. Hawkins. 1985. Chào mừng trở lại thị trấn đầy bí mật, nơi hội bạn thân quen đối mặt với loạt bí ẩn mới... và một giống loài kỳ dị hoàn toàn mới.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20260428-1/b13c9349c92630c22e6d5b14c42882fd.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20260428-1/420d39137d52c9438683e550bd8fd629.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=kajCUhg36R0",
+        "time": "31 phút/tập",
+        "episode_current": "Hoàn Tất (10/10)",
+        "episode_total": 10,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2026,
+        "view": 381,
+        "actor": [
+          "Brooklyn Davey Norstedt",
+          "Jolie Hoang-Rappaport",
+          "Luca Diaz",
+          "Elisha Williams",
+          "Braxton Quinney",
+          "Benjamin Plessala",
+          "Odessa A'zion"
+        ],
+        "director": [
+          "Eric Robles"
+        ],
+        "category": [
+          {
+            "id": "0bcf4077916678de9b48c89221fcf8ae",
+            "name": "Khoa Học",
+            "slug": "khoa-hoc"
+          },
+          {
+            "id": "68564911f00849030f9c9c144ea1b931",
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong"
+          },
+          {
+            "id": "2fb53017b3be83cd754a08adab3e916c",
+            "name": "Bí Ẩn",
+            "slug": "bi-an"
+          },
+          {
+            "id": "9822be111d2ccc29c7172c78b8af8ff5",
+            "name": "Hành Động",
+            "slug": "hanh-dong"
+          },
+          {
+            "id": "66c78b23908113d478d8d85390a244b4",
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu"
+          },
+          {
+            "id": "a7b065b92ad356387ef2e075dee66529",
+            "name": "Tâm Lý",
+            "slug": "tam-ly"
+          }
+        ],
+        "country": [
+          {
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a",
+            "name": "Âu Mỹ",
+            "slug": "au-my"
+          },
+          {
+            "id": "435a85571578e419ed511257881a1e75",
+            "name": "Úc",
+            "slug": "uc"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/Hn4qyzBi/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/Hn4qyzBi/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/G9cnODWD/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/G9cnODWD/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/Mf46FeeS/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/Mf46FeeS/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/k7MBfyr0/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/k7MBfyr0/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/qG43tolS/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/qG43tolS/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/5ePpQZeq/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/5ePpQZeq/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/i9mBE1pE/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/i9mBE1pE/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/fmNCRNrk/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/fmNCRNrk/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/mOXsnEQh/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/mOXsnEQh/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/UAAtcdzO/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/UAAtcdzO/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/dAQIbaRv/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/dAQIbaRv/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/eXzU7KOa/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/eXzU7KOa/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/0fJPZD2w/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/0fJPZD2w/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/OzyxdWlv/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/OzyxdWlv/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/9qQazNfH/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/9qQazNfH/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/Wzk3wrj5/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/Wzk3wrj5/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/Du47Lh07/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/Du47Lh07/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/uq29Agho/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/uq29Agho/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/Y8UHA7Ej/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/Y8UHA7Ej/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Cậu Bé Mất Tích: Chuyện Năm 85 - Stranger Things: Tales From '85 - 2026 - FHD - Lồng Tiếng - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260428/KDzi8MdU/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260428/KDzi8MdU/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "66732",
+          "type": "tv",
+          "season": 4,
+          "vote_average": 8.6,
+          "vote_count": 21399
+        },
+        "imdb": {
+          "id": "tt4574334",
+          "vote_average": 8.6,
+          "vote_count": 1691532
+        },
+        "created": {
+          "time": "2024-05-20T00:04:03.000Z"
+        },
+        "modified": {
+          "time": "2026-03-20T09:50:32.000Z"
+        },
+        "_id": "a805e4d7fe9c62264963adc280161aa7",
+        "name": "Cậu Bé Mất Tích (Phần 4)",
+        "slug": "cau-be-mat-tich-phan-4",
+        "origin_name": "Stranger Things (Season 4)",
+        "alternative_names": [
+          "怪奇物语",
+          "Extraño al revés",
+          "უცნაური საქმეები",
+          "Παράξενα Πράγματα",
+          "Stranger Things: Keményebb leckék",
+          "اتفاقات عجیب",
+          "ストレンジャー・シングス",
+          "기묘한 이야기",
+          "Чудни Нешта",
+          "Cosas Extrañas",
+          "Странные вещи",
+          "Крайне странные события",
+          "Загадочные события",
+          "ОСД",
+          "Очень странные дела",
+          "أشياء غريبة",
+          "Zvláštne veci",
+          "Tuhaf Şeyler",
+          "Загадкові справи",
+          "Montauk",
+          "Cedar Lodge",
+          "Stranger Things"
+        ],
+        "content": "<p>Khi một cậu bé mất tích, một thị trấn nhỏ khám phá ra một bí ẩn liên quan đến các thử nghiệm tối mật, sức mạnh siêu nhiên đáng sợ và một cô bé lạ lùng.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251127-1/9eb0e1ec2140c74cdbff9322783361c3.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251127-1/2e24206ec84089247e0c94bbb30d8565.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=a3thyAnShck",
+        "time": "78 phút/tập",
+        "episode_current": "Hoàn Tất (9/9)",
+        "episode_total": 9,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 226,
+        "actor": [
+          "Millie Bobby Brown",
+          "Noah Schnapp",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Sadie Sink",
+          "David Harbour",
+          "Winona Ryder",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Joe Keery",
+          "Priah Ferguson",
+          "Maya Hawke",
+          "Brett Gelman",
+          "Jamie Campbell Bower",
+          "Nell Fisher",
+          "Amybeth McNu"
+        ],
+        "director": [
+          "Matt Duffer"
+        ],
+        "category": [
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240531/ZwgGee0b/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240531/ZwgGee0b/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240531/DlzNSV9N/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240531/DlzNSV9N/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240531/jeENf1WG/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240531/jeENf1WG/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240601/vpjcMxcM/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240601/vpjcMxcM/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240601/B1o0Q77F/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240601/B1o0Q77F/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240531/pj5aKlvK/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240531/pj5aKlvK/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240601/WA3uAYsd/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240601/WA3uAYsd/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260320/IX2LT8hR/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260320/IX2LT8hR/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260320/w6EKtHPu/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260320/w6EKtHPu/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/xlXYIN4h/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/xlXYIN4h/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/DmcR4Ifa/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/DmcR4Ifa/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/s8HrgFqu/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/s8HrgFqu/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/CnoWNGQP/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/CnoWNGQP/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/2Z4dBijs/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/2Z4dBijs/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/74OVKIPn/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/74OVKIPn/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/pHLmU9j0/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/pHLmU9j0/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/bN2uJOQG/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/bN2uJOQG/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích (Phần 4) - Stranger Things (Season 4) - 2022 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/wlTpiDT6/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/wlTpiDT6/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "66732",
+          "type": "tv",
+          "season": 3,
+          "vote_average": 8.6,
+          "vote_count": 21399
+        },
+        "imdb": {
+          "id": "tt4574334",
+          "vote_average": 8.6,
+          "vote_count": 1691532
+        },
+        "created": {
+          "time": "2024-12-19T08:44:58.000Z"
+        },
+        "modified": {
+          "time": "2026-02-26T11:43:48.000Z"
+        },
+        "_id": "7d65939039592cca91c51ef731f768e4",
+        "name": "Cậu Bé Mất Tích (Phần 3)",
+        "slug": "cau-be-mat-tich-phan-3",
+        "origin_name": "Stranger Things (Season 3)",
+        "alternative_names": [
+          "怪奇物语",
+          "Extraño al revés",
+          "უცნაური საქმეები",
+          "Παράξενα Πράγματα",
+          "Stranger Things: Keményebb leckék",
+          "اتفاقات عجیب",
+          "ストレンジャー・シングス",
+          "기묘한 이야기",
+          "Чудни Нешта",
+          "Cosas Extrañas",
+          "Странные вещи",
+          "Крайне странные события",
+          "Загадочные события",
+          "ОСД",
+          "Очень странные дела",
+          "أشياء غريبة",
+          "Zvláštne veci",
+          "Tuhaf Şeyler",
+          "Загадкові справи",
+          "Montauk",
+          "Cedar Lodge",
+          "Stranger Things"
+        ],
+        "content": "<p>Khi một cậu bé mất tích, một thị trấn nhỏ khám phá ra một bí ẩn liên quan đến các thử nghiệm tối mật, sức mạnh siêu nhiên đáng sợ và một cô bé lạ lùng.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20241219-1/db76e7301e110c3c7922366fbf06fe2f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251127-1/946f14dafd4f322bcdd96efcd06c4f44.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=6Am4v0C_z8c",
+        "time": "49 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2019,
+        "view": 247,
+        "actor": [
+          "Millie Bobby Brown",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Joe Keery",
+          "Winona Ryder",
+          "David Harbour",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Maya Hawke",
+          "Sadie Sink",
+          "Jamie Campbell Bower",
+          "Brett Gelman",
+          "Paul Reiser",
+          "Matthew Modine"
+        ],
+        "director": [
+          "Matt Duffer"
+        ],
+        "category": [
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/QOIlTolW/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/QOIlTolW/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/tbh8Rks2/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/tbh8Rks2/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/b2MpJ4Cr/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/b2MpJ4Cr/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/Z0CCcwMX/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/Z0CCcwMX/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/Er9a1pYw/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/Er9a1pYw/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/RhfnZsEW/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/RhfnZsEW/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/GUaKKiKF/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/GUaKKiKF/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260226/Hx9VlpEU/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260226/Hx9VlpEU/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/0VT1ek7V/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/0VT1ek7V/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/4ALbRK0U/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/4ALbRK0U/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/hCnt5Db7/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/hCnt5Db7/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/R22LSZ4q/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/R22LSZ4q/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/iB3IqIsM/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/iB3IqIsM/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/K3fOBZ4T/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/K3fOBZ4T/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/q5z1E9jN/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/q5z1E9jN/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 3) - Stranger Things (Season 3) - 2019 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/ZwVz0i1P/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/ZwVz0i1P/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "66732",
+          "type": "tv",
+          "season": 2,
+          "vote_average": 8.6,
+          "vote_count": 21399
+        },
+        "imdb": {
+          "id": "tt4574334",
+          "vote_average": 8.6,
+          "vote_count": 1691532
+        },
+        "created": {
+          "time": "2024-12-19T08:43:54.000Z"
+        },
+        "modified": {
+          "time": "2026-02-17T07:13:54.000Z"
+        },
+        "_id": "4a50099e4b1e3d4376fa30b80a5d604f",
+        "name": "Cậu Bé Mất Tích (Phần 2)",
+        "slug": "cau-be-mat-tich-phan-2",
+        "origin_name": "Stranger Things (Season 2)",
+        "alternative_names": [
+          "怪奇物语",
+          "Extraño al revés",
+          "უცნაური საქმეები",
+          "Παράξενα Πράγματα",
+          "Stranger Things: Keményebb leckék",
+          "اتفاقات عجیب",
+          "ストレンジャー・シングス",
+          "기묘한 이야기",
+          "Чудни Нешта",
+          "Cosas Extrañas",
+          "Странные вещи",
+          "Крайне странные события",
+          "Загадочные события",
+          "ОСД",
+          "Очень странные дела",
+          "أشياء غريبة",
+          "Zvláštne veci",
+          "Tuhaf Şeyler",
+          "Загадкові справи",
+          "Montauk",
+          "Cedar Lodge",
+          "Stranger Things"
+        ],
+        "content": "<p>Khi một cậu bé mất tích, một thị trấn nhỏ khám phá ra một bí ẩn liên quan đến các thử nghiệm tối mật, sức mạnh siêu nhiên đáng sợ và một cô bé lạ lùng.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20241219-1/e8b6350a1e54a06bbf3e82d006abbc85.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251127-1/651a724f2f0be88d32a782a334ab71f0.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=R1ZXOOLMJ8s",
+        "time": "49 phút/tập",
+        "episode_current": "Hoàn Tất (9/9)",
+        "episode_total": 9,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2017,
+        "view": 227,
+        "actor": [
+          "Millie Bobby Brown",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Joe Keery",
+          "Winona Ryder",
+          "David Harbour",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Maya Hawke",
+          "Sadie Sink",
+          "Jamie Campbell Bower",
+          "Brett Gelman",
+          "Paul Reiser",
+          "Matthew Modine"
+        ],
+        "director": [
+          "Matt Duffer"
+        ],
+        "category": [
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/SQQIHMnT/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/SQQIHMnT/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/5mLMDduO/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/5mLMDduO/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/IUyWGDC1/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/IUyWGDC1/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/v9nBqX2z/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/v9nBqX2z/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/NhF695Ng/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/NhF695Ng/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/EAPZGOa2/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/EAPZGOa2/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/ecCCnfVh/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/ecCCnfVh/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/OPbS54XS/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/OPbS54XS/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/KqjQ6W3h/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/KqjQ6W3h/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/VpgRLCmQ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/VpgRLCmQ/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/i4PjdUKJ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/i4PjdUKJ/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/im9N0WA8/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/im9N0WA8/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/97X0NbJ9/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/97X0NbJ9/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/hD5hYx5P/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/hD5hYx5P/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/MUqTKn3z/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/MUqTKn3z/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/devEf5D4/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/devEf5D4/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/PyYxRkFF/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/PyYxRkFF/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Cậu Bé Mất Tích (Phần 2) - Stranger Things (Season 2) - 2017 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/QfegEzof/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/QfegEzof/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "66732",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 8.6,
+          "vote_count": 21399
+        },
+        "imdb": {
+          "id": "tt4574334",
+          "vote_average": 8.6,
+          "vote_count": 1691532
+        },
+        "created": {
+          "time": "2024-12-19T08:42:47.000Z"
+        },
+        "modified": {
+          "time": "2026-02-17T07:12:51.000Z"
+        },
+        "_id": "35df583a06ef378df8540f6db2d36534",
+        "name": "Cậu Bé Mất Tích (Phần 1)",
+        "slug": "cau-be-mat-tich-phan-1",
+        "origin_name": "Stranger Things (Season 1)",
+        "alternative_names": [
+          "怪奇物语",
+          "Extraño al revés",
+          "უცნაური საქმეები",
+          "Παράξενα Πράγματα",
+          "Stranger Things: Keményebb leckék",
+          "اتفاقات عجیب",
+          "ストレンジャー・シングス",
+          "기묘한 이야기",
+          "Чудни Нешта",
+          "Cosas Extrañas",
+          "Странные вещи",
+          "Крайне странные события",
+          "Загадочные события",
+          "ОСД",
+          "Очень странные дела",
+          "أشياء غريبة",
+          "Zvláštne veci",
+          "Tuhaf Şeyler",
+          "Загадкові справи",
+          "Montauk",
+          "Cedar Lodge",
+          "Stranger Things"
+        ],
+        "content": "<p>Khi một cậu bé mất tích, một thị trấn nhỏ khám phá ra một bí ẩn liên quan đến các thử nghiệm tối mật, sức mạnh siêu nhiên đáng sợ và một cô bé lạ lùng.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20241219-1/96e77c1c955be8c5d163a70525b823d5.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251127-1/4e76c982472d25b28d2b8b0a177f79d7.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=b9EkMc79ZSU",
+        "time": "49 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2016,
+        "view": 243,
+        "actor": [
+          "Millie Bobby Brown",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Joe Keery",
+          "Winona Ryder",
+          "David Harbour",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Maya Hawke",
+          "Sadie Sink",
+          "Jamie Campbell Bower",
+          "Brett Gelman",
+          "Paul Reiser",
+          "Matthew Modine"
+        ],
+        "director": [
+          "Matt Duffer"
+        ],
+        "category": [
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/deP9kMab/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/deP9kMab/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/m6R4MNoo/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/m6R4MNoo/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/RFEAx2OG/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/RFEAx2OG/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/4rOKaIcA/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/4rOKaIcA/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/ZVKgnWrZ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/ZVKgnWrZ/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/675NVpn9/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/675NVpn9/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/SJnlnvYQ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/SJnlnvYQ/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260217/OvJ0qgdu/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260217/OvJ0qgdu/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/eMrQhses/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/eMrQhses/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/yAIeQK28/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/yAIeQK28/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/bMLS6ssd/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/bMLS6ssd/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/9GOe0ERm/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/9GOe0ERm/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/dt44QZBb/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/dt44QZBb/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/rJDxkKag/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/rJDxkKag/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/GHYwItQu/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/GHYwItQu/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 1) - Stranger Things (Season 1) - 2016 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/T9dfPeqG/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/T9dfPeqG/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "1610413",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7.3,
+          "vote_count": 90
+        },
+        "imdb": {
+          "id": "tt39307872",
+          "vote_average": 7.2,
+          "vote_count": 3118
+        },
+        "created": {
+          "time": "2026-01-13T22:50:44.000Z"
+        },
+        "modified": {
+          "time": "2026-01-13T23:19:16.000Z"
+        },
+        "_id": "fe53ff5f33342773a12c81d85fb0a090",
+        "name": "Cuộc phiêu lưu cuối: Hậu trường Cậu bé mất tích 5",
+        "slug": "cuoc-phieu-luu-cuoi-hau-truong-cau-be-mat-tich-5",
+        "origin_name": "One Last Adventure: The Making of Stranger Things 5",
+        "alternative_names": [
+          "Uma Última Aventura: A Criação de Stranger Things 5",
+          "One Last Adventure: The Making of Stranger Things 5"
+        ],
+        "content": "<p>Khám phá những năm tháng dày công và tài nghệ làm phim đằng sau mùa cuối cùng của loạt phim định hình cả một thế hệ do anh em nhà Duffer thực hiện.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20260113-1/034cc04d1192117bfbb69de5458a7689.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20260113-1/1a0b4de3c8003ec3f719894ce20cf9c6.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=bLxvdUroRic",
+        "time": "123 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2026,
+        "view": 169,
+        "actor": [
+          "Ross Duffer",
+          "Matt Duffer",
+          "Paul Dichter",
+          "Kate Trefry",
+          "Caitlin Schneiderhan",
+          "Shawn Levy",
+          "Lampton Enochs",
+          "Chris Trujillo",
+          "Jess Royal",
+          "Amy Parris",
+          "Jamie Campbell Bower",
+          "Caleb Heymann",
+          "Brett Jutkiewicz",
+          "Tudor Jones",
+          "Hilary Leavitt",
+          "Noah Schnapp",
+          "Caleb McLaughl"
+        ],
+        "director": [
+          "Martina Radwan"
+        ],
+        "category": [
+          {
+            "name": "Tài Liệu",
+            "slug": "tai-lieu",
+            "id": "1645fa23fa33651cef84428b0dcc2130"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Cuộc phiêu lưu cuối: Hậu trường Cậu bé mất tích 5 - One Last Adventure: The Making of Stranger Things 5 - 2026 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260114/LY3VmwXi/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260114/LY3VmwXi/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "66732",
+          "type": "tv",
+          "season": 5,
+          "vote_average": 8.6,
+          "vote_count": 21399
+        },
+        "imdb": {
+          "id": "tt4574334",
+          "vote_average": 8.6,
+          "vote_count": 1691532
+        },
+        "created": {
+          "time": "2025-11-27T11:47:01.000Z"
+        },
+        "modified": {
+          "time": "2026-01-01T10:48:08.000Z"
+        },
+        "_id": "2791cbf7a6b8b8c08804168ddcf1c172",
+        "name": "Cậu Bé Mất Tích (Phần 5)",
+        "slug": "cau-be-mat-tich-phan-5",
+        "origin_name": "Stranger Things (Season 5)",
+        "alternative_names": [
+          "怪奇物语",
+          "Extraño al revés",
+          "უცნაური საქმეები",
+          "Παράξενα Πράγματα",
+          "Stranger Things: Keményebb leckék",
+          "اتفاقات عجیب",
+          "ストレンジャー・シングス",
+          "기묘한 이야기",
+          "Чудни Нешта",
+          "Cosas Extrañas",
+          "Странные вещи",
+          "Крайне странные события",
+          "Загадочные события",
+          "ОСД",
+          "Очень странные дела",
+          "أشياء غريبة",
+          "Zvláštne veci",
+          "Tuhaf Şeyler",
+          "Загадкові справи",
+          "Montauk",
+          "Cedar Lodge",
+          "Stranger Things"
+        ],
+        "content": "<p>Khi một cậu bé mất tích, một thị trấn nhỏ khám phá ra một bí ẩn liên quan đến các thử nghiệm tối mật, sức mạnh siêu nhiên đáng sợ và một cô bé lạ lùng.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251127-1/04a8a61670f1faf048ebc3450d6ccdb5.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251127-1/88dfce03b997600f0a898945fe8facb2.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=D8Qxxq0Oh9M",
+        "time": "78 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 163,
+        "actor": [
+          "Millie Bobby Brown",
+          "Noah Schnapp",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Sadie Sink",
+          "David Harbour",
+          "Winona Ryder",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Joe Keery",
+          "Priah Ferguson",
+          "Maya Hawke",
+          "Brett Gelman",
+          "Jamie Campbell Bower",
+          "Nell Fisher",
+          "Amybeth McNu"
+        ],
+        "director": [
+          "Matt Duffer"
+        ],
+        "category": [
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/NoUDNYzy/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/NoUDNYzy/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/8am8mw20/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/8am8mw20/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/4rtaCnZ2/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/4rtaCnZ2/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/ffY9H7GS/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/ffY9H7GS/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/J2r4ZGpL/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/J2r4ZGpL/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/3d08cFWL/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/3d08cFWL/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/Rx89muZ4/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/Rx89muZ4/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260101/rLJU40AB/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260101/rLJU40AB/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/VdVcTjll/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/VdVcTjll/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/Xaex73oM/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/Xaex73oM/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/phZU5qEk/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/phZU5qEk/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251127/JudV0Ni1/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251127/JudV0Ni1/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/AFjYGQ1K/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/AFjYGQ1K/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/TPpFJBKF/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/TPpFJBKF/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251226/oxQZbDQo/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251226/oxQZbDQo/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Cậu Bé Mất Tích (Phần 5) - Stranger Things (Season 5) - 2025 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20260101/YyOnJ03e/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20260101/YyOnJ03e/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-02-05T21:15:10.000Z"
+        },
+        "modified": {
+          "time": "2024-03-07T05:11:49.000Z"
+        },
+        "_id": "173e2619a507a324eb10f969df13a372",
+        "name": "Hậu Trường Cậu Bé Mất Tích",
+        "slug": "hau-truong-cau-be-mat-tich",
+        "origin_name": "Beyond Stranger Things",
+        "alternative_names": [],
+        "content": "<p>Màn thảo luận về những tập mới nhất giữa dàn diễn viên và khách mời với người dẫn chương trình Jim Rash sẽ hé lộ những bí mật về bối cảnh của bộ phim Cậu bé mất tích 2!</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240205-1/cc61120dcfc1cd19d57025a0981513af.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240205-1/0a01c3b28eb8fe5f60cf176e9d052613.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "25 phút/tập",
+        "episode_current": "Hoàn Tất (7/7)",
+        "episode_total": 7,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2017,
+        "view": 87,
+        "actor": [
+          "Jim Rash",
+          "Matt Duffer",
+          "Ross Duffer"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/8Q2XvPlH/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/8Q2XvPlH/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/NFCF2XNT/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/NFCF2XNT/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/O42uyY5q/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/O42uyY5q/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/iKa2dPcq/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/iKa2dPcq/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/kgFkbNkm/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/kgFkbNkm/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/0UqWjzYe/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/0UqWjzYe/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Hậu Trường Cậu Bé Mất Tích - Beyond Stranger Things - 2017 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240209/yv5p8mWG/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240209/yv5p8mWG/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

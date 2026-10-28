@@ -15,7 +15,7 @@ function readMovies() {
   return ctx.movies.map(movie => ({ ...(ctx.window.movieCastIndex?.[movie.slug] || {}), ...movie }));
 }
 function validateMovies(movies) {
-  const errors = [], warnings = [], seen = new Set(), apiSeen = new Set();
+  const errors = [], warnings = [], seen = new Set(), apiSeen = new Map();
   if (!movies.length) errors.push("Kho phim đang rỗng.");
   const bySlug = new Map(movies.map(movie => [movie.slug, movie]));
   for (const movie of movies) {
@@ -28,8 +28,9 @@ function validateMovies(movies) {
     if (movie.country && (typeof movie.country !== "string" || /[,?\uFFFD]/.test(movie.country))) errors.push(`${label}: country phải là một quốc gia chính, kiểm tra lại mã hóa tiếng Việt.`);
     const legacyAlias = /^phim\/[a-z0-9_-]+$/.test(movie.slug || "") && /^[a-z0-9][a-z0-9_-]*$/.test(movie.apiSlug || "");
     if (!movie.slug || (!/^[a-z0-9][a-z0-9_-]*$/.test(movie.slug) && !legacyAlias)) errors.push(`${label}: slug không hợp lệ.`);
-    if (apiSeen.has(movie.apiSlug || movie.slug)) warnings.push(`${label}: trùng nguồn phát với một mục khác (giữ nguyên cả hai mục).`);
-    apiSeen.add(movie.apiSlug || movie.slug);
+    const provider=movie.apiSlug||movie.slug,identity=movie.duplicateOf||movie.slug;
+    if (apiSeen.has(provider)&&apiSeen.get(provider)!==identity) warnings.push(`${label}: trùng nguồn phát với một mục khác (giữ nguyên cả hai mục).`);
+    if(!apiSeen.has(provider))apiSeen.set(provider,identity);
     if (seen.has(movie.slug)) errors.push(`${label}: trùng slug.`);
     seen.add(movie.slug);
     if (typeof movie.title !== "string" || !movie.title.trim()) errors.push(`${label}: thiếu tên phim.`);

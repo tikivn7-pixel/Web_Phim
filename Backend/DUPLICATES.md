@@ -4,10 +4,10 @@
   "records": 3735,
   "visibleCards": 3677,
   "confirmedAliases": 58,
-  "candidatePairs": 171,
+  "candidatePairs": 175,
   "sourceChecks": 278,
   "decisions": {
-    "already-linked": 55,
+    "already-linked": 59,
     "strong-match": 0,
     "keep-separate": 116,
     "needs-review": 0
@@ -796,15 +796,35 @@ Explicit duplicate mapping already exists.
 https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang
 https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1
 
-## keep-separate — Dark Hole / Dark Hole (Season 1)
+## already-linked — Waiting For Rain / Endless Rain
 
-Different source original titles (may be separate seasons, parts or editions).
+Explicit duplicate mapping already exists.
 
-- `ho-den` — 2021; 12 episodes
-- `ho-toi-phan-1` — 2021; 12 episodes
+- `cho-em-den-ngay-mua` — 2021; 1 episodes; duplicateOf `neu-nhu-sau-con-mua`
+- `endless-rain` — 2021; 1 episodes; duplicateOf `neu-nhu-sau-con-mua`
 
-https://phimapi.com/phim/ho-den
-https://phimapi.com/phim/ho-toi-phan-1
+https://phimapi.com/phim/cho-em-den-ngay-mua
+https://phimapi.com/phim/endless-rain
+
+## already-linked — Waiting For Rain / Endless Rain
+
+Explicit duplicate mapping already exists.
+
+- `cho-em-den-ngay-mua` — 2021; 1 episodes; duplicateOf `neu-nhu-sau-con-mua`
+- `neu-nhu-sau-con-mua` — 2021; 1 episodes
+
+https://phimapi.com/phim/cho-em-den-ngay-mua
+https://phimapi.com/phim/neu-nhu-sau-con-mua
+
+## already-linked — Mouse / Mouse (Movie Version)
+
+Explicit duplicate mapping already exists.
+
+- `mouse-ke-san-nguoi` — 2021; 1 episodes; duplicateOf `mouse-ke-san-nguoi-ban-dien-anh`
+- `mouse-ke-san-nguoi-ban-dien-anh` — 2021; 1 episodes
+
+https://phimapi.com/phim/mouse-ke-san-nguoi
+https://phimapi.com/phim/mouse-ke-san-nguoi-ban-dien-anh
 
 ## already-linked — Bungo Stray Dogs Wan! / Bungo Stray Dogs WAN! (Season 1)
 
@@ -815,6 +835,76 @@ Explicit duplicate mapping already exists.
 
 https://phimapi.com/phim/dac-nhiem-tham-tu-wan
 https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1
+
+## already-linked — Haikyu!! Movie 3: Genius and Sense / Haikyuu!! Movie 3: Genius and Sense
+
+Explicit duplicate mapping already exists.
+
+- `haikyu-ban-dien-anh-3-thien-tai-troi-day` — 2017; 1 episodes
+- `thieu-nien-bong-chuyen-tai-nang-va-cam-giac` — 2017; 1 episodes; duplicateOf `haikyu-ban-dien-anh-3-thien-tai-troi-day`
+
+https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day
+https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day
+
+## already-linked — Rent-A-Girlfriend (Season 1) / Rent-a-Girlfriend
+
+Explicit duplicate mapping already exists.
+
+- `ban-gai-thue-phan-1` — 2020; 12 episodes
+- `dich-vu-thue-ban-gai` — 2020; 12 episodes; duplicateOf `ban-gai-thue-phan-1`
+
+https://phimapi.com/phim/ban-gai-thue-phan-1
+https://phimapi.com/phim/dich-vu-thue-ban-gai
+
+## already-linked — Tonikaku Kawaii (Season 1) / TONIKAWA: Over The Moon For You (Season 1)
+
+Explicit duplicate mapping already exists.
+
+- `du-sao-cung-de-thuong-mua-1` — 2020; 13 episodes
+- `du-sao-cung-de-thuong-phan-1` — 2020; 13 episodes; duplicateOf `du-sao-cung-de-thuong-mua-1`
+
+https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1
+https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1
+
+## already-linked — Batman: The Long Halloween 2 / Batman: The Long Halloween, Part Two
+
+Explicit duplicate mapping already exists.
+
+- `nguoi-doi-dem-truong-halloween-2` — 2021; 1 episodes; duplicateOf `nguoi-doi-dem-truong-halloween-phan-2`
+- `nguoi-doi-dem-truong-halloween-phan-2` — 2021; 1 episodes
+
+https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2
+https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2
+
+## already-linked — Biệt Đội Thiếu Niên Titan Xuất Kích Và Các Nữ Siêu Anh Hùng DC: Hỗn Loạn Trong Đa Vũ Trụ (Teen Titans Go! & DC Super Hero Girls: Mayhem In The Multiverse) / Teen Titans Go! & Các nữ siêu anh hùng DC: Mayhem trong Đa vũ trụ (Teen Titans Go! & DC Super Hero Girls: Mayhem in the Multiverse)
+
+Explicit duplicate mapping already exists.
+
+- `biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru` — 2022; 1 episodes; duplicateOf `teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru`
+- `teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru` — 2022; 1 episodes
+
+https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru
+https://phimapi.com/phim/teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru
+
+## already-linked — Kỷ Niệm 20 Năm Harry Potter: Trở Lại Hogwarts (Harry Potter 20th Anniversary: Return to Hogwarts) / Kỷ Niệm 20 Năm Harry Potter: Tựu Trường Hogwarts (Harry Potter 20th Anniversary: Return to Hogwarts)
+
+Explicit duplicate mapping already exists.
+
+- `ky-niem-20-nam-harry-potter-tro-lai-hogwarts` — 2022; 1 episodes
+- `ky-niem-20-nam-harry-potter-tuu-truong-hogwarts` — 2022; 1 episodes; duplicateOf `ky-niem-20-nam-harry-potter-tro-lai-hogwarts`
+
+https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tro-lai-hogwarts
+https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tuu-truong-hogwarts
+
+## keep-separate — Dark Hole / Dark Hole (Season 1)
+
+Different source original titles (may be separate seasons, parts or editions).
+
+- `ho-den` — 2021; 12 episodes
+- `ho-toi-phan-1` — 2021; 12 episodes
+
+https://phimapi.com/phim/ho-den
+https://phimapi.com/phim/ho-toi-phan-1
 
 ## keep-separate — Chained Soldier / Chained Soldier (Season 1)
 
@@ -846,16 +936,6 @@ Different source original titles (may be separate seasons, parts or editions).
 https://phimapi.com/phim/huu-nhan-so-ishi-okoshi-to-ayashiki-raihousha
 https://phimapi.com/phim/huu-nhan-so-phan-1
 
-## already-linked — Rent-A-Girlfriend (Season 1) / Rent-a-Girlfriend
-
-Explicit duplicate mapping already exists.
-
-- `ban-gai-thue-phan-1` — 2020; 12 episodes
-- `dich-vu-thue-ban-gai` — 2020; 12 episodes; duplicateOf `ban-gai-thue-phan-1`
-
-https://phimapi.com/phim/ban-gai-thue-phan-1
-https://phimapi.com/phim/dich-vu-thue-ban-gai
-
 ## keep-separate — Chief Of Staff (Season 1) / Chief Of Staff (Season 2)
 
 Different source original titles (may be separate seasons, parts or editions).
@@ -865,16 +945,6 @@ Different source original titles (may be separate seasons, parts or editions).
 
 https://phimapi.com/phim/phu-ta-phan-1
 https://phimapi.com/phim/phu-ta-phan-2
-
-## already-linked — Waiting For Rain / Endless Rain
-
-Explicit duplicate mapping already exists.
-
-- `cho-em-den-ngay-mua` — 2021; 1 episodes; duplicateOf `neu-nhu-sau-con-mua`
-- `neu-nhu-sau-con-mua` — 2021; 1 episodes
-
-https://phimapi.com/phim/cho-em-den-ngay-mua
-https://phimapi.com/phim/neu-nhu-sau-con-mua
 
 ## keep-separate — Miraculous Tales Of Ladybug & Cat Noir (Season 7) / Miraculous Tales Of Ladybug & Cat Noir (Season 8)
 
@@ -966,16 +1036,6 @@ Different source original titles (may be separate seasons, parts or editions).
 https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day
 https://phimapi.com/phim/haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien
 
-## already-linked — Haikyu!! Movie 3: Genius and Sense / Haikyuu!! Movie 3: Genius and Sense
-
-Explicit duplicate mapping already exists.
-
-- `haikyu-ban-dien-anh-3-thien-tai-troi-day` — 2017; 1 episodes
-- `thieu-nien-bong-chuyen-tai-nang-va-cam-giac` — 2017; 1 episodes; duplicateOf `haikyu-ban-dien-anh-3-thien-tai-troi-day`
-
-https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day
-https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day
-
 ## keep-separate — Haikyu!! Movie 4: Battle of Concepts / Haikyuu!! Movie 3: Genius and Sense
 
 Different source original titles (may be separate seasons, parts or editions).
@@ -1025,16 +1085,6 @@ Different source original titles (may be separate seasons, parts or editions).
 
 https://phimapi.com/phim/nguoi-doi-dem-truong-halloween
 https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2
-
-## already-linked — Batman: The Long Halloween 2 / Batman: The Long Halloween, Part Two
-
-Explicit duplicate mapping already exists.
-
-- `nguoi-doi-dem-truong-halloween-2` — 2021; 1 episodes; duplicateOf `nguoi-doi-dem-truong-halloween-phan-2`
-- `nguoi-doi-dem-truong-halloween-phan-2` — 2021; 1 episodes
-
-https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2
-https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2
 
 ## keep-separate — Alchemy Of Souls 1 / Alchemy Of Souls 2
 
@@ -1705,16 +1755,6 @@ Different source original titles (may be separate seasons, parts or editions).
 
 https://phimapi.com/phim/to-loveru
 https://phimapi.com/phim/to-loveru-motto
-
-## already-linked — Tonikaku Kawaii (Season 1) / TONIKAWA: Over The Moon For You (Season 1)
-
-Explicit duplicate mapping already exists.
-
-- `du-sao-cung-de-thuong-mua-1` — 2020; 13 episodes
-- `du-sao-cung-de-thuong-phan-1` — 2020; 13 episodes; duplicateOf `du-sao-cung-de-thuong-mua-1`
-
-https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1
-https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1
 
 ## keep-separate — Trigun Stampede / Trigun Stargaze
 

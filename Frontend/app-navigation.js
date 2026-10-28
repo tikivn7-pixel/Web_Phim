@@ -124,12 +124,17 @@
       input.value = ""; render(); dialog.showModal(); input.focus();
       return true;
     };
-    api.close = () => { if (dialog.open) dialog.close(); };
+    function restoreFocus() {
+      // A queued close event from an older opening must not steal focus from
+      // a palette that has already been opened again.
+      if(dialog.open)return;
+      const target=previousFocus;previousFocus=null;
+      if(target?.isConnected&&!blocked())target.focus({preventScroll:true});
+    }
+    api.close = () => { if (dialog.open) { dialog.close(); restoreFocus(); } };
     input.addEventListener("input", render);
-    dialog.addEventListener("close", () => {
-      if (previousFocus?.isConnected && !blocked()) previousFocus.focus({ preventScroll: true });
-      previousFocus = null;
-    });
+    dialog.addEventListener('close',restoreFocus);
+    dialog.addEventListener('cancel',event=>{event.preventDefault();api.close();});
     dialog.addEventListener("click", event => {
       if (event.target !== dialog) return;
       const box = dialog.getBoundingClientRect();

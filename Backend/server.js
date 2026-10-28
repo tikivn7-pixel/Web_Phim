@@ -11,8 +11,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Lấy JWT_SECRET từ .env hoặc dùng giá trị mặc định
-const JWT_SECRET = process.env.JWT_SECRET || "bi_mat_khong_the_tiet_lo_123";
+const signing=require('./auth-secret.cjs').resolveJWTSecret();
+const JWT_SECRET=signing.secret;
+if(signing.ephemeral)console.warn('JWT_SECRET is not configured. Login sessions will expire when this backend restarts. Set a persistent random secret in Backend/.env.');
 
 // Kết nối CSDL - đọc từ .env để chạy được cả ở local (XAMPP) lẫn trên cloud
 // (Railway/Render...). Nếu không có biến môi trường nào, mặc định dùng cấu
@@ -48,7 +49,7 @@ const authenticateToken = (req, res, next) => {
   const token = authHeader && authHeader.split(" ")[1];
   if (!token) return res.status(401).json({ message: "Thiếu Token xác thực!" });
 
-  jwt.verify(token, JWT_SECRET, (err, user) => {
+  jwt.verify(token, JWT_SECRET, {algorithms:['HS256']}, (err, user) => {
     if (err) return res.status(403).json({ message: "Token không hợp lệ!" });
     req.user = user;
     next();

@@ -7,8 +7,8 @@ function verifySite(){
   for(const page of pages){
     const html=fs.readFileSync(path.join(root,page),'utf8');
     assert.match(html,/<meta[^>]+name="viewport"/i,`${page}: missing viewport`);
-    for(const match of html.matchAll(/<(script|link)\b[^>]*?(?:src|href)="([^"]+)"[^>]*>/gi)){
-      const value=match[2].split(/[?#]/)[0];if(!value||/^(https?:)?\/\//i.test(value))continue;
+    for(const match of html.matchAll(/<(script|link|img)\b[^>]*?(?:src|href)="([^"]+)"[^>]*>/gi)){
+      const value=match[2].split(/[?#]/)[0];if(!value||/^(?:(?:https?:)?\/\/|data:)/i.test(value))continue;
       const file=path.resolve(root,value);assert.ok(file.startsWith(root+path.sep)&&fs.existsSync(file),`${page}: missing ${value}`);assets++;
     }
     for(const match of html.matchAll(/<a\b[^>]*href="([^"]+)"/gi)){

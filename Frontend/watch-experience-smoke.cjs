@@ -54,6 +54,12 @@ async function main() {
     assert.equal(await evaluate("document.getElementById('wp-prev-btn').disabled"), true);
     assert.equal(await evaluate("document.getElementById('wp-next-btn').disabled"), false);
     await evaluate("window.__canvasVideo=document.getElementById('video-player');window.__canvasVideo.dispatchEvent(new Event('loadedmetadata'));WatchExperience.open('episodes')");
+    await evaluate("window.__shortcutModal=document.createElement('div');window.__shortcutModal.style.cssText='display:none;position:fixed;inset:0';window.__shortcutModal.innerHTML='<div role=\"dialog\" aria-modal=\"true\">Test dialog</div>';document.body.append(window.__shortcutModal)");
+    await evaluate("document.activeElement?.blur();window.__shortcutStart=window.__canvasVideo.currentTime;document.body.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true}))");
+    assert.equal(await evaluate('window.__canvasVideo.currentTime'),await evaluate('Math.min(window.__shortcutStart+10,window.__canvasVideo.duration)'),'closed login dialog must not block seeking');
+    await evaluate("window.__shortcutModal.style.display='block';window.__shortcutPaused=window.__canvasVideo.currentTime;document.body.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true}))");
+    assert.equal(await evaluate('window.__canvasVideo.currentTime'),await evaluate('window.__shortcutPaused'),'visible login dialog must block playback shortcuts');
+    await evaluate("window.__shortcutModal.remove();window.__canvasVideo.currentTime=window.__shortcutStart");
     assert.deepEqual(await evaluate("[...document.querySelectorAll('#watch-episode-grid .ep-btn')].map(e=>e.textContent.trim())"), ['Tập 1', 'Tập 2', 'Tập 3']);
     assert.ok(await evaluate("document.getElementById('watch-side-panel').getBoundingClientRect().left>document.querySelector('.wp-player-card').getBoundingClientRect().right"), 'desktop rail must sit beside the canvas');
     assert.ok(await evaluate("document.querySelector('.wp-player-card').getBoundingClientRect().width>850"), 'desktop canvas should be wide');

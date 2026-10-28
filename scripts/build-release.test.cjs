@@ -15,3 +15,15 @@ test('asset versioning preserves queries/fragments and never rewrites external o
   assert.equal(assetURL('index.html?slug=x','abc'),'index.html?slug=x');assert.equal(assetURL('data:image/png;base64,abc','abc'),'data:image/png;base64,abc');assert.equal(assetURL('//cdn.example.com/app.js','abc'),'//cdn.example.com/app.js');
   assert.equal(assetURL('./app.js?v=old&__release=old#section','new'),'./app.js?v=old&__release=new#section');assert.equal(assetURL('app.js?__release=old'),'app.js');
 });
+test('Git line-ending conversion does not create a fake release and damaged stamps are repaired',t=>{
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'lauphim-release-test-'));
+  t.after(()=>{assert.ok(path.resolve(root).startsWith(path.resolve(os.tmpdir())+path.sep)&&path.basename(root).startsWith('lauphim-release-test-'));fs.rmSync(root,{recursive:true,force:true});});
+  const page=path.join(root,'index.html'),css=path.join(root,'app.css');
+  fs.writeFileSync(page,'<html>\n<head>\n<link href="app.css">\n</head>\n<body></body></html>\n');fs.writeFileSync(css,'body {\n color:red;\n}\n');
+  const first=buildRelease(root,'1.0.2');
+  for(const file of [page,css])fs.writeFileSync(file,fs.readFileSync(file,'utf8').replace(/\r?\n/g,'\r\n'));
+  assert.equal(buildRelease(root,'1.0.2').version,first.version);
+  fs.writeFileSync(page,fs.readFileSync(page,'utf8').replace(/<meta name="lauphim-release"[^>]*>\r?\n?/,'').replaceAll('__release='+first.version.slice(0,16),'__release=stale'));
+  const repaired=buildRelease(root,'1.0.2');assert.equal(repaired.version,first.version);assert.equal(repaired.publishedAt,first.publishedAt);
+  const html=fs.readFileSync(page,'utf8');assert.ok(html.includes('content="'+first.version+'"'));assert.ok(html.includes('__release='+first.version.slice(0,16)));assert.ok(!html.includes('__release=stale'));
+});

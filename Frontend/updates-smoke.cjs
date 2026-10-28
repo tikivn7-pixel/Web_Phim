@@ -31,7 +31,7 @@ async function main() {
   ` });
   await call('Emulation.setDeviceMetricsOverride', { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
   await call('Page.navigate', { url: origin + '/updates.html' });
-  await waitFor("document.getElementById('updates-checked').textContent==='1' && !EpisodeUpdates.service.busy()");
+  await waitFor("document.getElementById('updates-checked')?.textContent==='1' && !EpisodeUpdates.service.busy()");
   assert.equal(await evaluate("document.getElementById('updates-new-count').textContent"), '0');
   assert.equal(await evaluate('window.__providerCalls'), 1);
   await evaluate("document.querySelector('[data-filter=all]').click()");

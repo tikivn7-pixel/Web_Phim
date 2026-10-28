@@ -76,6 +76,11 @@ async function main() {
     await key('k', 'KeyK', 75, 2);
     await waitFor('!document.getElementById("app-quick-dialog").open');
     assert.equal(await evaluate('document.activeElement.id'), 'search-input');
+    await evaluate('AppNavigation.open();AppNavigation.close();AppNavigation.open()');
+    await pause(100);
+    assert.equal(await evaluate('document.activeElement.id'),'app-quick-search','an old close event must not steal focus from a reopened palette');
+    await evaluate('AppNavigation.close()');
+    assert.equal(await evaluate('document.activeElement.id'),'search-input','rapid open/close restores the original input');
     await evaluate('document.dispatchEvent(new KeyboardEvent("keydown",{key:"k",ctrlKey:true,isComposing:true,bubbles:true}))');
     assert.equal(await evaluate('document.getElementById("app-quick-dialog").open'), false, 'IME composition does not launch navigation');
     await evaluate('const other=document.createElement("dialog");other.id="other-modal";other.textContent="Another task";document.body.append(other);other.showModal()');

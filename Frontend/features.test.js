@@ -24,6 +24,11 @@ test("initial films have no invented update dates; new or modified films get rea
   assert.equal(unchanged.movies[0].updatedAt,update.movies[0].updatedAt);
   assert.equal(unchanged.movies[1].addedAt,update.movies[1].addedAt);
 });
+test('confirmed aliases sharing one provider do not raise false duplicate warnings',()=>{
+  const original=movie('original',{apiSlug:'shared'}),alias=movie('alias',{apiSlug:'shared',duplicateOf:'original',duplicateSources:['https://example.com/evidence']});
+  for(const rows of [[original,alias],[alias,original]])assert.equal(validateMovies(rows).warnings.filter(w=>w.includes('trùng nguồn')).length,0);
+  assert.equal(validateMovies([original,movie('unreviewed',{apiSlug:'shared'})]).warnings.filter(w=>w.includes('trùng nguồn')).length,1);
+});
 test("classification honors explicit types and otherwise uses genre and episode count", () => {
   assert.equal(classifyMovie(movie("anime",{episodes:1,genres:"Anime"})),"animation");
   assert.equal(classifyMovie(movie("single",{episodes:1})),"single");
@@ -101,7 +106,7 @@ test("real catalog country filters do not put Japanese anime in China or USA", a
   assert.ok(china.some(m=>m.slug==="nhat-nhan-chi-ha-phan-3-nguoi-tren-van-nguoi"));
   assert.ok(usa.some(m=>m.slug==="phim-super-mario-thien-ha"));
   assert.ok(usa.some(m=>m.slug==="sonic-prime-phan-3"));
-  assert.equal(movies.length,3735);
+  assert.equal(movies.length,3744);
 });
 function playback() {
   const ctx = {URLSearchParams};

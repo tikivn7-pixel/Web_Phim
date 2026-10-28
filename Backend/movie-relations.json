@@ -6704,6 +6704,84 @@
           "checkedAt": "2026-10-22T18:00:22.914Z"
         }
       ]
+    },
+    {
+      "id": "tmdb-tv-224263",
+      "label": "Stranger Things: Tales From '85 (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/224263",
+        "https://phimapi.com/phim/cau-be-mat-tich-chuyen-nam-85-phan-1",
+        "https://phimapi.com/phim/cau-be-mat-tich-chuyen-nam-85-phan-2"
+      ],
+      "members": [
+        {
+          "slug": "cau-be-mat-tich-chuyen-nam-85-phan-1",
+          "label": "Cậu Bé Mất Tích: Chuyện Năm 85 (Phần 1) (Stranger Things: Tales From '85 (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        },
+        {
+          "slug": "cau-be-mat-tich-chuyen-nam-85-phan-2",
+          "label": "Cậu Bé Mất Tích: Chuyện Năm 85 (Phần 2) (Stranger Things: Tales From '85 (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-66732",
+      "label": "Stranger Things (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/66732",
+        "https://phimapi.com/phim/cau-be-mat-tich-phan-1",
+        "https://phimapi.com/phim/cau-be-mat-tich-phan-2",
+        "https://phimapi.com/phim/cau-be-mat-tich-phan-3",
+        "https://phimapi.com/phim/cau-be-mat-tich-phan-4",
+        "https://phimapi.com/phim/cau-be-mat-tich-phan-5"
+      ],
+      "members": [
+        {
+          "slug": "cau-be-mat-tich-phan-1",
+          "label": "Cậu Bé Mất Tích (Phần 1) (Stranger Things (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        },
+        {
+          "slug": "cau-be-mat-tich-phan-2",
+          "label": "Cậu Bé Mất Tích (Phần 2) (Stranger Things (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        },
+        {
+          "slug": "cau-be-mat-tich-phan-3",
+          "label": "Cậu Bé Mất Tích (Phần 3) (Stranger Things (Season 3))",
+          "order": 2,
+          "season": 3,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        },
+        {
+          "slug": "cau-be-mat-tich-phan-4",
+          "label": "Cậu Bé Mất Tích (Phần 4) (Stranger Things (Season 4))",
+          "order": 3,
+          "season": 4,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        },
+        {
+          "slug": "cau-be-mat-tich-phan-5",
+          "label": "Cậu Bé Mất Tích (Phần 5) (Stranger Things (Season 5))",
+          "order": 4,
+          "season": 5,
+          "checkedAt": "2026-10-28T10:15:40.832Z"
+        }
+      ]
     }
   ],
   "standalone": [

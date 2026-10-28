@@ -63,7 +63,7 @@ async function main(){
     assert.ok(await evaluate('document.documentElement.scrollWidth<=innerWidth+1'),'dashboard mobile overflow');await screenshot('stats-mobile');
     await evaluate("document.getElementById('stats-timeline').scrollIntoView({block:'center',behavior:'instant'})");await screenshot('stats-timeline-mobile');
     failCatalog=true;await call('Page.reload');
-    await waitFor("!document.getElementById('stats-catalog-error')?.hidden&&document.getElementById('stats-personal-count').textContent==='4'");
+    await waitFor("document.getElementById('stats-catalog-error')?.hidden===false&&document.getElementById('stats-personal-count')?.textContent==='4'");
     failCatalog=false;await evaluate("document.getElementById('stats-retry').click()");await waitFor("document.getElementById('stats-catalog-error').hidden&&document.querySelector('#stats-genres a')");
     await evaluate("localStorage.setItem('movie_journal_v1','{broken');window.dispatchEvent(new Event('storage'))");
     assert.equal(await evaluate("document.getElementById('stats-storage-warning').hidden"),false);

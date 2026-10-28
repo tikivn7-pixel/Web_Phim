@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-27T13:08:54.962Z",
+  "generatedAt": "2026-10-27T13:50:10.940Z",
   "summary": {
     "records": 3735,
     "visibleCards": 3677,
     "confirmedAliases": 58,
-    "candidatePairs": 171,
+    "candidatePairs": 175,
     "sourceChecks": 278,
     "decisions": {
-      "already-linked": 55,
+      "already-linked": 59,
       "strong-match": 0,
       "keep-separate": 116,
       "needs-review": 0
@@ -22,6 +22,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -56,6 +57,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-provider"
       ],
@@ -154,6 +156,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -283,6 +286,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -316,6 +320,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -349,6 +354,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -446,6 +452,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -480,6 +487,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -513,6 +521,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -546,6 +555,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -579,6 +589,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -677,6 +688,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -711,6 +723,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -744,6 +757,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -841,6 +855,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -874,6 +889,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-cached-id"
       ],
@@ -908,6 +924,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-provider"
       ],
@@ -1167,6 +1184,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1264,6 +1282,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits",
         "same-cached-id"
@@ -1299,6 +1318,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -1333,6 +1353,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1430,6 +1451,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -1464,6 +1486,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1497,6 +1520,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1530,6 +1554,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1627,6 +1652,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1692,6 +1718,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-provider"
       ],
@@ -1758,6 +1785,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-provider",
         "same-cached-id"
@@ -1792,6 +1820,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -1825,6 +1854,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-cached-id"
       ],
@@ -1859,6 +1889,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-provider"
       ],
@@ -1957,6 +1988,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2022,6 +2054,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2055,6 +2088,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2088,6 +2122,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2121,6 +2156,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2154,6 +2190,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2187,6 +2224,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2220,6 +2258,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2253,6 +2292,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-cached-id"
       ],
@@ -2287,6 +2327,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits",
         "same-cached-id"
@@ -2322,6 +2363,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2355,6 +2397,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2388,6 +2431,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -2422,6 +2466,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title",
         "same-credits"
       ],
@@ -2456,6 +2501,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2489,6 +2535,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2522,6 +2569,7 @@
       ],
       "reasons": [
         "same-title",
+        "verified-identity",
         "same-first-season-title"
       ],
       "decision": "already-linked",
@@ -2554,6 +2602,7 @@
         "nha-tao-mau-toc-sieu-dang-phan-1"
       ],
       "reasons": [
+        "verified-identity",
         "same-first-season-title",
         "same-cached-id"
       ],
@@ -2579,6 +2628,336 @@
       "sources": [
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang",
         "https://phimapi.com/phim/nha-tao-mau-toc-sieu-dang-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "cho-em-den-ngay-mua",
+        "endless-rain"
+      ],
+      "reasons": [
+        "verified-identity"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cho-em-den-ngay-mua",
+          "title": "Waiting For Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "neu-nhu-sau-con-mua"
+        },
+        {
+          "slug": "endless-rain",
+          "title": "Endless Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "neu-nhu-sau-con-mua"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cho-em-den-ngay-mua",
+        "https://phimapi.com/phim/endless-rain"
+      ]
+    },
+    {
+      "slugs": [
+        "cho-em-den-ngay-mua",
+        "neu-nhu-sau-con-mua"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "cho-em-den-ngay-mua",
+          "title": "Waiting For Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "neu-nhu-sau-con-mua"
+        },
+        {
+          "slug": "neu-nhu-sau-con-mua",
+          "title": "Endless Rain",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/cho-em-den-ngay-mua",
+        "https://phimapi.com/phim/neu-nhu-sau-con-mua"
+      ]
+    },
+    {
+      "slugs": [
+        "mouse-ke-san-nguoi",
+        "mouse-ke-san-nguoi-ban-dien-anh"
+      ],
+      "reasons": [
+        "verified-identity"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "mouse-ke-san-nguoi",
+          "title": "Mouse",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "mouse-ke-san-nguoi-ban-dien-anh"
+        },
+        {
+          "slug": "mouse-ke-san-nguoi-ban-dien-anh",
+          "title": "Mouse (Movie Version)",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/mouse-ke-san-nguoi",
+        "https://phimapi.com/phim/mouse-ke-san-nguoi-ban-dien-anh"
+      ]
+    },
+    {
+      "slugs": [
+        "dac-nhiem-tham-tu-wan",
+        "dac-nhiem-tham-tu-wan-phan-1"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "dac-nhiem-tham-tu-wan",
+          "title": "Bungo Stray Dogs Wan!",
+          "year": 2021,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "dac-nhiem-tham-tu-wan-phan-1",
+          "title": "Bungo Stray Dogs WAN! (Season 1)",
+          "year": 2021,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "dac-nhiem-tham-tu-wan"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan",
+        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-credits",
+        "same-provider"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "haikyu-ban-dien-anh-3-thien-tai-troi-day",
+          "title": "Haikyu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation"
+        },
+        {
+          "slug": "thieu-nien-bong-chuyen-tai-nang-va-cam-giac",
+          "title": "Haikyuu!! Movie 3: Genius and Sense",
+          "year": 2017,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "haikyu-ban-dien-anh-3-thien-tai-troi-day"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day",
+        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day"
+      ]
+    },
+    {
+      "slugs": [
+        "ban-gai-thue-phan-1",
+        "dich-vu-thue-ban-gai"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-first-season-title",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ban-gai-thue-phan-1",
+          "title": "Rent-A-Girlfriend (Season 1)",
+          "year": 2020,
+          "episodes": 12,
+          "type": "animation"
+        },
+        {
+          "slug": "dich-vu-thue-ban-gai",
+          "title": "Rent-a-Girlfriend",
+          "year": 2020,
+          "episodes": 12,
+          "type": "series",
+          "duplicateOf": "ban-gai-thue-phan-1"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ban-gai-thue-phan-1",
+        "https://phimapi.com/phim/dich-vu-thue-ban-gai"
+      ]
+    },
+    {
+      "slugs": [
+        "du-sao-cung-de-thuong-mua-1",
+        "du-sao-cung-de-thuong-phan-1"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-cached-id"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "du-sao-cung-de-thuong-mua-1",
+          "title": "Tonikaku Kawaii (Season 1)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "animation"
+        },
+        {
+          "slug": "du-sao-cung-de-thuong-phan-1",
+          "title": "TONIKAWA: Over The Moon For You (Season 1)",
+          "year": 2020,
+          "episodes": 13,
+          "type": "series",
+          "duplicateOf": "du-sao-cung-de-thuong-mua-1"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1",
+        "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1"
+      ]
+    },
+    {
+      "slugs": [
+        "nguoi-doi-dem-truong-halloween-2",
+        "nguoi-doi-dem-truong-halloween-phan-2"
+      ],
+      "reasons": [
+        "verified-identity",
+        "same-credits"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-2",
+          "title": "Batman: The Long Halloween 2",
+          "year": 2021,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "nguoi-doi-dem-truong-halloween-phan-2"
+        },
+        {
+          "slug": "nguoi-doi-dem-truong-halloween-phan-2",
+          "title": "Batman: The Long Halloween, Part Two",
+          "year": 2021,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2",
+        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"
+      ]
+    },
+    {
+      "slugs": [
+        "biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru",
+        "teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru"
+      ],
+      "reasons": [
+        "verified-identity"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru",
+          "title": "Biệt Đội Thiếu Niên Titan Xuất Kích Và Các Nữ Siêu Anh Hùng DC: Hỗn Loạn Trong Đa Vũ Trụ (Teen Titans Go! & DC Super Hero Girls: Mayhem In The Multiverse)",
+          "year": 2022,
+          "episodes": 1,
+          "type": "animation",
+          "duplicateOf": "teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru"
+        },
+        {
+          "slug": "teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru",
+          "title": "Teen Titans Go! & Các nữ siêu anh hùng DC: Mayhem trong Đa vũ trụ (Teen Titans Go! & DC Super Hero Girls: Mayhem in the Multiverse)",
+          "year": 2022,
+          "episodes": 1,
+          "type": "animation"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/biet-doi-thieu-nien-titan-xuat-kich-va-cac-nu-sieu-anh-hung-dc-hon-loan-trong-da-vu-tru",
+        "https://phimapi.com/phim/teen-titans-go-cac-nu-sieu-anh-hung-dc-mayhem-trong-da-vu-tru"
+      ]
+    },
+    {
+      "slugs": [
+        "ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+        "ky-niem-20-nam-harry-potter-tuu-truong-hogwarts"
+      ],
+      "reasons": [
+        "verified-identity"
+      ],
+      "decision": "already-linked",
+      "reason": "Explicit duplicate mapping already exists.",
+      "movies": [
+        {
+          "slug": "ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+          "title": "Kỷ Niệm 20 Năm Harry Potter: Trở Lại Hogwarts (Harry Potter 20th Anniversary: Return to Hogwarts)",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single"
+        },
+        {
+          "slug": "ky-niem-20-nam-harry-potter-tuu-truong-hogwarts",
+          "title": "Kỷ Niệm 20 Năm Harry Potter: Tựu Trường Hogwarts (Harry Potter 20th Anniversary: Return to Hogwarts)",
+          "year": 2022,
+          "episodes": 1,
+          "type": "single",
+          "duplicateOf": "ky-niem-20-nam-harry-potter-tro-lai-hogwarts"
+        }
+      ],
+      "sources": [
+        "https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tro-lai-hogwarts",
+        "https://phimapi.com/phim/ky-niem-20-nam-harry-potter-tuu-truong-hogwarts"
       ]
     },
     {
@@ -2610,39 +2989,6 @@
       "sources": [
         "https://phimapi.com/phim/ho-den",
         "https://phimapi.com/phim/ho-toi-phan-1"
-      ]
-    },
-    {
-      "slugs": [
-        "dac-nhiem-tham-tu-wan",
-        "dac-nhiem-tham-tu-wan-phan-1"
-      ],
-      "reasons": [
-        "same-first-season-title",
-        "same-cached-id"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "dac-nhiem-tham-tu-wan",
-          "title": "Bungo Stray Dogs Wan!",
-          "year": 2021,
-          "episodes": 12,
-          "type": "animation"
-        },
-        {
-          "slug": "dac-nhiem-tham-tu-wan-phan-1",
-          "title": "Bungo Stray Dogs WAN! (Season 1)",
-          "year": 2021,
-          "episodes": 12,
-          "type": "series",
-          "duplicateOf": "dac-nhiem-tham-tu-wan"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan",
-        "https://phimapi.com/phim/dac-nhiem-tham-tu-wan-phan-1"
       ]
     },
     {
@@ -2740,39 +3086,6 @@
     },
     {
       "slugs": [
-        "ban-gai-thue-phan-1",
-        "dich-vu-thue-ban-gai"
-      ],
-      "reasons": [
-        "same-first-season-title",
-        "same-cached-id"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "ban-gai-thue-phan-1",
-          "title": "Rent-A-Girlfriend (Season 1)",
-          "year": 2020,
-          "episodes": 12,
-          "type": "animation"
-        },
-        {
-          "slug": "dich-vu-thue-ban-gai",
-          "title": "Rent-a-Girlfriend",
-          "year": 2020,
-          "episodes": 12,
-          "type": "series",
-          "duplicateOf": "ban-gai-thue-phan-1"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/ban-gai-thue-phan-1",
-        "https://phimapi.com/phim/dich-vu-thue-ban-gai"
-      ]
-    },
-    {
-      "slugs": [
         "phu-ta-phan-1",
         "phu-ta-phan-2"
       ],
@@ -2800,38 +3113,6 @@
       "sources": [
         "https://phimapi.com/phim/phu-ta-phan-1",
         "https://phimapi.com/phim/phu-ta-phan-2"
-      ]
-    },
-    {
-      "slugs": [
-        "cho-em-den-ngay-mua",
-        "neu-nhu-sau-con-mua"
-      ],
-      "reasons": [
-        "same-credits"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "cho-em-den-ngay-mua",
-          "title": "Waiting For Rain",
-          "year": 2021,
-          "episodes": 1,
-          "type": "single",
-          "duplicateOf": "neu-nhu-sau-con-mua"
-        },
-        {
-          "slug": "neu-nhu-sau-con-mua",
-          "title": "Endless Rain",
-          "year": 2021,
-          "episodes": 1,
-          "type": "single"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/cho-em-den-ngay-mua",
-        "https://phimapi.com/phim/neu-nhu-sau-con-mua"
       ]
     },
     {
@@ -3117,39 +3398,6 @@
     },
     {
       "slugs": [
-        "haikyu-ban-dien-anh-3-thien-tai-troi-day",
-        "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
-      ],
-      "reasons": [
-        "same-credits",
-        "same-provider"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "haikyu-ban-dien-anh-3-thien-tai-troi-day",
-          "title": "Haikyu!! Movie 3: Genius and Sense",
-          "year": 2017,
-          "episodes": 1,
-          "type": "animation"
-        },
-        {
-          "slug": "thieu-nien-bong-chuyen-tai-nang-va-cam-giac",
-          "title": "Haikyuu!! Movie 3: Genius and Sense",
-          "year": 2017,
-          "episodes": 1,
-          "type": "animation",
-          "duplicateOf": "haikyu-ban-dien-anh-3-thien-tai-troi-day"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day",
-        "https://phimapi.com/phim/haikyu-ban-dien-anh-3-thien-tai-troi-day"
-      ]
-    },
-    {
-      "slugs": [
         "haikyu-ban-dien-anh-4-huyen-thoai-xuat-hien",
         "thieu-nien-bong-chuyen-tai-nang-va-cam-giac"
       ],
@@ -3303,38 +3551,6 @@
       "sources": [
         "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween",
         "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2"
-      ]
-    },
-    {
-      "slugs": [
-        "nguoi-doi-dem-truong-halloween-2",
-        "nguoi-doi-dem-truong-halloween-phan-2"
-      ],
-      "reasons": [
-        "same-credits"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "nguoi-doi-dem-truong-halloween-2",
-          "title": "Batman: The Long Halloween 2",
-          "year": 2021,
-          "episodes": 1,
-          "type": "single",
-          "duplicateOf": "nguoi-doi-dem-truong-halloween-phan-2"
-        },
-        {
-          "slug": "nguoi-doi-dem-truong-halloween-phan-2",
-          "title": "Batman: The Long Halloween, Part Two",
-          "year": 2021,
-          "episodes": 1,
-          "type": "animation"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-2",
-        "https://phimapi.com/phim/nguoi-doi-dem-truong-halloween-phan-2"
       ]
     },
     {
@@ -5413,38 +5629,6 @@
       "sources": [
         "https://phimapi.com/phim/to-loveru",
         "https://phimapi.com/phim/to-loveru-motto"
-      ]
-    },
-    {
-      "slugs": [
-        "du-sao-cung-de-thuong-mua-1",
-        "du-sao-cung-de-thuong-phan-1"
-      ],
-      "reasons": [
-        "same-cached-id"
-      ],
-      "decision": "already-linked",
-      "reason": "Explicit duplicate mapping already exists.",
-      "movies": [
-        {
-          "slug": "du-sao-cung-de-thuong-mua-1",
-          "title": "Tonikaku Kawaii (Season 1)",
-          "year": 2020,
-          "episodes": 13,
-          "type": "animation"
-        },
-        {
-          "slug": "du-sao-cung-de-thuong-phan-1",
-          "title": "TONIKAWA: Over The Moon For You (Season 1)",
-          "year": 2020,
-          "episodes": 13,
-          "type": "series",
-          "duplicateOf": "du-sao-cung-de-thuong-mua-1"
-        }
-      ],
-      "sources": [
-        "https://phimapi.com/phim/du-sao-cung-de-thuong-mua-1",
-        "https://phimapi.com/phim/du-sao-cung-de-thuong-phan-1"
       ]
     },
     {

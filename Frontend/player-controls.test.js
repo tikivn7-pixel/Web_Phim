@@ -62,6 +62,13 @@ test("seek targets stay finite before metadata and within the actual duration", 
   assert.equal(Controls.sleepRemaining(160001, 100000), 61); assert.equal(Controls.sleepRemaining(1, 2), 0);
   assert.equal(Controls.sleepRemaining(0, 2), null);
 });
+test('hidden login dialogs do not disable playback shortcuts but visible dialogs do',()=>{
+  const event={key:'k',target:{closest:()=>null}};
+  for(const [rects,visibility,expected]of [[[], 'visible',false],[[{}],'visible',true],[[{}],'hidden',false]]){
+    const doc={querySelectorAll:()=>[{getClientRects:()=>rects}],defaultView:{getComputedStyle:()=>({visibility})}};
+    assert.equal(Controls.shouldIgnoreShortcut(event,doc),expected);
+  }
+});
 test("speed and native volume/rate changes persist across episodes", () => {
   const storage = memory(), first = fixture({ storage });
   first.control.speed.value = "1.75"; first.control.speed.dispatchEvent(new Event("change"));

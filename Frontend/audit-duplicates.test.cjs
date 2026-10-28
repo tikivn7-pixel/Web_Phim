@@ -16,10 +16,14 @@ test('source checks reject wrong identities and store fingerprints without strea
   assert.throws(()=>evidence(payload,'b'));
   const result=evidence(payload,'a');assert.equal(result.streamHashes[0].length,64);assert.deepEqual(result.episodeNames,['1']);assert.ok(!JSON.stringify(result).includes('secret'));
 });
+test('explicit duplicate decisions remain in the audit even when translated titles differ',()=>{
+  const pairs=candidates([{slug:'original',title:'Original title'},{slug:'translation',title:'Completely different label',duplicateOf:'original'}]);
+  assert.equal(pairs.length,1);assert.deepEqual(pairs[0].slugs,['original','translation']);assert.ok(pairs[0].reasons.includes('verified-identity'));
+});
 test('all reviewed aliases retain detail records, search terms and a visible canonical card',()=>{
   const movies=require('./catalog-tools').readMovies(),result=artifacts(movies),cards=decode(result.index),bySlug=new Map(cards.map(movie=>[movie.slug,movie]));
   const decisions=require('../Backend/duplicate-decisions.json');
-  assert.equal(movies.length,3735);assert.equal(cards.length,3677);assert.equal(Object.keys(result.index.aliases).length,58);
+  assert.equal(movies.length,3744);assert.equal(cards.length,3686);assert.equal(Object.keys(result.index.aliases).length,58);
   for(const group of decisions.groups)for(const slug of group.aliases){
     assert.ok(bySlug.has(group.canonical));assert.ok(!bySlug.has(slug));
     assert.equal(result.index.aliases[slug].duplicateOf,group.canonical);
