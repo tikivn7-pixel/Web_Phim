@@ -1,0 +1,1187 @@
+{
+  "checkedAt": "2026-10-28T14:59:43.141Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "157336",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.5,
+          "vote_count": 40209
+        },
+        "imdb": {
+          "id": "tt0816692",
+          "vote_average": 8.7,
+          "vote_count": 2516752
+        },
+        "created": {
+          "time": "2023-10-21T16:11:47.000Z"
+        },
+        "modified": {
+          "time": "2025-03-02T02:35:40.000Z"
+        },
+        "_id": "ac1ad983e08ad3304a97e147f522747e",
+        "name": "Hố Đen Tử Thần",
+        "slug": "ho-den-tu-than",
+        "origin_name": "Interstellar",
+        "alternative_names": [
+          "星际穿越",
+          "ইন্টারস্টেলার",
+          "星際啟示錄",
+          "Interestelar",
+          "Csillagok Között",
+          "インターステラー",
+          "ინტერსტელარი",
+          "Hố Đen Tử Thần",
+          "Ulduzlararası",
+          "Interstellaire",
+          "Интерстеллар",
+          "Интерстелар",
+          "بين النجوم",
+          "اولدوزلار آراسی",
+          "Інтэрстэлар",
+          "میان‌ ستاره‌ ای",
+          "इंटरस्टेलर",
+          "ਇੰਟਰਸਟੈਲਰ",
+          "Tähtedevaheline",
+          "Միջաստղային ճամփորդություն",
+          "בין כוכבים",
+          "ვარსკვლავთშორისი",
+          "Tarp žvaigždžių",
+          "ഇന്റർസ്റ്റെല്ലാർ",
+          "قائم بين النجوم",
+          "اینتر استلار",
+          "Одод хооронд",
+          "इन्टरस्टेलर",
+          "Interstellar: Călătorind Prin Univers",
+          "Medzvezdje",
+          "இன்டர்‌ஸ்டெலர்",
+          "Інтерстеллар",
+          "انٹرسٹیلر",
+          "Međuzvjezdani",
+          "Yıldızlararası",
+          "Међузвездани",
+          "ఇంటర్ స్టెల్లర్",
+          "อินเตอร์สเตลลาร์ ทะยานดาวกู้โลก",
+          "ကြယ်တာရာကြားဝယ်",
+          "인터스텔라",
+          "星際效應",
+          "Ինտերստելեր",
+          "در میان ستارگان",
+          "Interstellar"
+        ],
+        "content": "<p>Interstellar nói về chuyến hành trình đi tìm một hành tinh mới cho loài người trú ngụ khi mà Trái Đất dần dần không còn là nơi an toàn và sự sống thì đang chết dần với những dịch bệnh trên các loại cây lương thực, đe dọa đến sự tồn tại của loài người một cách mạnh mẽ. Chúng ta sẽ đi theo hành trình của phi hành đoàn gồm Copper, Amelia cùng các thành viên khác trong việc giải cứu các phi hành gia khác đã lên đường khám phá các hành tinh mới để tìm ra hành tinh mới cho loài người trú ngụ</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250302-1/6012710a981edf1b6209bdb7fa82d1a6.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250302-1/4cee31c3afd0fbfd11ed4f14b1bfd816.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=QqSp_dwslro",
+        "time": "169 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 272,
+        "actor": [
+          "Matthew McConaughey",
+          "Anne Hathaway",
+          "Michael Caine",
+          "Jessica Chastain",
+          "Casey Affleck",
+          "Wes Bentley",
+          "Topher Grace",
+          "Mackenzie Foy",
+          "Ellen Burstyn",
+          "John Lithgow",
+          "Bill Irwin",
+          "David Gyasi",
+          "Timothée Chalamet",
+          "Matt Damon",
+          "Josh Stewart",
+          "Leah Cairns",
+          "Liam Dickinson",
+          "F"
+        ],
+        "director": [
+          "Christopher Nolan"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Anh",
+            "slug": "anh",
+            "id": "932bbaca386ee0436ad0159117eabae4"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Hố Đen Tử Thần - Interstellar - 2014 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250302/eUGu2byt/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250302/eUGu2byt/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Hố Đen Tử Thần - Interstellar - 2014 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250302/BLbAWQOK/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250302/BLbAWQOK/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "839033",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.5,
+          "vote_count": 873
+        },
+        "imdb": {
+          "id": "tt14824600",
+          "vote_average": 6.3,
+          "vote_count": 37877
+        },
+        "created": {
+          "time": "2025-01-06T15:54:18.000Z"
+        },
+        "modified": {
+          "time": "2025-06-09T02:12:44.000Z"
+        },
+        "_id": "6b04380b67c55d6075bc2f0a9534f0cd",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn: Cuộc Chiến Của Rohirrim",
+        "slug": "chua-te-cua-nhung-chiec-nhan-cuoc-chien-cua-rohirrim",
+        "origin_name": "The Lord Of The Rings: The War Of The Rohirrim",
+        "alternative_names": [
+          "Ringenes Herre: Krigen om Rohan",
+          "洛汗之战",
+          "The Lord of the Rings: Rohan no Tatakai",
+          "映画『ロード・オブ・ザ・リング ローハンの戦い』",
+          "Władca Pierścieni Wojna Rohirrimów",
+          "Le Seigneur des Anneaux : La Guerre des Rohirrim",
+          "The Lord of the Rings: The War of the Rohirrim"
+        ],
+        "content": "<p>Lấy bối cảnh 183 năm trước những sự kiện trong bộ ba phim gốc, “Chúa Tể Của Những Chiếc Nhẫn: Cuộc Chiến Của Rohirrim&quot; kể về số phận của Gia tộc của Helm Hammerhand, vị vua huyền thoại của Rohan. Cuộc tấn công bất ngờ của Wulf, lãnh chúa xảo trá và tàn nhẫn của tộc Dunlending, nhằm báo thù cho cái chết của cha hắn, đã buộc Helm và thần dân của ngài phải chống cự trong pháo đài cổ Hornburg - một thành trì vững chãi sau này được biết đến với tên gọi Helm&quot;s Deep. Tình thế ngày càng tuyệt vọng, Héra, con gái của Helm, phải dốc hết sức dẫn dắt cuộc chiến chống lại kẻ địch nguy hiểm, quyết tâm tiêu diệt bọn chúng.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250608-1/10cd211aebedd94e716d0acb30b78124.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250106-1/0204e0f472f614a6a5f899b4abfb5fcd.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=gCUg6Td5fgQ",
+        "time": "134 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2024,
+        "view": 123,
+        "actor": [
+          "Brian Cox",
+          "Gaia Wise",
+          "Luke Pasqualino",
+          "Laurence Ubong Williams",
+          "Lorraine Ashbourne",
+          "Miranda Otto",
+          "Shaun Dooley",
+          "Benjamin Wainwright",
+          "Yazdan Qafouri",
+          "Michael Wildman",
+          "Janine Duvitski",
+          "Bilal Hasna",
+          "Jude Akuwudike",
+          "Billy Boyd",
+          "Dominic Monaghan",
+          "Alex Jordan"
+        ],
+        "director": [
+          "Kenji Kamiyama"
+        ],
+        "category": [
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn: Cuộc Chiến Của Rohirrim - The Lord Of The Rings: The War Of The Rohirrim - 2024 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250608/F53QdNIs/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250608/F53QdNIs/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "122",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.5,
+          "vote_count": 26778
+        },
+        "imdb": {
+          "id": "tt0167260",
+          "vote_average": 9,
+          "vote_count": 2161991
+        },
+        "created": {
+          "time": "2023-10-18T14:18:31.000Z"
+        },
+        "modified": {
+          "time": "2025-02-19T16:27:53.000Z"
+        },
+        "_id": "44cd7a8f7f9f85129b9953950665064d",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn: Sự Trở Lại Của Nhà Vua",
+        "slug": "chua-te-cua-nhung-chiec-nhan-su-tro-lai-cua-nha-vua",
+        "origin_name": "The Lord of the Rings: The Return of the King",
+        "alternative_names": [
+          "The Return of the King",
+          "Sagan om konungens återkomst",
+          "Le Seigneur des Anneaux: Le Retour du Roi",
+          "Le Retour du Roi",
+          "The Lord of the Rings 3: The Return of the King",
+          "魔戒三部曲：王者再臨",
+          "魔戒3：王者归来",
+          "Господар на прстените: Враќањето на кралот",
+          "The Lord of the Rings III: The Return of the King",
+          "ESDLA",
+          "El señor de los anillos: El retorno del rey",
+          "LOTR: The Return Of The King",
+          "Chúa Tể Của Những Chiếc Nhẫn 3: Hai Tòa Tháp",
+          "ロード・オブ・ザ・リング／王の帰還：2003",
+          "The Lord of the Rings The Return of the King",
+          "Üzüklərin Hökmdarı:Kralın Qayıdışı",
+          "指环王3：王者无敌",
+          "LOTR3 - The Return of the King",
+          "ロード・オブ・ザ・リング／王の帰還",
+          "指环王3：王者归来",
+          "Le Seigneur des anneaux : Le Retour du roi - version longue",
+          "Der Herr der Ringe - Die Rueckkehr des Koenigs",
+          "Մատանիների Տիրակալը 3",
+          "Yüzüklerin Efendisi: Kralın Dönüşü",
+          "Властелин колец 3",
+          "Il Signore degli Anelli: Il Ritorno del Re",
+          "The Lord of the Rings: The Return of the King"
+        ],
+        "content": "<p>Sauron huy động toàn lực cho trận chiến khốc liệt cuối cùng, tấn công vào Gondor – vùng đất huyết mạch của loài người. Gondor dưới sự lãnh đạo của vị vua nhu nhược trở nên quá mong manh và nguy ngập. Đó chính là lúc những người anh hùng phát huy hết khả năng của mình. Cùng với sự hỗ trợ của các chiến binh Rohan, lực lượng những hồn ma bị nguyền rủa trong khe núi, Aragorn đã thống lĩnh những người Gondor chống lại Sauron, anh đã thực hiện sứ mệnh mà số phận giao phó cho mình, Aragorn sinh ra để trở thành Vua của Gondor, anh đã chứng minh điều đó. Cùng lúc đó, Frodo và Sam tiếp tục dấn sâu vào vùng đất ma quỷ đầy hiểm nguy để thực thi sứ mạng của mình, sứ mạng tiêu hủy Chiếc Nhẫn Quyền Lực. Có thể nói Sự Trở Lại Của Nhà Vua Phim là phần có nội dung hấp dẫn cùng những màn chiến đấu cực hay, cực kỳ hoành tráng.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250219-1/55705980dbf57659fd445f17e7024ad2.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250219-1/66cc63a6f719e7ad25992639b050ab57.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=zckJCxYxn1g",
+        "time": "201 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2003,
+        "view": 227,
+        "actor": [
+          "Elijah Wood",
+          "Ian McKellen",
+          "Viggo Mortensen",
+          "Sean Astin",
+          "Andy Serkis",
+          "Dominic Monaghan",
+          "Billy Boyd",
+          "John Noble",
+          "David Wenham",
+          "Miranda Otto",
+          "Bernard Hill",
+          "John Rhys-Davies",
+          "Orlando Bloom",
+          "Hugo Weaving",
+          "Liv Tyler",
+          "Cate Blanchett",
+          "Karl Urban",
+          "Ian Holm",
+          "Sean B"
+        ],
+        "director": [
+          "Peter Jackson"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          }
+        ],
+        "country": [
+          {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "id": "c51ed580ea5e20c910d951f692512b4d"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn: Sự Trở Lại Của Nhà Vua - The Lord of the Rings: The Return of the King - 2003 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250219/j2qdu6qi/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250219/j2qdu6qi/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "121",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.4,
+          "vote_count": 24071
+        },
+        "imdb": {
+          "id": "tt0167261",
+          "vote_average": 8.8,
+          "vote_count": 1954618
+        },
+        "created": {
+          "time": "2023-10-18T14:05:37.000Z"
+        },
+        "modified": {
+          "time": "2025-02-19T16:27:40.000Z"
+        },
+        "_id": "05546b0e38ab9175cd905eebcc6ebb76",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn: Hai Tòa Tháp",
+        "slug": "chua-te-cua-nhung-chiec-nhan-hai-toa-thap",
+        "origin_name": "The Lord of the Rings: The Two Towers",
+        "alternative_names": [
+          "Le Seigneur des Anneaux: Les Deux Tours",
+          "The Lord of the Rings 2: The Two Towers",
+          "魔戒二部曲：雙城奇謀",
+          "Господар на прстените: Двете кули",
+          "ศึกหอคอยคู่กู้พิภพ",
+          "The Lord of the Rings II: The Two Towers",
+          "El señor de los anillos: Las dos torres",
+          "Chúa Tể Của Những Chiếc Nhẫn 2: Hai Tòa Tháp",
+          "ロード・オブ・ザ・リング／二つの塔：2002",
+          "Üzüklərin Hökmdarı:İki Qala",
+          "Yüzüklerin Efendisi: İki Kule",
+          "ロード・オブ・ザ・リング／二つの塔",
+          "The Lord of the Rings The Two Towers",
+          "LOTR2 - The Two Towers",
+          "魔戒2 雙城奇謀",
+          "Le Seigneur des anneaux Les Deux Tours - version Longue",
+          "Մատանիների Տիրակալը 2",
+          "Der Herr der Ringe - Die zwei Tuerme",
+          "Властелин колец 2",
+          "Il Signore degli Anelli: Le due Torri",
+          "The Lord of the Rings: The Two Towers"
+        ],
+        "content": "<p>Cuộc hành trình đi hủy diệt chiếc nhẫn tiếp tục với bao nguy hiểm chờ đợi Frodo ở phía trước. Lần này, anh và Sam có một bạn đồng hành mới là Gollum. Trong khi đó, Gandalf may mắn thoát chết, hơn nữa sức mạnh của ông còn vượt xa hơn rất nhiều. Ông cùng Aragon, Legolas và Gimli cùng những thần rừng tìm cách phá hủy âm mưu của Saruman. Tiếp nối thành công của phần 1 The Lord Of The Ring 2 kế thừa và đan xen giữa hai hệ thống nhân vật cũ và mới làm cho nội dung phim càng thêm lôi cuốn người xem. The Lord Of The Ring 2 cũng mang về 2 Giải Oscar cho hạng mục âm thanh và kĩ xảo.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250219-1/443c06cdcf69accdf1015367e7190ee4.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250219-1/5d70b0eaa932fa04eeccbdf588913a87.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=HUkDW37WaI0",
+        "time": "179 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2002,
+        "view": 253,
+        "actor": [
+          "Elijah Wood",
+          "Ian McKellen",
+          "Viggo Mortensen",
+          "Sean Astin",
+          "Andy Serkis",
+          "John Rhys-Davies",
+          "Orlando Bloom",
+          "Bernard Hill",
+          "Miranda Otto",
+          "Dominic Monaghan",
+          "Billy Boyd",
+          "Christopher Lee",
+          "Cate Blanchett",
+          "Liv Tyler",
+          "Hugo Weaving",
+          "David Wenham",
+          "Brad Dourif",
+          "Karl Urban"
+        ],
+        "director": [
+          "Peter Jackson"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          }
+        ],
+        "country": [
+          {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "id": "c51ed580ea5e20c910d951f692512b4d"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn: Hai Tòa Tháp - The Lord of the Rings: The Two Towers - 2002 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250219/7xthxh9F/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250219/7xthxh9F/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "120",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.4,
+          "vote_count": 27781
+        },
+        "imdb": {
+          "id": "tt0120737",
+          "vote_average": 8.9,
+          "vote_count": 2203785
+        },
+        "created": {
+          "time": "2023-10-18T13:19:58.000Z"
+        },
+        "modified": {
+          "time": "2025-02-19T16:27:31.000Z"
+        },
+        "_id": "0b1ec366924b26fc98fa7b71a9c249cf",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn: Hiệp Hội Nhẫn Thần",
+        "slug": "chua-te-cua-nhung-chiec-nhan-hiep-hoi-nhan-than",
+        "origin_name": "The Lord of the Rings: The Fellowship of the Ring",
+        "alternative_names": [
+          "Sagan om ringen: Härskarringen",
+          "Le Seigneur des Anneaux: La Communauté de l'Anneau",
+          "指环王1：护戒使者",
+          "Господар на прстените: Дружината на Прстенот",
+          "อภินิหารแหวนครองพิภพ",
+          "El señor de los anillos: La comunidad del anillo",
+          "魔戒首部曲：魔戒现身",
+          "Der Herr der Ringe - Die Gefährten",
+          "Üzüklərin Hökmdarı:Üzük Qardaşlığı",
+          "ロード・オブ・ザ・リング",
+          "LOTR1- The Fellowship of the Ring",
+          "指环王1：魔戒再现",
+          "The Lord of the Rings I: The Fellowship of the Ring",
+          "Le Seigneur des Anneaux: La Communauté de l'Anneau - version longue",
+          "Der Herr der Ringe - Die Gefaehrten",
+          "Մատանիների Տիրակալը 1",
+          "LOTR1",
+          "The Lord of the Rings I",
+          "Валадар Пярсцёнкаў: Брацтва Пярсцёнка",
+          "Yüzüklerin Efendisi: Yüzük Kardeşliği",
+          "Il Signore degli Anelli - La Compagnia dell'Anello",
+          "Sagan om ringen",
+          "The Lord of the Rings: The Fellowship of the Ring"
+        ],
+        "content": "<p>Chiếc nhẫn chúa mang sức mạnh bá chủ vô tình được số phận đưa vào tay chàng hobbit trẻ tuổi Frodo. Khi thày phù thủy Gandalf phát hiện ra chiếc nhẫn này đã từng thuộc về bạo chúa Sauron, Frodo phải nhận nhiệm vụ mang nhẫn tới khe núi Hủy diệt để tiêu hủy nó. &nbsp;Không đơn độc trong hành trình gian khó, Frodo còn tiếp nhận những người đồng hành thuộc các tộc khác nhau: Legolas tộc Elf; Gimli tộc Dwarf; Aragon, Boromir và ba người bạn Hobbit trung thành...</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250219-1/2914842d6e095080d1905a36d75a52e8.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250219-1/5ea639097fb8d1413febf837cb924d21.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=CbYmZOV3G-Q",
+        "time": "179 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2001,
+        "view": 296,
+        "actor": [
+          "Elijah Wood",
+          "Ian McKellen",
+          "Viggo Mortensen",
+          "Sean Astin",
+          "Ian Holm",
+          "Liv Tyler",
+          "Christopher Lee",
+          "Sean Bean",
+          "Billy Boyd",
+          "Dominic Monaghan",
+          "John Rhys-Davies",
+          "Orlando Bloom",
+          "Cate Blanchett",
+          "Hugo Weaving",
+          "Andy Serkis",
+          "Marton Csokas",
+          "Craig Parker",
+          "Lawrence Makoar"
+        ],
+        "director": [
+          "Peter Jackson"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          }
+        ],
+        "country": [
+          {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "id": "c51ed580ea5e20c910d951f692512b4d"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn: Hiệp Hội Nhẫn Thần - The Lord of the Rings: The Fellowship of the Ring - 2001 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250219/CHt1Oi5d/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250219/CHt1Oi5d/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-04T18:48:14.000Z"
+        },
+        "modified": {
+          "time": "2024-10-08T06:41:22.000Z"
+        },
+        "_id": "f7a82ce7e16d9687e7cd9a9feb85d187",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2)",
+        "slug": "chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-2",
+        "origin_name": "The Lord of the Rings : The Rings of Power (Season 2)",
+        "alternative_names": [],
+        "content": "<p>Mở đầu từ một thời đại tương đối an bình, ta theo dõi một nhóm nhân vật đối đầu với sự tái xuất của cái ác ở Trung Địa. Từ nơi sâu tối tăm nhất của Dãy núi Sương mù, đến những khu rừng hùng vĩ của Lindon, vương quốc đảo Númenor ngoạn mục, những nơi xa nhất trên bản đồ. Kể cả khi không còn nữa, những vương quốc và nhân vật này vẫn để lại di sản trường tồn.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240830-1/d1205759c8ab4fc958ba9e71f2272a64.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240830-1/3af1f0341a60acb1323b675a15c53e8e.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "76 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2024,
+        "view": 73,
+        "actor": [
+          "Morfydd Clark",
+          "Charlie Vickers",
+          "Robert Aramayo",
+          "Owain Arthur",
+          "Ismael Cruz Cordova",
+          "نازنین بنیادی",
+          "Lloyd Owen",
+          "Maxim Baldry",
+          "Markella Kavenagh",
+          "Tyroe Muhafidin",
+          "Daniel Weyman",
+          "Charles Edwards",
+          "Trystan Gravelle",
+          "Sophia Nomvete",
+          "Ema Horvath",
+          "Geoff Morrell",
+          "A"
+        ],
+        "director": [
+          "J.A. Bayona"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240830/LmN8aKvV/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240830/LmN8aKvV/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240901/XQrfMqxM/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240901/XQrfMqxM/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240901/qaig3Jht/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240901/qaig3Jht/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240907/dDi4niZ6/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240907/dDi4niZ6/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240915/dSj2dMnE/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240915/dSj2dMnE/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s5.phim1280.tv/20240925/sELZmqrd/index.m3u8",
+              "link_m3u8": "https://s5.phim1280.tv/20240925/sELZmqrd/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s5.phim1280.tv/20240929/uPWpjg6x/index.m3u8",
+              "link_m3u8": "https://s5.phim1280.tv/20240929/uPWpjg6x/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 2) - The Lord of the Rings : The Rings of Power (Season 2) - 2024 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s5.phim1280.tv/20241008/7XR2FQ8F/index.m3u8",
+              "link_m3u8": "https://s5.phim1280.tv/20241008/7XR2FQ8F/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-08-30T10:56:37.000Z"
+        },
+        "modified": {
+          "time": "2024-09-12T20:14:17.000Z"
+        },
+        "_id": "2e02c00f6c743a3ed88083c51b735f90",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1)",
+        "slug": "chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-1",
+        "origin_name": "The Lord of the Rings : The Rings of Power (Season 1)",
+        "alternative_names": [],
+        "content": "<p>Mở đầu từ một thời đại tương đối an bình, ta theo dõi một nhóm nhân vật đối đầu với sự tái xuất của cái ác ở Trung Địa. Từ nơi sâu tối tăm nhất của Dãy núi Sương mù, đến những khu rừng hùng vĩ của Lindon, vương quốc đảo Númenor ngoạn mục, những nơi xa nhất trên bản đồ. Kể cả khi không còn nữa, những vương quốc và nhân vật này vẫn để lại di sản trường tồn.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240830-1/b90edabcd95ef5bfe426eca6ef117ab4.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240830-1/da6cc4673b9eb77b48ab53f379078b36.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "76 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 29,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 100,
+        "actor": [
+          "Morfydd Clark",
+          "Charlie Vickers",
+          "Robert Aramayo",
+          "Owain Arthur",
+          "Ismael Cruz Cordova",
+          "نازنین بنیادی",
+          "Lloyd Owen",
+          "Maxim Baldry",
+          "Markella Kavenagh",
+          "Tyroe Muhafidin",
+          "Daniel Weyman",
+          "Charles Edwards",
+          "Trystan Gravelle",
+          "Sophia Nomvete",
+          "Ema Horvath",
+          "Geoff Morrell",
+          "A"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/trdlVj8j/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/trdlVj8j/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/FLvmlfPb/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/FLvmlfPb/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/CeDnHTVv/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/CeDnHTVv/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/qO3RmqLU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/qO3RmqLU/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/9Hwnmh0G/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/9Hwnmh0G/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/z5LohMVn/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/z5LohMVn/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/mnAC8cwC/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/mnAC8cwC/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn : Những Chiếc Nhẫn Quyền Năng (Phần 1) - The Lord of the Rings : The Rings of Power (Season 1) - 2022 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20240912/585MnprU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20240912/585MnprU/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-30T22:09:49.000Z"
+        },
+        "modified": {
+          "time": "2024-09-01T20:57:21.000Z"
+        },
+        "_id": "706608cfdbcc1886bb7eea5513f90133",
+        "name": "Chúa Tể Của Những Chiếc Nhẫn",
+        "slug": "chua-te-cua-nhung-chiec-nhan",
+        "origin_name": "The Lord of the Rings",
+        "alternative_names": [],
+        "content": "<p>Hiệp hội Chiếc nhẫn bắt đầu cuộc hành trình tiêu diệt Chiếc nhẫn Chúa và chấm dứt triều đại của Sauron trên Trung Địa.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231030-1/6da1a58e32672180afffc9adfe337f34.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231030-1/78f0622229d81d53ec04a1b369c7dcaa.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "132 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 1978,
+        "view": 176,
+        "actor": [
+          "Christopher Guard",
+          "William Squire",
+          "Michael Scholes",
+          "John Hurt",
+          "Simon Chandler",
+          "Dominic Guard",
+          "Norman Bird",
+          "Michael Graham Cox",
+          "Anthony Daniels",
+          "David Buck",
+          "Peter Woodthorpe",
+          "Fraser Kerr",
+          "Philip Stone",
+          "André Morell",
+          "Alan Tilvern",
+          "Annette Crosbie",
+          "Michael D"
+        ],
+        "director": [
+          "Ralph Bakshi"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Tây Ban Nha",
+            "slug": "tay-ban-nha",
+            "id": "8a40abac202ab3659bb98f71f05458d1"
+          },
+          {
+            "name": "Anh",
+            "slug": "anh",
+            "id": "932bbaca386ee0436ad0159117eabae4"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chúa Tể Của Những Chiếc Nhẫn - The Lord of the Rings - 1978 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240704/i1iJr7PH/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240704/i1iJr7PH/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

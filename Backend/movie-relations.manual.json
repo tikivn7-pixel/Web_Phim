@@ -714,6 +714,55 @@
           "order": 2
         }
       ]
+    },
+    {
+      "id": "lotr-jackson-trilogy",
+      "label": "The Lord of the Rings - Trilogy",
+      "kind": "series",
+      "sources": [
+        "https://www.fathomentertainment.com/series/the-lord-of-the-rings-trilogy/",
+        "https://phimapi.com/phim/chua-te-cua-nhung-chiec-nhan-hiep-hoi-nhan-than",
+        "https://phimapi.com/phim/chua-te-cua-nhung-chiec-nhan-hai-toa-thap",
+        "https://phimapi.com/phim/chua-te-cua-nhung-chiec-nhan-su-tro-lai-cua-nha-vua"
+      ],
+      "members": [
+        {
+          "slug": "chua-te-cua-nhung-chiec-nhan-hiep-hoi-nhan-than",
+          "label": "The Lord of the Rings: The Fellowship of the Ring",
+          "order": 0
+        },
+        {
+          "slug": "chua-te-cua-nhung-chiec-nhan-hai-toa-thap",
+          "label": "The Lord of the Rings: The Two Towers",
+          "order": 1
+        },
+        {
+          "slug": "chua-te-cua-nhung-chiec-nhan-su-tro-lai-cua-nha-vua",
+          "label": "The Lord of the Rings: The Return of the King",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "lotr-rings-of-power",
+      "label": "The Lord of the Rings: The Rings of Power",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-1",
+        "https://phimapi.com/phim/chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-2"
+      ],
+      "members": [
+        {
+          "slug": "chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-1",
+          "label": "The Lord of the Rings : The Rings of Power (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "chua-te-cua-nhung-chiec-nhan-nhung-chiec-nhan-quyen-nang-phan-2",
+          "label": "The Lord of the Rings : The Rings of Power (Season 2)",
+          "order": 1
+        }
+      ]
     }
   ],
   "standalone": [
