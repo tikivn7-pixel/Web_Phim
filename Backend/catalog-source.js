@@ -12633,18 +12633,7 @@ const fallbackMoviesList = [
     "https://phimimg.com/upload/vod/20241021-1/dc4bfe4eeae5cd41513fdd0fb2d244e5.jpg",
     desc: "My First Time",
   },
-  {
-    title: "My Friend's Wife",
-    slug: "doi-vo",
-    year: 2015,
-    episodes: 1,
-    genres: "Tình Cảm, Phim 18+, Tâm Lý, Hàn Quốc",
-    poster:
-    "https://phimimg.com/upload/vod/20240724-1/638bd9464ae6e382ed29011362ced732.jpg",
-    banner:
-    "https://phimimg.com/upload/vod/20240724-1/b4a96cdb411a3504f8e1401fdeb6df48.jpg",
-    desc: "My Friend's Wife",
-  },
+
   {
     title: "My Girlfriend Is A Gumiho",
     slug: "ban-gai-toi-la-ho-ly",
@@ -19061,18 +19050,7 @@ const fallbackMoviesList = [
     "https://phimimg.com/upload/vod/20250518-1/00f5ac9678e6e1caf4eaacf35adaa1af.jpg",
     desc: "The Day I Died Unclosed Case",
   },
-  {
-    title: "The Day of Swapping",
-    slug: "hoan-doi-vo-chong",
-    year: 2017,
-    episodes: 1,
-    genres: "Tình Cảm, Phim 18+, Tâm Lý, Hàn Quốc",
-    poster:
-    "https://phimimg.com/upload/vod/20240724-1/26f3cd4a8b5e4ff91686ceefc56f870a.jpg",
-    banner:
-    "https://phimimg.com/upload/vod/20240724-1/f61e93104b39d53109f4c076f9f88b0c.jpg",
-    desc: "The Day of Swapping",
-  },
+
   {
     title: "The Deal",
     slug: "giao-dich-hoan-hao",
@@ -23935,18 +23913,7 @@ const fallbackMoviesList = [
     "https://phimimg.com/upload/vod/20231123-1/b0d0a6cbeb0f2236b603ce77106c0f17.jpg",
     desc: "Whispering Corridors: The Humming",
   },
-  {
-    title: "White River",
-    slug: "dong-song-trang-duc-vong-ben-song-trang",
-    year: 2025,
-    episodes: 1,
-    genres: "Chính Kịch, Phim 18+, Tâm Lý, Hàn Quốc",
-    poster:
-    "https://phimimg.com/uploads/movies/20260710/dong-song-trang-duc-vong-ben-song-trang-poster.webp",
-    banner:
-    "https://phimimg.com/uploads/movies/20260710/dong-song-trang-duc-vong-ben-song-trang-thumb.webp",
-    desc: "White River",
-  },
+
   {
     title: "Who Are You: School 2015",
     slug: "hoc-duong-2015",

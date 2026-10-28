@@ -3904,10 +3904,6 @@ window.movieCastIndex = {
   "cast": "조혜정, 박소담, 민호, 김민재, 이이경, 정유진, 안우연",
   "director": "Lee Jeong-hyo"
  },
- "doi-vo": {
-  "cast": "Jeong Tae-min, Hee-jeong, Je Dong-hwa, Lim Song-i, Seo Hyeon, Oh Ji-hoon, Joo Ye-bin",
-  "director": "Tak Seung-oh"
- },
  "ban-gai-toi-la-ho-ly": {
   "cast": "이승기, 신민아, 노민우, 박수진, 변희봉, 윤유선, 성동일, 효민, 김호창",
   "director": ""
@@ -5944,10 +5940,6 @@ window.movieCastIndex = {
   "cast": "Kim Hye-soo, Lee Jung-eun, Roh Jeong-eui, Kim Sun-young, Lee Sang-yeob, Moon Jeong-hee, Kim Jung-young, Cho Han-cheul, Kim Tae-hun, Im Sung-jae, Kang Yeon-jung, Kang Shin-chul, Jung Young-ki, Park Mi-hyeon, Jeong Soo-ji, Yoon Byung-hee, Jung Ji-woo, Lee G",
   "director": "Park Ji-wan"
  },
- "hoan-doi-vo-chong": {
-  "cast": "Joo Ye-bin, Baek Se-ri, 민도윤, Ji Eun-seo, Jang Seok-min",
-  "director": "Myeong Seok Hwan"
- },
  "giao-dich-hoan-hao": {
   "cast": "Yoo Seung Ho, Kim Dong Hwi, Yoo Soo Bin",
   "director": "Lee Jung Gon"
@@ -7519,10 +7511,6 @@ window.movieCastIndex = {
  "loi-thi-tham-cua-toi-ac": {
   "cast": "Lee Bo-young, Lee Sang-yun, Kwon Yul, Park Se-young, Kim Kap-soo, Kim Hong-pa, Kang Shin-il, Kim Hae-sook, Moon Hee-kyung, Kim Chang-wan, Jo Dal-hwan, Kim Hyeong-mook, Yoon Joo-hee, Lee Hyun-jin",
   "director": "Lee Myung-woo"
- },
- "dong-song-trang-duc-vong-ben-song-trang": {
-  "cast": "Tian Yuan, Song Ningfeng, Xu Weihao, Zhang Wenmo, Zuo Xiaoguang, Lu Mianda, Shi Yongjia, Zhuang Ran, Li Donghe, Li Wei, Fang Shuxi, Jiang Zhibin",
-  "director": "Ma Xue"
  },
  "whispering-corridors-the-humming": {
   "cast": "Kim Seo-hyung, Kim Hyeon-soo, Choi Ri, BIBI, Seo Hye-won, Park Se-hyun, Lee Ji-won, Jang Won-hyung, Kwon Hae-hyo, Lee Joo-sil, Chae Won-bin, Ha Mheen, Kim Sung-nyeo, Shin Yeon-mi, Min Chae-yeon",
