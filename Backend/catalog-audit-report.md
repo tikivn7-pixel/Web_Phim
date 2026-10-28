@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3758 phim; 0 lỗi; 281 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3779 phim; 0 lỗi; 281 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man

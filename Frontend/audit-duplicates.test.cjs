@@ -23,7 +23,7 @@ test('explicit duplicate decisions remain in the audit even when translated titl
 test('all reviewed aliases retain detail records, search terms and a visible canonical card',()=>{
   const movies=require('./catalog-tools').readMovies(),result=artifacts(movies),cards=decode(result.index),bySlug=new Map(cards.map(movie=>[movie.slug,movie]));
   const decisions=require('../Backend/duplicate-decisions.json');
-  assert.equal(movies.length,3758);assert.equal(cards.length,3700);assert.equal(Object.keys(result.index.aliases).length,58);
+  assert.equal(movies.length,3779);assert.equal(cards.length,3718);assert.equal(Object.keys(result.index.aliases).length,61);
   for(const group of decisions.groups)for(const slug of group.aliases){
     assert.ok(bySlug.has(group.canonical));assert.ok(!bySlug.has(slug));
     assert.equal(result.index.aliases[slug].duplicateOf,group.canonical);

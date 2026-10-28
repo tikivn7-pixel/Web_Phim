@@ -1,0 +1,4163 @@
+{
+  "checkedAt": "2026-10-28T14:53:11.164Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "321061",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 7,
+          "vote_count": 1
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2026-07-31T06:50:30.000Z"
+        },
+        "modified": {
+          "time": "2026-07-31T06:50:30.000Z"
+        },
+        "_id": "6a6be3468e03ef57a7024bd5",
+        "name": "Tom Và Jerry: Tuyển Tập Kinh Điển",
+        "slug": "tom-va-jerry-tuyen-tap-kinh-dien",
+        "origin_name": "Tom And Jerry: The Classic Collection",
+        "alternative_names": [
+          "Tom.and.Jerry(DVD)"
+        ],
+        "content": "<p>Đây là bộ đĩa tổng hợp trọn vẹn các tập phim từ thời Hanna-Barbera đến Chuck Jones mà nhiều thế hệ khán giả Việt Nam từng sở hữu.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/uploads/movies/20260731/tom-va-jerry-tuyen-tap-kinh-dien-thumb.webp",
+        "poster_url": "https://phimimg.com/uploads/movies/20260731/tom-va-jerry-tuyen-tap-kinh-dien-poster.webp",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": null,
+        "time": "80 phút/tập",
+        "episode_current": "Hoàn Tất (12/12)",
+        "episode_total": 12,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2004,
+        "view": 285,
+        "actor": [
+          "Đang cập nhật"
+        ],
+        "director": [
+          "Đang cập nhật"
+        ],
+        "category": [
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          }
+        ],
+        "country": [
+          {
+            "name": "Mỹ",
+            "slug": "my",
+            "id": "233f07690ce8b3c817f2ce39255da545"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/dJu5Idia/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/dJu5Idia/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/pBhykPQL/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/pBhykPQL/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/Zlsmdfzg/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/Zlsmdfzg/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/V1oWnSQV/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/V1oWnSQV/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/rcylt1Bs/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/rcylt1Bs/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/7UzI3sM6/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/7UzI3sM6/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/CXMYb6Kk/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/CXMYb6Kk/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/HYWInwPx/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/HYWInwPx/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/wDjIoRQW/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/wDjIoRQW/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/Pdwmc9ya/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/Pdwmc9ya/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/yvM19uno/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/yvM19uno/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Tom.And.Jerry.The.Ultimate.Classic.Collection.E12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260730/Vb9LMqnq/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260730/Vb9LMqnq/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-08-07T18:02:55.000Z"
+        },
+        "modified": {
+          "time": "2024-08-08T06:11:17.000Z"
+        },
+        "_id": "b60adcb70283fea07596c9a73ddfb899",
+        "name": "Chương Trình Tom Và Jerry (Phần 2)",
+        "slug": "chuong-trinh-tom-va-jerry-phan-2",
+        "origin_name": "The Tom And Jerry Show (Season 2)",
+        "alternative_names": [],
+        "content": "<p>Đối thủ mèo và chuột mang tính biểu tượng đã trở lại trong một diện mạo mới của loạt phim cổ điển. Giữ nguyên hình thức, nhân vật và cảm giác của nguyên tác, loạt phim này chiếu một lăng kính có độ phân giải cao, màu sắc rực rỡ vào những pha hài hước điên rồ và trận chiến không hồi kết đã khiến Tom và Jerry trở thành hai trong số những nhân vật được yêu thích nhất mọi thời đại.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240807-1/083d76916c2da872d9c55608829bf07f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240807-1/3656441e25acbc101a6adc69073a32e5.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "7 phút/tập",
+        "episode_current": "Hoàn Tất (74/74)",
+        "episode_total": 74,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 112,
+        "actor": [
+          "Rick Zieff",
+          "Kath Soucie",
+          "Grey DeLisle",
+          "Stephen Stanton",
+          "Joey D'Auria",
+          "Gary Cole",
+          "Sam Kwasman"
+        ],
+        "director": [
+          "Darrell Van Citters"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/snZ0P7EQ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/snZ0P7EQ/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/Bfmzm3zg/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/Bfmzm3zg/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/mVbu4J0H/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/mVbu4J0H/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/fOoEU26s/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/fOoEU26s/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/9uXP7kvi/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/9uXP7kvi/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/vf9rzQHn/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/vf9rzQHn/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/BrbBdhxf/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/BrbBdhxf/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/y9VRFTqt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/y9VRFTqt/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/QNLOTfb7/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/QNLOTfb7/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/O4djNsif/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/O4djNsif/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/OgJnBcik/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/OgJnBcik/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/5L94Ziue/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/5L94Ziue/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/7n9xpHlZ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/7n9xpHlZ/index.m3u8"
+            },
+            {
+              "name": "Tập 14",
+              "slug": "tap-14",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 14",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/5EVtLKeZ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/5EVtLKeZ/index.m3u8"
+            },
+            {
+              "name": "Tập 15",
+              "slug": "tap-15",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 15",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/vSmX7aGL/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/vSmX7aGL/index.m3u8"
+            },
+            {
+              "name": "Tập 16",
+              "slug": "tap-16",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 16",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/0ijjBnYC/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/0ijjBnYC/index.m3u8"
+            },
+            {
+              "name": "Tập 17",
+              "slug": "tap-17",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 17",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/MfdQl46J/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/MfdQl46J/index.m3u8"
+            },
+            {
+              "name": "Tập 18",
+              "slug": "tap-18",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 18",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/y4WMoaFE/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/y4WMoaFE/index.m3u8"
+            },
+            {
+              "name": "Tập 19",
+              "slug": "tap-19",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 19",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/WlwpFFZV/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/WlwpFFZV/index.m3u8"
+            },
+            {
+              "name": "Tập 20",
+              "slug": "tap-20",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 20",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/Y01V1Ikt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/Y01V1Ikt/index.m3u8"
+            },
+            {
+              "name": "Tập 21",
+              "slug": "tap-21",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 21",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/8SLVoWqJ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/8SLVoWqJ/index.m3u8"
+            },
+            {
+              "name": "Tập 22",
+              "slug": "tap-22",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 22",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/A96RrxHk/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/A96RrxHk/index.m3u8"
+            },
+            {
+              "name": "Tập 23",
+              "slug": "tap-23",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 23",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/5wq4njKL/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/5wq4njKL/index.m3u8"
+            },
+            {
+              "name": "Tập 24",
+              "slug": "tap-24",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 24",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/EH0R4630/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/EH0R4630/index.m3u8"
+            },
+            {
+              "name": "Tập 25",
+              "slug": "tap-25",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 25",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/fPRAmvmY/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/fPRAmvmY/index.m3u8"
+            },
+            {
+              "name": "Tập 26",
+              "slug": "tap-26",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 26",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/u5tygju9/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/u5tygju9/index.m3u8"
+            },
+            {
+              "name": "Tập 27",
+              "slug": "tap-27",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 27",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/fDBoCm0I/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/fDBoCm0I/index.m3u8"
+            },
+            {
+              "name": "Tập 28",
+              "slug": "tap-28",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 28",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/SrCxjNMs/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/SrCxjNMs/index.m3u8"
+            },
+            {
+              "name": "Tập 29",
+              "slug": "tap-29",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 29",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/UWMv5Z1p/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/UWMv5Z1p/index.m3u8"
+            },
+            {
+              "name": "Tập 30",
+              "slug": "tap-30",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 30",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/LAIJhSdy/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/LAIJhSdy/index.m3u8"
+            },
+            {
+              "name": "Tập 31",
+              "slug": "tap-31",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 31",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/d8AIoqzH/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/d8AIoqzH/index.m3u8"
+            },
+            {
+              "name": "Tập 32",
+              "slug": "tap-32",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 32",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/PfEzowyF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/PfEzowyF/index.m3u8"
+            },
+            {
+              "name": "Tập 33",
+              "slug": "tap-33",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 33",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/2RHFcPxo/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/2RHFcPxo/index.m3u8"
+            },
+            {
+              "name": "Tập 34",
+              "slug": "tap-34",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 34",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/kpFNZmld/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/kpFNZmld/index.m3u8"
+            },
+            {
+              "name": "Tập 35",
+              "slug": "tap-35",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 35",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/7XqhHAKa/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/7XqhHAKa/index.m3u8"
+            },
+            {
+              "name": "Tập 36",
+              "slug": "tap-36",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 36",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/KcIGgUdF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/KcIGgUdF/index.m3u8"
+            },
+            {
+              "name": "Tập 37",
+              "slug": "tap-37",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 37",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/IREDc9ya/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/IREDc9ya/index.m3u8"
+            },
+            {
+              "name": "Tập 38",
+              "slug": "tap-38",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 38",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/ABlH4ybu/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/ABlH4ybu/index.m3u8"
+            },
+            {
+              "name": "Tập 39",
+              "slug": "tap-39",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 39",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/844O5ZkU/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/844O5ZkU/index.m3u8"
+            },
+            {
+              "name": "Tập 40",
+              "slug": "tap-40",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 40",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/XrgILUp8/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/XrgILUp8/index.m3u8"
+            },
+            {
+              "name": "Tập 41",
+              "slug": "tap-41",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 41",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/s5nhYOX3/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/s5nhYOX3/index.m3u8"
+            },
+            {
+              "name": "Tập 42",
+              "slug": "tap-42",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 42",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/vmwGZy7x/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/vmwGZy7x/index.m3u8"
+            },
+            {
+              "name": "Tập 43",
+              "slug": "tap-43",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 43",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/K2XnkX93/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/K2XnkX93/index.m3u8"
+            },
+            {
+              "name": "Tập 44",
+              "slug": "tap-44",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 44",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/R4vdmJSI/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/R4vdmJSI/index.m3u8"
+            },
+            {
+              "name": "Tập 45",
+              "slug": "tap-45",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 45",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/j4HMNSPd/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/j4HMNSPd/index.m3u8"
+            },
+            {
+              "name": "Tập 46",
+              "slug": "tap-46",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 46",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/D0DfnCVc/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/D0DfnCVc/index.m3u8"
+            },
+            {
+              "name": "Tập 47",
+              "slug": "tap-47",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 47",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/gW489a61/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/gW489a61/index.m3u8"
+            },
+            {
+              "name": "Tập 48",
+              "slug": "tap-48",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 48",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/uhfHtI1V/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/uhfHtI1V/index.m3u8"
+            },
+            {
+              "name": "Tập 49",
+              "slug": "tap-49",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 49",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/UTL7gH5l/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/UTL7gH5l/index.m3u8"
+            },
+            {
+              "name": "Tập 50",
+              "slug": "tap-50",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 50",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/bEP5Nj7S/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/bEP5Nj7S/index.m3u8"
+            },
+            {
+              "name": "Tập 51",
+              "slug": "tap-51",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 51",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/rcrvhK0P/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/rcrvhK0P/index.m3u8"
+            },
+            {
+              "name": "Tập 52",
+              "slug": "tap-52",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 52",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/4as64f5A/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/4as64f5A/index.m3u8"
+            },
+            {
+              "name": "Tập 53",
+              "slug": "tap-53",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 53",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/UUaRZYGA/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/UUaRZYGA/index.m3u8"
+            },
+            {
+              "name": "Tập 54",
+              "slug": "tap-54",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 54",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/I2En5hsy/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/I2En5hsy/index.m3u8"
+            },
+            {
+              "name": "Tập 55",
+              "slug": "tap-55",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 55",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/N3tQQj3Y/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/N3tQQj3Y/index.m3u8"
+            },
+            {
+              "name": "Tập 56",
+              "slug": "tap-56",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 56",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/TmW2lNLv/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/TmW2lNLv/index.m3u8"
+            },
+            {
+              "name": "Tập 57",
+              "slug": "tap-57",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 57",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/5NVBIpzL/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/5NVBIpzL/index.m3u8"
+            },
+            {
+              "name": "Tập 58",
+              "slug": "tap-58",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 58",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/fz0spPtV/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/fz0spPtV/index.m3u8"
+            },
+            {
+              "name": "Tập 59",
+              "slug": "tap-59",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 59",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/Kn8NSc43/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/Kn8NSc43/index.m3u8"
+            },
+            {
+              "name": "Tập 60",
+              "slug": "tap-60",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 60",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/vmvZqDBX/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/vmvZqDBX/index.m3u8"
+            },
+            {
+              "name": "Tập 61",
+              "slug": "tap-61",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 61",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/LMKVAb8H/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/LMKVAb8H/index.m3u8"
+            },
+            {
+              "name": "Tập 62",
+              "slug": "tap-62",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 62",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/U00x1E5o/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/U00x1E5o/index.m3u8"
+            },
+            {
+              "name": "Tập 63",
+              "slug": "tap-63",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 63",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/xXu1YRy2/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/xXu1YRy2/index.m3u8"
+            },
+            {
+              "name": "Tập 64",
+              "slug": "tap-64",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 64",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/I4421MRE/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/I4421MRE/index.m3u8"
+            },
+            {
+              "name": "Tập 65",
+              "slug": "tap-65",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 65",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/mdK2PQn6/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/mdK2PQn6/index.m3u8"
+            },
+            {
+              "name": "Tập 66",
+              "slug": "tap-66",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 66",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/M5Uw7OZH/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/M5Uw7OZH/index.m3u8"
+            },
+            {
+              "name": "Tập 67",
+              "slug": "tap-67",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 67",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/Gv9I9rAc/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/Gv9I9rAc/index.m3u8"
+            },
+            {
+              "name": "Tập 68",
+              "slug": "tap-68",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 68",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/BEr04yov/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/BEr04yov/index.m3u8"
+            },
+            {
+              "name": "Tập 69",
+              "slug": "tap-69",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 69",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/YYA7r23K/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/YYA7r23K/index.m3u8"
+            },
+            {
+              "name": "Tập 70",
+              "slug": "tap-70",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 70",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/UnlpMFA6/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/UnlpMFA6/index.m3u8"
+            },
+            {
+              "name": "Tập 71",
+              "slug": "tap-71",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 71",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/gBpPeJUF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/gBpPeJUF/index.m3u8"
+            },
+            {
+              "name": "Tập 72",
+              "slug": "tap-72",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 72",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/TuHTLlXL/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/TuHTLlXL/index.m3u8"
+            },
+            {
+              "name": "Tập 73",
+              "slug": "tap-73",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 73",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/RKL1be7F/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/RKL1be7F/index.m3u8"
+            },
+            {
+              "name": "Tập 74",
+              "slug": "tap-74",
+              "filename": "Chương Trình Tom Và Jerry (Phần 2) - The Tom And Jerry Show (Season 2) - 2014 - FHD - Vietsub - Tập 74",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240807/9zrISNex/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240807/9zrISNex/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-26T03:30:24.000Z"
+        },
+        "modified": {
+          "time": "2024-06-30T01:08:02.000Z"
+        },
+        "_id": "6c990b7aca7bc7058f5e98ea909e924b",
+        "name": "Tom và Jerry: Quá Nhanh Quá Nguy Hiểm",
+        "slug": "tom-va-jerry-qua-nhanh-qua-nguy-hiem",
+        "origin_name": "Tom and Jerry: The Fast and the Furry",
+        "alternative_names": [],
+        "content": "<p>Sau khi bị chủ Tom đuổi khỏi ngôi nhà cũ vì gây thiệt hại lớn, mèo và chuột Tom và Jerry tham gia một cuộc đua mang tên &quot;Siêu đua tuyệt vời&quot;. để giành được một biệt thự.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231026-1/85cfeba079bc2bb04686719c2b9567ff.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231026-1/c24cace262cb2c9454753a7aada8f8c8.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "75 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2005,
+        "view": 180,
+        "actor": [
+          "Charlie Adler",
+          "Jeff Bennett",
+          "John DiMaggio",
+          "Jess Harnell",
+          "Tom Kenny",
+          "Bill Kopp",
+          "Tress MacNeille",
+          "Rob Paulsen",
+          "Billy West",
+          "J. Grant Albrecht",
+          "Thom Pinto",
+          "Neil Ross",
+          "Renna Nightingale"
+        ],
+        "director": [
+          "Bill Kopp"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry: Quá Nhanh Quá Nguy Hiểm - Tom and Jerry: The Fast and the Furry - 2005 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240624/EoJdej7C/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240624/EoJdej7C/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-02-27T23:37:20.000Z"
+        },
+        "modified": {
+          "time": "2024-03-16T01:54:22.000Z"
+        },
+        "_id": "cc073c2619c2b1dba60b509cd5b5f9f6",
+        "name": "Tom Và Jerry Bay Đến Sao Hỏa",
+        "slug": "tom-va-jerry-bay-den-sao-hoa",
+        "origin_name": "Tom And Jerry Blast Off To Mars!",
+        "alternative_names": [],
+        "content": "<p>Tom và Jerry: Bay Đến Sao Hỏa là một trong loạt phim hoạt hình hài hước dành cho thiếu nhi. Phim xoay quanh hai nhân vật chính Tom (mèo) và Jerry (chuột). Vẫn là màn đuổi bắt quen thuộc giữa Tom và Jerry</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240228-1/3a9d467ffdd4405907563074299386b0.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240228-1/462ceddf21438ee86d86f096eed0bd25.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "75 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2011,
+        "view": 111,
+        "actor": [
+          "Jeff Bennett",
+          "Corey Burton",
+          "Kathryn Fiore"
+        ],
+        "director": [
+          "Bill Kopp"
+        ],
+        "category": [
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom Và Jerry Bay Đến Sao Hỏa - Tom And Jerry Blast Off To Mars! - 2011 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240310/LMsXdt75/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240310/LMsXdt75/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-01-18T01:35:16.000Z"
+        },
+        "modified": {
+          "time": "2024-03-01T03:10:29.000Z"
+        },
+        "_id": "0cf9e05e144599e342541462a833f535",
+        "name": "The Tom And Jerry Show (Phần 3)",
+        "slug": "the-tom-and-jerry-show-phan-3",
+        "origin_name": "The Tom And Jerry Show (Season 3)",
+        "alternative_names": [],
+        "content": "<p>Hai đối thủ mèo và chuột mang tính biểu tượng đã trở lại trong loạt phim kinh điển. Giữ nguyên hình thức, nhân vật và sự nhạy cảm của nguyên tác, sê-ri này chiếu một lăng kính có độ phân giải cao, màu sắc rực rỡ vào trò hài hước điên rồ và trận chiến không hồi kết đã biến Tom và Jerry trở thành hai trong số những nhân vật được yêu thích nhất mọi thời đại.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240118-1/da05daf02edc9ad0c7909dd65b206d79.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240118-1/542042c019f2ed38bb1a71cae837d50f.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "7 phút/tập",
+        "episode_current": "Hoàn Tất (78/78)",
+        "episode_total": 78,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 97,
+        "actor": [],
+        "director": [
+          "Darrell Van Citters"
+        ],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/oP7H2i9A/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/oP7H2i9A/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/1WdGp8ux/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/1WdGp8ux/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/00yx8sjE/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/00yx8sjE/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/i7Mx2Ob9/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/i7Mx2Ob9/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/G5caIqdK/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/G5caIqdK/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/MwLC8O9L/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/MwLC8O9L/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/jX0TcIzq/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/jX0TcIzq/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/kMe8dMMR/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/kMe8dMMR/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/JVFHMFgm/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/JVFHMFgm/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/ELtCmufN/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/ELtCmufN/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/IqsH0rR7/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/IqsH0rR7/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/gEYM1xfa/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/gEYM1xfa/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/uLQ3AzhX/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/uLQ3AzhX/index.m3u8"
+            },
+            {
+              "name": "Tập 14",
+              "slug": "tap-14",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 14",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/3xfx4UP1/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/3xfx4UP1/index.m3u8"
+            },
+            {
+              "name": "Tập 15",
+              "slug": "tap-15",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 15",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/evBXbnuh/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/evBXbnuh/index.m3u8"
+            },
+            {
+              "name": "Tập 16",
+              "slug": "tap-16",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 16",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/cdUUP27Z/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/cdUUP27Z/index.m3u8"
+            },
+            {
+              "name": "Tập 17",
+              "slug": "tap-17",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 17",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/bEPcQZng/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/bEPcQZng/index.m3u8"
+            },
+            {
+              "name": "Tập 18",
+              "slug": "tap-18",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 18",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/15pkrpq3/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/15pkrpq3/index.m3u8"
+            },
+            {
+              "name": "Tập 19",
+              "slug": "tap-19",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 19",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/gs4Qm6zf/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/gs4Qm6zf/index.m3u8"
+            },
+            {
+              "name": "Tập 20",
+              "slug": "tap-20",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 20",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/ugwcKjyT/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/ugwcKjyT/index.m3u8"
+            },
+            {
+              "name": "Tập 21",
+              "slug": "tap-21",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 21",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/bhOIyJH3/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/bhOIyJH3/index.m3u8"
+            },
+            {
+              "name": "Tập 22",
+              "slug": "tap-22",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 22",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/uPINgxWs/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/uPINgxWs/index.m3u8"
+            },
+            {
+              "name": "Tập 23",
+              "slug": "tap-23",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 23",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/pnJr462V/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/pnJr462V/index.m3u8"
+            },
+            {
+              "name": "Tập 24",
+              "slug": "tap-24",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 24",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/w3mf7lCO/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/w3mf7lCO/index.m3u8"
+            },
+            {
+              "name": "Tập 25",
+              "slug": "tap-25",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 25",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/azQ3AGsa/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/azQ3AGsa/index.m3u8"
+            },
+            {
+              "name": "Tập 26",
+              "slug": "tap-26",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 26",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/XCWv6FQy/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/XCWv6FQy/index.m3u8"
+            },
+            {
+              "name": "Tập 27",
+              "slug": "tap-27",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 27",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/mN0GRZIu/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/mN0GRZIu/index.m3u8"
+            },
+            {
+              "name": "Tập 28",
+              "slug": "tap-28",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 28",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/uK0cuyzi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/uK0cuyzi/index.m3u8"
+            },
+            {
+              "name": "Tập 29",
+              "slug": "tap-29",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 29",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/0ueDXdtF/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/0ueDXdtF/index.m3u8"
+            },
+            {
+              "name": "Tập 30",
+              "slug": "tap-30",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 30",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/v8g4MHBR/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/v8g4MHBR/index.m3u8"
+            },
+            {
+              "name": "Tập 31",
+              "slug": "tap-31",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 31",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/Se1Fd8Ps/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/Se1Fd8Ps/index.m3u8"
+            },
+            {
+              "name": "Tập 32",
+              "slug": "tap-32",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 32",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/0BkC7krr/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/0BkC7krr/index.m3u8"
+            },
+            {
+              "name": "Tập 33",
+              "slug": "tap-33",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 33",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/lEEM5emt/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/lEEM5emt/index.m3u8"
+            },
+            {
+              "name": "Tập 34",
+              "slug": "tap-34",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 34",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/uKc8qSgb/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/uKc8qSgb/index.m3u8"
+            },
+            {
+              "name": "Tập 35",
+              "slug": "tap-35",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 35",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/9DRnPk39/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/9DRnPk39/index.m3u8"
+            },
+            {
+              "name": "Tập 36",
+              "slug": "tap-36",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 36",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/p7znLEOb/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/p7znLEOb/index.m3u8"
+            },
+            {
+              "name": "Tập 37",
+              "slug": "tap-37",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 37",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/oBH7LmFa/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/oBH7LmFa/index.m3u8"
+            },
+            {
+              "name": "Tập 38",
+              "slug": "tap-38",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 38",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/2KV5jeM6/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/2KV5jeM6/index.m3u8"
+            },
+            {
+              "name": "Tập 39",
+              "slug": "tap-39",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 39",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/32wYzdiW/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/32wYzdiW/index.m3u8"
+            },
+            {
+              "name": "Tập 40",
+              "slug": "tap-40",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 40",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/XixSFCHQ/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/XixSFCHQ/index.m3u8"
+            },
+            {
+              "name": "Tập 41",
+              "slug": "tap-41",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 41",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/BA6941lk/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/BA6941lk/index.m3u8"
+            },
+            {
+              "name": "Tập 42",
+              "slug": "tap-42",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 42",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/6UQ9Yyjy/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/6UQ9Yyjy/index.m3u8"
+            },
+            {
+              "name": "Tập 43",
+              "slug": "tap-43",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 43",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/k9GsvGUn/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/k9GsvGUn/index.m3u8"
+            },
+            {
+              "name": "Tập 44",
+              "slug": "tap-44",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 44",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/7MCDGcb8/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/7MCDGcb8/index.m3u8"
+            },
+            {
+              "name": "Tập 45",
+              "slug": "tap-45",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 45",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/RH4kq6ee/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/RH4kq6ee/index.m3u8"
+            },
+            {
+              "name": "Tập 46",
+              "slug": "tap-46",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 46",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/pf5kBl6y/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/pf5kBl6y/index.m3u8"
+            },
+            {
+              "name": "Tập 47",
+              "slug": "tap-47",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 47",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/yl6ivWVr/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/yl6ivWVr/index.m3u8"
+            },
+            {
+              "name": "Tập 48",
+              "slug": "tap-48",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 48",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/mIRf5Z5n/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/mIRf5Z5n/index.m3u8"
+            },
+            {
+              "name": "Tập 49",
+              "slug": "tap-49",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 49",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/1KBGX4CQ/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/1KBGX4CQ/index.m3u8"
+            },
+            {
+              "name": "Tập 50",
+              "slug": "tap-50",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 50",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/gPubWExF/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/gPubWExF/index.m3u8"
+            },
+            {
+              "name": "Tập 51",
+              "slug": "tap-51",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 51",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/PJ0iRuih/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/PJ0iRuih/index.m3u8"
+            },
+            {
+              "name": "Tập 52",
+              "slug": "tap-52",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 52",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/yIQcUjb6/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/yIQcUjb6/index.m3u8"
+            },
+            {
+              "name": "Tập 53",
+              "slug": "tap-53",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 53",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/ldlp0foA/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/ldlp0foA/index.m3u8"
+            },
+            {
+              "name": "Tập 54",
+              "slug": "tap-54",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 54",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/jRrZwC0A/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/jRrZwC0A/index.m3u8"
+            },
+            {
+              "name": "Tập 55",
+              "slug": "tap-55",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 55",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/UPRYfU2d/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/UPRYfU2d/index.m3u8"
+            },
+            {
+              "name": "Tập 56",
+              "slug": "tap-56",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 56",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/5dfe74Kk/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/5dfe74Kk/index.m3u8"
+            },
+            {
+              "name": "Tập 57",
+              "slug": "tap-57",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 57",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/lYPC0GEZ/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/lYPC0GEZ/index.m3u8"
+            },
+            {
+              "name": "Tập 58",
+              "slug": "tap-58",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 58",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/wQk9CyNB/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/wQk9CyNB/index.m3u8"
+            },
+            {
+              "name": "Tập 59",
+              "slug": "tap-59",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 59",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/SIjNF89y/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/SIjNF89y/index.m3u8"
+            },
+            {
+              "name": "Tập 60",
+              "slug": "tap-60",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 60",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/QG0nVH7N/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/QG0nVH7N/index.m3u8"
+            },
+            {
+              "name": "Tập 61",
+              "slug": "tap-61",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 61",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/G4eMsDJm/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/G4eMsDJm/index.m3u8"
+            },
+            {
+              "name": "Tập 62",
+              "slug": "tap-62",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 62",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/bliCSHsS/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/bliCSHsS/index.m3u8"
+            },
+            {
+              "name": "Tập 63",
+              "slug": "tap-63",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 63",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/3cXxBseM/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/3cXxBseM/index.m3u8"
+            },
+            {
+              "name": "Tập 64",
+              "slug": "tap-64",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 64",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/Dzn8CHqy/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/Dzn8CHqy/index.m3u8"
+            },
+            {
+              "name": "Tập 65",
+              "slug": "tap-65",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 65",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/pDVgiF1J/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/pDVgiF1J/index.m3u8"
+            },
+            {
+              "name": "Tập 66",
+              "slug": "tap-66",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 66",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/yDwehM5T/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/yDwehM5T/index.m3u8"
+            },
+            {
+              "name": "Tập 67",
+              "slug": "tap-67",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 67",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/dofrMz3F/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/dofrMz3F/index.m3u8"
+            },
+            {
+              "name": "Tập 68",
+              "slug": "tap-68",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 68",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/4HyvY3m5/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/4HyvY3m5/index.m3u8"
+            },
+            {
+              "name": "Tập 69",
+              "slug": "tap-69",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 69",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/f3VNQ5hH/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/f3VNQ5hH/index.m3u8"
+            },
+            {
+              "name": "Tập 70",
+              "slug": "tap-70",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 70",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/cuFs50eN/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/cuFs50eN/index.m3u8"
+            },
+            {
+              "name": "Tập 71",
+              "slug": "tap-71",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 71",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/oUS4a1kv/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/oUS4a1kv/index.m3u8"
+            },
+            {
+              "name": "Tập 72",
+              "slug": "tap-72",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 72",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/en9iWAUQ/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/en9iWAUQ/index.m3u8"
+            },
+            {
+              "name": "Tập 73",
+              "slug": "tap-73",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 73",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/2RByokKM/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/2RByokKM/index.m3u8"
+            },
+            {
+              "name": "Tập 74",
+              "slug": "tap-74",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 74",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/bY6MhsF0/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/bY6MhsF0/index.m3u8"
+            },
+            {
+              "name": "Tập 75",
+              "slug": "tap-75",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 75",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/QwYQoBEf/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/QwYQoBEf/index.m3u8"
+            },
+            {
+              "name": "Tập 76",
+              "slug": "tap-76",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 76",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/GPh4R4zU/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/GPh4R4zU/index.m3u8"
+            },
+            {
+              "name": "Tập 77",
+              "slug": "tap-77",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 77",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/qFewJa1j/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/qFewJa1j/index.m3u8"
+            },
+            {
+              "name": "Tập 78",
+              "slug": "tap-78",
+              "filename": "The Tom And Jerry Show (Phần 3) - The Tom And Jerry Show (Season 3) - 2014 - HD - Vietsub - Tập 78",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240202/jszdxoKp/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240202/jszdxoKp/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-13T03:42:11.000Z"
+        },
+        "modified": {
+          "time": "2024-01-10T14:16:20.000Z"
+        },
+        "_id": "a70101b271810b66fdc35a5d4ff5e058",
+        "name": "Tom And Jerry: The Fast And The Furry",
+        "slug": "tom-and-jerry-the-fast-and-the-furry",
+        "origin_name": "Tom And Jerry: The Fast And The Furry",
+        "alternative_names": [],
+        "content": "<p>Tom và Jerry và tay đua khác cố gắng giành được chìa khóa cho giải thưởng. Trước tiên, họ đến Mexico và tìm ra xếp hạng là quá cao để họ mở rộng nó đến Jungle Amazon. Tom loại bỏ Mẹ bóng đá bằng cách khiến cô ấy lái xe minivan của mình thành một hố cát lún. Bugs bầy đàn và ăn bóng đá.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231213-1/da5b7f29627d9bca74d00f29045a39ed.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231213-1/8c4ecc4a03b717b7e25bbdefbaf8f26c.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "75 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2005,
+        "view": 191,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Thể Thao",
+            "slug": "the-thao",
+            "id": "591bbb2abfe03f5aa13c08f16dfb69a2"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom And Jerry: The Fast And The Furry - Tom And Jerry: The Fast And The Furry - 2005 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240106/1ChTbuL2/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240106/1ChTbuL2/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-11T01:30:32.000Z"
+        },
+        "modified": {
+          "time": "2024-01-01T20:53:39.000Z"
+        },
+        "_id": "69b4fa3be19bdf400df34e41b93636a4",
+        "name": "Tom và Jerry, Cao Bồi Lên!",
+        "slug": "tom-va-jerry-cao-boi-len",
+        "origin_name": "Tom And Jerry: Cowboy Up",
+        "alternative_names": [],
+        "content": "<p>Lần này, các đối thủ hợp sức để giúp một cô gái chăn bò và anh trai của cô ấy cứu ngôi nhà của họ khỏi một tên cướp đất tham lam và họ sẽ cần một số trợ giúp! Ba đứa cháu trai sớm của Jerry đều đã sẵn sàng hành động, còn Tom thì thành lập một đàn chó đồng cỏ. Nhưng liệu một băng ragtag gồm những người đánh véc-ni có thể đánh bại một kẻ liều lĩnh gian dối quyết tâm đánh lừa một tên khốn đang gặp nạn không? Không có vấn đề gì xảy ra với Tom và Jerry trong yên ngựa, đó sẽ là thời điểm tốt!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231211-1/f9550f54ed8ed59253fff4903e8610ea.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231211-1/38e7b1ada39b394e40e6e748e21ffab5.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=s5iqJVzhb3Q",
+        "time": "75 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 65,
+        "actor": [
+          "William Hanna",
+          "Kath Soucie",
+          "George Ackles"
+        ],
+        "director": [
+          "Darrell Van Citters"
+        ],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry, Cao Bồi Lên! - Tom And Jerry: Cowboy Up - 2022 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/yvZvOFc6/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/yvZvOFc6/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-04T17:03:56.000Z"
+        },
+        "modified": {
+          "time": "2023-12-14T23:47:25.000Z"
+        },
+        "_id": "3fe230348e9a12c13120749e3f9fa4cd",
+        "name": "The Tom and Jerry Show (Phần 2)",
+        "slug": "the-tom-and-jerry-show-phan-2",
+        "origin_name": "The Tom and Jerry Show (Season 2)",
+        "alternative_names": [],
+        "content": "<p>Hai đối thủ mèo và chuột mang tính biểu tượng đã trở lại trong loạt phim kinh điển. Giữ nguyên hình thức, nhân vật và sự nhạy cảm của nguyên tác, sê-ri này chiếu một lăng kính có độ phân giải cao, màu sắc rực rỡ vào trò hài hước điên rồ và trận chiến không hồi kết đã biến Tom và Jerry trở thành hai trong số những nhân vật được yêu thích nhất mọi thời đại.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231204-1/c26ad28b4838b78228eca40bfba32467.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231204-1/7e6458257ec734852576020fd1f60ca0.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "7 phút/tập",
+        "episode_current": "Hoàn Tất (78/78)",
+        "episode_total": 78,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 91,
+        "actor": [],
+        "director": [
+          "Darrell Van Citters"
+        ],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/kUpANCZB/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/kUpANCZB/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/aLmC9fsf/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/aLmC9fsf/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/2HJJwugu/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/2HJJwugu/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/1ArVqrD4/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/1ArVqrD4/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Ps6chHDi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Ps6chHDi/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/QXRcgJVD/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/QXRcgJVD/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/b6Y5HW4Q/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/b6Y5HW4Q/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/gHPZPr4P/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/gHPZPr4P/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/3pOQPfzA/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/3pOQPfzA/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/G2dZGi39/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/G2dZGi39/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/8WBC931c/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/8WBC931c/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/2yTbpNfi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/2yTbpNfi/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/rzSBUgr3/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/rzSBUgr3/index.m3u8"
+            },
+            {
+              "name": "Tập 14",
+              "slug": "tap-14",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 14",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/514UFIOh/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/514UFIOh/index.m3u8"
+            },
+            {
+              "name": "Tập 15",
+              "slug": "tap-15",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 15",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/81TCoqVP/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/81TCoqVP/index.m3u8"
+            },
+            {
+              "name": "Tập 16",
+              "slug": "tap-16",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 16",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/vT39FjOk/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/vT39FjOk/index.m3u8"
+            },
+            {
+              "name": "Tập 17",
+              "slug": "tap-17",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 17",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Da8qaqSi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Da8qaqSi/index.m3u8"
+            },
+            {
+              "name": "Tập 18",
+              "slug": "tap-18",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 18",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/0zceQ9iE/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/0zceQ9iE/index.m3u8"
+            },
+            {
+              "name": "Tập 19",
+              "slug": "tap-19",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 19",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/v2h32ZXw/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/v2h32ZXw/index.m3u8"
+            },
+            {
+              "name": "Tập 20",
+              "slug": "tap-20",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 20",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/tKRlNSRt/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/tKRlNSRt/index.m3u8"
+            },
+            {
+              "name": "Tập 21",
+              "slug": "tap-21",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 21",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/K0n5K6Zd/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/K0n5K6Zd/index.m3u8"
+            },
+            {
+              "name": "Tập 22",
+              "slug": "tap-22",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 22",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/XmGyLNM1/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/XmGyLNM1/index.m3u8"
+            },
+            {
+              "name": "Tập 23",
+              "slug": "tap-23",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 23",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/be8mcpZR/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/be8mcpZR/index.m3u8"
+            },
+            {
+              "name": "Tập 24",
+              "slug": "tap-24",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 24",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/IxfejzAP/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/IxfejzAP/index.m3u8"
+            },
+            {
+              "name": "Tập 25",
+              "slug": "tap-25",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 25",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/snVNM4Mh/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/snVNM4Mh/index.m3u8"
+            },
+            {
+              "name": "Tập 26",
+              "slug": "tap-26",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 26",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/5q2wqUcp/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/5q2wqUcp/index.m3u8"
+            },
+            {
+              "name": "Tập 27",
+              "slug": "tap-27",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 27",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/zbov7YZY/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/zbov7YZY/index.m3u8"
+            },
+            {
+              "name": "Tập 28",
+              "slug": "tap-28",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 28",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/nFhgFc12/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/nFhgFc12/index.m3u8"
+            },
+            {
+              "name": "Tập 29",
+              "slug": "tap-29",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 29",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/1xPcU1jO/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/1xPcU1jO/index.m3u8"
+            },
+            {
+              "name": "Tập 30",
+              "slug": "tap-30",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 30",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/XyNG1dRm/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/XyNG1dRm/index.m3u8"
+            },
+            {
+              "name": "Tập 31",
+              "slug": "tap-31",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 31",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/p4gCw2wx/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/p4gCw2wx/index.m3u8"
+            },
+            {
+              "name": "Tập 32",
+              "slug": "tap-32",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 32",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/rxe9t9YH/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/rxe9t9YH/index.m3u8"
+            },
+            {
+              "name": "Tập 33",
+              "slug": "tap-33",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 33",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/VUs6kGHs/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/VUs6kGHs/index.m3u8"
+            },
+            {
+              "name": "Tập 34",
+              "slug": "tap-34",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 34",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/GslOPP6e/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/GslOPP6e/index.m3u8"
+            },
+            {
+              "name": "Tập 35",
+              "slug": "tap-35",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 35",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/GReZiKez/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/GReZiKez/index.m3u8"
+            },
+            {
+              "name": "Tập 36",
+              "slug": "tap-36",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 36",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Mre2BZmn/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Mre2BZmn/index.m3u8"
+            },
+            {
+              "name": "Tập 37",
+              "slug": "tap-37",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 37",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/7NtoUet2/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/7NtoUet2/index.m3u8"
+            },
+            {
+              "name": "Tập 38",
+              "slug": "tap-38",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 38",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/KAtpEUKG/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/KAtpEUKG/index.m3u8"
+            },
+            {
+              "name": "Tập 39",
+              "slug": "tap-39",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 39",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/1pARV5vP/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/1pARV5vP/index.m3u8"
+            },
+            {
+              "name": "Tập 40",
+              "slug": "tap-40",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 40",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/8BdvVp3u/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/8BdvVp3u/index.m3u8"
+            },
+            {
+              "name": "Tập 41",
+              "slug": "tap-41",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 41",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/2fPJK8QF/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/2fPJK8QF/index.m3u8"
+            },
+            {
+              "name": "Tập 42",
+              "slug": "tap-42",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 42",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/ga9RcVdA/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/ga9RcVdA/index.m3u8"
+            },
+            {
+              "name": "Tập 43",
+              "slug": "tap-43",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 43",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/dN2jL4hi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/dN2jL4hi/index.m3u8"
+            },
+            {
+              "name": "Tập 44",
+              "slug": "tap-44",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 44",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/GdPIB40t/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/GdPIB40t/index.m3u8"
+            },
+            {
+              "name": "Tập 45",
+              "slug": "tap-45",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 45",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/TdyylMK4/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/TdyylMK4/index.m3u8"
+            },
+            {
+              "name": "Tập 46",
+              "slug": "tap-46",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 46",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/WL5hoHbf/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/WL5hoHbf/index.m3u8"
+            },
+            {
+              "name": "Tập 47",
+              "slug": "tap-47",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 47",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/yCFJhWkC/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/yCFJhWkC/index.m3u8"
+            },
+            {
+              "name": "Tập 48",
+              "slug": "tap-48",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 48",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/5vj9AT92/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/5vj9AT92/index.m3u8"
+            },
+            {
+              "name": "Tập 49",
+              "slug": "tap-49",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 49",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/kEGAgtVs/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/kEGAgtVs/index.m3u8"
+            },
+            {
+              "name": "Tập 50",
+              "slug": "tap-50",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 50",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/64a8U44s/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/64a8U44s/index.m3u8"
+            },
+            {
+              "name": "Tập 51",
+              "slug": "tap-51",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 51",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/3i7QTkrp/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/3i7QTkrp/index.m3u8"
+            },
+            {
+              "name": "Tập 52",
+              "slug": "tap-52",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 52",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/JZrTloJ3/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/JZrTloJ3/index.m3u8"
+            },
+            {
+              "name": "Tập 53",
+              "slug": "tap-53",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 53",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/tc0ySJyt/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/tc0ySJyt/index.m3u8"
+            },
+            {
+              "name": "Tập 54",
+              "slug": "tap-54",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 54",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/JQgOQTON/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/JQgOQTON/index.m3u8"
+            },
+            {
+              "name": "Tập 55",
+              "slug": "tap-55",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 55",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/8e1bS3fO/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/8e1bS3fO/index.m3u8"
+            },
+            {
+              "name": "Tập 56",
+              "slug": "tap-56",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 56",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/ecYAYmrT/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/ecYAYmrT/index.m3u8"
+            },
+            {
+              "name": "Tập 57",
+              "slug": "tap-57",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 57",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/6iDTZ1Dl/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/6iDTZ1Dl/index.m3u8"
+            },
+            {
+              "name": "Tập 58",
+              "slug": "tap-58",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 58",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/RmB3k2BS/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/RmB3k2BS/index.m3u8"
+            },
+            {
+              "name": "Tập 59",
+              "slug": "tap-59",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 59",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Ty1vQulr/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Ty1vQulr/index.m3u8"
+            },
+            {
+              "name": "Tập 60",
+              "slug": "tap-60",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 60",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Seh6fgYU/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Seh6fgYU/index.m3u8"
+            },
+            {
+              "name": "Tập 61",
+              "slug": "tap-61",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 61",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/kAhLxBBP/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/kAhLxBBP/index.m3u8"
+            },
+            {
+              "name": "Tập 62",
+              "slug": "tap-62",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 62",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/MmrXCmmk/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/MmrXCmmk/index.m3u8"
+            },
+            {
+              "name": "Tập 63",
+              "slug": "tap-63",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 63",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/XlNnCKG6/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/XlNnCKG6/index.m3u8"
+            },
+            {
+              "name": "Tập 64",
+              "slug": "tap-64",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 64",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/qifZg4sj/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/qifZg4sj/index.m3u8"
+            },
+            {
+              "name": "Tập 65",
+              "slug": "tap-65",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 65",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/d9cZfXBI/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/d9cZfXBI/index.m3u8"
+            },
+            {
+              "name": "Tập 66",
+              "slug": "tap-66",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 66",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/caBlBtUX/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/caBlBtUX/index.m3u8"
+            },
+            {
+              "name": "Tập 67",
+              "slug": "tap-67",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 67",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/jHqpGVss/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/jHqpGVss/index.m3u8"
+            },
+            {
+              "name": "Tập 68",
+              "slug": "tap-68",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 68",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/33dIjJuJ/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/33dIjJuJ/index.m3u8"
+            },
+            {
+              "name": "Tập 69",
+              "slug": "tap-69",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 69",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/0pvq2Rv9/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/0pvq2Rv9/index.m3u8"
+            },
+            {
+              "name": "Tập 70",
+              "slug": "tap-70",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 70",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/YDuK7tbO/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/YDuK7tbO/index.m3u8"
+            },
+            {
+              "name": "Tập 71",
+              "slug": "tap-71",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 71",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/biv1bESx/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/biv1bESx/index.m3u8"
+            },
+            {
+              "name": "Tập 72",
+              "slug": "tap-72",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 72",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/S02rCLgX/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/S02rCLgX/index.m3u8"
+            },
+            {
+              "name": "Tập 73",
+              "slug": "tap-73",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 73",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/hwXgmJX5/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/hwXgmJX5/index.m3u8"
+            },
+            {
+              "name": "Tập 74",
+              "slug": "tap-74",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 74",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/Z4aIj9Ak/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/Z4aIj9Ak/index.m3u8"
+            },
+            {
+              "name": "Tập 75",
+              "slug": "tap-75",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 75",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/2GdIzvzs/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/2GdIzvzs/index.m3u8"
+            },
+            {
+              "name": "Tập 76",
+              "slug": "tap-76",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 76",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/pKQPGRQi/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/pKQPGRQi/index.m3u8"
+            },
+            {
+              "name": "Tập 77",
+              "slug": "tap-77",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 77",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/gCS5D3i8/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/gCS5D3i8/index.m3u8"
+            },
+            {
+              "name": "Tập 78",
+              "slug": "tap-78",
+              "filename": "The Tom and Jerry Show (Phần 2) - The Tom and Jerry Show (Season 2) - 2014 - HD - Vietsub - Tập 78",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231214/5lro9NtE/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231214/5lro9NtE/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-11T03:46:44.000Z"
+        },
+        "modified": {
+          "time": "2023-12-11T03:46:44.000Z"
+        },
+        "_id": "28fda3e1d182e68d525267166df815af",
+        "name": "Tom Và Jerry: Chú Rồng Bị Mất Tích",
+        "slug": "tom-va-jerry-chu-rong-bi-mat-tich",
+        "origin_name": "Tom And Jerry: The Lost Dragon",
+        "alternative_names": [],
+        "content": "<p>Tom Và Jerry: Chú Rồng Mất Tích là phần phim mới nhất về cặp mèo - chuột nổi tiếng do Spike Brandt và Tony Cervone đạo diễn. Bộ phim sẽ đưa người xem phiêu lưu vào thế giới của những phù thủy và những tình huống hài hước giữa chúng.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231211-1/c26b7eba9cfd425a5e3676ae0910d14e.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231211-1/8c5c6b9ff55dba4ef774cd235ff3566a.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=FpMNlArW7yM",
+        "time": "N/A",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 99,
+        "actor": [
+          "Laraine Newman",
+          "Jess Harnell",
+          "Richard McGonagle"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "",
+              "slug": "",
+              "filename": "",
+              "link_embed": "",
+              "link_m3u8": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-08T22:49:26.000Z"
+        },
+        "modified": {
+          "time": "2023-12-08T22:49:26.000Z"
+        },
+        "_id": "21186d7b1482412ab14f0332b8aee119",
+        "name": "Tom And Jerry Snowman's Land",
+        "slug": "tom-and-jerry-snowmans-land",
+        "origin_name": "Tom And Jerry Snowman's Land",
+        "alternative_names": [],
+        "content": "<p>Đã đến lúc đuổi theo tinh thần ngày lễ đó với Tom và Jerry! Với phép thuật trong không khí, Jerry và cháu trai của mình, Tuffy, tạo ra một con chuột tuyết sống lại một cách thần kỳ! Để giữ cho người bạn mới của họ, chú chuột tuyết Larry không bị tan chảy, Tuffy và Jerry phải chạy đua với anh ta đến Ngôi làng của Người tuyết trong truyền thuyết. Để theo đuổi nóng bỏng, Tom và Tiến sĩ Doublevay quỷ quyệt có kế hoạch riêng cho ma thuật của Larry.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231208-1/dd5c1ade92b20c084ba79fd18546842d.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231208-1/eda07483c1b31ff1b8af648fb8243b33.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "76 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 89,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "",
+              "slug": "",
+              "filename": "",
+              "link_embed": "",
+              "link_m3u8": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-04T18:39:14.000Z"
+        },
+        "modified": {
+          "time": "2023-12-04T18:39:14.000Z"
+        },
+        "_id": "b71f5aaf3371c2cdfb7a7c0497f569d4",
+        "name": "Tom and Jerry: Robin Hood and His Merry Mouse",
+        "slug": "tom-and-jerry-robin-hood-and-his-merry-mouse",
+        "origin_name": "Tom and Jerry: Robin Hood and His Merry Mouse",
+        "alternative_names": [],
+        "content": "<p>Robin Hood, một người đàn ông vui vẻ ăn cắp từ người giàu để dành cho người nghèo, có một Sidekick mới có khả năng, Jerry. Vua độc ác suy luận, theo cách riêng của mình rực rỡ, rằng cách tốt nhất để đối phó với mối đe dọa mới này là một con mèo, vì vậy anh ta thuê Tom.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231204-1/e6accd297e18fa4add07ccb64670c6c4.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231204-1/3405c43d8748e822db605d0715e35f49.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "55 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2012,
+        "view": 110,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "",
+              "slug": "",
+              "filename": "",
+              "link_embed": "",
+              "link_m3u8": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-16T00:22:45.000Z"
+        },
+        "modified": {
+          "time": "2023-11-27T20:42:49.000Z"
+        },
+        "_id": "7d3d5bcad324d3edc08e40738e663554",
+        "name": "Tom and Jerry: Shiver Me Whiskers",
+        "slug": "tom-and-jerry-shiver-me-whiskers",
+        "origin_name": "Tom and Jerry: Shiver Me Whiskers",
+        "alternative_names": [],
+        "content": "<p>Một con mèo và một con chuột phải vượt qua một nhóm cướp biển để tìm kho báu bị chôn vùi.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231116-1/ecd3806c9b85077c2c324a51563f4a77.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231116-1/096c6fb4bfbb2e887d1f834fd9a94ad2.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "74 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2006,
+        "view": 144,
+        "actor": [
+          "William Hanna",
+          "Mark Hamill",
+          "Kathy Najimy",
+          "Charles Nelson Reilly",
+          "Kevin Michael Richardson",
+          "Wallace Shawn"
+        ],
+        "director": [
+          "Scott Jeralds"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom and Jerry: Shiver Me Whiskers - Tom and Jerry: Shiver Me Whiskers - 2006 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231126/Q2sU0c6a/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231126/Q2sU0c6a/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-13T23:44:03.000Z"
+        },
+        "modified": {
+          "time": "2023-11-26T14:10:33.000Z"
+        },
+        "_id": "44e6b86aeefa3eca5832a98043a7b6fa",
+        "name": "Tom và Jerry: Back to Oz",
+        "slug": "tom-va-jerry-back-to-oz",
+        "origin_name": "Tom and Jerry: Back to Oz",
+        "alternative_names": [],
+        "content": "<p>Sau khi bắt được phù thủy tốt bụng, Vua Gnome phản diện gây ra sự tàn phá khắp xứ Oz khi hắn cần đôi dép hồng ngọc của Dorothy để nắm quyền kiểm soát Thành phố Ngọc lục bảo. Vì vậy, việc cứu vùng đất Oz là tùy thuộc vào Tom và Jerry!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231114-1/6576ef5196a478a47ff5d2ded169b466.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231114-1/2530fe9c9bba05fc3c4d76c0790531af.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "80 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2016,
+        "view": 135,
+        "actor": [
+          "Grey DeLisle",
+          "Joe Alaskey",
+          "Michael Gough",
+          "Rob Paulsen",
+          "Todd Stashwick",
+          "Frances Conroy",
+          "Stephen Root",
+          "Kath Soucie",
+          "James Monroe Iglehart",
+          "Amy Pemberton",
+          "Laraine Newman",
+          "Andrea Martin",
+          "Jason Alexander",
+          "Spike Brandt",
+          "Jye Frasca"
+        ],
+        "director": [
+          "Tony Cervone",
+          "Spike Brandt"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Giả Tượng",
+            "slug": "gia-tuong",
+            "id": "97e7ed4c52ce3737e18bdf0bd1331ce8"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry: Back to Oz - Tom and Jerry: Back to Oz - 2016 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231126/wF4QDjRh/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231126/wF4QDjRh/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-12T00:46:46.000Z"
+        },
+        "modified": {
+          "time": "2023-11-24T00:58:29.000Z"
+        },
+        "_id": "75f266633433d20abf6c1a13d97e7491",
+        "name": "Tom và Jerry: Spy Quest",
+        "slug": "tom-va-jerry-spy-quest",
+        "origin_name": "Tom and Jerry: Spy Quest",
+        "alternative_names": [],
+        "content": "<p>Hai nhóm nhân vật hoạt hình cổ điển đến với nhau trong chiếc crossover đầy thú vị này với loạt phim hoạt hình phiêu lưu-phiêu lưu nổi tiếng Jonny Quest. Những người hâm mộ ở mọi lứa tuổi sẽ không muốn bỏ lỡ cuộc phiêu lưu ở trái tim này là Tussome Tom và Jerry tham gia Jonny Quest và Pal Hadji và bắt tay vào một nhiệm vụ gián điệp nguy hiểm để cứu thế giới. Chỉ là một ngày khác ở bãi biển cho Dueling Tom và Jerry ... cho đến khi họ va vào các điệp viên Junior thế giới Jonny Quest và Hadji và người bạn đồng hành của họ, tên cướp. Khi FIGHTIME FUME NEMESIS, Tiến sĩ Zin phát hiện ra rằng Cha của Jonny, Tiến sĩ Benton Quest, sở hữu một thiết bị có thể giải quyết các vấn đề về năng lượng của thế giới, Zin sẽ gửi đội quân ác quỷ độc ác của mình để đánh cắp nó và bắt Benton và vệ sĩ của anh ta, Race Bannon. Đó là khi Jonny và những người bạn lông xù mới của anh ấy vào hành động! Được thiết lập cho mưu mô, hồi hộp và hồi hộp cho cả gia đình. Tia Carrere và Tim Matheson cho vay tiếng nói của họ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231112-1/6af25c4cce31a6774e67e972f80c83c1.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231112-1/c6852636ef24f835a98a527feba7ebae.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "73 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2015,
+        "view": 129,
+        "actor": [
+          "Reese Hartwig",
+          "James Hong",
+          "Grey DeLisle",
+          "Tim Matheson",
+          "Jess Harnell",
+          "Richard McGonagle",
+          "Tia Carrere",
+          "Joe Alaskey"
+        ],
+        "director": [
+          "Tony Cervone",
+          "Spike Brandt"
+        ],
+        "category": [
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry: Spy Quest - Tom and Jerry: Spy Quest - 2015 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231123/DMOlIscK/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231123/DMOlIscK/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-09T13:39:16.000Z"
+        },
+        "modified": {
+          "time": "2023-11-19T00:17:58.000Z"
+        },
+        "_id": "5b0fa0e4c041548bb6289e15d865a696",
+        "name": "Tom và Jerry: Willy Wonka và Nhà Máy Sôcôla",
+        "slug": "tom-va-jerry-willy-wonka-va-nha-may-socola",
+        "origin_name": "Tom and Jerry: Willy Wonka and the Chocolate Factory",
+        "alternative_names": [],
+        "content": "<p>Một bài hát lại hoạt hình của bộ phim Willy Wonka và Nhà máy sô cô la, trong đó Tom và Jerry giúp Charlie Buck đạt được một vé vàng và bí mật đi cùng anh ta vào nhà máy sô cô la của Willy Wonka để ngăn chặn một trong những đối thủ của Wonka ăn cắp một viên kẹo đặc biệt được gọi là Gobstopper vĩnh cửu, nhưng cũng trải nghiệm thế giới tuyệt vời của nhà máy sô cô la với hướng dẫn của Tuffy, một con chuột Oompa-loompa.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231109-1/39c13e993050473f16bb84b01b4a48bc.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231109-1/09816b8f1436c16dfdb48d1b0efc4845.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "79 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2017,
+        "view": 138,
+        "actor": [
+          "JP Karliak",
+          "Jess Harnell",
+          "Lincoln Melcher",
+          "Mick Wingert",
+          "Lori Alan",
+          "Jeff Bergman",
+          "Spike Brandt",
+          "Rachel Butera",
+          "Kate Higgins",
+          "Dallas Lovato",
+          "Emily O'Brien",
+          "Sean Schemmel",
+          "Kath Soucie",
+          "Jim Ward",
+          "Audrey Wasilewski",
+          "Lauren Weisman"
+        ],
+        "director": [
+          "Spike Brandt"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry: Willy Wonka và Nhà Máy Sôcôla - Tom and Jerry: Willy Wonka and the Chocolate Factory - 2017 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231118/sctg4g8X/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231118/sctg4g8X/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-23T23:30:34.000Z"
+        },
+        "modified": {
+          "time": "2023-10-25T21:58:30.000Z"
+        },
+        "_id": "b1c00bcd4b5183705c134b3365f8c45e",
+        "name": "Tom và Jerry: Vùng Đất Người Tuyết",
+        "slug": "tom-va-jerry-vung-dat-nguoi-tuyet",
+        "origin_name": "Tom and Jerry: Snowman's Land",
+        "alternative_names": [],
+        "content": "<p>Với phép thuật trong không trung, Jerry và cháu trai của mình, Tuffy đã tạo ra chú chuột tuyết biết cử động Larry. Để giữ cho Larry không bị tan chảy, Jerry và cháu trai phải chạy đua với thời gian để tới Ngôi làng của Người tuyết trong truyền thuyết.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231024-1/0fa61e2df13a403921f97d1d332e54db.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231024-1/1ebb189de748f745949c1ad916ee8610.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "76 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 158,
+        "actor": [
+          "Carlos Alazraqui",
+          "Kimberly Brooks",
+          "Joey D'Auria",
+          "Regi Davis",
+          "Laraine Newman",
+          "Kevin Michael Richardson",
+          "Kath Soucie",
+          "Stephen Stanton",
+          "Rick Zieff"
+        ],
+        "director": [
+          "Darrell Van Citters"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Tom và Jerry: Vùng Đất Người Tuyết - Tom and Jerry: Snowman's Land - 2022 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231025/zHLsS0ki/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231025/zHLsS0ki/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "131721",
+          "type": "tv",
+          "season": 3,
+          "vote_average": 6,
+          "vote_count": 2
+        },
+        "imdb": {
+          "id": "tt11194006",
+          "vote_average": 6.4,
+          "vote_count": 85
+        },
+        "created": {
+          "time": "2024-10-07T21:44:19.000Z"
+        },
+        "modified": {
+          "time": "2024-10-11T00:17:01.000Z"
+        },
+        "_id": "8c5c3183cdd8d97e052a133bf8c39e60",
+        "name": "Oggy Oggy (Phần 3)",
+        "slug": "oggy-oggy-phan-3",
+        "origin_name": "Oggy Oggy (Season 3)",
+        "alternative_names": [
+          "Оггі Оггі",
+          "Oggy Oggy"
+        ],
+        "content": "<p>Tham gia cùng Oggy Oggy đáng yêu và hội bạn ở thế giới mèo con tươi sáng và đầy màu sắc. Họ tất bật với những phút giây vui vẻ – và các cuộc phiêu lưu tuyệt đỉnh!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20241007-1/02eab707f1d99c7d9deb3007a5af2c63.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20241007-1/8bcf463357e0bec4b3c36d9dc3d1cdb5.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "22 phút/tập",
+        "episode_current": "Hoàn Tất (23/23)",
+        "episode_total": 23,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2023,
+        "view": 163,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/43u368oy/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/43u368oy/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/kA4cKHkp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/kA4cKHkp/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/2na1TrIe/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/2na1TrIe/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/Ybl4MlvO/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/Ybl4MlvO/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/b1YcZofr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/b1YcZofr/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/z1CtHGWG/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/z1CtHGWG/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/jjoaixml/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/jjoaixml/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/XZ4WdmKw/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/XZ4WdmKw/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/mXjdL7mS/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/mXjdL7mS/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/6XGbnDO8/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/6XGbnDO8/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/hU8385UZ/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/hU8385UZ/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/vNIw1q1R/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/vNIw1q1R/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/E3lTjffz/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/E3lTjffz/index.m3u8"
+            },
+            {
+              "name": "Tập 14",
+              "slug": "tap-14",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 14",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/JEbTpbCg/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/JEbTpbCg/index.m3u8"
+            },
+            {
+              "name": "Tập 15",
+              "slug": "tap-15",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 15",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/a59RVnQM/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/a59RVnQM/index.m3u8"
+            },
+            {
+              "name": "Tập 16",
+              "slug": "tap-16",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 16",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/bbUAhZcY/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/bbUAhZcY/index.m3u8"
+            },
+            {
+              "name": "Tập 17",
+              "slug": "tap-17",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 17",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/rCXz45pN/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/rCXz45pN/index.m3u8"
+            },
+            {
+              "name": "Tập 18",
+              "slug": "tap-18",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 18",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/Fn2COqb5/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/Fn2COqb5/index.m3u8"
+            },
+            {
+              "name": "Tập 19",
+              "slug": "tap-19",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 19",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/loQLJAZ3/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/loQLJAZ3/index.m3u8"
+            },
+            {
+              "name": "Tập 20",
+              "slug": "tap-20",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 20",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/LFHIDRk6/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/LFHIDRk6/index.m3u8"
+            },
+            {
+              "name": "Tập 21",
+              "slug": "tap-21",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 21",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/V9UiA8ye/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/V9UiA8ye/index.m3u8"
+            },
+            {
+              "name": "Tập 22",
+              "slug": "tap-22",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 22",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/DMt3BxfC/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/DMt3BxfC/index.m3u8"
+            },
+            {
+              "name": "Tập 23",
+              "slug": "tap-23",
+              "filename": "Oggy Oggy (Phần 3) - Oggy Oggy (Season 3) - 2023 - FHD - Vietsub - Tập 23",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/PZapLLak/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/PZapLLak/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "131721",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 6,
+          "vote_count": 2
+        },
+        "imdb": {
+          "id": "tt11194006",
+          "vote_average": 6.4,
+          "vote_count": 85
+        },
+        "created": {
+          "time": "2024-10-07T21:43:11.000Z"
+        },
+        "modified": {
+          "time": "2024-10-11T00:16:50.000Z"
+        },
+        "_id": "b99c61acedb54c5253819b7b4f2d88c6",
+        "name": "Oggy Oggy (Phần 1)",
+        "slug": "oggy-oggy-phan-1",
+        "origin_name": "Oggy Oggy (Season 1)",
+        "alternative_names": [
+          "Оггі Оггі",
+          "Oggy Oggy"
+        ],
+        "content": "<p>Tham gia cùng Oggy Oggy đáng yêu và hội bạn ở thế giới mèo con tươi sáng và đầy màu sắc. Họ tất bật với những phút giây vui vẻ – và các cuộc phiêu lưu tuyệt đỉnh!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20241007-1/3bad4fd7e8eaf4e22c29b609b527446c.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20241007-1/c3499fdee10db4fefa197c846c256c12.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "22 phút/tập",
+        "episode_current": "Hoàn Tất (16/16)",
+        "episode_total": 16,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 178,
+        "actor": [
+          "Fanny Bloc",
+          "Emmylou Homs",
+          "Kelly Marot",
+          "Kaycie Chase",
+          "Jérémy Prévost"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Quốc Gia Khác",
+            "slug": "quoc-gia-khac",
+            "id": "45a260effdd4ba38e861092ae2a1b96a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/F4e6AuaP/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/F4e6AuaP/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/Uhd44djJ/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/Uhd44djJ/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/LwUpLGWl/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/LwUpLGWl/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/lCRhJPSr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/lCRhJPSr/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/pxcgovTC/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/pxcgovTC/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/S01BJON9/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/S01BJON9/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/8jbp55tt/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/8jbp55tt/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/Og0UzjfH/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/Og0UzjfH/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/uTdCX04V/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/uTdCX04V/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/QQzo9Lqp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/QQzo9Lqp/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/yPeMG0QA/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/yPeMG0QA/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/lPuXyQUR/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/lPuXyQUR/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/tO3rzQC4/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/tO3rzQC4/index.m3u8"
+            },
+            {
+              "name": "Tập 14",
+              "slug": "tap-14",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 14",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/3QlCdrQU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/3QlCdrQU/index.m3u8"
+            },
+            {
+              "name": "Tập 15",
+              "slug": "tap-15",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 15",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/rvSAAZNr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/rvSAAZNr/index.m3u8"
+            },
+            {
+              "name": "Tập 16",
+              "slug": "tap-16",
+              "filename": "Oggy Oggy (Phần 1) - Oggy Oggy (Season 1) - 2021 - FHD - Vietsub - Tập 16",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20241010/f0czHV4M/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20241010/f0czHV4M/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-05-09T00:36:49.000Z"
+        },
+        "modified": {
+          "time": "2024-06-01T15:21:46.000Z"
+        },
+        "_id": "81a25c4e9b7f4f8fa356e4863b32735e",
+        "name": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp",
+        "slug": "oggy-va-nhung-chu-gian-tinh-nghich-the-he-ke-tiep",
+        "origin_name": "Oggy And The Cockroaches: Next Generation",
+        "alternative_names": [],
+        "content": "<p>Nhập hội cùng mèo ngầu Oggy và bé voi nghịch ngợm Piya khi họ bắt đầu cuộc phiêu lưu kỳ thú và ấm áp – cùng bộ ba chú gián sẵn sàng phá hỏng mọi cuộc vui!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240509-1/90a531b1f2c818b370be6cc48f39c2de.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240509-1/97a036724854bf5c3c0385bc20d5050d.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "43 phút/tập",
+        "episode_current": "Hoàn Tất (13/13)",
+        "episode_total": 13,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 44,
+        "actor": [],
+        "director": [],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/UNO8Fc2L/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/UNO8Fc2L/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/uvw5lWvr/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/uvw5lWvr/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/U89wSFvy/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/U89wSFvy/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/gTpZlGHa/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/gTpZlGHa/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/RVsJoF5u/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/RVsJoF5u/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/zZU6BO8z/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/zZU6BO8z/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/9NlGizlk/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/9NlGizlk/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/oF40ocBQ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/oF40ocBQ/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/l6RQtuan/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/l6RQtuan/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/xS9Mal32/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/xS9Mal32/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/zVQtwb3z/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/zVQtwb3z/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/0QdIqV6J/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/0QdIqV6J/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "Oggy Và Những Chú Gián Tinh Nghịch: Thế Hệ Kế Tiếp - Oggy And The Cockroaches: Next Generation - 2022 - HD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240515/DJw0x3Xn/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240515/DJw0x3Xn/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-03-08T04:06:38.000Z"
+        },
+        "modified": {
+          "time": "2024-03-31T23:23:10.000Z"
+        },
+        "_id": "9dfe163fd649f3b985fa8efd30a54391",
+        "name": "Oggy Oggy (Phần 2)",
+        "slug": "oggy-oggy-phan-2",
+        "origin_name": "Oggy Oggy (Season 2)",
+        "alternative_names": [],
+        "content": "<p>Từ dốc trượt tuyết cho đến đáy biển, Oggy Oggy và hội bạn mèo con đáng yêu luôn bên nhau qua mọi cuộc phiêu lưu và đảm bảo rằng ai nấy đều cười rạng rỡ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240308-1/7dc0ddea5f0755d09205c9573a5ffced.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240308-1/6a78bdda2122f3f4e6a8aabd0cd3a4bb.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "22 phút/tập",
+        "episode_current": "Hoàn Tất (13/13)",
+        "episode_total": 13,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2023,
+        "view": 60,
+        "actor": [
+          "Fanny Bloc",
+          "Emmylou Homs",
+          "Kelly Marot",
+          "Kaycie Chase",
+          "Jérémy Prévost"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/9qITAY2B/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/9qITAY2B/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/gPtFsNvL/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/gPtFsNvL/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/bJPFfs8d/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/bJPFfs8d/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/bAkvwwra/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/bAkvwwra/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/RdOr4LSj/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/RdOr4LSj/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/nkMiDmRH/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/nkMiDmRH/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/YEqEL5Mc/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/YEqEL5Mc/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/m8z63uKA/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/m8z63uKA/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/4vKk9MIt/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/4vKk9MIt/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240314/xQafhUKO/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240314/xQafhUKO/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/1IjPDEgp/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/1IjPDEgp/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/3pqyzzIN/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/3pqyzzIN/index.m3u8"
+            },
+            {
+              "name": "Tập 13",
+              "slug": "tap-13",
+              "filename": "Oggy Oggy (Phần 2) - Oggy Oggy (Season 2) - 2023 - HD - Vietsub - Tập 13",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20240315/4sa5j6YN/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20240315/4sa5j6YN/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-16T14:19:37.000Z"
+        },
+        "modified": {
+          "time": "2023-11-30T17:17:55.000Z"
+        },
+        "_id": "32508f53f24c46f685870a075eaaa29c",
+        "name": "Mèo Oggy Và Những Chú Gián Tinh Nghịch",
+        "slug": "meo-oggy-va-nhung-chu-gian-tinh-nghich",
+        "origin_name": "Oggy and the Cockroaches: The Movie",
+        "alternative_names": [],
+        "content": "<p>Nhân vật chính trong phim là Oggy - chú mèo da xanh tốt bụng và thật thà - sống trong cùng một ngôi nhà với mèo Jack. Oggy sẽ là chú mèo hạnh phúc nhất nếu ba chú gián: Dee Dee, Joey và Marky không xuất hiện và quyết định cư trú tại ngôi nhà thoải mái của mình. Ba chú gián ngốc nghếch, tinh nghịch luôn nghĩ ra đủ trò tinh quái để chọc phá hai chú mèo, đặc biệt là Oggy. Cuộc chiến giữa chúng dường như không bao giờ có hồi kết.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231116-1/94ba337b341de1b44736003cb6eda199.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231116-1/2059190367b12877a084aa9ac5f9764f.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "80 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2013,
+        "view": 152,
+        "actor": [],
+        "director": [
+          "Olivier Jean-Marie"
+        ],
+        "category": [
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Pháp",
+            "slug": "phap",
+            "id": "92f688188aa938a03a61a786d6616dcb"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Mèo Oggy Và Những Chú Gián Tinh Nghịch - Oggy and the Cockroaches: The Movie - 2013 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231129/pAww46Kj/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231129/pAww46Kj/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

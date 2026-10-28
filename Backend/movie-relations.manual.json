@@ -666,6 +666,54 @@
           "order": 4
         }
       ]
+    },
+    {
+      "id": "tom-jerry-show-2014",
+      "label": "The Tom and Jerry Show (2014)",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/the-tom-and-jerry-show-phan-2",
+        "https://phimapi.com/phim/the-tom-and-jerry-show-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "the-tom-and-jerry-show-phan-2",
+          "label": "The Tom and Jerry Show (Season 2)",
+          "order": 0
+        },
+        {
+          "slug": "the-tom-and-jerry-show-phan-3",
+          "label": "The Tom And Jerry Show (Season 3)",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "oggy-oggy-series",
+      "label": "Oggy Oggy",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/oggy-oggy-phan-1",
+        "https://phimapi.com/phim/oggy-oggy-phan-2",
+        "https://phimapi.com/phim/oggy-oggy-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "oggy-oggy-phan-1",
+          "label": "Oggy Oggy (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "oggy-oggy-phan-2",
+          "label": "Oggy Oggy (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "oggy-oggy-phan-3",
+          "label": "Oggy Oggy (Season 3)",
+          "order": 2
+        }
+      ]
     }
   ],
   "standalone": [
