@@ -7,7 +7,7 @@ const { registerCatalog, filters, normalize } = require("./catalog");
 const { readSource } = require("./migrate-catalog");
 test("source retains every unique movie and custom fields", () => {
   const movies = readSource();
-  assert.equal(movies.length, 3787);
+  assert.equal(movies.length, 3818);
   assert.equal(new Set(movies.map(m => m.slug)).size, movies.length);
   assert.ok(movies.some(m => m.group && m.partName));
   assert.ok(movies.every(m => m.title && m.poster && m.slug));
@@ -74,7 +74,7 @@ test("static browser catalog preserves all movies and needs no backend", async (
   vm.runInContext(fs.readFileSync(path.join(__dirname, "../Frontend/catalog-format.js"), "utf8") + fs.readFileSync(path.join(__dirname, "../Frontend/country-utils.js"), "utf8") + fs.readFileSync(path.join(__dirname, "../Frontend/genre-utils.js"), "utf8") + fs.readFileSync(path.join(__dirname, "../Frontend/data.js"), "utf8") + fs.readFileSync(path.join(__dirname, "../Frontend/api.js"), "utf8"), ctx);
   assert.equal(ctx.window.globalMoviesList.length, 0);
   const all = await ctx.fetchCatalogPage();
-  assert.equal(all.totalItems,3726);
+  assert.equal(all.totalItems,3757);
   assert.equal(all.movies.length,24);
   const second = await ctx.fetchCatalogPage({page:2});
   assert.ok(!all.movies.some(a => second.movies.some(b => a.slug === b.slug)));

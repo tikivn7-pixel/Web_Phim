@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3787 phim; 0 lỗi; 283 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3818 phim; 0 lỗi; 284 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -285,3 +285,4 @@
 - **warning / season-gap**: Nhóm tmdb-tv-90937 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — beastars-the-gioi-nguoi-thu-phan-1, beastars-the-gioi-nguoi-thu-phan-3
 - **warning / season-gap**: Nhóm tmdb-tv-69500 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — huu-nhan-so-phan-1, huu-nhan-so-phan-3, huu-nhan-so-phan-4, huu-nhan-so-phan-5, huu-nhan-so-phan-6, huu-nhan-so-phan-7
 - **warning / season-gap**: Nhóm tmdb-tv-83095 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — su-troi-day-cua-khien-hiep-si-phan-1, su-troi-day-cua-khien-hiep-si-phan-4
+- **warning / season-gap**: Nhóm tmdb-tv-8019 có khoảng trống số mùa; kiểm tra nhóm hoặc phần còn thiếu. — upin-ipin-phan-18, upin-ipin-phan-17, upin-ipin-phan-16, upin-ipin-phan-15, upin-ipin-phan-14, upin-ipin-phan-13, upin-ipin-phan-12, upin-ipin-phan-11, upin-ipin-phan-10, upin-ipin-phan-9, upin-ipin-phan-8, upin-ipin-phan-7, upin-ipin-phan-6, upin-ipin-phan-5, upin-ipin-phan-3, upin-ipin-phan-2, upin-ipin-phan-1

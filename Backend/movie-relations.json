@@ -766,6 +766,99 @@
       ]
     },
     {
+      "id": "boboiboy-original-series",
+      "label": "BoBoiBoy",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-phan-1",
+        "https://phimapi.com/phim/boboiboy-phan-2",
+        "https://phimapi.com/phim/boboiboy-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-phan-1",
+          "label": "BoBoiBoy (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-phan-2",
+          "label": "BoBoiBoy (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "boboiboy-phan-3",
+          "label": "BoBoiBoy (Season 3)",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "boboiboy-galaxy-series",
+      "label": "BoBoiBoy Galaxy",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-galaxy",
+        "https://phimapi.com/phim/boboiboy-galaxy-phan-2",
+        "https://phimapi.com/phim/boboiboy-galaxy-sori",
+        "https://phimapi.com/phim/boboiboy-galaxy-phan-3",
+        "https://phimapi.com/phim/boboiboy-galaxy-windara",
+        "https://phimapi.com/phim/boboiboy-galaxy-gentar"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-galaxy",
+          "label": "BoBoiBoy Galaxy",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-galaxy-phan-2",
+          "label": "BoBoiBoy Galaxy (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "boboiboy-galaxy-sori",
+          "label": "BoBoiBoy Galaxy: Sori",
+          "order": 2
+        },
+        {
+          "slug": "boboiboy-galaxy-phan-3",
+          "label": "BoBoiBoy Galaxy (Season 3)",
+          "order": 3
+        },
+        {
+          "slug": "boboiboy-galaxy-windara",
+          "label": "BoBoiBoy Galaxy: Windara",
+          "order": 4
+        },
+        {
+          "slug": "boboiboy-galaxy-gentar",
+          "label": "BoBoiBoy Galaxy: Gentar",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "boboiboy-films",
+      "label": "BoBoiBoy - Movies",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-phieu-luu-ky",
+        "https://phimapi.com/phim/boboiboy-2-cuoc-chien-ngan-ha"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-phieu-luu-ky",
+          "label": "BoBoiBoy: The Movie",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-2-cuoc-chien-ngan-ha",
+          "label": "BoBoiBoy Movie 2",
+          "order": 1
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -7000,6 +7093,153 @@
           "order": 3,
           "season": 4,
           "checkedAt": "2026-10-28T14:46:44.478Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-8019",
+      "label": "Upin & Ipin (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/8019",
+        "https://phimapi.com/phim/upin-ipin-phan-1",
+        "https://phimapi.com/phim/upin-ipin-phan-2",
+        "https://phimapi.com/phim/upin-ipin-phan-3",
+        "https://phimapi.com/phim/upin-ipin-phan-5",
+        "https://phimapi.com/phim/upin-ipin-phan-6",
+        "https://phimapi.com/phim/upin-ipin-phan-7",
+        "https://phimapi.com/phim/upin-ipin-phan-8",
+        "https://phimapi.com/phim/upin-ipin-phan-9",
+        "https://phimapi.com/phim/upin-ipin-phan-10",
+        "https://phimapi.com/phim/upin-ipin-phan-11",
+        "https://phimapi.com/phim/upin-ipin-phan-12",
+        "https://phimapi.com/phim/upin-ipin-phan-13",
+        "https://phimapi.com/phim/upin-ipin-phan-14",
+        "https://phimapi.com/phim/upin-ipin-phan-15",
+        "https://phimapi.com/phim/upin-ipin-phan-16",
+        "https://phimapi.com/phim/upin-ipin-phan-17",
+        "https://phimapi.com/phim/upin-ipin-phan-18"
+      ],
+      "members": [
+        {
+          "slug": "upin-ipin-phan-1",
+          "label": "Upin & Ipin (Phần 1) (Upin & Ipin (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-2",
+          "label": "Upin & Ipin (Phần 2) (Upin & Ipin (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-3",
+          "label": "Upin & Ipin (Phần 3) (Upin & Ipin (Season 3))",
+          "order": 2,
+          "season": 3,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-5",
+          "label": "Upin & Ipin (Phần 5) (Upin & Ipin (Season 5))",
+          "order": 3,
+          "season": 5,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-6",
+          "label": "Upin & Ipin (Phần 6) (Upin & Ipin (Season 6))",
+          "order": 4,
+          "season": 6,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-7",
+          "label": "Upin & Ipin (Phần 7) (Upin & Ipin (Season 7))",
+          "order": 5,
+          "season": 7,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-8",
+          "label": "Upin & Ipin (Phần 8) (Upin & Ipin (Season 8))",
+          "order": 6,
+          "season": 8,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-9",
+          "label": "Upin & Ipin (Phần 9) (Upin & Ipin (Season 9))",
+          "order": 7,
+          "season": 9,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-10",
+          "label": "Upin & Ipin (Phần 10) (Upin & Ipin (Season 10))",
+          "order": 8,
+          "season": 10,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-11",
+          "label": "Upin & Ipin (Phần 11) (Upin & Ipin (Season 11))",
+          "order": 9,
+          "season": 11,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-12",
+          "label": "Upin & Ipin (Phần 12) (Upin & Ipin (Season 12))",
+          "order": 10,
+          "season": 12,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-13",
+          "label": "Upin & Ipin (Phần 13) (Upin & Ipin (Season 13))",
+          "order": 11,
+          "season": 13,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-14",
+          "label": "Upin & Ipin (Phần 14) (Upin & Ipin (Season 14))",
+          "order": 12,
+          "season": 14,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-15",
+          "label": "Upin & Ipin (Phần 15) (Upin & Ipin (Season 15))",
+          "order": 13,
+          "season": 15,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-16",
+          "label": "Upin & Ipin (Phần 16) (Upin & Ipin (Season 16))",
+          "order": 14,
+          "season": 16,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-17",
+          "label": "Upin & Ipin (Phần 17) (Upin & Ipin (Season 17))",
+          "order": 15,
+          "season": 17,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
+        },
+        {
+          "slug": "upin-ipin-phan-18",
+          "label": "Upin & Ipin (Phần 18) (Upin & Ipin (Season 18))",
+          "order": 16,
+          "season": 18,
+          "checkedAt": "2026-10-28T15:04:30.655Z"
         }
       ]
     }

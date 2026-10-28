@@ -763,6 +763,99 @@
           "order": 1
         }
       ]
+    },
+    {
+      "id": "boboiboy-original-series",
+      "label": "BoBoiBoy",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-phan-1",
+        "https://phimapi.com/phim/boboiboy-phan-2",
+        "https://phimapi.com/phim/boboiboy-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-phan-1",
+          "label": "BoBoiBoy (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-phan-2",
+          "label": "BoBoiBoy (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "boboiboy-phan-3",
+          "label": "BoBoiBoy (Season 3)",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "boboiboy-galaxy-series",
+      "label": "BoBoiBoy Galaxy",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-galaxy",
+        "https://phimapi.com/phim/boboiboy-galaxy-phan-2",
+        "https://phimapi.com/phim/boboiboy-galaxy-sori",
+        "https://phimapi.com/phim/boboiboy-galaxy-phan-3",
+        "https://phimapi.com/phim/boboiboy-galaxy-windara",
+        "https://phimapi.com/phim/boboiboy-galaxy-gentar"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-galaxy",
+          "label": "BoBoiBoy Galaxy",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-galaxy-phan-2",
+          "label": "BoBoiBoy Galaxy (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "boboiboy-galaxy-sori",
+          "label": "BoBoiBoy Galaxy: Sori",
+          "order": 2
+        },
+        {
+          "slug": "boboiboy-galaxy-phan-3",
+          "label": "BoBoiBoy Galaxy (Season 3)",
+          "order": 3
+        },
+        {
+          "slug": "boboiboy-galaxy-windara",
+          "label": "BoBoiBoy Galaxy: Windara",
+          "order": 4
+        },
+        {
+          "slug": "boboiboy-galaxy-gentar",
+          "label": "BoBoiBoy Galaxy: Gentar",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "boboiboy-films",
+      "label": "BoBoiBoy - Movies",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/boboiboy-phieu-luu-ky",
+        "https://phimapi.com/phim/boboiboy-2-cuoc-chien-ngan-ha"
+      ],
+      "members": [
+        {
+          "slug": "boboiboy-phieu-luu-ky",
+          "label": "BoBoiBoy: The Movie",
+          "order": 0
+        },
+        {
+          "slug": "boboiboy-2-cuoc-chien-ngan-ha",
+          "label": "BoBoiBoy Movie 2",
+          "order": 1
+        }
+      ]
     }
   ],
   "standalone": [
