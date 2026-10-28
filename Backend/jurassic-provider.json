@@ -1,0 +1,2656 @@
+{
+  "checkedAt": "2026-10-28T14:46:44.478Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "237512",
+          "type": "tv",
+          "season": 4,
+          "vote_average": 8.3,
+          "vote_count": 196
+        },
+        "imdb": {
+          "id": "tt29899148",
+          "vote_average": 7.6,
+          "vote_count": 4455
+        },
+        "created": {
+          "time": "2025-11-21T15:15:20.000Z"
+        },
+        "modified": {
+          "time": "2025-11-21T15:15:20.000Z"
+        },
+        "_id": "5f44c9f72af72b69d3d81c735bfd6181",
+        "name": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4)",
+        "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-4",
+        "origin_name": "Jurassic World: Chaos Theory (Season 4)",
+        "alternative_names": [
+          "Jurassic World: Chaos Theory"
+        ],
+        "content": "<p>Nhóm trại Kỷ Phấn Trắng hợp sức làm sáng tỏ bí ẩn khi họ phát hiện ra một âm mưu toàn cầu mang đến hiểm họa cho khủng long và chính họ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251121-1/6f5c90a18e6819c46abeb036ba569a64.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251121-1/d360eacf960bfe410ff04a3b2c480913.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=9_JH5N_v678",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (9/9)",
+        "episode_total": 9,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 243,
+        "actor": [
+          "Sean Giambrone"
+        ],
+        "director": [
+          "Scott Kreamer"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/fdX13Iac/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/fdX13Iac/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/ZKjwsXvJ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/ZKjwsXvJ/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/WV1geQ0c/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/WV1geQ0c/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/TAW4izlc/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/TAW4izlc/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/1V601ZCm/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/1V601ZCm/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/KlOGgOoc/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/KlOGgOoc/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/4bTZ5yzW/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/4bTZ5yzW/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/ABLAt9vr/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/ABLAt9vr/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/zaoRzozN/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/zaoRzozN/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/3Z49g9Tw/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/3Z49g9Tw/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/tiyBCX44/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/tiyBCX44/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/dEeNUNen/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/dEeNUNen/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/mFuu3BE7/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/mFuu3BE7/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/8zfVfO76/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/8zfVfO76/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/AF3AWGS8/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/AF3AWGS8/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/FEaBgVIN/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/FEaBgVIN/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/ef2EPZvN/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/ef2EPZvN/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) - Jurassic World: Chaos Theory (Season 4) - 2025 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251121/KdA1iMhZ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251121/KdA1iMhZ/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "237512",
+          "type": "tv",
+          "season": 3,
+          "vote_average": 8.3,
+          "vote_count": 196
+        },
+        "imdb": {
+          "id": "tt29899148",
+          "vote_average": 7.6,
+          "vote_count": 4455
+        },
+        "created": {
+          "time": "2025-04-04T22:20:58.000Z"
+        },
+        "modified": {
+          "time": "2025-11-21T15:13:41.000Z"
+        },
+        "_id": "a522566787b294b2e70ea3d6b8a393d6",
+        "name": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3)",
+        "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-3",
+        "origin_name": "Jurassic World: Chaos Theory (Season 3)",
+        "alternative_names": [
+          "Jurassic World: Chaos Theory"
+        ],
+        "content": "<p>Nhóm trại Kỷ Phấn Trắng hợp sức làm sáng tỏ bí ẩn khi họ phát hiện ra một âm mưu toàn cầu mang đến hiểm họa cho khủng long và chính họ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250404-1/974211ad8b66d1fece850ec7f1dd4329.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250404-1/22399a28597a1a17bcfece1ab86255b4.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=5gpNHQPCR24",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (10/10)",
+        "episode_total": 10,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 217,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Sean Giambrone",
+          "Darren Barnet",
+          "Kausar Mohammed",
+          "Kiersten Kelly"
+        ],
+        "director": [
+          "Scott Kreamer"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/wPve4hGp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/wPve4hGp/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/jacyLJO6/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/jacyLJO6/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/DgFEByrr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/DgFEByrr/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/gIIQ4Edm/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/gIIQ4Edm/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/3aByfVWg/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/3aByfVWg/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/OSIBuAz9/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/OSIBuAz9/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/jwBc5cGw/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/jwBc5cGw/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/dW5gEZOU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/dW5gEZOU/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/opXeErA1/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/opXeErA1/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/sVkpIQi5/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/sVkpIQi5/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/FO2znNRr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/FO2znNRr/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/My1q12ey/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/My1q12ey/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/f7mss58G/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/f7mss58G/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/crwHVZ30/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/crwHVZ30/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/yFsvEnE3/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/yFsvEnE3/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/e4qPNFUp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/e4qPNFUp/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/ila0bIml/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/ila0bIml/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/eUQxUWVs/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/eUQxUWVs/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/KPjar9re/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/KPjar9re/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) - Jurassic World: Chaos Theory (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/vmCQRiEw/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/vmCQRiEw/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "237512",
+          "type": "tv",
+          "season": 2,
+          "vote_average": 8.3,
+          "vote_count": 196
+        },
+        "imdb": {
+          "id": "tt29899148",
+          "vote_average": 7.6,
+          "vote_count": 4455
+        },
+        "created": {
+          "time": "2025-04-04T22:18:22.000Z"
+        },
+        "modified": {
+          "time": "2025-11-21T15:13:29.000Z"
+        },
+        "_id": "87067b6ae6205be72c631e0f370391f7",
+        "name": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2)",
+        "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-2",
+        "origin_name": "Jurassic World: Chaos Theory (Season 2)",
+        "alternative_names": [
+          "Jurassic World: Chaos Theory"
+        ],
+        "content": "<p>Nhóm trại Kỷ Phấn Trắng hợp sức làm sáng tỏ bí ẩn khi họ phát hiện ra một âm mưu toàn cầu mang đến hiểm họa cho khủng long và chính họ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250404-1/75bf622af948f3fda225613a0c40b9ec.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250404-1/a704fddbd598268dbcfdfb9ce18cc60a.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=qkilsOB-gT4",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (10/10)",
+        "episode_total": 10,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2024,
+        "view": 217,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Sean Giambrone",
+          "Darren Barnet",
+          "Kausar Mohammed",
+          "Kiersten Kelly"
+        ],
+        "director": [
+          "Scott Kreamer"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/Wqap4xfd/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/Wqap4xfd/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/9l2x2lgo/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/9l2x2lgo/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/cdeFRQNt/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/cdeFRQNt/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/F9VfiqeM/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/F9VfiqeM/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/h7ObYRyV/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/h7ObYRyV/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/jBU1WNaX/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/jBU1WNaX/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/eg9ZCoOm/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/eg9ZCoOm/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/oVyfSnfK/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/oVyfSnfK/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/llJRDm3n/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/llJRDm3n/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/kkvupM28/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/kkvupM28/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/TF0jB2fN/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/TF0jB2fN/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/N4cWR2Fk/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/N4cWR2Fk/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/PwfBkSGW/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/PwfBkSGW/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/0a10NUAt/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/0a10NUAt/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/0Ytquyzl/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/0Ytquyzl/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/CYXVuWKD/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/CYXVuWKD/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/6d96Abbb/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/6d96Abbb/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/MuzlkXJU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/MuzlkXJU/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/IjYmfnGu/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/IjYmfnGu/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) - Jurassic World: Chaos Theory (Season 2) - 2024 - FHD - Lồng Tiếng - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/M7FH7X3N/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/M7FH7X3N/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "237512",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 8.3,
+          "vote_count": 196
+        },
+        "imdb": {
+          "id": "tt29899148",
+          "vote_average": 7.6,
+          "vote_count": 4455
+        },
+        "created": {
+          "time": "2024-05-24T17:52:57.000Z"
+        },
+        "modified": {
+          "time": "2025-11-21T15:13:07.000Z"
+        },
+        "_id": "075a0fee1ce99f7dc3290a44d32089bf",
+        "name": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1)",
+        "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-1",
+        "origin_name": "Jurassic World: Chaos Theory (Season 1)",
+        "alternative_names": [
+          "Jurassic World: Chaos Theory"
+        ],
+        "content": "<p>Nhóm trại Kỷ Phấn Trắng hợp sức làm sáng tỏ bí ẩn khi họ phát hiện ra một âm mưu toàn cầu mang đến hiểm họa cho khủng long và chính họ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251121-1/b04214e34717fe86d146f7b88a43877f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251121-1/11cb9be918cb1ab1d4f479cce879f3d0.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=ftbjh-3OsuA",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (10/10)",
+        "episode_total": 10,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2024,
+        "view": 270,
+        "actor": [
+          "Sean Giambrone"
+        ],
+        "director": [
+          "Scott Kreamer"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Trẻ Em",
+            "slug": "tre-em",
+            "id": "0c853f6238e0997ee318b646bb1978bc"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/kaN5x2iY/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/kaN5x2iY/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/zWQejukg/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/zWQejukg/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/LoY98oy1/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/LoY98oy1/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/zU8UtUmQ/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/zU8UtUmQ/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/9Bflzdkq/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/9Bflzdkq/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/kQd2wJpI/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/kQd2wJpI/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/lQvKiymj/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/lQvKiymj/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/YN3j1lAk/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/YN3j1lAk/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/c15IfFAV/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/c15IfFAV/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/qwS5k1IE/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/qwS5k1IE/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/TGvcwYQK/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/TGvcwYQK/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/JxXOiB8H/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/JxXOiB8H/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/6400TkFp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/6400TkFp/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/e1h7Nrqp/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/e1h7Nrqp/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/AkMKMrHV/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/AkMKMrHV/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/PxtM71dG/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/PxtM71dG/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/8IBjGevr/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/8IBjGevr/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/o9SJWVqU/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/o9SJWVqU/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/3jG7JK7X/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/3jG7JK7X/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) - Jurassic World: Chaos Theory (Season 1) - 2024 - FHD - Lồng Tiếng - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s4.phim1280.tv/20250404/Ctk0SI3T/index.m3u8",
+              "link_m3u8": "https://s4.phim1280.tv/20250404/Ctk0SI3T/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "1234821",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.3,
+          "vote_count": 3487
+        },
+        "imdb": {
+          "id": "tt31036941",
+          "vote_average": 5.8,
+          "vote_count": 194010
+        },
+        "created": {
+          "time": "2025-07-17T06:11:37.000Z"
+        },
+        "modified": {
+          "time": "2025-10-15T04:46:17.000Z"
+        },
+        "_id": "2da535ad78bb2e93aa448b1a4a61134e",
+        "name": "Thế Giới Khủng Long: Tái Sinh",
+        "slug": "the-gioi-khung-long-tai-sinh",
+        "origin_name": "Jurassic World: Rebirth",
+        "alternative_names": [
+          "Jurassic World 4",
+          "Jurassic City",
+          "Jurassic World: Rebirth",
+          "Jurassic World - Die Wiedergeburt",
+          "Jurassic World Renaissance",
+          "Jurassic World, Renaissance",
+          "Jurassic World - Renaissance",
+          "Jurassic World: El Renacer",
+          "Jurassic World: Recomeço",
+          "Jurassic.World:Rebirth",
+          "Jurassic World Rebirth"
+        ],
+        "content": "<p>Phim lấy bối cảnh 5 năm sau phần phim Thế Giới Khủng Long: Lãnh Địa (Jurassic World: Dominion). Thế Giới Khủng Long: Tái Sinh mở ra một chương mới đầy tính hành động, chứng kiến một đội khai thác chạy đua đến nơi nguy hiểm nhất trên Trái Đất. Dàn nhân vật chính là bộ ba Scarlett Johansson, Mahershala Ali và Jonathan Bailey dấn thân vào một nhiệm vụ cực kỳ hiểm nguy, đó chính là cố gắng lấy DNA có thể dẫn đến một bước đột phá y học cho nhân loại. Chìa khóa của nó tình cờ lại là DNA của ba con khủng long khổng lồ nhất trên cạn, biển và không trung trong sinh quyển nhiệt đới. Hành trình này sẽ đưa nhóm nhân vật chính băng rừng, vượt biển, đối mặt với nhiều loài khủng long kỳ lạ, nguy hiểm nhưng cũng đầy lý thú, từ đó hé mở nhiều điều bí ẩn mà tạo hóa đã giấu khỏi con người suốt bấy lâu nay.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250717-1/8cbdfb269ca3805d0f2705f7ea22a2c5.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250717-1/f0b3a51863368ae2706f0844c9bf3226.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=2ZhB-YO5Tnk",
+        "time": "134 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 155,
+        "actor": [
+          "Scarlett Johansson",
+          "Jonathan Bailey",
+          "Mahershala Ali",
+          "Rupert Friend",
+          "Manuel Garcia-Rulfo",
+          "Luna Blaise",
+          "David Iacono",
+          "Audrina Miranda",
+          "Bechir Sylvain",
+          "Philippine Velge",
+          "Ed Skrein",
+          "Adam Loxley",
+          "Niamh Finlay",
+          "Julian Edgar",
+          "Lucy Thackeray",
+          "Billy Smith",
+          "Jonny L"
+        ],
+        "director": [
+          "Gareth Edwards"
+        ],
+        "category": [
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Tái Sinh - Jurassic World: Rebirth - 2025 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250805/A6Gw4nda/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250805/A6Gw4nda/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Tái Sinh - Jurassic World: Rebirth - 2025 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251015/0ZDVd3dH/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251015/0ZDVd3dH/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "351286",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.5,
+          "vote_count": 12821
+        },
+        "imdb": {
+          "id": "tt4881806",
+          "vote_average": 6.1,
+          "vote_count": 382093
+        },
+        "created": {
+          "time": "2023-10-19T23:35:25.000Z"
+        },
+        "modified": {
+          "time": "2025-07-17T22:14:16.000Z"
+        },
+        "_id": "2d2ca7eedf739ef4c3800713ec482e1a",
+        "name": "Thế Giới Khủng Long: Vương Quốc Sụp Đổ",
+        "slug": "the-gioi-khung-long-vuong-quoc-sup-do",
+        "origin_name": "Jurassic World: Fallen Kingdom",
+        "alternative_names": [
+          "Jurassic World 2",
+          "Jurassic World II - Il Regno Distrutto",
+          "侏羅紀世界2：迷失國度",
+          "Jurassic Park V: Jurassic World - Fallen Kingdom",
+          "侏罗纪世界2",
+          "侏罗纪世界2：迷失国度",
+          "侏罗纪世界：迷失国度",
+          "侏羅紀世界：迷失國度",
+          "侏罗纪世界2：失落王国",
+          "Jurassic World: Fallen Kingdom"
+        ],
+        "content": "<p>Khi núi lửa phun trào đe dọa Isla Nublar, Owen và Claire gấp rút tìm nơi trú ẩn cho khủng long của công viên rồi trở thành tốt thí trong một âm mưu bất chính.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250717-1/3403f1dd2e2703870f14971cc31edcdc.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250717-1/7f88a75078c0ca5853868e1787cf29b0.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=1FJD7jZqZEk",
+        "time": "129 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2018,
+        "view": 143,
+        "actor": [
+          "Chris Pratt",
+          "Bryce Dallas Howard",
+          "Rafe Spall",
+          "Justice Smith",
+          "Daniella Pineda",
+          "James Cromwell",
+          "Toby Jones",
+          "Ted Levine",
+          "Jeff Goldblum",
+          "BD Wong",
+          "Geraldine Chaplin",
+          "Isabella Sermon",
+          "Robert Emms",
+          "Peter Jason",
+          "Kevin Layne",
+          "John Schwab",
+          "Sam Redford",
+          "Charlie Rawe"
+        ],
+        "director": [
+          "J.A. Bayona"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Vương Quốc Sụp Đổ - Jurassic World: Fallen Kingdom - 2018 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/vMDccOEP/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/vMDccOEP/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Vương Quốc Sụp Đổ - Jurassic World: Fallen Kingdom - 2018 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/Il6k1Y7m/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/Il6k1Y7m/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "507086",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.6,
+          "vote_count": 7105
+        },
+        "imdb": {
+          "id": "tt8041270",
+          "vote_average": 5.6,
+          "vote_count": 245361
+        },
+        "created": {
+          "time": "2023-09-25T16:21:45.000Z"
+        },
+        "modified": {
+          "time": "2025-07-17T13:44:45.000Z"
+        },
+        "_id": "7250eb93b3c18cc9daa29cf58af7a004",
+        "name": "Thế Giới Khủng Long: Lãnh Địa",
+        "slug": "the-gioi-khung-long-lanh-dia",
+        "origin_name": "Jurassic World Dominion",
+        "alternative_names": [
+          "쥬라기 공원 3",
+          "Мир Юрского Периода 3",
+          "Jurassic World 3: Dominion",
+          "Jurassic World 3: Dominio",
+          "Світ Юрського періоду 3",
+          "Світ Юрського періоду: Домініон",
+          "จูราสสิค เวิลด์ ทวงคืนอาณาจักร",
+          "Monde jurassique : la Domination",
+          "Monde jurassique : la domination",
+          "ジュラシックワールドドミニオン",
+          "ジュラシック・ワールド／ドミニオン",
+          "Thế Giới Khủng Long: Lãnh Địa",
+          "侏儸紀世界：統霸天下",
+          "Jurassic World: Domínio",
+          "Jurassic World - Le Monde d’après",
+          "侏羅紀世界：統治霸權",
+          "Jurassic World Il Dominio",
+          "쥬라기 월드: 도미니언",
+          "ジュラシック・ワールド／新たなる支配者：2022",
+          "ジュラシック・ワールド／新たなる支配者（Dominion）",
+          "Jurassic World: Dominion",
+          "侏罗纪世界3",
+          "Jurassic Park VI: Jurassic World Dominion",
+          "Jurassic World III",
+          "Jurassic Park VI",
+          "侏罗纪世界3：统治",
+          "Jurassic World Dominion"
+        ],
+        "content": "<p>Bốn năm sau kết thúc Jurassic World: Fallen Kingdom, những con khủng long đã thoát khỏi nơi giam cầm và tiến vào thế giới loài người. Giờ đây, chúng xuất hiện ở khắp mọi nơi. Sinh vật to lớn ấy không còn chỉ ở trên đảo như trước nữa mà gần ngay trước mắt, thậm chí còn có thể chạm tới. Owen Grady may mắn gặp lại cô khủng long mà anh và khán giả vô cùng yêu mến - Blue. Tuy nhiên, Blue không đi một mình mà còn đem theo một chú khủng long con khác. Điều này khiến Owen càng quyết tâm bảo vệ mẹ con cô được sinh sống an toàn. Thế nhưng, hai giống loài quá khác biệt. Liệu có thể tồn tại một kỷ nguyên mà khủng long và con người sống chung một cách hòa bình?</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250717-1/3efe7f608495e862c7fd261b30ddfe1e.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250717-1/15155c2afc0685b31e13473b00f9299b.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=DtQycgMD4HQ",
+        "time": "147 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 135,
+        "actor": [
+          "Chris Pratt",
+          "Bryce Dallas Howard",
+          "Laura Dern",
+          "Sam Neill",
+          "Jeff Goldblum",
+          "DeWanda Wise",
+          "Mamoudou Athie",
+          "Isabella Sermon",
+          "Campbell Scott",
+          "BD Wong",
+          "Omar Sy",
+          "Justice Smith",
+          "Daniella Pineda",
+          "Scott Haze",
+          "Dichen Lachman",
+          "Kristoffer Polaha",
+          "Caleb Hearon",
+          "Freya Par"
+        ],
+        "director": [
+          "Colin Trevorrow"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Lãnh Địa - Jurassic World Dominion - 2022 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/8cW1NnYg/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/8cW1NnYg/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long: Lãnh Địa - Jurassic World Dominion - 2022 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/sDoorbN1/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/sDoorbN1/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "135397",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.7,
+          "vote_count": 21656
+        },
+        "imdb": {
+          "id": "tt0369610",
+          "vote_average": 6.9,
+          "vote_count": 723175
+        },
+        "created": {
+          "time": "2023-10-19T13:45:52.000Z"
+        },
+        "modified": {
+          "time": "2025-07-17T13:42:33.000Z"
+        },
+        "_id": "b166b57d195370cd41f80dd29ed523d9",
+        "name": "Thế Giới Khủng Long",
+        "slug": "the-gioi-khung-long",
+        "origin_name": "Jurassic World",
+        "alternative_names": [
+          "Jurassic Park 4",
+          "Jurassic Park IV",
+          "쥬라기 공원 4",
+          "Mundo Jurásico",
+          "Jurassic Park 4 - Jurassic World",
+          "Jurassic Park IV Jurassic World",
+          "เปิดสวนโลกไดโนเสาร์",
+          "Svet iz doba jure",
+          "Park iz doba jure 4",
+          "Jūros periodo parkas",
+          "פארק היורה 4: עולם היורה",
+          "Jurassic Park 4 - Jurassic World - O Mundo dos Dinossauros",
+          "侏儸紀世界",
+          "Le monde jurassique",
+          "Jurassic Park IV: Jurassic World",
+          "ジュラシック・ワールド：2015",
+          "侏罗纪世界",
+          "侏罗纪世界1",
+          "Jurassic World"
+        ],
+        "content": "<p>Trong Jurassic World (Thế giới khủng long), lấy bối cảnh 22 năm sau sự kiện ở Công viên kỷ Jura phần 3. Công viên kỷ Jura ngày nào giờ đã trở thành công viên Khủng long thật sự. Tuy nhiên, khu tham quan này lại rất vắng khách, vì người dân không còn chuộng những con quái vật cổ đại nữa. Để thu hút khách trở lại, tập đoàn sở hữu Masrani quyết định lai tạo ra một loài khủng long mới, nhưng điều đó nhanh chóng dẫn đến thảm họa. Jurassic World sẽ là bộ phim bom tấn đầy hứa hẹn tiếp theo của “Star Lord” Chris Pratt, nam diễn viên đã ghi dấu ấn đậm nét trong Guardian of Galaxy vào năm ngoái.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250717-1/c3a2c4e60e6b4bf6aad37bdd6c368101.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250717-1/ec074feb0460485073b1b8bc649cb6f1.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=aJJrkyHas78",
+        "time": "195 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2015,
+        "view": 183,
+        "actor": [
+          "Chris Pratt",
+          "Bryce Dallas Howard",
+          "Irrfan Khan",
+          "Vincent D'Onofrio",
+          "Ty Simpkins",
+          "Nick Robinson",
+          "Jake Johnson",
+          "Omar Sy",
+          "BD Wong",
+          "Judy Greer",
+          "Lauren Lapkus",
+          "Brian Tee",
+          "Katie McGrath",
+          "Andy Buckley",
+          "Eric Edelstein",
+          "Courtney James Clark",
+          "Colby Boothman-Shep"
+        ],
+        "director": [
+          "Colin Trevorrow"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long - Jurassic World - 2015 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/i6XWq94b/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/i6XWq94b/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Thế Giới Khủng Long - Jurassic World - 2015 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/l2vSfQAa/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/l2vSfQAa/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "330",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6.6,
+          "vote_count": 9290
+        },
+        "imdb": {
+          "id": "tt0119567",
+          "vote_average": 6.6,
+          "vote_count": 473902
+        },
+        "created": {
+          "time": "2023-12-11T01:00:19.000Z"
+        },
+        "modified": {
+          "time": "2025-07-17T13:38:44.000Z"
+        },
+        "_id": "0e1422ea79781ee046484893ce0010c4",
+        "name": "Công Viên Kỷ Jura 2: Thế Giới Bị Mất",
+        "slug": "cong-vien-ky-jura-2-the-gioi-bi-mat",
+        "origin_name": "The Lost World: Jurassic Park",
+        "alternative_names": [
+          "Jurassic Park II：The Lost World",
+          "Jurassic Park II - Il Mondo Perduto",
+          "Parque jurasico 2 El mundo perdido",
+          "Ha-Olum Ha-Avude",
+          "Park iz doba jure - Izgubljeni svet",
+          "Jurassic Park - Il Mondo Perduto",
+          "O Chaménos Kósmos: Jurassic Park",
+          "Jurassic Park 2 - Le Monde perdu",
+          "Jurassic Park 2 - El mundo perdido",
+          "Parque Jurásico II:  El mundo perdido",
+          "Jurassic Park 2",
+          "Jurassic Park 2 - O Mundo Perdido",
+          "Jurassic Park 2 - Il Mondo Perduto",
+          "Dzhurasik park: Izgubeniyat svyat",
+          "Jurassic Park 2 - Vergessene Welt",
+          "侏羅紀公園2：迷失世界",
+          "Jurassic Park II - Vergessene Welt",
+          "Jurassic Park II - Le Monde perdu",
+          "Die vergessene Welt - Jurassic Park",
+          "پارک ژوراسیک ۲",
+          "پارک ژوراسیک: جهان گمشده",
+          "Jurassic Park II: The Lost World",
+          "ロスト・ワールド／ジュラシック・パーク：1997",
+          "El mundo perdido: Jurassic Park",
+          "侏罗纪公园2：失落的世界",
+          "侏羅紀公園2：失落的世界",
+          "O Mundo Perdido - Jurassic Park",
+          "Jurassic Park: The Lost World",
+          "Jurassic Park 2: The Lost World",
+          "The Lost World: Jurassic Park"
+        ],
+        "content": "<p>Sau thất bại nặng nề tại đảo Nublar, công viên khủng long bị phá hủy hoàn toàn sau cơn bão. John tiếp tục tổ chức chuyến đi nghiên cứu thứ 2 tại hòn đảo có tên Sorna, thực chất, đây là hòn đảo thứ 2, nơi nuôi dưỡng và ấp trứng khủng long rồi chuyển tới Nublar. Trong chuyến đi lần này có Tiến sĩ Sara Harding, bạn gái của Tiến sĩ Ian Malcom (xuất hiện từ phần 1) Anh không được báo trước rằng cô sẽ tới đảo Sorna, biết rằng chuyến đi này rất nguy hiểm vì Ian đã từng ở trên đảo Nublar, anh quyết định mạo hiểm tới đảo để đưa Laura về. Đến khi tới đảo, anh mới tìm ra sự thật rằng thực chất đây là cuộc săn khủng long quy mô lớn, nhằm bắt chúng đem về thành phố San Fransisco, nơi 1 công viên khủng long mới đã được xây dựng sẵn.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250717-1/2c316602cf7090501638a1be743f599f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250717-1/acb8bca9dec8b9b48a197da1b2957e75.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=vtfwgaHD5_w",
+        "time": "129 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 1997,
+        "view": 164,
+        "actor": [
+          "Jeff Goldblum",
+          "Julianne Moore",
+          "Pete Postlethwaite",
+          "Arliss Howard",
+          "Richard Attenborough",
+          "Vince Vaughn",
+          "Vanessa Lee Chester",
+          "Peter Stormare",
+          "Harvey Jason",
+          "Richard Schiff",
+          "Thomas F. Duffy",
+          "Joseph Mazzello",
+          "Ariana Richards",
+          "Thomas Rosales Jr.",
+          "Camilla Belle"
+        ],
+        "director": [
+          "Steven Spielberg"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Công Viên Kỷ Jura 2: Thế Giới Bị Mất - The Lost World: Jurassic Park - 1997 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/LHEgPFhg/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/LHEgPFhg/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Công Viên Kỷ Jura 2: Thế Giới Bị Mất - The Lost World: Jurassic Park - 1997 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250717/y0fJxMca/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250717/y0fJxMca/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-05-24T18:06:43.000Z"
+        },
+        "modified": {
+          "time": "2024-05-24T21:35:56.000Z"
+        },
+        "_id": "62ac449a212156a4889a47243fc12af8",
+        "name": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4)",
+        "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-4",
+        "origin_name": "Jurassic World Camp Cretaceous (Season 4)",
+        "alternative_names": [],
+        "content": "<p>Các trại sinh bỏ lại Isla Nublar sau lưng, nhưng bị dạt lên một lãnh địa mới lạ lẫm đầy rẫy những nguy hiểm và những bí mật được canh phòng cẩn mật.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240524-1/68eb2c285b7557b7c001e3c5bc2f5c1f.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240524-1/1764fb7d122474304b78dcdc28411c88.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=bDLKclq8gkQ",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (11/11)",
+        "episode_total": 11,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 51,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Jenna Ortega",
+          "Sean Giambrone",
+          "Kausar Mohammed",
+          "Ryan Potter",
+          "Raini Rodriguez",
+          "Kirby Howell-Baptiste",
+          "Haley Joel Osment",
+          "Andrew Kishino",
+          "Roger Craig Smith",
+          "Stephanie Beatriz",
+          "Angus Sampson",
+          "Bradley Whitford",
+          "Glen Powell",
+          "J"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/WQQK47cJ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/WQQK47cJ/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/sNTRo51s/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/sNTRo51s/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/QsP9ewYx/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/QsP9ewYx/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/OmoKwe2S/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/OmoKwe2S/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/8Otp7uu8/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/8Otp7uu8/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/vBcjpYyn/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/vBcjpYyn/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/94pj6tcU/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/94pj6tcU/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/JE3QhUEu/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/JE3QhUEu/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/DUrnlPcO/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/DUrnlPcO/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/yzOuMsRt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/yzOuMsRt/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 4) - Jurassic World Camp Cretaceous (Season 4) - 2021 - FHD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/uK9HhwQj/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/uK9HhwQj/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-05-24T18:06:28.000Z"
+        },
+        "modified": {
+          "time": "2024-05-24T21:35:32.000Z"
+        },
+        "_id": "7f841c9b91fcd2891b7ffbc612b80934",
+        "name": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3)",
+        "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-3",
+        "origin_name": "Jurassic World Camp Cretaceous (Season 3)",
+        "alternative_names": [],
+        "content": "<p>Tìm kiếm vật dụng để tiến hành giải cứu chính mình, các trại sinh quyết tâm khám phá những khu vực mới trên đảo – nhưng rồi lại phải đối mặt với mối đe dọa mới đáng sợ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240524-1/6d480cf211a61431dc24a4a3fe66a625.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240524-1/b2969500718fe9e7a2a0802948769d3a.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=h_0vTlkLGOc",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (10/10)",
+        "episode_total": 10,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 50,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Jenna Ortega",
+          "Sean Giambrone",
+          "Kausar Mohammed",
+          "Ryan Potter",
+          "Raini Rodriguez",
+          "Kirby Howell-Baptiste",
+          "Haley Joel Osment",
+          "Andrew Kishino",
+          "Roger Craig Smith",
+          "Stephanie Beatriz",
+          "Angus Sampson",
+          "Bradley Whitford",
+          "Glen Powell",
+          "J"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/oAsbhcis/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/oAsbhcis/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/bmsCRXmt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/bmsCRXmt/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/NCHPNJFT/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/NCHPNJFT/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/TtHtIYoI/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/TtHtIYoI/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/nk8jqPjS/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/nk8jqPjS/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/Kd82r1ab/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/Kd82r1ab/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/mvERyDwN/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/mvERyDwN/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/ft6O8EpI/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/ft6O8EpI/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/uWTPLocr/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/uWTPLocr/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 3) - Jurassic World Camp Cretaceous (Season 3) - 2021 - FHD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/EwtZ3Rt8/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/EwtZ3Rt8/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-05-24T18:06:01.000Z"
+        },
+        "modified": {
+          "time": "2024-05-24T21:35:02.000Z"
+        },
+        "_id": "0e22f1562284b9c081be3a87527d6c70",
+        "name": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2)",
+        "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-2",
+        "origin_name": "Jurassic World Camp Cretaceous (Season 2)",
+        "alternative_names": [],
+        "content": "<p>Khi các trại sinh bị mắc kẹt không còn hy vọng được giải cứu, nhóm nhỏ khách du lịch sinh thái có thể là cứu tinh – nhưng mọi chuyện không như họ tưởng.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240524-1/3c2b1139bc26bb14d6e9fc237eaa25b0.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240524-1/616aa70e3a7442bd4d78e21066265a0c.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=CAfQhqzZU98",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 53,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Jenna Ortega",
+          "Sean Giambrone",
+          "Kausar Mohammed",
+          "Ryan Potter",
+          "Raini Rodriguez",
+          "Kirby Howell-Baptiste",
+          "Haley Joel Osment",
+          "Andrew Kishino",
+          "Roger Craig Smith",
+          "Stephanie Beatriz",
+          "Angus Sampson",
+          "Bradley Whitford",
+          "Glen Powell",
+          "J"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/hlfYktdU/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/hlfYktdU/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/Q3YUEHZt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/Q3YUEHZt/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/A1BAUwYh/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/A1BAUwYh/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/ylobK0lF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/ylobK0lF/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/rGCDt4rV/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/rGCDt4rV/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/viXIhfWQ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/viXIhfWQ/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/IA7un81e/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/IA7un81e/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 2) - Jurassic World Camp Cretaceous (Season 2) - 2021 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240524/pYZmgGpt/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240524/pYZmgGpt/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-04-08T23:09:37.000Z"
+        },
+        "modified": {
+          "time": "2024-04-29T11:12:13.000Z"
+        },
+        "_id": "df1b3e0f19db0479029d201662517318",
+        "name": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5)",
+        "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-5",
+        "origin_name": "Jurassic World Camp Cretaceous (Season 5)",
+        "alternative_names": [],
+        "content": "<p>Tình bạn. Tình yêu. Sự phản bội. Sinh tồn. Tương lai đang bị đe dọa khi nhóm bạn tuổi teen đối mặt với mùa cuối hoành tráng cùng các lựa chọn khó khăn và tiết lộ bất ngờ.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240409-1/f21f34c20bcb0bd702ec3343a23a7c3e.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240409-1/7edd2b6c9ebe8b35a57c2ad4943493b3.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (12/12)",
+        "episode_total": 12,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 46,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Jenna Ortega",
+          "Sean Giambrone",
+          "Kausar Mohammed",
+          "Ryan Potter",
+          "Raini Rodriguez",
+          "Kirby Howell-Baptiste",
+          "Haley Joel Osment",
+          "Andrew Kishino",
+          "Roger Craig Smith",
+          "Stephanie Beatriz",
+          "Angus Sampson",
+          "Bradley Whitford",
+          "Glen Powell",
+          "J"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/lA6zuFsQ/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/lA6zuFsQ/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/eQyFSbqS/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/eQyFSbqS/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/O4UK77Dx/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/O4UK77Dx/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/p6JCESaS/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/p6JCESaS/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/xBnHTQXw/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/xBnHTQXw/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/qp7xoVUi/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/qp7xoVUi/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/o3eu8VqB/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/o3eu8VqB/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/tmkElUUs/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/tmkElUUs/index.m3u8"
+            },
+            {
+              "name": "Tập 09",
+              "slug": "tap-09",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 09",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/h1v0KKsg/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/h1v0KKsg/index.m3u8"
+            },
+            {
+              "name": "Tập 10",
+              "slug": "tap-10",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 10",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/wkqUBdd5/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/wkqUBdd5/index.m3u8"
+            },
+            {
+              "name": "Tập 11",
+              "slug": "tap-11",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 11",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/Sam77Ncu/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/Sam77Ncu/index.m3u8"
+            },
+            {
+              "name": "Tập 12",
+              "slug": "tap-12",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 5) - Jurassic World Camp Cretaceous (Season 5) - 2022 - HD - Vietsub - Tập 12",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240417/N4t1GiEA/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240417/N4t1GiEA/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-12-19T12:54:45.000Z"
+        },
+        "modified": {
+          "time": "2024-01-05T18:50:02.000Z"
+        },
+        "_id": "e0d2fe50debfaec6b2d7bafdd9d936c8",
+        "name": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1)",
+        "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-1",
+        "origin_name": "Jurassic World Camp Cretaceous (Season 1)",
+        "alternative_names": [],
+        "content": "<p>Được mời tham gia trại hè phiêu lưu hiện đại tại Isla Nublar, sáu bạn trẻ tuổi teen phải đoàn kết để sống sót khi lũ khủng long xổng chuồng.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231219-1/cb88aac218fb6149950c6946a6511697.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231219-1/c94233165da16d7c86b3ca411bb285f1.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "24 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2020,
+        "view": 82,
+        "actor": [
+          "Paul-Mikél Williams",
+          "Jenna Ortega",
+          "Sean Giambrone",
+          "Kausar Mohammed",
+          "Ryan Potter",
+          "Raini Rodriguez",
+          "Kirby Howell-Baptiste",
+          "Haley Joel Osment",
+          "Andrew Kishino",
+          "Roger Craig Smith",
+          "Stephanie Beatriz",
+          "Angus Sampson",
+          "Bradley Whitford",
+          "Glen Powell",
+          "Jameela Jamil"
+        ],
+        "director": [],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/YjXSD53W/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/YjXSD53W/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/I0sDgFwD/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/I0sDgFwD/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/LAD0QPRO/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/LAD0QPRO/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/45u2N4mB/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/45u2N4mB/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/aysH7A0v/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/aysH7A0v/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/rLiKi3Ia/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/rLiKi3Ia/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/Qkmpluhn/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/Qkmpluhn/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Khủng Long: Trại Kỷ Phấn Trắng (Phần 1) - Jurassic World Camp Cretaceous (Season 1) - 2020 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231231/Kfi4UTUv/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231231/Kfi4UTUv/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

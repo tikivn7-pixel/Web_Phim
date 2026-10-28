@@ -589,6 +589,86 @@
       ]
     },
     {
+      "id": "jurassic-live-action-films",
+      "label": "Jurassic Park / Jurassic World",
+      "kind": "franchise",
+      "sources": [
+        "https://www.universalpicturesathome.com/movies/jurassic-world-7-movie-collection",
+        "https://phimapi.com/phim/cong-vien-ky-jura-2-the-gioi-bi-mat",
+        "https://phimapi.com/phim/the-gioi-khung-long",
+        "https://phimapi.com/phim/the-gioi-khung-long-vuong-quoc-sup-do",
+        "https://phimapi.com/phim/the-gioi-khung-long-lanh-dia",
+        "https://phimapi.com/phim/the-gioi-khung-long-tai-sinh"
+      ],
+      "members": [
+        {
+          "slug": "cong-vien-ky-jura-2-the-gioi-bi-mat",
+          "label": "The Lost World: Jurassic Park (1997)",
+          "order": 0
+        },
+        {
+          "slug": "the-gioi-khung-long",
+          "label": "Jurassic World (2015)",
+          "order": 1
+        },
+        {
+          "slug": "the-gioi-khung-long-vuong-quoc-sup-do",
+          "label": "Jurassic World: Fallen Kingdom (2018)",
+          "order": 2
+        },
+        {
+          "slug": "the-gioi-khung-long-lanh-dia",
+          "label": "Jurassic World Dominion (2022)",
+          "order": 3
+        },
+        {
+          "slug": "the-gioi-khung-long-tai-sinh",
+          "label": "Jurassic World: Rebirth (2025)",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "jurassic-camp-cretaceous",
+      "label": "Jurassic World: Camp Cretaceous",
+      "kind": "franchise",
+      "sources": [
+        "https://www.netflix.com/title/81009646",
+        "https://phimapi.com/phim/the-gioi-khung-long-trai-ky-phan-trang-phan-1",
+        "https://phimapi.com/phim/the-gioi-khung-long-trai-ky-phan-trang-phan-2",
+        "https://phimapi.com/phim/the-gioi-khung-long-trai-ky-phan-trang-phan-3",
+        "https://phimapi.com/phim/the-gioi-khung-long-trai-ky-phan-trang-phan-4",
+        "https://phimapi.com/phim/the-gioi-khung-long-trai-ky-phan-trang-phan-5"
+      ],
+      "members": [
+        {
+          "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-1",
+          "label": "Jurassic World Camp Cretaceous (Season 1) (2020)",
+          "order": 0
+        },
+        {
+          "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-2",
+          "label": "Jurassic World Camp Cretaceous (Season 2) (2021)",
+          "order": 1
+        },
+        {
+          "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-3",
+          "label": "Jurassic World Camp Cretaceous (Season 3) (2021)",
+          "order": 2
+        },
+        {
+          "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-4",
+          "label": "Jurassic World Camp Cretaceous (Season 4) (2021)",
+          "order": 3
+        },
+        {
+          "slug": "the-gioi-khung-long-trai-ky-phan-trang-phan-5",
+          "label": "Jurassic World Camp Cretaceous (Season 5) (2022)",
+          "order": 4
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -6780,6 +6860,49 @@
           "order": 4,
           "season": 5,
           "checkedAt": "2026-10-28T10:15:40.832Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-237512",
+      "label": "Jurassic World: Chaos Theory (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/237512",
+        "https://phimapi.com/phim/the-gioi-khung-long-thuyet-hon-mang-phan-1",
+        "https://phimapi.com/phim/the-gioi-khung-long-thuyet-hon-mang-phan-2",
+        "https://phimapi.com/phim/the-gioi-khung-long-thuyet-hon-mang-phan-3",
+        "https://phimapi.com/phim/the-gioi-khung-long-thuyet-hon-mang-phan-4"
+      ],
+      "members": [
+        {
+          "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-1",
+          "label": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 1) (Jurassic World: Chaos Theory (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T14:46:44.478Z"
+        },
+        {
+          "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-2",
+          "label": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 2) (Jurassic World: Chaos Theory (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T14:46:44.478Z"
+        },
+        {
+          "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-3",
+          "label": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 3) (Jurassic World: Chaos Theory (Season 3))",
+          "order": 2,
+          "season": 3,
+          "checkedAt": "2026-10-28T14:46:44.478Z"
+        },
+        {
+          "slug": "the-gioi-khung-long-thuyet-hon-mang-phan-4",
+          "label": "Thế Giới Khủng Long: Thuyết Hỗn Mang (Phần 4) (Jurassic World: Chaos Theory (Season 4))",
+          "order": 3,
+          "season": 4,
+          "checkedAt": "2026-10-28T14:46:44.478Z"
         }
       ]
     }
