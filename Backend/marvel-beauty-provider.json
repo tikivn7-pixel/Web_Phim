@@ -1,0 +1,2865 @@
+{
+  "checkedAt": "2026-10-28T15:23:13.687Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "284054",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7.4,
+          "vote_count": 23582
+        },
+        "imdb": {
+          "id": "tt1825683",
+          "vote_average": 7.3,
+          "vote_count": 907405
+        },
+        "created": {
+          "time": "2023-10-18T14:44:41.000Z"
+        },
+        "modified": {
+          "time": "2025-12-11T19:56:45.000Z"
+        },
+        "_id": "2a34abd6ebbd7fcf5a4421229c946c0a",
+        "name": "Black Panther: Chiến Binh Báo Đen",
+        "slug": "black-panther-chien-binh-bao-den",
+        "origin_name": "Black Panther",
+        "alternative_names": [
+          "Marvel's Black Panther",
+          "마블 블랙 팬서",
+          "Marvel Studios' Black Panther",
+          "黑豹",
+          "Chiến Binh Báo Đen",
+          "Czarna Pantera",
+          "ブラックパンサー：2018",
+          "Black Panther",
+          "Pantera Negra: 1",
+          "Սև Պանտերա",
+          "Черная пантера",
+          "بلاك بانثر"
+        ],
+        "content": "<p>Vương quốc Wakanda, quê hương của Black Panther/ T&quot;Challa hiện ra qua lời kể của một nhân chứng sống sót trở về. Đây là quốc gia khá khép kín và sở hữu lượng Vibranium lớn nhất trên thế giới. Black Panther - người cầm quyền của Wakanda sở hữu bộ áo giáp chống đạn và móng vuốt sắc nhọn, anh được miêu tả là “người tốt với trái tim nhân hậu”. &nbsp;Nhưng cũng chính vì những đức tính tốt này mà Black Panther gặp khó khăn khi kế thừa ngai vàng sau khi vua cha băng hà. Đối mặt với sự phản bội và hiểm nguy, vị vua trẻ phải tập hợp các đồng minh và phát huy toàn bộ sức mạnh của Black Panther để đánh bại kẻ thù, đem lại an bình cho nhân dân của mình.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251211-1/b4977eac62969f488dcb292b9ba54098.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251211-1/5704d0324651b14e2f8c39a66d6072b0.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=9OEU1LM2wtA",
+        "time": "135 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2018,
+        "view": 194,
+        "actor": [
+          "Chadwick Boseman",
+          "Michael B. Jordan",
+          "Lupita Nyong'o",
+          "Danai Gurira",
+          "Martin Freeman",
+          "Daniel Kaluuya",
+          "Letitia Wright",
+          "Winston Duke",
+          "Sterling K. Brown",
+          "Angela Bassett",
+          "Forest Whitaker",
+          "Andy Serkis",
+          "Florence Kasumba",
+          "John Kani",
+          "David S. Lee",
+          "Nabiyah Be",
+          "I"
+        ],
+        "director": [
+          "Ryan Coogler"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Black Panther: Chiến Binh Báo Đen - Black Panther - 2018 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251211/G08l6aGH/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251211/G08l6aGH/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "505642",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7,
+          "vote_count": 7533
+        },
+        "imdb": {
+          "id": "tt9114286",
+          "vote_average": 6.6,
+          "vote_count": 368850
+        },
+        "created": {
+          "time": "2023-10-16T23:21:10.000Z"
+        },
+        "modified": {
+          "time": "2025-12-11T19:57:06.000Z"
+        },
+        "_id": "08f90c1a417155361a5c4b8d297e0d78",
+        "name": "Chiến Binh Báo Đen: Wakanda Bất Diệt",
+        "slug": "chien-binh-bao-den-wakanda-bat-diet",
+        "origin_name": "Black Panther: Wakanda Forever",
+        "alternative_names": [
+          "Pantera Negra 2",
+          "Black Panther 2",
+          "블랙 팬서 2",
+          "Black Panther II",
+          "Marvel Studios' Black Panther: Wakanda Forever",
+          "Black Panther: Wakanda Forever de Marvel Studios",
+          "Черната пантера - Уаканда завинаги",
+          "Чёрная Пантера: Ваканда навеки",
+          "پلنگ سیاه: واکاندا تا ابد",
+          "بلاك بانثر واكاندا إلى الأبد",
+          "Black Panther : Longue vie au Wakanda de Marvel Studios",
+          "הפנתר השחור 2: ואקאנדה לנצח",
+          "Black Panther - Wakanda Forever",
+          "ブラックパンサー／ワカンダ・フォーエバー",
+          "Black Panther II: Wakanda Forever",
+          "Den Sorte Panter : Wakanda Forevigt",
+          "בלאק פנתר: ואקנדה פוראבר",
+          "Black Panther 2 - Wakanda Forever",
+          "Chiến Binh Báo Đen 2: Wakanda Bất Diệt",
+          "ブラックパンサー／ワカンダ・フォーエバー：2022",
+          "Pantera Negra: 2 -  Wakanda para siempre",
+          "Black Panther 2: Wakanda Forever",
+          "黑豹2：瓦坎达万岁",
+          "შავი პანტერა: ვაკანდა სამუდამოთ",
+          "Black Panther: Wakanda Forever"
+        ],
+        "content": "<p>Nữ hoàng Ramonda, Shuri, M’Baku, Okoye và Dora Milaje chiến đấu để bảo vệ quốc gia của họ khỏi sự can thiệp của các thế lực thế giới sau cái chết của Vua T’Challa. Khi người Wakanda cố gắng nắm bắt chương tiếp theo của họ, các anh hùng phải hợp tác với nhau với sự giúp đỡ của War Dog Nakia và Everett Ross và tạo ra một con đường mới cho vương quốc Wakanda.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251211-1/0bb7a7e7978799855942975949b2bb81.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251211-1/81ec06db5fb6b1c0203870203c146696.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=fkvTTmqjn3Q",
+        "time": "162 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 164,
+        "actor": [
+          "Letitia Wright",
+          "Tenoch Huerta Mejía",
+          "Lupita Nyong'o",
+          "Danai Gurira",
+          "Winston Duke",
+          "Angela Bassett",
+          "Martin Freeman",
+          "Julia Louis-Dreyfus",
+          "Dominique Thorne",
+          "Florence Kasumba",
+          "Michaela Coel",
+          "Alex Livinalli",
+          "Mabel Cadena",
+          "Michael B. Jordan",
+          "Isaach de Bankol"
+        ],
+        "director": [
+          "Ryan Coogler"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chiến Binh Báo Đen: Wakanda Bất Diệt - Black Panther: Wakanda Forever - 2022 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251211/uRy7Zk05/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251211/uRy7Zk05/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chiến Binh Báo Đen: Wakanda Bất Diệt - Black Panther: Wakanda Forever - 2022 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251211/3GAaIalC/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251211/3GAaIalC/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-23T21:18:06.000Z"
+        },
+        "modified": {
+          "time": "2023-12-02T17:46:53.000Z"
+        },
+        "_id": "3a37abdeefe1dab1b30f7c5c7e581b93",
+        "name": "Người Đẹp và Quái Vật: Giáng Sinh Kỳ Diệu",
+        "slug": "nguoi-dep-va-quai-vat-giang-sinh-ky-dieu",
+        "origin_name": "Beauty and the Beast: The Enchanted Christmas",
+        "alternative_names": [],
+        "content": "<p>Ngạc nhiên khi biết Quái vật có lòng căm thù sâu sắc đối với mùa Giáng sinh, Belle cố gắng thay đổi suy nghĩ của mình về vấn đề này.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231123-1/f66b2cca6b3227c015612b91c82797ac.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231123-1/e81ec96f985092297162aeeee2acf8f4.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "72 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 1997,
+        "view": 166,
+        "actor": [
+          "Paige O'Hara",
+          "Robby Benson",
+          "Jerry Orbach",
+          "David Ogden Stiers",
+          "Bernadette Peters",
+          "Tim Curry",
+          "Haley Joel Osment",
+          "Paul Reubens",
+          "Angela Lansbury",
+          "Frank Welker",
+          "Jeff Bennett",
+          "Jim Cummings",
+          "Kath Soucie",
+          "Bob Bergen",
+          "Rodger Bumpass",
+          "Jennifer Darling",
+          "Debi De"
+        ],
+        "director": [
+          "Andrew Knight"
+        ],
+        "category": [
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Giả Tượng",
+            "slug": "gia-tuong",
+            "id": "97e7ed4c52ce3737e18bdf0bd1331ce8"
+          }
+        ],
+        "country": [
+          {
+            "name": "Canada",
+            "slug": "canada",
+            "id": "445d337b5cd5de476f99333df6b0c2a7"
+          },
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Người Đẹp và Quái Vật: Giáng Sinh Kỳ Diệu - Beauty and the Beast: The Enchanted Christmas - 1997 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231201/GfRRFOff/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231201/GfRRFOff/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-11T02:44:02.000Z"
+        },
+        "modified": {
+          "time": "2023-11-20T21:49:47.000Z"
+        },
+        "_id": "56bd37d3a2fda0f2f41925019c81011d",
+        "name": "Người Đẹp Và Quái Vật",
+        "slug": "nguoi-dep-va-quai-vat-2014",
+        "origin_name": "Beauty and the Beast",
+        "alternative_names": [],
+        "content": "<p>Bắt nguồn từ câu chuyện cổ tích kinh điển từng rất quen thuộc với tuổi thơ của bao người, “Beauty and the Beast” – hay tựa Việt là “Người đẹp và Quái vật” suốt nhiều thập niên đã trở thành đề tài cho vô số các tác phẩm văn học nghệ thuật. Chỉ tính riêng về phương diện điện ảnh, kể từ năm 1946 đến nay đã có tổng cộng 5 bộ phim màn ảnh rộng lấy đề tài từ câu chuyện này, chưa kể 3 loạt phim truyền hình và nhiều phiên bản khác. Tuy nhiên, mấy ai biết rằng, câu chuyện cổ tích nguyên gốc lại là một tác phẩm dân gian của Pháp (La Belle et la Bête), được xuất hiện lần đầu vào năm 1740 bởi nữ nhà văn Gabriell-Suzanne Barbot de Villeneuve.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231111-1/44706b61c4c4126324b2711ebce6f503.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231111-1/a41219dce2168d89ea9d259574efcc8a.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "113 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 140,
+        "actor": [
+          "Léa Seydoux",
+          "Vincent Cassel",
+          "André Dussollier",
+          "Eduardo Noriega",
+          "Myriam Charleins",
+          "Audrey Lamy",
+          "Sara Giraudeau",
+          "Jonathan Demurger",
+          "Nicolas Gob",
+          "Louka Meliava",
+          "Yvonne Catterfeld",
+          "Dejan Bućin",
+          "Wolfgang Menardi",
+          "Mickey Hardt",
+          "Arthur Doppler",
+          "Elisabeth Bogdan"
+        ],
+        "director": [
+          "Christophe Gans"
+        ],
+        "category": [
+          {
+            "name": "Giả Tượng",
+            "slug": "gia-tuong",
+            "id": "97e7ed4c52ce3737e18bdf0bd1331ce8"
+          },
+          {
+            "name": "Tình Cảm",
+            "slug": "tinh-cam",
+            "id": "bb2b4b030608ca5984c8dd0770f5b40b"
+          }
+        ],
+        "country": [
+          {
+            "name": "Pháp",
+            "slug": "phap",
+            "id": "92f688188aa938a03a61a786d6616dcb"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Người Đẹp Và Quái Vật - Beauty and the Beast - 2014 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231120/pbj8zXXv/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231120/pbj8zXXv/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-08T20:40:25.000Z"
+        },
+        "modified": {
+          "time": "2023-11-15T18:36:03.000Z"
+        },
+        "_id": "8526e0962a844e4a2f158d831d5fddf7",
+        "name": "Người Đẹp và Quái Vật",
+        "slug": "nguoi-dep-va-quai-vat-1991",
+        "origin_name": "Beauty and the Beast",
+        "alternative_names": [],
+        "content": "<p>Một chàng hoàng tử trẻ sống trong một tòa lâu đài nguy nga tráng lệ. Chàng có tất cả nhưng kiêu ngạo, tàn nhẫn và không biết đến tình yêu thương... &nbsp;Chàng sẽ sống ra sao khi bị biến thành một con quái vật xấu xí? &nbsp;Lời nguyền chỉ được hóa giải, khi chàng học được cách yêu ai đó, và cũng được người đó đáp lại trước khi cánh hoa hồng cuối cùng rơi xuống!</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231108-1/4a98011fd089bcf13e423ff0cb4df0ff.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231108-1/4c526c7d5e17816e108a69812028c3e8.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "90 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 1991,
+        "view": 164,
+        "actor": [
+          "Paige O'Hara",
+          "Robby Benson",
+          "Richard White",
+          "Jerry Orbach",
+          "David Ogden Stiers",
+          "Angela Lansbury",
+          "Rex Everhart",
+          "Jesse Corti",
+          "Bradley Pierce",
+          "Hal Smith",
+          "Jo Anne Worley",
+          "Mary Kay Bergman",
+          "Kath Soucie",
+          "Alvin Epstein",
+          "Tony Jay",
+          "Brian Cummings",
+          "Alec Murphy",
+          "K"
+        ],
+        "director": [
+          "Gary Trousdale",
+          "Kirk Wise"
+        ],
+        "category": [
+          {
+            "name": "Tình Cảm",
+            "slug": "tinh-cam",
+            "id": "bb2b4b030608ca5984c8dd0770f5b40b"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Giả Tượng",
+            "slug": "gia-tuong",
+            "id": "97e7ed4c52ce3737e18bdf0bd1331ce8"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Người Đẹp và Quái Vật - Beauty and the Beast - 1991 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231114/pQJBiFzZ/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231114/pQJBiFzZ/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-19T21:26:24.000Z"
+        },
+        "modified": {
+          "time": "2023-10-21T23:23:15.000Z"
+        },
+        "_id": "46a558d97954d0692411c861cf78ef79",
+        "name": "Người Đẹp và Quái Vật",
+        "slug": "nguoi-dep-va-quai-vat-2017",
+        "origin_name": "Beauty and the Beast",
+        "alternative_names": [],
+        "content": "<p>Một chàng hoàng tử trẻ sống trong một tòa lâu đài nguy nga tráng lệ. Chàng có tất cả nhưng kiêu ngạo, tàn nhẫn và không biết đến tình yêu thương...&nbsp; Chàng sẽ sống ra sao khi bị biến thành một con quái vật xấu xí?&nbsp; Lời nguyền chỉ được hóa giải, khi chàng học được cách yêu ai đó, và cũng được người đó đáp lại trước khi cánh hoa hồng cuối cùng rơi xuống!</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231019-1/ec35a80e39626b4653784a429b8360eb.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231019-1/ddeb6be1f5078b5653c3d6e260e69e19.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "129 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2017,
+        "view": 171,
+        "actor": [
+          "Emma Watson",
+          "Dan Stevens",
+          "Luke Evans",
+          "Josh Gad",
+          "Kevin Kline",
+          "Hattie Morahan",
+          "Haydn Gwynne",
+          "Gerard Horan",
+          "Ray Fearon",
+          "Ewan McGregor",
+          "Ian McKellen",
+          "Emma Thompson",
+          "Nathan Mack",
+          "Audra McDonald",
+          "Stanley Tucci",
+          "Gugu Mbatha-Raw",
+          "Clive Rowe",
+          "Thomas Padden",
+          "Rita D"
+        ],
+        "director": [
+          "Bill Condon"
+        ],
+        "category": [
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tình Cảm",
+            "slug": "tinh-cam",
+            "id": "bb2b4b030608ca5984c8dd0770f5b40b"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Người Đẹp và Quái Vật - Beauty and the Beast - 2017 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231021/bsiR1T3C/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231021/bsiR1T3C/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-01-28T02:50:36.000Z"
+        },
+        "modified": {
+          "time": "2024-02-17T07:14:38.000Z"
+        },
+        "_id": "da441fc259bec560a67460b17f4b657e",
+        "name": "Avengers: Trận Chiến Cuối Cùng",
+        "slug": "avengers-tran-chien-cuoi-cung",
+        "origin_name": "Ultimate Avengers: The Movie",
+        "alternative_names": [],
+        "content": "<p>Khi một tên lửa hạt nhân được bắn vào Washington vào năm 1945, Captain America đã cho nổ nó ở tầng trên của bầu khí quyển. Nhưng sau đó ông đã rơi hàng dặm xuống vực sâu băng giá của Bắc Đại Tây Dương, nơi ông lưu lạc hơn sáu mươi năm. Nhưng giờ đây, khi thế giới đang đối mặt với cùng một ác quỷ, Captain America phải trỗi dậy trở lại như là hy vọng sống sót cuối cùng của chúng ta.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240128-1/72824a2b39de2fbb3e9617058b2f9eb3.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240128-1/4278b5bc228cbc7963f50547e6c76cff.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "72 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2006,
+        "view": 168,
+        "actor": [
+          "Fred Tatasciore",
+          "Justin Gross",
+          "Michael Massee",
+          "Olivia d'Abo",
+          "Grey DeLisle"
+        ],
+        "director": [
+          "Steven E. Gordon",
+          "Bob Richardson",
+          "Curt Geda"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Gia Đình",
+            "slug": "gia-dinh",
+            "id": "a2492d6cbc4d58f115406ca14e5ec7b6"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Avengers: Trận Chiến Cuối Cùng - Ultimate Avengers: The Movie - 2006 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240214/WyojaYGC/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240214/WyojaYGC/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-11-19T22:07:32.000Z"
+        },
+        "modified": {
+          "time": "2023-11-30T01:56:38.000Z"
+        },
+        "_id": "24bfde45b5790f04b1d096565157f6a4",
+        "name": "Ultimate Avengers 2: Rise of the Panther",
+        "slug": "ultimate-avengers-2-rise-of-the-panther",
+        "origin_name": "Ultimate Avengers 2: Rise of the Panther",
+        "alternative_names": [],
+        "content": "<p>Wakanda bí ẩn nằm ở trung tâm đen tối nhất của Châu Phi, hầu hết thế giới đều không biết đến. Một vùng đất bị cô lập ẩn sau những đường biên giới khép kín, được bảo vệ quyết liệt bởi vị vua trẻ tuổi của nó: Black Panther. Nhưng khi những kẻ xâm lược ngoài hành tinh tàn bạo tấn công, mối đe dọa khiến Black Panther không còn lựa chọn nào khác ngoài việc chống lại các sắc lệnh thiêng liêng của dân tộc mình và yêu cầu sự giúp đỡ từ người ngoài.</p>",
+        "type": "hoathinh",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231119-1/fe000efdddac2f8f3e3529ceddabbd85.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231119-1/e2e5512ceab4f3584e8efebd53da2b13.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "73 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2006,
+        "view": 154,
+        "actor": [
+          "Justin Gross",
+          "Grey DeLisle",
+          "Michael Massee",
+          "Marc Worden",
+          "Olivia d'Abo",
+          "Nan McNamara",
+          "Nolan North",
+          "Andre Ware",
+          "David Boat",
+          "Fred Tatasciore",
+          "Jim Ward",
+          "Jeffrey D. Sams",
+          "Dwight Schultz",
+          "Mark Hamill",
+          "Dave Fennoy",
+          "Susan Dalian",
+          "Kendre Berry",
+          "Chi McBride"
+        ],
+        "director": [
+          "Dick Sebast",
+          "Bob Richardson",
+          "Will Meugniot"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hoạt Hình",
+            "slug": "hoat-hinh",
+            "id": "d9983d88d8929b1d9f767884e2999e27"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Ultimate Avengers 2: Rise of the Panther - Ultimate Avengers 2: Rise of the Panther - 2006 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s1.phim1280.tv/20231129/7BBsPy5V/index.m3u8",
+              "link_m3u8": "https://s1.phim1280.tv/20231129/7BBsPy5V/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "338969",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6,
+          "vote_count": 396
+        },
+        "imdb": {
+          "id": "tt1633359",
+          "vote_average": 5.9,
+          "vote_count": 17723
+        },
+        "created": {
+          "time": "2025-10-06T14:52:21.000Z"
+        },
+        "modified": {
+          "time": "2025-10-06T14:52:21.000Z"
+        },
+        "_id": "e96b520d898c746f81549b11832d7424",
+        "name": "Siêu Anh Hùng Bá Dơ",
+        "slug": "sieu-anh-hung-ba-do",
+        "origin_name": "The Toxic Avenger Unrated",
+        "alternative_names": [
+          "Cheetah",
+          "The Toxic Avenger",
+          "Токсичный мститель",
+          "Токсичний месник",
+          "Toxic le ravageur",
+          "The Toxic Avenger Uncut",
+          "悪魔の毒々モンスター",
+          "Vinġador Toxico",
+          "El Vengador Toxico",
+          "เดอะ ท็อกซิก อเวนเจอร์",
+          "הנוקם הרעיל",
+          "毒魔复仇者",
+          "톡식 어벤저",
+          "The Toxic Avenger Unrated"
+        ],
+        "content": "<p>Winston Gooze, một lao công làm việc tại công ty hóa chất BTH, bị chẩn đoán mắc bệnh não và không được bảo hiểm chi trả.Khi cố gắng tìm cách cứu mạng sống, anh bị lừa và bị sát hại rồi ném xuống thùng chất độc — nhưng chất độc biến anh thành một sinh vật biến dị với sức mạnh siêu nhiên, gọi là “Toxie”.Toxie dùng sức mạnh mới để chống lại</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20251006-1/decf0da9841906e7ecd47ffc949b734c.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20251006-1/ecc53df28a10c320bf4fad2ff51c746d.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=BO3tPsmx8_8",
+        "time": "102 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 121,
+        "actor": [
+          "Peter Dinklage",
+          "Jacob Tremblay",
+          "Taylour Paige",
+          "Julia Davis",
+          "Jonny Coyne",
+          "Elijah Wood",
+          "Kevin Bacon",
+          "David Yow",
+          "Sarah Niles",
+          "Shaun Dooley",
+          "Luisa Guerreiro",
+          "Spencer Wilding",
+          "Atanas Srebrev",
+          "Abraham Lewis",
+          "Lee Eddy",
+          "Annette Badland",
+          "Sunil Patel",
+          "Rebecca O&#03"
+        ],
+        "director": [
+          "Macon Blair"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Siêu Anh Hùng Bá Dơ - The Toxic Avenger Unrated - 2025 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251006/WUr7e65Y/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251006/WUr7e65Y/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "299534",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.2,
+          "vote_count": 27964
+        },
+        "imdb": {
+          "id": "tt4154796",
+          "vote_average": 8.4,
+          "vote_count": 1442446
+        },
+        "created": {
+          "time": "2023-10-18T13:09:12.000Z"
+        },
+        "modified": {
+          "time": "2025-09-14T16:50:32.000Z"
+        },
+        "_id": "3e9e39fed3b8369ed940f52cf300cf88",
+        "name": "Biệt Đội Siêu Anh Hùng 4: Hồi Kết",
+        "slug": "biet-doi-sieu-anh-hung-4-hoi-ket",
+        "origin_name": "Avengers: Endgame",
+        "alternative_names": [
+          "Avengers: Endgame 3D",
+          "Marvel Studios' Avengers: Endgame",
+          "Vengadores 4: Endgame",
+          "复仇者联盟4：终局之战",
+          "Vingadores Ultimato",
+          "Vingadores: Ultimato",
+          "Avengers 4: Hồi Kết",
+          "어벤져스 4",
+          "Hakmarrësit: Loja e Fundit",
+          "Ha'Nokmim: Sof Ha'Mis'hak",
+          "アベンジャーズ　エンドゲーム",
+          "Keršytojai: Pabaiga",
+          "اوینجرز : اینڈگیم",
+          "Мсціўцы: Фінал",
+          "Одмаздници: Крај на игрите",
+          "Qisasçılar: Final",
+          "Վրիժառուները: Վերջնախաղ",
+          "المنتقمون: نهاية اللعبة",
+          "انتقام‌جویان: پایان بازی",
+          "Кек алушылар: Финал",
+          "Ar alýanlar: soňy Oýun",
+          "एभेन्जर्स: इन्डगेम",
+          "অ্যাভেঞ্জার্স: এন্ডগেম",
+          "அவெஞ்சர்ஸ்: எண்ட்கேம்",
+          "అవెంజర్స్: ఎండ్ గేమ్",
+          "შურისმაძიებლები:  ენდშპილი",
+          "Avengers 4",
+          "Avengers: Infinity War Part II",
+          "אנדגיים",
+          "المنتقمون نهاية اللعبة",
+          "Avengers: Endgame Encore",
+          "Avengers: Endgame"
+        ],
+        "content": "<p>Sau sự kiện hủy diệt tàn khốc, vũ trụ chìm trong cảnh hoang tàn. Với sự trợ giúp của những đồng minh còn sống sót, biệt đội siêu anh hùng Avengers tập hợp một lần nữa để đảo ngược hành động của Thanos và khôi phục lại trật tự của vũ trụ.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250517-1/c9391052648953e135770cf4c7b10034.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250517-1/12f7cc3c15c8532f362afd71fe9c2915.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+        "time": "180 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2019,
+        "view": 467,
+        "actor": [
+          "Robert Downey Jr.",
+          "Chris Evans",
+          "Mark Ruffalo",
+          "Chris Hemsworth",
+          "Scarlett Johansson",
+          "Jeremy Renner",
+          "Josh Brolin",
+          "Don Cheadle",
+          "Paul Rudd",
+          "Benedict Cumberbatch",
+          "Chadwick Boseman",
+          "Brie Larson",
+          "Tom Holland",
+          "Karen Gillan",
+          "Zoe Saldaña",
+          "Evangeline Lilly",
+          "Tessa Tho"
+        ],
+        "director": [
+          "Joe Russo",
+          "Anthony Russo"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 4: Hồi Kết - Avengers: Endgame - 2019 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/lfw8mcwz/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/lfw8mcwz/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 4: Hồi Kết - Avengers: Endgame - 2019 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/QTMOqVCS/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/QTMOqVCS/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "299536",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.2,
+          "vote_count": 32216
+        },
+        "imdb": {
+          "id": "tt4154756",
+          "vote_average": 8.4,
+          "vote_count": 1368739
+        },
+        "created": {
+          "time": "2023-10-16T23:19:09.000Z"
+        },
+        "modified": {
+          "time": "2025-09-14T16:49:44.000Z"
+        },
+        "_id": "5ec829debe54b19a5f78d9a65b900a39",
+        "name": "Biệt Đội Siêu Anh Hùng 3: Cuộc Chiến Vô Cực",
+        "slug": "biet-doi-sieu-anh-hung-3-cuoc-chien-vo-cuc",
+        "origin_name": "Avengers: Infinity War",
+        "alternative_names": [
+          "Avengers: Infinity War Part I",
+          "Мстители: Война бесконечности. Часть 1",
+          "Kersytojai: Begalybes Karas. I dalis",
+          "Bosszúállók: Végtelen háború - I. rész",
+          "נוקמים 3: מלחמת האין-סוף",
+          "Avengers: Sonsuzluk Savaşı",
+          "Qasoskorlar 3: Adabiyat jangi",
+          "Avengers: Abadiyat jangi",
+          "Qasoskorlar: Cheksizlik urushi",
+          "Qasoskorlar: Cheksizlik jangi",
+          "Marvel Studios' Avengers: Infinity War",
+          "អ្នកចំបាំងអាវេនជឺ : សង្គ្រាមគ្មានដែនបញ្ចប់",
+          "마블 어벤져스: 인피니티 워",
+          "Avengers: Lufta e pafundësisë",
+          "Os Vingadores 3 - Guerra Infinita",
+          "Avengers 3: Cuộc Chiến Vô Cực",
+          "어벤져스 인피니티 워",
+          "어벤져스 3",
+          "Avengers: Nekonečná vojna",
+          "Avengers 3",
+          "Vengadores: Infinity War",
+          "avengers inifity war",
+          "Marvel's The Avengers 3 - Infinity War",
+          "Վրիժառուները։ Անվերջության պատերազմ",
+          "复仇者联盟3：无限战争",
+          "Avengers - Infinity War",
+          "المنتقمون الحرب الأبدية",
+          "Avengers: Infinity War"
+        ],
+        "content": "<p>Sau chuyến hành trình độc nhất vô nhị không ngừng mở rộng và phát triển vụ trũ điện ảnh Marvel, bộ phim Avengers: Cuộc Chiến Vô Cực sẽ mang đến màn ảnh trận chiến cuối cùng khốc liệt nhất mọi thời đại. Biệt đội Avengers và các đồng minh siêu anh hùng của họ phải chấp nhận hy sinh tất cả để có thể chống lại kẻ thù hùng mạnh Thanos trước tham vọng hủy diệt toàn bộ vũ trụ của hắn.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250517-1/ce91513c3f6e12457edea803bdd583d3.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250517-1/ea70303d55b86c6badee2a80b839a739.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+        "time": "149 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2018,
+        "view": 338,
+        "actor": [
+          "Robert Downey Jr.",
+          "Chris Evans",
+          "Chris Hemsworth",
+          "Josh Brolin",
+          "Mark Ruffalo",
+          "Scarlett Johansson",
+          "Don Cheadle",
+          "Benedict Cumberbatch",
+          "Tom Holland",
+          "Chadwick Boseman",
+          "Zoe Saldaña",
+          "Karen Gillan",
+          "Tom Hiddleston",
+          "Paul Bettany",
+          "Elizabeth Olsen",
+          "Anthony Mackie",
+          "Seb"
+        ],
+        "director": [
+          "Anthony Russo",
+          "Joe Russo"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 3: Cuộc Chiến Vô Cực - Avengers: Infinity War - 2018 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/35dmbYWQ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/35dmbYWQ/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 3: Cuộc Chiến Vô Cực - Avengers: Infinity War - 2018 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/v6v9TxER/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/v6v9TxER/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "99861",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7.3,
+          "vote_count": 24561
+        },
+        "imdb": {
+          "id": "tt2395427",
+          "vote_average": 7.3,
+          "vote_count": 998463
+        },
+        "created": {
+          "time": "2023-10-18T23:05:27.000Z"
+        },
+        "modified": {
+          "time": "2025-09-14T16:48:45.000Z"
+        },
+        "_id": "0a87257e5308197df43230edf4ad1dae",
+        "name": "Biệt Đội Siêu Anh Hùng 2: Đế Chế Ultron",
+        "slug": "biet-doi-sieu-anh-hung-2-de-che-ultron",
+        "origin_name": "Avengers: Age Of Ultron",
+        "alternative_names": [
+          "The Avengers 2",
+          "Os Vingadores 2 - Era de Ultron",
+          "Marvel's Avengers: Age of Ultron",
+          "Os Vingadores: A Era de Ultron",
+          "Vingadores 2",
+          "复仇者联盟2：奥创纪元",
+          "마블 어벤져스: 에이지 오브 울트론",
+          "어벤져스 2",
+          "Avengers 2: Vek Ultrona",
+          "어벤져스 에이지 오브 울트론",
+          "Avengers - L'Ère d'Ultron",
+          "Avengers - Age of Ultron",
+          "Marvel Studios' Avengers: Age of Ultron",
+          "Avengers 2 - Age of Ultron",
+          "Os Vingadores - A Era de Ultron",
+          "Bosszúállók: Ultron kora",
+          "Avengers, L'ère d'Ultron",
+          "Vengadores 2 La era de Ultron",
+          "Avengers 2: Đế Chế Ultron",
+          "შურისმაძიებლები: ალტრონის ხანა",
+          "Avengers 2 - L'Ère d'Ultron",
+          "Avengers: Czas Ultrona",
+          "アベンジャーズ／エイジ・オブ・ウルトロン：2015",
+          "المنتقمون عهد الترون",
+          "Avengers: Age of Ultron"
+        ],
+        "content": "<p>Avengers: Age of Ultron tiếp nối các sự kiện xảy ra trong Captain America: The Winter Soldier ra mắt hè 2014. Kẻ thù của Biệt đội siêu anh hùng lần này là Ultron – một robot với trí tuệ nhân tạo, những năng lực siêu nhiên mạnh hơn bất kỳ ai trong The Avenger và có dã tâm chia rẽ nội bộ biệt đội nhằm thôn tính Trái Đất. Hắn được tạo ra từ phòng thí nghiệm của Tony Stark với mụ đích ban đầu là một hệ thống đặc biệt với mục đích gìn giữ hòa bình thế giới nhưng do Người Sắt sơ suất đã để mọi thứ vượt ra khỏi tầm kiểm soát, đẩy số phận của loài người lâm vào tình cảnh ngàn cân treo sợi tóc. Một lần nữa, những siêu anh hùng quả cảm - Iron Man, Captain America, Thor, The Incredible Hulk, Black Widow và Hawkeye - tiếp tục hợp tác để ngăn chặn kẻ thù. Trong hành trình bảo vệ hòa bình, nhóm kết nạp thêm hai thành viên: Wanda Maxioff và Pietro Maxioff – cặp song sinh bí hiểm và sở hữu một nguồn sức mạnh lớn lao, cũng như gặp lại một người bạn cũ trong hình dạng hoàn toàn mới có tên The Vision.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250517-1/69229eba91fea0022837a2c21585e03b.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250517-1/b5756037d7bacff075fe28fc3197da44.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=zDfYcNMpYjA",
+        "time": "141 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2015,
+        "view": 274,
+        "actor": [
+          "Robert Downey Jr.",
+          "Chris Hemsworth",
+          "Mark Ruffalo",
+          "Chris Evans",
+          "Scarlett Johansson",
+          "Jeremy Renner",
+          "James Spader",
+          "Samuel L. Jackson",
+          "Don Cheadle",
+          "Aaron Taylor-Johnson",
+          "Elizabeth Olsen",
+          "Paul Bettany",
+          "Cobie Smulders",
+          "Anthony Mackie",
+          "Hayley Atwell",
+          "Idris Elba"
+        ],
+        "director": [
+          "Joss Whedon"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 2: Đế Chế Ultron - Avengers: Age Of Ultron - 2015 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/qNZq532f/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/qNZq532f/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng 2: Đế Chế Ultron - Avengers: Age Of Ultron - 2015 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/NIVa6IDS/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/NIVa6IDS/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "24428",
+          "type": "movie",
+          "season": null,
+          "vote_average": 8.1,
+          "vote_count": 38622
+        },
+        "imdb": {
+          "id": "tt0848228",
+          "vote_average": 8,
+          "vote_count": 1555308
+        },
+        "created": {
+          "time": "2023-10-18T01:19:31.000Z"
+        },
+        "modified": {
+          "time": "2025-09-14T16:47:59.000Z"
+        },
+        "_id": "814a9c18f5abff398787c9cfcbf3d80c",
+        "name": "Biệt Đội Siêu Anh Hùng",
+        "slug": "biet-doi-sieu-anh-hung",
+        "origin_name": "The Avengers",
+        "alternative_names": [
+          "Avengers Assemble",
+          "Avengers 3D",
+          "The Avengers 3D",
+          "The Avengers: An IMAX 3D Experience",
+          "Marvel's Avengers Assemble",
+          "ดิ อเวนเจอร์ส 1",
+          "Marvel's The Avengers",
+          "Vengadores",
+          "Os Vingadores",
+          "Marvel: Los Vengadores",
+          "어벤져스",
+          "마블 어벤져스",
+          "Мститeли",
+          "复仇者联盟",
+          "Biệt Đội Siêu Anh Hùng",
+          "Avengers",
+          "gfh",
+          "The Avengers: Os Vingadores",
+          "アベンジャーズ",
+          "Վրիժառուները",
+          "अवेंजर्स अंगारे बने शोले",
+          "The Avengers: los vengadores de Marvel",
+          "المنتقمون",
+          "The Avengers"
+        ],
+        "content": "<p>The Avengers là bộ phim giả tưởng kể về một nhóm siêu anh hùng với những khả năng đặc biệt, họ bao gồm: Người Sắt, Thor, Đội trưởng Mỹ, và Người Khổng Lồ Xanh Hulk cùng tham gia với tổ chức bảo vệ thế giới SHIELD. Mục đích của SHIELD là nhằm bảo vệ Trái Đất khỏi âm mưu hủy hoại của những thế lực xấu từ ngoài địa cầu mà kẻ cầm đầu là Loki.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250517-1/63af625c8e64e37cefb78667309cf9e1.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250517-1/2f379fa692f6cdbd440d34bf367cccfb.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=hIR8Ar-Z4hw",
+        "time": "143 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2012,
+        "view": 278,
+        "actor": [
+          "Robert Downey Jr.",
+          "Chris Evans",
+          "Mark Ruffalo",
+          "Chris Hemsworth",
+          "Scarlett Johansson",
+          "Jeremy Renner",
+          "Tom Hiddleston",
+          "Clark Gregg",
+          "Cobie Smulders",
+          "Stellan Skarsgård",
+          "Samuel L. Jackson",
+          "Gwyneth Paltrow",
+          "Paul Bettany",
+          "Alexis Denisof",
+          "Tina Benko",
+          "Jerzy Skolimows"
+        ],
+        "director": [
+          "Joss Whedon"
+        ],
+        "category": [
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng - The Avengers - 2012 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/qJv6Vjrb/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/qJv6Vjrb/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Siêu Anh Hùng - The Avengers - 2012 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250914/IqyGrSaP/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250914/IqyGrSaP/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-02-28T16:29:52.000Z"
+        },
+        "modified": {
+          "time": "2024-03-23T03:50:22.000Z"
+        },
+        "_id": "9e36d5294d8f32155b8178bb26fd024c",
+        "name": "Người Hùng Nhiễm Độc Báo Thù",
+        "slug": "nguoi-hung-nhiem-doc-bao-thu",
+        "origin_name": "The Toxic Avenger",
+        "alternative_names": [],
+        "content": "<p>Tromaville có một anh hùng mới quái dị. Kẻ báo thù độc hại được sinh ra khi cậu bé lau nhà Melvin Junko rơi vào thùng chất thải độc hại. Bây giờ những kẻ làm ác sẽ có rất nhiều để mất.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20240228-1/c778d5f422cf7431863c31795319806e.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20240228-1/80e1665fe227aa5455739f2af40559ea.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=iT7jf5Pc5HM",
+        "time": "82 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 1984,
+        "view": 181,
+        "actor": [
+          "Mark Torgl",
+          "Mitch Cohen",
+          "Andree Maranda",
+          "Pat Ryan",
+          "Cindy Manion",
+          "Patrick Kilpatrick",
+          "Jennifer Prichard",
+          "Robert Prichard",
+          "Kenneth Kessler",
+          "Gary Schneider"
+        ],
+        "director": [
+          "Lloyd Kaufman",
+          "Michael Herz"
+        ],
+        "category": [
+          {
+            "name": "Hài Hước",
+            "slug": "hai-huoc",
+            "id": "ba6fd52e5a3aca80eaaf1a3b50a182db"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Kinh Dị",
+            "slug": "kinh-di",
+            "id": "4db8d7d4b9873981e3eeb76d02997d58"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Người Hùng Nhiễm Độc Báo Thù - The Toxic Avenger - 1984 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240309/pYhyTLJo/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240309/pYhyTLJo/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2024-02-20T02:41:08.000Z"
+        },
+        "modified": {
+          "time": "2024-03-06T13:35:43.000Z"
+        },
+        "_id": "66abd1e4544beed37b65e72639d88850",
+        "name": "Chiến Binh Cổ Đại",
+        "slug": "chien-binh-co-dai",
+        "origin_name": "Avengers Grimm",
+        "alternative_names": [],
+        "content": "<p>Chiến Binh Cổ Đại - Avengers Grimm là câu chuyện khi Rumpelstiltskin phá hủy Gương ma thuật và trốn thoát tới thế giới hiện đại, bốn công chúa của Once Upon a Time - Cinderella, Sleeping Beauty, Bạch Tuyết, và Rapunzel-được hút qua các cổng thông tin. Được đào tạo và sở hữu với sức mạnh kỳ diệu, bốn phụ nữ phải đấu tranh Rumpelstiltskin và quân đội của hắn trước khi hắn biến tất cả những người trên trái đất thành nô lệ…</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": null,
+        "poster_url": "https://phimimg.com/upload/vod/20240220-1/1faf55d9fa1de32d4ee8abfab0fd6ea2.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "85 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2015,
+        "view": 99,
+        "actor": [
+          "Lou Ferrigno",
+          "Casper Van Dien",
+          "Lauren Parkinson"
+        ],
+        "director": [
+          "Jeremy M. Inman"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Chiến Binh Cổ Đại - Avengers Grimm - 2015 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20240302/V50mMvvc/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20240302/V50mMvvc/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-23T01:18:06.000Z"
+        },
+        "modified": {
+          "time": "2023-10-23T20:31:32.000Z"
+        },
+        "_id": "ef0917ea498b1665ad6c701057155abe",
+        "name": "Captain America: Kẻ Báo Thù Đầu Tiên",
+        "slug": "captain-america-ke-bao-thu-dau-tien",
+        "origin_name": "Captain America: The First Avenger",
+        "alternative_names": [],
+        "content": "<p>lấy bổi cách từ đầu năm 1942, khi Mỹ đang tham gia Thế chiến thứ II và cần tới những chiến binh can trường. Chàng trai Steve Rogers (Chris Evans) là một người như vậy, nhưng thể hình quá thấp bé khiến anh không thể đạt được ước mơ tòng quân. Cơ may đến với Rogers khi anh được chọn tham gia một thí nghiệm của chính phủ, giúp biến người thường trở thành siêu chiến binh.&nbsp; Mọi việc diễn ra suôn sẻ, biến Rogers thành một người cao to vạm vỡ, đầu óc tiếp thu mọi kỹ năng chiến đấu nhanh và vẫn giữ được trái tim nhân hậu.Anh trở thành Captain America, biểu tượng của nước Mỹ kể từ đó. Đối thủ của anh là phe Phát-xít, với quái nhân Red Skull, kẻ không chỉ quyền năng mà còn rất tàn ác.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231023-1/52b540fe25106beae3fdf132bfe6fb01.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231023-1/c57522ab9758306b8318fc880db5d43d.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "124 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2011,
+        "view": 189,
+        "actor": [
+          "Chris Evans",
+          "Tommy Lee Jones",
+          "Hugo Weaving",
+          "Hayley Atwell",
+          "Sebastian Stan",
+          "Dominic Cooper",
+          "Toby Jones",
+          "Neal McDonough",
+          "Derek Luke",
+          "Bruno Ricci",
+          "JJ Feild",
+          "Kenneth Choi",
+          "Richard Armitage",
+          "Stanley Tucci",
+          "Samuel L. Jackson",
+          "Lex Shrapnel",
+          "Michael Brandon",
+          "Mart"
+        ],
+        "director": [
+          "Joe Johnston"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Captain America: Kẻ Báo Thù Đầu Tiên - Captain America: The First Avenger - 2011 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231023/IkAntRNz/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231023/IkAntRNz/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "986056",
+          "type": "movie",
+          "season": null,
+          "vote_average": 7.3,
+          "vote_count": 3644
+        },
+        "imdb": {
+          "id": "tt20969586",
+          "vote_average": 7.1,
+          "vote_count": 274694
+        },
+        "created": {
+          "time": "2025-05-11T01:53:33.000Z"
+        },
+        "modified": {
+          "time": "2025-12-28T17:41:16.000Z"
+        },
+        "_id": "c98a3fedd72195a304fba80ebaa320fe",
+        "name": "Biệt Đội Sấm Sét*",
+        "slug": "biet-doi-sam-set",
+        "origin_name": "Thunderbolts*",
+        "alternative_names": [
+          "Marvel Studios' Thunderbolts",
+          "*新复仇者联盟",
+          "Thunderbolts",
+          "Marvel Studios' Thunderbolts*",
+          "Thunderbolts* de Marvel Studios",
+          "サンダーボルツ",
+          "*ת'אנדרבולטס",
+          "ת'אנדרבולטס",
+          "תנדרבולטס",
+          "صاعقه‌ها*",
+          "Mennydörgők",
+          "Громовници*",
+          "雷霆特攻隊*",
+          "Momaqaldiroqlar",
+          "The New Avengers",
+          "新复仇者联盟",
+          "*Os Novos Vingadores",
+          "뉴 어벤져스",
+          "*The New Avengers",
+          "Marvel Studios' The New Avengers",
+          "*Yeni Yenilmezler",
+          "Thunderbolts* The New Avengers",
+          "*Los Nuevos Vengadores",
+          "I Nuovi Avengers",
+          "الصواعق",
+          "הנוקמים החדשים",
+          "*הנוקמים החדשים",
+          "*Les Nouveaux Avengers",
+          "Marvel Studios' T̶h̶u̶n̶d̶e̶r̶b̶o̶l̶t̶s̶* The New Avengers",
+          "T̶h̶u̶n̶d̶e̶r̶b̶o̶l̶t̶s̶* Los Nuevos Vengadores de Marvel Studios",
+          "Los Nuevos Avengers",
+          "*Los Nuevos Avengers",
+          "*ახალი შურისმაძიებლები",
+          "Marvel's Thunderbolts*",
+          "Thunderbolts*: *Os Novos Vingadores",
+          "*Нові месники",
+          "သန္တာဗိုလ်",
+          "*新復仇者聯盟",
+          "Грамабоі*",
+          "サンダーボルツ⋆",
+          "썬더볼츠＊",
+          "Thunderbolts* *The New Avengers",
+          "Thunderbolts The New Avengers",
+          "Thunderbolts*: *Nowi Avengers",
+          "Thunderbolts*"
+        ],
+        "content": "<p>Ai trong team này cũng từng làm việc ác, giờ là lúc làm việc ác cùng nhau. Các thành phần bất hảo trong vũ trụ điện ảnh Marvel giờ đây đã được triệu tập trở thành một nhóm gọi là “Biệt Đội Sấm Sét”, để làm những nhiệm vụ nguy hiểm bậc nhất mà có thể sẽ thay đổi con người, cuộc đời họ mãi mãi.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250511-1/cffe5c9724171b099b572325beb77ae0.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250511-1/10a7c938fbcb8c8bcfd2b136e4ed73f6.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=wZjKEMrl4oM",
+        "time": "127 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 212,
+        "actor": [
+          "Florence Pugh",
+          "Sebastian Stan",
+          "Julia Louis-Dreyfus",
+          "Lewis Pullman",
+          "David Harbour",
+          "Wyatt Russell",
+          "Hannah John-Kamen",
+          "Olga Kurylenko",
+          "Geraldine Viswanathan",
+          "Wendell Pierce",
+          "Chris Bauer",
+          "Violet McGraw",
+          "Alexa Swinton",
+          "Eric Lange",
+          "Chiara Stella",
+          "Stefano Carann"
+        ],
+        "director": [
+          "Jake Schreier"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Sấm Sét* - Thunderbolts* - 2025 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250701/4039rjRg/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250701/4039rjRg/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Biệt Đội Sấm Sét* - Thunderbolts* - 2025 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20251228/9CSG0NS9/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20251228/9CSG0NS9/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "822119",
+          "type": "movie",
+          "season": null,
+          "vote_average": 6,
+          "vote_count": 3152
+        },
+        "imdb": {
+          "id": "tt14513804",
+          "vote_average": 5.6,
+          "vote_count": 178537
+        },
+        "created": {
+          "time": "2025-02-18T04:07:56.000Z"
+        },
+        "modified": {
+          "time": "2025-04-15T01:02:11.000Z"
+        },
+        "_id": "8bb6fe84b8bba85343f415936f15e878",
+        "name": "Captain America: Thế Giới Mới",
+        "slug": "captain-america-the-gioi-moi",
+        "origin_name": "Captain America: Brave New World",
+        "alternative_names": [
+          "Captain America 4",
+          "Marvel Studios' Captain America: Brave New World",
+          "Capitão América 4",
+          "美国队长4：新世界秩序",
+          "קפטן אמריקה 4",
+          "Captain America: New World Order",
+          "Captain America 4: Thế Giới Mới",
+          "קפטן אמריקה: סדר עולמי חדש",
+          "キャプテン・アメリカ：ニュー・ワールド・オーダー",
+          "קפטן אמריקה: עולם אמיץ חדש",
+          "კაპიტანი ამერიკა: ახალი მსოფლიო წესრიგი",
+          "Capitán América: Brave New World de Marvel Studios",
+          "Капитан Америка 4",
+          "Kaptan Amerika: Yeni Cəsur Dünya",
+          "Đội Trưởng Mỹ: Thế Giới Mới",
+          "Marvel Studios' Captain America: New World Order",
+          "Captain America - Brave New World",
+          "Capitaine America: le meilleur des mondes",
+          "Captain America, Brave New World",
+          "Captain America Brave New World",
+          "كابتن أمريكا شجاع العالم الجديد",
+          "Brave New World",
+          "Kaptan Amerika: Cesur Yeni Dünya",
+          "Captain America: Brave New World"
+        ],
+        "content": "<p>Sau khi gặp Tổng thống Hoa Kỳ mới đắc cử Thaddeus Ross, Sam Wilson thấy mình bị cuốn vào một sự cố . Anh phải khám phá lý do đằng sau một âm mưu cực kì xấu xa trước khi kẻ chủ mưu thật sự khiến cả thế giới phải hoảng sợ</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250218-1/c4fc10824def45b2171d7a46516b6378.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250218-1/3ff8eee9f7443ddc826546772c9b6e4e.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": true,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=1pHDWnXmK7Y",
+        "time": "119 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 142,
+        "actor": [
+          "Anthony Mackie",
+          "Harrison Ford",
+          "Danny Ramirez",
+          "Shira Haas",
+          "Tim Blake Nelson",
+          "Carl Lumbly",
+          "Giancarlo Esposito",
+          "Liv Tyler",
+          "Xosha Roquemore",
+          "Jóhannes Haukur Jóhannesson",
+          "William Mark McCullough",
+          "Takehiro Hira",
+          "Harsh Nayyar",
+          "Rick Espaillat",
+          "Todd Allen Durkin"
+        ],
+        "director": [
+          "Julius Onah"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Captain America: Thế Giới Mới - Captain America: Brave New World - 2025 - FHD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s5.phim1280.tv/20250415/GSrQWePH/index.m3u8",
+              "link_m3u8": "https://s5.phim1280.tv/20250415/GSrQWePH/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Captain America: Thế Giới Mới - Captain America: Brave New World - 2025 - FHD - Thuyết Minh - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s5.phim1280.tv/20250415/5NBZL7oY/index.m3u8",
+              "link_m3u8": "https://s5.phim1280.tv/20250415/5NBZL7oY/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-24T01:29:37.000Z"
+        },
+        "modified": {
+          "time": "2023-10-25T22:06:25.000Z"
+        },
+        "_id": "2b6921f2c64dee16ba21ebf17f3c2c92",
+        "name": "Captain America: Chiến Binh Mùa Đông",
+        "slug": "captain-america-chien-binh-mua-dong",
+        "origin_name": "Captain America: The Winter Soldier",
+        "alternative_names": [],
+        "content": "<p>Nội dung phim Captain America: Chiến Binh Mùa Đông là câu chuyện tiếp nối bộ phim The Avengers, khi Steve Rogers phải tìm cách hòa nhập vào thế giới hiện đại và kết hợp với Natasha Romanoff/Black Widow để chiến đấu chống lại một kẻ thù nguy hiểm ở Washington, D.C. Sau cuộc chiến cùng đội The Avengers tại New York, Captain America (hay còn gọi là Steve Rogers) có một cuộc sống khá thầm lặng tại Washington và anh phải vật lộn để thích nghi với cuộc sống ở thế giới hiện đại. Tuy nhiên, khi một người bạn trong SHIELD bị rơi vào vòng nguy hiểm, anh đã bị kéo vào một âm mưu đen tối có thể phá hủy cả nhân loại. Trong phim này, cùng với Black Widow, anh phải ngăn cản âm mưu này đồng thời chiến đấu chống lại nhừng sát thủ chuyên nghiệp được cử tới để thủ tiêu mình. Cặp đôi Captain, Black Widow còn tranh thủ sự giúp đỡ từ người bạn mới, Falcon. Tuy nhiên, một kẻ thù vô cùng nguy hiểm và bí ẩn lúc này lại xuất hiện.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231024-1/f929525997c4f9839b6c677a2507eb82.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231024-1/471cf661d9e63cae2b62daa1e033aae9.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "136 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2014,
+        "view": 182,
+        "actor": [
+          "Chris Evans",
+          "Scarlett Johansson",
+          "Sebastian Stan",
+          "Anthony Mackie",
+          "Cobie Smulders",
+          "Frank Grillo",
+          "Emily VanCamp",
+          "Hayley Atwell",
+          "Robert Redford",
+          "Samuel L. Jackson",
+          "Toby Jones",
+          "Jenny Agutter",
+          "Maximiliano Hernández",
+          "Georges St-Pierre",
+          "Callan Mulvey",
+          "Alan Dale"
+        ],
+        "director": [
+          "Anthony Russo",
+          "Joe Russo"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Captain America: Chiến Binh Mùa Đông - Captain America: The Winter Soldier - 2014 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231025/LhVfXJEZ/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231025/LhVfXJEZ/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": null,
+          "type": null,
+          "season": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "imdb": {
+          "id": null,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        "created": {
+          "time": "2023-10-19T02:49:00.000Z"
+        },
+        "modified": {
+          "time": "2023-10-21T23:06:56.000Z"
+        },
+        "_id": "653ac11ca60b3e021a8c609c7198acfc",
+        "name": "Captain America: Nội Chiến Siêu Anh Hùng",
+        "slug": "captain-america-noi-chien-sieu-anh-hung",
+        "origin_name": "Captain America: Civil War",
+        "alternative_names": [],
+        "content": "<p>Captain America: Civil War (Nội Chiến Siêu Anh Hùng) xoay quanh việc Steve Rogers (Captain America) dẫn đầu một nhóm siêu anh hùng với các thành viên của Avengers với mục tiêu tiếp tục nỗ lực để bảo vệ nhân loại. Nhưng sau nhiều vụ việc xảy ra do biệt đội Avengers làm thiệt hại tài sản, chính phủ đã thiết lập cơ quan quản lý và giám sát nhóm. Điều này gây ra sự chia rẽ trong nội bộ nhóm Avengers, tạo nên hai phe đối đầu nhau. Một bên được lãnh đạo bởi Steve Rogers (Captain America) với mong muốn duy trì nhóm để thực hiện mục tiêu bảo vệ nhân loại mà không có sự can thiệp của chính phủ. Phe còn lại là của Tony Stark (Iron Man) luôn hỗ trợ giám sát và có trách nhiệm giải trình mọi việc làm với chính phủ.</p>",
+        "type": "single",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20231019-1/5627583170acd90f4a913dfb103a66b6.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20231019-1/8c7f1dd82969ab49e34d2adeee20a948.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "",
+        "time": "147 phút",
+        "episode_current": "Full",
+        "episode_total": 1,
+        "quality": "HD",
+        "lang": "Vietsub",
+        "lang_key": [
+          "vs"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2016,
+        "view": 252,
+        "actor": [
+          "Chris Evans",
+          "Robert Downey Jr.",
+          "Scarlett Johansson",
+          "Sebastian Stan",
+          "Chadwick Boseman",
+          "Daniel Brühl",
+          "Elizabeth Olsen",
+          "Paul Bettany",
+          "Don Cheadle",
+          "Anthony Mackie",
+          "Tom Holland",
+          "Jeremy Renner",
+          "Paul Rudd",
+          "Emily VanCamp",
+          "Martin Freeman",
+          "William Hurt",
+          "John Kani"
+        ],
+        "director": [
+          "Anthony Russo",
+          "Joe Russo"
+        ],
+        "category": [
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Full",
+              "slug": "full",
+              "filename": "Captain America: Nội Chiến Siêu Anh Hùng - Captain America: Civil War - 2016 - HD - Vietsub - Full",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s2.phim1280.tv/20231021/94ifoyEz/index.m3u8",
+              "link_m3u8": "https://s2.phim1280.tv/20231021/94ifoyEz/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "88396",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 7.6,
+          "vote_count": 8927
+        },
+        "imdb": {
+          "id": "tt9208876",
+          "vote_average": 7.1,
+          "vote_count": 273484
+        },
+        "created": {
+          "time": "2026-07-18T21:48:45.000Z"
+        },
+        "modified": {
+          "time": "2026-07-18T21:48:45.000Z"
+        },
+        "_id": "6a5b924d93134b9acd0ff91a",
+        "name": "Chim Ưng Và Chiến Binh Mùa Đông",
+        "slug": "chim-ung-va-chien-binh-mua-dong",
+        "origin_name": "The Falcon And The Winter Soldier",
+        "alternative_names": [
+          "猎鹰与冬兵",
+          "Marvel's Falcon and The Winter Soldier",
+          "Το Γεράκι και ο Στρατιώτης του Χειμώνα",
+          "הפאלקון וחייל החורף",
+          "팔콘과 윈터 솔져",
+          "팔콘과 윈터솔져",
+          "팔콘과 윈터 솔저",
+          "팔콘과 윈터솔저",
+          "팔콘 앤 윈터솔져",
+          "Falcon y el Soldado del Invierno",
+          "เดอะฟอลคอนและเดอะวินเทอร์โซลเจอร์",
+          "Falcon ve Kış Askeri",
+          "Сокіл та Зимовий солдат",
+          "Captain America and The Winter Soldier",
+          "Tag Team",
+          "Marvel Studios' The Falcon and The Winter Soldier",
+          "The Falcon and the Winter Soldier"
+        ],
+        "content": "<p>Giống với WandaVision, The Falcon and the Winter Soldier được lấy bối cảnh hậu sự kiện Avengers: Endgame. Nhờ vào cú búng tay của Hulk, sự trở lại của một nửa sinh linh Trái Đất đã mất trước đó tuy là một điều tốt đẹp, nhưng mặc khác, điều này cũng gây nên nhiều cuộc khủng hoảng trầm trọng trên toàn thế giới, và nước Mỹ cũng không nằm ngoài số đó. Lợi dụng tình hình loạn lạc hiện tại, một nhóm lính đánh thuê bí ẩn bắt đầu gây nên nhiều vụ khủng bố trầm trọng khiến chính quyền phải ra tay.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/uploads/movies/20260718/chim-ung-va-chien-binh-mua-dong-thumb.webp",
+        "poster_url": "https://phimimg.com/uploads/movies/20260718/chim-ung-va-chien-binh-mua-dong-poster.webp",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=ojGHE581lsM",
+        "time": "47 phút/tập",
+        "episode_current": "Hoàn Tất (6/6)",
+        "episode_total": 6,
+        "quality": "FHD",
+        "lang": "Vietsub + Thuyết Minh",
+        "lang_key": [
+          "vs",
+          "tm"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2021,
+        "view": 267,
+        "actor": [
+          "Anthony Mackie",
+          "Sebastian Stan",
+          "Wyatt Russell",
+          "Erin Kellyman",
+          "Daniel Brühl",
+          "Emily VanCamp",
+          "Danny Ramirez",
+          "Adepero Oduye"
+        ],
+        "director": [
+          "Malcolm Spellman"
+        ],
+        "category": [
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Khoa Học",
+            "slug": "khoa-hoc",
+            "id": "0bcf4077916678de9b48c89221fcf8ae"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          },
+          {
+            "name": "Viễn Tưởng",
+            "slug": "vien-tuong",
+            "id": "68564911f00849030f9c9c144ea1b931"
+          }
+        ],
+        "country": [
+          {
+            "name": "Âu Mỹ",
+            "slug": "au-my",
+            "id": "74d9fa92f4dea9ecea8fc2233dc7921a"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/1jlOPDEM/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/1jlOPDEM/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/OYnvBuVd/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/OYnvBuVd/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/jdcPyAEd/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/jdcPyAEd/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/WQ8GW4yh/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/WQ8GW4yh/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/wFLoulPN/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/wFLoulPN/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/5qsXcCuc/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/5qsXcCuc/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Thuyết Minh",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/58TOkCMN/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/58TOkCMN/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/38IvoPns/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/38IvoPns/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/X67zI0t5/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/X67zI0t5/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/uhEsS52R/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/uhEsS52R/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/R77ZkfCh/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/R77ZkfCh/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Chim Ưng Và Chiến Binh Mùa Đông - The Falcon And The Winter Soldier - 2021 - 1080p - Thuyết Minh - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://v7.kkphimplayer7.com/20260718/FT1Ahj1A/index.m3u8",
+              "link_m3u8": "https://v7.kkphimplayer7.com/20260718/FT1Ahj1A/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

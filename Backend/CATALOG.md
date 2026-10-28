@@ -5,13 +5,13 @@ Frontend đọc `Frontend/data/catalog-index.json` từ hosting tĩnh và chỉ 
 chi tiết trong `Frontend/data/details/` khi mở phim. `data/movies.json` là
 bản đầy đủ dành cho trang quản lý và xuất/nhập dữ liệu, không tải ở trang chủ.
 Không cần MySQL, Railway hoặc chạy npm start để duyệt/tìm/xem phim.
-Toàn bộ 3.848 bản ghi phim, năm và thông tin diễn viên được giữ lại. Quan hệ phần phim
+Toàn bộ 3.869 bản ghi phim, năm và thông tin diễn viên được giữ lại. Quan hệ phần phim
 chỉ xuất khi có mã bộ phim hoặc nguồn đối chiếu, không suy ra từ tên giống nhau.
 Xem [RELATIONS.md](RELATIONS.md) để thêm liên kết từng slug và cập nhật metadata.
 Các bản đăng trùng đã đối chiếu được đánh dấu `duplicateOf` và `duplicateSources`
 trong nguồn. Trang duyệt hiện một thẻ cho mỗi phim đã xác nhận; dữ liệu đầy đủ
 vẫn giữ bản phụ và `catalog-index.json.aliases` giữ đường dẫn chi tiết để các URL
-cũ tiếp tục mở được. Hiện có 3.787 thẻ duyệt và 61 bản phụ đã xác nhận. Không tự
+cũ tiếp tục mở được. Hiện có 3.808 thẻ duyệt và 61 bản phụ đã xác nhận. Không tự
 gộp phim chỉ vì trùng tên hoặc poster; khi thêm đánh dấu phải có nguồn HTTPS,
 mã phim chính phải tồn tại và không được tự trỏ/nối vòng.
 Frontend/data.js chỉ chứa cấu hình và hàm hỗ trợ.

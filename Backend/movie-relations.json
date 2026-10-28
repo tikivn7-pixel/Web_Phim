@@ -1024,6 +1024,139 @@
       ]
     },
     {
+      "id": "black-panther-mcu",
+      "label": "Black Panther",
+      "kind": "series",
+      "sources": [
+        "https://news.disney.com/black-panther-wakanda-forever",
+        "https://phimapi.com/phim/black-panther-chien-binh-bao-den",
+        "https://phimapi.com/phim/chien-binh-bao-den-wakanda-bat-diet"
+      ],
+      "members": [
+        {
+          "slug": "black-panther-chien-binh-bao-den",
+          "label": "Black Panther",
+          "order": 0
+        },
+        {
+          "slug": "chien-binh-bao-den-wakanda-bat-diet",
+          "label": "Black Panther: Wakanda Forever",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "beauty-beast-disney-animation",
+      "label": "Beauty and the Beast - Animation",
+      "kind": "series",
+      "sources": [
+        "https://princess.disney.com/beauty-and-the-beast-the-enchanted-christmas",
+        "https://phimapi.com/phim/nguoi-dep-va-quai-vat-1991",
+        "https://phimapi.com/phim/nguoi-dep-va-quai-vat-giang-sinh-ky-dieu"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-dep-va-quai-vat-1991",
+          "label": "Beauty and the Beast",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-dep-va-quai-vat-giang-sinh-ky-dieu",
+          "label": "Beauty and the Beast: The Enchanted Christmas",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "avengers-mcu-films",
+      "label": "Avengers (MCU)",
+      "kind": "series",
+      "sources": [
+        "https://www.marvel.com/movies/avengers-untitled",
+        "https://phimapi.com/phim/biet-doi-sieu-anh-hung",
+        "https://phimapi.com/phim/biet-doi-sieu-anh-hung-2-de-che-ultron",
+        "https://phimapi.com/phim/biet-doi-sieu-anh-hung-3-cuoc-chien-vo-cuc",
+        "https://phimapi.com/phim/biet-doi-sieu-anh-hung-4-hoi-ket"
+      ],
+      "members": [
+        {
+          "slug": "biet-doi-sieu-anh-hung",
+          "label": "The Avengers",
+          "order": 0
+        },
+        {
+          "slug": "biet-doi-sieu-anh-hung-2-de-che-ultron",
+          "label": "Avengers: Age Of Ultron",
+          "order": 1
+        },
+        {
+          "slug": "biet-doi-sieu-anh-hung-3-cuoc-chien-vo-cuc",
+          "label": "Avengers: Infinity War",
+          "order": 2
+        },
+        {
+          "slug": "biet-doi-sieu-anh-hung-4-hoi-ket",
+          "label": "Avengers: Endgame",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "ultimate-avengers-animation",
+      "label": "Ultimate Avengers",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/avengers-tran-chien-cuoi-cung",
+        "https://phimapi.com/phim/ultimate-avengers-2-rise-of-the-panther"
+      ],
+      "members": [
+        {
+          "slug": "avengers-tran-chien-cuoi-cung",
+          "label": "Ultimate Avengers: The Movie",
+          "order": 0
+        },
+        {
+          "slug": "ultimate-avengers-2-rise-of-the-panther",
+          "label": "Ultimate Avengers 2: Rise of the Panther",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "captain-america-mcu-films",
+      "label": "Captain America (MCU)",
+      "kind": "series",
+      "sources": [
+        "https://www.marvel.com/movies/captain-america-brave-new-world",
+        "https://phimapi.com/phim/captain-america-ke-bao-thu-dau-tien",
+        "https://phimapi.com/phim/captain-america-chien-binh-mua-dong",
+        "https://phimapi.com/phim/captain-america-noi-chien-sieu-anh-hung",
+        "https://phimapi.com/phim/captain-america-the-gioi-moi"
+      ],
+      "members": [
+        {
+          "slug": "captain-america-ke-bao-thu-dau-tien",
+          "label": "Captain America: The First Avenger",
+          "order": 0
+        },
+        {
+          "slug": "captain-america-chien-binh-mua-dong",
+          "label": "Captain America: The Winter Soldier",
+          "order": 1
+        },
+        {
+          "slug": "captain-america-noi-chien-sieu-anh-hung",
+          "label": "Captain America: Civil War",
+          "order": 2
+        },
+        {
+          "slug": "captain-america-the-gioi-moi",
+          "label": "Captain America: Brave New World",
+          "order": 3
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
