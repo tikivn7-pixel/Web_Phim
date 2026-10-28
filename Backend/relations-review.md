@@ -1120,9 +1120,6 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - tokyo-revengers-cuoc-chien-cua-ba-titan: Tokyo Revengers: War of the Three Titan Arc — nhóm cũ: Tokyo Revengers
 - du-sao-cung-de-thuong-mua-2: Tonikaku Kawaii (Season 2) — nhóm cũ: Tonikaku Kawaii
 - du-sao-cung-de-thuong-phan-1: TONIKAWA: Over The Moon For You (Season 1) — nhóm cũ: TONIKAWA: Over The Moon For You
-- transformers-chien-tranh-cybertron-trai-dat-troi-day: Transformers: War for Cybertron: Earthrise — nhóm cũ: Transformers War for Cybertron
-- transformers-chien-tranh-cybertron-cuoc-vay-ham: Transformers: War for Cybertron: Siege — nhóm cũ: Transformers War for Cybertron
-- transformers-chien-tranh-cybertron-vuong-quoc: Transformers: War for Cybertron: Kingdom — nhóm cũ: Transformers War for Cybertron
 - doi-san-toi-pham: Trigun: Badlands Rumble — nhóm cũ: Trigun
 - cuoc-dieu-hanh-trigun-phan-1: Trigun Stampede — nhóm cũ: Trigun
 - cuoc-dieu-hanh-trigun-phan-2: Trigun Stargaze — nhóm cũ: Trigun

@@ -856,6 +856,171 @@
           "order": 1
         }
       ]
+    },
+    {
+      "id": "fast-furious-main-films",
+      "label": "Fast & Furious",
+      "kind": "series",
+      "sources": [
+        "https://www.universalpicturesathome.com/movies/fast-furious-10-movie-collection",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-2",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-3-duong-dua-tokyo",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-4",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-5-phi-vu-rio",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-6",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-7",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-8",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-9-huyen-thoai-toc-do",
+        "https://phimapi.com/phim/qua-nhanh-qua-nguy-hiem-10"
+      ],
+      "members": [
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem",
+          "label": "The Fast and the Furious",
+          "order": 0
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-2",
+          "label": "2 Fast 2 Furious",
+          "order": 1
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-3-duong-dua-tokyo",
+          "label": "The Fast and the Furious: Tokyo Drift",
+          "order": 2
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-4",
+          "label": "Fast & Furious",
+          "order": 3
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-5-phi-vu-rio",
+          "label": "Fast Five",
+          "order": 4
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-6",
+          "label": "Fast & Furious 6",
+          "order": 5
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-7",
+          "label": "Furious 7",
+          "order": 6
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-8",
+          "label": "The Fate of the Furious",
+          "order": 7
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-9-huyen-thoai-toc-do",
+          "label": "F9",
+          "order": 8
+        },
+        {
+          "slug": "qua-nhanh-qua-nguy-hiem-10",
+          "label": "Fast X",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "transformers-bay-films",
+      "label": "Transformers (2007-2017)",
+      "kind": "series",
+      "sources": [
+        "https://www.paramountplus.com/sneak-peak/where-to-watch-transformers-movies/",
+        "https://phimapi.com/phim/transformers-robot-dai-chien",
+        "https://phimapi.com/phim/transformers-bai-binh-phuc-han",
+        "https://phimapi.com/phim/transformers-vung-toi-cua-mat-trang",
+        "https://phimapi.com/phim/transformers-ky-nguyen-huy-diet",
+        "https://phimapi.com/phim/transformers-chien-binh-cuoi-cung"
+      ],
+      "members": [
+        {
+          "slug": "transformers-robot-dai-chien",
+          "label": "Transformers",
+          "order": 0
+        },
+        {
+          "slug": "transformers-bai-binh-phuc-han",
+          "label": "Transformers: Revenge of the Fallen",
+          "order": 1
+        },
+        {
+          "slug": "transformers-vung-toi-cua-mat-trang",
+          "label": "Transformers: Dark of the Moon",
+          "order": 2
+        },
+        {
+          "slug": "transformers-ky-nguyen-huy-diet",
+          "label": "Transformers: Age of Extinction",
+          "order": 3
+        },
+        {
+          "slug": "transformers-chien-binh-cuoi-cung",
+          "label": "Transformers: The Last Knight",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "transformers-war-for-cybertron",
+      "label": "Transformers: War for Cybertron",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/transformers-chien-tranh-cybertron-cuoc-vay-ham",
+        "https://phimapi.com/phim/transformers-chien-tranh-cybertron-trai-dat-troi-day",
+        "https://phimapi.com/phim/transformers-chien-tranh-cybertron-vuong-quoc"
+      ],
+      "members": [
+        {
+          "slug": "transformers-chien-tranh-cybertron-cuoc-vay-ham",
+          "label": "Transformers: War for Cybertron: Siege",
+          "order": 0
+        },
+        {
+          "slug": "transformers-chien-tranh-cybertron-trai-dat-troi-day",
+          "label": "Transformers: War for Cybertron: Earthrise",
+          "order": 1
+        },
+        {
+          "slug": "transformers-chien-tranh-cybertron-vuong-quoc",
+          "label": "Transformers: War for Cybertron: Kingdom",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "iron-man-mcu-films",
+      "label": "Iron Man (MCU)",
+      "kind": "series",
+      "sources": [
+        "https://www.marvel.com/ironman3",
+        "https://phimapi.com/phim/nguoi-sat",
+        "https://phimapi.com/phim/nguoi-sat-2",
+        "https://phimapi.com/phim/nguoi-sat-3"
+      ],
+      "members": [
+        {
+          "slug": "nguoi-sat",
+          "label": "Iron Man",
+          "order": 0
+        },
+        {
+          "slug": "nguoi-sat-2",
+          "label": "Iron Man 2",
+          "order": 1
+        },
+        {
+          "slug": "nguoi-sat-3",
+          "label": "Iron Man 3",
+          "order": 2
+        }
+      ]
     }
   ],
   "standalone": [
