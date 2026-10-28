@@ -7634,6 +7634,41 @@
           "checkedAt": "2026-10-28T15:15:00.784Z"
         }
       ]
+    },
+    {
+      "id": "tmdb-tv-110316",
+      "label": "Alice In Borderland (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/110316",
+        "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-1",
+        "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-2",
+        "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "the-gioi-khong-loi-thoat-phan-1",
+          "label": "Thế Giới Không Lối Thoát (Phần 1) (Alice In Borderland (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-28T15:29:47.820Z"
+        },
+        {
+          "slug": "the-gioi-khong-loi-thoat-phan-2",
+          "label": "Thế Giới Không Lối Thoát (Phần 2) (Alice In Borderland (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-28T15:29:47.820Z"
+        },
+        {
+          "slug": "the-gioi-khong-loi-thoat-phan-3",
+          "label": "Thế Giới Không Lối Thoát (Phần 3) (Alice In Borderland (Season 3))",
+          "order": 2,
+          "season": 3,
+          "checkedAt": "2026-10-28T15:29:47.820Z"
+        }
+      ]
     }
   ],
   "standalone": [

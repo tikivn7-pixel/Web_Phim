@@ -52441,5 +52441,80 @@ const fallbackMoviesList = [
   "language": "Vietsub + Thuyết Minh",
   "status": "completed",
   "episodeCurrent": "Hoàn Tất (6/6)"
+},
+{
+  "title": "Thế Giới Không Lối Thoát (Phần 1) (Alice In Borderland (Season 1))",
+  "slug": "the-gioi-khong-loi-thoat-phan-1",
+  "apiSlug": "the-gioi-khong-loi-thoat-phan-1",
+  "year": 2020,
+  "episodes": 8,
+  "country": "Nhật Bản",
+  "type": "series",
+  "genres": "Bí Ẩn, Chính Kịch, Hành Động, Phiêu Lưu, Tâm Lý",
+  "poster": "https://phimimg.com/upload/vod/20250925-1/1d5949d6f5812ad7e81fa34d63ba2ece.jpg",
+  "banner": "https://phimimg.com/upload/vod/20250925-1/d198f3b220b49a29cc18d89c7286e150.jpg",
+  "desc": "Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.",
+  "cast": "Kento Yamazaki, Tao Tsuchiya",
+  "director": "Sato Shinsuke",
+  "sourceCountries": [
+    "Nhật Bản"
+  ],
+  "source": "kkphim",
+  "originalTitle": "Alice In Borderland (Season 1)",
+  "sourceUrl": "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-1",
+  "quality": "FHD",
+  "language": "Vietsub + Lồng Tiếng",
+  "status": "completed",
+  "episodeCurrent": "Hoàn Tất (8/8)"
+},
+{
+  "title": "Thế Giới Không Lối Thoát (Phần 2) (Alice In Borderland (Season 2))",
+  "slug": "the-gioi-khong-loi-thoat-phan-2",
+  "apiSlug": "the-gioi-khong-loi-thoat-phan-2",
+  "year": 2022,
+  "episodes": 8,
+  "country": "Nhật Bản",
+  "type": "series",
+  "genres": "Bí Ẩn, Chính Kịch, Hành Động, Phiêu Lưu, Tâm Lý",
+  "poster": "https://phimimg.com/upload/vod/20250925-1/b08eefe1ec84fd4292a55780271e852e.jpg",
+  "banner": "https://phimimg.com/upload/vod/20250925-1/0dbd2b82e0c50cdd87b8d0e5b28209b5.jpg",
+  "desc": "Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.",
+  "cast": "Kento Yamazaki, Tao Tsuchiya",
+  "director": "Sato Shinsuke",
+  "sourceCountries": [
+    "Nhật Bản"
+  ],
+  "source": "kkphim",
+  "originalTitle": "Alice In Borderland (Season 2)",
+  "sourceUrl": "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-2",
+  "quality": "HD",
+  "language": "Vietsub + Lồng Tiếng",
+  "status": "completed",
+  "episodeCurrent": "Hoàn Tất (8/8)"
+},
+{
+  "title": "Thế Giới Không Lối Thoát (Phần 3) (Alice In Borderland (Season 3))",
+  "slug": "the-gioi-khong-loi-thoat-phan-3",
+  "apiSlug": "the-gioi-khong-loi-thoat-phan-3",
+  "year": 2025,
+  "episodes": 6,
+  "country": "Nhật Bản",
+  "type": "series",
+  "genres": "Bí Ẩn, Chính Kịch, Hành Động, Phiêu Lưu, Tâm Lý",
+  "poster": "https://phimimg.com/upload/vod/20250925-1/d4033dd8e0b4c3dbcf3b6714c762de89.jpg",
+  "banner": "https://phimimg.com/upload/vod/20250925-1/28eb108438980c93da01d1ec7faa9fc9.jpg",
+  "desc": "Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.",
+  "cast": "Kento Yamazaki, Tao Tsuchiya",
+  "director": "Sato Shinsuke",
+  "sourceCountries": [
+    "Nhật Bản"
+  ],
+  "source": "kkphim",
+  "originalTitle": "Alice In Borderland (Season 3)",
+  "sourceUrl": "https://phimapi.com/phim/the-gioi-khong-loi-thoat-phan-3",
+  "quality": "FHD",
+  "language": "Vietsub + Lồng Tiếng",
+  "status": "completed",
+  "episodeCurrent": "Hoàn Tất (6/6)"
 }
 ];

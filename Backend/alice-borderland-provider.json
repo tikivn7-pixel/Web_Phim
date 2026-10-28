@@ -1,0 +1,691 @@
+{
+  "checkedAt": "2026-10-28T15:29:47.820Z",
+  "movies": [
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "110316",
+          "type": "tv",
+          "season": 1,
+          "vote_average": 8.1,
+          "vote_count": 2736
+        },
+        "imdb": {
+          "id": "tt10795658",
+          "vote_average": 7.8,
+          "vote_count": 146423
+        },
+        "created": {
+          "time": "2024-07-27T15:21:23.000Z"
+        },
+        "modified": {
+          "time": "2025-09-29T11:28:46.000Z"
+        },
+        "_id": "b817f8dad313f809b7e71a53e14a9231",
+        "name": "Thế Giới Không Lối Thoát (Phần 1)",
+        "slug": "the-gioi-khong-loi-thoat-phan-1",
+        "origin_name": "Alice In Borderland (Season 1)",
+        "alternative_names": [
+          "এলিস ইন বর্ডারল্যান্ড",
+          "今际之国的闯关者",
+          "彌留之國的愛麗絲",
+          "弥留之国的爱丽丝",
+          "Alice in Borderland",
+          "Η Αλίκη στη Χώρα των Εσχάτων",
+          "今际之国的有栖",
+          "אליס בבורדרלנד",
+          "آلیس در منطقه مرزی",
+          "Imawa no Kuni no Alice",
+          "Imawa no Kuni no Arisu",
+          "아리스 인 보더랜드",
+          "Аліса в Бордерленді",
+          "Аліса в Ігрокраї",
+          "Ajal o'yini",
+          "Alisa chegara ortida",
+          "Thế Giới Không Lối Thoát",
+          "今際の国のアリス"
+        ],
+        "content": "<p>Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250925-1/d198f3b220b49a29cc18d89c7286e150.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250925-1/1d5949d6f5812ad7e81fa34d63ba2ece.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=49_44FFKZ1M",
+        "time": "60 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2020,
+        "view": 197,
+        "actor": [
+          "Kento Yamazaki",
+          "Tao Tsuchiya"
+        ],
+        "director": [
+          "Sato Shinsuke"
+        ],
+        "category": [
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Nhật Bản",
+            "slug": "nhat-ban",
+            "id": "d4097fbffa8f7149a61281437171eb83"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/8M1fvP0A/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/8M1fvP0A/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/0ba1AvdT/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/0ba1AvdT/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/89QiOxOF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/89QiOxOF/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/FPCvaYuq/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/FPCvaYuq/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/q8zQZOQH/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/q8zQZOQH/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/XMY7oDv2/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/XMY7oDv2/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/by9HJJxF/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/by9HJJxF/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240727/UqF7spqr/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240727/UqF7spqr/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/SfjzpT9C/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/SfjzpT9C/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/8VyMQMXi/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/8VyMQMXi/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/DpleIBFI/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/DpleIBFI/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/WGwkxiSR/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/WGwkxiSR/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/3bhIFgj8/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/3bhIFgj8/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/uP63AQ7e/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/uP63AQ7e/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/dM48LdHa/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/dM48LdHa/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Không Lối Thoát (Phần 1) - Alice In Borderland (Season 1) - 2020 - FHD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/fFxzzH5U/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/fFxzzH5U/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "110316",
+          "type": "tv",
+          "season": 2,
+          "vote_average": 8.1,
+          "vote_count": 2736
+        },
+        "imdb": {
+          "id": "tt10795658",
+          "vote_average": 7.8,
+          "vote_count": 146423
+        },
+        "created": {
+          "time": "2024-04-19T03:20:05.000Z"
+        },
+        "modified": {
+          "time": "2025-09-29T11:29:11.000Z"
+        },
+        "_id": "6563f4cdc1f2ef1ad710ad6772ea022b",
+        "name": "Thế Giới Không Lối Thoát (Phần 2)",
+        "slug": "the-gioi-khong-loi-thoat-phan-2",
+        "origin_name": "Alice In Borderland (Season 2)",
+        "alternative_names": [
+          "এলিস ইন বর্ডারল্যান্ড",
+          "今际之国的闯关者",
+          "彌留之國的愛麗絲",
+          "弥留之国的爱丽丝",
+          "Alice in Borderland",
+          "Η Αλίκη στη Χώρα των Εσχάτων",
+          "今际之国的有栖",
+          "אליס בבורדרלנד",
+          "آلیس در منطقه مرزی",
+          "Imawa no Kuni no Alice",
+          "Imawa no Kuni no Arisu",
+          "아리스 인 보더랜드",
+          "Аліса в Бордерленді",
+          "Аліса в Ігрокраї",
+          "Ajal o'yini",
+          "Alisa chegara ortida",
+          "Thế Giới Không Lối Thoát",
+          "今際の国のアリス"
+        ],
+        "content": "<p>Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250925-1/0dbd2b82e0c50cdd87b8d0e5b28209b5.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250925-1/b08eefe1ec84fd4292a55780271e852e.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=1ifgEQCevYc",
+        "time": "60 phút/tập",
+        "episode_current": "Hoàn Tất (8/8)",
+        "episode_total": 8,
+        "quality": "HD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2022,
+        "view": 139,
+        "actor": [
+          "Kento Yamazaki",
+          "Tao Tsuchiya"
+        ],
+        "director": [
+          "Sato Shinsuke"
+        ],
+        "category": [
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Nhật Bản",
+            "slug": "nhat-ban",
+            "id": "d4097fbffa8f7149a61281437171eb83"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/rnJFoB24/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/rnJFoB24/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/yH2QByLj/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/yH2QByLj/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/lY13cXT6/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/lY13cXT6/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/R7LAiNwg/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/R7LAiNwg/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/9hzDqDS7/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/9hzDqDS7/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/LLnquSrC/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/LLnquSrC/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/XbTPFQ0j/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/XbTPFQ0j/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Vietsub - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s3.phim1280.tv/20240503/tvGKHawm/index.m3u8",
+              "link_m3u8": "https://s3.phim1280.tv/20240503/tvGKHawm/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/wtTFZgpp/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/wtTFZgpp/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/Zt7hiTWu/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/Zt7hiTWu/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/FUgpZohh/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/FUgpZohh/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/KaAIcbgB/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/KaAIcbgB/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/62F1ZJpR/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/62F1ZJpR/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/x02RZtPW/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/x02RZtPW/index.m3u8"
+            },
+            {
+              "name": "Tập 07",
+              "slug": "tap-07",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 07",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/nNtPRfLF/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/nNtPRfLF/index.m3u8"
+            },
+            {
+              "name": "Tập 08",
+              "slug": "tap-08",
+              "filename": "Thế Giới Không Lối Thoát (Phần 2) - Alice In Borderland (Season 2) - 2022 - HD - Lồng Tiếng - Tập 08",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/8KSd8tip/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/8KSd8tip/index.m3u8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": true,
+      "msg": "",
+      "movie": {
+        "tmdb": {
+          "id": "110316",
+          "type": "tv",
+          "season": 3,
+          "vote_average": 8.1,
+          "vote_count": 2736
+        },
+        "imdb": {
+          "id": "tt10795658",
+          "vote_average": 7.8,
+          "vote_count": 146423
+        },
+        "created": {
+          "time": "2025-09-25T19:52:48.000Z"
+        },
+        "modified": {
+          "time": "2025-09-29T11:29:34.000Z"
+        },
+        "_id": "3dc91c9313038ce8c97966f7f4194aac",
+        "name": "Thế Giới Không Lối Thoát (Phần 3)",
+        "slug": "the-gioi-khong-loi-thoat-phan-3",
+        "origin_name": "Alice In Borderland (Season 3)",
+        "alternative_names": [
+          "এলিস ইন বর্ডারল্যান্ড",
+          "今际之国的闯关者",
+          "彌留之國的愛麗絲",
+          "弥留之国的爱丽丝",
+          "Alice in Borderland",
+          "Η Αλίκη στη Χώρα των Εσχάτων",
+          "今际之国的有栖",
+          "אליס בבורדרלנד",
+          "آلیس در منطقه مرزی",
+          "Imawa no Kuni no Alice",
+          "Imawa no Kuni no Arisu",
+          "아리스 인 보더랜드",
+          "Аліса в Бордерленді",
+          "Аліса в Ігрокраї",
+          "Ajal o'yini",
+          "Alisa chegara ortida",
+          "Thế Giới Không Lối Thoát",
+          "今際の国のアリス"
+        ],
+        "content": "<p>Một game thủ lông bông cùng hai người bạn nhận ra họ đã lọt vào thế giới Tokyo song song, nơi họ buộc phải thi đấu trong một loạt trò chơi tàn bạo để tồn tại.</p>",
+        "type": "series",
+        "status": "completed",
+        "thumb_url": "https://phimimg.com/upload/vod/20250925-1/28eb108438980c93da01d1ec7faa9fc9.jpg",
+        "poster_url": "https://phimimg.com/upload/vod/20250925-1/d4033dd8e0b4c3dbcf3b6714c762de89.jpg",
+        "is_copyright": false,
+        "sub_docquyen": false,
+        "chieurap": false,
+        "is_published": true,
+        "trailer_url": "https://www.youtube.com/watch?v=_8p6YkEPVco",
+        "time": "60 phút/tập",
+        "episode_current": "Hoàn Tất (6/6)",
+        "episode_total": 6,
+        "quality": "FHD",
+        "lang": "Vietsub + Lồng Tiếng",
+        "lang_key": [
+          "vs",
+          "lt"
+        ],
+        "notify": "",
+        "showtimes": "",
+        "year": 2025,
+        "view": 143,
+        "actor": [
+          "Kento Yamazaki",
+          "Tao Tsuchiya"
+        ],
+        "director": [
+          "Sato Shinsuke"
+        ],
+        "category": [
+          {
+            "name": "Bí Ẩn",
+            "slug": "bi-an",
+            "id": "2fb53017b3be83cd754a08adab3e916c"
+          },
+          {
+            "name": "Chính Kịch",
+            "slug": "chinh-kich",
+            "id": "37a7b38b6184a5ebd3c43015aa20709d"
+          },
+          {
+            "name": "Hành Động",
+            "slug": "hanh-dong",
+            "id": "9822be111d2ccc29c7172c78b8af8ff5"
+          },
+          {
+            "name": "Phiêu Lưu",
+            "slug": "phieu-luu",
+            "id": "66c78b23908113d478d8d85390a244b4"
+          },
+          {
+            "name": "Tâm Lý",
+            "slug": "tam-ly",
+            "id": "a7b065b92ad356387ef2e075dee66529"
+          }
+        ],
+        "country": [
+          {
+            "name": "Nhật Bản",
+            "slug": "nhat-ban",
+            "id": "d4097fbffa8f7149a61281437171eb83"
+          }
+        ]
+      },
+      "episodes": [
+        {
+          "server_name": "Vietsub",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/GGAbw7Z0/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/GGAbw7Z0/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/6mbnkisb/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/6mbnkisb/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/L1Kw7ieq/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/L1Kw7ieq/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/wAngQqoJ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/wAngQqoJ/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/QiB4Bypx/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/QiB4Bypx/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Vietsub - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250925/bmWRhVnq/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250925/bmWRhVnq/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Lồng Tiếng",
+          "is_ai": false,
+          "server_data": [
+            {
+              "name": "Tập 01",
+              "slug": "tap-01",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 01",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/p9ShqYK4/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/p9ShqYK4/index.m3u8"
+            },
+            {
+              "name": "Tập 02",
+              "slug": "tap-02",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 02",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/LDLvctJG/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/LDLvctJG/index.m3u8"
+            },
+            {
+              "name": "Tập 03",
+              "slug": "tap-03",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 03",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/RhfyOVnm/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/RhfyOVnm/index.m3u8"
+            },
+            {
+              "name": "Tập 04",
+              "slug": "tap-04",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 04",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/WuLXP8hp/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/WuLXP8hp/index.m3u8"
+            },
+            {
+              "name": "Tập 05",
+              "slug": "tap-05",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 05",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/qhr2kSQl/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/qhr2kSQl/index.m3u8"
+            },
+            {
+              "name": "Tập 06",
+              "slug": "tap-06",
+              "filename": "Thế Giới Không Lối Thoát (Phần 3) - Alice In Borderland (Season 3) - 2025 - FHD - Lồng Tiếng - Tập 06",
+              "link_embed": "https://player.phimapi.com/player/?url=https://s6.kkphimplayer6.com/20250929/fAncbZmQ/index.m3u8",
+              "link_m3u8": "https://s6.kkphimplayer6.com/20250929/fAncbZmQ/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
