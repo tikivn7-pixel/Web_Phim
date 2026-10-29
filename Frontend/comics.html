@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0c12">
+  <title>Đọc truyện · LauPhim</title>
+  <meta name="description" content="Không gian đọc truyện của LauPhim: chọn chương, lưu tiến độ và tiếp tục đọc.">
+  <link rel="stylesheet" href="brand.css?__release=8e47509e2f70cdf9"><link rel="stylesheet" href="comics.css?__release=8e47509e2f70cdf9"><link rel="stylesheet" href="app-navigation.css?__release=8e47509e2f70cdf9"><link rel="stylesheet" href="app-updates.css?__release=8e47509e2f70cdf9">
+  <link rel="manifest" href="manifest.webmanifest?__release=8e47509e2f70cdf9"><link rel="icon" type="image/png" sizes="32x32" href="Img/app-icon-32.png?__release=8e47509e2f70cdf9"><link rel="apple-touch-icon" href="Img/app-icon-180.png?__release=8e47509e2f70cdf9">
+  <script src="profile-store.js?__release=8e47509e2f70cdf9"></script>
+<meta name="lauphim-release" content="8e47509e2f70cdf98fb3f7c44691b3b42a8091da61ffbb9d084746a3661576e7" data-published-at="2026-10-29T01:22:19.237Z">
+</head>
+<body>
+<a class="skip" href="#content">Đến nội dung</a>
+<header class="comics-header"><a class="lauphim-brand" href="index.html" aria-label="LauPhim trang chủ"><img class="brand-image" src="Img/lauphim-logo.png?__release=8e47509e2f70cdf9" width="960" height="384" alt="LauPhim"></a><nav aria-label="Điều hướng chính"><a href="index.html">Xem phim</a><a href="comics.html" aria-current="page">Đọc truyện</a><a href="library.html">Thư viện phim</a></nav></header>
+<main id="content">
+  <section id="browse">
+    <div class="comics-hero"><p class="eyebrow">MỘT KHUNG TRANH. MỘT THẾ GIỚI.</p><h1>Lật trang.<br><em>Đi xa hơn.</em></h1><p>Thêm một câu chuyện cho khoảng thời gian của bạn.</p><a class="primary" href="#comic-grid">Khám phá truyện ↓</a><span class="hero-mark" aria-hidden="true">読</span></div>
+    <div class="source-line"><label>Nguồn truyện<select id="source"><option value="demo">Truyện mẫu tiếng Việt</option><option value="comics">Comics API · nguồn ngoài</option></select></label><form id="search-form" role="search"><label for="query">Tìm truyện</label><div><input id="query" type="search" placeholder="Tên câu chuyện…" maxlength="100"><button type="submit">Tìm</button></div></form><label class="saved-filter"><input type="checkbox" id="only-saved"> Chỉ truyện đã lưu</label></div>
+    <p id="source-note" class="notice">Truyện mẫu do LauPhim tạo để thử trình đọc; không phải dữ liệu từ API.</p>
+    <div class="section-title"><h2 id="list-title">Một câu chuyện ngắn, bắt đầu ở đây</h2><button id="retry" type="button">Tải lại nguồn</button></div>
+    <p id="list-status" role="status" aria-live="polite"></p><div id="comic-grid" class="comic-grid"></div>
+    <div class="pagination"><button id="prev-page" type="button" disabled>← Trang trước</button><span id="page-number">Trang 1</span><button id="next-page" type="button" hidden>Trang sau →</button></div>
+  </section>
+  <section id="detail" hidden><a class="back" href="comics.html">← Kho truyện</a><div id="detail-body"></div></section>
+  <section id="reader" hidden aria-labelledby="reader-title">
+    <div class="reader-toolbar"><a id="reader-back" href="comics.html">← Chương truyện</a><h1 id="reader-title"></h1><label>Chương<select id="chapter-select"></select></label><label>Độ rộng<select id="reader-width"><option value="normal">Vừa</option><option value="wide">Rộng</option></select></label><label>Nền<select id="reader-theme"><option value="dark">Tối</option><option value="paper">Giấy</option></select></label></div>
+    <p id="reader-status" class="notice" role="status"></p><div id="reader-pages"></div><div class="reader-end"><button id="chapter-prev" type="button">← Chương trước</button><button id="chapter-next" type="button">Chương tiếp →</button></div><a href="#reader" class="back-top">↑ Về đầu chương</a>
+  </section>
+</main>
+<footer>Đọc chậm một chút. Câu chuyện vẫn ở đây.<br><small>Tiến độ đọc và truyện đã lưu nằm trong hồ sơ trên thiết bị này, chưa đồng bộ đám mây.</small></footer>
+<script src="comics-model.js?__release=8e47509e2f70cdf9"></script><script src="comics.js?__release=8e47509e2f70cdf9"></script><script src="app-navigation.js?__release=8e47509e2f70cdf9"></script><script src="pwa.js?__release=8e47509e2f70cdf9"></script><script src="app-updates.js?__release=8e47509e2f70cdf9"></script>
+</body></html>

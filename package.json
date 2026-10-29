@@ -31,7 +31,8 @@
     "desktop:smoke": "npm run test:smoke --prefix Desktop",
     "release:build": "node scripts/build-release.cjs",
     "test:release": "node --test scripts/build-release.test.cjs Frontend/app-updates.test.cjs",
-    "test:ui": "node scripts/test-ui.cjs"
+    "test:ui": "node scripts/test-ui.cjs",
+    "test:comics": "node Frontend/comics-smoke.cjs"
   },
   "dependencies": {
     "mysql2": "^3.24.6"

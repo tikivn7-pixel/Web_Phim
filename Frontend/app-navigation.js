@@ -7,6 +7,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function (root) {
   "use strict";
   const ACTIONS = Object.freeze([
+    { id: "comics", label: "Đọc truyện", description: "Kho truyện, chương và tiến độ đọc", href: "comics.html", keywords: "manga comic truyen doc chuong" },
     { id: "home", label: "Trang chủ", description: "Tiếp tục xem và gợi ý theo gu", href: "index.html", keywords: "home trang dau" },
     { id: "discover", label: "Khám phá phim", description: "Tìm kiếm, thể loại, quốc gia và năm", href: "discover.html", keywords: "tim kiem kho phim the loai quoc gia loc" },
     { id: "collections", label: "Loạt phim", description: "Các phần đã được liên kết chính xác", href: "collections.html", keywords: "series collection nhom phan phim" },
