@@ -5,8 +5,8 @@ test('quick navigation recognizes accents, word combinations and safe dedicated 
   assert.ok(Nav.searchActions('quốc gia').some(action => action.id === 'discover'));
   assert.ok(Nav.searchActions('thu vien').some(action => action.id === 'library'));
   assert.ok(!Nav.searchActions('thu vien').some(action => action.id === 'notes'));
-  assert.equal(Nav.searchActions('').length, 11);
-  const expected = new Set(['comics.html', 'index.html', 'discover.html', 'collections.html', 'picker.html', 'updates.html', 'library.html', 'lists.html', 'notes.html', 'stats.html', 'manage.html']);
+  assert.equal(Nav.searchActions('').length, 10);
+  const expected = new Set(['index.html', 'discover.html', 'collections.html', 'picker.html', 'updates.html', 'library.html', 'lists.html', 'notes.html', 'stats.html', 'manage.html']);
   assert.deepEqual(new Set(Nav.ACTIONS.map(action => action.href)), expected);
 });
 

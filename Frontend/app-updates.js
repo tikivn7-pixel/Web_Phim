@@ -12,7 +12,7 @@
     const doc=win.document,meta=doc.querySelector('meta[name="lauphim-release"]');
     const current=meta?.content,publishedAt=Date.parse(meta?.dataset.publishedAt||'');
     const base=new URL('./',doc.currentScript?.src||win.location.href),KEY='lauphim_release_reload';
-    const protectedPage=/\/(?:watch|manage|notes|rooms|account|admin|comics)\.html$/.test(win.location.pathname);
+    const protectedPage=/\/(?:watch|manage|notes|rooms|account|admin)\.html$/.test(win.location.pathname);
     let dirty=false,pending=null,checking=false,banner=null,lastCheck=0;
     const storage=action=>{try{return action(win.sessionStorage);}catch{return null;}};
     if(storage(s=>s.getItem(KEY))===current)storage(s=>s.removeItem(KEY));

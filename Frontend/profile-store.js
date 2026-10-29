@@ -2,7 +2,7 @@
 (function(root){
   'use strict';
   const KEY='lauphim_profiles_v1',ACTIVE='lauphim_active_profile_v1',PREFIX='lauphim_profile:',MAX=6;
-  const SCOPED=['my_wishlist','continue_watching_list','episode_positions','playback_reports','player_preferences_v1','player_intro_ranges_v1','autonext_enabled','audio_boost','movie_journal_v1','episode_tracker_v1','movie_lists_v1','movie_notes_v1','release_planner_v1','notification_center_v1','notification_preferences_v1','notification_preferences_v1_delivered','subtitle_preferences_v1','episode_updates_v1','episode_updates_v1_lease','library_view_v1','watch_view_v1','cloud_sync_v1','comics_reader_v1'];
+  const SCOPED=['my_wishlist','continue_watching_list','episode_positions','playback_reports','player_preferences_v1','player_intro_ranges_v1','autonext_enabled','audio_boost','movie_journal_v1','episode_tracker_v1','movie_lists_v1','movie_notes_v1','release_planner_v1','notification_center_v1','notification_preferences_v1','notification_preferences_v1_delivered','subtitle_preferences_v1','episode_updates_v1','episode_updates_v1_lease','library_view_v1','watch_view_v1','cloud_sync_v1'];
   const valid=id=>typeof id==='string'&&/^[a-zA-Z0-9_-]{1,80}$/.test(id)&&!['__proto__','constructor','prototype'].includes(id);
   const colors=['#f43f50','#a78bfa','#38bdf8','#34d399','#fbbf24','#fb923c'];
   function normalize(input){
