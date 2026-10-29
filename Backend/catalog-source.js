@@ -13250,9 +13250,11 @@ const fallbackMoviesList = [
   {
     title: "Never Forget Your Enemy",
     slug: "dung-quen-ke-thu",
+    country: "Hàn Quốc",
+    sourceCountries: ["Thái Lan", "Hàn Quốc"],
     year: 2026,
     episodes: 8,
-    genres: "Chính Kịch, Tình Cảm, Tâm Lý, Thái Lan, Hàn Quốc",
+    genres: "Chính Kịch, Tình Cảm, Tâm Lý",
     poster:
     "https://phimimg.com/upload/vod/20260321-1/844e5a3b8fb51a3cf7aab038822dc097.jpg",
     banner:
