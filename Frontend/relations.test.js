@@ -66,7 +66,7 @@ test('published Battle Spirits is isolated and every published group has evidenc
   const registry=require('../Backend/movie-relations.json'),published=require('./data/movies.json');
   const index=indexRelations(registry,new Set(published.map(m=>m.slug)));
   assert.equal(published.find(m=>m.slug==='battle-spirits-re-tuyet-gioi-thien-khong').group,undefined);
-  assert.equal(published.length,3881);
+  assert.equal(published.length,3928);
   for(const movie of published.filter(m=>m.group)){assert.equal(index.get(movie.slug).group.id,movie.group);assert.equal(movie.relationVerified,true);}
   const bySlug=new Map(published.map(m=>[m.slug,m]));
   assert.equal(bySlug.get('sat-thu-nhan-tao').group,bySlug.get('sat-thu-nhan-tao-2-mau-vat-con-lai').group);

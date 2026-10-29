@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3881 phim; 0 lỗi; 290 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3928 phim; 0 lỗi; 295 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -206,6 +206,11 @@
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — qua-nhanh-qua-nguy-hiem-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — qua-nhanh-qua-nguy-hiem
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-dep-va-quai-vat-giang-sinh-ky-dieu
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — doi-tham-tu-cuu-an-mang-luc-nua-dem
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — thuc-the-quy-quyet-hau-phong-vo-tan
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ngon-doi-cam-lang-2-chia-khoa-cua-quy
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ngon-doi-cam-lang
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — avatar
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — nu-than-chien-tranh, athena-nu-than-chien-tranh
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — trang-sang-mua-dong, yoon-hee-cua-me
 - **warning / duplicate-provider**: Nhiều mục dùng chung nguồn phát; kiểm tra trước khi gộp. — tham-tu-lung-danh-conan-22-ke-han-phap-zero, tham-tu-lung-danh-conan-22-ke-hanh-phap-zero

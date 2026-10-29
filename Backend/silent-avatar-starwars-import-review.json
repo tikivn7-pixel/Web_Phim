@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-29T02:14:38.962Z",
+  "added": [
+    "doi-tham-tu-cuu-an-mang-luc-nua-dem",
+    "thuc-the-quy-quyet-hau-phong-vo-tan",
+    "doi-cam-lang-ac-mong-trong-suong",
+    "ngon-doi-cam-lang-2-chia-khoa-cua-quy",
+    "ngon-doi-cam-lang",
+    "avatar-lua-va-tro-tan",
+    "avatar-dong-chay-cua-nuoc",
+    "avatar",
+    "the-than-ngu-khi-su-cuoi-cung-phan-2",
+    "the-than-ngu-khi-su-cuoi-cung-phan-1",
+    "the-than-tiet-khi-su-cuoi-cung-cuon-3-hoa",
+    "the-than-tiet-khi-su-cuoi-cung-cuon-2-tho",
+    "the-than-tiet-khi-su-cuoi-cung-cuon-1-thuy",
+    "huyen-thoai-korra-phan-4",
+    "huyen-thoai-korra-phan-3",
+    "huyen-thoai-korra-phan-2",
+    "huyen-thoai-korra-phan-1",
+    "star-wars-mandalorian-va-grogu",
+    "star-wars-skeleton-crew",
+    "star-wars-biet-doi-nhan-ban-dac-biet-phan-3",
+    "the-lego-star-wars-holiday-special",
+    "star-wars-biet-doi-nhan-ban-dac-biet-phan-1",
+    "star-wars-biet-doi-nhan-ban-dac-biet-phan-2",
+    "star-wars-tales-of-the-jedi",
+    "star-wars-jedi-cuoi-cung",
+    "lego-star-wars-terrifying-tales",
+    "star-wars-de-che-phan-cong",
+    "star-wars-phan-2-cuoc-tan-cong-cua-nguoi-vo-tinh",
+    "star-wars-than-luc-thuc-tinh",
+    "rogue-one-star-wars-ngoai-truyen",
+    "star-wars-su-tro-lai-cua-jedi",
+    "star-wars-phan-3-su-tra-thu-cua-nguoi-sith",
+    "solo-star-wars-ngoai-truyen",
+    "star-wars-niem-hi-vong-moi",
+    "star-wars-skywalker-troi-day",
+    "star-wars-phan-1-hiem-hoa-bong-ma",
+    "chien-tranh-giua-cac-vi-sao-maul-chua-te-bong-toi",
+    "chien-tranh-giua-cac-vi-sao-andor-phan-2",
+    "chien-tranh-giua-cac-vi-sao-andor-phan-1",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-7",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-6",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-5",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-4",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-3",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-2",
+    "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-1",
+    "chien-tranh-giua-cac-vi-sao-obi-wan-kenobi"
+  ],
+  "skipped": [
+    {
+      "slug": "huyen-thoai-aang-tiet-khi-su-cuoi-cung",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-tam-nhin-phan-3",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-tam-nhin-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-tam-nhin-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "doraemon-nobita-va-cuoc-chien-vu-tru",
+      "reason": "already-present"
+    },
+    {
+      "slug": "doraemon-nobita-va-cuoc-chien-vu-tru-ti-hon",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-tap-6-su-quay-tro-lai-cua-jedi",
+      "reason": "same-film",
+      "canonical": "star-wars-su-tro-lai-cua-jedi",
+      "sources": [
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-tap-6-su-quay-tro-lai-cua-jedi",
+        "https://phimapi.com/phim/star-wars-su-tro-lai-cua-jedi"
+      ]
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-tap-4-niem-hi-vong-moi",
+      "reason": "same-film",
+      "canonical": "star-wars-niem-hi-vong-moi",
+      "sources": [
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-tap-4-niem-hi-vong-moi",
+        "https://phimapi.com/phim/star-wars-niem-hi-vong-moi"
+      ]
+    },
+    {
+      "slug": "chien-tranh-giua-cac-vi-sao-1-hiem-hoa-cua-bong-ma",
+      "reason": "same-film",
+      "canonical": "star-wars-phan-1-hiem-hoa-bong-ma",
+      "sources": [
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-1-hiem-hoa-cua-bong-ma",
+        "https://phimapi.com/phim/star-wars-phan-1-hiem-hoa-bong-ma"
+      ]
+    }
+  ]
+}

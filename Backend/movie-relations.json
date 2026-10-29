@@ -1190,6 +1190,233 @@
       ]
     },
     {
+      "id": "silent-hill-original-films",
+      "label": "Silent Hill (2006-2012)",
+      "kind": "series",
+      "sources": [
+        "https://phimapi.com/phim/ngon-doi-cam-lang",
+        "https://phimapi.com/phim/ngon-doi-cam-lang-2-chia-khoa-cua-quy"
+      ],
+      "members": [
+        {
+          "slug": "ngon-doi-cam-lang",
+          "label": "Silent Hill",
+          "order": 0
+        },
+        {
+          "slug": "ngon-doi-cam-lang-2-chia-khoa-cua-quy",
+          "label": "Silent Hill: Revelation",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "avatar-cameron-films",
+      "label": "Avatar - James Cameron",
+      "kind": "series",
+      "sources": [
+        "https://www.avatar.com/movies/avatar-fire-and-ash",
+        "https://phimapi.com/phim/avatar",
+        "https://phimapi.com/phim/avatar-dong-chay-cua-nuoc",
+        "https://phimapi.com/phim/avatar-lua-va-tro-tan"
+      ],
+      "members": [
+        {
+          "slug": "avatar",
+          "label": "Avatar",
+          "order": 0
+        },
+        {
+          "slug": "avatar-dong-chay-cua-nuoc",
+          "label": "Avatar: The Way Of Water",
+          "order": 1
+        },
+        {
+          "slug": "avatar-lua-va-tro-tan",
+          "label": "Avatar: Fire And Ash",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "avatar-aang-animation",
+      "label": "Avatar: The Last Airbender - Animation",
+      "kind": "series",
+      "sources": [
+        "https://www.paramountpressexpress.com/paramount-plus/shows/avatar-aang-the-last-airbender/releases/?view=113032-yip-yip-avatar-aang-the-last-airbender-premieres-july-25-globally-on-paramount",
+        "https://phimapi.com/phim/the-than-tiet-khi-su-cuoi-cung-cuon-1-thuy",
+        "https://phimapi.com/phim/the-than-tiet-khi-su-cuoi-cung-cuon-2-tho",
+        "https://phimapi.com/phim/the-than-tiet-khi-su-cuoi-cung-cuon-3-hoa",
+        "https://phimapi.com/phim/huyen-thoai-aang-tiet-khi-su-cuoi-cung"
+      ],
+      "members": [
+        {
+          "slug": "the-than-tiet-khi-su-cuoi-cung-cuon-1-thuy",
+          "label": "Avatar: The Last Airbender (Book One: Water)",
+          "order": 0
+        },
+        {
+          "slug": "the-than-tiet-khi-su-cuoi-cung-cuon-2-tho",
+          "label": "Avatar: The Last Airbender (Book Two: Earth)",
+          "order": 1
+        },
+        {
+          "slug": "the-than-tiet-khi-su-cuoi-cung-cuon-3-hoa",
+          "label": "Avatar: The Last Airbender (Book Three: Fire)",
+          "order": 2
+        },
+        {
+          "slug": "huyen-thoai-aang-tiet-khi-su-cuoi-cung",
+          "label": "Avatar Aang: The Last Airbender",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "star-wars-skywalker-saga",
+      "label": "Star Wars - Skywalker Saga",
+      "kind": "series",
+      "sources": [
+        "https://www.starwars.com/films",
+        "https://phimapi.com/phim/star-wars-phan-1-hiem-hoa-bong-ma",
+        "https://phimapi.com/phim/star-wars-phan-2-cuoc-tan-cong-cua-nguoi-vo-tinh",
+        "https://phimapi.com/phim/star-wars-phan-3-su-tra-thu-cua-nguoi-sith",
+        "https://phimapi.com/phim/star-wars-niem-hi-vong-moi",
+        "https://phimapi.com/phim/star-wars-de-che-phan-cong",
+        "https://phimapi.com/phim/star-wars-su-tro-lai-cua-jedi",
+        "https://phimapi.com/phim/star-wars-than-luc-thuc-tinh",
+        "https://phimapi.com/phim/star-wars-jedi-cuoi-cung",
+        "https://phimapi.com/phim/star-wars-skywalker-troi-day"
+      ],
+      "members": [
+        {
+          "slug": "star-wars-phan-1-hiem-hoa-bong-ma",
+          "label": "Star Wars: Episode I - The Phantom Menace",
+          "order": 0
+        },
+        {
+          "slug": "star-wars-phan-2-cuoc-tan-cong-cua-nguoi-vo-tinh",
+          "label": "Star Wars: Episode II - Attack of the Clones",
+          "order": 1
+        },
+        {
+          "slug": "star-wars-phan-3-su-tra-thu-cua-nguoi-sith",
+          "label": "Star Wars: Episode III - Revenge of the Sith",
+          "order": 2
+        },
+        {
+          "slug": "star-wars-niem-hi-vong-moi",
+          "label": "Star Wars",
+          "order": 3
+        },
+        {
+          "slug": "star-wars-de-che-phan-cong",
+          "label": "Star Wars: The Empire Strikes Back",
+          "order": 4
+        },
+        {
+          "slug": "star-wars-su-tro-lai-cua-jedi",
+          "label": "Return of the Jedi",
+          "order": 5
+        },
+        {
+          "slug": "star-wars-than-luc-thuc-tinh",
+          "label": "Star Wars: The Force Awakens",
+          "order": 6
+        },
+        {
+          "slug": "star-wars-jedi-cuoi-cung",
+          "label": "Star Wars: Episode VIII - The Last Jedi",
+          "order": 7
+        },
+        {
+          "slug": "star-wars-skywalker-troi-day",
+          "label": "Star Wars: The Rise of Skywalker",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "star-wars-clone-wars",
+      "label": "Star Wars: The Clone Wars",
+      "kind": "series",
+      "sources": [
+        "https://www.starwars.com/series/star-wars-the-clone-wars",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-1",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-2",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-3",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-4",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-5",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-6",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-7"
+      ],
+      "members": [
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-1",
+          "label": "Star Wars: The Clone Wars (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-2",
+          "label": "Star Wars: The Clone Wars (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-3",
+          "label": "Star Wars: The Clone Wars (Season 3)",
+          "order": 2
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-4",
+          "label": "Star Wars: The Clone Wars (Season 4)",
+          "order": 3
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-5",
+          "label": "Star Wars: The Clone Wars (Season 5)",
+          "order": 4
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-6",
+          "label": "Star Wars: The Clone Wars (Season 6)",
+          "order": 5
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-cuoc-chien-vo-tinh-phan-7",
+          "label": "Star Wars: The Clone Wars (Season 7)",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "star-wars-bad-batch",
+      "label": "Star Wars: The Bad Batch",
+      "kind": "series",
+      "sources": [
+        "https://www.starwars.com/series/star-wars-the-bad-batch",
+        "https://phimapi.com/phim/star-wars-biet-doi-nhan-ban-dac-biet-phan-1",
+        "https://phimapi.com/phim/star-wars-biet-doi-nhan-ban-dac-biet-phan-2",
+        "https://phimapi.com/phim/star-wars-biet-doi-nhan-ban-dac-biet-phan-3"
+      ],
+      "members": [
+        {
+          "slug": "star-wars-biet-doi-nhan-ban-dac-biet-phan-1",
+          "label": "Star Wars: The Bad Batch (Season 1)",
+          "order": 0
+        },
+        {
+          "slug": "star-wars-biet-doi-nhan-ban-dac-biet-phan-2",
+          "label": "Star Wars: The Bad Batch (Season 2)",
+          "order": 1
+        },
+        {
+          "slug": "star-wars-biet-doi-nhan-ban-dac-biet-phan-3",
+          "label": "Star Wars: The Bad Batch (Season 3)",
+          "order": 2
+        }
+      ]
+    },
+    {
       "id": "tmdb-tv-230050",
       "label": "A Returner's Magic Should Be Special (Season 1)",
       "kind": "series",
@@ -6312,21 +6539,21 @@
           "label": "Star Wars: Visions (Season 1)",
           "order": 0,
           "season": 1,
-          "checkedAt": "2026-10-22T17:59:31.192Z"
+          "checkedAt": "2026-10-29T02:14:38.962Z"
         },
         {
           "slug": "chien-tranh-giua-cac-vi-sao-tam-nhin-phan-2",
           "label": "Star Wars: Visions (Season 2)",
           "order": 1,
           "season": 2,
-          "checkedAt": "2026-10-22T17:59:31.196Z"
+          "checkedAt": "2026-10-29T02:14:38.962Z"
         },
         {
           "slug": "chien-tranh-giua-cac-vi-sao-tam-nhin-phan-3",
           "label": "Star Wars: Visions (Season 3)",
           "order": 2,
           "season": 3,
-          "checkedAt": "2026-10-22T17:59:31.408Z"
+          "checkedAt": "2026-10-29T02:14:38.962Z"
         }
       ]
     },
@@ -7727,6 +7954,103 @@
           "order": 1,
           "season": 2,
           "checkedAt": "2026-10-28T15:37:02.699Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-82452",
+      "label": "Avatar The Last Airbender (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/82452",
+        "https://phimapi.com/phim/the-than-ngu-khi-su-cuoi-cung-phan-1",
+        "https://phimapi.com/phim/the-than-ngu-khi-su-cuoi-cung-phan-2"
+      ],
+      "members": [
+        {
+          "slug": "the-than-ngu-khi-su-cuoi-cung-phan-1",
+          "label": "Thế Thần: Ngự Khí Sư Cuối Cùng (Phần 1) (Avatar The Last Airbender (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        },
+        {
+          "slug": "the-than-ngu-khi-su-cuoi-cung-phan-2",
+          "label": "Thế Thần: Ngự Khí Sư Cuối Cùng (Phần 2) (Avatar The Last Airbender (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-33880",
+      "label": "The Legend Of Korra (Season 1) (Book One: Air)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/33880",
+        "https://phimapi.com/phim/huyen-thoai-korra-phan-1",
+        "https://phimapi.com/phim/huyen-thoai-korra-phan-2",
+        "https://phimapi.com/phim/huyen-thoai-korra-phan-3",
+        "https://phimapi.com/phim/huyen-thoai-korra-phan-4"
+      ],
+      "members": [
+        {
+          "slug": "huyen-thoai-korra-phan-1",
+          "label": "Huyền Thoại Korra (Phần 1) (The Legend Of Korra (Season 1) (Book One: Air))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        },
+        {
+          "slug": "huyen-thoai-korra-phan-2",
+          "label": "Huyền Thoại Korra (Phần 2) (The Legend Of Korra (Season 2) (Book Two: Spirits))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        },
+        {
+          "slug": "huyen-thoai-korra-phan-3",
+          "label": "Huyền Thoại Korra (Phần 3) (The Legend Of Korra (Season 3) (Book Three: Change))",
+          "order": 2,
+          "season": 3,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        },
+        {
+          "slug": "huyen-thoai-korra-phan-4",
+          "label": "Huyền Thoại Korra (Phần 4) (The Legend Of Korra (Season 4) (Book Four: Balance))",
+          "order": 3,
+          "season": 4,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-tv-83867",
+      "label": "Star Wars: Andor (Season 1)",
+      "kind": "series",
+      "basis": "provider-exact-tmdb-tv-id",
+      "sources": [
+        "https://www.themoviedb.org/tv/83867",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-andor-phan-1",
+        "https://phimapi.com/phim/chien-tranh-giua-cac-vi-sao-andor-phan-2"
+      ],
+      "members": [
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-andor-phan-1",
+          "label": "Chiến Tranh Giữa Các Vì Sao: Andor (Phần 1) (Star Wars: Andor (Season 1))",
+          "order": 0,
+          "season": 1,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
+        },
+        {
+          "slug": "chien-tranh-giua-cac-vi-sao-andor-phan-2",
+          "label": "Chiến Tranh Giữa Các Vì Sao: Andor (Phần 2) (Star Wars: Andor (Season 2))",
+          "order": 1,
+          "season": 2,
+          "checkedAt": "2026-10-29T02:14:38.962Z"
         }
       ]
     }
