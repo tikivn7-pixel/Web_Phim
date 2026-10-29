@@ -89,6 +89,31 @@ function closeMobileMenu() {
   if(wasOpen)document.getElementById("mobile-menu-btn")?.focus();
 }
 // Menu mobile (nút ☰ + lớp phủ). Chạy chung cho index/detail/watch.
+document.addEventListener("DOMContentLoaded", async () => {
+  // Reflect countries actually present in the catalog on home/detail/watch.
+  // Keep the HTML fallback usable if the catalog cannot be loaded.
+  try {
+    const { countries } = await getCatalogFilters();
+    if (!countries.length) return;
+    document.querySelectorAll('.country-menu .genre-grid').forEach(grid => {
+      const entries = countries.map(country => {
+        const entry = document.createElement('span');
+        entry.textContent = country;
+        entry.setAttribute('role', 'button');
+        entry.tabIndex = 0;
+        entry.addEventListener('click', () => filterByCountry(country));
+        entry.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault(); entry.click();
+          }
+        });
+        return entry;
+      });
+      grid.replaceChildren(...entries);
+    });
+  } catch (_) { /* Static country links remain available offline. */ }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".logo[onclick],.nav-links li[onclick],.genre-grid span[onclick]").forEach(element=>{
     element.setAttribute("role","button");element.tabIndex=0;

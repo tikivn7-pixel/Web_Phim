@@ -72,6 +72,8 @@ async function main() {
   await waitFor("document.getElementById('session-favorites').textContent==='0' && !document.getElementById('session-empty').hidden");
   assert.equal(await evaluate("document.querySelector('.session-overview').getAttribute('href')"),'stats.html');
   assert.ok(await evaluate("document.querySelectorAll('#hero-meta span').length>=3"));
+  await waitFor("[...document.querySelectorAll('.country-menu .genre-grid span')].some(e=>e.textContent==='Malaysia')");
+  assert.deepEqual(await evaluate("[...document.querySelectorAll('.country-menu .genre-grid span')].map(e=>e.textContent).sort()"),[...new Set(require('./catalog-format').decode(require('./data/catalog-index.json')).map(m=>m.country).filter(Boolean))].sort());
   await evaluate("document.getElementById('home-random-pick').click()");
   assert.ok(await evaluate("!document.getElementById('home-random-result').hidden && document.querySelector('#home-random-result a').getAttribute('href').includes('slug=')"));
   assert.equal(await evaluate("document.querySelectorAll('.catalog-shortcuts button').length"),4);
