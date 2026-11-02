@@ -1,0 +1,577 @@
+{
+  "checkedAt": "2026-11-02T12:49:19.740Z",
+  "filter": {
+    "country": "han-quoc",
+    "year": 2026
+  },
+  "source": "https://phimapi.com/v1/api/quoc-gia/han-quoc?year=2026&limit=64",
+  "totalListed": 135,
+  "added": [
+    {
+      "slug": "anh-la-nam-chinh-doi-em",
+      "title": "Anh Là Nam Chính Đời Em (Oh! My Guard)",
+      "available": 4,
+      "total": 16,
+      "status": "ongoing",
+      "source": "https://phimapi.com/phim/anh-la-nam-chinh-doi-em"
+    },
+    {
+      "slug": "viec-ma-luong-quai",
+      "title": "Việc Ma, Lương Quái (Dead-End Job)",
+      "available": 8,
+      "total": 8,
+      "status": "completed",
+      "source": "https://phimapi.com/phim/viec-ma-luong-quai"
+    },
+    {
+      "slug": "chuyen-di-chua-lanh",
+      "title": "Chuyến Đi Chữa Lành (Summer Vacation)",
+      "available": 2,
+      "total": 10,
+      "status": "ongoing",
+      "source": "https://phimapi.com/phim/chuyen-di-chua-lanh"
+    },
+    {
+      "slug": "tinh-yeu-trong-vo-boc-tinh-yeu-nguy-trang",
+      "title": "Tình Yêu Trong Vỏ Bọc / Tình Yêu Ngụy Trang (Love in Disguise)",
+      "available": 4,
+      "total": 12,
+      "status": "ongoing",
+      "source": "https://phimapi.com/phim/tinh-yeu-trong-vo-boc-tinh-yeu-nguy-trang"
+    },
+    {
+      "slug": "chien-than-quan-an-duong-pho",
+      "title": "Chiến Thần Quán Ăn Đường Phố (Street Restaurant Fighter)",
+      "available": 12,
+      "total": 12,
+      "status": "completed",
+      "source": "https://phimapi.com/phim/chien-than-quan-an-duong-pho"
+    },
+    {
+      "slug": "cuoc-chien-am-thuc",
+      "title": "Cuộc Chiến Ẩm Thực (Final Table)",
+      "available": 2,
+      "total": 12,
+      "status": "ongoing",
+      "source": "https://phimapi.com/phim/cuoc-chien-am-thuc"
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "tho-ren-huyen-thoai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "100-ngay-lua-doi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bac-si-x",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chuyen-tinh-rung-cam",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dau-tay-ngot-ngao-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chien-binh-duong-pho-dai-chien-bien-dao",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tro-choi-bat-coc-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tung-buoc-ben-nhau-tien-si-yeu-duong-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "giac-quan-thu-sau-mat-trai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chim-vao-mat-em-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "yeu-mot-nguoi-khac-yeu-mot-nguoi-khac-khong-phai-em",
+      "reason": "already-present"
+    },
+    {
+      "slug": "huong-vi-cua-bien-mua-3",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tiem-banh-gao-vu-tru",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chiec-ca-vat-roi-ram",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vung-tu-dia",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nap-day-trai-tim",
+      "reason": "already-present"
+    },
+    {
+      "slug": "trung-so-doc-dac-van-phai-di-lam",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bon-ban-tay-hai-ban-sonata",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chuyen-xe-tam-tinh-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dao-quat-vuong-vua-trom-mo",
+      "reason": "already-present"
+    },
+    {
+      "slug": "u-thi-ly-hon",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ngay-he",
+      "reason": "already-present"
+    },
+    {
+      "slug": "de-che-dai-han-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tai-phiet-va-canh-sat-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "seoul-unnie",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vu-be-boi-thoi-joseon-be-boi-trieu-dai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tinh-yeu-tren-thuc-don",
+      "reason": "already-present"
+    },
+    {
+      "slug": "sat-thu-noi-tro-vo-toi-la-sat-thu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "co-gi-lai-di-leo-nui",
+      "reason": "already-present"
+    },
+    {
+      "slug": "sep-chinh-la-than-tuong-bias-toi-sep-cua-toi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vo-boc-ngoai-tinh-ngoai-tinh-da-nham-nho-gi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "lop-hoc-tinh-yeu-phan-3",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bay-chuot-phan-1",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ma-tu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chuyen-tinh-ma-quai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "play-me-buoi-dien-tap-cua-chung-ta",
+      "reason": "already-present"
+    },
+    {
+      "slug": "giac-mo-trao-em",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cua-hang-sat-thu-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bay-xac-song",
+      "reason": "already-present"
+    },
+    {
+      "slug": "phi-vu-chung-cu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "biet-doi-sieu-kho",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-8",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vien-ngoc-than-chuyen-ve-bo-rua-va-meo-mun-phan-7",
+      "reason": "already-present"
+    },
+    {
+      "slug": "muon-con-hon-e-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "sau-hon-nhan",
+      "reason": "already-present"
+    },
+    {
+      "slug": "keo-ngot-tinh-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tinh-yeu-va-toi-loi-2026",
+      "reason": "already-present"
+    },
+    {
+      "slug": "huong-vi-cua-bien-huong-vi-cua-bien-o-calape",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bao-thu-2026",
+      "reason": "already-present"
+    },
+    {
+      "slug": "sep-oi-mai-dung-gap-nhau",
+      "reason": "already-present"
+    },
+    {
+      "slug": "kill-it-slay-toi-ben",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dac-vu-kim-tai-khoi-dong",
+      "reason": "already-present"
+    },
+    {
+      "slug": "gieo-gi-gat-nay-nong-trai-thang-tien",
+      "reason": "already-present"
+    },
+    {
+      "slug": "loi-de-nghi-cua-cong-to-vien",
+      "reason": "already-present"
+    },
+    {
+      "slug": "doi-cai-thao",
+      "reason": "already-present"
+    },
+    {
+      "slug": "check-in-to-you",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bac-si-dao-hoang",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nua-co-hoi-song-chuyen-gia-tuoi-trung-nien",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chu-tich-tap-su",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nguoi-khi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "di-phuot-ban-gioi-han",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ngoi-nha-cua-nhung-loi-doi-tra",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nhung-ghi-chu-o-hang-cuoi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ke-thu-hoang-gia-cua-toi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "khi-chong-hop-luc",
+      "reason": "already-present"
+    },
+    {
+      "slug": "huyen-thoai-linh-bep-anh-nuoi-thang-cap-thanh-huyen-thoai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cac-te-bao-cua-yumi-phan-3",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ma-da-han-quoc-ho-nuot-nguoi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dem-ngay-xa-me",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bai-hoc-dang-doi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "project-y-gai-ngoan-doi-doi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nha-nghi-bb-tuyet-voi-cua-jae-seok",
+      "reason": "already-present"
+    },
+    {
+      "slug": "thanh-tra-bi-mat-kiem-toan-tinh-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "vung-dat-vang",
+      "reason": "already-present"
+    },
+    {
+      "slug": "gia-tri-tuyet-doi-cua-lang-man",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cuoc-chien-trong-chung-ta",
+      "reason": "already-present"
+    },
+    {
+      "slug": "hom-nay-lai-ban-het",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bu-nhin-bong-dem",
+      "reason": "already-present"
+    },
+    {
+      "slug": "xanh-cham-day-troi-anh-xuan-lam",
+      "reason": "already-present"
+    },
+    {
+      "slug": "phu-nhan-dai-quan-the-ky-21",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ban-tri-ky",
+      "reason": "already-present"
+    },
+    {
+      "slug": "giot-nuoc-mat-cua-quy-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ke-thu-chung-giuong",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bac-si-shin",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tin-don-tinh-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tam-ac-dao-mon-do-cuong-tin",
+      "reason": "already-present"
+    },
+    {
+      "slug": "lop-hoc-cua-tae-ri",
+      "reason": "already-present"
+    },
+    {
+      "slug": "mua-ruc-ro-cua-em-mua-em-ruc-ro",
+      "reason": "already-present"
+    },
+    {
+      "slug": "luat-su-bong-ma-van-phong-luat-su-shin-i-rang",
+      "reason": "already-present"
+    },
+    {
+      "slug": "duoi-bong-dien-ha",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cam-nang-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dieu-uoc-doat-mang",
+      "reason": "already-present"
+    },
+    {
+      "slug": "huyen-thoai-aang-tiet-khi-su-cuoi-cung",
+      "reason": "already-present"
+    },
+    {
+      "slug": "giac-mo-dien-ro",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nu-hon-siren",
+      "reason": "already-present"
+    },
+    {
+      "slug": "huy-theo-doi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cuc-han",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tinh-bao-con-nguoi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "con-toi-hen-ho-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "anh-sang-cua-doi-ta",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cho-san-cong-ly-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dung-quen-ke-thu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "luc-nao-ta-cung-se-gap-lai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "cau-lac-bo-ban-bi-mat",
+      "reason": "already-present"
+    },
+    {
+      "slug": "an-phat-dung-gia-ban-an-anh-hung",
+      "reason": "already-present"
+    },
+    {
+      "slug": "san-sang-chua-texas",
+      "reason": "already-present"
+    },
+    {
+      "slug": "bts-su-tro-lai",
+      "reason": "already-present"
+    },
+    {
+      "slug": "thuy-trieu-tinh-yeu-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "hoi-chung-so-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "trao-em-ca-vu-tru",
+      "reason": "already-present"
+    },
+    {
+      "slug": "danh-du-cuoi-cung",
+      "reason": "already-present"
+    },
+    {
+      "slug": "chuyen-nha-cha",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dieu-tra-vien-hong",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dai-chien-van-menh",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ban-trai-theo-yeu-cau",
+      "reason": "already-present"
+    },
+    {
+      "slug": "con-say-mua-xuan",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tu-hom-nay-toi-la-con-nguoi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "hoa-mau",
+      "reason": "already-present"
+    },
+    {
+      "slug": "doi-dac-vu-pha-an-phan-2",
+      "reason": "already-present"
+    },
+    {
+      "slug": "baby-den-roi",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ten-trom-dau-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "pavane",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tham-phan-trung-sinh",
+      "reason": "already-present"
+    },
+    {
+      "slug": "nghe-thuat-lua-doi-cua-sarah",
+      "reason": "already-present"
+    },
+    {
+      "slug": "dia-nguc-doc-than-phan-5",
+      "reason": "already-present"
+    },
+    {
+      "slug": "lieu-thuoc-cho-tinh-yeu",
+      "reason": "already-present"
+    },
+    {
+      "slug": "ke-khung-bo",
+      "reason": "already-present"
+    },
+    {
+      "slug": "tieng-yeu-nay-anh-dich-duoc-khong",
+      "reason": "already-present"
+    }
+  ]
+}
