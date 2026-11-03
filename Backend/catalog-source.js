@@ -54630,6 +54630,7 @@ const fallbackMoviesList = [
   {
     title: "Việc Ma, Lương Quái (Dead-End Job)",
     slug: "viec-ma-luong-quai",
+    providerSlugs: { kkphim: "viec-ma-luong-quai", nguonc: "viec-ma-luong-quai" },
     preferredSource: "kkphim",
     apiSlug: "viec-ma-luong-quai",
     providerSlugs: {

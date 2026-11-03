@@ -306,12 +306,13 @@ async function findCatalogMovieBySlug(slug) {
 }
 
 // Lấy link tập theo slug từ API (kkphim -> nguonc), trả null nếu không nguồn nào có
-async function fetchEpisodesFromApis(slug, dataSource, preferredSource = "") {
+async function fetchEpisodesFromApis(slug, dataSource, preferredSource = "", providerSlugs = {}) {
+  const providerSlug = provider => typeof providerSlugs?.[provider] === "string" && providerSlugs[provider].trim() ? providerSlugs[provider].trim() : slug;
   if (dataSource === "hardcode") return null;
 
   if (dataSource === "auto" && preferredSource === "nguonc") {
     try {
-      return await fetchNguoncMovieBySlug(slug);
+      return await fetchNguoncMovieBySlug(providerSlug("nguonc"));
     } catch (err) {
       console.warn("NguonC ưu tiên không khả dụng, thử KKPhim:", err.message || err);
     }
@@ -319,7 +320,7 @@ async function fetchEpisodesFromApis(slug, dataSource, preferredSource = "") {
 
   if (dataSource === "auto" || dataSource === "kkphim") {
     try {
-      return await fetchKkphimMovieBySlug(slug);
+      return await fetchKkphimMovieBySlug(providerSlug("kkphim"));
     } catch (err) {
       if (dataSource === "kkphim") throw err;
       console.warn("kkphim không có/lỗi, thử nguonc:", err.message || err);
@@ -327,7 +328,7 @@ async function fetchEpisodesFromApis(slug, dataSource, preferredSource = "") {
   }
   if ((dataSource === "auto" && preferredSource !== "nguonc") || dataSource === "nguonc") {
     try {
-      return await fetchNguoncMovieBySlug(slug);
+      return await fetchNguoncMovieBySlug(providerSlug("nguonc"));
     } catch (err) {
       if (dataSource === "nguonc") throw err;
       console.warn("nguonc không có/lỗi:", err.message || err);
@@ -377,7 +378,7 @@ async function fetchMovieBySlug(slug, { source = "auto" } = {}) {
   const base = await findCatalogMovieBySlug(slug); // giữ group và partName từ kho phim
   let apiMovie = null;
   try {
-    apiMovie = await fetchEpisodesFromApis(base?.apiSlug || slug, dataSource, base?.preferredSource);
+    apiMovie = await fetchEpisodesFromApis(base?.apiSlug || slug, dataSource, base?.preferredSource, base?.providerSlugs);
   } catch (err) {
     // chỉ xảy ra khi ép source=kkphim/nguonc: để lộ lỗi thật
     console.error(`Lỗi tải phim "${slug}" (source=${dataSource}):`, err);
