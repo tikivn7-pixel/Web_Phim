@@ -365,7 +365,6 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - bao-boi-cua-ong: My Dearest Fu Bao — nhóm cũ: My Dearest
 - ke-thu-dau-yeu: My Dearest Nemesis — nhóm cũ: My Dearest
 - khong-co-lan-hai: Never Twice — nhóm cũ: Never
-- dung-quen-ke-thu: Never Forget Your Enemy — nhóm cũ: Never
 - hang-xom-tot-bung: Next Door Neighbor — nhóm cũ: Next
 - bay-nu-sinh: Next Sohee — nhóm cũ: Next
 - 9-lan-nguoc-thoi-gian: Nine: Nine Time Travels — nhóm cũ: Nine
@@ -671,6 +670,7 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - one-piece-nu-hung: One Piece: Heroines — nhóm cũ: One Piece
 - dao-hai-tac-live-action-phan-2: ONE PIECE (Live Action) (Season 2) — nhóm cũ: One Piece
 - phim/sat-thu-ve-vuon: Sakamoto Days — nhóm cũ: Sakamoto Days
+- sat-thu-ve-vuon: Sakamoto Days — nhóm cũ: Sakamoto Days
 - gia-dinh-x-diep-vien-ma-trang: SPY x FAMILY CODE: White — nhóm cũ: Spy x Family
 - dao-kiem-than-vuc-extra-edition: Sword Art Online: Extra Edition — nhóm cũ: Sword Art Online
 - dao-kiem-than-vuc-ranh-gioi-hu-ao-ngoai-truyen-2: Sword Art Online: Ordinal Scale — nhóm cũ: Sword Art Online
@@ -1060,7 +1060,6 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - ke-sat-nhan-lang-man: Romantic Killer — nhóm cũ: Romantic
 - co-be-thien-than: Saint Tail — nhóm cũ: Saint
 - thanh-dau-si: Saint Seiya: Legend Of Sanctuary — nhóm cũ: Saint
-- sat-thu-ve-vuon: Sakamoto Days — nhóm cũ: Sakamoto Days
 - sasaki-va-miyano: Sasaki And Miyano, Sasamiya, Sasaki To Miyano — nhóm cũ: Sasaki And Miyano
 - sasaki-va-miyano-tot-nghiep: Sasaki And Miyano: Graduation — nhóm cũ: Sasaki And Miyano
 - lien-ket-ruc-do: SCARLET NEXUS — nhóm cũ: Scarlet
@@ -1226,3 +1225,4 @@ Không tự ghép từ tên. Các phim dưới đây vẫn có trong kho nhưng 
 - nguoi-nhen-hang-xom-than-thien: Your Friendly Neighborhood Spider-Man — nhóm cũ: spdm
 - sieu-nhan-va-nguoi-doi-ke-thu-quoc-gia: Superman - Batman: Public Enemies — nhóm cũ: Superman Batman
 - sieu-nhan-va-nguoi-doi-khai-huyen: Superman Batman: Apocalypse — nhóm cũ: Superman Batman
+- dung-quen-ke-thu: Never Forget Your Enemy — nhóm cũ: Never
