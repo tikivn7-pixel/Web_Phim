@@ -4772,7 +4772,7 @@ const fallbackMoviesList = [
   {
     title: "Doctor X: Mafia in White",
     slug: "bac-si-x",
-    episodeSource: "nguonc",
+    preferredSource: "nguonc",
     year: 2026,
     episodes: 12,
     genres: "Bí Ẩn, Chính Kịch, Hình Sự, Tâm Lý, Hàn Quốc",
