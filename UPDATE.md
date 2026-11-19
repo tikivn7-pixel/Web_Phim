@@ -32,7 +32,7 @@ npm run episodes:sync -- --slug 100-ngay-lua-doi --force
 npm run episodes:sync -- --limit 20 --dry-run
 ```
 
-Lệnh mặc định bỏ qua phim đã kiểm tra thành công trong 6 giờ gần nhất. Dùng đúng `slug` trong catalog; nếu phim có `apiSlug`, lệnh tự dùng slug nguồn. Có thể lặp `--slug` để chọn nhiều phim. Mỗi lần gửi tối đa hai yêu cầu, có timeout và thử lại một lần; phim trả lỗi/sai slug/chưa có link phát không ghi đè kết quả thành công cũ. Nhấn Ctrl+C sẽ ngừng nhận việc mới và lưu các kết quả đã xong. Không tải video.
+Lệnh mặc định bỏ qua phim đã kiểm tra thành công trong 6 giờ gần nhất. Phim đã được nguồn báo `completed` và có đủ tổng số tập phát được sẽ được bỏ qua ở những lần chạy sau; dùng `--force` để kiểm tra lại. Nếu đổi `apiSlug`, phim sẽ được kiểm tra lại theo nguồn mới. Phim chưa có tổng số tập rõ ràng vẫn tiếp tục được kiểm tra. Dùng đúng `slug` trong catalog; nếu phim có `apiSlug`, lệnh tự dùng slug nguồn. Có thể lặp `--slug` để chọn nhiều phim. Mỗi lần gửi tối đa hai yêu cầu, có timeout và thử lại một lần; phim trả lỗi/sai slug/chưa có link phát không ghi đè kết quả thành công cũ. Nhấn Ctrl+C sẽ ngừng nhận việc mới và lưu các kết quả đã xong. Không tải video.
 
 Mỗi tệp đầu ra có khóa tiến trình để hai lệnh đồng bộ không ghi đè nhau. Khóa được dọn khi hoàn tất, gặp lỗi hoặc Ctrl+C. Nếu bạn buộc tắt tiến trình bằng hệ điều hành, chỉ xóa tệp `.lock` sau khi xác nhận lệnh cũ đã dừng.
 

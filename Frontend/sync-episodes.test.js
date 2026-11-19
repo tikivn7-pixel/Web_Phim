@@ -13,6 +13,36 @@ async function fixture(t, catalog = [{ slug: 'one', apiSlug: 'source-one', episo
   return { catalogPath, outputPath, summaryPath: path.join(dir, 'episode-summary.json'), now: () => 2000000000000, log: () => {}, sleep: async () => {}, signals: false };
 }
 const response = data => ({ ok: true, json: async () => data });
+test('completed movies stay skipped after six hours, but force and changed aliases recheck', async t => {
+  const deps = await fixture(t); let calls = 0;
+  deps.fetch = async url => {
+    calls++;
+    const data = payload(url.split('/').at(-1), 12);
+    data.movie.status = 'completed';
+    return response(data);
+  };
+  await sync({}, deps);
+  deps.now = () => 2000000000000 + 30 * 24 * 60 * 60 * 1000;
+  assert.equal((await sync({}, deps)).report.selected, 0);
+  assert.equal(calls, 1);
+  assert.equal((await sync({ force: true }, deps)).report.succeeded, 1);
+  await fs.writeFile(deps.catalogPath, JSON.stringify([{ slug: 'one', apiSlug: 'source-two' }]));
+  assert.equal((await sync({}, deps)).report.succeeded, 1);
+  assert.equal(calls, 3);
+});
+test('incomplete, ongoing and unknown-total movies are still checked after six hours', async t => {
+  for (const [status, count, total] of [['completed', 11, '12'], ['ongoing', 12, '12'], ['completed', 12, '?']]) {
+    const deps = await fixture(t);
+    deps.fetch = async () => {
+      const data = payload('source-one', count);
+      data.movie.status = status; data.movie.episode_total = total;
+      return response(data);
+    };
+    await sync({}, deps);
+    deps.now = () => 2000000000000 + 7 * 60 * 60 * 1000;
+    assert.equal((await sync({}, deps)).report.succeeded, 1);
+  }
+});
 test('episode sync arguments reject arbitrary URLs and invalid counts', () => {
   assert.deepEqual(parseArgs(['--slug', 'one', '--slug', 'one', '--limit', '3', '--force', '--dry-run']), { slugs: ['one'], limit: 3, force: true, dryRun: true, help: false });
   for (const args of [['--slug', 'https://bad'], ['--slug'], ['--limit', '0'], ['--limit', '3.5'], ['--other']]) assert.throws(() => parseArgs(args));

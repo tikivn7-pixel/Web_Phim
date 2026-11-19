@@ -10,10 +10,11 @@ const HELP = `Update episode observations for movies already in the catalog.
 Usage: npm run episodes:sync -- [--slug movie-slug] [--limit N] [--force] [--dry-run]
   --slug SLUG   Check one existing catalog slug (repeat to select several).
   --limit N     Check at most N eligible movies, in catalog order.
-  --force       Recheck even if the last successful check was under 6 hours ago.
+  --force       Recheck completed movies and checks from under 6 hours ago.
   --dry-run     Fetch and report results without writing any file.
   --help        Print this help.
 Default: all existing KKPhim movies, concurrency 2, 12-second timeout, one retry.
+Completed movies with all expected episodes available are skipped on later runs.
 Writes Frontend/data/episode-snapshots.json and lightweight episode-summary.json.
 No video is downloaded. Pages fetch only the summary, without episode names.
 Ctrl+C stops new requests and saves successful observations before exit.`;
@@ -46,7 +47,12 @@ async function syncUnlocked(options = {}, deps = {}) {
   for (const slug of wanted) if (!catalog.some(movie => movie.slug === slug)) throw Error('Catalog slug not found: ' + slug);
   const eligible = catalog.filter(movie => movie && identityOK(movie.slug) && slugOK(movie.apiSlug || movie.slug) && (!movie.source || ['kkphim', 'auto'].includes(movie.source)) && (!wanted.size || wanted.has(movie.slug)));
   if (wanted.size && eligible.length !== wanted.size) throw Error('One or more selected movies do not use a supported KKPhim source.');
-  const queue = eligible.filter(movie => options.force || !state.movies[movie.slug] || state.movies[movie.slug].sourceSlug !== (movie.apiSlug || movie.slug) || now() - state.movies[movie.slug].checkedAt >= 6 * 60 * 60 * 1000).slice(0, options.limit || Infinity);
+  const queue = eligible.filter(movie => {
+    const previous = state.movies[movie.slug];
+    if (options.force || !previous || previous.sourceSlug !== (movie.apiSlug || movie.slug)) return true;
+    if (previous.status === 'completed' && previous.total > 0 && previous.available >= previous.total) return false;
+    return now() - previous.checkedAt >= 6 * 60 * 60 * 1000;
+  }).slice(0, options.limit || Infinity);
   const report = { selected: queue.length, checked: 0, succeeded: 0, failed: 0, changed: 0, stopped: !!deps.signalState?.stopped, failures: [] };
   const stopped = () => { if (deps.signalState?.stopped) report.stopped = true; return report.stopped; };
   let cursor = 0, writes = Promise.resolve(), dirty = false;
