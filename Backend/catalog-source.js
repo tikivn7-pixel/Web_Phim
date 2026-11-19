@@ -58,7 +58,7 @@ const IMG_BASE = "Img/";
 //   1. PHIM HÀN QUỐC                            (1932 phim)
 //   2. NHẬT BẢN - ANIME                         (159 phim)
 //   3. NHẬT BẢN - PHIM LẺ / LIVE-ACTION         (1544 phim)
-//   4. PHIM MỸ                                  (60 phim)
+//   4. PHIM MỸ                                  (61 phim)
 //   5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (242 phim)
 // Trong mỗi nhóm: A-Z theo tên (phim nhiều phần dùng "group"),
 // các phần cùng 1 phim nằm sát nhau, giữ nguyên thứ tự bạn đã viết.
@@ -47350,7 +47350,7 @@ const fallbackMoviesList = [
     desc: "遠井さんは青春したい！『バカとスマホとロマンスと』",
   },
 
-  // ==================== 4. PHIM MỸ (60) ====================
+  // ==================== 4. PHIM MỸ (61) ====================
   {
     title: "Aztec Batman: Clash Of Empires",
     slug: "batman-aztec-de-che-huyet-chien",
@@ -48196,6 +48196,18 @@ const fallbackMoviesList = [
     banner:
       "https://phimimg.com/upload/vod/20231023-1/59272e776cb42561111ac7882e2b28fe.jpg",
     desc: "The Lego Batman Movie",
+  },
+  {
+    title: "The Odyssey",
+    slug: "su-thi-odyssey",
+    country: "Anh",
+    type: "single",
+    year: 2026,
+    episodes: 1,
+    genres: "Phiêu Lưu, Hành Động, Viễn Tưởng, Tâm Lý, Chính Kịch, Anh, Mỹ",
+    poster: "https://phimimg.com/uploads/movies/20260829/su-thi-odyssey-poster.webp",
+    banner: "https://phimimg.com/uploads/movies/20260829/su-thi-odyssey-thumb.webp",
+    desc: "The Odyssey",
   },
 
   // ==================== 5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (242) ====================
