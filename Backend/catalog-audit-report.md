@@ -1,6 +1,6 @@
 # Rà soát kho phim
 
-3934 phim; 0 lỗi; 295 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
+3937 phim; 0 lỗi; 296 mục cần rà soát. Không tự xóa/gộp phim. Các cảnh báo là gợi ý, không xác nhận metadata sai.
 
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ma-thuat-dac-biet-cua-phu-thuy-quay-nguoc-thoi-gian-phan-2
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — gia-tri-tuyet-doi-cua-lang-man
@@ -180,6 +180,7 @@
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cuaro-trung-hoc-phan-5
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — batman-aztec-de-che-huyet-chien
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — nguoi-doi-bat-dau
+- **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — ngai-bean
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — lego-dc-nguoi-doi-va-van-de-dai-gia-dinh
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — cau-chuyen-lego-batman
 - **warning / country-review**: Nguồn ghi nhiều quốc gia; rà lại quốc gia chính, không tự đổi nhãn. — avatar

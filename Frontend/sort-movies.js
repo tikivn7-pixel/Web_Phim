@@ -35,21 +35,53 @@ const inner = afterMarker.slice(0, endPos);
 // Tách từng khối phim { ... }, bỏ comment nằm giữa các khối
 const IMG_BASE = "Img/";
 const items = [];
-inner.split(/\n\s{0,4}\},?[ \t]*(?=\n|$)/).forEach((chunk) => {
-  const open = chunk.search(/^\s*\{\s*$/m);
-  if (open === -1) return;
-  const body = chunk.slice(open).trim(); // bắt đầu từ "{"
+// Theo dõi độ sâu để không cắt nhầm object con như providerSlugs.
+const chunks = [];
+let depth = 0, start = -1, quote = null, comment = null;
+for (let i = 0; i < inner.length; i++) {
+  const c = inner[i], next = inner[i + 1];
+  if (comment === "line") {
+    if (c === "\n") comment = null;
+    continue;
+  }
+  if (comment === "block") {
+    if (c === "*" && next === "/") { comment = null; i++; }
+    continue;
+  }
+  if (quote) {
+    if (c === "\\") i++;
+    else if (c === quote) quote = null;
+    continue;
+  }
+  if (c === "/" && next === "/") { comment = "line"; i++; continue; }
+  if (c === "/" && next === "*") { comment = "block"; i++; continue; }
+  if (c === '"' || c === "'" || c === "`") { quote = c; continue; }
+  if (c === "{") {
+    if (depth === 0) start = i;
+    depth++;
+  } else if (c === "}") {
+    depth--;
+    if (depth === 0) chunks.push(inner.slice(start, i + 1));
+  }
+}
+// Kiểm tra cả mảng trước khi ghi, tránh bỏ sót phim hoặc cú pháp chưa hỗ trợ.
+const movies = new Function("IMG_BASE", "return ([" + inner + "\n])")(IMG_BASE);
+if (depth !== 0 || chunks.length !== movies.length) {
+  throw new Error("Không tách đủ khối phim; đã dừng để bảo vệ file.");
+}
+chunks.forEach((body) => {
   let obj;
   try {
-    obj = new Function("IMG_BASE", "return (" + body + "\n})")(IMG_BASE);
+    obj = new Function("IMG_BASE", "return (" + body + "\n)")(IMG_BASE);
   } catch (e) {
     console.error("Lỗi đọc 1 khối phim, dừng để không làm hỏng file:\n" + body);
     process.exit(1);
   }
   const lines = body
-    .replace(/^\{[ \t]*\n/, "")
+    .replace(/^\{[ \t]*(?:\r?\n)?/, "")
+    .replace(/\s*\}$/, "")
     .split("\n")
-    .map((l) => l.replace(/^\s*/, "    "))
+    .map((l) => l.replace(/^ {0,4}/, "    "))
     .filter((l) => l.trim() !== "");
   items.push({ i: items.length, obj, lines });
 });

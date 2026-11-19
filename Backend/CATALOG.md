@@ -170,3 +170,7 @@ phiên đang dùng index cũ; khi đăng hosting hãy đăng file chi tiết tr�
 ## Duplicate review
 
 Run `npm run catalog:duplicates` for an offline whole-catalog report, or append `-- --refresh` to refresh source evidence. See `DUPLICATES.md`, `duplicate-decisions.json` and `duplicate-evidence.json`. Matching titles, artwork and cached IDs only nominate candidates; reviewed explicit `duplicateOf` mappings control visible cards. Alternate names remain searchable; full records and old slugs remain available.
+
+## Provider mappings
+
+Run `npm run providers:sync` to check NguonC episode links for existing catalog slugs, then `npm run catalog:build`. Results are stored in `Backend/provider-map.json`; only available entries are added to published `providerSlugs`. Explicit per-film slugs remain supported. A successful API response confirms episode URLs, not uninterrupted playback or browser access to an external player. Missing entries are not matched by similar titles.

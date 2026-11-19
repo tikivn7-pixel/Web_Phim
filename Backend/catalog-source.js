@@ -58,13 +58,14 @@ const IMG_BASE = "Img/";
 //   1. PHIM HÀN QUỐC                            (1932 phim)
 //   2. NHẬT BẢN - ANIME                         (159 phim)
 //   3. NHẬT BẢN - PHIM LẺ / LIVE-ACTION         (1544 phim)
-//   4. PHIM MỸ                                  (58 phim)
-//   5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (241 phim)
+//   4. PHIM MỸ                                  (60 phim)
+//   5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (242 phim)
 // Trong mỗi nhóm: A-Z theo tên (phim nhiều phần dùng "group"),
 // các phần cùng 1 phim nằm sát nhau, giữ nguyên thứ tự bạn đã viết.
 // Thêm phim mới: dán 1 khối {...} vào bất kỳ đâu trong mảng rồi Ctrl+S.
 // ------------------------------------------------------------------
 const fallbackMoviesList = [
+
   // ==================== 1. PHIM HÀN QUỐC (1932) ====================
   {
     title: "(Guardian: The Lonely and Great God)",
@@ -47349,7 +47350,7 @@ const fallbackMoviesList = [
     desc: "遠井さんは青春したい！『バカとスマホとロマンスと』",
   },
 
-  // ==================== 4. PHIM MỸ (58) ====================
+  // ==================== 4. PHIM MỸ (60) ====================
   {
     title: "Aztec Batman: Clash Of Empires",
     slug: "batman-aztec-de-che-huyet-chien",
@@ -47878,6 +47879,18 @@ const fallbackMoviesList = [
     partName: "Batman: The Dark Knight Returns, 2",
   },
   {
+    title: "Bean",
+    slug: "ngai-bean",
+    country: "Anh",
+    type: "single",
+    year: 1997,
+    episodes: 1,
+    genres: "Gia Đình, Phiêu Lưu, Hài Hước, Anh, Mỹ",
+    poster: "https://phimimg.com/upload/vod/20251008-1/32f1b492140345307232bbc82d010826.jpg",
+    banner: "https://phimimg.com/upload/vod/20251008-1/88abe31c5ef53c9a05a6fc81324aba6d.jpg",
+    desc: "Bean",
+  },
+  {
     title: "Lego Batman: The Movie - DC Super Heroes Unite",
     slug: "lego-batman-the-movie-dc-super-heroes-unite",
     year: 2013,
@@ -47925,6 +47938,18 @@ const fallbackMoviesList = [
     desc: "Lego DC Batman: Family Matters",
     group: "Lego",
     partName: "DC Batman: Family Matters",
+  },
+  {
+    title: "Mr. Bean's Holiday",
+    slug: "ky-nghi-cua-mr-bean",
+    country: "Mỹ",
+    type: "single",
+    year: 2007,
+    episodes: 1,
+    genres: "Gia Đình, Hài Hước, Mỹ",
+    poster: "https://phimimg.com/upload/vod/20260116-1/2aeda901cab0376f36c8aad49a2a7fb0.jpg",
+    banner: "https://phimimg.com/upload/vod/20260116-1/31ffd4c556780ee3497e5327cec9ca33.jpg",
+    desc: "Mr. Bean's Holiday",
   },
   {
     title: "Pennyworth: The Origin of Batman's Butler (Season 3)",
@@ -48173,7 +48198,7 @@ const fallbackMoviesList = [
     desc: "The Lego Batman Movie",
   },
 
-  // ==================== 5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (241) ====================
+  // ==================== 5. KHÁC (chưa nhận diện được quốc gia - kiểm tra lại genres) (242) ====================
   // ⚠ Chưa nhận ra quốc gia từ genres (kiểm tra chính tả)
   {
     title: "Anh Là Nam Chính Đời Em (Oh! My Guard)",
@@ -51070,6 +51095,19 @@ const fallbackMoviesList = [
     language: "Vietsub",
     status: "completed",
     episodeCurrent: "Full",
+  },
+  // ⚠ Chưa nhận ra quốc gia từ genres (kiểm tra chính tả)
+  {
+    title: "Mr. Bean",
+    slug: "ngai-bean-1990",
+    country: "Anh",
+    type: "series",
+    year: 1990,
+    episodes: 14,
+    genres: "Hài Hước, Anh",
+    poster: "https://phimimg.com/upload/vod/20251001-1/264f1f4d4353c98a6e1b5b5e356c8230.jpg",
+    banner: "https://phimimg.com/upload/vod/20251001-1/c504a4bd6a35a3e9301bc6e4f96bbfe2.jpg",
+    desc: "Mr. Bean",
   },
   // ⚠ Chưa nhận ra quốc gia từ genres (kiểm tra chính tả)
   {
@@ -54576,6 +54614,10 @@ const fallbackMoviesList = [
   {
     title: "Upin & Ipin: Jeng Jeng Jeng! (Upin & Ipin: Jeng Jeng Jeng!)",
     slug: "upin-ipin-jeng-jeng-jeng",
+    providerSlugs: {
+      kkphim: "upin-ipin-jeng-jeng-jeng",
+      nguonc: "upin-ipin-jeng-jeng-jeng",
+    },
     apiSlug: "upin-ipin-jeng-jeng-jeng",
     year: 2016,
     episodes: 1,
@@ -54603,6 +54645,10 @@ const fallbackMoviesList = [
     title:
       "Upin & Ipin: Truyền Thuyết Thần Đao (Upin & Ipin: The Lone Gibbon Kris)",
     slug: "upin-ipin-truyen-thuyet-than-dao",
+    providerSlugs: {
+      kkphim: "upin-ipin-truyen-thuyet-than-dao",
+      nguonc: "upin-ipin-truyen-thuyet-than-dao",
+    },
     apiSlug: "upin-ipin-truyen-thuyet-than-dao",
     year: 2019,
     episodes: 1,
@@ -54630,13 +54676,12 @@ const fallbackMoviesList = [
   {
     title: "Việc Ma, Lương Quái (Dead-End Job)",
     slug: "viec-ma-luong-quai",
-    providerSlugs: { kkphim: "viec-ma-luong-quai", nguonc: "viec-ma-luong-quai" },
-    preferredSource: "kkphim",
-    apiSlug: "viec-ma-luong-quai",
     providerSlugs: {
       kkphim: "viec-ma-luong-quai",
       nguonc: "viec-ma-luong-quai",
     },
+    preferredSource: "kkphim",
+    apiSlug: "viec-ma-luong-quai",
     year: 2026,
     episodes: 8,
     declaredTotalEpisodes: 8,

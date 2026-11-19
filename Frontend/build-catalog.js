@@ -12,6 +12,16 @@ function buildCatalog() {
   const manifestFile = path.join(__dirname, "../Backend/catalog-manifest.json");
   const previous = fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile, "utf8")) : null;
   const result = enrichMovies(source, previous);
+  const providerFile = path.join(__dirname, '../Backend/provider-map.json');
+  if (fs.existsSync(providerFile)) {
+    const providers = JSON.parse(fs.readFileSync(providerFile, 'utf8'));
+    for (const movie of result.movies) {
+      const entry = providers.movies?.[movie.slug];
+      if (entry?.status === 'available') {
+        movie.providerSlugs = { kkphim: movie.apiSlug || movie.slug, ...movie.providerSlugs, nguonc: entry.slug };
+      }
+    }
+  }
   const output = JSON.stringify(result.movies);
   if (JSON.parse(output).length !== source.length) throw new Error("Xuất thiếu phim; đã dừng.");
   const file = path.join(__dirname, "data/movies.json");
